@@ -658,7 +658,7 @@ ui <- bootstrapPage(
                         tags$div(
                             tags$h4("Last update"), 
                             h6(paste0(update)),
-                            "This site is updated once daily. The aim of this site is to complement the resources below by providing several interactive features not currently available elsewhere for Canada.", tags$br(), tags$br(),
+                            "This site is updated once daily. The aim of this site is to complement the resources below by providing several interactive features and metrics currently not available elsewhere for Canada.", tags$br(), tags$br(),
                             "The following resources offer the latest numbers of known cases globally:",tags$br(),
                             tags$a(href="https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd", "WHO COVID-19 dashboard"),tags$br(),
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
