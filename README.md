@@ -4,7 +4,7 @@ This github page contains the code and input data for the [Canada COVID-19 track
 
 Input COVID-19 data are obtained from the [Epidemiological Data from the COVID-19 Outbreak in Canada github page](https://github.com/ishaberry/Covid19Canada).
 
-This dashboard aims to complement existing COVID-19 dashboard (such the [Johns Hopkins University COVID-19 dashboard](https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6)) with several additional interactive features, including analysis of healthcare efficiency, economic impact, and provincial government responses. 
+This dashboard aims to complement existing COVID-19 dashboards with several additional interactive features, including analysis of healthcare efficiency, economic impact, and provincial government responses. 
 
 ## Analysis code
 
@@ -22,6 +22,4 @@ Several resources proved invaluable when building this app, including:
 
 ## Authors
 Minnie Cui
-
-## Contact
 minniehcui@gmail.com
