@@ -1,5 +1,8 @@
-## COVID-2019 interactive mapping tool: Canada
-## Minnie Cui, Bank of Canada, April 2020
+## Canada COVID-2019 interactive dashboard
+## Author:       Minnie Cui
+## Affiliation:  Bank of Canada
+## Code created: 14 April 2020
+## Last updated: 5 May 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -57,6 +60,7 @@ province_plot_new = function(cv_cases, plot_date, ylabel) {
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
 
+# ------------------------------
 # function to plot cumulative cases by region
 province_plot_cumulative = function(cv_cases, plot_date, ylabel) {
     plot_df = subset(cv_cases, date<=plot_date)
@@ -64,8 +68,20 @@ province_plot_cumulative = function(cv_cases, plot_date, ylabel) {
     g1 = ggplot(plot_df, aes(x = date, y = outcome, colour = region, group = 1,
                              text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, ": ",outcome))) +
         ylim(0, max_scale) + xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 2, alpha = 0.8) +
-        ylab(ylabel) + theme_bw() + 
+        ylab(paste(ylabel, "(persons, thousands)")) + theme_bw() + 
         scale_colour_manual(values=province_cols) +
+        theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
+    ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
+}
+
+province_plot_cumulative_log = function(cv_cases, plot_date, ylabel) {
+    plot_df = subset(cv_cases, date<=plot_date)
+    max_scale = get_max(cv_cases$outcome)
+    g1 = ggplot(plot_df, aes(x = date, y = outcome, colour = region, group = 1,
+                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, ": ",outcome))) +
+        xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 2, alpha = 0.8) +
+        ylab(paste("Log of", ylabel, "(persons, thousands)")) + theme_bw() + 
+        scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
@@ -101,6 +117,7 @@ scatter_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
 
+# ------------------------------
 # function to plot ratio plots
 ratio_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
     plot_df = subset(cv_cases, date<=plot_date)
@@ -128,6 +145,7 @@ ratio_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
 
+# ------------------------------
 # function to plot economic impact comparisons
 province_plot_cumulative_impact1 = function(cv_cases, plot_date, covid, eimpact) {
     plot_df = subset(cv_cases, date<=plot_date)
@@ -172,7 +190,7 @@ province_plot_cumulative_impact_log1 = function(cv_cases, plot_date, covid, eimp
                                            "\n", eimpact, ": ", outcome2))) +
         geom_line(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), alpha=0.8) + 
         geom_point(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), size = 2, alpha = 0.8) +
-        xlab("Date") + ylab(paste("Log of", covid, "(persons, thousands)")) + theme_bw() + scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log", labels = scales::number_format(accuracy = 0.1)) +
+        xlab("Date") + ylab(paste("Log of", covid, "(persons, thousands)")) + theme_bw() + scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=12)))
@@ -187,12 +205,13 @@ province_plot_cumulative_impact_log2 = function(cv_cases, plot_date, covid, eimp
                                            "\n", eimpact, ": ", outcome2))) +
         geom_line(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), alpha=0.8) + 
         geom_point(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), size = 3, alpha = 0.8, shape = 2) + xlim(cv_min_date, current_date) +
-        xlab("Date") + ylab(paste("Log of", eimpact)) + theme_bw() + scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log", labels = scales::number_format(accuracy = 0.1)) +
+        xlab("Date") + ylab(paste("Log of", eimpact)) + theme_bw() + scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=12)))
 }
 
+# ------------------------------
 # front page graphing functions (ggplot version of first two functions)
 # function to plot cumulative COVID cases by date
 cumulative_cases_plot = function(dataset, plot_date) {
@@ -231,11 +250,12 @@ update = current_date
 # map labeling
 cv_cases_canada$region = "Global"
 
-# create cv base map for front page
+# create labels for basemap
 mlabs <- lapply(seq(nrow(cv_cases)), function(i) {
     paste("<p>", "Region:", cv_cases[i, "region"], "<p></p>", "Province:", cv_cases[i, "province"], "<p></p>", "Confirmed cases:", cv_cases[i, "cases"], "<p></p>", "Deaths:", cv_cases[i, "deaths"], "<p></p>", "Recovered:", cv_cases[i, "recovered"], "</p>")
 })
 
+# create basemap for front page
 basemap = leaflet(options = leafletOptions(zoomControl = FALSE)) %>%
     htmlwidgets::onRender("function(el, x) {L.control.zoom({ position: 'bottomright' }).addTo(this)
     }") %>%
@@ -282,9 +302,11 @@ names(graphs_cols) = cls_names
 
 ui <- bootstrapPage(
     tags$head(includeHTML("gtag.html")),
-    navbarPage(theme = shinytheme("flatly"), collapsible = TRUE,
+    navbarPage(theme = shinytheme("yeti"), collapsible = TRUE,
                "Canada COVID-19 tracker", id="nav",
                
+               # ------------------------------
+               # front page panel
                tabPanel("COVID Map",
                         div(class="outer",
                             tags$head(includeCSS("styles.css")),
@@ -299,7 +321,7 @@ ui <- bootstrapPage(
                                           h5(textOutput("reactive_death_count"), align = "right"),
                                           h6(textOutput("clean_date_reactive"), align = "right"),
                                           h6("Updated once daily. For global cases, refer to:", align = "right"),
-                                          tags$i(h6(tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins COVID-19 dashboard"), align = "right")),
+                                          tags$h6(tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins COVID-19 dashboard"), align = "right"),
                                           plotOutput("epi_curve", height="140px", width="100%"),
                                           plotOutput("cumulative_plot", height="140px", width="100%"),
                                           
@@ -315,7 +337,13 @@ ui <- bootstrapPage(
                             ))
                ),
                
+               # ------------------------------
+               # general regional graphs panel
+               
                tabPanel("General graphs",
+                        
+                        titlePanel("General COVID-19 graphs"),
+                        tags$br(),
                         
                         sidebarLayout(
                             sidebarPanel(
@@ -352,13 +380,20 @@ ui <- bootstrapPage(
                             mainPanel(
                                 tabsetPanel(
                                     tabPanel("Cumulative", plotlyOutput("province_plot_cumulative")),
-                                    tabPanel("New", plotlyOutput("province_plot_new"))
+                                    tabPanel("New", plotlyOutput("province_plot_new")),
+                                    tabPanel("Cumulative (log10)", plotlyOutput("province_plot_cumulative_log"))
                                 )
                             )
                         )
                ),
                
+               # ------------------------------
+               # dynamics graphs panel
+               
                tabPanel("Dynamics",
+                        
+                        titlePanel("COVID-19 dynamics"),
+                        tags$br(),
                         
                         sidebarLayout(
                             sidebarPanel(
@@ -407,7 +442,13 @@ ui <- bootstrapPage(
                         )
                ),
                
+               # ------------------------------
+               # moving average dynamics graphs panel
+               
                tabPanel("Moving average dynamics",
+                        
+                        titlePanel("Moving average COVID-19 dynamics"),
+                        tags$br(),
                         
                         sidebarLayout(
                             sidebarPanel(
@@ -457,8 +498,14 @@ ui <- bootstrapPage(
                         )
                ),
                
+               # ------------------------------
+               # economic impact graphs panel
+               
                tabPanel("Economic impact",
+                        
                         titlePanel("Consumer Confidence"),
+                        tags$br(),
+                        
                         sidebarLayout(
                             sidebarPanel(
                                 
@@ -501,13 +548,16 @@ ui <- bootstrapPage(
                             
                             mainPanel(
                                 tabsetPanel(
-                                    tabPanel("Comparison", plotlyOutput("province_plot_cumulative_impact_cc1"), plotlyOutput("province_plot_cumulative_impact_cc2")),
-                                    tabPanel("Comparison (log)", plotlyOutput("province_plot_cumulative_impact_log_cc1"), plotlyOutput("province_plot_cumulative_impact_log_cc2"))
+                                    tabPanel("Compare", plotlyOutput("province_plot_cumulative_impact_cc1"), plotlyOutput("province_plot_cumulative_impact_cc2")),
+                                    tabPanel("Compare (log10)", plotlyOutput("province_plot_cumulative_impact_log_cc1"), plotlyOutput("province_plot_cumulative_impact_log_cc2"))
                                 )
                             )
                         ),
                         
+                        tags$br(),
                         titlePanel("General unemployment"),
+                        tags$br(),
+                        
                         sidebarLayout(
                             sidebarPanel(
                                 
@@ -548,14 +598,16 @@ ui <- bootstrapPage(
                             
                             mainPanel(
                                 tabsetPanel(
-                                    tabPanel("Comparison", plotlyOutput("province_plot_cumulative_impact_top1"), plotlyOutput("province_plot_cumulative_impact_top2")),
-                                    tabPanel("Comparison (log)", plotlyOutput("province_plot_cumulative_impact_log_top1"), plotlyOutput("province_plot_cumulative_impact_log_top2"))
+                                    tabPanel("Compare", plotlyOutput("province_plot_cumulative_impact_top1"), plotlyOutput("province_plot_cumulative_impact_top2")),
+                                    tabPanel("Compare (log10)", plotlyOutput("province_plot_cumulative_impact_log_top1"), plotlyOutput("province_plot_cumulative_impact_log_top2"))
                                 )
                             )
                         ),
                         
                         tags$br(),
                         titlePanel("Restaurant & travel industry"),
+                        tags$br(),
+                        
                         sidebarLayout(
                             sidebarPanel(
                                 
@@ -595,14 +647,19 @@ ui <- bootstrapPage(
                             
                             mainPanel(
                                 tabsetPanel(
-                                    tabPanel("Comparison",plotlyOutput("province_plot_cumulative_impact1"), plotlyOutput("province_plot_cumulative_impact2")),
-                                    tabPanel("Comparison (log)", plotlyOutput("province_plot_cumulative_impact_log1"), tags$br(), tags$h5("Please note: log transformations cannot be applied to negative year-on-year percentage changes."))
-                                )
+                                    tabPanel("Compare",plotlyOutput("province_plot_cumulative_impact1"), plotlyOutput("province_plot_cumulative_impact2")), tags$br(),
+                                    tabPanel("Compare (log10)", plotlyOutput("province_plot_cumulative_impact_log1"), tags$br(), tags$h5("Please note: log transformations cannot be applied to negative year-on-year percentage changes."))
+                                ), tags$br(), tags$br()
                             )
                         )
                ),
                
+               # ------------------------------
+               # government response indices panel
+               
                tabPanel("Government response",
+                        titlePanel("Government response indices"),
+                        tags$br(),
                         sidebarLayout(
                             sidebarPanel(
                                 
@@ -647,37 +704,61 @@ ui <- bootstrapPage(
                             
                             mainPanel(
                                 tabsetPanel(
-                                    tabPanel("Comparison", plotlyOutput("province_plot_cumulative_govt1"), plotlyOutput("province_plot_cumulative_govt2")),
-                                    tabPanel("Comparison (log)", plotlyOutput("province_plot_cumulative_govt_log1"), plotlyOutput("province_plot_cumulative_govt_log2"), tags$br())
-                                )
+                                    tabPanel("Compare", plotlyOutput("province_plot_cumulative_govt1"), plotlyOutput("province_plot_cumulative_govt2")), 
+                                    tabPanel("Compare (log10)", plotlyOutput("province_plot_cumulative_govt_log1"), plotlyOutput("province_plot_cumulative_govt_log2"))
+                                ), tags$br(), tags$br()
                             )
                         )
                ),
                
+               # ------------------------------
+               # download covid data panel
+               
+               tabPanel("COVID Data",
+                        tags$br(),
+                        titlePanel("Country-level data"),
+                        numericInput("maxrows", "Rows to show", 15),
+                        verbatimTextOutput("rawtable"),
+                        downloadButton("downloadCsv", "Download as CSV"),tags$br(),tags$br(),
+                        tags$br(),
+                        titlePanel("Province-level data"),
+                        numericInput("maxrows", "Rows to show", 15),
+                        verbatimTextOutput("rawtableprov"),
+                        downloadButton("downloadCsvprov", "Download as CSV"),tags$br(),tags$br(), tags$br(),
+                        "Please note: data above is adapted from publicly-sourced COVID-19 data published by ", tags$a(href="https://github.com/ishaberry/Covid19Canada", 
+                                                                           "Epidemiological Data from the COVID-19 Outbreak in Canada."), tags$br(), tags$br()
+                        
+               ),
+               
+               # ------------------------------
+               # about page panel 
+               
                tabPanel("About",
                         tags$div(
-                            tags$h4("Last update"), 
-                            h6(paste0(update)),
+                            tags$h3("LASTEST UPDATE"), 
+                            h5(paste0(update)),
                             "This site is updated once daily. The aim of this site is to complement the resources below by providing several interactive features and metrics currently not available elsewhere for Canada.", tags$br(), tags$br(),
                             "The following resources offer the latest numbers of known cases globally:",tags$br(),
                             tags$a(href="https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd", "WHO COVID-19 dashboard"),tags$br(),
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
-                            tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"),
-                            tags$br(),tags$br(),tags$h4("Updates: Government Stringency Index"),
-                            tags$b("May 1:"), "Default stringency index no longer includes financial measures. Coding on cancellations of public events/limitations on public gatherings changed.",
-                            tags$br(), tags$br(),tags$h4("Data Sources"),
+                            tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"), tags$br(),tags$br(),
+                            tags$h3("GOVERNMENT STRINGENCY INDEX UPDATE"),
+                            tags$b("May 1:"), "Default stringency index no longer includes financial measures. Coding on cancellations of public events/limitations on public gatherings changed.", tags$br(), tags$br(),
+                            tags$h3("DATA SOURCES"),
                             "Berry, I., Soucy, J.-P. R., Tuite, A., Fisman, D. 14 April 2020.", tags$b("Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada."), "CMAJ 192(15):E420. doi:", tags$a(href="https://doi.org/10.1503/cmaj.75262", "https://doi.org/10.1503/cmaj.75262"), tags$br(), tags$br(),
                             "Hemmadi, M., Syed, F., Schwartz, Z.", tags$b("The Logic's COVID-19 layoffs database."), tags$a(href="https://thelogic.co/news/why-axis/130000-and-counting-tracking-covid-19-layoffs-across-canada/", "Link"), tags$br(), tags$br(),
                             "Statistics Canada. ", tags$b("Labour force characteristics by province, monthly, seasonally adjusted."), tags$a(href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703", "Table: 14-10-0287-03"), tags$br(), tags$br(),
                             tags$b("OpenTable's state of the restaurant industry database."), tags$a(href="https://www.opentable.com/state-of-industry", "Link"), tags$br(), tags$br(),
                             tags$b("Transit app's frequency of app opens database."), tags$a(href="https://www.transitapp.com/coronavirus", "Link"), tags$br(), tags$br(),
-                            tags$b("Bloomberg Nanos Consumer Confidence Index."), tags$a(href="https://www.nanos.co/dataportal/nanos-bloomberg-tracking-methodology/", "Link"), 
-                            tags$br(),tags$br(),tags$h4("References"),
+                            tags$b("Bloomberg Nanos Consumer Confidence Index."), tags$a(href="https://www.nanos.co/dataportal/nanos-bloomberg-tracking-methodology/", "Link"), tags$br(),tags$br(),
+                            tags$h3("REFERENCES"),
                             "Hale, T., Petherick, A., Phillips, T., Webster, S. 2020.", tags$b("Variation in government responses to COVID-19."), tags$i("Blavatnik School of Government Working Paper Series 2020/031."), tags$a(href="https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker", "Link"), tags$br(), tags$br(),
                             "Verity, R. et al. 2020.", tags$b("Estimates of the severity of coronavirus disease 2019: a model-based analysis."), tags$i("The Lancet: Infectious Diseases."), tags$a(href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30243-7/fulltext", "Link"),
-                            tags$br(),tags$br(),tags$h4("Authors"),
+                            tags$br(),tags$br(),tags$h3("AUTHORS"),
                             "Minnie Cui",tags$br(),
-                            tags$a(href="mailto:minniehcui@gmail.com", "Email"),tags$br(),tags$br()
+                            tags$a(href="mailto:minniehcui@gmail.com", "Email"), tags$br(),tags$br()
+                            #tags$h3("HITHUB"),
+                            #"Code and data can be found at the project's ", tags$a(href="https://github.com/minnzc/Canada_COVID19", "GitHub page."), tags$br(), tags$br()
                         )
                )
                
@@ -736,6 +817,7 @@ server <- function(input, output, session) {
         cumulative_cases_plot(cv_cases_canada, input$plot_date)
     })
     
+    # ------------------------------
     # Province-specific general plots
     # update region selections
     observeEvent(input$level_select, {
@@ -764,17 +846,17 @@ server <- function(input, output, session) {
         }
         
         if (input$outcome_select=="Cases") { 
-            db$outcome = db$cases
+            db$outcome = db$cases/1000
             db$new_outcome = db$new_cases
         }
         
         if (input$outcome_select=="Deaths") { 
-            db$outcome = db$deaths 
+            db$outcome = db$deaths/1000 
             db$new_outcome = db$new_deaths 
         }
         
         if (input$outcome_select=="Recovered") { 
-            db$outcome = db$recovered
+            db$outcome = db$recovered/1000
             db$new_outcome = db$new_recovered
         }
         
@@ -789,7 +871,11 @@ server <- function(input, output, session) {
         province_plot_cumulative(country_reactive_db(), input$plot_date_region, ylabel = input$outcome_select)
     })
     
+    output$province_plot_cumulative_log <- renderPlotly({
+        province_plot_cumulative_log(country_reactive_db(), input$plot_date_region, ylabel = input$outcome_select)
+    })
     
+    # ------------------------------
     # Provincial-specific dynamics graphs
     # update region selections
     observeEvent(input$level_select_dynamics, {
@@ -878,6 +964,7 @@ server <- function(input, output, session) {
         scatter_plot(country_reactive_db_dynamics_scatter(), input$plot_date_dynamics, lag=input$stat)
     })
     
+    # ------------------------------
     # Provincial-specific moving-average dynamics graphs
     # update region selections
     observeEvent(input$level_select_mv, {
@@ -966,8 +1053,8 @@ server <- function(input, output, session) {
         scatter_plot(country_reactive_db_mv_scatter(), input$plot_date_mv, lag=input$stat_mv)
     })
     
+    # ------------------------------
     # Provincial economic impact graphs
-    
     # update region selections
     observeEvent(input$level_select_impact3, {
         if (input$level_select_impact3=="Country") {
@@ -1209,6 +1296,7 @@ server <- function(input, output, session) {
         province_plot_cumulative_impact_log1 (country_reactive_db_impact2(), input$plot_date_impact2, covid = input$outcome_select_impact2, eimpact=input$stat_impact2)
     })
     
+    # ------------------------------
     # Government response plots
     # update region selections
     observeEvent(input$level_select_govt, {
@@ -1293,6 +1381,43 @@ server <- function(input, output, session) {
     
     output$province_plot_cumulative_govt_log2 <- renderPlotly({
         province_plot_cumulative_impact_log2 (country_reactive_db_govt(), input$plot_date_govt, covid = input$outcome_select_govt, eimpact=input$stat_govt)
+    })
+    
+    # ------------------------------
+    # COVID data download 
+    # output to download data
+    output$downloadCsv <- downloadHandler(
+        filename = function() {
+            paste("COVID_data_", current_date, ".csv", sep="")
+        },
+        content = function(file) {
+            write.csv(cv_cases_canada %>% select(c(country, date, cases, new_cases, deaths, new_deaths,
+                                            recovered, new_recovered, active)), file)
+        }
+    )
+    
+    output$rawtable <- renderPrint({
+        orig <- options(width = 1000)
+        print(tail(cv_cases_canada %>% select(c(country, date, cases, new_cases, deaths, new_deaths,
+                                         recovered, new_recovered, active)), input$maxrows), row.names = FALSE)
+        options(orig)
+    })
+    
+    output$downloadCsvprov <- downloadHandler(
+        filename = function() {
+            paste("COVID_data_", current_date, ".csv", sep="")
+        },
+        content = function(file) {
+            write.csv(cv_cases_province %>% select(c(province, date, cases, new_cases, deaths, new_deaths,
+                                                   recovered, new_recovered, active)), file)
+        }
+    )
+    
+    output$rawtableprov <- renderPrint({
+        orig <- options(width = 1000)
+        print(tail(cv_cases_province %>% select(c(province, date, cases, new_cases, deaths, new_deaths,
+                                                recovered, new_recovered, active)), input$maxrows), row.names = FALSE)
+        options(orig)
     })
     
 }

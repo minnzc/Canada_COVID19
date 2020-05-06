@@ -3,101 +3,101 @@
 "2","Algoma","Ontario",13,NA,NA,"Algoma, Ontario",-84.7951524,47.6459165
 "3","Bas-Saint-Laurent","Quebec",36,1,NA,"Bas-Saint-Laurent, Quebec",-69.5314484,47.828424
 "4","Brant","Ontario",99,3,NA,"Brant, Ontario",-80.171591,43.152667
-"5","Calgary","Alberta",3905,70,NA,"Calgary, Alberta",-114.0718831,51.0447331
-"6","Capitale-Nationale","Quebec",938,61,NA,"Capitale-Nationale, Quebec",-71.2195534,46.8077308
+"5","Calgary","Alberta",3957,72,NA,"Calgary, Alberta",-114.0718831,51.0447331
+"6","Capitale-Nationale","Quebec",961,65,NA,"Capitale-Nationale, Quebec",-71.2195534,46.8077308
 "7","Central","Alberta",89,1,NA,"Central, Alberta",-116.5765035,53.9332706
 "8","Central","Newfoundland & Labrador",8,NA,NA,"Central, Newfoundland & Labrador",-57.6604364,53.1355091
 "9","Central","Saskatchewan",11,NA,NA,"Central, Saskatchewan",-106.4508639,52.9399159
 "10","Chatham-Kent","Ontario",89,1,NA,"Chatham-Kent, Ontario",-82.1910378,42.4048028
-"11","Chaudière-Appalaches","Quebec",406,8,NA,"Chaudière-Appalaches, Quebec",-71.2366687,46.8032642
+"11","Chaudière-Appalaches","Quebec",410,8,NA,"Chaudière-Appalaches, Quebec",-71.2366687,46.8032642
 "12","Côte-Nord","Quebec",113,NA,NA,"Côte-Nord, Quebec",-66.1497027,50.8967416
-"13","Durham","Ontario",1075,128,NA,"Durham, Ontario",-80.8185006,44.1763254
+"13","Durham","Ontario",1086,131,NA,"Durham, Ontario",-80.8185006,44.1763254
 "14","Eastern","Newfoundland & Labrador",241,3,NA,"Eastern, Newfoundland & Labrador",-53.2415879,47.7289436
-"15","Eastern","Ontario",101,2,NA,"Eastern, Ontario",-76.5219943,44.2687339
-"16","Edmonton","Alberta",503,12,NA,"Edmonton, Alberta",-113.4938229,53.5461245
-"17","Estrie","Quebec",867,25,NA,"Estrie, Quebec",-71.9526551,45.401368
-"18","Far North","Saskatchewan",110,1,NA,"Far North, Saskatchewan",-105.0985286,53.2517519
-"19","Fraser","British Columbia",1027,34,NA,"Fraser, British Columbia",-135.049219,59.717115
-"20","Gaspésie-Îles-de-la-Madeleine","Quebec",169,8,NA,"Gaspésie-Îles-de-la-Madeleine, Quebec",-62.3255112,47.5730748
+"15","Eastern","Ontario",103,2,NA,"Eastern, Ontario",-76.5219943,44.2687339
+"16","Edmonton","Alberta",502,12,NA,"Edmonton, Alberta",-113.4938229,53.5461245
+"17","Estrie","Quebec",869,25,NA,"Estrie, Quebec",-71.994695,45.3669078
+"18","Far North","Saskatchewan",128,1,NA,"Far North, Saskatchewan",-105.0985286,53.2517519
+"19","Fraser","British Columbia",1031,40,NA,"Fraser, British Columbia",-135.049219,59.717115
+"20","Gaspésie-Îles-de-la-Madeleine","Quebec",170,8,NA,"Gaspésie-Îles-de-la-Madeleine, Quebec",-62.3255112,47.5730748
 "21","Grey Bruce","Ontario",88,NA,NA,"Grey Bruce, Ontario",-80.6326916,44.4659957
 "22","Haldimand-Norfolk","Ontario",196,30,NA,"Haldimand-Norfolk, Ontario",-79.876197,42.9276849
 "23","Haliburton Kawartha Pineridge","Ontario",162,32,NA,"Haliburton Kawartha Pineridge, Ontario",-78.5101911,45.0463441
-"24","Halton","Ontario",478,22,NA,"Halton, Ontario",-79.8744836,43.5325372
-"25","Hamilton","Ontario",458,21,NA,"Hamilton, Ontario",-79.8711024,43.2557206
+"24","Halton","Ontario",482,22,NA,"Halton, Ontario",-79.8744836,43.5325372
+"25","Hamilton","Ontario",460,21,NA,"Hamilton, Ontario",-79.8711024,43.2557206
 "26","Hastings Prince Edward","Ontario",43,4,NA,"Hastings Prince Edward, Ontario",-77.3753329,44.1631355
 "27","Huron Perth","Ontario",49,5,NA,"Huron Perth, Ontario",-80.995506,43.377357
-"28","Interior","British Columbia",177,2,NA,"Interior, British Columbia",NA,NA
+"28","Interior","British Columbia",177,2,NA,"British Columbia, Canada",-127.6476205,53.7266683
 "29","Interlake-Eastern","Manitoba",19,NA,NA,"Interlake-Eastern, Manitoba",-96.8712574,50.144757
 "30","Island","British Columbia",124,4,NA,"Island, British Columbia",-124.9489278,50.1167278
 "31","Kingston Frontenac Lennox & Addington","Ontario",61,NA,NA,"Kingston Frontenac Lennox & Addington, Ontario",-76.4963004,44.2540462
 "32","Labrador-Grenfell","Newfoundland & Labrador",6,NA,NA,"Labrador-Grenfell, Newfoundland & Labrador",-66.9132132,52.9482404
-"33","Lambton","Ontario",189,14,NA,"Lambton, Ontario",-82.0407137,43.0527085
-"34","Lanaudière","Quebec",2476,102,NA,"Lanaudière, Quebec",-73.704151,46.1256124
-"35","Laurentides","Quebec",1457,41,NA,"Laurentides, Quebec",-75.0181493,46.6181619
-"36","Laval","Quebec",3511,317,NA,"Laval, Quebec",-73.712409,45.6066487
-"37","Leeds Grenville and Lanark","Ontario",303,42,NA,"Leeds Grenville and Lanark, Ontario",-75.7030081,44.6158208
-"38","Mauricie","Quebec",1362,108,NA,"Mauricie, Quebec",-72.8512198,46.6629657
-"39","Middlesex-London","Ontario",423,40,NA,"Middlesex-London, Ontario",-81.2460321,42.9839241
-"40","Montréal","Quebec",16606,1410,NA,"Montréal, Quebec",-73.567256,45.5016889
-"41","Montérégie","Quebec",3890,167,NA,"Montérégie, Quebec",-73.4416348,45.4498484
-"42","Niagara","Ontario",523,52,NA,"Niagara, Ontario",-79.2902133,43.0581645
+"33","Lambton","Ontario",192,15,NA,"Lambton, Ontario",-82.0407137,43.0527085
+"34","Lanaudière","Quebec",2548,103,NA,"Lanaudière, Quebec",-73.704151,46.1256124
+"35","Laurentides","Quebec",1517,46,NA,"Laurentides, Quebec",-75.0181493,46.6181619
+"36","Laval","Quebec",3604,331,NA,"Laval, Quebec",-73.712409,45.6066487
+"37","Leeds Grenville and Lanark","Ontario",309,42,NA,"Leeds Grenville and Lanark, Ontario",-75.7030081,44.6158208
+"38","Mauricie","Quebec",1392,112,NA,"Mauricie, Quebec",-72.8512198,46.6629657
+"39","Middlesex-London","Ontario",424,42,NA,"Middlesex-London, Ontario",-81.2460321,42.9839241
+"40","Montréal","Quebec",16991,1488,NA,"Montréal, Quebec",-73.567256,45.5016889
+"41","Montérégie","Quebec",4006,178,NA,"Montérégie, Quebec",-73.4416348,45.4498484
+"42","Niagara","Ontario",529,52,NA,"Niagara, Ontario",-79.2902133,43.0581645
 "43","Nord-du-Québec","Quebec",8,NA,NA,"Nord-du-Québec, Quebec",-73.5491361,52.9399159
 "44","North","Alberta",221,15,NA,"North, Alberta",-116.5765035,53.9332706
-"45","North","Saskatchewan",93,1,NA,"North, Saskatchewan",-105.0985286,53.2517519
-"46","North Bay Parry Sound","Ontario",16,NA,NA,"North Bay Parry Sound, Ontario",-80.0432318,45.3591808
+"45","North","Saskatchewan",95,1,NA,"North, Saskatchewan",-105.0985286,53.2517519
+"46","North Bay Parry Sound","Ontario",16,NA,NA,"North Bay Parry Sound, Ontario",-79.4676925,46.3131849
 "47","Northern","British Columbia",51,NA,NA,"Northern, British Columbia",-122.8133607,53.8922034
-"48","Northern","Manitoba",3,NA,NA,"Northern, Manitoba",-101.242691,53.797752
+"48","Northern","Manitoba",3,NA,NA,"Northern, Manitoba",-101.8784711,54.7667425
 "49","Northwestern","Ontario",16,NA,NA,"Northwestern, Ontario",-89.2691107,48.4000592
-"50","Not Reported","Alberta",33,NA,2942,"Alberta, Canada",-116.5765035,53.9332706
-"51","Not Reported","British Columbia",NA,5,1417,"British Columbia, Canada",-127.6476205,53.7266683
-"52","Not Reported","Manitoba",NA,1,238,"Manitoba, Canada",-98.8138762,53.7608608
-"53","Not Reported","Northwest Territories",5,NA,5,"Northwest Territories, Canada",-124.8457334,64.8255441
-"54","Not Reported","Nova Scotia",584,NA,638,"Nova Scotia, Canada",-63.744311,44.6819866
-"55","Not Reported","Quebec",3,NA,7578,"Quebec, Canada",-73.5491361,52.9399159
-"56","Not Reported","Saskatchewan",NA,3,307,"Saskatchewan, Canada",-106.4508639,52.9399159
-"57","Not Reported","Yukon",11,NA,11,"Yukon, Canada",-135,64.2823274
-"58","Nunavik","Quebec",20,NA,NA,"Nunavik, Quebec",-68.4017925,58.1031447
-"59","Ottawa","Ontario",1504,127,NA,"Ottawa, Ontario",-75.6971931,45.4215296
-"60","Outaouais","Quebec",304,4,NA,"Outaouais, Quebec",-75.8762498,45.6761286
-"61","Peel","Ontario",2699,133,NA,"Peel, Ontario",-79.7848422,43.6766398
-"62","Peterborough","Ontario",69,2,NA,"Peterborough, Ontario",-78.319747,44.309058
-"63","Porcupine","Ontario",61,4,NA,"Porcupine, Ontario",-81.1909904,48.4950429
-"64","Prairie Mountain","Manitoba",17,1,NA,"Prairie Mountain, Manitoba",-98.6595882,49.407583
-"65","Prince Edward Island","Prince Edward Island",27,NA,NA,"Prince Edward Island, Prince Edward Island",-63.4168136,46.510712
-"66","Regina","Saskatchewan",76,1,NA,"Regina, Saskatchewan",-104.6188943,50.4452112
-"67","Renfrew","Ontario",16,1,NA,"Renfrew, Ontario",-76.6877186,45.4749199
-"68","Saguenay","Quebec",297,25,NA,"Saguenay, Quebec",-71.0684923,48.4280529
-"69","Saskatoon","Saskatchewan",162,NA,NA,"Saskatoon, Saskatchewan",-106.6700458,52.1332144
-"70","Simcoe Muskoka","Ontario",318,20,NA,"Simcoe Muskoka, Ontario",-79.6863776,44.4107231
-"71","South","Alberta",1085,6,NA,"South, Alberta",-111.738566,49.9546196
-"72","South","Saskatchewan",15,NA,NA,"South, Saskatchewan",-107.0751819,51.5435629
-"73","Southern Health","Manitoba",30,NA,NA,"Southern Health, Manitoba",-96.510941,49.5260333
-"74","Southwestern","Ontario",60,4,NA,"Southwestern, Ontario",-80.7407763,43.1330816
-"75","Sudbury","Ontario",59,2,NA,"Sudbury, Ontario",-80.993029,46.4917317
-"76","Terres-Cries-de-la-Baie-James","Quebec",11,NA,NA,"Terres-Cries-de-la-Baie-James, Quebec",-76.0468351,51.7007596
-"77","Thunder Bay","Ontario",75,1,NA,"Thunder Bay, Ontario",-89.2476823,48.3808951
-"78","Timiskaming","Ontario",18,NA,NA,"Timiskaming, Ontario",-80.3194903,47.8308027
-"79","Toronto","Ontario",6278,449,NA,"Toronto, Ontario",-79.3831843,43.653226
-"80","Vancouver Coastal","British Columbia",845,72,NA,"Vancouver Coastal, British Columbia",-123.1207375,49.2827291
-"81","Waterloo","Ontario",817,87,NA,"Waterloo, Ontario",-80.5204096,43.4642578
-"82","Wellington Dufferin Guelph","Ontario",308,26,NA,"Wellington Dufferin Guelph, Ontario",-80.233717,43.524905
-"83","Western","Newfoundland & Labrador",4,NA,NA,"Western, Newfoundland & Labrador",-57.9436708,48.9548346
-"84","Windsor-Essex","Ontario",641,54,NA,"Windsor-Essex, Ontario",-83.0363633,42.3149367
-"85","Winnipeg","Manitoba",212,4,NA,"Winnipeg, Manitoba",-97.1383744,49.895136
-"86","York","Ontario",1656,120,NA,"York, Ontario",-79.4503544,43.6956787
-"87","Zone 1 (Moncton area)","New Brunswick",22,NA,NA,"Zone 1 (Moncton area), New Brunswick",-64.7782313,46.0878165
-"88","Zone 1 - Western","Nova Scotia",10,1,NA,"Zone 1 - Western, Nova Scotia",-64.314502,44.531403
-"89","Zone 2 (Saint John area)","New Brunswick",26,NA,NA,"Zone 2 (Saint John area), New Brunswick",-66.0340003,45.2797026
-"90","Zone 2 - Northern","Nova Scotia",4,NA,NA,"Zone 2 - Northern, Nova Scotia",-63.744311,44.6819866
-"91","Zone 3 (Fredericton area)","New Brunswick",48,NA,NA,"Zone 3 (Fredericton area), New Brunswick",-66.6408264,45.9455704
-"92","Zone 3 - Eastern","Nova Scotia",12,4,NA,"Zone 3 - Eastern, Nova Scotia",-62.4671922,45.1245645
-"93","Zone 4 (Edmundston area)","New Brunswick",7,NA,NA,"Zone 4 (Edmundston area), New Brunswick",-68.3266741,47.3690127
-"94","Zone 4 - Central","Nova Scotia",375,33,NA,"Zone 4 - Central, Nova Scotia",-63.744311,44.6819866
-"95","Zone 5 (Campbellton area)","New Brunswick",12,NA,NA,"Zone 5 (Campbellton area), New Brunswick",-66.6722057,48.007399
-"96","Zone 6 (Bathurst area)","New Brunswick",1,NA,NA,"Zone 6 (Bathurst area), New Brunswick",-65.6513358,47.6183507
-"97","Zone 7 (Miramichi area)","New Brunswick",2,NA,NA,"Zone 7 (Miramichi area), New Brunswick",-65.5059061,47.0295709
+"50","Not Reported","Alberta",30,NA,3219,"Alberta, Canada",-116.5765035,53.9332706
+"51","Not Reported","Manitoba",NA,1,238,"Manitoba, Canada",-98.8138762,53.7608608
+"52","Not Reported","Northwest Territories",5,NA,5,"Northwest Territories, Canada",-124.8457334,64.8255441
+"53","Not Reported","Nova Scotia",590,NA,652,"Nova Scotia, Canada",-63.744311,44.6819866
+"54","Not Reported","Quebec",3,NA,7923,"Quebec, Canada",-73.5491361,52.9399159
+"55","Not Reported","Saskatchewan",NA,3,310,"Saskatchewan, Canada",-106.4508639,52.9399159
+"56","Not Reported","Yukon",11,NA,11,"Yukon, Canada",-135,64.2823274
+"57","Nunavik","Quebec",20,NA,NA,"Nunavik, Quebec",-68.4017925,58.1031447
+"58","Ottawa","Ontario",1535,138,NA,"Ottawa, Ontario",-75.6971931,45.4215296
+"59","Outaouais","Quebec",312,4,NA,"Outaouais, Quebec",-75.8762498,45.6761286
+"60","Peel","Ontario",2736,145,NA,"Peel, Ontario",-79.7848422,43.6766398
+"61","Peterborough","Ontario",68,2,NA,"Peterborough, Ontario",-78.319747,44.309058
+"62","Porcupine","Ontario",61,4,NA,"Porcupine, Ontario",-81.1909904,48.4950429
+"63","Prairie Mountain","Manitoba",19,1,NA,"Prairie Mountain, Manitoba",-98.6595882,49.407583
+"64","Prince Edward Island","Prince Edward Island",27,NA,NA,"Prince Edward Island, Prince Edward Island",-63.4168136,46.510712
+"65","Regina","Saskatchewan",76,1,NA,"Regina, Saskatchewan",-104.6188943,50.4452112
+"66","Renfrew","Ontario",17,1,NA,"Renfrew, Ontario",-76.6877186,45.4749199
+"67","Saguenay","Quebec",298,26,NA,"Saguenay, Quebec",-71.0684923,48.4280529
+"68","Saskatoon","Saskatchewan",162,NA,NA,"Saskatoon, Saskatchewan",-106.6700458,52.1332144
+"69","Simcoe Muskoka","Ontario",329,23,NA,"Simcoe Muskoka, Ontario",-79.6863776,44.4107231
+"70","South","Alberta",1094,6,NA,"South, Alberta",-111.738566,49.9546196
+"71","South","Saskatchewan",15,NA,NA,"South, Saskatchewan",-107.0751819,51.5435629
+"72","Southern Health","Manitoba",30,1,NA,"Southern Health, Manitoba",-96.510941,49.5260333
+"73","Southwestern","Ontario",60,4,NA,"Southwestern, Ontario",-80.7407763,43.1330816
+"74","Sudbury","Ontario",59,2,NA,"Sudbury, Ontario",-80.993029,46.4917317
+"75","Terres-Cries-de-la-Baie-James","Quebec",10,NA,NA,"Terres-Cries-de-la-Baie-James, Quebec",-76.0468351,51.7007596
+"76","Thunder Bay","Ontario",76,1,NA,"Thunder Bay, Ontario",-89.2476823,48.3808951
+"77","Timiskaming","Ontario",18,NA,NA,"Timiskaming, Ontario",-80.3194903,47.8308027
+"78","Toronto","Ontario",6448,469,NA,"Toronto, Ontario",-79.3831843,43.653226
+"79","Vancouver Coastal","British Columbia",849,75,NA,"Vancouver Coastal, British Columbia",-123.1207375,49.2827291
+"80","Waterloo","Ontario",860,90,NA,"Waterloo, Ontario",-80.5204096,43.4642578
+"81","Wellington Dufferin Guelph","Ontario",312,27,NA,"Wellington Dufferin Guelph, Ontario",-80.233717,43.524905
+"82","Western","Newfoundland & Labrador",4,NA,NA,"Western, Newfoundland & Labrador",-57.9436708,48.9548346
+"83","Windsor-Essex","Ontario",656,55,NA,"Windsor-Essex, Ontario",-83.0363633,42.3149367
+"84","Winnipeg","Manitoba",211,4,NA,"Winnipeg, Manitoba",-97.1383744,49.895136
+"85","York","Ontario",1689,122,NA,"York, Ontario",-79.4503544,43.6956787
+"86","Zone 1 (Moncton area)","New Brunswick",23,NA,NA,"Zone 1 (Moncton area), New Brunswick",-64.7782313,46.0878165
+"87","Zone 1 - Western","Nova Scotia",10,1,NA,"Zone 1 - Western, Nova Scotia",-64.314502,44.531403
+"88","Zone 2 (Saint John area)","New Brunswick",26,NA,NA,"Zone 2 (Saint John area), New Brunswick",-66.0340003,45.2797026
+"89","Zone 2 - Northern","Nova Scotia",4,NA,NA,"Zone 2 - Northern, Nova Scotia",-63.744311,44.6819866
+"90","Zone 3 (Fredericton area)","New Brunswick",48,NA,NA,"Zone 3 (Fredericton area), New Brunswick",-66.6408264,45.9455704
+"91","Zone 3 - Eastern","Nova Scotia",12,4,NA,"Zone 3 - Eastern, Nova Scotia",-62.4671922,45.1245645
+"92","Zone 4 (Edmundston area)","New Brunswick",7,NA,NA,"Zone 4 (Edmundston area), New Brunswick",-68.3266741,47.3690127
+"93","Zone 4 - Central","Nova Scotia",375,36,NA,"Zone 4 - Central, Nova Scotia",-63.744311,44.6819866
+"94","Zone 5 (Campbellton area)","New Brunswick",12,NA,NA,"Zone 5 (Campbellton area), New Brunswick",-66.6722057,48.007399
+"95","Zone 6 (Bathurst area)","New Brunswick",1,NA,NA,"Zone 6 (Bathurst area), New Brunswick",-65.6513358,47.6183507
+"96","Zone 7 (Miramichi area)","New Brunswick",2,NA,NA,"Zone 7 (Miramichi area), New Brunswick",-65.5059061,47.0295709
+"97","Not Reported","British Columbia",NA,NA,1472,"British Columbia, Canada",-127.6476205,53.7266683
 "98","Not Reported","New Brunswick",NA,NA,118,"New Brunswick, Canada",-66.4619164,46.5653163
-"99","Not Reported","Newfoundland & Labrador",NA,NA,233,"Newfoundland & Labrador, Canada",-57.6604364,53.1355091
+"99","Not Reported","Newfoundland & Labrador",NA,NA,241,"Newfoundland & Labrador, Canada",-57.6604364,53.1355091
 "100","Not Reported","Nunavut",NA,NA,0,"Nunavut, Canada",-83.107577,70.2997711
-"101","Not Reported","Ontario",NA,NA,12505,"Ontario, Canada",-85.323214,51.253775
+"101","Not Reported","Ontario",NA,NA,12779,"Ontario, Canada",-85.323214,51.253775
 "102","Not Reported","Prince Edward Island",NA,NA,25,"Prince Edward Island, Canada",-63.4168136,46.510712
