@@ -16,8 +16,20 @@ div.outer {
 body, label, input, button, select { 
   font-family: 'Helvetica Neue', Helvetica;
   font-weight: 100;
+
 }
 h1, h2, h3, h4 { font-weight: 300; }
+ 
+.navbar {
+  background-color: #3e4941;
+}
+
+.navbar-nav li a:hover, .navbar-nav > .active > a {
+color: #fff !important;
+
+background-color:#6e8574 !important;
+background-image: none !important;
+}
 
 #controls {
   /* Appearance */
@@ -33,21 +45,5 @@ h1, h2, h3, h4 { font-weight: 300; }
 #controls:hover {
   /* Fade in while hovering */
   opacity: 0.75;
-  transition-delay: 0;
-}
-
-#logo {
-  /* Appearance */
-  background-color: transparent;
-  cursor: move;
-  /* Fade out while not hovering */
-  opacity: 0.25;
-  zoom: 0.9;
-  transition: opacity 500ms 1s;
-}
-
-#logo:hover {
-  /* Fade in while hovering */
-  opacity: 0.95;
   transition-delay: 0;
 }
