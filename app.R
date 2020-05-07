@@ -214,9 +214,9 @@ province_plot_cumulative_impact_log2 = function(cv_cases, plot_date, covid, eimp
 # function to plot cumulative COVID cases by date
 cumulative_cases_plot = function(dataset, plot_date) {
     plot_df = subset(dataset, date<=plot_date)
-    g1 = ggplot(data=plot_df[!is.na(plot_df$cases),], aes(x = date, y = cases, color = region)) + geom_line() + geom_point(size = 2, alpha = 0.8) +
-        ylab("Cumulative cases") + xlab("Date") + theme_bw() + scale_colour_manual(values=c(covid_col)) +
-        ylim(0, get_max(dataset$cases)) +
+    g1 = ggplot(data=plot_df[!is.na(plot_df$cases),], aes(x = date, y = cases/1000, color = region)) + geom_line() + geom_point(size = 2, alpha = 0.8) +
+        ylab("Cumulative (x1000)") + xlab("Date") + theme_bw() + scale_colour_manual(values=c(covid_col)) +
+        ylim(0, get_max(dataset$cases/1000)) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=20), axis.text=element_text(size=11),
               axis.title=element_text(size=11,face="bold"), plot.margin = margin(5, 12, 5, 5))
     g1
@@ -224,8 +224,8 @@ cumulative_cases_plot = function(dataset, plot_date) {
 
 new_cases_plot = function(dataset, plot_date) {
     plot_df = subset(dataset, date<=plot_date)
-    g1 = ggplot(data=plot_df[!is.na(plot_df$new_cases),], aes(x = date, y = new_cases, fill = region, text = paste0("Date: ", date , "\n", "Cases: ", cases))) + geom_bar(position="stack", stat="identity") + 
-        ylab("New cases") + xlab("Date") + theme_bw() + scale_fill_manual(values=c(covid_col)) + ylim(0, get_max(dataset$new_cases)) +
+    g1 = ggplot(data=plot_df[!is.na(plot_df$new_cases),], aes(x = date, y = new_cases/1000, fill = region, text = paste0("Date: ", date , "\n", "Cases: ", cases))) + geom_bar(position="stack", stat="identity") + 
+        ylab("New cases (x1000)") + xlab("Date") + theme_bw() + scale_fill_manual(values=c(covid_col)) + ylim(0, get_max(dataset$new_cases/1000)) + scale_y_continuous(labels = scales::number_format(accuracy = 0.1)) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=20), axis.text=element_text(size=11), 
               axis.title=element_text(size=11,face="bold"), plot.margin = margin(5, 12, 5, 5)) 
     g1
