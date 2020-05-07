@@ -1,7 +1,7 @@
 *This do file cleans Ontario COVID data for importing into the dashboard
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 6 May 2020
+*Last updated: 7 May 2020
 
 ********************************************************************************
 
@@ -12,8 +12,9 @@ cd "$MAIN"
 *Set file name for Ontario cases by location data
 global DATA "Public_COVID-19_Canada.xlsx"
 
-*Set file name for total cases and status data to be geocoded
+*Set file name for total cases and status data to be geocoded by region
 global OUTPUT1 "covid_location.csv"
+global OUTPUT1_1 "covid_region.csv"
 
 *Set file name for provincial total cases and status data
 global OUTPUT2 "covid_province.csv"
@@ -647,11 +648,13 @@ tsset address_code date
 tsfill, full
 drop address
 decode address_code, gen(address)
-drop address_code
 
 *Generate region and province for labelling 
-gen region = substr(address, 1, strpos(address, ",")-1)
-gen province = substr(address, strpos(address, ",")+1, .)
+gen region = strtrim(substr(address, 1, strpos(address, ",")-1))
+gen province = strtrim(substr(address, strpos(address, ",")+2, .))
+replace province = region if province == "Canada"
+replace region = "Not Reported" if region == province
+gen healthregion = region + ", " + province
 
 *Generate date string variable for R
 rename date Date
@@ -665,7 +668,9 @@ replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
 replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
 replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
 replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
-drop Date dd mm yy
+
+*Save temporary dataset
+save "$MAIN/location_temp", replace
 
 *Fill in missing variables
 sort address date
@@ -676,6 +681,9 @@ foreach v in cases deaths recovered {
 	replace new_`v' = 0 if day_code == 1 & new_`v' == .
 	replace new_`v' = `v' - `v'[_n-1] if day_code != 1 & new_`v' == .
 }
+
+*Drop unnecessary variables
+drop Date dd mm yy day_code
 
 *Export data
 export delimited "$MAIN/$OUTPUT1", replace
@@ -690,8 +698,98 @@ foreach data in cases deaths recovered {
 }
 
 ********************************************************************************
-************ GENERATE PROVINCIAL AND NATIONAL TIME SERIES DATA SETS ************
+******* GENERATE REGIONAL, PROVINCIAL AND NATIONAL TIME SERIES DATA SETS *******
 ********************************************************************************
+*CREATE REGIONAL DATA SET
+
+*Load temp data set
+use "$MAIN/location_temp", clear
+
+*Rename date variables
+drop dd mm yy
+rename date dateStr
+rename Date date
+
+*Clean variables after merging, fill in missing variables
+sort address_code date
+bysort address: gen day_code = _n
+foreach v in cases deaths recovered {
+	replace `v' = `v'[_n-1] if day_code != 1 & `v' == .
+	replace `v' = 0 if `v' == .
+	replace new_`v' = `v' - `v'[_n-1] if day_code != 1 & new_`v' == .
+}
+
+*Keep only relevant variables
+keep date* day_code province* *region* address* cases new_cases deaths new_deaths recovered new_recovered
+order date* day_code province* *region* address* cases new_cases deaths new_deaths recovered new_recovered
+gen lcases = log(cases)
+gen ldeaths = log(deaths)
+gen lrecovered = log(recovered)
+gen deathrecovered = deaths + recovered
+*gen ldeathrecovered = log(deathrecovered)
+
+*Generate last update
+sort date
+gen last_update = dateStr[_N]
+
+*Generate active cases
+gen active = cases - recovered - deaths
+
+*Set time panel
+tsset address_code date
+
+*************************
+*GENERATE MOVING AVERAGES SERIES
+sort address_code date
+foreach v in cases deaths recovered active {
+	gen `v'mv7 = (1/7) * (`v' + `v'[_n-1] + `v'[_n-2] + `v'[_n-3] + `v'[_n-4] + `v'[_n-5] + `v'[_n-6]) if day_code > 6
+}
+
+*************************
+*GENERATE DYNAMICS DATA SET
+
+*Create active cases lagged 14 & 18 days
+gen active14 = l14.active
+gen active18 = l18.active
+gen lactive14 = log(active14)
+gen lactive18 = log(active18)
+
+*Generate ratios
+gen deathactive14 = deaths/active14 * 100
+gen recoveredactive14 = recovered/active14 * 100
+gen deathrecoveredactive14 = (deaths + recovered)/active14 * 100
+gen deathactive18 = deaths/active18 * 100
+gen recoveredactive18 = recovered/active18 * 100
+gen deathrecoveredactive18 = (deaths + recovered)/active18 * 100
+
+*Create moving average active cases lagged 14 & 18 days
+gen active14mv7 = l14.activemv7
+gen active18mv7 = l18.activemv7
+gen lactive14mv7 = log(active14mv7)
+gen lactive18mv7 = log(active18mv7)
+
+*Generate moving ratios
+gen deathactive14mv7 = deathsmv7/active14mv7 * 100
+gen recoveredactive14mv7 = recoveredmv7/active14mv7 * 100
+gen deathrecoveredactive14mv7 = (deathsmv7 + recoveredmv7)/active14mv7 * 100
+gen deathactive18mv7 = deathsmv7/active18mv7 * 100
+gen recoveredactive18mv7 = recoveredmv7/active18mv7 * 100
+gen deathrecoveredactive18mv7 = (deathsmv7 + recoveredmv7)/active18mv7 * 100
+
+*Drop date variable
+drop date day_code address*
+rename dateStr date
+
+drop if date > last_update
+drop last_update
+
+*Export provincial data
+export delimited "$MAIN/$OUTPUT1_1", replace
+clear
+
+********************************************************************************
+*CREATE PROVINCIAL DATA SET
+
 *CLEAN PROVINCIAL CASES AND DEATHS DATA
 
 *Save Excel sheet names

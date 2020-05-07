@@ -36,6 +36,7 @@ active_col = "#5678b8"
 
 # import data
 cv_cases = read.csv("input_data/covid_geocodes.csv", encoding="UTF-8")
+cv_cases_region = read.csv("input_data/covid_region.csv", encoding="UTF-8")
 cv_cases_province = read.csv("input_data/covid_province.csv")
 cv_cases_canada = read.csv("input_data/covid_canada.csv")
 
@@ -236,6 +237,7 @@ new_cases_plot = function(dataset, plot_date) {
 
 # clean date variables and extract min/max dates in data
 cv_cases$date = as.Date(cv_cases$date,"%Y-%m-%d") 
+cv_cases_region$date = as.Date(cv_cases_region$date,"%Y-%m-%d") 
 cv_cases_province$date = as.Date(cv_cases_province$date,"%Y-%m-%d")
 cv_cases_canada$date = as.Date(cv_cases_canada$date,"%Y-%m-%d")
 geo_min_date = as.Date(min(cv_cases$date),"%Y-%m-%d")
@@ -247,6 +249,9 @@ update = current_date
 
 # map labeling
 cv_cases_canada$region = "Global"
+
+# create health region variable
+# cv_cases_region$healthregion = paste(cv_cases_region$region, cv_cases_region$province, sep=", ")
 
 # create basemap for front page
 basemap = leaflet(options = leafletOptions(zoomControl = FALSE)) %>%
@@ -262,7 +267,7 @@ basemap = leaflet(options = leafletOptions(zoomControl = FALSE)) %>%
 
 # assign colours to provinces to ensure consistency between plots 
 cls = rep(c(brewer.pal(8,"Dark2"), brewer.pal(10, "Paired"), brewer.pal(12, "Set3"), brewer.pal(8,"Set2"), brewer.pal(9, "Set1"), brewer.pal(8, "Accent"),  brewer.pal(9, "Pastel1"),  brewer.pal(8, "Pastel2")),3)
-cls_names = c(as.character(unique(cv_cases_province$province)), as.character(unique(cv_cases_canada$country)))
+cls_names = c(as.character(unique(cv_cases_province$province)), as.character(unique(cv_cases_canada$country)), as.character(unique(cv_cases_region$healthregion)))
 province_cols = cls[1:length(cls_names)]
 names(province_cols) = cls_names
 
@@ -323,11 +328,11 @@ ui <- bootstrapPage(
                             sidebarPanel(
                                 
                                 pickerInput("level_select", "Select region level:",   
-                                            choices = c("Country", "Province"), 
+                                            choices = c("Country", "Province", "Health region"), 
                                             selected = c("Country"),
                                             multiple = FALSE),
                                 
-                                pickerInput("region_select", "Select country/province:",   
+                                pickerInput("region_select", "Select country/province/region:",   
                                             choices = c("Canada"), 
                                             options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
                                             selected = "Canada",
@@ -373,11 +378,11 @@ ui <- bootstrapPage(
                             sidebarPanel(
                                 
                                 pickerInput("level_select_dynamics", "Select region level:",   
-                                            choices = c("Country", "Province"), 
+                                            choices = c("Country", "Province", "Health region"), 
                                             selected = c("Country"),
                                             multiple = FALSE),
                                 
-                                pickerInput("region_select_dynamics", "Select country/province:",   
+                                pickerInput("region_select_dynamics", "Select country/province/region:",   
                                             choices = c("Canada"), 
                                             options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
                                             selected = "Canada",
@@ -428,11 +433,11 @@ ui <- bootstrapPage(
                             sidebarPanel(
                                 
                                 pickerInput("level_select_mv", "Select region level:",   
-                                            choices = c("Country", "Province"), 
+                                            choices = c("Country", "Province", "Health region"), 
                                             selected = c("Country"),
                                             multiple = FALSE),
                                 
-                                pickerInput("region_select_mv", "Select country/province:",   
+                                pickerInput("region_select_mv", "Select country/province/region:",   
                                             choices = c("Canada"), 
                                             options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
                                             selected = "Canada",
@@ -709,15 +714,17 @@ ui <- bootstrapPage(
                
                tabPanel("About",
                         tags$div(
-                            tags$h3("LASTEST UPDATE"), 
-                            h5(paste0(update)),
+                            tags$h3("ABOUT THE DASHBOARD"), 
+                            h5(paste0("Last update: ",update)),
                             "This site is updated once daily. The aim of this site is to complement the resources below by providing several interactive features and metrics currently not available elsewhere for Canada.", tags$br(), tags$br(),
                             "The following resources offer the latest numbers of known cases globally:",tags$br(),
                             tags$a(href="https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd", "WHO COVID-19 dashboard"),tags$br(),
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
                             tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"), tags$br(),tags$br(),
-                            tags$h3("GOVERNMENT STRINGENCY INDEX UPDATE"),
-                            tags$b("May 1:"), "Default stringency index no longer includes financial measures. Coding on cancellations of public events/limitations on public gatherings changed.", tags$br(), tags$br(),
+                            tags$h3("LATEST UPDATES"),
+                            tags$b("May 1:"), "Default government response stringency index no longer includes financial measures. Coding on cancellations of public events/limitations on public gatherings changed.", tags$br(), tags$br(),
+                            tags$b("May 6:"), "Front page map is now graphed based on a time series data set rather than a one-day snapshot. As a result, animated features on the left-panel will also animate the geographic progression of the virus using the map.", tags$br(), tags$br(),
+                            tags$b("May 7:"), "General graphs, dynamics, and moving average dynamics now feature disaggregation at the health region level.", tags$br(), tags$br(),
                             tags$h3("DATA SOURCES"),
                             "Berry, I., Soucy, J.-P. R., Tuite, A., Fisman, D. 14 April 2020.", tags$b("Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada."), "CMAJ 192(15):E420. doi:", tags$a(href="https://doi.org/10.1503/cmaj.75262", "https://doi.org/10.1503/cmaj.75262"), tags$br(), tags$br(),
                             "Hemmadi, M., Syed, F., Schwartz, Z.", tags$b("The Logic's COVID-19 layoffs database."), tags$a(href="https://thelogic.co/news/why-axis/130000-and-counting-tracking-covid-19-layoffs-across-canada/", "Link"), tags$br(), tags$br(),
@@ -731,7 +738,7 @@ ui <- bootstrapPage(
                             tags$br(),tags$br(),tags$h3("AUTHORS"),
                             "Minnie Cui",tags$br(),
                             tags$a(href="mailto:minniehcui@gmail.com", "Email"), tags$br(),tags$br()
-                            #tags$h3("HITHUB"),
+                            #tags$h3("GITHUB"),
                             #"Code and data can be found at the project's ", tags$a(href="https://github.com/minnzc/Canada_COVID19", "GitHub page."), tags$br(), tags$br()
                         )
                )
@@ -827,11 +834,18 @@ server <- function(input, output, session) {
     
     # ------------------------------
     # Province-specific general plots
+    
+    # create reactive dataframe for health regions data
+    reactive_region_db = reactive({
+        cv_cases_region %>% filter(province == input$region_select)
+    })
+    
     # update region selections
     observeEvent(input$level_select, {
         if (input$level_select=="Country") {
             updatePickerInput(session = session, inputId = "region_select", 
-                              choices = c("Canada"), selected = "Canada")
+                              choices = c("Canada"), 
+                              selected = "Canada")
         }
         
         if (input$level_select=="Province") {
@@ -839,6 +853,13 @@ server <- function(input, output, session) {
                               choices = c("Alberta", "British Columbia", "Manitoba", "Newfoundland & Labrador", "New Brunswick", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"), 
                               selected = c( "Ontario", "Quebec", "British Columbia"))
         }
+        
+        if (input$level_select=="Health region") {
+            updatePickerInput(session = session, inputId = "region_select", 
+                              choices = unique(as.character(cv_cases_region[order(cv_cases_region$province),]$healthregion)), 
+                              selected = c("Toronto, Ontario", "Montréal, Quebec", "Vancouver Coastal, British Columbia"))
+        }
+        
     }, ignoreInit = TRUE)
     
     # create dataframe with selected countries
@@ -851,6 +872,11 @@ server <- function(input, output, session) {
         if (input$level_select=="Province") { 
             db = cv_cases_province
             db$region = db$province
+        }
+        
+        if (input$level_select=="Health region") { 
+            db = cv_cases_region
+            db$region = db$healthregion
         }
         
         if (input$outcome_select=="Cases") { 
@@ -897,6 +923,12 @@ server <- function(input, output, session) {
                               choices = c("Alberta", "British Columbia", "Manitoba", "Newfoundland & Labrador", "New Brunswick", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"), 
                               selected = c("Ontario", "Quebec", "British Columbia"))
         }
+        
+        if (input$level_select_dynamics=="Health region") {
+            updatePickerInput(session = session, inputId = "region_select_dynamics", 
+                              choices = unique(as.character(cv_cases_region[order(cv_cases_region$province),]$healthregion)), 
+                              selected = c("Toronto, Ontario", "Montréal, Quebec", "Vancouver Coastal, British Columbia"))
+        }
     }, ignoreInit = TRUE)
     
     # create dataframe with selected countries
@@ -909,6 +941,11 @@ server <- function(input, output, session) {
         if (input$level_select_dynamics=="Province") { 
             db = cv_cases_province
             db$region = db$province
+        }
+        
+        if (input$level_select_dynamics=="Health region") { 
+            db = cv_cases_region
+            db$region = db$healthregion
         }
         
         if (input$outcome_select_dynamics=="Deaths" & input$stat=="18-day") { 
@@ -953,6 +990,11 @@ server <- function(input, output, session) {
             db$region = db$province
         }
         
+        if (input$level_select_dynamics=="Health region") { 
+            db = cv_cases_region
+            db$region = db$healthregion
+        }
+        
         if (input$outcome_select_dynamics=="Deaths") { 
             db$outcome = db$deaths
         }
@@ -986,6 +1028,12 @@ server <- function(input, output, session) {
                               choices = c("Alberta", "British Columbia", "Manitoba", "Newfoundland & Labrador", "New Brunswick", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"), 
                               selected = c("Ontario", "Quebec", "British Columbia"))
         }
+        
+        if (input$level_select_mv=="Health region") {
+            updatePickerInput(session = session, inputId = "region_select_mv", 
+                              choices = unique(as.character(cv_cases_region[order(cv_cases_region$province),]$healthregion)), 
+                              selected = c("Toronto, Ontario", "Montréal, Quebec", "Vancouver Coastal, British Columbia"))
+        }
     }, ignoreInit = TRUE)
     
     # create dataframe with selected countries
@@ -998,6 +1046,11 @@ server <- function(input, output, session) {
         if (input$level_select_mv=="Province") { 
             db = cv_cases_province
             db$region = db$province
+        }
+        
+        if (input$level_select_mv=="Health region") { 
+            db = cv_cases_region
+            db$region = db$healthregion
         }
         
         if (input$outcome_select_mv=="Deaths" & input$stat_mv=="18-day") { 
@@ -1040,6 +1093,11 @@ server <- function(input, output, session) {
         if (input$level_select_mv=="Province") { 
             db = cv_cases_province
             db$region = db$province
+        }
+        
+        if (input$level_select_mv=="Health region") { 
+            db = cv_cases_region
+            db$region = db$healthregion
         }
         
         if (input$outcome_select_mv=="Deaths") { 
