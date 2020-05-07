@@ -482,7 +482,6 @@ ui <- bootstrapPage(
                
                tabPanel("Economic impact",
                         
-                        tags$br(),
                         titlePanel("Mobility"),
                         tags$br(),
                         
@@ -531,6 +530,7 @@ ui <- bootstrapPage(
                             )
                         ),
                         
+                        tags$br(),
                         titlePanel("Consumer Confidence"),
                         tags$br(),
                         

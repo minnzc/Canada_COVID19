@@ -19,8 +19,11 @@ output = "covid_geocodes.csv"
 if(!require(readxl)) install.packages("readxl", repos = "http://cran.us.r-project.org")
 if(!require(ggmap)) install.packages("ggmap", repos = "http://cran.us.r-project.org")
 
-# uncomment the code below to set your Google API key
+# uncomment the code below to set your Google API key permanently
 # register_google(key = "[your key]", write = TRUE)
+
+# uncomment the code below to set your Google API key only for this session
+# register_google(key = "[your key]")
 
 ###################################################################################################
 # MAIN CODE
