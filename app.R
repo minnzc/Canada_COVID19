@@ -525,7 +525,7 @@ ui <- bootstrapPage(
                             mainPanel(
                                 tabsetPanel(
                                     tabPanel("Compare",plotlyOutput("province_plot_cumulative_impact1"), plotlyOutput("province_plot_cumulative_impact2")),
-                                    tabPanel("Compare (log10)", plotlyOutput("province_plot_cumulative_impact_log1"), tags$br(), tags$h5("Please note: log transformations cannot be applied to negative year-on-year percentage changes."))
+                                    tabPanel("Compare (log10)", plotlyOutput("province_plot_cumulative_impact_log1"), plotlyOutput("province_plot_cumulative_impact_log2"), tags$br(), tags$h5("Please note: log transformations cannot be applied to negative percentage changes."))
                                 ), tags$br(), tags$br()
                             )
                         ),
@@ -1386,6 +1386,10 @@ server <- function(input, output, session) {
     
     output$province_plot_cumulative_impact_log1 <- renderPlotly({
         province_plot_cumulative_impact_log1 (country_reactive_db_impact2(), input$plot_date_impact2, covid = input$outcome_select_impact2, eimpact=input$stat_impact2)
+    })
+    
+    output$province_plot_cumulative_impact_log2 <- renderPlotly({
+        province_plot_cumulative_impact_log2 (country_reactive_db_impact2(), input$plot_date_impact2, covid = input$outcome_select_impact2, eimpact=input$stat_impact2)
     })
     
     # ------------------------------
