@@ -644,7 +644,9 @@ merge 1:1 address date using `data', nogen
 *Fill in missing dates
 encode address, gen(address_code)
 tsset address_code date
-tsfill
+tsfill, full
+drop address
+decode address_code, gen(address)
 drop address_code
 
 *Generate region and province for labelling 
