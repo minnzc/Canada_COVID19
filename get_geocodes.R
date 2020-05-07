@@ -1,8 +1,8 @@
 ###################################################################################################
-## Gather geocodes for a list of regions for Canadian nCoV tracker
+## Gather geocodes for a list of regions for Canadian COVID-19 tracker
 ## Written by:   Minnie Cui
 ## Date created: April 14, 2020 
-## Last updated: ---
+## Last updated: May 6, 2020
 ###################################################################################################
 # SET REQUIRED VARIABLES
 
@@ -28,11 +28,18 @@ if(!require(ggmap)) install.packages("ggmap", repos = "http://cran.us.r-project.
 # set file location
 setwd(directory)
 
-# read in insolvency trustees data
+# read in regional data for front page mapping
 cases <- read.csv(file, encoding = "UTF-8", stringsAsFactors=FALSE)
 
+# create subset of addresses and remove duplicates
+addresses <- cases["address"]
+addresses <- unique(addresses)
+
 # set Google API for getting geocodes
-geocodes <- mutate_geocode(cases, address)
+geocodes <- mutate_geocode(addresses, address)
+
+# merge geocodes with regional data 
+final <- merge(cases, geocodes, by="address")
 
 # write final dataset to file
-write.csv(geocodes, output, fileEncoding = "UTF-8")
+write.csv(final, output, fileEncoding = "UTF-8")

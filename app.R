@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 5 May 2020
+## Last updated: 6 May 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -29,12 +29,10 @@ if(!require(shinythemes)) install.packages("shinythemes", repos = "http://cran.u
 
 # set mapping colour for each outbreak
 covid_col = "#cc4c02"
-covid_other_col = "#662506"
+new_col = "#835e8d"
 death_col = "#c20000"
 recovered_col = "#358f3b"
 active_col = "#5678b8"
-active_other_col = "#8756b8"
-deathrecovered_col = "#235927"
 
 # import data
 cv_cases = read.csv("input_data/covid_geocodes.csv", encoding="UTF-8")
@@ -237,10 +235,10 @@ new_cases_plot = function(dataset, plot_date) {
 # DATA PROCESSING
 
 # clean date variables and extract min/max dates in data
-cv_cases_province$date = as.Date(cv_cases_province$date,"%Y-%m-%d") 
-cv_cases_province$last_update = as.Date(cv_cases_province$last_update,"%Y-%m-%d")
+cv_cases$date = as.Date(cv_cases$date,"%Y-%m-%d") 
+cv_cases_province$date = as.Date(cv_cases_province$date,"%Y-%m-%d")
 cv_cases_canada$date = as.Date(cv_cases_canada$date,"%Y-%m-%d")
-cv_cases_canada$last_update = as.Date(cv_cases_canada$last_update,"%Y-%m-%d")
+geo_min_date = as.Date(min(cv_cases$date),"%Y-%m-%d")
 cv_min_date = as.Date(min(cv_cases_canada$date),"%Y-%m-%d")
 current_date = as.Date(max(cv_cases_canada$date),"%Y-%m-%d")
 
@@ -250,41 +248,17 @@ update = current_date
 # map labeling
 cv_cases_canada$region = "Global"
 
-# create labels for basemap
-mlabs <- lapply(seq(nrow(cv_cases)), function(i) {
-    paste("<p>", "Region:", cv_cases[i, "region"], "<p></p>", "Province:", cv_cases[i, "province"], "<p></p>", "Confirmed cases:", cv_cases[i, "cases"], "<p></p>", "Deaths:", cv_cases[i, "deaths"], "<p></p>", "Recovered:", cv_cases[i, "recovered"], "</p>")
-})
-
 # create basemap for front page
 basemap = leaflet(options = leafletOptions(zoomControl = FALSE)) %>%
-    htmlwidgets::onRender("function(el, x) {L.control.zoom({ position: 'bottomright' }).addTo(this)
-    }") %>%
+    htmlwidgets::onRender("function(el, x) {L.control.zoom({ position: 'bottomright' }).addTo(this)}") %>%
     addTiles() %>% 
     addLayersControl(
         position = "bottomright",
-        overlayGroups = c("2019-COVID (cumulative)", "2019-COVID (deaths)", "2019-COVID (recovered)"),
+        overlayGroups = c("2019-COVID (cumulative)", "2019-COVID (new)", "2019-COVID (deaths)", "2019-COVID (recovered)"),
         options = layersControlOptions(collapsed = FALSE)) %>% 
-    hideGroup(c("2019-COVID (deaths)", "2019-COVID (recovered)"))  %>%
+    hideGroup(c("2019-COVID (new)", "2019-COVID (deaths)", "2019-COVID (recovered)"))  %>%
     addProviderTiles(providers$CartoDB.Positron) %>%
-    fitBounds(-105,42,-90,65) %>%
-    addCircleMarkers(data=cv_cases, lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(cases), 
-                     fillOpacity = 0.1, color = covid_col, group = "2019-COVID (cumulative)",
-                     label = lapply(mlabs, htmltools::HTML),
-                     labelOptions = labelOptions(
-                         style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
-                         textsize = "15px", direction = "auto")) %>%
-    addCircleMarkers(data=cv_cases, lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(deaths), 
-                     fillOpacity = 0.1, color = death_col, group = "2019-COVID (deaths)",
-                     label = lapply(mlabs, htmltools::HTML),
-                     labelOptions = labelOptions(
-                         style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
-                         textsize = "15px", direction = "auto")) %>%
-    addCircleMarkers(data=cv_cases, lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(recovered), 
-                     fillOpacity = 0.1, color = recovered_col, group = "2019-COVID (recovered)",
-                     label = lapply(mlabs, htmltools::HTML),
-                     labelOptions = labelOptions(
-                         style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
-                         textsize = "15px", direction = "auto")) 
+    fitBounds(-105,42,-90,65)
 
 # assign colours to provinces to ensure consistency between plots 
 cls = rep(c(brewer.pal(8,"Dark2"), brewer.pal(10, "Paired"), brewer.pal(12, "Set3"), brewer.pal(8,"Set2"), brewer.pal(9, "Set1"), brewer.pal(8, "Accent"),  brewer.pal(9, "Pastel1"),  brewer.pal(8, "Pastel2")),3)
@@ -307,7 +281,7 @@ ui <- bootstrapPage(
                
                # ------------------------------
                # front page panel
-               tabPanel("COVID Map",
+               tabPanel("Map & summary",
                         div(class="outer",
                             tags$head(includeCSS("styles.css")),
                             leafletOutput("mymap", width="100%", height="100%"),
@@ -327,7 +301,7 @@ ui <- bootstrapPage(
                                           
                                           sliderInput("plot_date",
                                                       label = h6("Select mapping date"),
-                                                      min = as.Date(cv_min_date,"%Y-%m-%d"),
+                                                      min = as.Date(geo_min_date,"%Y-%m-%d"),
                                                       max = as.Date(current_date,"%Y-%m-%d"),
                                                       value = as.Date(current_date),
                                                       width = "100%",
@@ -714,7 +688,7 @@ ui <- bootstrapPage(
                # ------------------------------
                # download covid data panel
                
-               tabPanel("COVID Data",
+               tabPanel("COVID-19 Data",
                         tags$br(),
                         titlePanel("Country-level data"),
                         numericInput("maxrows", "Rows to show", 15),
@@ -777,15 +751,15 @@ server <- function(input, output, session) {
     })
     
     reactive_db = reactive({
-        cv_cases_canada %>% filter(date == update)
-    })
-    
-    reactive_db_tot = reactive({
-        cv_cases_canada %>% filter(date == input$plot_date)
+        cv_cases %>% filter(date == input$plot_date)
     })
     
     reactive_db_last24h = reactive({
         cv_cases %>% filter(date == input$plot_date & new_cases>0)
+    })
+    
+    reactive_db_tot = reactive({
+        cv_cases_canada %>% filter(date == input$plot_date)
     })
     
     output$reactive_case_count <- renderText({
@@ -807,6 +781,40 @@ server <- function(input, output, session) {
     # Front page graphs
     output$mymap <- renderLeaflet({ 
         basemap
+    })
+    
+    observeEvent(input$plot_date, {
+        leafletProxy("mymap") %>% 
+            clearMarkers() %>%
+            clearShapes() %>%
+            
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~sqrt(cases), 
+                             fillOpacity = 0.1, color = covid_col, group = "2019-COVID (cumulative)",
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
+                             labelOptions = labelOptions(
+                                 style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
+                                 textsize = "15px", direction = "auto")) %>%
+            
+            addCircleMarkers(data=reactive_db_last24h(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~sqrt(new_cases), 
+                             fillOpacity = 0.1, color = new_col, group = "2019-COVID (new)",
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
+                             labelOptions = labelOptions(
+                                 style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
+                                 textsize = "15px", direction = "auto")) %>%
+            
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(deaths), 
+                             fillOpacity = 0.1, color = death_col, group = "2019-COVID (deaths)",
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
+                             labelOptions = labelOptions(
+                                 style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
+                                 textsize = "15px", direction = "auto")) %>%
+            
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(recovered), 
+                             fillOpacity = 0.1, color = recovered_col, group = "2019-COVID (recovered)",
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
+                             labelOptions = labelOptions(
+                                 style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
+                                 textsize = "15px", direction = "auto")) 
     })
     
     output$epi_curve <- renderPlot({
