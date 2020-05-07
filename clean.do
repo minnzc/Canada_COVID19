@@ -22,7 +22,7 @@ global OUTPUT2 "covid_province.csv"
 *Set file name for national total cases and status data
 global OUTPUT3 "covid_canada.csv"
 
-*Set file name for job losses data
+*Set file name for other data sets file names
 global JOBS "COVID-19 Job Losses.xlsx"
 global FOOD "Year-Over-Year_Percent_Change_in_Restaurant_Reserv_data.csv"
 global UNEM "Unemployment.xlsx"
@@ -32,6 +32,48 @@ global GRST "Govt_Stringency.xlsx"
 global CONF "Economic_Mood_Index_data.csv"
 global CONP "Pocketbook_index_data.csv"
 global CONE "Expectations_Index_data.csv"
+global GOOG "Google_Mobility.csv"
+
+********************************************************************************
+************************** CLEAN GOOGLE MOBILITY DATA **************************
+********************************************************************************
+*CREATE PROVINCIAL AND NATIONAL DATASET
+
+*Save region variable to drop name
+local province_region country
+local canada_region province
+
+*Save condition for keeping observations
+local province_condition "!missing(province)"
+local canada_condition "missing(province)"
+
+*Use loop to clean both data sets
+foreach c in province canada {
+
+*Load data
+import delimited "$MAIN/$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clear
+
+*Keep only necessary variables and observations
+rename country_region country
+rename sub_region_1 province
+ds v1 country_region_code sub_region_2
+drop `r(varlist)'
+keep if country=="Canada"
+
+*Clean numeric variables
+ds country province date, not
+foreach v in `r(varlist)' {
+replace `v' = "" if `v' == "NA"
+}
+destring `r(varlist)', replace
+
+*Keep different observations for provincial and national datasets
+keep if ``c'_condition'
+drop ``c'_region'
+
+*Save for merging later
+save "$MAIN/goog_`c'", replace
+}
 
 ********************************************************************************
 ****************** CLEAN GOVERNMENT RESPONSE VOLUME DATA ***********************
@@ -975,7 +1017,7 @@ drop date day_code province_code
 rename dateStr date
 
 *Merge with layoffs data
-foreach data in layoffs reservations ridership unem grindex grstindex bnccindx bnccexp bnccpbk {
+foreach data in layoffs reservations ridership unem grindex grstindex bnccindx bnccexp bnccpbk goog {
 	merge 1:1 date province using `data'_province, nogen
 }
 
@@ -1070,7 +1112,7 @@ drop date day_code
 rename dateStr date
 
 *Merge with layoffs data
-foreach data in layoffs reservations ridership unem grindex grstindex bnccindx bnccexp bnccpbk {
+foreach data in layoffs reservations ridership unem grindex grstindex bnccindx bnccexp bnccpbk goog {
 	merge 1:1 date country using `data'_canada, nogen
 }
 *Clean variables after merging, fill in missing variables
@@ -1091,7 +1133,7 @@ clear
 *CLEAN UP FILE DIRECTORY
 
 *Remove intermediate datasets from directory
-foreach data in temp location_temp cases deaths recovered layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada {
+foreach data in temp location_temp cases deaths recovered layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada {
 	rm `data'.dta
 }
 

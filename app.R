@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 6 May 2020
+## Last updated: 7 May 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -482,6 +482,55 @@ ui <- bootstrapPage(
                
                tabPanel("Economic impact",
                         
+                        tags$br(),
+                        titlePanel("Mobility"),
+                        tags$br(),
+                        
+                        sidebarLayout(
+                            sidebarPanel(
+                                
+                                pickerInput("level_select_impact2", "Select region level:",   
+                                            choices = c("Country", "Province"), 
+                                            selected = c("Country"),
+                                            multiple = FALSE),
+                                
+                                pickerInput("region_select_impact2", "Select country/province:",   
+                                            choices = c("Canada"), 
+                                            options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
+                                            selected = "Canada",
+                                            multiple = FALSE),
+                                
+                                pickerInput("outcome_select_impact2", "Select y-axis COVID variable:",   
+                                            choices = c("Cases", "Deaths", "Recovered"), 
+                                            selected = c("Cases"),
+                                            multiple = FALSE),
+                                
+                                pickerInput("stat_impact2", "Select economic impact variable:",   
+                                            choices = c("Google Maps Mobility (% change from baseline), retail & recreation","Google Maps Mobility (% change from baseline), grocery & pharmacy", "Google Maps Mobility (% change from baseline), workplaces", "Google Maps Mobility (% change from baseline), transit stations", "Google Maps Mobility (% change from baseline), residential", "Google Maps Mobility (% change from baseline), parks", "OpenTable Reservations (year-on-year % change)", "Transit App Usage (year-on-year % change)"),
+                                            selected = c("Google Maps Mobility (% change from baseline), retail & recreation"),
+                                            multiple = FALSE), 
+                                
+                                "Select mapping date:",
+                                
+                                sliderInput("plot_date_impact2",
+                                            label = "",
+                                            min = as.Date(cv_min_date,"%Y-%m-%d"),
+                                            max = as.Date(current_date,"%Y-%m-%d"),
+                                            value = as.Date(current_date),
+                                            width = "100%",
+                                            timeFormat = "%d %b", 
+                                            animate=animationOptions(interval = 500, loop = FALSE)),
+                                "The graph on the right attempts to illustrate the impact of COVID-19 on people's mobility as a result of social distancing measures."
+                            ),
+                            
+                            mainPanel(
+                                tabsetPanel(
+                                    tabPanel("Compare",plotlyOutput("province_plot_cumulative_impact1"), plotlyOutput("province_plot_cumulative_impact2")),
+                                    tabPanel("Compare (log10)", plotlyOutput("province_plot_cumulative_impact_log1"), tags$br(), tags$h5("Please note: log transformations cannot be applied to negative year-on-year percentage changes."))
+                                ), tags$br(), tags$br()
+                            )
+                        ),
+                        
                         titlePanel("Consumer Confidence"),
                         tags$br(),
                         
@@ -557,9 +606,9 @@ ui <- bootstrapPage(
                                             multiple = FALSE),
                                 
                                 pickerInput("stat_impact", "Select economic impact variable:",   
-                                            choices = c("Layoffs (persons, thousands)", "Unemployment (persons, thousands)", "Unemployment (year-on-year % change)"), 
+                                            choices = c("Unemployment (persons, thousands)", "Unemployment (year-on-year % change)", "Layoffs (persons, thousands)"), 
                                             options = list(`actions-box` = TRUE),
-                                            selected = c("Layoffs (persons, thousands)"),
+                                            selected = c("Unemployment (persons, thousands)"),
                                             multiple = FALSE), 
                                 
                                 "Select mapping date:",
@@ -580,55 +629,6 @@ ui <- bootstrapPage(
                                     tabPanel("Compare", plotlyOutput("province_plot_cumulative_impact_top1"), plotlyOutput("province_plot_cumulative_impact_top2")),
                                     tabPanel("Compare (log10)", plotlyOutput("province_plot_cumulative_impact_log_top1"), plotlyOutput("province_plot_cumulative_impact_log_top2"))
                                 )
-                            )
-                        ),
-                        
-                        tags$br(),
-                        titlePanel("Restaurant & travel industry"),
-                        tags$br(),
-                        
-                        sidebarLayout(
-                            sidebarPanel(
-                                
-                                pickerInput("level_select_impact2", "Select region level:",   
-                                            choices = c("Country", "Province"), 
-                                            selected = c("Country"),
-                                            multiple = FALSE),
-                                
-                                pickerInput("region_select_impact2", "Select country/province:",   
-                                            choices = c("Canada"), 
-                                            options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
-                                            selected = "Canada",
-                                            multiple = FALSE),
-                                
-                                pickerInput("outcome_select_impact2", "Select y-axis COVID variable:",   
-                                            choices = c("Cases", "Deaths", "Recovered"), 
-                                            selected = c("Cases"),
-                                            multiple = FALSE),
-                                
-                                pickerInput("stat_impact2", "Select economic impact variable:",   
-                                            choices = c("OpenTable Reservations (year-on-year % change)", "Transit App Usage (year-on-year % change)"),
-                                            selected = c("OpenTable Reservations (year-on-year % change)"),
-                                            multiple = FALSE), 
-                                
-                                "Select mapping date:",
-                                
-                                sliderInput("plot_date_impact2",
-                                            label = "",
-                                            min = as.Date(cv_min_date,"%Y-%m-%d"),
-                                            max = as.Date(current_date,"%Y-%m-%d"),
-                                            value = as.Date(current_date),
-                                            width = "100%",
-                                            timeFormat = "%d %b", 
-                                            animate=animationOptions(interval = 500, loop = FALSE)),
-                                "The graph on the right attempts to illustrate the impact of COVID-19 on the travel and restaurant industry."
-                            ),
-                            
-                            mainPanel(
-                                tabsetPanel(
-                                    tabPanel("Compare",plotlyOutput("province_plot_cumulative_impact1"), plotlyOutput("province_plot_cumulative_impact2")), tags$br(),
-                                    tabPanel("Compare (log10)", plotlyOutput("province_plot_cumulative_impact_log1"), tags$br(), tags$h5("Please note: log transformations cannot be applied to negative year-on-year percentage changes."))
-                                ), tags$br(), tags$br()
                             )
                         )
                ),
@@ -724,7 +724,8 @@ ui <- bootstrapPage(
                             tags$h3("LATEST UPDATES"),
                             tags$b("May 1:"), "Default government response stringency index no longer includes financial measures. Coding on cancellations of public events/limitations on public gatherings changed.", tags$br(), tags$br(),
                             tags$b("May 6:"), "Front page map is now graphed based on a time series data set rather than a one-day snapshot. As a result, animated features on the left-panel will also animate the geographic progression of the virus using the map.", tags$br(), tags$br(),
-                            tags$b("May 7:"), "General graphs, dynamics, and moving average dynamics now feature disaggregation at the health region level.", tags$br(), tags$br(),
+                            tags$b("May 7:"), "\"General graphs\", \"Dynamics\", and \"Moving average dynamics\" tabs now feature disaggregation at the health region level.", tags$br(), tags$br(),
+                            tags$b("May 7:"), "Google Mobility metrics now available on the \"Economic impact\" tab, under \'Mobility\'.", tags$br(), tags$br(),
                             tags$h3("DATA SOURCES"),
                             "Berry, I., Soucy, J.-P. R., Tuite, A., Fisman, D. 14 April 2020.", tags$b("Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada."), "CMAJ 192(15):E420. doi:", tags$a(href="https://doi.org/10.1503/cmaj.75262", "https://doi.org/10.1503/cmaj.75262"), tags$br(), tags$br(),
                             "Hemmadi, M., Syed, F., Schwartz, Z.", tags$b("The Logic's COVID-19 layoffs database."), tags$a(href="https://thelogic.co/news/why-axis/130000-and-counting-tracking-covid-19-layoffs-across-canada/", "Link"), tags$br(), tags$br(),
@@ -732,6 +733,7 @@ ui <- bootstrapPage(
                             tags$b("OpenTable's state of the restaurant industry database."), tags$a(href="https://www.opentable.com/state-of-industry", "Link"), tags$br(), tags$br(),
                             tags$b("Transit app's frequency of app opens database."), tags$a(href="https://www.transitapp.com/coronavirus", "Link"), tags$br(), tags$br(),
                             tags$b("Bloomberg Nanos Consumer Confidence Index."), tags$a(href="https://www.nanos.co/dataportal/nanos-bloomberg-tracking-methodology/", "Link"), tags$br(),tags$br(),
+                            tags$b("Google COVID-19 Community Mobility Reports."), tags$a(href="https://www.google.com/covid19/mobility/", "Link"), tags$br(),tags$br(),
                             tags$h3("REFERENCES"),
                             "Hale, T., Petherick, A., Phillips, T., Webster, S. 2020.", tags$b("Variation in government responses to COVID-19."), tags$i("Blavatnik School of Government Working Paper Series 2020/031."), tags$a(href="https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker", "Link"), tags$br(), tags$br(),
                             "Verity, R. et al. 2020.", tags$b("Estimates of the severity of coronavirus disease 2019: a model-based analysis."), tags$i("The Lancet: Infectious Diseases."), tags$a(href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30243-7/fulltext", "Link"),
@@ -1338,6 +1340,30 @@ server <- function(input, output, session) {
         if (input$outcome_select_impact2=="Recovered") { 
             db$outcome1 = db$recovered/1000
         }
+        
+        if (input$stat_impact2=="Google Maps Mobility (% change from baseline), retail & recreation") { 
+            db$outcome2 = db$retail_and_recreation_percent_ch
+        }
+        
+        if (input$stat_impact2=="Google Maps Mobility (% change from baseline), grocery & pharmacy") { 
+            db$outcome2 = db$grocery_and_pharmacy_percent_cha
+        }
+        	
+    	if (input$stat_impact2=="Google Maps Mobility (% change from baseline), workplaces") { 
+    	    db$outcome2 = db$workplaces_percent_change_from_b
+    	}
+    	
+    	if (input$stat_impact2=="Google Maps Mobility (% change from baseline), transit stations") { 
+    	    db$outcome2 = db$transit_stations_percent_change_
+    	}
+    	
+    	if (input$stat_impact2=="Google Maps Mobility (% change from baseline), residential") { 
+    	    db$outcome2 = db$residential_percent_change_from_
+    	}
+    	
+    	if (input$stat_impact2=="Google Maps Mobility (% change from baseline), parks") { 
+    	    db$outcome2 = db$parks_percent_change_from_baseli
+    	}
         
         if (input$stat_impact2=="OpenTable Reservations (year-on-year % change)") { 
             db$outcome2 = db$reservations
