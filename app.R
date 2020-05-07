@@ -497,7 +497,7 @@ ui <- bootstrapPage(
                                             choices = c("Canada"), 
                                             options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
                                             selected = "Canada",
-                                            multiple = FALSE),
+                                            multiple = TRUE),
                                 
                                 pickerInput("outcome_select_impact2", "Select y-axis COVID variable:",   
                                             choices = c("Cases", "Deaths", "Recovered"), 
