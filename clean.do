@@ -60,13 +60,6 @@ ds country_region_code sub_region_2
 drop `r(varlist)'
 keep if country=="Canada"
 
-*Clean numeric variables
-ds country province date, not
-foreach v in `r(varlist)' {
-replace `v' = "" if `v' == "NA"
-}
-destring `r(varlist)', replace
-
 *Keep different observations for provincial and national datasets
 keep if ``c'_condition'
 drop ``c'_region'
