@@ -56,7 +56,7 @@ import delimited "$MAIN/$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clea
 *Keep only necessary variables and observations
 rename country_region country
 rename sub_region_1 province
-ds v1 country_region_code sub_region_2
+ds country_region_code sub_region_2
 drop `r(varlist)'
 keep if country=="Canada"
 
