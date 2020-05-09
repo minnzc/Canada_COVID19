@@ -66,7 +66,7 @@ province_plot_cumulative = function(cv_cases, plot_date, ylabel) {
     max_scale = get_max(cv_cases$outcome)
     g1 = ggplot(plot_df, aes(x = date, y = outcome, colour = region, group = 1,
                              text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, ": ",outcome))) +
-        ylim(0, max_scale) + xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 2, alpha = 0.8) +
+        ylim(0, max_scale) + xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
         ylab(paste(ylabel, "(persons, thousands)")) + theme_bw() + 
         scale_colour_manual(values=province_cols) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
@@ -78,7 +78,7 @@ province_plot_cumulative_log = function(cv_cases, plot_date, ylabel) {
     max_scale = get_max(cv_cases$outcome)
     g1 = ggplot(plot_df, aes(x = date, y = outcome, colour = region, group = 1,
                              text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, ": ",outcome))) +
-        xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 2, alpha = 0.8) +
+        xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
         ylab(paste("Log of", ylabel, "(persons, thousands)")) + theme_bw() + xlim(cv_min_date, current_date) +
         scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
@@ -109,7 +109,7 @@ scatter_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
             ylim(0, max_scale) + xlim(0, max_scale) + xlab("Active cases (day t-14)")
     }
     
-    g1 = g + geom_abline(intercept = 0, slope = 1) + geom_point(size = 2, alpha = 0.8) +
+    g1 = g + geom_abline(intercept = 0, slope = 1) + geom_point(size = 1.5, alpha = 0.8) +
         ylab("Y-axis variable (day t)") + theme_bw() + 
         scale_colour_manual(values=province_cols) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
@@ -138,7 +138,7 @@ ratio_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
                                               "\n", "Y-axis variable (day t) per 100 active cases (day t-14): ", outcome))) +
             ylim(0, max_scale) + xlab("Date") + ylab("Y-axis variable (day t) per 100 active cases (day t-14)") 
     }
-    g1 = g + geom_line(alpha=0.8) + geom_point(size = 2, alpha = 0.8) +
+    g1 = g + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
         theme_bw() + scale_colour_manual(values=province_cols) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=9,face="bold"))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
@@ -156,7 +156,7 @@ province_plot_cumulative_impact1 = function(cv_cases, plot_date, covid, eimpact)
                                            "\n", covid, ": ", outcome1,
                                            "\n", eimpact, ": ", outcome2))) +
         geom_line(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), alpha=0.8) + 
-        geom_point(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), size = 2, alpha = 0.8) +
+        geom_point(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), size = 1.5, alpha = 0.8) +
         xlab("Date") + ylab(paste(covid, "(persons, thousands)")) + theme_bw() + scale_colour_manual(values=province_cols) + ylim(0, max_scale1) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     ggplotly(g1, tooltip = c("text"), width = 900, height=400) %>% layout(legend = list(font = list(size=12)))
@@ -172,7 +172,7 @@ province_plot_cumulative_impact2 = function(cv_cases, plot_date, covid, eimpact)
                                            "\n", covid, ": ", outcome1,
                                            "\n", eimpact, ": ", outcome2))) +
         geom_line(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), alpha=0.8) + 
-        geom_point(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), size = 3, alpha = 0.8, shape = 2) +
+        geom_point(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), size = 2.25, alpha = 0.8, shape = 2) +
         xlab("Date") + ylab(eimpact) + theme_bw() + scale_colour_manual(values=province_cols) + ylim(min(min_scale2, 0), max_scale2) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     
@@ -188,7 +188,7 @@ province_plot_cumulative_impact_log1 = function(cv_cases, plot_date, covid, eimp
                                            "\n", covid, ": ", outcome1, 
                                            "\n", eimpact, ": ", outcome2))) +
         geom_line(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), alpha=0.8) + 
-        geom_point(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), size = 2, alpha = 0.8) +
+        geom_point(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), size = 1.5, alpha = 0.8) +
         xlab("Date") + ylab(paste("Log of", covid, "(persons, thousands)")) + theme_bw() + scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
         xlim(cv_min_date, current_date) + theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     
@@ -203,7 +203,7 @@ province_plot_cumulative_impact_log2 = function(cv_cases, plot_date, covid, eimp
                                            "\n", covid, ": ", outcome1, 
                                            "\n", eimpact, ": ", outcome2))) +
         geom_line(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), alpha=0.8) + 
-        geom_point(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), size = 3, alpha = 0.8, shape = 2) + xlim(cv_min_date, current_date) +
+        geom_point(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), size = 2.25, alpha = 0.8, shape = 2) + xlim(cv_min_date, current_date) +
         xlab("Date") + ylab(paste("Log of", eimpact)) + theme_bw() + scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
         xlim(cv_min_date, current_date) + theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     
@@ -215,7 +215,7 @@ province_plot_cumulative_impact_log2 = function(cv_cases, plot_date, covid, eimp
 # function to plot cumulative COVID cases by date
 cumulative_cases_plot = function(dataset, plot_date) {
     plot_df = subset(dataset, date<=plot_date)
-    g1 = ggplot(data=plot_df[!is.na(plot_df$cases),], aes(x = date, y = cases/1000, color = region)) + geom_line() + geom_point(size = 2, alpha = 0.8) +
+    g1 = ggplot(data=plot_df[!is.na(plot_df$cases),], aes(x = date, y = cases/1000, color = region)) + geom_line() + geom_point(size = 1.5, alpha = 0.8) +
         ylab("Cumulative (x1000)") + xlab("Date") + theme_bw() + scale_colour_manual(values=c(covid_col)) +
         ylim(0, get_max(dataset$cases/1000)) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=20), axis.text=element_text(size=11),
@@ -583,7 +583,7 @@ ui <- bootstrapPage(
                         ),
                         
                         tags$br(),
-                        titlePanel("General unemployment"),
+                        titlePanel("Unemployment"),
                         tags$br(),
                         
                         sidebarLayout(
