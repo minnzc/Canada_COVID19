@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 7 May 2020
+## Last updated: 8 May 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -54,7 +54,7 @@ province_plot_new = function(cv_cases, plot_date, ylabel) {
     g1 = ggplot(plot_df, aes(x = date, y = new_outcome, fill = region, group = 1,
                              text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "Y-axis value: ",new_outcome))) +
         ylim(0, max_scale) + xlab("Date") + geom_bar(position="stack", stat="identity") + 
-        ylab(ylabel) + theme_bw() + scale_fill_manual(values=province_cols) + 
+        ylab(ylabel) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
@@ -68,7 +68,7 @@ province_plot_cumulative = function(cv_cases, plot_date, ylabel) {
                              text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, ": ",outcome))) +
         ylim(0, max_scale) + xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 2, alpha = 0.8) +
         ylab(paste(ylabel, "(persons, thousands)")) + theme_bw() + 
-        scale_colour_manual(values=province_cols) +
+        scale_colour_manual(values=province_cols) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
@@ -79,7 +79,7 @@ province_plot_cumulative_log = function(cv_cases, plot_date, ylabel) {
     g1 = ggplot(plot_df, aes(x = date, y = outcome, colour = region, group = 1,
                              text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, ": ",outcome))) +
         xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 2, alpha = 0.8) +
-        ylab(paste("Log of", ylabel, "(persons, thousands)")) + theme_bw() + 
+        ylab(paste("Log of", ylabel, "(persons, thousands)")) + theme_bw() + xlim(cv_min_date, current_date) +
         scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
@@ -123,7 +123,7 @@ ratio_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
     
     if (lag=="18-day") {
         max_scale = max(get_max(cv_cases$outcome))
-        g = ggplot(plot_df, aes(x = date, y = outcome, colour = region, group = 1,
+        g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
                                               "\n", "Y-axis variable (day t) per 100 active cases (day t-18): ", outcome))) +
@@ -132,14 +132,14 @@ ratio_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
     
     if (lag=="14-day") {
         max_scale = max(get_max(cv_cases$outcome))
-        g = ggplot(plot_df, aes(x = date, y = outcome, colour = region, group = 1,
+        g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
                                               "\n", "Y-axis variable (day t) per 100 active cases (day t-14): ", outcome))) +
             ylim(0, max_scale) + xlab("Date") + ylab("Y-axis variable (day t) per 100 active cases (day t-14)") 
     }
     g1 = g + geom_line(alpha=0.8) + geom_point(size = 2, alpha = 0.8) +
-        theme_bw() + scale_colour_manual(values=province_cols) +
+        theme_bw() + scale_colour_manual(values=province_cols) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=9,face="bold"))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
@@ -157,7 +157,7 @@ province_plot_cumulative_impact1 = function(cv_cases, plot_date, covid, eimpact)
                                            "\n", eimpact, ": ", outcome2))) +
         geom_line(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), alpha=0.8) + 
         geom_point(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), size = 2, alpha = 0.8) +
-        xlab("Date") + ylab(paste(covid, "(persons, thousands)")) + theme_bw() + scale_colour_manual(values=province_cols) + ylim(0, max_scale1) +
+        xlab("Date") + ylab(paste(covid, "(persons, thousands)")) + theme_bw() + scale_colour_manual(values=province_cols) + ylim(0, max_scale1) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     ggplotly(g1, tooltip = c("text"), width = 900, height=400) %>% layout(legend = list(font = list(size=12)))
 }
@@ -190,7 +190,7 @@ province_plot_cumulative_impact_log1 = function(cv_cases, plot_date, covid, eimp
         geom_line(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), alpha=0.8) + 
         geom_point(data=plot_df[!is.na(plot_df$outcome1),], aes(colour = region, group = 1), size = 2, alpha = 0.8) +
         xlab("Date") + ylab(paste("Log of", covid, "(persons, thousands)")) + theme_bw() + scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
-        theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
+        xlim(cv_min_date, current_date) + theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=12)))
 }
@@ -205,7 +205,7 @@ province_plot_cumulative_impact_log2 = function(cv_cases, plot_date, covid, eimp
         geom_line(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), alpha=0.8) + 
         geom_point(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), size = 3, alpha = 0.8, shape = 2) + xlim(cv_min_date, current_date) +
         xlab("Date") + ylab(paste("Log of", eimpact)) + theme_bw() + scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
-        theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
+        xlim(cv_min_date, current_date) + theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=12)))
 }
@@ -797,28 +797,28 @@ server <- function(input, output, session) {
             clearMarkers() %>%
             clearShapes() %>%
             
-            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~sqrt(cases), 
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~sqrt(cases+10), 
                              fillOpacity = 0.1, color = covid_col, group = "2019-COVID (cumulative)",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
-            addCircleMarkers(data=reactive_db_last24h(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~sqrt(new_cases), 
+            addCircleMarkers(data=reactive_db_last24h(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~sqrt(new_cases+10), 
                              fillOpacity = 0.1, color = new_col, group = "2019-COVID (new)",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
-            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(deaths), 
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(deaths+10), 
                              fillOpacity = 0.1, color = death_col, group = "2019-COVID (deaths)",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
-            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(recovered), 
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(recovered+10), 
                              fillOpacity = 0.1, color = recovered_col, group = "2019-COVID (recovered)",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(

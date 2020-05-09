@@ -1,7 +1,7 @@
 *This do file cleans Ontario COVID data for importing into the dashboard
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 7 May 2020
+*Last updated: 8 May 2020
 
 ********************************************************************************
 
@@ -59,6 +59,7 @@ rename sub_region_1 province
 ds country_region_code sub_region_2
 drop `r(varlist)'
 keep if country=="Canada"
+replace province = "Newfoundland & Labrador" if province == "Newfoundland and Labrador"
 
 *Keep different observations for provincial and national datasets
 keep if ``c'_condition'
@@ -554,7 +555,7 @@ gen province = ""
 replace province = "Ontario" if city == "Toronto"
 replace province = "Ontario" if city == "Ottawa"
 replace province = "Alberta" if city == "Calgary"
-replace province = "Quebec" if city == "Montr�al"
+replace province = "Quebec" if city == "Montréal"
 replace province = "British Columbia" if city == "Vancouver"
 
 *Collapse to province level data
@@ -957,10 +958,6 @@ gen deathrecovered = deaths + recovered
 *Save intermediate dataset
 save "$MAIN/temp", replace
 
-*Generate last update
-sort date
-gen last_update = dateStr[_N]
-
 *Generate active cases
 gen active = cases - recovered - deaths
 
@@ -1024,9 +1021,7 @@ foreach v in cases deaths recovered {
 	replace `v' = `v'[_n-1] if day_code != 1 & `v' == .
 	replace new_`v' = `v' - `v'[_n-1] if day_code != 1 & new_`v' == .
 }
-
-drop if date > last_update
-drop province_code day_code last_update
+drop province_code day_code 
 
 *Export provincial data
 export delimited "$MAIN/$OUTPUT2", replace
@@ -1050,10 +1045,6 @@ gen ldeaths = log(deaths)
 gen lrecovered = log(recovered)
 gen deathrecovered = deaths + recovered
 *gen ldeathrecovered = log(deathrecovered)
-
-*Generate last update
-sort date
-gen last_update = dateStr[_N]
 
 *Generate active cases
 gen active = cases - recovered - deaths
@@ -1114,8 +1105,6 @@ foreach v in cases deaths recovered {
 	replace `v' = `v'[_n-1] if _n != 1 & `v' == .
 	replace new_`v' = `v' - `v'[_n-1] if _n != 1 & new_`v' == .
 }
-drop if date > last_update
-drop last_update
 
 *Export national data
 export delimited "$MAIN/$OUTPUT3", replace
