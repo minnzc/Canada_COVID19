@@ -1,8 +1,11 @@
-*This do file cleans Ontario COVID data for importing into the dashboard
+*This do file cleans Canada COVID data for importing into the dashboard
+
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
 *Last updated: 8 May 2020
 
+********************************************************************************
+************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
 ********************************************************************************
 
 *Set file location and file name
