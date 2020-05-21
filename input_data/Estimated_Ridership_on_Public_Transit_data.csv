@@ -52,6 +52,7 @@ Brampton Transit,Canada,-80,Toronto,Toronto,04/06/2020,-75
 Brampton Transit,Canada,-82,Toronto,Toronto,04/07/2020,-78
 Brampton Transit,Canada,-82,Toronto,Toronto,04/08/2020,-78
 Brampton Transit,Canada,-82,Toronto,Toronto,04/09/2020,-78
+Brampton Transit,Canada,-84,Toronto,Toronto,04/10/2020,-84
 Brampton Transit,Canada,-80,Toronto,Toronto,04/11/2020,-77
 Brampton Transit,Canada,-80,Toronto,Toronto,04/12/2020,-77
 Brampton Transit,Canada,-80,Toronto,Toronto,4/13/2020,-74
@@ -144,6 +145,7 @@ Burlington Transit,Canada,-80,Toronto,Toronto,04/06/2020,-76
 Burlington Transit,Canada,-82,Toronto,Toronto,04/07/2020,-79
 Burlington Transit,Canada,-82,Toronto,Toronto,04/08/2020,-78
 Burlington Transit,Canada,-82,Toronto,Toronto,04/09/2020,-77
+Burlington Transit,Canada,-84,Toronto,Toronto,04/10/2020,-80
 Burlington Transit,Canada,-80,Toronto,Toronto,04/11/2020,-75
 Burlington Transit,Canada,-80,Toronto,Toronto,04/12/2020,-77
 Burlington Transit,Canada,-80,Toronto,Toronto,4/13/2020,-77
@@ -236,6 +238,7 @@ MiWay,Canada,-80,Toronto,Toronto,04/06/2020,-78
 MiWay,Canada,-82,Toronto,Toronto,04/07/2020,-80
 MiWay,Canada,-82,Toronto,Toronto,04/08/2020,-81
 MiWay,Canada,-82,Toronto,Toronto,04/09/2020,-80
+MiWay,Canada,-84,Toronto,Toronto,04/10/2020,-85
 MiWay,Canada,-80,Toronto,Toronto,04/11/2020,-80
 MiWay,Canada,-80,Toronto,Toronto,04/12/2020,-80
 MiWay,Canada,-80,Toronto,Toronto,4/13/2020,-77
@@ -328,6 +331,7 @@ Oakville Transit,Canada,-80,Toronto,Toronto,04/06/2020,-80
 Oakville Transit,Canada,-82,Toronto,Toronto,04/07/2020,-82
 Oakville Transit,Canada,-82,Toronto,Toronto,04/08/2020,-84
 Oakville Transit,Canada,-82,Toronto,Toronto,04/09/2020,-83
+Oakville Transit,Canada,-84,Toronto,Toronto,04/10/2020,-88
 Oakville Transit,Canada,-80,Toronto,Toronto,04/11/2020,-83
 Oakville Transit,Canada,-80,Toronto,Toronto,04/12/2020,-83
 Oakville Transit,Canada,-80,Toronto,Toronto,4/13/2020,-81
@@ -420,6 +424,7 @@ TTC - Buses & Streetcars,Canada,-80,Toronto,Toronto,04/06/2020,-76
 TTC - Buses & Streetcars,Canada,-82,Toronto,Toronto,04/07/2020,-79
 TTC - Buses & Streetcars,Canada,-82,Toronto,Toronto,04/08/2020,-80
 TTC - Buses & Streetcars,Canada,-82,Toronto,Toronto,04/09/2020,-79
+TTC - Buses & Streetcars,Canada,-84,Toronto,Toronto,04/10/2020,-81
 TTC - Buses & Streetcars,Canada,-80,Toronto,Toronto,04/11/2020,-77
 TTC - Buses & Streetcars,Canada,-80,Toronto,Toronto,04/12/2020,-78
 TTC - Buses & Streetcars,Canada,-80,Toronto,Toronto,4/13/2020,-78
@@ -512,6 +517,7 @@ TTC - Subway,Canada,-80,Toronto,Toronto,04/06/2020,-81
 TTC - Subway,Canada,-82,Toronto,Toronto,04/07/2020,-83
 TTC - Subway,Canada,-82,Toronto,Toronto,04/08/2020,-84
 TTC - Subway,Canada,-82,Toronto,Toronto,04/09/2020,-83
+TTC - Subway,Canada,-84,Toronto,Toronto,04/10/2020,-83
 TTC - Subway,Canada,-80,Toronto,Toronto,04/11/2020,-82
 TTC - Subway,Canada,-80,Toronto,Toronto,04/12/2020,-82
 TTC - Subway,Canada,-80,Toronto,Toronto,4/13/2020,-82
@@ -604,6 +610,7 @@ UP Express,Canada,-80,Toronto,Toronto,04/06/2020,-80
 UP Express,Canada,-82,Toronto,Toronto,04/07/2020,-81
 UP Express,Canada,-82,Toronto,Toronto,04/08/2020,-82
 UP Express,Canada,-82,Toronto,Toronto,04/09/2020,-83
+UP Express,Canada,-84,Toronto,Toronto,04/10/2020,-80
 UP Express,Canada,-80,Toronto,Toronto,04/11/2020,-82
 UP Express,Canada,-80,Toronto,Toronto,04/12/2020,-82
 UP Express,Canada,-80,Toronto,Toronto,4/13/2020,-83
@@ -696,6 +703,7 @@ York Region Transit,Canada,-80,Toronto,Toronto,04/06/2020,-75
 York Region Transit,Canada,-82,Toronto,Toronto,04/07/2020,-78
 York Region Transit,Canada,-82,Toronto,Toronto,04/08/2020,-79
 York Region Transit,Canada,-82,Toronto,Toronto,04/09/2020,-79
+York Region Transit,Canada,-84,Toronto,Toronto,04/10/2020,-84
 York Region Transit,Canada,-80,Toronto,Toronto,04/11/2020,-80
 York Region Transit,Canada,-80,Toronto,Toronto,04/12/2020,-79
 York Region Transit,Canada,-80,Toronto,Toronto,4/13/2020,-77
@@ -787,6 +795,7 @@ Durham Region Transit,Canada,-80,Toronto,Toronto,04/06/2020,-83
 Durham Region Transit,Canada,-82,Toronto,Toronto,04/07/2020,-84
 Durham Region Transit,Canada,-82,Toronto,Toronto,04/08/2020,-84
 Durham Region Transit,Canada,-82,Toronto,Toronto,04/09/2020,-83
+Durham Region Transit,Canada,-84,Toronto,Toronto,04/10/2020,-84
 Durham Region Transit,Canada,-80,Toronto,Toronto,04/11/2020,-76
 Durham Region Transit,Canada,-80,Toronto,Toronto,04/12/2020,-79
 Durham Region Transit,Canada,-80,Toronto,Toronto,4/13/2020,-83
@@ -878,6 +887,7 @@ Hamilton Street Railway,Canada,-80,Toronto,Toronto,04/06/2020,-77
 Hamilton Street Railway,Canada,-82,Toronto,Toronto,04/07/2020,-80
 Hamilton Street Railway,Canada,-82,Toronto,Toronto,04/08/2020,-78
 Hamilton Street Railway,Canada,-82,Toronto,Toronto,04/09/2020,-78
+Hamilton Street Railway,Canada,-84,Toronto,Toronto,04/10/2020,-81
 Hamilton Street Railway,Canada,-80,Toronto,Toronto,04/11/2020,-74
 Hamilton Street Railway,Canada,-80,Toronto,Toronto,04/12/2020,-78
 Hamilton Street Railway,Canada,-80,Toronto,Toronto,4/13/2020,-79
@@ -968,6 +978,7 @@ GO Transit,Canada,-80,Toronto,Toronto,04/06/2020,-79
 GO Transit,Canada,-82,Toronto,Toronto,04/07/2020,-82
 GO Transit,Canada,-82,Toronto,Toronto,04/08/2020,-82
 GO Transit,Canada,-82,Toronto,Toronto,04/09/2020,-82
+GO Transit,Canada,-84,Toronto,Toronto,04/10/2020,-85
 GO Transit,Canada,-80,Toronto,Toronto,04/11/2020,-80
 GO Transit,Canada,-80,Toronto,Toronto,04/12/2020,-80
 GO Transit,Canada,-80,Toronto,Toronto,4/13/2020,-79
