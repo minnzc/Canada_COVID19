@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 8 May 2020
+*Last updated: 11 June 2020
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -36,6 +36,7 @@ global CONF "Economic_Mood_Index_data.csv"
 global CONP "Pocketbook_index_data.csv"
 global CONE "Expectations_Index_data.csv"
 global GOOG "Google_Mobility.csv"
+global POP "Population.csv"
 
 ********************************************************************************
 ************************** CLEAN GOOGLE MOBILITY DATA **************************
@@ -472,6 +473,75 @@ clear
 }
 
 ********************************************************************************
+************************** CLEAN POPULATION DATA *******************************
+********************************************************************************
+*Create provincial data set
+*Load data
+import delimited "$MAIN/$POP", bindq(strict) encoding("UTF-8") varn(1) clear
+
+*Keep relevant variables
+keep province pop
+replace province = "British Columbia" if province == "BC"
+replace province = "Newfoundland & Labrador" if province == "NL"
+replace province = "Northwest Territories" if province == "NWT"
+replace province = "Prince Edward Island" if province == "PEI"
+
+*Generate sum by province
+collapse(sum) pop, by(province) fast
+
+*Save for merge
+save "$MAIN/pop_province", replace
+
+*Generate health region
+gen healthregion = "Not Reported, " + province
+drop province
+
+*Save for append
+save "$MAIN/pop_province_nr", replace
+
+*************************
+*Create regional data set
+*Load data
+import delimited "$MAIN/$POP", bindq(strict) encoding("UTF-8") varn(1) clear
+
+*Recode province names
+rename healthregion region
+replace province = "British Columbia" if province == "BC"
+replace province = "Newfoundland & Labrador" if province == "NL"
+replace province = "Northwest Territories" if province == "NWT"
+replace province = "Prince Edward Island" if province == "PEI"
+drop if region == "NWT" & province == "Northwest Territories"
+drop if region == "Yukon" & province == "Yukon"
+drop if region == "Nunavut" & province == "Nunavut"
+drop if region == "Prince Edward Island" & province == "Prince Edward Island"
+drop if region == "Interior" & province == "British Columbia"
+
+*Keep relevant variables
+gen healthregion = region + ", " + province
+keep healthregion pop
+
+*Append
+append using "$MAIN/pop_province_nr"
+rm "$MAIN/pop_province_nr.dta"
+
+*Save for merge
+save "$MAIN/pop_region", replace
+
+*************************
+*Create national data set
+*Load data
+import delimited "$MAIN/$POP", bindq(strict) encoding("UTF-8") varn(1) clear
+
+*Keep relevant variables
+gen country = "Canada"
+
+*Generate sum by country
+collapse(sum) pop, by(country) fast
+
+*Save for merge
+save "$MAIN/pop_canada", replace
+
+********************************************************************************
 ******************** CLEAN RESTUARANT RESERVATIONS DATA ************************
 ********************************************************************************
 *CREATE PROVINCIAL AND NATIONAL DATASET
@@ -695,6 +765,11 @@ replace province = region if province == "Canada"
 replace region = "Not Reported" if region == province
 gen healthregion = region + ", " + province
 
+*Merge population data
+merge m:1 healthregion using pop_region
+drop if _merge == 2
+drop _merge
+
 *Generate date string variable for R
 rename date Date
 gen dd = day(Date)
@@ -723,6 +798,12 @@ foreach v in cases deaths recovered {
 
 *Drop unnecessary variables
 drop Date dd mm yy day_code
+
+*Generate per capita variables
+gen casespc = cases/pop
+gen new_casespc = new_cases/pop
+gen deathspc = deaths/pop
+gen recoveredpc = recovered/pop
 
 *Export data
 export delimited "$MAIN/$OUTPUT1", replace
@@ -761,9 +842,22 @@ foreach v in cases deaths recovered {
 *Keep only relevant variables
 keep date* day_code province* *region* address* cases new_cases deaths new_deaths recovered new_recovered
 order date* day_code province* *region* address* cases new_cases deaths new_deaths recovered new_recovered
+
+*Merge population data
+merge m:1 healthregion using pop_region
+drop if _merge == 2
+drop _merge
+
+*Generate some interesting variables
 gen lcases = log(cases)
 gen ldeaths = log(deaths)
 gen lrecovered = log(recovered)
+gen casespc = cases/pop
+gen deathspc = deaths/pop
+gen recoveredpc = recovered/pop
+gen new_casespc = new_cases/pop
+gen new_deathspc = new_deaths/pop
+gen new_recoveredpc = new_recovered/pop
 gen deathrecovered = deaths + recovered
 *gen ldeathrecovered = log(deathrecovered)
 
@@ -794,12 +888,12 @@ gen lactive14 = log(active14)
 gen lactive18 = log(active18)
 
 *Generate ratios
-gen deathactive14 = deaths/active14 * 100
-gen recoveredactive14 = recovered/active14 * 100
-gen deathrecoveredactive14 = (deaths + recovered)/active14 * 100
-gen deathactive18 = deaths/active18 * 100
-gen recoveredactive18 = recovered/active18 * 100
-gen deathrecoveredactive18 = (deaths + recovered)/active18 * 100
+gen deathactive14 = deaths/active14 * 1000
+gen recoveredactive14 = recovered/active14 * 1000
+gen deathrecoveredactive14 = (deaths + recovered)/active14 * 1000
+gen deathactive18 = deaths/active18 * 1000
+gen recoveredactive18 = recovered/active18 * 1000
+gen deathrecoveredactive18 = (deaths + recovered)/active18 * 1000
 
 *Create moving average active cases lagged 14 & 18 days
 gen active14mv7 = l14.activemv7
@@ -808,12 +902,12 @@ gen lactive14mv7 = log(active14mv7)
 gen lactive18mv7 = log(active18mv7)
 
 *Generate moving ratios
-gen deathactive14mv7 = deathsmv7/active14mv7 * 100
-gen recoveredactive14mv7 = recoveredmv7/active14mv7 * 100
-gen deathrecoveredactive14mv7 = (deathsmv7 + recoveredmv7)/active14mv7 * 100
-gen deathactive18mv7 = deathsmv7/active18mv7 * 100
-gen recoveredactive18mv7 = recoveredmv7/active18mv7 * 100
-gen deathrecoveredactive18mv7 = (deathsmv7 + recoveredmv7)/active18mv7 * 100
+gen deathactive14mv7 = deathsmv7/active14mv7 * 1000
+gen recoveredactive14mv7 = recoveredmv7/active14mv7 * 1000
+gen deathrecoveredactive14mv7 = (deathsmv7 + recoveredmv7)/active14mv7 * 1000
+gen deathactive18mv7 = deathsmv7/active18mv7 * 1000
+gen recoveredactive18mv7 = recoveredmv7/active18mv7 * 1000
+gen deathrecoveredactive18mv7 = (deathsmv7 + recoveredmv7)/active18mv7 * 1000
 
 *Drop date variable
 drop date day_code address*
@@ -952,14 +1046,27 @@ replace dateStr = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strl
 *Keep only relevant variables
 keep date* day_code province* cases new_cases deaths new_deaths recovered new_recovered
 order date* day_code province* cases new_cases deaths new_deaths recovered new_recovered
+
+*Merge with population data
+merge m:1 province using pop_province
+drop if _merge == 2
+drop _merge
+
+*Save intermediate dataset
+save "$MAIN/temp", replace
+
+*Generate some interesting variables
+gen casespc = cases/pop
+gen deathspc = deaths/pop
+gen recoveredpc = recovered/pop
+gen new_casespc = new_cases/pop
+gen new_deathspc = new_deaths/pop
+gen new_recoveredpc = new_recovered/pop
 gen lcases = log(cases)
 gen ldeaths = log(deaths)
 gen lrecovered = log(recovered)
 gen deathrecovered = deaths + recovered
 *gen ldeathrecovered = log(deathrecovered)
-
-*Save intermediate dataset
-save "$MAIN/temp", replace
 
 *Generate active cases
 gen active = cases - recovered - deaths
@@ -984,12 +1091,12 @@ gen lactive14 = log(active14)
 gen lactive18 = log(active18)
 
 *Generate ratios
-gen deathactive14 = deaths/active14 * 100
-gen recoveredactive14 = recovered/active14 * 100
-gen deathrecoveredactive14 = (deaths + recovered)/active14 * 100
-gen deathactive18 = deaths/active18 * 100
-gen recoveredactive18 = recovered/active18 * 100
-gen deathrecoveredactive18 = (deaths + recovered)/active18 * 100
+gen deathactive14 = deaths/active14 * 1000
+gen recoveredactive14 = recovered/active14 * 1000
+gen deathrecoveredactive14 = (deaths + recovered)/active14 * 1000
+gen deathactive18 = deaths/active18 * 1000
+gen recoveredactive18 = recovered/active18 * 1000
+gen deathrecoveredactive18 = (deaths + recovered)/active18 * 1000
 
 *Create moving average active cases lagged 14 & 18 days
 gen active14mv7 = l14.activemv7
@@ -998,12 +1105,12 @@ gen lactive14mv7 = log(active14mv7)
 gen lactive18mv7 = log(active18mv7)
 
 *Generate moving ratios
-gen deathactive14mv7 = deathsmv7/active14mv7 * 100
-gen recoveredactive14mv7 = recoveredmv7/active14mv7 * 100
-gen deathrecoveredactive14mv7 = (deathsmv7 + recoveredmv7)/active14mv7 * 100
-gen deathactive18mv7 = deathsmv7/active18mv7 * 100
-gen recoveredactive18mv7 = recoveredmv7/active18mv7 * 100
-gen deathrecoveredactive18mv7 = (deathsmv7 + recoveredmv7)/active18mv7 * 100
+gen deathactive14mv7 = deathsmv7/active14mv7 * 1000
+gen recoveredactive14mv7 = recoveredmv7/active14mv7 * 1000
+gen deathrecoveredactive14mv7 = (deathsmv7 + recoveredmv7)/active14mv7 * 1000
+gen deathactive18mv7 = deathsmv7/active18mv7 * 1000
+gen recoveredactive18mv7 = recoveredmv7/active18mv7 * 1000
+gen deathrecoveredactive18mv7 = (deathsmv7 + recoveredmv7)/active18mv7 * 1000
 
 *Drop date variable
 drop date day_code province_code
@@ -1043,6 +1150,19 @@ gen country = "Canada"
 *Aggregate cases to national level
 ds cases deaths recovered new*
 collapse(sum) `r(varlist)', by(date dateStr country)
+
+*Merge with population data
+merge m:1 country using pop_canada
+drop if _merge == 2
+drop _merge
+
+*Generate some interesting variables
+gen casespc = cases/pop
+gen deathspc = deaths/pop
+gen recoveredpc = new_recovered/pop
+gen new_casespc = new_cases/pop
+gen new_deathspc = new_deaths/pop
+gen new_recoveredpc = recovered/pop
 gen lcases = log(cases)
 gen ldeaths = log(deaths)
 gen lrecovered = log(recovered)
@@ -1073,12 +1193,12 @@ gen lactive14 = log(active14)
 gen lactive18 = log(active18)
 
 *Generate ratios
-gen deathactive14 = deaths/active14 * 100
-gen recoveredactive14 = recovered/active14 * 100
-gen deathrecoveredactive14 = (deaths + recovered)/active14 * 100
-gen deathactive18 = deaths/active18 * 100
-gen recoveredactive18 = recovered/active18 * 100
-gen deathrecoveredactive18 = (deaths + recovered)/active18 * 100
+gen deathactive14 = deaths/active14 * 1000
+gen recoveredactive14 = recovered/active14 * 1000
+gen deathrecoveredactive14 = (deaths + recovered)/active14 * 1000
+gen deathactive18 = deaths/active18 * 1000
+gen recoveredactive18 = recovered/active18 * 1000
+gen deathrecoveredactive18 = (deaths + recovered)/active18 * 1000
 
 *Create moving average active cases lagged 14 & 18 days
 gen active14mv7 = l14.activemv7
@@ -1087,12 +1207,12 @@ gen lactive14mv7 = log(active14mv7)
 gen lactive18mv7 = log(active18mv7)
 
 *Generate moving ratios
-gen deathactive14mv7 = deathsmv7/active14mv7 * 100
-gen recoveredactive14mv7 = recoveredmv7/active14mv7 * 100
-gen deathrecoveredactive14mv7 = (deathsmv7 + recoveredmv7)/active14mv7 * 100
-gen deathactive18mv7 = deathsmv7/active18mv7 * 100
-gen recoveredactive18mv7 = recoveredmv7/active18mv7 * 100
-gen deathrecoveredactive18mv7 = (deathsmv7 + recoveredmv7)/active18mv7 * 100
+gen deathactive14mv7 = deathsmv7/active14mv7 * 1000
+gen recoveredactive14mv7 = recoveredmv7/active14mv7 * 1000
+gen deathrecoveredactive14mv7 = (deathsmv7 + recoveredmv7)/active14mv7 * 1000
+gen deathactive18mv7 = deathsmv7/active18mv7 * 1000
+gen recoveredactive18mv7 = recoveredmv7/active18mv7 * 1000
+gen deathrecoveredactive18mv7 = (deathsmv7 + recoveredmv7)/active18mv7 * 1000
 
 *Drop date variable
 drop date day_code
@@ -1118,7 +1238,7 @@ clear
 *CLEAN UP FILE DIRECTORY
 
 *Remove intermediate datasets from directory
-foreach data in temp location_temp cases deaths recovered layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada {
+foreach data in temp location_temp cases deaths recovered layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada pop_region pop_province pop_canada {
 	rm `data'.dta
 }
 

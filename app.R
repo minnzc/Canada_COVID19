@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 8 May 2020
+## Last updated: 11 June 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -33,6 +33,10 @@ new_col = "#835e8d"
 death_col = "#c20000"
 recovered_col = "#358f3b"
 active_col = "#5678b8"
+covid_col2 = "#993902"
+new_col2 = "#5b3d63"
+death_col2 = "#7d0101"
+recovered_col2 = "#225c26"
 
 # import data
 cv_cases = read.csv("input_data/covid_geocodes.csv", encoding="UTF-8")
@@ -52,9 +56,20 @@ province_plot_new = function(cv_cases, plot_date, ylabel) {
     plot_df = subset(cv_cases, date<=plot_date)
     max_scale = get_max(cv_cases$new_outcome)
     g1 = ggplot(plot_df, aes(x = date, y = new_outcome, fill = region, group = 1,
-                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "Y-axis value: ",new_outcome))) +
+                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "Y-axis value: ", new_outcome))) +
         ylim(0, max_scale) + xlab("Date") + geom_bar(position="stack", stat="identity") + 
         ylab(ylabel) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(cv_min_date, current_date) +
+        theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
+    ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
+}
+
+province_plot_new_pc = function(cv_cases, plot_date, ylabel) {
+    plot_df = subset(cv_cases, date<=plot_date)
+    max_scale = get_max(cv_cases$new_outcome_pc)
+    g1 = ggplot(plot_df, aes(x = date, y = new_outcome_pc, fill = region, group = 1,
+                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "Y-axis value: ", new_outcome_pc))) +
+        ylim(0, max_scale) + xlab("Date") + geom_bar(position="stack", stat="identity") + 
+        ylab(paste(ylabel, "(per 1000 people)")) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
@@ -73,6 +88,18 @@ province_plot_cumulative = function(cv_cases, plot_date, ylabel) {
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
 
+province_plot_cumulative_pc = function(cv_cases, plot_date, ylabel) {
+    plot_df = subset(cv_cases, date<=plot_date)
+    max_scale = get_max(cv_cases$outcome_pc)
+    g1 = ggplot(plot_df, aes(x = date, y = outcome_pc, colour = region, group = 1,
+                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, ": ",outcome_pc))) +
+        ylim(0, max_scale) + xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
+        ylab(paste(ylabel, "(per 1000 people)")) + theme_bw() + 
+        scale_colour_manual(values=province_cols) + xlim(cv_min_date, current_date) +
+        theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
+    ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
+}
+
 province_plot_cumulative_log = function(cv_cases, plot_date, ylabel) {
     plot_df = subset(cv_cases, date<=plot_date)
     max_scale = get_max(cv_cases$outcome)
@@ -86,7 +113,7 @@ province_plot_cumulative_log = function(cv_cases, plot_date, ylabel) {
 }
 
 # function to plot scatter plots
-scatter_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
+scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
     plot_df = subset(cv_cases, date<=plot_date)
     
     if (lag=="18-day") {
@@ -110,7 +137,7 @@ scatter_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
     }
     
     g1 = g + geom_abline(intercept = 0, slope = 1) + geom_point(size = 1.5, alpha = 0.8) +
-        ylab("Y-axis variable (day t)") + theme_bw() + 
+        ylab(paste(ylabel, "(day t)")) + theme_bw() + 
         scale_colour_manual(values=province_cols) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
@@ -118,7 +145,7 @@ scatter_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
 
 # ------------------------------
 # function to plot ratio plots
-ratio_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
+ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
     plot_df = subset(cv_cases, date<=plot_date)
     
     if (lag=="18-day") {
@@ -126,8 +153,8 @@ ratio_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
         g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
-                                              "\n", "Y-axis variable (day t) per 100 active cases (day t-18): ", outcome))) +
-            ylim(0, max_scale) + xlab("Date") + ylab("Y-axis variable (day t) per 100 active cases (day t-18)") 
+                                              "\n", "Y-axis variable (day t) per 1000 active cases (day t-18): ", outcome))) +
+            ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 active cases (day t-18)")) 
     }
     
     if (lag=="14-day") {
@@ -135,8 +162,8 @@ ratio_plot = function(cv_cases, plot_date, lag=c("18-day", "14-day")) {
         g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
-                                              "\n", "Y-axis variable (day t) per 100 active cases (day t-14): ", outcome))) +
-            ylim(0, max_scale) + xlab("Date") + ylab("Y-axis variable (day t) per 100 active cases (day t-14)") 
+                                              "\n", "Y-axis variable (day t) per 1000 active cases (day t-14): ", outcome))) +
+            ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 active cases (day t-14)")) 
     }
     g1 = g + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
         theme_bw() + scale_colour_manual(values=province_cols) + xlim(cv_min_date, current_date) +
@@ -240,7 +267,6 @@ cv_cases$date = as.Date(cv_cases$date,"%Y-%m-%d")
 cv_cases_region$date = as.Date(cv_cases_region$date,"%Y-%m-%d") 
 cv_cases_province$date = as.Date(cv_cases_province$date,"%Y-%m-%d")
 cv_cases_canada$date = as.Date(cv_cases_canada$date,"%Y-%m-%d")
-geo_min_date = as.Date(min(cv_cases$date),"%Y-%m-%d")
 cv_min_date = as.Date(min(cv_cases_canada$date),"%Y-%m-%d")
 current_date = as.Date(max(cv_cases_canada$date),"%Y-%m-%d")
 
@@ -259,9 +285,9 @@ basemap = leaflet(options = leafletOptions(zoomControl = FALSE)) %>%
     addTiles() %>% 
     addLayersControl(
         position = "bottomright",
-        overlayGroups = c("2019-COVID (cumulative)", "2019-COVID (new)", "2019-COVID (deaths)", "2019-COVID (recovered)"),
+        overlayGroups = c("2019-COVID (cumulative)", "2019-COVID (cumulative per 1000 people)", "2019-COVID (new cases)", "2019-COVID (new cases per 1000 people)", "2019-COVID (deaths)", "2019-COVID (deaths per 1000 people)", "2019-COVID (recovered)", "2019-COVID (recovered per 1000 people)"),
         options = layersControlOptions(collapsed = FALSE)) %>% 
-    hideGroup(c("2019-COVID (new)", "2019-COVID (deaths)", "2019-COVID (recovered)"))  %>%
+    hideGroup(c("2019-COVID (cumulative per 1000 people)", "2019-COVID (new cases)", "2019-COVID (new cases per 1000 people)", "2019-COVID (deaths)", "2019-COVID (deaths per 1000 people)", "2019-COVID (recovered)", "2019-COVID (recovered per 1000 people)"))  %>%
     addProviderTiles(providers$CartoDB.Positron) %>%
     fitBounds(-105,42,-90,65)
 
@@ -306,7 +332,7 @@ ui <- bootstrapPage(
                                           
                                           sliderInput("plot_date",
                                                       label = h6("Select mapping date"),
-                                                      min = as.Date(geo_min_date,"%Y-%m-%d"),
+                                                      min = as.Date(cv_min_date,"%Y-%m-%d"),
                                                       max = as.Date(current_date,"%Y-%m-%d"),
                                                       value = as.Date(current_date),
                                                       width = "100%",
@@ -359,8 +385,10 @@ ui <- bootstrapPage(
                             mainPanel(
                                 tabsetPanel(
                                     tabPanel("Cumulative", plotlyOutput("province_plot_cumulative")),
+                                    tabPanel("Cumulative (per 1000 people)", plotlyOutput("province_plot_cumulative_pc")),
+                                    tabPanel("Cumulative (log10)", plotlyOutput("province_plot_cumulative_log")),
                                     tabPanel("New", plotlyOutput("province_plot_new")),
-                                    tabPanel("Cumulative (log10)", plotlyOutput("province_plot_cumulative_log"))
+                                    tabPanel("New (per 1000 people)", plotlyOutput("province_plot_new_pc"))
                                 )
                             )
                         )
@@ -722,10 +750,11 @@ ui <- bootstrapPage(
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
                             tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"), tags$br(),tags$br(),
                             tags$h3("LATEST UPDATES"),
-                            tags$b("May 1:"), "Default government response stringency index no longer includes financial measures. Coding on cancellations of public events/limitations on public gatherings changed.", tags$br(), tags$br(),
-                            tags$b("May 6:"), "Front page map is now graphed based on a time series data set rather than a one-day snapshot. As a result, animated features on the left-panel will also animate the geographic progression of the virus using the map.", tags$br(), tags$br(),
+                            tags$b("June 11:"), "Front page and \"General graphs\" tab updated with \'per 1000 people metrics\' based on Canada's 2018 health region population estimates. \"Dynamics\", and \"Moving average dynamics\" tabs now feature \'per 1000 active cases\' rates instead of \'per 100 active cases\'.", tags$br(), tags$br(),
                             tags$b("May 7:"), "\"General graphs\", \"Dynamics\", and \"Moving average dynamics\" tabs now feature disaggregation at the health region level.", tags$br(), tags$br(),
                             tags$b("May 7:"), "Google Mobility metrics now available on the \"Economic impact\" tab, under \'Mobility\'.", tags$br(), tags$br(),
+                            tags$b("May 6:"), "Front page map is now graphed based on a time series data set rather than a one-day snapshot. As a result, animated features on the left-panel will also animate the geographic progression of the virus using the map.", tags$br(), tags$br(),
+                            tags$b("May 1:"), "Default government response stringency index no longer includes financial measures. Coding on cancellations of public events/limitations on public gatherings changed.", tags$br(), tags$br(),
                             tags$h3("DATA SOURCES"),
                             "Berry, I., Soucy, J.-P. R., Tuite, A., Fisman, D. 14 April 2020.", tags$b("Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada."), "CMAJ 192(15):E420. doi:", tags$a(href="https://doi.org/10.1503/cmaj.75262", "https://doi.org/10.1503/cmaj.75262"), tags$br(), tags$br(),
                             "Hemmadi, M., Syed, F., Schwartz, Z.", tags$b("The Logic's COVID-19 layoffs database."), tags$a(href="https://thelogic.co/news/why-axis/130000-and-counting-tracking-covid-19-layoffs-across-canada/", "Link"), tags$br(), tags$br(),
@@ -797,30 +826,58 @@ server <- function(input, output, session) {
             clearMarkers() %>%
             clearShapes() %>%
             
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~casespc*1000+10, 
+                             fillOpacity = 0.1, color = covid_col2, group = "2019-COVID (cumulative per 1000 people)",
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
+                             labelOptions = labelOptions(
+                                 style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
+                                 textsize = "15px", direction = "auto")) %>%
+            
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~new_casespc*1000+10, 
+                             fillOpacity = 0.1, color = new_col2, group = "2019-COVID (new cases per 1000 people)",
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
+                             labelOptions = labelOptions(
+                                 style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
+                                 textsize = "15px", direction = "auto")) %>%
+            
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~deathspc*1000+10, 
+                             fillOpacity = 0.1, color = death_col2, group = "2019-COVID (deaths per 1000 people)",
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
+                             labelOptions = labelOptions(
+                                 style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
+                                 textsize = "15px", direction = "auto")) %>%
+            
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~recoveredpc*1000+10, 
+                             fillOpacity = 0.1, color = recovered_col2, group = "2019-COVID (recovered per 1000 people)",
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
+                             labelOptions = labelOptions(
+                                 style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
+                                 textsize = "15px", direction = "auto")) %>%
+            
             addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~sqrt(cases+10), 
                              fillOpacity = 0.1, color = covid_col, group = "2019-COVID (cumulative)",
-                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
             addCircleMarkers(data=reactive_db_last24h(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~sqrt(new_cases+10), 
-                             fillOpacity = 0.1, color = new_col, group = "2019-COVID (new)",
-                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
+                             fillOpacity = 0.1, color = new_col, group = "2019-COVID (new cases)",
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
             addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(deaths+10), 
                              fillOpacity = 0.1, color = death_col, group = "2019-COVID (deaths)",
-                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
             addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(recovered+10), 
                              fillOpacity = 0.1, color = recovered_col, group = "2019-COVID (recovered)",
-                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>New cases: %g<br/>Deaths: %d<br/>Recovered: %d", reactive_db()$address, reactive_db()$cases, reactive_db()$new_cases, reactive_db()$deaths,reactive_db()$recovered) %>% lapply(htmltools::HTML),
+                             label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) 
@@ -884,16 +941,22 @@ server <- function(input, output, session) {
         if (input$outcome_select=="Cases") { 
             db$outcome = db$cases/1000
             db$new_outcome = db$new_cases
+            db$new_outcome_pc = db$new_casespc*1000
+            db$outcome_pc = db$casespc*1000
         }
         
         if (input$outcome_select=="Deaths") { 
             db$outcome = db$deaths/1000 
-            db$new_outcome = db$new_deaths 
+            db$new_outcome = db$new_deaths
+            db$new_outcome_pc = db$new_deathspc*1000
+            db$outcome_pc = db$deathspc*1000
         }
         
         if (input$outcome_select=="Recovered") { 
             db$outcome = db$recovered/1000
             db$new_outcome = db$new_recovered
+            db$new_outcome_pc = db$new_recoveredpc*1000
+            db$outcome_pc = db$recoveredpc*1000
         }
         
         db %>% filter(region %in% input$region_select)
@@ -903,8 +966,16 @@ server <- function(input, output, session) {
         province_plot_new(country_reactive_db(), input$plot_date_region, ylabel = input$outcome_select)
     })
     
+    output$province_plot_new_pc <- renderPlotly({
+        province_plot_new_pc(country_reactive_db(), input$plot_date_region, ylabel = input$outcome_select)
+    })
+    
     output$province_plot_cumulative <- renderPlotly({
         province_plot_cumulative(country_reactive_db(), input$plot_date_region, ylabel = input$outcome_select)
+    })
+    
+    output$province_plot_cumulative_pc <- renderPlotly({
+        province_plot_cumulative_pc(country_reactive_db(), input$plot_date_region, ylabel = input$outcome_select)
     })
     
     output$province_plot_cumulative_log <- renderPlotly({
@@ -978,7 +1049,7 @@ server <- function(input, output, session) {
     })
     
     output$ratio_plot <- renderPlotly({
-        ratio_plot(country_reactive_db_dynamics(), input$plot_date_dynamics, lag=input$stat)
+        ratio_plot(country_reactive_db_dynamics(), input$plot_date_dynamics, ylabel = input$outcome_select_dynamics, lag=input$stat)
     })
     
     country_reactive_db_dynamics_scatter = reactive({
@@ -1013,7 +1084,7 @@ server <- function(input, output, session) {
     })
     
     output$scatter_plot <- renderPlotly({
-        scatter_plot(country_reactive_db_dynamics_scatter(), input$plot_date_dynamics, lag=input$stat)
+        scatter_plot(country_reactive_db_dynamics_scatter(), input$plot_date_dynamics, ylabel = input$outcome_select_dynamics, lag=input$stat)
     })
     
     # ------------------------------
@@ -1083,7 +1154,7 @@ server <- function(input, output, session) {
     })
     
     output$ratio_plot_mv <- renderPlotly({
-        ratio_plot(country_reactive_db_mv(), input$plot_date_mv, lag=input$stat_mv)
+        ratio_plot(country_reactive_db_mv(), input$plot_date_mv, ylabel = input$outcome_select_mv, lag=input$stat_mv)
     })
     
     country_reactive_db_mv_scatter = reactive({
@@ -1118,7 +1189,7 @@ server <- function(input, output, session) {
     })
     
     output$scatter_plot_mv <- renderPlotly({
-        scatter_plot(country_reactive_db_mv_scatter(), input$plot_date_mv, lag=input$stat_mv)
+        scatter_plot(country_reactive_db_mv_scatter(), input$plot_date_mv, ylabel = input$outcome_select_mv, lag=input$stat_mv)
     })
     
     # ------------------------------
