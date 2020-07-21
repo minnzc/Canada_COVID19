@@ -1,4 +1,8 @@
 ﻿City,Country,Country Percent Change YOY,Date,Percent Change YOY
+Calgary,Canada,-54.47,7/19/2020,-50.91
+Calgary,Canada,-45.18,7/18/2020,-29.27
+Calgary,Canada,-48.92,7/17/2020,-36.92
+Calgary,Canada,-61.4,7/16/2020,-34.37
 Calgary,Canada,-49.88,7/15/2020,-33.79
 Calgary,Canada,-52.93,7/14/2020,-39.38
 Calgary,Canada,-54.17,7/13/2020,-51.41
@@ -148,6 +152,10 @@ Calgary,Canada,-2,2/21/2020,0
 Calgary,Canada,-3,2/20/2020,5
 Calgary,Canada,0,2/19/2020,4
 Calgary,Canada,-5,2/18/2020,0
+Edmonton,Canada,-54.47,7/19/2020,-38.22
+Edmonton,Canada,-45.18,7/18/2020,-35.39
+Edmonton,Canada,-48.92,7/17/2020,-34.15
+Edmonton,Canada,-61.4,7/16/2020,-47.51
 Edmonton,Canada,-49.88,7/15/2020,-35.39
 Edmonton,Canada,-52.93,7/14/2020,-44.68
 Edmonton,Canada,-54.17,7/13/2020,-36.66
@@ -297,6 +305,10 @@ Edmonton,Canada,-2,2/21/2020,4
 Edmonton,Canada,-3,2/20/2020,3
 Edmonton,Canada,0,2/19/2020,17
 Edmonton,Canada,-5,2/18/2020,8
+Montréal,Canada,-54.47,7/19/2020,-73.11
+Montréal,Canada,-45.18,7/18/2020,-69.25
+Montréal,Canada,-48.92,7/17/2020,-73.64
+Montréal,Canada,-61.4,7/16/2020,-78.73
 Montréal,Canada,-49.88,7/15/2020,-78.68
 Montréal,Canada,-52.93,7/14/2020,-80.45
 Montréal,Canada,-54.17,7/13/2020,-85.34
@@ -446,6 +458,10 @@ Montréal,Canada,-2,2/21/2020,-1
 Montréal,Canada,-3,2/20/2020,-5
 Montréal,Canada,0,2/19/2020,14
 Montréal,Canada,-5,2/18/2020,16
+Toronto,Canada,-54.47,7/19/2020,-81.23
+Toronto,Canada,-45.18,7/18/2020,-66.2
+Toronto,Canada,-48.92,7/17/2020,-71.42
+Toronto,Canada,-61.4,7/16/2020,-88.41
 Toronto,Canada,-49.88,7/15/2020,-72.88
 Toronto,Canada,-52.93,7/14/2020,-75.51
 Toronto,Canada,-54.17,7/13/2020,-77.63
@@ -595,6 +611,10 @@ Toronto,Canada,-2,2/21/2020,-9
 Toronto,Canada,-3,2/20/2020,-9
 Toronto,Canada,0,2/19/2020,-8
 Toronto,Canada,-5,2/18/2020,-14
+Vancouver,Canada,-54.47,7/19/2020,-53.95
+Vancouver,Canada,-45.18,7/18/2020,-52.71
+Vancouver,Canada,-48.92,7/17/2020,-57.95
+Vancouver,Canada,-61.4,7/16/2020,-63.26
 Vancouver,Canada,-49.88,7/15/2020,-53.56
 Vancouver,Canada,-52.93,7/14/2020,-59.13
 Vancouver,Canada,-54.17,7/13/2020,-62.37
