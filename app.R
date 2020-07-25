@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 11 June 2020
+## Last updated: 24 July 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -56,9 +56,9 @@ province_plot_new = function(cv_cases, plot_date, ylabel) {
     plot_df = subset(cv_cases, date<=plot_date)
     max_scale = get_max(cv_cases$new_outcome)
     g1 = ggplot(plot_df, aes(x = date, y = new_outcome, fill = region, group = 1,
-                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "Y-axis value: ", new_outcome))) +
+                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", "New ", ylabel, ": ", new_outcome))) +
         ylim(0, max_scale) + xlab("Date") + geom_bar(position="stack", stat="identity") + 
-        ylab(ylabel) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(cv_min_date, current_date) +
+        ylab(paste("New", ylabel)) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
@@ -67,9 +67,9 @@ province_plot_new_pc = function(cv_cases, plot_date, ylabel) {
     plot_df = subset(cv_cases, date<=plot_date)
     max_scale = get_max(cv_cases$new_outcome_pc)
     g1 = ggplot(plot_df, aes(x = date, y = new_outcome_pc, fill = region, group = 1,
-                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "Y-axis value: ", new_outcome_pc))) +
+                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", "New ", ylabel, ": ", new_outcome_pc))) +
         ylim(0, max_scale) + xlab("Date") + geom_bar(position="stack", stat="identity") + 
-        ylab(paste(ylabel, "(per 1000 people)")) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(cv_min_date, current_date) +
+        ylab(paste("New", ylabel, "(per 1000 people)")) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(cv_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
