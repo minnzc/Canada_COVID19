@@ -1,4 +1,5 @@
 ﻿City,Country,Country Percent Change YOY,Date,Percent Change YOY
+Calgary,Canada,-45.98,7/29/2020,-53.1
 Calgary,Canada,-47.01,7/28/2020,-49.74
 Calgary,Canada,-51.79,7/27/2020,-52.82
 Calgary,Canada,-45.81,7/26/2020,-39.3
@@ -161,6 +162,7 @@ Calgary,Canada,-2,2/21/2020,0
 Calgary,Canada,-3,2/20/2020,5
 Calgary,Canada,0,2/19/2020,4
 Calgary,Canada,-5,2/18/2020,0
+Edmonton,Canada,-45.98,7/29/2020,-31.34
 Edmonton,Canada,-47.01,7/28/2020,-32.42
 Edmonton,Canada,-51.79,7/27/2020,-43.99
 Edmonton,Canada,-45.81,7/26/2020,-35.67
@@ -323,6 +325,7 @@ Edmonton,Canada,-2,2/21/2020,4
 Edmonton,Canada,-3,2/20/2020,3
 Edmonton,Canada,0,2/19/2020,17
 Edmonton,Canada,-5,2/18/2020,8
+Montréal,Canada,-45.98,7/29/2020,-73.21
 Montréal,Canada,-47.01,7/28/2020,-72.01
 Montréal,Canada,-51.79,7/27/2020,-79.93
 Montréal,Canada,-45.81,7/26/2020,-65.81
@@ -485,6 +488,7 @@ Montréal,Canada,-2,2/21/2020,-1
 Montréal,Canada,-3,2/20/2020,-5
 Montréal,Canada,0,2/19/2020,14
 Montréal,Canada,-5,2/18/2020,16
+Toronto,Canada,-45.98,7/29/2020,-69.56
 Toronto,Canada,-47.01,7/28/2020,-70.66
 Toronto,Canada,-51.79,7/27/2020,-78.74
 Toronto,Canada,-45.81,7/26/2020,-65.62
@@ -647,6 +651,7 @@ Toronto,Canada,-2,2/21/2020,-9
 Toronto,Canada,-3,2/20/2020,-9
 Toronto,Canada,0,2/19/2020,-8
 Toronto,Canada,-5,2/18/2020,-14
+Vancouver,Canada,-45.98,7/29/2020,-58.6
 Vancouver,Canada,-47.01,7/28/2020,-59.79
 Vancouver,Canada,-51.79,7/27/2020,-62.37
 Vancouver,Canada,-45.81,7/26/2020,-55.22
