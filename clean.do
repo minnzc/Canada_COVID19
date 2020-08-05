@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 11 June 2020
+*Last updated: 4 August 2020
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -72,6 +72,11 @@ drop ``c'_region'
 *Save for merging later
 save "$MAIN/goog_`c'", replace
 }
+
+*KEEP ONLY CANADIAN DATA IN STORAGE
+import delimited "$MAIN/$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clear
+keep if country_region=="Canada"
+export delimited "$MAIN/$GOOG", quote replace
 
 ********************************************************************************
 ****************** CLEAN GOVERNMENT RESPONSE VOLUME DATA ***********************
