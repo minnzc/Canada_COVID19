@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 24 July 2020
+## Last updated: 29 August 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -121,7 +121,7 @@ scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) 
         g = ggplot(plot_df, aes(x = active18, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
-                                              "\n", "Y-axis variable (day t): ", outcome, 
+                                              "\n", ylabel, " (day t): ", outcome, 
                                               "\n", "Active cases (day t-18): ", active18))) +
             ylim(0, max_scale) + xlim(0, max_scale)+ xlab("Active cases (day t-18)")
     }
@@ -131,7 +131,7 @@ scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) 
         g = ggplot(plot_df, aes(x = active14, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
-                                              "\n", "Y-axis variable (day t): ", outcome, 
+                                              "\n", ylabel, " (day t): ", outcome, 
                                               "\n", "Active cases (day t-14): ", active14))) +
             ylim(0, max_scale) + xlim(0, max_scale) + xlab("Active cases (day t-14)")
     }
@@ -153,7 +153,7 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
         g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
-                                              "\n", "Y-axis variable (day t) per 1000 active cases (day t-18): ", outcome))) +
+                                              "\n", ylabel, " (day t) per 1000 active cases (day t-18): ", outcome))) +
             ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 active cases (day t-18)")) 
     }
     
@@ -162,7 +162,7 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
         g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
-                                              "\n", "Y-axis variable (day t) per 1000 active cases (day t-14): ", outcome))) +
+                                              "\n", ylabel, " (day t) per 1000 active cases (day t-14): ", outcome))) +
             ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 active cases (day t-14)")) 
     }
     g1 = g + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
