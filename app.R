@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 29 August 2020
+## Last updated: 31 August 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -122,8 +122,8 @@ scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) 
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
                                               "\n", ylabel, " (day t): ", outcome, 
-                                              "\n", "Active cases (day t-18): ", active18))) +
-            ylim(0, max_scale) + xlim(0, max_scale)+ xlab("Active cases (day t-18)")
+                                              "\n", "New cases (day t-18): ", active18))) +
+            ylim(0, max_scale) + xlim(0, max_scale)+ xlab("New cases (day t-18)")
     }
     
     if (lag=="14-day") {
@@ -132,8 +132,8 @@ scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) 
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
                                               "\n", ylabel, " (day t): ", outcome, 
-                                              "\n", "Active cases (day t-14): ", active14))) +
-            ylim(0, max_scale) + xlim(0, max_scale) + xlab("Active cases (day t-14)")
+                                              "\n", "New cases (day t-14): ", active14))) +
+            ylim(0, max_scale) + xlim(0, max_scale) + xlab("New cases (day t-14)")
     }
     
     g1 = g + geom_abline(intercept = 0, slope = 1) + geom_point(size = 1.5, alpha = 0.8) +
@@ -153,8 +153,8 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
         g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
-                                              "\n", ylabel, " (day t) per 1000 active cases (day t-18): ", outcome))) +
-            ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 active cases (day t-18)")) 
+                                              "\n", ylabel, " (day t) per 1000 new cases (day t-18): ", outcome))) +
+            ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 new cases (day t-18)")) 
     }
     
     if (lag=="14-day") {
@@ -162,8 +162,8 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
         g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
-                                              "\n", ylabel, " (day t) per 1000 active cases (day t-14): ", outcome))) +
-            ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 active cases (day t-14)")) 
+                                              "\n", ylabel, " (day t) per 1000 new cases (day t-14): ", outcome))) +
+            ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 new cases (day t-14)")) 
     }
     g1 = g + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
         theme_bw() + scale_colour_manual(values=province_cols) + xlim(cv_min_date, current_date) +
@@ -437,7 +437,7 @@ ui <- bootstrapPage(
                                             width = "100%",
                                             timeFormat = "%d %b", 
                                             animate=animationOptions(interval = 500, loop = FALSE)),
-                                "The graph on the right attempts to illustrate the dynamics of the y-variable at the selected date to active cases from 18 and 14 days prior. Recent studies have found that, on average, the duration from displaying COVID-19 symptoms to death is 17.8 days, and provide motivation for these graphs."
+                                "The graph on the right attempts to illustrate the dynamics of the daily new values of the y-variable at the selected date to daily new cases from 18 and 14 days prior. Recent studies have found that, on average, the duration from displaying COVID-19 symptoms to death is 17.8 days, and provide motivation for these graphs."
                             ),
                             
                             mainPanel(
@@ -492,7 +492,7 @@ ui <- bootstrapPage(
                                             width = "100%",
                                             timeFormat = "%d %b", 
                                             animate=animationOptions(interval = 500, loop = FALSE)),
-                                "All series in this graph are 7-day backwards moving averages. The graph on the right attempts to illustrate the dynamics of the y-variable at the selected date to active cases from 18 and 14 days prior. Recent studies have found that, on average, the duration from displaying COVID-19 symptoms to death is 17.8 days, and provide motivation for these graphs."
+                                "All series in this graph are 7-day backwards moving averages. The graph on the right attempts to illustrate the dynamics of the daily new values of the y-variable at the selected date to daily new cases from 18 and 14 days prior. Recent studies have found that, on average, the duration from displaying COVID-19 symptoms to death is 17.8 days, and provide motivation for these graphs."
                                 
                             ),
                             
@@ -750,6 +750,7 @@ ui <- bootstrapPage(
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
                             tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"), tags$br(),tags$br(),
                             tags$h3("LATEST UPDATES"),
+                            tags$b("August 31:"), "Key metrics on \"Dynamics\", and \"Moving average dynamics\" tabs have changed from CUMULATIVE TOTAL deaths and/or recoveries over lagged ACTIVE cases to DAILY NEW deaths and/or recoveries over lagged DAILY NEW cases.", tags$br(), tags$br(),
                             tags$b("June 11:"), "Front page and \"General graphs\" tab updated with \'per 1000 people metrics\' based on Canada's 2018 health region population estimates. \"Dynamics\", and \"Moving average dynamics\" tabs now feature \'per 1000 active cases\' rates instead of \'per 100 active cases\'.", tags$br(), tags$br(),
                             tags$b("May 7:"), "\"General graphs\", \"Dynamics\", and \"Moving average dynamics\" tabs now feature disaggregation at the health region level.", tags$br(), tags$br(),
                             tags$b("May 7:"), "Google Mobility metrics now available on the \"Economic impact\" tab, under \'Mobility\'.", tags$br(), tags$br(),

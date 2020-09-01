@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 4 August 2020
+*Last updated: 31 August 2020
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -60,7 +60,8 @@ import delimited "$MAIN/$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clea
 *Keep only necessary variables and observations
 rename country_region country
 rename sub_region_1 province
-ds country_region_code sub_region_2
+keep if sub_region_2 == ""
+ds country province date *percent*, not
 drop `r(varlist)'
 keep if country=="Canada"
 replace province = "Newfoundland & Labrador" if province == "Newfoundland and Labrador"
@@ -566,7 +567,8 @@ foreach v in province canada {
 import delimited "$MAIN/$FOOD", bindq(strict) encoding("UTF-8") clear
 
 *Date variable
-gen Date = date(date, "MDY")
+gen Date = date(date, "DMY")
+*gen Date = date(date, "MDY")
 gen dd = day(Date)
 gen mm = month(Date)
 gen yy = year(Date)
@@ -879,7 +881,7 @@ tsset address_code date
 *************************
 *GENERATE MOVING AVERAGES SERIES
 sort address_code date
-foreach v in cases deaths recovered active {
+foreach v in new_cases cases new_deaths deaths new_recovered recovered active {
 	gen `v'mv7 = (1/7) * (`v' + `v'[_n-1] + `v'[_n-2] + `v'[_n-3] + `v'[_n-4] + `v'[_n-5] + `v'[_n-6]) if day_code > 6
 }
 
@@ -887,32 +889,32 @@ foreach v in cases deaths recovered active {
 *GENERATE DYNAMICS DATA SET
 
 *Create active cases lagged 14 & 18 days
-gen active14 = l14.active
-gen active18 = l18.active
+gen active14 = l14.new_cases
+gen active18 = l18.new_cases
 gen lactive14 = log(active14)
 gen lactive18 = log(active18)
 
 *Generate ratios
-gen deathactive14 = deaths/active14 * 1000
-gen recoveredactive14 = recovered/active14 * 1000
-gen deathrecoveredactive14 = (deaths + recovered)/active14 * 1000
-gen deathactive18 = deaths/active18 * 1000
-gen recoveredactive18 = recovered/active18 * 1000
-gen deathrecoveredactive18 = (deaths + recovered)/active18 * 1000
+gen deathactive14 = new_deaths/active14 * 1000
+gen recoveredactive14 = new_recovered/active14 * 1000
+gen deathrecoveredactive14 = (new_deaths + new_recovered)/active14 * 1000
+gen deathactive18 = new_deaths/active18 * 1000
+gen recoveredactive18 = new_recovered/active18 * 1000
+gen deathrecoveredactive18 = (new_deaths + new_recovered)/active18 * 1000
 
 *Create moving average active cases lagged 14 & 18 days
-gen active14mv7 = l14.activemv7
-gen active18mv7 = l18.activemv7
+gen active14mv7 = l14.new_casesmv7
+gen active18mv7 = l18.new_casesmv7
 gen lactive14mv7 = log(active14mv7)
 gen lactive18mv7 = log(active18mv7)
 
 *Generate moving ratios
-gen deathactive14mv7 = deathsmv7/active14mv7 * 1000
-gen recoveredactive14mv7 = recoveredmv7/active14mv7 * 1000
-gen deathrecoveredactive14mv7 = (deathsmv7 + recoveredmv7)/active14mv7 * 1000
-gen deathactive18mv7 = deathsmv7/active18mv7 * 1000
-gen recoveredactive18mv7 = recoveredmv7/active18mv7 * 1000
-gen deathrecoveredactive18mv7 = (deathsmv7 + recoveredmv7)/active18mv7 * 1000
+gen deathactive14mv7 = new_deathsmv7/active14mv7 * 1000
+gen recoveredactive14mv7 = new_recoveredmv7/active14mv7 * 1000
+gen deathrecoveredactive14mv7 = (new_deathsmv7 + new_recoveredmv7)/active14mv7 * 1000
+gen deathactive18mv7 = new_deathsmv7/active18mv7 * 1000
+gen recoveredactive18mv7 = new_recoveredmv7/active18mv7 * 1000
+gen deathrecoveredactive18mv7 = (new_deathsmv7 + new_recoveredmv7)/active18mv7 * 1000
 
 *Drop date variable
 drop date day_code address*
@@ -1082,7 +1084,7 @@ tsset province_code date
 *************************
 *GENERATE MOVING AVERAGES SERIES
 sort province_code date
-foreach v in cases deaths recovered active {
+foreach v in new_cases cases new_deaths deaths new_recovered recovered active {
 	gen `v'mv7 = (1/7) * (`v' + `v'[_n-1] + `v'[_n-2] + `v'[_n-3] + `v'[_n-4] + `v'[_n-5] + `v'[_n-6]) if day_code > 6
 }
 
@@ -1090,32 +1092,32 @@ foreach v in cases deaths recovered active {
 *GENERATE DYNAMICS DATA SET
 
 *Create active cases lagged 14 & 18 days
-gen active14 = l14.active
-gen active18 = l18.active
+gen active14 = l14.new_cases
+gen active18 = l18.new_cases
 gen lactive14 = log(active14)
 gen lactive18 = log(active18)
 
 *Generate ratios
-gen deathactive14 = deaths/active14 * 1000
-gen recoveredactive14 = recovered/active14 * 1000
-gen deathrecoveredactive14 = (deaths + recovered)/active14 * 1000
-gen deathactive18 = deaths/active18 * 1000
-gen recoveredactive18 = recovered/active18 * 1000
-gen deathrecoveredactive18 = (deaths + recovered)/active18 * 1000
+gen deathactive14 = new_deaths/active14 * 1000
+gen recoveredactive14 = new_recovered/active14 * 1000
+gen deathrecoveredactive14 = (new_deaths + new_recovered)/active14 * 1000
+gen deathactive18 = new_deaths/active18 * 1000
+gen recoveredactive18 = new_recovered/active18 * 1000
+gen deathrecoveredactive18 = (new_deaths + new_recovered)/active18 * 1000
 
 *Create moving average active cases lagged 14 & 18 days
-gen active14mv7 = l14.activemv7
-gen active18mv7 = l18.activemv7
+gen active14mv7 = l14.new_casesmv7
+gen active18mv7 = l18.new_casesmv7
 gen lactive14mv7 = log(active14mv7)
 gen lactive18mv7 = log(active18mv7)
 
 *Generate moving ratios
-gen deathactive14mv7 = deathsmv7/active14mv7 * 1000
-gen recoveredactive14mv7 = recoveredmv7/active14mv7 * 1000
-gen deathrecoveredactive14mv7 = (deathsmv7 + recoveredmv7)/active14mv7 * 1000
-gen deathactive18mv7 = deathsmv7/active18mv7 * 1000
-gen recoveredactive18mv7 = recoveredmv7/active18mv7 * 1000
-gen deathrecoveredactive18mv7 = (deathsmv7 + recoveredmv7)/active18mv7 * 1000
+gen deathactive14mv7 = new_deathsmv7/active14mv7 * 1000
+gen recoveredactive14mv7 = new_recoveredmv7/active14mv7 * 1000
+gen deathrecoveredactive14mv7 = (new_deathsmv7 + new_recoveredmv7)/active14mv7 * 1000
+gen deathactive18mv7 = new_deathsmv7/active18mv7 * 1000
+gen recoveredactive18mv7 = new_recoveredmv7/active18mv7 * 1000
+gen deathrecoveredactive18mv7 = (new_deathsmv7 + new_recoveredmv7)/active18mv7 * 1000
 
 *Drop date variable
 drop date day_code province_code
@@ -1184,7 +1186,7 @@ tsset date
 *GENERATE MOVING AVERAGES SERIES
 egen day_code = rank(date)
 sort date
-foreach v in cases deaths recovered active {
+foreach v in new_cases cases new_deaths deaths new_recovered recovered active {
 	gen `v'mv7 = (1/7) * (`v' + `v'[_n-1] + `v'[_n-2] + `v'[_n-3] + `v'[_n-4] + `v'[_n-5] + `v'[_n-6]) if day_code > 6
 }
 
@@ -1192,32 +1194,32 @@ foreach v in cases deaths recovered active {
 *GENERATE DYNAMICS DATA SET
 
 *Create active cases lagged 14 & 18 days
-gen active14 = l14.active
-gen active18 = l18.active
+gen active14 = l14.new_cases
+gen active18 = l18.new_cases
 gen lactive14 = log(active14)
 gen lactive18 = log(active18)
 
 *Generate ratios
-gen deathactive14 = deaths/active14 * 1000
-gen recoveredactive14 = recovered/active14 * 1000
-gen deathrecoveredactive14 = (deaths + recovered)/active14 * 1000
-gen deathactive18 = deaths/active18 * 1000
-gen recoveredactive18 = recovered/active18 * 1000
-gen deathrecoveredactive18 = (deaths + recovered)/active18 * 1000
+gen deathactive14 = new_deaths/active14 * 1000
+gen recoveredactive14 = new_recovered/active14 * 1000
+gen deathrecoveredactive14 = (new_deaths + new_recovered)/active14 * 1000
+gen deathactive18 = new_deaths/active18 * 1000
+gen recoveredactive18 = new_recovered/active18 * 1000
+gen deathrecoveredactive18 = (new_deaths + new_recovered)/active18 * 1000
 
 *Create moving average active cases lagged 14 & 18 days
-gen active14mv7 = l14.activemv7
-gen active18mv7 = l18.activemv7
+gen active14mv7 = l14.new_casesmv7
+gen active18mv7 = l18.new_casesmv7
 gen lactive14mv7 = log(active14mv7)
 gen lactive18mv7 = log(active18mv7)
 
 *Generate moving ratios
-gen deathactive14mv7 = deathsmv7/active14mv7 * 1000
-gen recoveredactive14mv7 = recoveredmv7/active14mv7 * 1000
-gen deathrecoveredactive14mv7 = (deathsmv7 + recoveredmv7)/active14mv7 * 1000
-gen deathactive18mv7 = deathsmv7/active18mv7 * 1000
-gen recoveredactive18mv7 = recoveredmv7/active18mv7 * 1000
-gen deathrecoveredactive18mv7 = (deathsmv7 + recoveredmv7)/active18mv7 * 1000
+gen deathactive14mv7 = new_deathsmv7/active14mv7 * 1000
+gen recoveredactive14mv7 = new_recoveredmv7/active14mv7 * 1000
+gen deathrecoveredactive14mv7 = (new_deathsmv7 + new_recoveredmv7)/active14mv7 * 1000
+gen deathactive18mv7 = new_deathsmv7/active18mv7 * 1000
+gen recoveredactive18mv7 = new_recoveredmv7/active18mv7 * 1000
+gen deathrecoveredactive18mv7 = (new_deathsmv7 + new_recoveredmv7)/active18mv7 * 1000
 
 *Drop date variable
 drop date day_code
