@@ -230,6 +230,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,189,0,4,0,0,"Abitibi-Témiscamingue, Quebec","Abitibi-Témiscamingue, Quebec",Abitibi-Témiscamingue,Quebec,"Abitibi-Témiscamingue, Quebec",147508,2020-09-09,.0012812865,0,.000027117174,0
 0,189,0,4,0,0,"Abitibi-Témiscamingue, Quebec","Abitibi-Témiscamingue, Quebec",Abitibi-Témiscamingue,Quebec,"Abitibi-Témiscamingue, Quebec",147508,2020-09-10,.0012812865,0,.000027117174,0
 0,189,0,4,0,0,"Abitibi-Témiscamingue, Quebec","Abitibi-Témiscamingue, Quebec",Abitibi-Témiscamingue,Quebec,"Abitibi-Témiscamingue, Quebec",147508,2020-09-11,.0012812865,0,.000027117174,0
+1,190,0,4,0,0,"Abitibi-Témiscamingue, Quebec","Abitibi-Témiscamingue, Quebec",Abitibi-Témiscamingue,Quebec,"Abitibi-Témiscamingue, Quebec",147508,2020-09-12,.0012880657,6.7792935e-06,.000027117174,0
 0,0,0,0,0,0,"Alberta, Canada","Alberta, Canada",Not Reported,Alberta,"Not Reported, Alberta",4307110,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Alberta, Canada","Alberta, Canada",Not Reported,Alberta,"Not Reported, Alberta",4307110,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Alberta, Canada","Alberta, Canada",Not Reported,Alberta,"Not Reported, Alberta",4307110,2020-01-27,0,0,0,0
@@ -461,6 +462,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,37,0,0,13358,204,"Alberta, Canada","Alberta, Canada",Not Reported,Alberta,"Not Reported, Alberta",4307110,2020-09-09,8.5904467e-06,0,0,.0031013836
 0,37,0,0,13557,199,"Alberta, Canada","Alberta, Canada",Not Reported,Alberta,"Not Reported, Alberta",4307110,2020-09-10,8.5904467e-06,0,0,.0031475862
 1,38,0,0,13718,161,"Alberta, Canada","Alberta, Canada",Not Reported,Alberta,"Not Reported, Alberta",4307110,2020-09-11,8.8226216e-06,2.3217424e-07,0,.0031849663
+0,38,0,0,13718,0,"Alberta, Canada","Alberta, Canada",Not Reported,Alberta,"Not Reported, Alberta",4307110,2020-09-12,8.8226216e-06,0,0,.0031849663
 0,0,0,0,0,0,"Algoma, Ontario","Algoma, Ontario",Algoma,Ontario,"Algoma, Ontario",116459,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Algoma, Ontario","Algoma, Ontario",Algoma,Ontario,"Algoma, Ontario",116459,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Algoma, Ontario","Algoma, Ontario",Algoma,Ontario,"Algoma, Ontario",116459,2020-01-27,0,0,0,0
@@ -692,6 +694,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,29,0,0,0,0,"Algoma, Ontario","Algoma, Ontario",Algoma,Ontario,"Algoma, Ontario",116459,2020-09-09,.00024901467,0,0,0
 0,29,0,0,0,0,"Algoma, Ontario","Algoma, Ontario",Algoma,Ontario,"Algoma, Ontario",116459,2020-09-10,.00024901467,0,0,0
 0,29,0,0,0,0,"Algoma, Ontario","Algoma, Ontario",Algoma,Ontario,"Algoma, Ontario",116459,2020-09-11,.00024901467,0,0,0
+0,29,0,0,0,0,"Algoma, Ontario","Algoma, Ontario",Algoma,Ontario,"Algoma, Ontario",116459,2020-09-12,.00024901467,0,0,0
 0,0,0,0,0,0,"Bas-Saint-Laurent, Quebec","Bas-Saint-Laurent, Quebec",Bas-Saint-Laurent,Quebec,"Bas-Saint-Laurent, Quebec",197384,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Bas-Saint-Laurent, Quebec","Bas-Saint-Laurent, Quebec",Bas-Saint-Laurent,Quebec,"Bas-Saint-Laurent, Quebec",197384,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Bas-Saint-Laurent, Quebec","Bas-Saint-Laurent, Quebec",Bas-Saint-Laurent,Quebec,"Bas-Saint-Laurent, Quebec",197384,2020-01-27,0,0,0,0
@@ -923,6 +926,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 1,79,0,2,0,0,"Bas-Saint-Laurent, Quebec","Bas-Saint-Laurent, Quebec",Bas-Saint-Laurent,Quebec,"Bas-Saint-Laurent, Quebec",197384,2020-09-09,.00040023506,5.0662666e-06,.000010132533,0
 11,90,0,2,0,0,"Bas-Saint-Laurent, Quebec","Bas-Saint-Laurent, Quebec",Bas-Saint-Laurent,Quebec,"Bas-Saint-Laurent, Quebec",197384,2020-09-10,.00045596401,.000055728935,.000010132533,0
 19,109,0,2,0,0,"Bas-Saint-Laurent, Quebec","Bas-Saint-Laurent, Quebec",Bas-Saint-Laurent,Quebec,"Bas-Saint-Laurent, Quebec",197384,2020-09-11,.00055222306,.000096259071,.000010132533,0
+29,138,0,2,0,0,"Bas-Saint-Laurent, Quebec","Bas-Saint-Laurent, Quebec",Bas-Saint-Laurent,Quebec,"Bas-Saint-Laurent, Quebec",197384,2020-09-12,.00069914479,.00014692174,.000010132533,0
 0,0,0,0,0,0,"Brant, Ontario","Brant, Ontario",Brant,Ontario,"Brant, Ontario",149392,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Brant, Ontario","Brant, Ontario",Brant,Ontario,"Brant, Ontario",149392,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Brant, Ontario","Brant, Ontario",Brant,Ontario,"Brant, Ontario",149392,2020-01-27,0,0,0,0
@@ -1154,6 +1158,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,166,0,5,0,0,"Brant, Ontario","Brant, Ontario",Brant,Ontario,"Brant, Ontario",149392,2020-09-09,.0011111706,0,.000033468994,0
 0,166,0,5,0,0,"Brant, Ontario","Brant, Ontario",Brant,Ontario,"Brant, Ontario",149392,2020-09-10,.0011111706,0,.000033468994,0
 0,166,0,5,0,0,"Brant, Ontario","Brant, Ontario",Brant,Ontario,"Brant, Ontario",149392,2020-09-11,.0011111706,0,.000033468994,0
+1,167,0,5,0,0,"Brant, Ontario","Brant, Ontario",Brant,Ontario,"Brant, Ontario",149392,2020-09-12,.0011178644,6.6937987e-06,.000033468994,0
 0,0,0,0,0,0,"British Columbia, Canada","British Columbia, Canada",Not Reported,British Columbia,"Not Reported, British Columbia",4991687,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"British Columbia, Canada","British Columbia, Canada",Not Reported,British Columbia,"Not Reported, British Columbia",4991687,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"British Columbia, Canada","British Columbia, Canada",Not Reported,British Columbia,"Not Reported, British Columbia",4991687,2020-01-27,0,0,0,0
@@ -1385,6 +1390,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 1,546,0,2,5086,108,"British Columbia, Canada","British Columbia, Canada",Not Reported,British Columbia,"Not Reported, British Columbia",4991687,2020-09-09,.00010938186,2.0033308e-07,4.0066615e-07,.001018894
 1,547,0,2,5190,104,"British Columbia, Canada","British Columbia, Canada",Not Reported,British Columbia,"Not Reported, British Columbia",4991687,2020-09-10,.00010958219,2.0033308e-07,4.0066615e-07,.0010397286
 2,549,0,2,5273,83,"British Columbia, Canada","British Columbia, Canada",Not Reported,British Columbia,"Not Reported, British Columbia",4991687,2020-09-11,.00010998286,4.0066615e-07,4.0066615e-07,.0010563564
+0,549,0,2,5273,0,"British Columbia, Canada","British Columbia, Canada",Not Reported,British Columbia,"Not Reported, British Columbia",4991687,2020-09-12,.00010998286,0,4.0066615e-07,.0010563564
 0,0,0,0,0,0,"Calgary, Alberta","Calgary, Alberta",Calgary,Alberta,"Calgary, Alberta",1652081,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Calgary, Alberta","Calgary, Alberta",Calgary,Alberta,"Calgary, Alberta",1652081,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Calgary, Alberta","Calgary, Alberta",Calgary,Alberta,"Calgary, Alberta",1652081,2020-01-27,0,0,0,0
@@ -1616,6 +1622,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 22,7965,0,118,0,0,"Calgary, Alberta","Calgary, Alberta",Calgary,Alberta,"Calgary, Alberta",1652081,2020-09-09,.004821192,.000013316539,.000071425071,0
 23,7988,2,120,0,0,"Calgary, Alberta","Calgary, Alberta",Calgary,Alberta,"Calgary, Alberta",1652081,2020-09-10,.0048351139,.000013921835,.000072635667,0
 30,8018,0,120,0,0,"Calgary, Alberta","Calgary, Alberta",Calgary,Alberta,"Calgary, Alberta",1652081,2020-09-11,.0048532728,.000018158917,.000072635667,0
+0,8018,0,120,0,0,"Calgary, Alberta","Calgary, Alberta",Calgary,Alberta,"Calgary, Alberta",1652081,2020-09-12,.0048532728,0,.000072635667,0
 0,0,0,0,0,0,"Capitale-Nationale, Quebec","Capitale-Nationale, Quebec",Capitale-Nationale,Quebec,"Capitale-Nationale, Quebec",745135,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Capitale-Nationale, Quebec","Capitale-Nationale, Quebec",Capitale-Nationale,Quebec,"Capitale-Nationale, Quebec",745135,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Capitale-Nationale, Quebec","Capitale-Nationale, Quebec",Capitale-Nationale,Quebec,"Capitale-Nationale, Quebec",745135,2020-01-27,0,0,0,0
@@ -1847,6 +1854,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 44,2367,0,196,0,0,"Capitale-Nationale, Quebec","Capitale-Nationale, Quebec",Capitale-Nationale,Quebec,"Capitale-Nationale, Quebec",745135,2020-09-09,.0031766056,.000059049704,.00026303958,0
 24,2391,1,197,0,0,"Capitale-Nationale, Quebec","Capitale-Nationale, Quebec",Capitale-Nationale,Quebec,"Capitale-Nationale, Quebec",745135,2020-09-10,.0032088144,.000032208929,.00026438161,0
 42,2433,0,197,0,0,"Capitale-Nationale, Quebec","Capitale-Nationale, Quebec",Capitale-Nationale,Quebec,"Capitale-Nationale, Quebec",745135,2020-09-11,.0032651802,.000056365625,.00026438161,0
+29,2462,0,197,0,0,"Capitale-Nationale, Quebec","Capitale-Nationale, Quebec",Capitale-Nationale,Quebec,"Capitale-Nationale, Quebec",745135,2020-09-12,.0033040992,.000038919123,.00026438161,0
 0,0,0,0,0,0,"Central, Alberta","Central, Alberta",Central,Alberta,"Central, Alberta",476690,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Central, Alberta","Central, Alberta",Central,Alberta,"Central, Alberta",476690,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Central, Alberta","Central, Alberta",Central,Alberta,"Central, Alberta",476690,2020-01-27,0,0,0,0
@@ -2078,6 +2086,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,628,0,7,0,0,"Central, Alberta","Central, Alberta",Central,Alberta,"Central, Alberta",476690,2020-09-09,.0013174181,0,.000014684596,0
 1,629,0,7,0,0,"Central, Alberta","Central, Alberta",Central,Alberta,"Central, Alberta",476690,2020-09-10,.0013195159,2.0977993e-06,.000014684596,0
 2,631,0,7,0,0,"Central, Alberta","Central, Alberta",Central,Alberta,"Central, Alberta",476690,2020-09-11,.0013237115,4.1955986e-06,.000014684596,0
+0,631,0,7,0,0,"Central, Alberta","Central, Alberta",Central,Alberta,"Central, Alberta",476690,2020-09-12,.0013237115,0,.000014684596,0
 0,0,0,0,0,0,"Central, Newfoundland & Labrador","Central, Newfoundland & Labrador",Central,Newfoundland & Labrador,"Central, Newfoundland & Labrador",92311,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Central, Newfoundland & Labrador","Central, Newfoundland & Labrador",Central,Newfoundland & Labrador,"Central, Newfoundland & Labrador",92311,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Central, Newfoundland & Labrador","Central, Newfoundland & Labrador",Central,Newfoundland & Labrador,"Central, Newfoundland & Labrador",92311,2020-01-27,0,0,0,0
@@ -2309,6 +2318,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,12,0,0,0,0,"Central, Newfoundland & Labrador","Central, Newfoundland & Labrador",Central,Newfoundland & Labrador,"Central, Newfoundland & Labrador",92311,2020-09-09,.00012999534,0,0,0
 0,12,0,0,0,0,"Central, Newfoundland & Labrador","Central, Newfoundland & Labrador",Central,Newfoundland & Labrador,"Central, Newfoundland & Labrador",92311,2020-09-10,.00012999534,0,0,0
 0,12,0,0,0,0,"Central, Newfoundland & Labrador","Central, Newfoundland & Labrador",Central,Newfoundland & Labrador,"Central, Newfoundland & Labrador",92311,2020-09-11,.00012999534,0,0,0
+1,13,0,0,0,0,"Central, Newfoundland & Labrador","Central, Newfoundland & Labrador",Central,Newfoundland & Labrador,"Central, Newfoundland & Labrador",92311,2020-09-12,.00014082828,.000010832945,0,0
 0,0,0,0,0,0,"Central, Saskatchewan","Central, Saskatchewan",Central,Saskatchewan,"Central, Saskatchewan",98824,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Central, Saskatchewan","Central, Saskatchewan",Central,Saskatchewan,"Central, Saskatchewan",98824,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Central, Saskatchewan","Central, Saskatchewan",Central,Saskatchewan,"Central, Saskatchewan",98824,2020-01-27,0,0,0,0
@@ -2540,6 +2550,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,181,0,2,0,0,"Central, Saskatchewan","Central, Saskatchewan",Central,Saskatchewan,"Central, Saskatchewan",98824,2020-09-09,.0018315389,0,.000020238,0
 2,183,0,2,0,0,"Central, Saskatchewan","Central, Saskatchewan",Central,Saskatchewan,"Central, Saskatchewan",98824,2020-09-10,.0018517768,.000020238,.000020238,0
 7,190,0,2,0,0,"Central, Saskatchewan","Central, Saskatchewan",Central,Saskatchewan,"Central, Saskatchewan",98824,2020-09-11,.0019226099,.000070832997,.000020238,0
+14,204,0,2,0,0,"Central, Saskatchewan","Central, Saskatchewan",Central,Saskatchewan,"Central, Saskatchewan",98824,2020-09-12,.0020642758,.00014166599,.000020238,0
 0,0,0,0,0,0,"Chatham-Kent, Ontario","Chatham-Kent, Ontario",Chatham-Kent,Ontario,"Chatham-Kent, Ontario",105877,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Chatham-Kent, Ontario","Chatham-Kent, Ontario",Chatham-Kent,Ontario,"Chatham-Kent, Ontario",105877,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Chatham-Kent, Ontario","Chatham-Kent, Ontario",Chatham-Kent,Ontario,"Chatham-Kent, Ontario",105877,2020-01-27,0,0,0,0
@@ -2771,6 +2782,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,364,0,2,0,0,"Chatham-Kent, Ontario","Chatham-Kent, Ontario",Chatham-Kent,Ontario,"Chatham-Kent, Ontario",105877,2020-09-09,.0034379517,0,.000018889843,0
 0,364,0,2,0,0,"Chatham-Kent, Ontario","Chatham-Kent, Ontario",Chatham-Kent,Ontario,"Chatham-Kent, Ontario",105877,2020-09-10,.0034379517,0,.000018889843,0
 1,365,0,2,0,0,"Chatham-Kent, Ontario","Chatham-Kent, Ontario",Chatham-Kent,Ontario,"Chatham-Kent, Ontario",105877,2020-09-11,.0034473964,9.4449215e-06,.000018889843,0
+0,365,0,2,0,0,"Chatham-Kent, Ontario","Chatham-Kent, Ontario",Chatham-Kent,Ontario,"Chatham-Kent, Ontario",105877,2020-09-12,.0034473964,0,.000018889843,0
 0,0,0,0,0,0,"Chaudière-Appalaches, Quebec","Chaudière-Appalaches, Quebec",Chaudière-Appalaches,Quebec,"Chaudière-Appalaches, Quebec",426130,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Chaudière-Appalaches, Quebec","Chaudière-Appalaches, Quebec",Chaudière-Appalaches,Quebec,"Chaudière-Appalaches, Quebec",426130,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Chaudière-Appalaches, Quebec","Chaudière-Appalaches, Quebec",Chaudière-Appalaches,Quebec,"Chaudière-Appalaches, Quebec",426130,2020-01-27,0,0,0,0
@@ -3002,6 +3014,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 8,673,0,8,0,0,"Chaudière-Appalaches, Quebec","Chaudière-Appalaches, Quebec",Chaudière-Appalaches,Quebec,"Chaudière-Appalaches, Quebec",426130,2020-09-09,.0015793303,.000018773613,.000018773613,0
 18,691,0,8,0,0,"Chaudière-Appalaches, Quebec","Chaudière-Appalaches, Quebec",Chaudière-Appalaches,Quebec,"Chaudière-Appalaches, Quebec",426130,2020-09-10,.0016215709,.00004224063,.000018773613,0
 18,709,1,9,0,0,"Chaudière-Appalaches, Quebec","Chaudière-Appalaches, Quebec",Chaudière-Appalaches,Quebec,"Chaudière-Appalaches, Quebec",426130,2020-09-11,.0016638115,.00004224063,.000021120315,0
+18,727,0,9,0,0,"Chaudière-Appalaches, Quebec","Chaudière-Appalaches, Quebec",Chaudière-Appalaches,Quebec,"Chaudière-Appalaches, Quebec",426130,2020-09-12,.0017060521,.00004224063,.000021120315,0
 0,0,0,0,0,0,"Côte-Nord, Quebec","Côte-Nord, Quebec",Côte-Nord,Quebec,"Côte-Nord, Quebec",91213,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Côte-Nord, Quebec","Côte-Nord, Quebec",Côte-Nord,Quebec,"Côte-Nord, Quebec",91213,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Côte-Nord, Quebec","Côte-Nord, Quebec",Côte-Nord,Quebec,"Côte-Nord, Quebec",91213,2020-01-27,0,0,0,0
@@ -3232,7 +3245,8 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,130,0,0,0,0,"Côte-Nord, Quebec","Côte-Nord, Quebec",Côte-Nord,Quebec,"Côte-Nord, Quebec",91213,2020-09-08,.0014252354,0,0,0
 0,130,0,0,0,0,"Côte-Nord, Quebec","Côte-Nord, Quebec",Côte-Nord,Quebec,"Côte-Nord, Quebec",91213,2020-09-09,.0014252354,0,0,0
 4,134,0,0,0,0,"Côte-Nord, Quebec","Côte-Nord, Quebec",Côte-Nord,Quebec,"Côte-Nord, Quebec",91213,2020-09-10,.0014690888,.000043853397,0,0
-3,137,0,0,0,0,"Côte-Nord, Quebec","Côte-Nord, Quebec",Côte-Nord,Quebec,"Côte-Nord, Quebec",91213,2020-09-11,.0015019788,.00003289005,0,0
+2,136,0,0,0,0,"Côte-Nord, Quebec","Côte-Nord, Quebec",Côte-Nord,Quebec,"Côte-Nord, Quebec",91213,2020-09-11,.0014910155,.000021926699,0,0
+0,136,0,0,0,0,"Côte-Nord, Quebec","Côte-Nord, Quebec",Côte-Nord,Quebec,"Côte-Nord, Quebec",91213,2020-09-12,.0014910155,0,0,0
 0,0,0,0,0,0,"Durham, Ontario","Durham, Ontario",Durham,Ontario,"Durham, Ontario",683604,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Durham, Ontario","Durham, Ontario",Durham,Ontario,"Durham, Ontario",683604,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Durham, Ontario","Durham, Ontario",Durham,Ontario,"Durham, Ontario",683604,2020-01-27,0,0,0,0
@@ -3464,6 +3478,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 12,1940,0,181,0,0,"Durham, Ontario","Durham, Ontario",Durham,Ontario,"Durham, Ontario",683604,2020-09-09,.0028379003,.000017554023,.00026477317,0
 10,1950,0,181,0,0,"Durham, Ontario","Durham, Ontario",Durham,Ontario,"Durham, Ontario",683604,2020-09-10,.0028525286,.000014628352,.00026477317,0
 6,1956,0,181,0,0,"Durham, Ontario","Durham, Ontario",Durham,Ontario,"Durham, Ontario",683604,2020-09-11,.0028613056,8.7770113e-06,.00026477317,0
+0,1956,0,181,0,0,"Durham, Ontario","Durham, Ontario",Durham,Ontario,"Durham, Ontario",683604,2020-09-12,.0028613056,0,.00026477317,0
 0,0,0,0,0,0,"Eastern, Newfoundland & Labrador","Eastern, Newfoundland & Labrador",Eastern,Newfoundland & Labrador,"Eastern, Newfoundland & Labrador",319135,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Eastern, Newfoundland & Labrador","Eastern, Newfoundland & Labrador",Eastern,Newfoundland & Labrador,"Eastern, Newfoundland & Labrador",319135,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Eastern, Newfoundland & Labrador","Eastern, Newfoundland & Labrador",Eastern,Newfoundland & Labrador,"Eastern, Newfoundland & Labrador",319135,2020-01-27,0,0,0,0
@@ -3695,6 +3710,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,248,0,3,0,0,"Eastern, Newfoundland & Labrador","Eastern, Newfoundland & Labrador",Eastern,Newfoundland & Labrador,"Eastern, Newfoundland & Labrador",319135,2020-09-09,.00077710062,0,9.4004108e-06,0
 0,248,0,3,0,0,"Eastern, Newfoundland & Labrador","Eastern, Newfoundland & Labrador",Eastern,Newfoundland & Labrador,"Eastern, Newfoundland & Labrador",319135,2020-09-10,.00077710062,0,9.4004108e-06,0
 0,248,0,3,0,0,"Eastern, Newfoundland & Labrador","Eastern, Newfoundland & Labrador",Eastern,Newfoundland & Labrador,"Eastern, Newfoundland & Labrador",319135,2020-09-11,.00077710062,0,9.4004108e-06,0
+0,248,0,3,0,0,"Eastern, Newfoundland & Labrador","Eastern, Newfoundland & Labrador",Eastern,Newfoundland & Labrador,"Eastern, Newfoundland & Labrador",319135,2020-09-12,.00077710062,0,9.4004108e-06,0
 0,0,0,0,0,0,"Eastern, Ontario","Eastern, Ontario",Eastern,Ontario,"Eastern, Ontario",210894,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Eastern, Ontario","Eastern, Ontario",Eastern,Ontario,"Eastern, Ontario",210894,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Eastern, Ontario","Eastern, Ontario",Eastern,Ontario,"Eastern, Ontario",210894,2020-01-27,0,0,0,0
@@ -3926,6 +3942,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 2,205,0,12,0,0,"Eastern, Ontario","Eastern, Ontario",Eastern,Ontario,"Eastern, Ontario",210894,2020-09-09,.00097205234,9.4834368e-06,.000056900622,0
 0,205,0,12,0,0,"Eastern, Ontario","Eastern, Ontario",Eastern,Ontario,"Eastern, Ontario",210894,2020-09-10,.00097205234,0,.000056900622,0
 2,207,0,12,0,0,"Eastern, Ontario","Eastern, Ontario",Eastern,Ontario,"Eastern, Ontario",210894,2020-09-11,.00098153576,9.4834368e-06,.000056900622,0
+0,207,0,12,0,0,"Eastern, Ontario","Eastern, Ontario",Eastern,Ontario,"Eastern, Ontario",210894,2020-09-12,.00098153576,0,.000056900622,0
 0,0,0,0,0,0,"Edmonton, Alberta","Edmonton, Alberta",Edmonton,Alberta,"Edmonton, Alberta",1417887,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Edmonton, Alberta","Edmonton, Alberta",Edmonton,Alberta,"Edmonton, Alberta",1417887,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Edmonton, Alberta","Edmonton, Alberta",Edmonton,Alberta,"Edmonton, Alberta",1417887,2020-01-27,0,0,0,0
@@ -4157,6 +4174,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 52,3659,1,67,0,0,"Edmonton, Alberta","Edmonton, Alberta",Edmonton,Alberta,"Edmonton, Alberta",1417887,2020-09-09,.0025806006,.00003667429,.000047253412,0
 63,3722,1,68,0,0,"Edmonton, Alberta","Edmonton, Alberta",Edmonton,Alberta,"Edmonton, Alberta",1417887,2020-09-10,.0026250328,.000044432312,.000047958689,0
 50,3772,0,68,0,0,"Edmonton, Alberta","Edmonton, Alberta",Edmonton,Alberta,"Edmonton, Alberta",1417887,2020-09-11,.0026602966,.00003526374,.000047958689,0
+0,3772,0,68,0,0,"Edmonton, Alberta","Edmonton, Alberta",Edmonton,Alberta,"Edmonton, Alberta",1417887,2020-09-12,.0026602966,0,.000047958689,0
 0,0,0,0,0,0,"Estrie, Quebec","Estrie, Quebec",Estrie,Quebec,"Estrie, Quebec",484609,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Estrie, Quebec","Estrie, Quebec",Estrie,Quebec,"Estrie, Quebec",484609,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Estrie, Quebec","Estrie, Quebec",Estrie,Quebec,"Estrie, Quebec",484609,2020-01-27,0,0,0,0
@@ -4388,6 +4406,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 13,1379,0,26,0,0,"Estrie, Quebec","Estrie, Quebec",Estrie,Quebec,"Estrie, Quebec",484609,2020-09-09,.002845593,.00002682575,.0000536515,0
 14,1393,0,26,0,0,"Estrie, Quebec","Estrie, Quebec",Estrie,Quebec,"Estrie, Quebec",484609,2020-09-10,.0028744824,.00002888927,.0000536515,0
 17,1410,1,27,0,0,"Estrie, Quebec","Estrie, Quebec",Estrie,Quebec,"Estrie, Quebec",484609,2020-09-11,.0029095621,.000035079825,.00005571502,0
+27,1437,0,27,0,0,"Estrie, Quebec","Estrie, Quebec",Estrie,Quebec,"Estrie, Quebec",484609,2020-09-12,.0029652771,.00005571502,.00005571502,0
 0,0,0,0,0,0,"Far North, Saskatchewan","Far North, Saskatchewan",Far North,Saskatchewan,"Far North, Saskatchewan",37286,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Far North, Saskatchewan","Far North, Saskatchewan",Far North,Saskatchewan,"Far North, Saskatchewan",37286,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Far North, Saskatchewan","Far North, Saskatchewan",Far North,Saskatchewan,"Far North, Saskatchewan",37286,2020-01-27,0,0,0,0
@@ -4619,6 +4638,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,349,0,7,0,0,"Far North, Saskatchewan","Far North, Saskatchewan",Far North,Saskatchewan,"Far North, Saskatchewan",37286,2020-09-09,.0093600815,0,.00018773803,0
 1,350,0,7,0,0,"Far North, Saskatchewan","Far North, Saskatchewan",Far North,Saskatchewan,"Far North, Saskatchewan",37286,2020-09-10,.0093869008,.000026819718,.00018773803,0
 1,351,0,7,0,0,"Far North, Saskatchewan","Far North, Saskatchewan",Far North,Saskatchewan,"Far North, Saskatchewan",37286,2020-09-11,.009413721,.000026819718,.00018773803,0
+0,351,0,7,0,0,"Far North, Saskatchewan","Far North, Saskatchewan",Far North,Saskatchewan,"Far North, Saskatchewan",37286,2020-09-12,.009413721,0,.00018773803,0
 0,0,0,0,0,0,"Fraser, British Columbia","Fraser, British Columbia",Fraser,British Columbia,"Fraser, British Columbia",1860798,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Fraser, British Columbia","Fraser, British Columbia",Fraser,British Columbia,"Fraser, British Columbia",1860798,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Fraser, British Columbia","Fraser, British Columbia",Fraser,British Columbia,"Fraser, British Columbia",1860798,2020-01-27,0,0,0,0
@@ -4850,6 +4870,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 54,3482,0,95,0,0,"Fraser, British Columbia","Fraser, British Columbia",Fraser,British Columbia,"Fraser, British Columbia",1860798,2020-09-09,.0018712402,.000029019808,.000051053365,0
 70,3552,0,95,0,0,"Fraser, British Columbia","Fraser, British Columbia",Fraser,British Columbia,"Fraser, British Columbia",1860798,2020-09-10,.0019088584,.000037618269,.000051053365,0
 48,3600,0,95,0,0,"Fraser, British Columbia","Fraser, British Columbia",Fraser,British Columbia,"Fraser, British Columbia",1860798,2020-09-11,.0019346538,.000025795385,.000051053365,0
+0,3600,0,95,0,0,"Fraser, British Columbia","Fraser, British Columbia",Fraser,British Columbia,"Fraser, British Columbia",1860798,2020-09-12,.0019346538,0,.000051053365,0
 0,0,0,0,0,0,"Gaspésie-Îles-de-la-Madeleine, Quebec","Gaspésie-Îles-de-la-Madeleine, Quebec",Gaspésie-Îles-de-la-Madeleine,Quebec,"Gaspésie-Îles-de-la-Madeleine, Quebec",90709,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Gaspésie-Îles-de-la-Madeleine, Quebec","Gaspésie-Îles-de-la-Madeleine, Quebec",Gaspésie-Îles-de-la-Madeleine,Quebec,"Gaspésie-Îles-de-la-Madeleine, Quebec",90709,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Gaspésie-Îles-de-la-Madeleine, Quebec","Gaspésie-Îles-de-la-Madeleine, Quebec",Gaspésie-Îles-de-la-Madeleine,Quebec,"Gaspésie-Îles-de-la-Madeleine, Quebec",90709,2020-01-27,0,0,0,0
@@ -5081,6 +5102,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,215,0,9,0,0,"Gaspésie-Îles-de-la-Madeleine, Quebec","Gaspésie-Îles-de-la-Madeleine, Quebec",Gaspésie-Îles-de-la-Madeleine,Quebec,"Gaspésie-Îles-de-la-Madeleine, Quebec",90709,2020-09-09,.0023702169,0,.000099218378,0
 2,217,0,9,0,0,"Gaspésie-Îles-de-la-Madeleine, Quebec","Gaspésie-Îles-de-la-Madeleine, Quebec",Gaspésie-Îles-de-la-Madeleine,Quebec,"Gaspésie-Îles-de-la-Madeleine, Quebec",90709,2020-09-10,.0023922655,.000022048529,.000099218378,0
 1,218,0,9,0,0,"Gaspésie-Îles-de-la-Madeleine, Quebec","Gaspésie-Îles-de-la-Madeleine, Quebec",Gaspésie-Îles-de-la-Madeleine,Quebec,"Gaspésie-Îles-de-la-Madeleine, Quebec",90709,2020-09-11,.0024032895,.000011024264,.000099218378,0
+2,220,0,9,0,0,"Gaspésie-Îles-de-la-Madeleine, Quebec","Gaspésie-Îles-de-la-Madeleine, Quebec",Gaspésie-Îles-de-la-Madeleine,Quebec,"Gaspésie-Îles-de-la-Madeleine, Quebec",90709,2020-09-12,.0024253381,.000022048529,.000099218378,0
 0,0,0,0,0,0,"Grey Bruce, Ontario","Grey Bruce, Ontario",Grey Bruce,Ontario,"Grey Bruce, Ontario",171667,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Grey Bruce, Ontario","Grey Bruce, Ontario",Grey Bruce,Ontario,"Grey Bruce, Ontario",171667,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Grey Bruce, Ontario","Grey Bruce, Ontario",Grey Bruce,Ontario,"Grey Bruce, Ontario",171667,2020-01-27,0,0,0,0
@@ -5312,6 +5334,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,129,0,0,0,0,"Grey Bruce, Ontario","Grey Bruce, Ontario",Grey Bruce,Ontario,"Grey Bruce, Ontario",171667,2020-09-09,.00075145485,0,0,0
 0,129,0,0,0,0,"Grey Bruce, Ontario","Grey Bruce, Ontario",Grey Bruce,Ontario,"Grey Bruce, Ontario",171667,2020-09-10,.00075145485,0,0,0
 0,129,0,0,0,0,"Grey Bruce, Ontario","Grey Bruce, Ontario",Grey Bruce,Ontario,"Grey Bruce, Ontario",171667,2020-09-11,.00075145485,0,0,0
+0,129,0,0,0,0,"Grey Bruce, Ontario","Grey Bruce, Ontario",Grey Bruce,Ontario,"Grey Bruce, Ontario",171667,2020-09-12,.00075145485,0,0,0
 0,0,0,0,0,0,"Haldimand-Norfolk, Ontario","Haldimand-Norfolk, Ontario",Haldimand-Norfolk,Ontario,"Haldimand-Norfolk, Ontario",116366,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Haldimand-Norfolk, Ontario","Haldimand-Norfolk, Ontario",Haldimand-Norfolk,Ontario,"Haldimand-Norfolk, Ontario",116366,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Haldimand-Norfolk, Ontario","Haldimand-Norfolk, Ontario",Haldimand-Norfolk,Ontario,"Haldimand-Norfolk, Ontario",116366,2020-01-27,0,0,0,0
@@ -5543,6 +5566,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,481,0,32,0,0,"Haldimand-Norfolk, Ontario","Haldimand-Norfolk, Ontario",Haldimand-Norfolk,Ontario,"Haldimand-Norfolk, Ontario",116366,2020-09-09,.0041335099,0,.00027499441,0
 0,481,0,32,0,0,"Haldimand-Norfolk, Ontario","Haldimand-Norfolk, Ontario",Haldimand-Norfolk,Ontario,"Haldimand-Norfolk, Ontario",116366,2020-09-10,.0041335099,0,.00027499441,0
 0,481,0,32,0,0,"Haldimand-Norfolk, Ontario","Haldimand-Norfolk, Ontario",Haldimand-Norfolk,Ontario,"Haldimand-Norfolk, Ontario",116366,2020-09-11,.0041335099,0,.00027499441,0
+2,483,0,32,0,0,"Haldimand-Norfolk, Ontario","Haldimand-Norfolk, Ontario",Haldimand-Norfolk,Ontario,"Haldimand-Norfolk, Ontario",116366,2020-09-12,.004150697,.000017187151,.00027499441,0
 0,0,0,0,0,0,"Haliburton Kawartha Pineridge, Ontario","Haliburton Kawartha Pineridge, Ontario",Haliburton Kawartha Pineridge,Ontario,"Haliburton Kawartha Pineridge, Ontario",188956,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Haliburton Kawartha Pineridge, Ontario","Haliburton Kawartha Pineridge, Ontario",Haliburton Kawartha Pineridge,Ontario,"Haliburton Kawartha Pineridge, Ontario",188956,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Haliburton Kawartha Pineridge, Ontario","Haliburton Kawartha Pineridge, Ontario",Haliburton Kawartha Pineridge,Ontario,"Haliburton Kawartha Pineridge, Ontario",188956,2020-01-27,0,0,0,0
@@ -5774,6 +5798,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,229,0,33,0,0,"Haliburton Kawartha Pineridge, Ontario","Haliburton Kawartha Pineridge, Ontario",Haliburton Kawartha Pineridge,Ontario,"Haliburton Kawartha Pineridge, Ontario",188956,2020-09-09,.0012119224,0,.00017464384,0
 0,229,0,33,0,0,"Haliburton Kawartha Pineridge, Ontario","Haliburton Kawartha Pineridge, Ontario",Haliburton Kawartha Pineridge,Ontario,"Haliburton Kawartha Pineridge, Ontario",188956,2020-09-10,.0012119224,0,.00017464384,0
 0,229,0,33,0,0,"Haliburton Kawartha Pineridge, Ontario","Haliburton Kawartha Pineridge, Ontario",Haliburton Kawartha Pineridge,Ontario,"Haliburton Kawartha Pineridge, Ontario",188956,2020-09-11,.0012119224,0,.00017464384,0
+0,229,0,33,0,0,"Haliburton Kawartha Pineridge, Ontario","Haliburton Kawartha Pineridge, Ontario",Haliburton Kawartha Pineridge,Ontario,"Haliburton Kawartha Pineridge, Ontario",188956,2020-09-12,.0012119224,0,.00017464384,0
 0,0,0,0,0,0,"Halton, Ontario","Halton, Ontario",Halton,Ontario,"Halton, Ontario",580008,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Halton, Ontario","Halton, Ontario",Halton,Ontario,"Halton, Ontario",580008,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Halton, Ontario","Halton, Ontario",Halton,Ontario,"Halton, Ontario",580008,2020-01-27,0,0,0,0
@@ -6005,6 +6030,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 8,923,0,25,0,0,"Halton, Ontario","Halton, Ontario",Halton,Ontario,"Halton, Ontario",580008,2020-09-09,.0015913574,.000013792913,.000043102853,0
 2,925,0,25,0,0,"Halton, Ontario","Halton, Ontario",Halton,Ontario,"Halton, Ontario",580008,2020-09-10,.0015948056,3.4482282e-06,.000043102853,0
 5,930,0,25,0,0,"Halton, Ontario","Halton, Ontario",Halton,Ontario,"Halton, Ontario",580008,2020-09-11,.0016034262,8.6205710e-06,.000043102853,0
+0,930,0,25,0,0,"Halton, Ontario","Halton, Ontario",Halton,Ontario,"Halton, Ontario",580008,2020-09-12,.0016034262,0,.000043102853,0
 0,0,0,0,0,0,"Hamilton, Ontario","Hamilton, Ontario",Hamilton,Ontario,"Hamilton, Ontario",567979,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Hamilton, Ontario","Hamilton, Ontario",Hamilton,Ontario,"Hamilton, Ontario",567979,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Hamilton, Ontario","Hamilton, Ontario",Hamilton,Ontario,"Hamilton, Ontario",567979,2020-01-27,0,0,0,0
@@ -6236,6 +6262,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 2,1017,0,45,0,0,"Hamilton, Ontario","Hamilton, Ontario",Hamilton,Ontario,"Hamilton, Ontario",567979,2020-09-09,.0017905592,3.5212570e-06,.000079228281,0
 3,1020,0,45,0,0,"Hamilton, Ontario","Hamilton, Ontario",Hamilton,Ontario,"Hamilton, Ontario",567979,2020-09-10,.001795841,5.2818855e-06,.000079228281,0
 6,1026,0,45,0,0,"Hamilton, Ontario","Hamilton, Ontario",Hamilton,Ontario,"Hamilton, Ontario",567979,2020-09-11,.0018064048,.000010563771,.000079228281,0
+0,1026,0,45,0,0,"Hamilton, Ontario","Hamilton, Ontario",Hamilton,Ontario,"Hamilton, Ontario",567979,2020-09-12,.0018064048,0,.000079228281,0
 0,0,0,0,0,0,"Hastings Prince Edward, Ontario","Hastings Prince Edward, Ontario",Hastings Prince Edward,Ontario,"Hastings Prince Edward, Ontario",169116,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Hastings Prince Edward, Ontario","Hastings Prince Edward, Ontario",Hastings Prince Edward,Ontario,"Hastings Prince Edward, Ontario",169116,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Hastings Prince Edward, Ontario","Hastings Prince Edward, Ontario",Hastings Prince Edward,Ontario,"Hastings Prince Edward, Ontario",169116,2020-01-27,0,0,0,0
@@ -6467,6 +6494,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,52,0,5,0,0,"Hastings Prince Edward, Ontario","Hastings Prince Edward, Ontario",Hastings Prince Edward,Ontario,"Hastings Prince Edward, Ontario",169116,2020-09-09,.00030748124,0,.000029565505,0
 0,52,0,5,0,0,"Hastings Prince Edward, Ontario","Hastings Prince Edward, Ontario",Hastings Prince Edward,Ontario,"Hastings Prince Edward, Ontario",169116,2020-09-10,.00030748124,0,.000029565505,0
 0,52,0,5,0,0,"Hastings Prince Edward, Ontario","Hastings Prince Edward, Ontario",Hastings Prince Edward,Ontario,"Hastings Prince Edward, Ontario",169116,2020-09-11,.00030748124,0,.000029565505,0
+0,52,0,5,0,0,"Hastings Prince Edward, Ontario","Hastings Prince Edward, Ontario",Hastings Prince Edward,Ontario,"Hastings Prince Edward, Ontario",169116,2020-09-12,.00030748124,0,.000029565505,0
 0,0,0,0,0,0,"Huron Perth, Ontario","Huron Perth, Ontario",Huron Perth,Ontario,"Huron Perth, Ontario",142854,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Huron Perth, Ontario","Huron Perth, Ontario",Huron Perth,Ontario,"Huron Perth, Ontario",142854,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Huron Perth, Ontario","Huron Perth, Ontario",Huron Perth,Ontario,"Huron Perth, Ontario",142854,2020-01-27,0,0,0,0
@@ -6698,6 +6726,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 3,123,0,5,0,0,"Huron Perth, Ontario","Huron Perth, Ontario",Huron Perth,Ontario,"Huron Perth, Ontario",142854,2020-09-09,.00086101895,.000021000462,.000035000769,0
 0,123,0,5,0,0,"Huron Perth, Ontario","Huron Perth, Ontario",Huron Perth,Ontario,"Huron Perth, Ontario",142854,2020-09-10,.00086101895,0,.000035000769,0
 1,124,0,5,0,0,"Huron Perth, Ontario","Huron Perth, Ontario",Huron Perth,Ontario,"Huron Perth, Ontario",142854,2020-09-11,.00086801912,7.0001538e-06,.000035000769,0
+0,124,0,5,0,0,"Huron Perth, Ontario","Huron Perth, Ontario",Huron Perth,Ontario,"Huron Perth, Ontario",142854,2020-09-12,.00086801912,0,.000035000769,0
 0,0,0,0,0,0,"Interlake-Eastern, Manitoba","Interlake-Eastern, Manitoba",Interlake-Eastern,Manitoba,"Interlake-Eastern, Manitoba",132052,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Interlake-Eastern, Manitoba","Interlake-Eastern, Manitoba",Interlake-Eastern,Manitoba,"Interlake-Eastern, Manitoba",132052,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Interlake-Eastern, Manitoba","Interlake-Eastern, Manitoba",Interlake-Eastern,Manitoba,"Interlake-Eastern, Manitoba",132052,2020-01-27,0,0,0,0
@@ -6929,6 +6958,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,84,0,0,0,0,"Interlake-Eastern, Manitoba","Interlake-Eastern, Manitoba",Interlake-Eastern,Manitoba,"Interlake-Eastern, Manitoba",132052,2020-09-09,.00063611305,0,0,0
 2,86,0,0,0,0,"Interlake-Eastern, Manitoba","Interlake-Eastern, Manitoba",Interlake-Eastern,Manitoba,"Interlake-Eastern, Manitoba",132052,2020-09-10,.00065125857,.000015145549,0,0
 0,86,0,0,0,0,"Interlake-Eastern, Manitoba","Interlake-Eastern, Manitoba",Interlake-Eastern,Manitoba,"Interlake-Eastern, Manitoba",132052,2020-09-11,.00065125857,0,0,0
+5,91,0,0,0,0,"Interlake-Eastern, Manitoba","Interlake-Eastern, Manitoba",Interlake-Eastern,Manitoba,"Interlake-Eastern, Manitoba",132052,2020-09-12,.00068912248,.000037863872,0,0
 0,0,0,0,0,0,"Island, British Columbia","Island, British Columbia",Island,British Columbia,"Island, British Columbia",835871,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Island, British Columbia","Island, British Columbia",Island,British Columbia,"Island, British Columbia",835871,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Island, British Columbia","Island, British Columbia",Island,British Columbia,"Island, British Columbia",835871,2020-01-27,0,0,0,0
@@ -7160,6 +7190,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 1,185,0,5,0,0,"Island, British Columbia","Island, British Columbia",Island,British Columbia,"Island, British Columbia",835871,2020-09-09,.00022132602,1.1963568e-06,5.9817844e-06,0
 2,187,0,5,0,0,"Island, British Columbia","Island, British Columbia",Island,British Columbia,"Island, British Columbia",835871,2020-09-10,.00022371873,2.3927137e-06,5.9817844e-06,0
 3,190,0,5,0,0,"Island, British Columbia","Island, British Columbia",Island,British Columbia,"Island, British Columbia",835871,2020-09-11,.0002273078,3.5890705e-06,5.9817844e-06,0
+0,190,0,5,0,0,"Island, British Columbia","Island, British Columbia",Island,British Columbia,"Island, British Columbia",835871,2020-09-12,.0002273078,0,5.9817844e-06,0
 0,0,0,0,0,0,"Kingston Frontenac Lennox & Addington, Ontario","Kingston Frontenac Lennox & Addington, Ontario",Kingston Frontenac Lennox & Addington,Ontario,"Kingston Frontenac Lennox & Addington, Ontario",205950,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Kingston Frontenac Lennox & Addington, Ontario","Kingston Frontenac Lennox & Addington, Ontario",Kingston Frontenac Lennox & Addington,Ontario,"Kingston Frontenac Lennox & Addington, Ontario",205950,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Kingston Frontenac Lennox & Addington, Ontario","Kingston Frontenac Lennox & Addington, Ontario",Kingston Frontenac Lennox & Addington,Ontario,"Kingston Frontenac Lennox & Addington, Ontario",205950,2020-01-27,0,0,0,0
@@ -7391,6 +7422,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 1,113,0,0,0,0,"Kingston Frontenac Lennox & Addington, Ontario","Kingston Frontenac Lennox & Addington, Ontario",Kingston Frontenac Lennox & Addington,Ontario,"Kingston Frontenac Lennox & Addington, Ontario",205950,2020-09-09,.00054867688,4.8555476e-06,0,0
 2,115,0,0,0,0,"Kingston Frontenac Lennox & Addington, Ontario","Kingston Frontenac Lennox & Addington, Ontario",Kingston Frontenac Lennox & Addington,Ontario,"Kingston Frontenac Lennox & Addington, Ontario",205950,2020-09-10,.00055838795,9.7110951e-06,0,0
 0,115,0,0,0,0,"Kingston Frontenac Lennox & Addington, Ontario","Kingston Frontenac Lennox & Addington, Ontario",Kingston Frontenac Lennox & Addington,Ontario,"Kingston Frontenac Lennox & Addington, Ontario",205950,2020-09-11,.00055838795,0,0,0
+0,115,0,0,0,0,"Kingston Frontenac Lennox & Addington, Ontario","Kingston Frontenac Lennox & Addington, Ontario",Kingston Frontenac Lennox & Addington,Ontario,"Kingston Frontenac Lennox & Addington, Ontario",205950,2020-09-12,.00055838795,0,0,0
 0,0,0,0,0,0,"Labrador-Grenfell, Newfoundland & Labrador","Labrador-Grenfell, Newfoundland & Labrador",Labrador-Grenfell,Newfoundland & Labrador,"Labrador-Grenfell, Newfoundland & Labrador",36400,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Labrador-Grenfell, Newfoundland & Labrador","Labrador-Grenfell, Newfoundland & Labrador",Labrador-Grenfell,Newfoundland & Labrador,"Labrador-Grenfell, Newfoundland & Labrador",36400,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Labrador-Grenfell, Newfoundland & Labrador","Labrador-Grenfell, Newfoundland & Labrador",Labrador-Grenfell,Newfoundland & Labrador,"Labrador-Grenfell, Newfoundland & Labrador",36400,2020-01-27,0,0,0,0
@@ -7622,6 +7654,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,6,0,0,0,0,"Labrador-Grenfell, Newfoundland & Labrador","Labrador-Grenfell, Newfoundland & Labrador",Labrador-Grenfell,Newfoundland & Labrador,"Labrador-Grenfell, Newfoundland & Labrador",36400,2020-09-09,.00016483516,0,0,0
 0,6,0,0,0,0,"Labrador-Grenfell, Newfoundland & Labrador","Labrador-Grenfell, Newfoundland & Labrador",Labrador-Grenfell,Newfoundland & Labrador,"Labrador-Grenfell, Newfoundland & Labrador",36400,2020-09-10,.00016483516,0,0,0
 0,6,0,0,0,0,"Labrador-Grenfell, Newfoundland & Labrador","Labrador-Grenfell, Newfoundland & Labrador",Labrador-Grenfell,Newfoundland & Labrador,"Labrador-Grenfell, Newfoundland & Labrador",36400,2020-09-11,.00016483516,0,0,0
+0,6,0,0,0,0,"Labrador-Grenfell, Newfoundland & Labrador","Labrador-Grenfell, Newfoundland & Labrador",Labrador-Grenfell,Newfoundland & Labrador,"Labrador-Grenfell, Newfoundland & Labrador",36400,2020-09-12,.00016483516,0,0,0
 0,0,0,0,0,0,"Lambton, Ontario","Lambton, Ontario",Lambton,Ontario,"Lambton, Ontario",130895,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Lambton, Ontario","Lambton, Ontario",Lambton,Ontario,"Lambton, Ontario",130895,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Lambton, Ontario","Lambton, Ontario",Lambton,Ontario,"Lambton, Ontario",130895,2020-01-27,0,0,0,0
@@ -7853,6 +7886,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,341,0,25,0,0,"Lambton, Ontario","Lambton, Ontario",Lambton,Ontario,"Lambton, Ontario",130895,2020-09-09,.0026051416,0,.00019099278,0
 1,342,0,25,0,0,"Lambton, Ontario","Lambton, Ontario",Lambton,Ontario,"Lambton, Ontario",130895,2020-09-10,.0026127812,7.6397109e-06,.00019099278,0
 0,342,0,25,0,0,"Lambton, Ontario","Lambton, Ontario",Lambton,Ontario,"Lambton, Ontario",130895,2020-09-11,.0026127812,0,.00019099278,0
+0,342,0,25,0,0,"Lambton, Ontario","Lambton, Ontario",Lambton,Ontario,"Lambton, Ontario",130895,2020-09-12,.0026127812,0,.00019099278,0
 0,0,0,0,0,0,"Lanaudière, Quebec","Lanaudière, Quebec",Lanaudière,Quebec,"Lanaudière, Quebec",507947,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Lanaudière, Quebec","Lanaudière, Quebec",Lanaudière,Quebec,"Lanaudière, Quebec",507947,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Lanaudière, Quebec","Lanaudière, Quebec",Lanaudière,Quebec,"Lanaudière, Quebec",507947,2020-01-27,0,0,0,0
@@ -8084,6 +8118,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 5,4914,0,223,0,0,"Lanaudière, Quebec","Lanaudière, Quebec",Lanaudière,Quebec,"Lanaudière, Quebec",507947,2020-09-09,.009674238,9.8435466e-06,.00043902217,0
 6,4920,0,223,0,0,"Lanaudière, Quebec","Lanaudière, Quebec",Lanaudière,Quebec,"Lanaudière, Quebec",507947,2020-09-10,.00968605,.000011812256,.00043902217,0
 11,4931,0,223,0,0,"Lanaudière, Quebec","Lanaudière, Quebec",Lanaudière,Quebec,"Lanaudière, Quebec",507947,2020-09-11,.009707706,.000021655802,.00043902217,0
+17,4948,0,223,0,0,"Lanaudière, Quebec","Lanaudière, Quebec",Lanaudière,Quebec,"Lanaudière, Quebec",507947,2020-09-12,.0097411741,.000033468059,.00043902217,0
 0,0,0,0,0,0,"Laurentides, Quebec","Laurentides, Quebec",Laurentides,Quebec,"Laurentides, Quebec",611019,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Laurentides, Quebec","Laurentides, Quebec",Laurentides,Quebec,"Laurentides, Quebec",611019,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Laurentides, Quebec","Laurentides, Quebec",Laurentides,Quebec,"Laurentides, Quebec",611019,2020-01-27,0,0,0,0
@@ -8315,6 +8350,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 4,4324,0,269,0,0,"Laurentides, Quebec","Laurentides, Quebec",Laurentides,Quebec,"Laurentides, Quebec",611019,2020-09-09,.007076703,6.5464415e-06,.00044024817,0
 9,4333,0,269,0,0,"Laurentides, Quebec","Laurentides, Quebec",Laurentides,Quebec,"Laurentides, Quebec",611019,2020-09-10,.0070914323,.000014729493,.00044024817,0
 10,4343,0,269,0,0,"Laurentides, Quebec","Laurentides, Quebec",Laurentides,Quebec,"Laurentides, Quebec",611019,2020-09-11,.0071077985,.000016366102,.00044024817,0
+7,4350,1,270,0,0,"Laurentides, Quebec","Laurentides, Quebec",Laurentides,Quebec,"Laurentides, Quebec",611019,2020-09-12,.0071192547,.000011456273,.0004418848,0
 0,0,0,0,0,0,"Laval, Quebec","Laval, Quebec",Laval,Quebec,"Laval, Quebec",432858,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Laval, Quebec","Laval, Quebec",Laval,Quebec,"Laval, Quebec",432858,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Laval, Quebec","Laval, Quebec",Laval,Quebec,"Laval, Quebec",432858,2020-01-27,0,0,0,0
@@ -8546,6 +8582,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 7,6441,0,677,0,0,"Laval, Quebec","Laval, Quebec",Laval,Quebec,"Laval, Quebec",432858,2020-09-09,.014880168,.000016171585,.0015640233,0
 15,6456,0,677,0,0,"Laval, Quebec","Laval, Quebec",Laval,Quebec,"Laval, Quebec",432858,2020-09-10,.014914822,.000034653396,.0015640233,0
 13,6469,0,677,0,0,"Laval, Quebec","Laval, Quebec",Laval,Quebec,"Laval, Quebec",432858,2020-09-11,.014944855,.000030032943,.0015640233,0
+11,6480,0,677,0,0,"Laval, Quebec","Laval, Quebec",Laval,Quebec,"Laval, Quebec",432858,2020-09-12,.014970267,.000025412492,.0015640233,0
 0,0,0,0,0,0,"Leeds Grenville and Lanark, Ontario","Leeds Grenville and Lanark, Ontario",Leeds Grenville and Lanark,Ontario,"Leeds Grenville and Lanark, Ontario",175268,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Leeds Grenville and Lanark, Ontario","Leeds Grenville and Lanark, Ontario",Leeds Grenville and Lanark,Ontario,"Leeds Grenville and Lanark, Ontario",175268,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Leeds Grenville and Lanark, Ontario","Leeds Grenville and Lanark, Ontario",Leeds Grenville and Lanark,Ontario,"Leeds Grenville and Lanark, Ontario",175268,2020-01-27,0,0,0,0
@@ -8777,6 +8814,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,366,0,52,0,0,"Leeds Grenville and Lanark, Ontario","Leeds Grenville and Lanark, Ontario",Leeds Grenville and Lanark,Ontario,"Leeds Grenville and Lanark, Ontario",175268,2020-09-09,.0020882306,0,.00029668849,0
 0,366,0,52,0,0,"Leeds Grenville and Lanark, Ontario","Leeds Grenville and Lanark, Ontario",Leeds Grenville and Lanark,Ontario,"Leeds Grenville and Lanark, Ontario",175268,2020-09-10,.0020882306,0,.00029668849,0
 0,366,0,52,0,0,"Leeds Grenville and Lanark, Ontario","Leeds Grenville and Lanark, Ontario",Leeds Grenville and Lanark,Ontario,"Leeds Grenville and Lanark, Ontario",175268,2020-09-11,.0020882306,0,.00029668849,0
+0,366,0,52,0,0,"Leeds Grenville and Lanark, Ontario","Leeds Grenville and Lanark, Ontario",Leeds Grenville and Lanark,Ontario,"Leeds Grenville and Lanark, Ontario",175268,2020-09-12,.0020882306,0,.00029668849,0
 0,0,0,0,0,0,"Manitoba, Canada","Manitoba, Canada",Not Reported,Manitoba,"Not Reported, Manitoba",1352154,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Manitoba, Canada","Manitoba, Canada",Not Reported,Manitoba,"Not Reported, Manitoba",1352154,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Manitoba, Canada","Manitoba, Canada",Not Reported,Manitoba,"Not Reported, Manitoba",1352154,2020-01-27,0,0,0,0
@@ -9008,6 +9046,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,0,0,0,945,5,"Manitoba, Canada","Manitoba, Canada",Not Reported,Manitoba,"Not Reported, Manitoba",1352154,2020-09-09,0,0,0,.00069888489
 0,0,0,0,1002,57,"Manitoba, Canada","Manitoba, Canada",Not Reported,Manitoba,"Not Reported, Manitoba",1352154,2020-09-10,0,0,0,.00074103987
 0,0,0,0,1090,88,"Manitoba, Canada","Manitoba, Canada",Not Reported,Manitoba,"Not Reported, Manitoba",1352154,2020-09-11,0,0,0,.00080612121
+0,0,0,0,1156,66,"Manitoba, Canada","Manitoba, Canada",Not Reported,Manitoba,"Not Reported, Manitoba",1352154,2020-09-12,0,0,0,.00085493218
 0,0,0,0,0,0,"Mauricie, Quebec","Mauricie, Quebec",Mauricie,Quebec,"Mauricie, Quebec",516665,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Mauricie, Quebec","Mauricie, Quebec",Mauricie,Quebec,"Mauricie, Quebec",516665,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Mauricie, Quebec","Mauricie, Quebec",Mauricie,Quebec,"Mauricie, Quebec",516665,2020-01-27,0,0,0,0
@@ -9239,6 +9278,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 4,2164,0,211,0,0,"Mauricie, Quebec","Mauricie, Quebec",Mauricie,Quebec,"Mauricie, Quebec",516665,2020-09-09,.0041884007,7.7419609e-06,.00040838841,0
 8,2172,0,211,0,0,"Mauricie, Quebec","Mauricie, Quebec",Mauricie,Quebec,"Mauricie, Quebec",516665,2020-09-10,.0042038844,.000015483922,.00040838841,0
 5,2177,0,211,0,0,"Mauricie, Quebec","Mauricie, Quebec",Mauricie,Quebec,"Mauricie, Quebec",516665,2020-09-11,.0042135618,9.6774502e-06,.00040838841,0
+2,2179,0,211,0,0,"Mauricie, Quebec","Mauricie, Quebec",Mauricie,Quebec,"Mauricie, Quebec",516665,2020-09-12,.0042174328,3.8709804e-06,.00040838841,0
 0,0,0,0,0,0,"Middlesex-London, Ontario","Middlesex-London, Ontario",Middlesex-London,Ontario,"Middlesex-London, Ontario",493931,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Middlesex-London, Ontario","Middlesex-London, Ontario",Middlesex-London,Ontario,"Middlesex-London, Ontario",493931,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Middlesex-London, Ontario","Middlesex-London, Ontario",Middlesex-London,Ontario,"Middlesex-London, Ontario",493931,2020-01-27,0,0,0,0
@@ -9470,6 +9510,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 3,742,0,57,0,0,"Middlesex-London, Ontario","Middlesex-London, Ontario",Middlesex-London,Ontario,"Middlesex-London, Ontario",493931,2020-09-09,.0015022341,6.0737229e-06,.00011540073,0
 0,742,0,57,0,0,"Middlesex-London, Ontario","Middlesex-London, Ontario",Middlesex-London,Ontario,"Middlesex-London, Ontario",493931,2020-09-10,.0015022341,0,.00011540073,0
 1,743,0,57,0,0,"Middlesex-London, Ontario","Middlesex-London, Ontario",Middlesex-London,Ontario,"Middlesex-London, Ontario",493931,2020-09-11,.0015042587,2.0245743e-06,.00011540073,0
+2,745,0,57,0,0,"Middlesex-London, Ontario","Middlesex-London, Ontario",Middlesex-London,Ontario,"Middlesex-London, Ontario",493931,2020-09-12,.0015083079,4.0491486e-06,.00011540073,0
 0,0,0,0,0,0,"Montréal, Quebec","Montréal, Quebec",Montréal,Quebec,"Montréal, Quebec",2029379,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Montréal, Quebec","Montréal, Quebec",Montréal,Quebec,"Montréal, Quebec",2029379,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Montréal, Quebec","Montréal, Quebec",Montréal,Quebec,"Montréal, Quebec",2029379,2020-01-27,0,0,0,0
@@ -9700,7 +9741,8 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 43,30193,0,3473,0,0,"Montréal, Quebec","Montréal, Quebec",Montréal,Quebec,"Montréal, Quebec",2029379,2020-09-08,.014877951,.000021188747,.001711361,0
 55,30248,0,3473,0,0,"Montréal, Quebec","Montréal, Quebec",Montréal,Quebec,"Montréal, Quebec",2029379,2020-09-09,.014905052,.000027101887,.001711361,0
 36,30284,0,3473,0,0,"Montréal, Quebec","Montréal, Quebec",Montréal,Quebec,"Montréal, Quebec",2029379,2020-09-10,.014922792,.000017739418,.001711361,0
-40,30324,0,3473,0,0,"Montréal, Quebec","Montréal, Quebec",Montréal,Quebec,"Montréal, Quebec",2029379,2020-09-11,.014942502,.000019710464,.001711361,0
+41,30325,0,3473,0,0,"Montréal, Quebec","Montréal, Quebec",Montréal,Quebec,"Montréal, Quebec",2029379,2020-09-11,.014942995,.000020203224,.001711361,0
+54,30379,4,3477,0,0,"Montréal, Quebec","Montréal, Quebec",Montréal,Quebec,"Montréal, Quebec",2029379,2020-09-12,.014969604,.000026609125,.001713332,0
 0,0,0,0,0,0,"Montérégie, Quebec","Montérégie, Quebec",Montérégie,Quebec,"Montérégie, Quebec",1396149,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Montérégie, Quebec","Montérégie, Quebec",Montérégie,Quebec,"Montérégie, Quebec",1396149,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Montérégie, Quebec","Montérégie, Quebec",Montérégie,Quebec,"Montérégie, Quebec",1396149,2020-01-27,0,0,0,0
@@ -9932,6 +9974,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 22,9563,1,612,0,0,"Montérégie, Quebec","Montérégie, Quebec",Montérégie,Quebec,"Montérégie, Quebec",1396149,2020-09-09,.0068495553,.000015757631,.00043834862,0
 27,9590,0,612,0,0,"Montérégie, Quebec","Montérégie, Quebec",Montérégie,Quebec,"Montérégie, Quebec",1396149,2020-09-10,.0068688942,.00001933891,.00043834862,0
 20,9610,1,613,0,0,"Montérégie, Quebec","Montérégie, Quebec",Montérégie,Quebec,"Montérégie, Quebec",1396149,2020-09-11,.0068832194,.000014325118,.0004390649,0
+36,9646,1,614,0,0,"Montérégie, Quebec","Montérégie, Quebec",Montérégie,Quebec,"Montérégie, Quebec",1396149,2020-09-12,.0069090049,.000025785213,.00043978114,0
 0,0,0,0,0,0,"New Brunswick, Canada","New Brunswick, Canada",Not Reported,New Brunswick,"Not Reported, New Brunswick",770633,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"New Brunswick, Canada","New Brunswick, Canada",Not Reported,New Brunswick,"Not Reported, New Brunswick",770633,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"New Brunswick, Canada","New Brunswick, Canada",Not Reported,New Brunswick,"Not Reported, New Brunswick",770633,2020-01-27,0,0,0,0
@@ -10163,6 +10206,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,0,0,0,188,0,"New Brunswick, Canada","New Brunswick, Canada",Not Reported,New Brunswick,"Not Reported, New Brunswick",770633,2020-09-09,0,0,0,.00024395529
 0,0,0,0,188,0,"New Brunswick, Canada","New Brunswick, Canada",Not Reported,New Brunswick,"Not Reported, New Brunswick",770633,2020-09-10,0,0,0,.00024395529
 0,0,0,0,189,1,"New Brunswick, Canada","New Brunswick, Canada",Not Reported,New Brunswick,"Not Reported, New Brunswick",770633,2020-09-11,0,0,0,.00024525292
+0,0,0,0,189,0,"New Brunswick, Canada","New Brunswick, Canada",Not Reported,New Brunswick,"Not Reported, New Brunswick",770633,2020-09-12,0,0,0,.00024525292
 0,0,0,0,0,0,"Newfoundland & Labrador, Canada","Newfoundland & Labrador, Canada",Not Reported,Newfoundland & Labrador,"Not Reported, Newfoundland & Labrador",525355,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Newfoundland & Labrador, Canada","Newfoundland & Labrador, Canada",Not Reported,Newfoundland & Labrador,"Not Reported, Newfoundland & Labrador",525355,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Newfoundland & Labrador, Canada","Newfoundland & Labrador, Canada",Not Reported,Newfoundland & Labrador,"Not Reported, Newfoundland & Labrador",525355,2020-01-27,0,0,0,0
@@ -10394,6 +10438,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,0,0,0,266,1,"Newfoundland & Labrador, Canada","Newfoundland & Labrador, Canada",Not Reported,Newfoundland & Labrador,"Not Reported, Newfoundland & Labrador",525355,2020-09-09,0,0,0,.00050632429
 0,0,0,0,266,0,"Newfoundland & Labrador, Canada","Newfoundland & Labrador, Canada",Not Reported,Newfoundland & Labrador,"Not Reported, Newfoundland & Labrador",525355,2020-09-10,0,0,0,.00050632429
 0,0,0,0,266,0,"Newfoundland & Labrador, Canada","Newfoundland & Labrador, Canada",Not Reported,Newfoundland & Labrador,"Not Reported, Newfoundland & Labrador",525355,2020-09-11,0,0,0,.00050632429
+0,0,0,0,266,0,"Newfoundland & Labrador, Canada","Newfoundland & Labrador, Canada",Not Reported,Newfoundland & Labrador,"Not Reported, Newfoundland & Labrador",525355,2020-09-12,0,0,0,.00050632429
 0,0,0,0,0,0,"Niagara, Ontario","Niagara, Ontario",Niagara,Ontario,"Niagara, Ontario",472448,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Niagara, Ontario","Niagara, Ontario",Niagara,Ontario,"Niagara, Ontario",472448,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Niagara, Ontario","Niagara, Ontario",Niagara,Ontario,"Niagara, Ontario",472448,2020-01-27,0,0,0,0
@@ -10625,6 +10670,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 2,950,0,64,0,0,"Niagara, Ontario","Niagara, Ontario",Niagara,Ontario,"Niagara, Ontario",472448,2020-09-09,.0020108032,4.2332699e-06,.00013546464,0
 3,953,0,64,0,0,"Niagara, Ontario","Niagara, Ontario",Niagara,Ontario,"Niagara, Ontario",472448,2020-09-10,.0020171532,6.3499051e-06,.00013546464,0
 2,955,0,64,0,0,"Niagara, Ontario","Niagara, Ontario",Niagara,Ontario,"Niagara, Ontario",472448,2020-09-11,.0020213865,4.2332699e-06,.00013546464,0
+2,957,0,64,0,0,"Niagara, Ontario","Niagara, Ontario",Niagara,Ontario,"Niagara, Ontario",472448,2020-09-12,.0020256198,4.2332699e-06,.00013546464,0
 0,0,0,0,0,0,"Nord-du-Québec, Quebec","Nord-du-Québec, Quebec",Nord-du-Québec,Quebec,"Nord-du-Québec, Quebec",13927,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Nord-du-Québec, Quebec","Nord-du-Québec, Quebec",Nord-du-Québec,Quebec,"Nord-du-Québec, Quebec",13927,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Nord-du-Québec, Quebec","Nord-du-Québec, Quebec",Nord-du-Québec,Quebec,"Nord-du-Québec, Quebec",13927,2020-01-27,0,0,0,0
@@ -10856,6 +10902,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,8,0,0,0,0,"Nord-du-Québec, Quebec","Nord-du-Québec, Quebec",Nord-du-Québec,Quebec,"Nord-du-Québec, Quebec",13927,2020-09-09,.00057442376,0,0,0
 0,8,0,0,0,0,"Nord-du-Québec, Quebec","Nord-du-Québec, Quebec",Nord-du-Québec,Quebec,"Nord-du-Québec, Quebec",13927,2020-09-10,.00057442376,0,0,0
 0,8,0,0,0,0,"Nord-du-Québec, Quebec","Nord-du-Québec, Quebec",Nord-du-Québec,Quebec,"Nord-du-Québec, Quebec",13927,2020-09-11,.00057442376,0,0,0
+0,8,0,0,0,0,"Nord-du-Québec, Quebec","Nord-du-Québec, Quebec",Nord-du-Québec,Quebec,"Nord-du-Québec, Quebec",13927,2020-09-12,.00057442376,0,0,0
 0,0,0,0,0,0,"North Bay Parry Sound, Ontario","North Bay Parry Sound, Ontario",North Bay Parry Sound,Ontario,"North Bay Parry Sound, Ontario",129044,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"North Bay Parry Sound, Ontario","North Bay Parry Sound, Ontario",North Bay Parry Sound,Ontario,"North Bay Parry Sound, Ontario",129044,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"North Bay Parry Sound, Ontario","North Bay Parry Sound, Ontario",North Bay Parry Sound,Ontario,"North Bay Parry Sound, Ontario",129044,2020-01-27,0,0,0,0
@@ -11087,6 +11134,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 1,36,0,1,0,0,"North Bay Parry Sound, Ontario","North Bay Parry Sound, Ontario",North Bay Parry Sound,Ontario,"North Bay Parry Sound, Ontario",129044,2020-09-09,.00027897462,7.7492950e-06,7.7492950e-06,0
 0,36,0,1,0,0,"North Bay Parry Sound, Ontario","North Bay Parry Sound, Ontario",North Bay Parry Sound,Ontario,"North Bay Parry Sound, Ontario",129044,2020-09-10,.00027897462,0,7.7492950e-06,0
 0,36,0,1,0,0,"North Bay Parry Sound, Ontario","North Bay Parry Sound, Ontario",North Bay Parry Sound,Ontario,"North Bay Parry Sound, Ontario",129044,2020-09-11,.00027897462,0,7.7492950e-06,0
+0,36,0,1,0,0,"North Bay Parry Sound, Ontario","North Bay Parry Sound, Ontario",North Bay Parry Sound,Ontario,"North Bay Parry Sound, Ontario",129044,2020-09-12,.00027897462,0,7.7492950e-06,0
 0,0,0,0,0,0,"North, Alberta","North, Alberta",North,Alberta,"North, Alberta",456422,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"North, Alberta","North, Alberta",North,Alberta,"North, Alberta",456422,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"North, Alberta","North, Alberta",North,Alberta,"North, Alberta",456422,2020-01-27,0,0,0,0
@@ -11318,6 +11366,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 18,1130,0,31,0,0,"North, Alberta","North, Alberta",North,Alberta,"North, Alberta",456422,2020-09-09,.002475779,.000039437189,.000067919602,0
 24,1154,2,33,0,0,"North, Alberta","North, Alberta",North,Alberta,"North, Alberta",456422,2020-09-10,.002528362,.000052582916,.000072301511,0
 25,1179,0,33,0,0,"North, Alberta","North, Alberta",North,Alberta,"North, Alberta",456422,2020-09-11,.0025831359,.000054773871,.000072301511,0
+0,1179,0,33,0,0,"North, Alberta","North, Alberta",North,Alberta,"North, Alberta",456422,2020-09-12,.0025831359,0,.000072301511,0
 0,0,0,0,0,0,"North, Saskatchewan","North, Saskatchewan",North,Saskatchewan,"North, Saskatchewan",196053,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"North, Saskatchewan","North, Saskatchewan",North,Saskatchewan,"North, Saskatchewan",196053,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"North, Saskatchewan","North, Saskatchewan",North,Saskatchewan,"North, Saskatchewan",196053,2020-01-27,0,0,0,0
@@ -11549,6 +11598,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,250,0,6,0,0,"North, Saskatchewan","North, Saskatchewan",North,Saskatchewan,"North, Saskatchewan",196053,2020-09-09,.0012751654,0,.000030603969,0
 0,250,0,6,0,0,"North, Saskatchewan","North, Saskatchewan",North,Saskatchewan,"North, Saskatchewan",196053,2020-09-10,.0012751654,0,.000030603969,0
 0,250,0,6,0,0,"North, Saskatchewan","North, Saskatchewan",North,Saskatchewan,"North, Saskatchewan",196053,2020-09-11,.0012751654,0,.000030603969,0
+0,250,0,6,0,0,"North, Saskatchewan","North, Saskatchewan",North,Saskatchewan,"North, Saskatchewan",196053,2020-09-12,.0012751654,0,.000030603969,0
 0,0,0,0,0,0,"Northern, British Columbia","Northern, British Columbia",Northern,British Columbia,"Northern, British Columbia",294904,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Northern, British Columbia","Northern, British Columbia",Northern,British Columbia,"Northern, British Columbia",294904,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Northern, British Columbia","Northern, British Columbia",Northern,British Columbia,"Northern, British Columbia",294904,2020-01-27,0,0,0,0
@@ -11780,6 +11830,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 8,196,0,0,0,0,"Northern, British Columbia","Northern, British Columbia",Northern,British Columbia,"Northern, British Columbia",294904,2020-09-09,.00066462305,.000027127471,0,0
 7,203,0,0,0,0,"Northern, British Columbia","Northern, British Columbia",Northern,British Columbia,"Northern, British Columbia",294904,2020-09-10,.00068835961,.000023736538,0,0
 1,204,0,0,0,0,"Northern, British Columbia","Northern, British Columbia",Northern,British Columbia,"Northern, British Columbia",294904,2020-09-11,.00069175055,3.3909339e-06,0,0
+0,204,0,0,0,0,"Northern, British Columbia","Northern, British Columbia",Northern,British Columbia,"Northern, British Columbia",294904,2020-09-12,.00069175055,0,0,0
 0,0,0,0,0,0,"Northern, Manitoba","Northern, Manitoba",Northern,Manitoba,"Northern, Manitoba",75968,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Northern, Manitoba","Northern, Manitoba",Northern,Manitoba,"Northern, Manitoba",75968,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Northern, Manitoba","Northern, Manitoba",Northern,Manitoba,"Northern, Manitoba",75968,2020-01-27,0,0,0,0
@@ -12011,6 +12062,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,4,0,0,0,0,"Northern, Manitoba","Northern, Manitoba",Northern,Manitoba,"Northern, Manitoba",75968,2020-09-09,.000052653748,0,0,0
 0,4,0,0,0,0,"Northern, Manitoba","Northern, Manitoba",Northern,Manitoba,"Northern, Manitoba",75968,2020-09-10,.000052653748,0,0,0
 0,4,0,0,0,0,"Northern, Manitoba","Northern, Manitoba",Northern,Manitoba,"Northern, Manitoba",75968,2020-09-11,.000052653748,0,0,0
+0,4,0,0,0,0,"Northern, Manitoba","Northern, Manitoba",Northern,Manitoba,"Northern, Manitoba",75968,2020-09-12,.000052653748,0,0,0
 0,0,0,0,0,0,"Northwest Territories, Canada","Northwest Territories, Canada",Not Reported,Northwest Territories,"Not Reported, Northwest Territories",44541,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Northwest Territories, Canada","Northwest Territories, Canada",Not Reported,Northwest Territories,"Not Reported, Northwest Territories",44541,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Northwest Territories, Canada","Northwest Territories, Canada",Not Reported,Northwest Territories,"Not Reported, Northwest Territories",44541,2020-01-27,0,0,0,0
@@ -12242,6 +12294,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,5,0,0,5,0,"Northwest Territories, Canada","Northwest Territories, Canada",Not Reported,Northwest Territories,"Not Reported, Northwest Territories",44541,2020-09-09,.00011225612,0,0,.00011225612
 0,5,0,0,5,0,"Northwest Territories, Canada","Northwest Territories, Canada",Not Reported,Northwest Territories,"Not Reported, Northwest Territories",44541,2020-09-10,.00011225612,0,0,.00011225612
 0,5,0,0,5,0,"Northwest Territories, Canada","Northwest Territories, Canada",Not Reported,Northwest Territories,"Not Reported, Northwest Territories",44541,2020-09-11,.00011225612,0,0,.00011225612
+0,5,0,0,5,0,"Northwest Territories, Canada","Northwest Territories, Canada",Not Reported,Northwest Territories,"Not Reported, Northwest Territories",44541,2020-09-12,.00011225612,0,0,.00011225612
 0,0,0,0,0,0,"Northwestern, Ontario","Northwestern, Ontario",Northwestern,Ontario,"Northwestern, Ontario",81227,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Northwestern, Ontario","Northwestern, Ontario",Northwestern,Ontario,"Northwestern, Ontario",81227,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Northwestern, Ontario","Northwestern, Ontario",Northwestern,Ontario,"Northwestern, Ontario",81227,2020-01-27,0,0,0,0
@@ -12473,6 +12526,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,46,0,0,0,0,"Northwestern, Ontario","Northwestern, Ontario",Northwestern,Ontario,"Northwestern, Ontario",81227,2020-09-09,.00056631415,0,0,0
 0,46,0,0,0,0,"Northwestern, Ontario","Northwestern, Ontario",Northwestern,Ontario,"Northwestern, Ontario",81227,2020-09-10,.00056631415,0,0,0
 0,46,0,0,0,0,"Northwestern, Ontario","Northwestern, Ontario",Northwestern,Ontario,"Northwestern, Ontario",81227,2020-09-11,.00056631415,0,0,0
+0,46,0,0,0,0,"Northwestern, Ontario","Northwestern, Ontario",Northwestern,Ontario,"Northwestern, Ontario",81227,2020-09-12,.00056631415,0,0,0
 0,0,0,0,0,0,"Nova Scotia, Canada","Nova Scotia, Canada",Not Reported,Nova Scotia,"Not Reported, Nova Scotia",959942,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Nova Scotia, Canada","Nova Scotia, Canada",Not Reported,Nova Scotia,"Not Reported, Nova Scotia",959942,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Nova Scotia, Canada","Nova Scotia, Canada",Not Reported,Nova Scotia,"Not Reported, Nova Scotia",959942,2020-01-27,0,0,0,0
@@ -12704,6 +12758,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,0,0,0,1018,0,"Nova Scotia, Canada","Nova Scotia, Canada",Not Reported,Nova Scotia,"Not Reported, Nova Scotia",959942,2020-09-09,0,0,0,.0010604807
 0,0,0,0,1019,1,"Nova Scotia, Canada","Nova Scotia, Canada",Not Reported,Nova Scotia,"Not Reported, Nova Scotia",959942,2020-09-10,0,0,0,.0010615225
 0,0,0,0,1019,0,"Nova Scotia, Canada","Nova Scotia, Canada",Not Reported,Nova Scotia,"Not Reported, Nova Scotia",959942,2020-09-11,0,0,0,.0010615225
+0,0,0,0,1020,1,"Nova Scotia, Canada","Nova Scotia, Canada",Not Reported,Nova Scotia,"Not Reported, Nova Scotia",959942,2020-09-12,0,0,0,.0010625642
 0,0,0,0,0,0,"Nunavik, Quebec","Nunavik, Quebec",Nunavik,Quebec,"Nunavik, Quebec",13777,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Nunavik, Quebec","Nunavik, Quebec",Nunavik,Quebec,"Nunavik, Quebec",13777,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Nunavik, Quebec","Nunavik, Quebec",Nunavik,Quebec,"Nunavik, Quebec",13777,2020-01-27,0,0,0,0
@@ -12935,6 +12990,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,18,0,0,0,0,"Nunavik, Quebec","Nunavik, Quebec",Nunavik,Quebec,"Nunavik, Quebec",13777,2020-09-09,.0013065253,0,0,0
 0,18,0,0,0,0,"Nunavik, Quebec","Nunavik, Quebec",Nunavik,Quebec,"Nunavik, Quebec",13777,2020-09-10,.0013065253,0,0,0
 0,18,0,0,0,0,"Nunavik, Quebec","Nunavik, Quebec",Nunavik,Quebec,"Nunavik, Quebec",13777,2020-09-11,.0013065253,0,0,0
+0,18,0,0,0,0,"Nunavik, Quebec","Nunavik, Quebec",Nunavik,Quebec,"Nunavik, Quebec",13777,2020-09-12,.0013065253,0,0,0
 0,0,0,0,0,0,"Nunavut, Canada","Nunavut, Canada",Not Reported,Nunavut,"Not Reported, Nunavut",38396,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Nunavut, Canada","Nunavut, Canada",Not Reported,Nunavut,"Not Reported, Nunavut",38396,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Nunavut, Canada","Nunavut, Canada",Not Reported,Nunavut,"Not Reported, Nunavut",38396,2020-01-27,0,0,0,0
@@ -13166,6 +13222,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,0,0,0,0,0,"Nunavut, Canada","Nunavut, Canada",Not Reported,Nunavut,"Not Reported, Nunavut",38396,2020-09-09,0,0,0,0
 0,0,0,0,0,0,"Nunavut, Canada","Nunavut, Canada",Not Reported,Nunavut,"Not Reported, Nunavut",38396,2020-09-10,0,0,0,0
 0,0,0,0,0,0,"Nunavut, Canada","Nunavut, Canada",Not Reported,Nunavut,"Not Reported, Nunavut",38396,2020-09-11,0,0,0,0
+0,0,0,0,0,0,"Nunavut, Canada","Nunavut, Canada",Not Reported,Nunavut,"Not Reported, Nunavut",38396,2020-09-12,0,0,0,0
 0,0,0,0,0,0,"Ontario, Canada","Ontario, Canada",Not Reported,Ontario,"Not Reported, Ontario",14322757,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Ontario, Canada","Ontario, Canada",Not Reported,Ontario,"Not Reported, Ontario",14322757,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Ontario, Canada","Ontario, Canada",Not Reported,Ontario,"Not Reported, Ontario",14322757,2020-01-27,0,0,0,0
@@ -13397,6 +13454,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,0,0,0,39332,136,"Ontario, Canada","Ontario, Canada",Not Reported,Ontario,"Not Reported, Ontario",14322757,2020-09-09,0,0,0,.0027461194
 0,0,0,0,39474,142,"Ontario, Canada","Ontario, Canada",Not Reported,Ontario,"Not Reported, Ontario",14322757,2020-09-10,0,0,0,.0027560336
 0,0,0,0,39598,124,"Ontario, Canada","Ontario, Canada",Not Reported,Ontario,"Not Reported, Ontario",14322757,2020-09-11,0,0,0,.0027646911
+0,0,0,0,39717,119,"Ontario, Canada","Ontario, Canada",Not Reported,Ontario,"Not Reported, Ontario",14322757,2020-09-12,0,0,0,.0027729997
 0,0,0,0,0,0,"Ottawa, Ontario","Ottawa, Ontario",Ottawa,Ontario,"Ottawa, Ontario",1007501,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Ottawa, Ontario","Ottawa, Ontario",Ottawa,Ontario,"Ottawa, Ontario",1007501,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Ottawa, Ontario","Ottawa, Ontario",Ottawa,Ontario,"Ottawa, Ontario",1007501,2020-01-27,0,0,0,0
@@ -13628,6 +13686,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 17,3151,0,267,0,0,"Ottawa, Ontario","Ottawa, Ontario",Ottawa,Ontario,"Ottawa, Ontario",1007501,2020-09-09,.0031275402,.000016873433,.00026501215,0
 12,3163,0,267,0,0,"Ottawa, Ontario","Ottawa, Ontario",Ottawa,Ontario,"Ottawa, Ontario",1007501,2020-09-10,.0031394509,.000011910658,.00026501215,0
 37,3200,0,267,0,0,"Ottawa, Ontario","Ottawa, Ontario",Ottawa,Ontario,"Ottawa, Ontario",1007501,2020-09-11,.0031761755,.00003672453,.00026501215,0
+27,3227,0,267,0,0,"Ottawa, Ontario","Ottawa, Ontario",Ottawa,Ontario,"Ottawa, Ontario",1007501,2020-09-12,.0032029746,.000026798982,.00026501215,0
 0,0,0,0,0,0,"Outaouais, Quebec","Outaouais, Quebec",Outaouais,Quebec,"Outaouais, Quebec",390830,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Outaouais, Quebec","Outaouais, Quebec",Outaouais,Quebec,"Outaouais, Quebec",390830,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Outaouais, Quebec","Outaouais, Quebec",Outaouais,Quebec,"Outaouais, Quebec",390830,2020-01-27,0,0,0,0
@@ -13859,6 +13918,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 17,924,0,34,0,0,"Outaouais, Quebec","Outaouais, Quebec",Outaouais,Quebec,"Outaouais, Quebec",390830,2020-09-09,.0023641994,.000043497173,.000086994347,0
 13,937,0,34,0,0,"Outaouais, Quebec","Outaouais, Quebec",Outaouais,Quebec,"Outaouais, Quebec",390830,2020-09-10,.0023974618,.000033262542,.000086994347,0
 18,955,0,34,0,0,"Outaouais, Quebec","Outaouais, Quebec",Outaouais,Quebec,"Outaouais, Quebec",390830,2020-09-11,.0024435176,.000046055829,.000086994347,0
+8,963,0,34,0,0,"Outaouais, Quebec","Outaouais, Quebec",Outaouais,Quebec,"Outaouais, Quebec",390830,2020-09-12,.0024639869,.000020469257,.000086994347,0
 0,0,0,0,0,0,"Peel, Ontario","Peel, Ontario",Peel,Ontario,"Peel, Ontario",1477202,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Peel, Ontario","Peel, Ontario",Peel,Ontario,"Peel, Ontario",1477202,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Peel, Ontario","Peel, Ontario",Peel,Ontario,"Peel, Ontario",1477202,2020-01-27,0,0,0,0
@@ -14090,6 +14150,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 32,8080,1,326,0,0,"Peel, Ontario","Peel, Ontario",Peel,Ontario,"Peel, Ontario",1477202,2020-09-09,.0054698004,.000021662576,.00022068749,0
 32,8112,0,326,0,0,"Peel, Ontario","Peel, Ontario",Peel,Ontario,"Peel, Ontario",1477202,2020-09-10,.005491463,.000021662576,.00022068749,0
 58,8170,0,326,0,0,"Peel, Ontario","Peel, Ontario",Peel,Ontario,"Peel, Ontario",1477202,2020-09-11,.0055307262,.000039263417,.00022068749,0
+37,8207,0,326,0,0,"Peel, Ontario","Peel, Ontario",Peel,Ontario,"Peel, Ontario",1477202,2020-09-12,.0055557736,.000025047353,.00022068749,0
 0,0,0,0,0,0,"Peterborough, Ontario","Peterborough, Ontario",Peterborough,Ontario,"Peterborough, Ontario",147869,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Peterborough, Ontario","Peterborough, Ontario",Peterborough,Ontario,"Peterborough, Ontario",147869,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Peterborough, Ontario","Peterborough, Ontario",Peterborough,Ontario,"Peterborough, Ontario",147869,2020-01-27,0,0,0,0
@@ -14321,6 +14382,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,106,0,2,0,0,"Peterborough, Ontario","Peterborough, Ontario",Peterborough,Ontario,"Peterborough, Ontario",147869,2020-09-09,.00071685074,0,.000013525485,0
 0,106,0,2,0,0,"Peterborough, Ontario","Peterborough, Ontario",Peterborough,Ontario,"Peterborough, Ontario",147869,2020-09-10,.00071685074,0,.000013525485,0
 0,106,0,2,0,0,"Peterborough, Ontario","Peterborough, Ontario",Peterborough,Ontario,"Peterborough, Ontario",147869,2020-09-11,.00071685074,0,.000013525485,0
+0,106,0,2,0,0,"Peterborough, Ontario","Peterborough, Ontario",Peterborough,Ontario,"Peterborough, Ontario",147869,2020-09-12,.00071685074,0,.000013525485,0
 0,0,0,0,0,0,"Porcupine, Ontario","Porcupine, Ontario",Porcupine,Ontario,"Porcupine, Ontario",85907,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Porcupine, Ontario","Porcupine, Ontario",Porcupine,Ontario,"Porcupine, Ontario",85907,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Porcupine, Ontario","Porcupine, Ontario",Porcupine,Ontario,"Porcupine, Ontario",85907,2020-01-27,0,0,0,0
@@ -14552,6 +14614,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,74,0,9,0,0,"Porcupine, Ontario","Porcupine, Ontario",Porcupine,Ontario,"Porcupine, Ontario",85907,2020-09-09,.00086139661,0,.00010476445,0
 0,74,0,9,0,0,"Porcupine, Ontario","Porcupine, Ontario",Porcupine,Ontario,"Porcupine, Ontario",85907,2020-09-10,.00086139661,0,.00010476445,0
 1,75,0,9,0,0,"Porcupine, Ontario","Porcupine, Ontario",Porcupine,Ontario,"Porcupine, Ontario",85907,2020-09-11,.00087303715,.000011640495,.00010476445,0
+1,76,0,9,0,0,"Porcupine, Ontario","Porcupine, Ontario",Porcupine,Ontario,"Porcupine, Ontario",85907,2020-09-12,.00088467763,.000011640495,.00010476445,0
 0,0,0,0,0,0,"Prairie Mountain, Manitoba","Prairie Mountain, Manitoba",Prairie Mountain,Manitoba,"Prairie Mountain, Manitoba",170735,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Prairie Mountain, Manitoba","Prairie Mountain, Manitoba",Prairie Mountain,Manitoba,"Prairie Mountain, Manitoba",170735,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Prairie Mountain, Manitoba","Prairie Mountain, Manitoba",Prairie Mountain,Manitoba,"Prairie Mountain, Manitoba",170735,2020-01-27,0,0,0,0
@@ -14783,6 +14846,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,483,0,1,0,0,"Prairie Mountain, Manitoba","Prairie Mountain, Manitoba",Prairie Mountain,Manitoba,"Prairie Mountain, Manitoba",170735,2020-09-09,.0028289454,0,5.8570299e-06,0
 2,485,0,1,0,0,"Prairie Mountain, Manitoba","Prairie Mountain, Manitoba",Prairie Mountain,Manitoba,"Prairie Mountain, Manitoba",170735,2020-09-10,.0028406596,.00001171406,5.8570299e-06,0
 4,489,0,1,0,0,"Prairie Mountain, Manitoba","Prairie Mountain, Manitoba",Prairie Mountain,Manitoba,"Prairie Mountain, Manitoba",170735,2020-09-11,.0028640877,.00002342812,5.8570299e-06,0
+2,491,0,1,0,0,"Prairie Mountain, Manitoba","Prairie Mountain, Manitoba",Prairie Mountain,Manitoba,"Prairie Mountain, Manitoba",170735,2020-09-12,.0028758016,.00001171406,5.8570299e-06,0
 0,0,0,0,0,0,"Prince Edward Island, Canada","Prince Edward Island, Canada",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Prince Edward Island, Canada","Prince Edward Island, Canada",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Prince Edward Island, Canada","Prince Edward Island, Canada",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-01-27,0,0,0,0
@@ -15014,6 +15078,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,0,0,0,44,0,"Prince Edward Island, Canada","Prince Edward Island, Canada",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-09-09,0,0,0,.00028712381
 0,0,0,0,44,0,"Prince Edward Island, Canada","Prince Edward Island, Canada",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-09-10,0,0,0,.00028712381
 0,0,0,0,47,3,"Prince Edward Island, Canada","Prince Edward Island, Canada",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-09-11,0,0,0,.00030670041
+0,0,0,0,47,0,"Prince Edward Island, Canada","Prince Edward Island, Canada",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-09-12,0,0,0,.00030670041
 0,0,0,0,0,0,"Prince Edward Island, Prince Edward Island","Prince Edward Island, Prince Edward Island",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Prince Edward Island, Prince Edward Island","Prince Edward Island, Prince Edward Island",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Prince Edward Island, Prince Edward Island","Prince Edward Island, Prince Edward Island",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-01-27,0,0,0,0
@@ -15245,6 +15310,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 2,55,0,0,0,0,"Prince Edward Island, Prince Edward Island","Prince Edward Island, Prince Edward Island",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-09-09,.00035890474,.000013051082,0,0
 0,55,0,0,0,0,"Prince Edward Island, Prince Edward Island","Prince Edward Island, Prince Edward Island",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-09-10,.00035890474,0,0,0
 0,55,0,0,0,0,"Prince Edward Island, Prince Edward Island","Prince Edward Island, Prince Edward Island",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-09-11,.00035890474,0,0,0
+0,55,0,0,0,0,"Prince Edward Island, Prince Edward Island","Prince Edward Island, Prince Edward Island",Not Reported,Prince Edward Island,"Not Reported, Prince Edward Island",153244,2020-09-12,.00035890474,0,0,0
 0,0,0,0,0,0,"Quebec, Canada","Quebec, Canada",Not Reported,Quebec,"Not Reported, Quebec",8390499,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Quebec, Canada","Quebec, Canada",Not Reported,Quebec,"Not Reported, Quebec",8390499,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Quebec, Canada","Quebec, Canada",Not Reported,Quebec,"Not Reported, Quebec",8390499,2020-01-27,0,0,0,0
@@ -15476,6 +15542,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,30,0,0,56400,238,"Quebec, Canada","Quebec, Canada",Not Reported,Quebec,"Not Reported, Quebec",8390499,2020-09-09,3.5754726e-06,0,0,.0067218887
 1,31,0,0,56624,224,"Quebec, Canada","Quebec, Canada",Not Reported,Quebec,"Not Reported, Quebec",8390499,2020-09-10,3.6946551e-06,1.1918242e-07,0,.0067485855
 1,32,0,0,56843,219,"Quebec, Canada","Quebec, Canada",Not Reported,Quebec,"Not Reported, Quebec",8390499,2020-09-11,3.8138376e-06,1.1918242e-07,0,.0067746863
+1,33,0,0,57054,211,"Quebec, Canada","Quebec, Canada",Not Reported,Quebec,"Not Reported, Quebec",8390499,2020-09-12,3.9330198e-06,1.1918242e-07,0,.0067998338
 0,0,0,0,0,0,"Regina, Saskatchewan","Regina, Saskatchewan",Regina,Saskatchewan,"Regina, Saskatchewan",300166,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Regina, Saskatchewan","Regina, Saskatchewan",Regina,Saskatchewan,"Regina, Saskatchewan",300166,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Regina, Saskatchewan","Regina, Saskatchewan",Regina,Saskatchewan,"Regina, Saskatchewan",300166,2020-01-27,0,0,0,0
@@ -15706,7 +15773,8 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 3,140,0,1,0,0,"Regina, Saskatchewan","Regina, Saskatchewan",Regina,Saskatchewan,"Regina, Saskatchewan",300166,2020-09-08,.00046640859,9.9944700e-06,3.3314900e-06,0
 0,140,0,1,0,0,"Regina, Saskatchewan","Regina, Saskatchewan",Regina,Saskatchewan,"Regina, Saskatchewan",300166,2020-09-09,.00046640859,0,3.3314900e-06,0
 1,141,0,1,0,0,"Regina, Saskatchewan","Regina, Saskatchewan",Regina,Saskatchewan,"Regina, Saskatchewan",300166,2020-09-10,.00046974007,3.3314900e-06,3.3314900e-06,0
-0,141,0,1,0,0,"Regina, Saskatchewan","Regina, Saskatchewan",Regina,Saskatchewan,"Regina, Saskatchewan",300166,2020-09-11,.00046974007,0,3.3314900e-06,0
+1,142,0,1,0,0,"Regina, Saskatchewan","Regina, Saskatchewan",Regina,Saskatchewan,"Regina, Saskatchewan",300166,2020-09-11,.00047307156,3.3314900e-06,3.3314900e-06,0
+0,142,0,1,0,0,"Regina, Saskatchewan","Regina, Saskatchewan",Regina,Saskatchewan,"Regina, Saskatchewan",300166,2020-09-12,.00047307156,0,3.3314900e-06,0
 0,0,0,0,0,0,"Renfrew, Ontario","Renfrew, Ontario",Renfrew,Ontario,"Renfrew, Ontario",107663,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Renfrew, Ontario","Renfrew, Ontario",Renfrew,Ontario,"Renfrew, Ontario",107663,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Renfrew, Ontario","Renfrew, Ontario",Renfrew,Ontario,"Renfrew, Ontario",107663,2020-01-27,0,0,0,0
@@ -15938,6 +16006,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 1,36,0,1,0,0,"Renfrew, Ontario","Renfrew, Ontario",Renfrew,Ontario,"Renfrew, Ontario",107663,2020-09-09,.0003343767,9.2882419e-06,9.2882419e-06,0
 0,36,0,1,0,0,"Renfrew, Ontario","Renfrew, Ontario",Renfrew,Ontario,"Renfrew, Ontario",107663,2020-09-10,.0003343767,0,9.2882419e-06,0
 1,37,0,1,0,0,"Renfrew, Ontario","Renfrew, Ontario",Renfrew,Ontario,"Renfrew, Ontario",107663,2020-09-11,.00034366496,9.2882419e-06,9.2882419e-06,0
+0,37,0,1,0,0,"Renfrew, Ontario","Renfrew, Ontario",Renfrew,Ontario,"Renfrew, Ontario",107663,2020-09-12,.00034366496,0,9.2882419e-06,0
 0,0,0,0,0,0,"Saguenay, Quebec","Saguenay, Quebec",Saguenay,Quebec,"Saguenay, Quebec",277406,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Saguenay, Quebec","Saguenay, Quebec",Saguenay,Quebec,"Saguenay, Quebec",277406,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Saguenay, Quebec","Saguenay, Quebec",Saguenay,Quebec,"Saguenay, Quebec",277406,2020-01-27,0,0,0,0
@@ -16169,6 +16238,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,380,0,26,0,0,"Saguenay, Quebec","Saguenay, Quebec",Saguenay,Quebec,"Saguenay, Quebec",277406,2020-09-09,.0013698334,0,.000093725444,0
 0,380,0,26,0,0,"Saguenay, Quebec","Saguenay, Quebec",Saguenay,Quebec,"Saguenay, Quebec",277406,2020-09-10,.0013698334,0,.000093725444,0
 0,380,0,26,0,0,"Saguenay, Quebec","Saguenay, Quebec",Saguenay,Quebec,"Saguenay, Quebec",277406,2020-09-11,.0013698334,0,.000093725444,0
+2,382,0,26,0,0,"Saguenay, Quebec","Saguenay, Quebec",Saguenay,Quebec,"Saguenay, Quebec",277406,2020-09-12,.0013770431,7.2096495e-06,.000093725444,0
 0,0,0,0,0,0,"Saskatchewan, Canada","Saskatchewan, Canada",Not Reported,Saskatchewan,"Not Reported, Saskatchewan",1162062,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Saskatchewan, Canada","Saskatchewan, Canada",Not Reported,Saskatchewan,"Not Reported, Saskatchewan",1162062,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Saskatchewan, Canada","Saskatchewan, Canada",Not Reported,Saskatchewan,"Not Reported, Saskatchewan",1162062,2020-01-27,0,0,0,0
@@ -16400,6 +16470,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,0,0,0,1587,0,"Saskatchewan, Canada","Saskatchewan, Canada",Not Reported,Saskatchewan,"Not Reported, Saskatchewan",1162062,2020-09-09,0,0,0,.0013656758
 0,0,0,0,1593,6,"Saskatchewan, Canada","Saskatchewan, Canada",Not Reported,Saskatchewan,"Not Reported, Saskatchewan",1162062,2020-09-10,0,0,0,.0013708391
 0,0,0,0,1598,5,"Saskatchewan, Canada","Saskatchewan, Canada",Not Reported,Saskatchewan,"Not Reported, Saskatchewan",1162062,2020-09-11,0,0,0,.0013751418
+0,0,0,0,1602,4,"Saskatchewan, Canada","Saskatchewan, Canada",Not Reported,Saskatchewan,"Not Reported, Saskatchewan",1162062,2020-09-12,0,0,0,.001378584
 0,0,0,0,0,0,"Saskatoon, Saskatchewan","Saskatoon, Saskatchewan",Saskatoon,Saskatchewan,"Saskatoon, Saskatchewan",372794,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Saskatoon, Saskatchewan","Saskatoon, Saskatchewan",Saskatoon,Saskatchewan,"Saskatoon, Saskatchewan",372794,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Saskatoon, Saskatchewan","Saskatoon, Saskatchewan",Saskatoon,Saskatchewan,"Saskatoon, Saskatchewan",372794,2020-01-27,0,0,0,0
@@ -16630,7 +16701,8 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 1,316,0,2,0,0,"Saskatoon, Saskatchewan","Saskatoon, Saskatchewan",Saskatoon,Saskatchewan,"Saskatoon, Saskatchewan",372794,2020-09-08,.00084765314,2.6824466e-06,5.3648932e-06,0
 1,317,0,2,0,0,"Saskatoon, Saskatchewan","Saskatoon, Saskatchewan",Saskatoon,Saskatchewan,"Saskatoon, Saskatchewan",372794,2020-09-09,.00085033558,2.6824466e-06,5.3648932e-06,0
 1,318,0,2,0,0,"Saskatoon, Saskatchewan","Saskatoon, Saskatchewan",Saskatoon,Saskatchewan,"Saskatoon, Saskatchewan",372794,2020-09-10,.00085301802,2.6824466e-06,5.3648932e-06,0
-1,319,0,2,0,0,"Saskatoon, Saskatchewan","Saskatoon, Saskatchewan",Saskatoon,Saskatchewan,"Saskatoon, Saskatchewan",372794,2020-09-11,.00085570046,2.6824466e-06,5.3648932e-06,0
+4,322,0,2,0,0,"Saskatoon, Saskatchewan","Saskatoon, Saskatchewan",Saskatoon,Saskatchewan,"Saskatoon, Saskatchewan",372794,2020-09-11,.00086374779,.000010729786,5.3648932e-06,0
+5,327,0,2,0,0,"Saskatoon, Saskatchewan","Saskatoon, Saskatchewan",Saskatoon,Saskatchewan,"Saskatoon, Saskatchewan",372794,2020-09-12,.00087716006,.000013412233,5.3648932e-06,0
 0,0,0,0,0,0,"Simcoe Muskoka, Ontario","Simcoe Muskoka, Ontario",Simcoe Muskoka,Ontario,"Simcoe Muskoka, Ontario",584159,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Simcoe Muskoka, Ontario","Simcoe Muskoka, Ontario",Simcoe Muskoka,Ontario,"Simcoe Muskoka, Ontario",584159,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Simcoe Muskoka, Ontario","Simcoe Muskoka, Ontario",Simcoe Muskoka,Ontario,"Simcoe Muskoka, Ontario",584159,2020-01-27,0,0,0,0
@@ -16862,6 +16934,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 4,736,0,37,0,0,"Simcoe Muskoka, Ontario","Simcoe Muskoka, Ontario",Simcoe Muskoka,Ontario,"Simcoe Muskoka, Ontario",584159,2020-09-09,.0012599309,6.8474510e-06,.000063338921,0
 6,742,0,37,0,0,"Simcoe Muskoka, Ontario","Simcoe Muskoka, Ontario",Simcoe Muskoka,Ontario,"Simcoe Muskoka, Ontario",584159,2020-09-10,.0012702021,.000010271177,.000063338921,0
 6,748,0,37,0,0,"Simcoe Muskoka, Ontario","Simcoe Muskoka, Ontario",Simcoe Muskoka,Ontario,"Simcoe Muskoka, Ontario",584159,2020-09-11,.0012804733,.000010271177,.000063338921,0
+0,748,0,37,0,0,"Simcoe Muskoka, Ontario","Simcoe Muskoka, Ontario",Simcoe Muskoka,Ontario,"Simcoe Muskoka, Ontario",584159,2020-09-12,.0012804733,0,.000063338921,0
 0,0,0,0,0,0,"South, Alberta","South, Alberta",South,Alberta,"South, Alberta",304030,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"South, Alberta","South, Alberta",South,Alberta,"South, Alberta",304030,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"South, Alberta","South, Alberta",South,Alberta,"South, Alberta",304030,2020-01-27,0,0,0,0
@@ -17093,6 +17166,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 6,1772,0,25,0,0,"South, Alberta","South, Alberta",South,Alberta,"South, Alberta",304030,2020-09-09,.0058283722,.000019734895,.000082228726,0
 2,1774,0,25,0,0,"South, Alberta","South, Alberta",South,Alberta,"South, Alberta",304030,2020-09-10,.0058349506,6.5782983e-06,.000082228726,0
 3,1777,0,25,0,0,"South, Alberta","South, Alberta",South,Alberta,"South, Alberta",304030,2020-09-11,.005844818,9.8674473e-06,.000082228726,0
+0,1777,0,25,0,0,"South, Alberta","South, Alberta",South,Alberta,"South, Alberta",304030,2020-09-12,.005844818,0,.000082228726,0
 0,0,0,0,0,0,"South, Saskatchewan","South, Saskatchewan",South,Saskatchewan,"South, Saskatchewan",156939,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"South, Saskatchewan","South, Saskatchewan",South,Saskatchewan,"South, Saskatchewan",156939,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"South, Saskatchewan","South, Saskatchewan",South,Saskatchewan,"South, Saskatchewan",156939,2020-01-27,0,0,0,0
@@ -17323,7 +17397,8 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 1,433,0,6,0,0,"South, Saskatchewan","South, Saskatchewan",South,Saskatchewan,"South, Saskatchewan",156939,2020-09-08,.0027590338,6.3719026e-06,.000038231414,0
 0,433,0,6,0,0,"South, Saskatchewan","South, Saskatchewan",South,Saskatchewan,"South, Saskatchewan",156939,2020-09-09,.0027590338,0,.000038231414,0
 0,433,0,6,0,0,"South, Saskatchewan","South, Saskatchewan",South,Saskatchewan,"South, Saskatchewan",156939,2020-09-10,.0027590338,0,.000038231414,0
-4,437,0,6,0,0,"South, Saskatchewan","South, Saskatchewan",South,Saskatchewan,"South, Saskatchewan",156939,2020-09-11,.0027845213,.00002548761,.000038231414,0
+0,433,0,6,0,0,"South, Saskatchewan","South, Saskatchewan",South,Saskatchewan,"South, Saskatchewan",156939,2020-09-11,.0027590338,0,.000038231414,0
+2,435,0,6,0,0,"South, Saskatchewan","South, Saskatchewan",South,Saskatchewan,"South, Saskatchewan",156939,2020-09-12,.0027717776,.000012743805,.000038231414,0
 0,0,0,0,0,0,"Southern Health, Manitoba","Southern Health, Manitoba",Southern Health,Manitoba,"Southern Health, Manitoba",203356,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Southern Health, Manitoba","Southern Health, Manitoba",Southern Health,Manitoba,"Southern Health, Manitoba",203356,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Southern Health, Manitoba","Southern Health, Manitoba",Southern Health,Manitoba,"Southern Health, Manitoba",203356,2020-01-27,0,0,0,0
@@ -17555,6 +17630,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 1,282,0,10,0,0,"Southern Health, Manitoba","Southern Health, Manitoba",Southern Health,Manitoba,"Southern Health, Manitoba",203356,2020-09-09,.0013867307,4.9174846e-06,.000049174847,0
 2,284,0,10,0,0,"Southern Health, Manitoba","Southern Health, Manitoba",Southern Health,Manitoba,"Southern Health, Manitoba",203356,2020-09-10,.0013965656,9.8349692e-06,.000049174847,0
 3,287,0,10,0,0,"Southern Health, Manitoba","Southern Health, Manitoba",Southern Health,Manitoba,"Southern Health, Manitoba",203356,2020-09-11,.0014113181,.000014752454,.000049174847,0
+2,289,0,10,0,0,"Southern Health, Manitoba","Southern Health, Manitoba",Southern Health,Manitoba,"Southern Health, Manitoba",203356,2020-09-12,.0014211531,9.8349692e-06,.000049174847,0
 0,0,0,0,0,0,"Southwestern, Ontario","Southwestern, Ontario",Southwestern,Ontario,"Southwestern, Ontario",212355,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Southwestern, Ontario","Southwestern, Ontario",Southwestern,Ontario,"Southwestern, Ontario",212355,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Southwestern, Ontario","Southwestern, Ontario",Southwestern,Ontario,"Southwestern, Ontario",212355,2020-01-27,0,0,0,0
@@ -17786,6 +17862,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,254,0,5,0,0,"Southwestern, Ontario","Southwestern, Ontario",Southwestern,Ontario,"Southwestern, Ontario",212355,2020-09-09,.0011961103,0,.000023545477,0
 0,254,0,5,0,0,"Southwestern, Ontario","Southwestern, Ontario",Southwestern,Ontario,"Southwestern, Ontario",212355,2020-09-10,.0011961103,0,.000023545477,0
 1,255,0,5,0,0,"Southwestern, Ontario","Southwestern, Ontario",Southwestern,Ontario,"Southwestern, Ontario",212355,2020-09-11,.0012008194,4.7090957e-06,.000023545477,0
+1,256,0,5,0,0,"Southwestern, Ontario","Southwestern, Ontario",Southwestern,Ontario,"Southwestern, Ontario",212355,2020-09-12,.0012055285,4.7090957e-06,.000023545477,0
 0,0,0,0,0,0,"Sudbury, Ontario","Sudbury, Ontario",Sudbury,Ontario,"Sudbury, Ontario",204193,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Sudbury, Ontario","Sudbury, Ontario",Sudbury,Ontario,"Sudbury, Ontario",204193,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Sudbury, Ontario","Sudbury, Ontario",Sudbury,Ontario,"Sudbury, Ontario",204193,2020-01-27,0,0,0,0
@@ -18017,6 +18094,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,94,0,2,0,0,"Sudbury, Ontario","Sudbury, Ontario",Sudbury,Ontario,"Sudbury, Ontario",204193,2020-09-09,.00046034879,0,9.7946549e-06,0
 0,94,0,2,0,0,"Sudbury, Ontario","Sudbury, Ontario",Sudbury,Ontario,"Sudbury, Ontario",204193,2020-09-10,.00046034879,0,9.7946549e-06,0
 0,94,0,2,0,0,"Sudbury, Ontario","Sudbury, Ontario",Sudbury,Ontario,"Sudbury, Ontario",204193,2020-09-11,.00046034879,0,9.7946549e-06,0
+0,94,0,2,0,0,"Sudbury, Ontario","Sudbury, Ontario",Sudbury,Ontario,"Sudbury, Ontario",204193,2020-09-12,.00046034879,0,9.7946549e-06,0
 0,0,0,0,0,0,"Terres-Cries-de-la-Baie-James, Quebec","Terres-Cries-de-la-Baie-James, Quebec",Terres-Cries-de-la-Baie-James,Quebec,"Terres-Cries-de-la-Baie-James, Quebec",17854,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Terres-Cries-de-la-Baie-James, Quebec","Terres-Cries-de-la-Baie-James, Quebec",Terres-Cries-de-la-Baie-James,Quebec,"Terres-Cries-de-la-Baie-James, Quebec",17854,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Terres-Cries-de-la-Baie-James, Quebec","Terres-Cries-de-la-Baie-James, Quebec",Terres-Cries-de-la-Baie-James,Quebec,"Terres-Cries-de-la-Baie-James, Quebec",17854,2020-01-27,0,0,0,0
@@ -18248,6 +18326,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,10,0,0,0,0,"Terres-Cries-de-la-Baie-James, Quebec","Terres-Cries-de-la-Baie-James, Quebec",Terres-Cries-de-la-Baie-James,Quebec,"Terres-Cries-de-la-Baie-James, Quebec",17854,2020-09-09,.00056009856,0,0,0
 0,10,0,0,0,0,"Terres-Cries-de-la-Baie-James, Quebec","Terres-Cries-de-la-Baie-James, Quebec",Terres-Cries-de-la-Baie-James,Quebec,"Terres-Cries-de-la-Baie-James, Quebec",17854,2020-09-10,.00056009856,0,0,0
 1,11,0,0,0,0,"Terres-Cries-de-la-Baie-James, Quebec","Terres-Cries-de-la-Baie-James, Quebec",Terres-Cries-de-la-Baie-James,Quebec,"Terres-Cries-de-la-Baie-James, Quebec",17854,2020-09-11,.00061610842,.000056009856,0,0
+0,11,0,0,0,0,"Terres-Cries-de-la-Baie-James, Quebec","Terres-Cries-de-la-Baie-James, Quebec",Terres-Cries-de-la-Baie-James,Quebec,"Terres-Cries-de-la-Baie-James, Quebec",17854,2020-09-12,.00061610842,0,0,0
 0,0,0,0,0,0,"Thunder Bay, Ontario","Thunder Bay, Ontario",Thunder Bay,Ontario,"Thunder Bay, Ontario",157280,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Thunder Bay, Ontario","Thunder Bay, Ontario",Thunder Bay,Ontario,"Thunder Bay, Ontario",157280,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Thunder Bay, Ontario","Thunder Bay, Ontario",Thunder Bay,Ontario,"Thunder Bay, Ontario",157280,2020-01-27,0,0,0,0
@@ -18479,6 +18558,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,103,0,1,0,0,"Thunder Bay, Ontario","Thunder Bay, Ontario",Thunder Bay,Ontario,"Thunder Bay, Ontario",157280,2020-09-09,.00065488298,0,6.3580874e-06,0
 0,103,0,1,0,0,"Thunder Bay, Ontario","Thunder Bay, Ontario",Thunder Bay,Ontario,"Thunder Bay, Ontario",157280,2020-09-10,.00065488298,0,6.3580874e-06,0
 0,103,0,1,0,0,"Thunder Bay, Ontario","Thunder Bay, Ontario",Thunder Bay,Ontario,"Thunder Bay, Ontario",157280,2020-09-11,.00065488298,0,6.3580874e-06,0
+0,103,0,1,0,0,"Thunder Bay, Ontario","Thunder Bay, Ontario",Thunder Bay,Ontario,"Thunder Bay, Ontario",157280,2020-09-12,.00065488298,0,6.3580874e-06,0
 0,0,0,0,0,0,"Timiskaming, Ontario","Timiskaming, Ontario",Timiskaming,Ontario,"Timiskaming, Ontario",33822,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Timiskaming, Ontario","Timiskaming, Ontario",Timiskaming,Ontario,"Timiskaming, Ontario",33822,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Timiskaming, Ontario","Timiskaming, Ontario",Timiskaming,Ontario,"Timiskaming, Ontario",33822,2020-01-27,0,0,0,0
@@ -18710,6 +18790,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,19,0,0,0,0,"Timiskaming, Ontario","Timiskaming, Ontario",Timiskaming,Ontario,"Timiskaming, Ontario",33822,2020-09-09,.00056176452,0,0,0
 0,19,0,0,0,0,"Timiskaming, Ontario","Timiskaming, Ontario",Timiskaming,Ontario,"Timiskaming, Ontario",33822,2020-09-10,.00056176452,0,0,0
 0,19,0,0,0,0,"Timiskaming, Ontario","Timiskaming, Ontario",Timiskaming,Ontario,"Timiskaming, Ontario",33822,2020-09-11,.00056176452,0,0,0
+0,19,0,0,0,0,"Timiskaming, Ontario","Timiskaming, Ontario",Timiskaming,Ontario,"Timiskaming, Ontario",33822,2020-09-12,.00056176452,0,0,0
 1,1,0,0,0,0,"Toronto, Ontario","Toronto, Ontario",Toronto,Ontario,"Toronto, Ontario",2956024,2020-01-25,3.3829224e-07,3.3829224e-07,0,0
 0,1,0,0,0,0,"Toronto, Ontario","Toronto, Ontario",Toronto,Ontario,"Toronto, Ontario",2956024,2020-01-26,3.3829224e-07,0,0,0
 1,2,0,0,0,0,"Toronto, Ontario","Toronto, Ontario",Toronto,Ontario,"Toronto, Ontario",2956024,2020-01-27,6.7658448e-07,3.3829224e-07,0,0
@@ -18941,6 +19022,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 58,16477,0,1175,0,0,"Toronto, Ontario","Toronto, Ontario",Toronto,Ontario,"Toronto, Ontario",2956024,2020-09-09,.0055740415,.000019620951,.00039749339,0
 58,16535,0,1175,0,0,"Toronto, Ontario","Toronto, Ontario",Toronto,Ontario,"Toronto, Ontario",2956024,2020-09-10,.0055936622,.000019620951,.00039749339,0
 74,16609,0,1175,0,0,"Toronto, Ontario","Toronto, Ontario",Toronto,Ontario,"Toronto, Ontario",2956024,2020-09-11,.0056186961,.000025033627,.00039749339,0
+84,16693,1,1176,0,0,"Toronto, Ontario","Toronto, Ontario",Toronto,Ontario,"Toronto, Ontario",2956024,2020-09-12,.0056471126,.000028416549,.0003978317,0
 0,0,0,0,0,0,"Vancouver Coastal, British Columbia","Vancouver Coastal, British Columbia",Vancouver Coastal,British Columbia,"Vancouver Coastal, British Columbia",1210891,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Vancouver Coastal, British Columbia","Vancouver Coastal, British Columbia",Vancouver Coastal,British Columbia,"Vancouver Coastal, British Columbia",1210891,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Vancouver Coastal, British Columbia","Vancouver Coastal, British Columbia",Vancouver Coastal,British Columbia,"Vancouver Coastal, British Columbia",1210891,2020-01-27,0,0,0,0
@@ -19172,6 +19254,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 36,2282,0,111,0,0,"Vancouver Coastal, British Columbia","Vancouver Coastal, British Columbia",Vancouver Coastal,British Columbia,"Vancouver Coastal, British Columbia",1210891,2020-09-09,.0018845627,.000029730174,.000091668036,0
 59,2341,0,111,0,0,"Vancouver Coastal, British Columbia","Vancouver Coastal, British Columbia",Vancouver Coastal,British Columbia,"Vancouver Coastal, British Columbia",1210891,2020-09-10,.0019332871,.000048724451,.000091668036,0
 78,2419,0,111,0,0,"Vancouver Coastal, British Columbia","Vancouver Coastal, British Columbia",Vancouver Coastal,British Columbia,"Vancouver Coastal, British Columbia",1210891,2020-09-11,.0019977025,.000064415377,.000091668036,0
+0,2419,0,111,0,0,"Vancouver Coastal, British Columbia","Vancouver Coastal, British Columbia",Vancouver Coastal,British Columbia,"Vancouver Coastal, British Columbia",1210891,2020-09-12,.0019977025,0,.000091668036,0
 0,0,0,0,0,0,"Waterloo, Ontario","Waterloo, Ontario",Waterloo,Ontario,"Waterloo, Ontario",579145,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Waterloo, Ontario","Waterloo, Ontario",Waterloo,Ontario,"Waterloo, Ontario",579145,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Waterloo, Ontario","Waterloo, Ontario",Waterloo,Ontario,"Waterloo, Ontario",579145,2020-01-27,0,0,0,0
@@ -19403,6 +19486,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 5,1480,0,120,0,0,"Waterloo, Ontario","Waterloo, Ontario",Waterloo,Ontario,"Waterloo, Ontario",579145,2020-09-09,.0025554912,8.6334167e-06,.000207202,0
 9,1489,0,120,0,0,"Waterloo, Ontario","Waterloo, Ontario",Waterloo,Ontario,"Waterloo, Ontario",579145,2020-09-10,.0025710315,.00001554015,.000207202,0
 14,1503,0,120,0,0,"Waterloo, Ontario","Waterloo, Ontario",Waterloo,Ontario,"Waterloo, Ontario",579145,2020-09-11,.0025952051,.000024173567,.000207202,0
+5,1508,0,120,0,0,"Waterloo, Ontario","Waterloo, Ontario",Waterloo,Ontario,"Waterloo, Ontario",579145,2020-09-12,.0026038385,8.6334167e-06,.000207202,0
 0,0,0,0,0,0,"Wellington Dufferin Guelph, Ontario","Wellington Dufferin Guelph, Ontario",Wellington Dufferin Guelph,Ontario,"Wellington Dufferin Guelph, Ontario",303510,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Wellington Dufferin Guelph, Ontario","Wellington Dufferin Guelph, Ontario",Wellington Dufferin Guelph,Ontario,"Wellington Dufferin Guelph, Ontario",303510,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Wellington Dufferin Guelph, Ontario","Wellington Dufferin Guelph, Ontario",Wellington Dufferin Guelph,Ontario,"Wellington Dufferin Guelph, Ontario",303510,2020-01-27,0,0,0,0
@@ -19634,6 +19718,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 2,568,0,37,0,0,"Wellington Dufferin Guelph, Ontario","Wellington Dufferin Guelph, Ontario",Wellington Dufferin Guelph,Ontario,"Wellington Dufferin Guelph, Ontario",303510,2020-09-09,.0018714375,6.5895688e-06,.00012190702,0
 3,571,0,37,0,0,"Wellington Dufferin Guelph, Ontario","Wellington Dufferin Guelph, Ontario",Wellington Dufferin Guelph,Ontario,"Wellington Dufferin Guelph, Ontario",303510,2020-09-10,.0018813219,9.8843529e-06,.00012190702,0
 4,575,0,37,0,0,"Wellington Dufferin Guelph, Ontario","Wellington Dufferin Guelph, Ontario",Wellington Dufferin Guelph,Ontario,"Wellington Dufferin Guelph, Ontario",303510,2020-09-11,.001894501,.000013179138,.00012190702,0
+0,575,0,37,0,0,"Wellington Dufferin Guelph, Ontario","Wellington Dufferin Guelph, Ontario",Wellington Dufferin Guelph,Ontario,"Wellington Dufferin Guelph, Ontario",303510,2020-09-12,.001894501,0,.00012190702,0
 0,0,0,0,0,0,"Western, Newfoundland & Labrador","Western, Newfoundland & Labrador",Western,Newfoundland & Labrador,"Western, Newfoundland & Labrador",77509,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Western, Newfoundland & Labrador","Western, Newfoundland & Labrador",Western,Newfoundland & Labrador,"Western, Newfoundland & Labrador",77509,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Western, Newfoundland & Labrador","Western, Newfoundland & Labrador",Western,Newfoundland & Labrador,"Western, Newfoundland & Labrador",77509,2020-01-27,0,0,0,0
@@ -19865,6 +19950,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,4,0,0,0,0,"Western, Newfoundland & Labrador","Western, Newfoundland & Labrador",Western,Newfoundland & Labrador,"Western, Newfoundland & Labrador",77509,2020-09-09,.000051606909,0,0,0
 0,4,0,0,0,0,"Western, Newfoundland & Labrador","Western, Newfoundland & Labrador",Western,Newfoundland & Labrador,"Western, Newfoundland & Labrador",77509,2020-09-10,.000051606909,0,0,0
 0,4,0,0,0,0,"Western, Newfoundland & Labrador","Western, Newfoundland & Labrador",Western,Newfoundland & Labrador,"Western, Newfoundland & Labrador",77509,2020-09-11,.000051606909,0,0,0
+0,4,0,0,0,0,"Western, Newfoundland & Labrador","Western, Newfoundland & Labrador",Western,Newfoundland & Labrador,"Western, Newfoundland & Labrador",77509,2020-09-12,.000051606909,0,0,0
 0,0,0,0,0,0,"Windsor-Essex, Ontario","Windsor-Essex, Ontario",Windsor-Essex,Ontario,"Windsor-Essex, Ontario",423236,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Windsor-Essex, Ontario","Windsor-Essex, Ontario",Windsor-Essex,Ontario,"Windsor-Essex, Ontario",423236,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Windsor-Essex, Ontario","Windsor-Essex, Ontario",Windsor-Essex,Ontario,"Windsor-Essex, Ontario",423236,2020-01-27,0,0,0,0
@@ -20096,6 +20182,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 5,2561,0,75,0,0,"Windsor-Essex, Ontario","Windsor-Essex, Ontario",Windsor-Essex,Ontario,"Windsor-Essex, Ontario",423236,2020-09-09,.0060509974,.00001181374,.00017720609,0
 8,2569,1,76,0,0,"Windsor-Essex, Ontario","Windsor-Essex, Ontario",Windsor-Essex,Ontario,"Windsor-Essex, Ontario",423236,2020-09-10,.0060698995,.000018901983,.00017956884,0
 3,2572,0,76,0,0,"Windsor-Essex, Ontario","Windsor-Essex, Ontario",Windsor-Essex,Ontario,"Windsor-Essex, Ontario",423236,2020-09-11,.0060769878,7.0882438e-06,.00017956884,0
+7,2579,0,76,0,0,"Windsor-Essex, Ontario","Windsor-Essex, Ontario",Windsor-Essex,Ontario,"Windsor-Essex, Ontario",423236,2020-09-12,.0060935272,.000016539236,.00017956884,0
 0,0,0,0,0,0,"Winnipeg, Manitoba","Winnipeg, Manitoba",Winnipeg,Manitoba,"Winnipeg, Manitoba",770043,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Winnipeg, Manitoba","Winnipeg, Manitoba",Winnipeg,Manitoba,"Winnipeg, Manitoba",770043,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Winnipeg, Manitoba","Winnipeg, Manitoba",Winnipeg,Manitoba,"Winnipeg, Manitoba",770043,2020-01-27,0,0,0,0
@@ -20327,6 +20414,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 14,510,0,5,0,0,"Winnipeg, Manitoba","Winnipeg, Manitoba",Winnipeg,Manitoba,"Winnipeg, Manitoba",770043,2020-09-09,.00066230068,.000018180803,6.4931437e-06,0
 9,519,0,5,0,0,"Winnipeg, Manitoba","Winnipeg, Manitoba",Winnipeg,Manitoba,"Winnipeg, Manitoba",770043,2020-09-10,.00067398831,.000011687659,6.4931437e-06,0
 8,527,0,5,0,0,"Winnipeg, Manitoba","Winnipeg, Manitoba",Winnipeg,Manitoba,"Winnipeg, Manitoba",770043,2020-09-11,.00068437739,.000010389031,6.4931437e-06,0
+8,535,0,5,0,0,"Winnipeg, Manitoba","Winnipeg, Manitoba",Winnipeg,Manitoba,"Winnipeg, Manitoba",770043,2020-09-12,.00069476641,.000010389031,6.4931437e-06,0
 0,0,0,0,0,0,"York, Ontario","York, Ontario",York,Ontario,"York, Ontario",1150956,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"York, Ontario","York, Ontario",York,Ontario,"York, Ontario",1150956,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"York, Ontario","York, Ontario",York,Ontario,"York, Ontario",1150956,2020-01-27,0,0,0,0
@@ -20558,6 +20646,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 27,3600,0,253,0,0,"York, Ontario","York, Ontario",York,Ontario,"York, Ontario",1150956,2020-09-09,.0031278345,.000023458759,.00021981726,0
 14,3614,0,253,0,0,"York, Ontario","York, Ontario",York,Ontario,"York, Ontario",1150956,2020-09-10,.0031399983,.000012163801,.00021981726,0
 13,3627,0,253,0,0,"York, Ontario","York, Ontario",York,Ontario,"York, Ontario",1150956,2020-09-11,.0031512934,.000011294958,.00021981726,0
+14,3641,0,253,0,0,"York, Ontario","York, Ontario",York,Ontario,"York, Ontario",1150956,2020-09-12,.0031634571,.000012163801,.00021981726,0
 0,0,0,0,0,0,"Yukon, Canada","Yukon, Canada",Not Reported,Yukon,"Not Reported, Yukon",40476,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Yukon, Canada","Yukon, Canada",Not Reported,Yukon,"Not Reported, Yukon",40476,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Yukon, Canada","Yukon, Canada",Not Reported,Yukon,"Not Reported, Yukon",40476,2020-01-27,0,0,0,0
@@ -20789,6 +20878,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,15,0,0,15,0,"Yukon, Canada","Yukon, Canada",Not Reported,Yukon,"Not Reported, Yukon",40476,2020-09-09,.00037058999,0,0,.00037058999
 0,15,0,0,15,0,"Yukon, Canada","Yukon, Canada",Not Reported,Yukon,"Not Reported, Yukon",40476,2020-09-10,.00037058999,0,0,.00037058999
 0,15,0,0,15,0,"Yukon, Canada","Yukon, Canada",Not Reported,Yukon,"Not Reported, Yukon",40476,2020-09-11,.00037058999,0,0,.00037058999
+0,15,0,0,15,0,"Yukon, Canada","Yukon, Canada",Not Reported,Yukon,"Not Reported, Yukon",40476,2020-09-12,.00037058999,0,0,.00037058999
 0,0,0,0,0,0,"Zone 1 (Moncton area), New Brunswick","Zone 1 (Moncton area), New Brunswick",Zone 1 (Moncton area),New Brunswick,"Zone 1 (Moncton area), New Brunswick",218670,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 1 (Moncton area), New Brunswick","Zone 1 (Moncton area), New Brunswick",Zone 1 (Moncton area),New Brunswick,"Zone 1 (Moncton area), New Brunswick",218670,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 1 (Moncton area), New Brunswick","Zone 1 (Moncton area), New Brunswick",Zone 1 (Moncton area),New Brunswick,"Zone 1 (Moncton area), New Brunswick",218670,2020-01-27,0,0,0,0
@@ -21020,6 +21110,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,43,0,0,0,0,"Zone 1 (Moncton area), New Brunswick","Zone 1 (Moncton area), New Brunswick",Zone 1 (Moncton area),New Brunswick,"Zone 1 (Moncton area), New Brunswick",218670,2020-09-09,.00019664335,0,0,0
 0,43,0,0,0,0,"Zone 1 (Moncton area), New Brunswick","Zone 1 (Moncton area), New Brunswick",Zone 1 (Moncton area),New Brunswick,"Zone 1 (Moncton area), New Brunswick",218670,2020-09-10,.00019664335,0,0,0
 0,43,0,0,0,0,"Zone 1 (Moncton area), New Brunswick","Zone 1 (Moncton area), New Brunswick",Zone 1 (Moncton area),New Brunswick,"Zone 1 (Moncton area), New Brunswick",218670,2020-09-11,.00019664335,0,0,0
+0,43,0,0,0,0,"Zone 1 (Moncton area), New Brunswick","Zone 1 (Moncton area), New Brunswick",Zone 1 (Moncton area),New Brunswick,"Zone 1 (Moncton area), New Brunswick",218670,2020-09-12,.00019664335,0,0,0
 0,0,0,0,0,0,"Zone 1 - Western, Nova Scotia","Zone 1 - Western, Nova Scotia",Zone 1 - Western,Nova Scotia,"Zone 1 - Western, Nova Scotia",199181,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 1 - Western, Nova Scotia","Zone 1 - Western, Nova Scotia",Zone 1 - Western,Nova Scotia,"Zone 1 - Western, Nova Scotia",199181,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 1 - Western, Nova Scotia","Zone 1 - Western, Nova Scotia",Zone 1 - Western,Nova Scotia,"Zone 1 - Western, Nova Scotia",199181,2020-01-27,0,0,0,0
@@ -21251,6 +21342,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,55,0,1,0,0,"Zone 1 - Western, Nova Scotia","Zone 1 - Western, Nova Scotia",Zone 1 - Western,Nova Scotia,"Zone 1 - Western, Nova Scotia",199181,2020-09-09,.00027613077,0,5.0205590e-06,0
 0,55,0,1,0,0,"Zone 1 - Western, Nova Scotia","Zone 1 - Western, Nova Scotia",Zone 1 - Western,Nova Scotia,"Zone 1 - Western, Nova Scotia",199181,2020-09-10,.00027613077,0,5.0205590e-06,0
 0,55,0,1,0,0,"Zone 1 - Western, Nova Scotia","Zone 1 - Western, Nova Scotia",Zone 1 - Western,Nova Scotia,"Zone 1 - Western, Nova Scotia",199181,2020-09-11,.00027613077,0,5.0205590e-06,0
+0,55,0,1,0,0,"Zone 1 - Western, Nova Scotia","Zone 1 - Western, Nova Scotia",Zone 1 - Western,Nova Scotia,"Zone 1 - Western, Nova Scotia",199181,2020-09-12,.00027613077,0,5.0205590e-06,0
 0,0,0,0,0,0,"Zone 2 (Saint John area), New Brunswick","Zone 2 (Saint John area), New Brunswick",Zone 2 (Saint John area),New Brunswick,"Zone 2 (Saint John area), New Brunswick",175213,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 2 (Saint John area), New Brunswick","Zone 2 (Saint John area), New Brunswick",Zone 2 (Saint John area),New Brunswick,"Zone 2 (Saint John area), New Brunswick",175213,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 2 (Saint John area), New Brunswick","Zone 2 (Saint John area), New Brunswick",Zone 2 (Saint John area),New Brunswick,"Zone 2 (Saint John area), New Brunswick",175213,2020-01-27,0,0,0,0
@@ -21482,6 +21574,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,28,0,0,0,0,"Zone 2 (Saint John area), New Brunswick","Zone 2 (Saint John area), New Brunswick",Zone 2 (Saint John area),New Brunswick,"Zone 2 (Saint John area), New Brunswick",175213,2020-09-09,.0001598055,0,0,0
 0,28,0,0,0,0,"Zone 2 (Saint John area), New Brunswick","Zone 2 (Saint John area), New Brunswick",Zone 2 (Saint John area),New Brunswick,"Zone 2 (Saint John area), New Brunswick",175213,2020-09-10,.0001598055,0,0,0
 0,28,0,0,0,0,"Zone 2 (Saint John area), New Brunswick","Zone 2 (Saint John area), New Brunswick",Zone 2 (Saint John area),New Brunswick,"Zone 2 (Saint John area), New Brunswick",175213,2020-09-11,.0001598055,0,0,0
+0,28,0,0,0,0,"Zone 2 (Saint John area), New Brunswick","Zone 2 (Saint John area), New Brunswick",Zone 2 (Saint John area),New Brunswick,"Zone 2 (Saint John area), New Brunswick",175213,2020-09-12,.0001598055,0,0,0
 0,0,0,0,0,0,"Zone 2 - Northern, Nova Scotia","Zone 2 - Northern, Nova Scotia",Zone 2 - Northern,Nova Scotia,"Zone 2 - Northern, Nova Scotia",148368,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 2 - Northern, Nova Scotia","Zone 2 - Northern, Nova Scotia",Zone 2 - Northern,Nova Scotia,"Zone 2 - Northern, Nova Scotia",148368,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 2 - Northern, Nova Scotia","Zone 2 - Northern, Nova Scotia",Zone 2 - Northern,Nova Scotia,"Zone 2 - Northern, Nova Scotia",148368,2020-01-27,0,0,0,0
@@ -21713,6 +21806,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,67,0,1,0,0,"Zone 2 - Northern, Nova Scotia","Zone 2 - Northern, Nova Scotia",Zone 2 - Northern,Nova Scotia,"Zone 2 - Northern, Nova Scotia",148368,2020-09-09,.00045157986,0,6.7399978e-06,0
 0,67,0,1,0,0,"Zone 2 - Northern, Nova Scotia","Zone 2 - Northern, Nova Scotia",Zone 2 - Northern,Nova Scotia,"Zone 2 - Northern, Nova Scotia",148368,2020-09-10,.00045157986,0,6.7399978e-06,0
 0,67,0,1,0,0,"Zone 2 - Northern, Nova Scotia","Zone 2 - Northern, Nova Scotia",Zone 2 - Northern,Nova Scotia,"Zone 2 - Northern, Nova Scotia",148368,2020-09-11,.00045157986,0,6.7399978e-06,0
+0,67,0,1,0,0,"Zone 2 - Northern, Nova Scotia","Zone 2 - Northern, Nova Scotia",Zone 2 - Northern,Nova Scotia,"Zone 2 - Northern, Nova Scotia",148368,2020-09-12,.00045157986,0,6.7399978e-06,0
 0,0,0,0,0,0,"Zone 3 (Fredericton area), New Brunswick","Zone 3 (Fredericton area), New Brunswick",Zone 3 (Fredericton area),New Brunswick,"Zone 3 (Fredericton area), New Brunswick",181612,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 3 (Fredericton area), New Brunswick","Zone 3 (Fredericton area), New Brunswick",Zone 3 (Fredericton area),New Brunswick,"Zone 3 (Fredericton area), New Brunswick",181612,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 3 (Fredericton area), New Brunswick","Zone 3 (Fredericton area), New Brunswick",Zone 3 (Fredericton area),New Brunswick,"Zone 3 (Fredericton area), New Brunswick",181612,2020-01-27,0,0,0,0
@@ -21944,6 +22038,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,57,0,0,0,0,"Zone 3 (Fredericton area), New Brunswick","Zone 3 (Fredericton area), New Brunswick",Zone 3 (Fredericton area),New Brunswick,"Zone 3 (Fredericton area), New Brunswick",181612,2020-09-09,.00031385591,0,0,0
 0,57,0,0,0,0,"Zone 3 (Fredericton area), New Brunswick","Zone 3 (Fredericton area), New Brunswick",Zone 3 (Fredericton area),New Brunswick,"Zone 3 (Fredericton area), New Brunswick",181612,2020-09-10,.00031385591,0,0,0
 0,57,0,0,0,0,"Zone 3 (Fredericton area), New Brunswick","Zone 3 (Fredericton area), New Brunswick",Zone 3 (Fredericton area),New Brunswick,"Zone 3 (Fredericton area), New Brunswick",181612,2020-09-11,.00031385591,0,0,0
+0,57,0,0,0,0,"Zone 3 (Fredericton area), New Brunswick","Zone 3 (Fredericton area), New Brunswick",Zone 3 (Fredericton area),New Brunswick,"Zone 3 (Fredericton area), New Brunswick",181612,2020-09-12,.00031385591,0,0,0
 0,0,0,0,0,0,"Zone 3 - Eastern, Nova Scotia","Zone 3 - Eastern, Nova Scotia",Zone 3 - Eastern,Nova Scotia,"Zone 3 - Eastern, Nova Scotia",160775,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 3 - Eastern, Nova Scotia","Zone 3 - Eastern, Nova Scotia",Zone 3 - Eastern,Nova Scotia,"Zone 3 - Eastern, Nova Scotia",160775,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 3 - Eastern, Nova Scotia","Zone 3 - Eastern, Nova Scotia",Zone 3 - Eastern,Nova Scotia,"Zone 3 - Eastern, Nova Scotia",160775,2020-01-27,0,0,0,0
@@ -22175,6 +22270,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,54,0,5,0,0,"Zone 3 - Eastern, Nova Scotia","Zone 3 - Eastern, Nova Scotia",Zone 3 - Eastern,Nova Scotia,"Zone 3 - Eastern, Nova Scotia",160775,2020-09-09,.0003358731,0,.000031099364,0
 0,54,0,5,0,0,"Zone 3 - Eastern, Nova Scotia","Zone 3 - Eastern, Nova Scotia",Zone 3 - Eastern,Nova Scotia,"Zone 3 - Eastern, Nova Scotia",160775,2020-09-10,.0003358731,0,.000031099364,0
 0,54,0,5,0,0,"Zone 3 - Eastern, Nova Scotia","Zone 3 - Eastern, Nova Scotia",Zone 3 - Eastern,Nova Scotia,"Zone 3 - Eastern, Nova Scotia",160775,2020-09-11,.0003358731,0,.000031099364,0
+0,54,0,5,0,0,"Zone 3 - Eastern, Nova Scotia","Zone 3 - Eastern, Nova Scotia",Zone 3 - Eastern,Nova Scotia,"Zone 3 - Eastern, Nova Scotia",160775,2020-09-12,.0003358731,0,.000031099364,0
 0,0,0,0,0,0,"Zone 4 (Edmundston area), New Brunswick","Zone 4 (Edmundston area), New Brunswick",Zone 4 (Edmundston area),New Brunswick,"Zone 4 (Edmundston area), New Brunswick",48228,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 4 (Edmundston area), New Brunswick","Zone 4 (Edmundston area), New Brunswick",Zone 4 (Edmundston area),New Brunswick,"Zone 4 (Edmundston area), New Brunswick",48228,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 4 (Edmundston area), New Brunswick","Zone 4 (Edmundston area), New Brunswick",Zone 4 (Edmundston area),New Brunswick,"Zone 4 (Edmundston area), New Brunswick",48228,2020-01-27,0,0,0,0
@@ -22406,6 +22502,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,7,0,0,0,0,"Zone 4 (Edmundston area), New Brunswick","Zone 4 (Edmundston area), New Brunswick",Zone 4 (Edmundston area),New Brunswick,"Zone 4 (Edmundston area), New Brunswick",48228,2020-09-09,.0001451439,0,0,0
 1,8,0,0,0,0,"Zone 4 (Edmundston area), New Brunswick","Zone 4 (Edmundston area), New Brunswick",Zone 4 (Edmundston area),New Brunswick,"Zone 4 (Edmundston area), New Brunswick",48228,2020-09-10,.00016587874,.000020734842,0,0
 0,8,0,0,0,0,"Zone 4 (Edmundston area), New Brunswick","Zone 4 (Edmundston area), New Brunswick",Zone 4 (Edmundston area),New Brunswick,"Zone 4 (Edmundston area), New Brunswick",48228,2020-09-11,.00016587874,0,0,0
+0,8,0,0,0,0,"Zone 4 (Edmundston area), New Brunswick","Zone 4 (Edmundston area), New Brunswick",Zone 4 (Edmundston area),New Brunswick,"Zone 4 (Edmundston area), New Brunswick",48228,2020-09-12,.00016587874,0,0,0
 0,0,0,0,0,0,"Zone 4 - Central, Nova Scotia","Zone 4 - Central, Nova Scotia",Zone 4 - Central,Nova Scotia,"Zone 4 - Central, Nova Scotia",451618,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 4 - Central, Nova Scotia","Zone 4 - Central, Nova Scotia",Zone 4 - Central,Nova Scotia,"Zone 4 - Central, Nova Scotia",451618,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 4 - Central, Nova Scotia","Zone 4 - Central, Nova Scotia",Zone 4 - Central,Nova Scotia,"Zone 4 - Central, Nova Scotia",451618,2020-01-27,0,0,0,0
@@ -22637,6 +22734,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,910,0,58,0,0,"Zone 4 - Central, Nova Scotia","Zone 4 - Central, Nova Scotia",Zone 4 - Central,Nova Scotia,"Zone 4 - Central, Nova Scotia",451618,2020-09-09,.0020149772,0,.00012842713,0
 0,910,0,58,0,0,"Zone 4 - Central, Nova Scotia","Zone 4 - Central, Nova Scotia",Zone 4 - Central,Nova Scotia,"Zone 4 - Central, Nova Scotia",451618,2020-09-10,.0020149772,0,.00012842713,0
 0,910,0,58,0,0,"Zone 4 - Central, Nova Scotia","Zone 4 - Central, Nova Scotia",Zone 4 - Central,Nova Scotia,"Zone 4 - Central, Nova Scotia",451618,2020-09-11,.0020149772,0,.00012842713,0
+0,910,0,58,0,0,"Zone 4 - Central, Nova Scotia","Zone 4 - Central, Nova Scotia",Zone 4 - Central,Nova Scotia,"Zone 4 - Central, Nova Scotia",451618,2020-09-12,.0020149772,0,.00012842713,0
 0,0,0,0,0,0,"Zone 5 (Campbellton area), New Brunswick","Zone 5 (Campbellton area), New Brunswick",Zone 5 (Campbellton area),New Brunswick,"Zone 5 (Campbellton area), New Brunswick",25428,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 5 (Campbellton area), New Brunswick","Zone 5 (Campbellton area), New Brunswick",Zone 5 (Campbellton area),New Brunswick,"Zone 5 (Campbellton area), New Brunswick",25428,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 5 (Campbellton area), New Brunswick","Zone 5 (Campbellton area), New Brunswick",Zone 5 (Campbellton area),New Brunswick,"Zone 5 (Campbellton area), New Brunswick",25428,2020-01-27,0,0,0,0
@@ -22868,6 +22966,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,53,0,2,0,0,"Zone 5 (Campbellton area), New Brunswick","Zone 5 (Campbellton area), New Brunswick",Zone 5 (Campbellton area),New Brunswick,"Zone 5 (Campbellton area), New Brunswick",25428,2020-09-09,.0020843165,0,.000078653451,0
 0,53,0,2,0,0,"Zone 5 (Campbellton area), New Brunswick","Zone 5 (Campbellton area), New Brunswick",Zone 5 (Campbellton area),New Brunswick,"Zone 5 (Campbellton area), New Brunswick",25428,2020-09-10,.0020843165,0,.000078653451,0
 0,53,0,2,0,0,"Zone 5 (Campbellton area), New Brunswick","Zone 5 (Campbellton area), New Brunswick",Zone 5 (Campbellton area),New Brunswick,"Zone 5 (Campbellton area), New Brunswick",25428,2020-09-11,.0020843165,0,.000078653451,0
+0,53,0,2,0,0,"Zone 5 (Campbellton area), New Brunswick","Zone 5 (Campbellton area), New Brunswick",Zone 5 (Campbellton area),New Brunswick,"Zone 5 (Campbellton area), New Brunswick",25428,2020-09-12,.0020843165,0,.000078653451,0
 0,0,0,0,0,0,"Zone 6 (Bathurst area), New Brunswick","Zone 6 (Bathurst area), New Brunswick",Zone 6 (Bathurst area),New Brunswick,"Zone 6 (Bathurst area), New Brunswick",77201,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 6 (Bathurst area), New Brunswick","Zone 6 (Bathurst area), New Brunswick",Zone 6 (Bathurst area),New Brunswick,"Zone 6 (Bathurst area), New Brunswick",77201,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 6 (Bathurst area), New Brunswick","Zone 6 (Bathurst area), New Brunswick",Zone 6 (Bathurst area),New Brunswick,"Zone 6 (Bathurst area), New Brunswick",77201,2020-01-27,0,0,0,0
@@ -23099,6 +23198,7 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,2,0,0,0,0,"Zone 6 (Bathurst area), New Brunswick","Zone 6 (Bathurst area), New Brunswick",Zone 6 (Bathurst area),New Brunswick,"Zone 6 (Bathurst area), New Brunswick",77201,2020-09-09,.0000259064,0,0,0
 0,2,0,0,0,0,"Zone 6 (Bathurst area), New Brunswick","Zone 6 (Bathurst area), New Brunswick",Zone 6 (Bathurst area),New Brunswick,"Zone 6 (Bathurst area), New Brunswick",77201,2020-09-10,.0000259064,0,0,0
 0,2,0,0,0,0,"Zone 6 (Bathurst area), New Brunswick","Zone 6 (Bathurst area), New Brunswick",Zone 6 (Bathurst area),New Brunswick,"Zone 6 (Bathurst area), New Brunswick",77201,2020-09-11,.0000259064,0,0,0
+0,2,0,0,0,0,"Zone 6 (Bathurst area), New Brunswick","Zone 6 (Bathurst area), New Brunswick",Zone 6 (Bathurst area),New Brunswick,"Zone 6 (Bathurst area), New Brunswick",77201,2020-09-12,.0000259064,0,0,0
 0,0,0,0,0,0,"Zone 7 (Miramichi area), New Brunswick","Zone 7 (Miramichi area), New Brunswick",Zone 7 (Miramichi area),New Brunswick,"Zone 7 (Miramichi area), New Brunswick",44281,2020-01-25,0,0,0,0
 0,0,0,0,0,0,"Zone 7 (Miramichi area), New Brunswick","Zone 7 (Miramichi area), New Brunswick",Zone 7 (Miramichi area),New Brunswick,"Zone 7 (Miramichi area), New Brunswick",44281,2020-01-26,0,0,0,0
 0,0,0,0,0,0,"Zone 7 (Miramichi area), New Brunswick","Zone 7 (Miramichi area), New Brunswick",Zone 7 (Miramichi area),New Brunswick,"Zone 7 (Miramichi area), New Brunswick",44281,2020-01-27,0,0,0,0
@@ -23330,3 +23430,4 @@ new_cases,cases,new_deaths,deaths,recovered,new_recovered,address_code,address,r
 0,2,0,0,0,0,"Zone 7 (Miramichi area), New Brunswick","Zone 7 (Miramichi area), New Brunswick",Zone 7 (Miramichi area),New Brunswick,"Zone 7 (Miramichi area), New Brunswick",44281,2020-09-09,.0000451661,0,0,0
 0,2,0,0,0,0,"Zone 7 (Miramichi area), New Brunswick","Zone 7 (Miramichi area), New Brunswick",Zone 7 (Miramichi area),New Brunswick,"Zone 7 (Miramichi area), New Brunswick",44281,2020-09-10,.0000451661,0,0,0
 0,2,0,0,0,0,"Zone 7 (Miramichi area), New Brunswick","Zone 7 (Miramichi area), New Brunswick",Zone 7 (Miramichi area),New Brunswick,"Zone 7 (Miramichi area), New Brunswick",44281,2020-09-11,.0000451661,0,0,0
+0,2,0,0,0,0,"Zone 7 (Miramichi area), New Brunswick","Zone 7 (Miramichi area), New Brunswick",Zone 7 (Miramichi area),New Brunswick,"Zone 7 (Miramichi area), New Brunswick",44281,2020-09-12,.0000451661,0,0,0
