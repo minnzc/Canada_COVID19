@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 31 August 2020
+## Last updated: 14 September 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -421,7 +421,7 @@ ui <- bootstrapPage(
                                             selected = c("Deaths"),
                                             multiple = FALSE),
                                 
-                                pickerInput("stat", "Select lag period of active cases:",   
+                                pickerInput("stat", "Select lag period of daily new cases:",   
                                             choices = c("18-day", "14-day"), 
                                             options = list(`actions-box` = TRUE),
                                             selected = "18-day",
@@ -476,7 +476,7 @@ ui <- bootstrapPage(
                                             selected = c("Deaths"),
                                             multiple = FALSE),
                                 
-                                pickerInput("stat_mv", "Select lag period of active cases:",   
+                                pickerInput("stat_mv", "Select lag period of daily new cases:",   
                                             choices = c("18-day", "14-day"), 
                                             options = list(`actions-box` = TRUE),
                                             selected = "18-day",
