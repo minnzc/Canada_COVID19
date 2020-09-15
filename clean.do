@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 31 August 2020
+*Last updated: 14 September 2020
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -664,10 +664,12 @@ local deaths date_death_report
 foreach v in cases deaths {
 
 *Load data
-import excel "$MAIN/$DATA", sheet("``v'_sheet'") cellra(A4) first clear
+import excel "$MAIN/$DATA", sheet("``v'_sheet'") first clear
 
 *Delete unnecessary observations
-rename ``v'' date
+rename ``v'' Date
+gen date = date(Date, "DMY")
+format date %td
 drop if date == . 
 
 *Drop repatriated cases
@@ -711,11 +713,13 @@ save "$MAIN/`v'", replace
 *CLEAN REGIONAL RECOVERED DATA
 
 *Load data
-import excel "$MAIN/$DATA", sheet("Recovered") cellra(A4) first clear
+import excel "$MAIN/$DATA", sheet("Recovered") first clear
 
 *Delete unnecessary observations
-rename date_recovered date
-drop if date == . 
+rename date_recovered Date
+gen date = date(Date, "DMY")
+format date %td
+drop if date == .
 
 *Drop repatriated cases
 drop if province == "Repatriated"
@@ -944,10 +948,12 @@ local deaths date_death_report
 foreach v in cases deaths {
 
 *Load data
-import excel "$MAIN/$DATA", sheet("``v'_sheet'") cellra(A4) first clear
+import excel "$MAIN/$DATA", sheet("``v'_sheet'") first clear
 
 *Delete unnecessary observations
-rename ``v'' date
+rename ``v'' Date
+gen date = date(Date, "DMY")
+format date %td
 drop if date == . 
 
 *Drop repatriated cases
@@ -982,10 +988,12 @@ save "$MAIN/`v'", replace
 *CLEAN PROVINCIAL RECOVERED DATA
 
 *Load data
-import excel "$MAIN/$DATA", sheet("Recovered") cellra(A4) first clear
+import excel "$MAIN/$DATA", sheet("Recovered") first clear
 
 *Delete unnecessary observations
-rename date_recovered date
+rename date_recovered Date
+gen date = date(Date, "DMY")
+format date %td
 drop if date == . 
 
 *Drop repatriated cases
