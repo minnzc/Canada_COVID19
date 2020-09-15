@@ -12,12 +12,9 @@
 global MAIN "C:/Users/minni/OneDrive/Documents/R/shiny/nCoV_Canada_tracker/input_data"
 cd "$MAIN"
 
-*Set file name for Ontario cases by location data
-global DATA "Public_COVID-19_Canada.xlsx"
-
 *Set file name for total cases and status data to be geocoded by region
-global OUTPUT1 "covid_location.csv"
-global OUTPUT1_1 "covid_region.csv"
+global OUTPUT1_1 "covid_location.csv"
+global OUTPUT1_2 "covid_region.csv"
 
 *Set file name for provincial total cases and status data
 global OUTPUT2 "covid_province.csv"
@@ -653,8 +650,8 @@ save "$MAIN/ridership_`v'", replace
 *CLEAN REGIONAL CASES AND DEATHS DATA
 
 *Save Excel sheet names
-local cases_sheet "Cases"
-local deaths_sheet "Mortality"
+local cases_data "cases"
+local deaths_data "mortality"
 
 *Save date variable names 
 local cases date_report
@@ -664,7 +661,7 @@ local deaths date_death_report
 foreach v in cases deaths {
 
 *Load data
-import excel "$MAIN/$DATA", sheet("``v'_sheet'") first clear
+import delimited "$MAIN/``v'_data'.csv", varn(1) bindq(strict) clear
 
 *Delete unnecessary observations
 rename ``v'' Date
@@ -713,7 +710,7 @@ save "$MAIN/`v'", replace
 *CLEAN REGIONAL RECOVERED DATA
 
 *Load data
-import excel "$MAIN/$DATA", sheet("Recovered") first clear
+import delimited "$MAIN/recovered_cumulative.csv", varn(1) bindq(strict) clear
 
 *Delete unnecessary observations
 rename date_recovered Date
@@ -817,7 +814,7 @@ gen deathspc = deaths/pop
 gen recoveredpc = recovered/pop
 
 *Export data
-export delimited "$MAIN/$OUTPUT1", replace
+export delimited "$MAIN/$OUTPUT1_1", replace
 clear
 
 *************************
@@ -928,7 +925,7 @@ drop if date > last_update
 drop last_update
 
 *Export provincial data
-export delimited "$MAIN/$OUTPUT1_1", replace
+export delimited "$MAIN/$OUTPUT1_2", replace
 clear
 
 ********************************************************************************
@@ -937,8 +934,8 @@ clear
 *CLEAN PROVINCIAL CASES AND DEATHS DATA
 
 *Save Excel sheet names
-local cases_sheet "Cases"
-local deaths_sheet "Mortality"
+local cases_data "cases"
+local deaths_data "mortality"
 
 *Save date variable names 
 local cases date_report
@@ -948,7 +945,7 @@ local deaths date_death_report
 foreach v in cases deaths {
 
 *Load data
-import excel "$MAIN/$DATA", sheet("``v'_sheet'") first clear
+import delimited "$MAIN/``v'_data'.csv", varn(1) bindq(strict) clear
 
 *Delete unnecessary observations
 rename ``v'' Date
@@ -988,7 +985,7 @@ save "$MAIN/`v'", replace
 *CLEAN PROVINCIAL RECOVERED DATA
 
 *Load data
-import excel "$MAIN/$DATA", sheet("Recovered") first clear
+import delimited "$MAIN/recovered_cumulative.csv", varn(1) bindq(strict) clear
 
 *Delete unnecessary observations
 rename date_recovered Date
