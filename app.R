@@ -271,7 +271,7 @@ cv_min_date = as.Date(min(cv_cases_canada$date),"%Y-%m-%d")
 current_date = as.Date(max(cv_cases_canada$date),"%Y-%m-%d")
 
 # extract time stamp for labeling
-update = current_date
+update = Sys.Date()
 
 # map labeling
 cv_cases_canada$region = "Global"
