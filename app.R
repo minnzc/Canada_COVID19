@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 14 September 2020
+## Last updated: 6 October 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -317,7 +317,7 @@ ui <- bootstrapPage(
                             tags$head(includeCSS("styles.css")),
                             leafletOutput("mymap", width="100%", height="100%"),
                             absolutePanel(id = "controls", class = "panel panel-default",
-                                          top = 80, left = 20, width = 300, fixed=TRUE,
+                                          top = 80, left = 20, width = 350, fixed=TRUE,
                                           draggable = TRUE, height = "auto",
                                           
                                           h4(textOutput("reactive_case_count"), align="right", style="color:#000000"),
