@@ -2,14 +2,14 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 14 September 2020
+*Last updated: 29 October 2020
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
 ********************************************************************************
 
 *Set file location and file name
-global MAIN "C:/Users/minni/OneDrive/Documents/R/shiny/nCoV_Canada_tracker/input_data"
+global MAIN "./input_data"
 cd "$MAIN"
 
 *Set file name for total cases and status data to be geocoded by region
