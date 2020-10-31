@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 29 October 2020
+*Last updated: 30 October 2020
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -52,7 +52,7 @@ local canada_condition "missing(province)"
 foreach c in province canada {
 
 *Load data
-import delimited "$MAIN/$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clear
+import delimited "$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clear
 
 *Keep only necessary variables and observations
 rename country_region country
@@ -68,13 +68,13 @@ keep if ``c'_condition'
 drop ``c'_region'
 
 *Save for merging later
-save "$MAIN/goog_`c'", replace
+save "goog_`c'", replace
 }
 
 *KEEP ONLY CANADIAN DATA IN STORAGE
-import delimited "$MAIN/$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clear
+import delimited "$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clear
 keep if country_region=="Canada"
-export delimited "$MAIN/$GOOG", quote replace
+export delimited "$GOOG", quote replace
 
 ********************************************************************************
 ****************** CLEAN GOVERNMENT RESPONSE VOLUME DATA ***********************
@@ -93,7 +93,7 @@ local canada_region country
 foreach c in province canada {
 
 *Load data
-import excel "$MAIN/$GRNO", sheet(``c'_sheet') first clear
+import excel "$GRNO", sheet(``c'_sheet') first clear
 
 *Generate date string variable for R
 rename date Date
@@ -124,7 +124,7 @@ keep date ``c'_region' index*
 order date ``c'_region' index*
 
 *Save for merging later
-save "$MAIN/grindex_`c'", replace
+save "grindex_`c'", replace
 }
 
 ********************************************************************************
@@ -134,7 +134,7 @@ save "$MAIN/grindex_`c'", replace
 *CREATE PROVINCEDATASET
 
 *Load data
-import excel "$MAIN/$GRST", sheet("Province") first clear
+import excel "$GRST", sheet("Province") first clear
 
 *Change units of spending variables to billions
 foreach v in s10 s12 s13 {
@@ -197,14 +197,14 @@ keep date province index*
 order date province index*
 
 *Save for merging later
-*export excel "$MAIN/stringency_province.xlsx", first(variables) replace
-save "$MAIN/grstindex_province", replace
+*export excel "stringency_province.xlsx", first(variables) replace
+save "grstindex_province", replace
 
 *************************
 *CREATE CANADA-WIDE DATASET
 
 *Load data
-import excel "$MAIN/$GRST", sheet("Canada") first clear
+import excel "$GRST", sheet("Canada") first clear
 
 *Change units of spending variables to billions
 foreach v in s10 s12 s13 {
@@ -267,8 +267,8 @@ keep date country index*
 order date country index*
 
 *Save for merging later
-*export excel "$MAIN/stringency_canada.xlsx", first(variables) replace
-save "$MAIN/grstindex_canada", replace
+*export excel "stringency_canada.xlsx", first(variables) replace
+save "grstindex_canada", replace
 
 ********************************************************************************
 ********************** CLEAN CONSUMER CONFIDENCE DATA **************************
@@ -280,7 +280,7 @@ foreach data in CONF CONP CONE {
 *Create provincial data set
 
 *Load data
-import delimited "$MAIN/$`data'", bindq(strict) encoding("UTF-8") clear
+import delimited "$`data'", bindq(strict) encoding("UTF-8") clear
 
 *Keep only recent data
 gen Date = date(date, "MDY")
@@ -308,13 +308,13 @@ local var `r(varlist)'
 keep date province `var'
 
 *Save for merging later
-save "$MAIN/`var'_province", replace
+save "`var'_province", replace
 
 ***************
 *Create national data set
 
 *Load data
-import delimited "$MAIN/$`data'", bindq(strict) encoding("UTF-8") clear
+import delimited "$`data'", bindq(strict) encoding("UTF-8") clear
 
 *Keep only recent data
 gen Date = date(date, "MDY")
@@ -342,7 +342,7 @@ local var `r(varlist)'
 keep date country `var'
 
 *Save for merging later
-save "$MAIN/`var'_canada", replace
+save "`var'_canada", replace
 }
 
 ********************************************************************************
@@ -352,7 +352,7 @@ save "$MAIN/`var'_canada", replace
 *CREATE PROVINCIAL DATASET
 
 *Load data
-import excel "$MAIN/$JOBS", sheet("Confirmed") first clear
+import excel "$JOBS", sheet("Confirmed") first clear
 
 *Clean provinces data
 gen province = Geography
@@ -403,15 +403,15 @@ replace layoffs = layoffs + layoffs[_n-1] if _n != 1
 drop if province == "CA"
 
 *Export provincial data
-*export delimited "$MAIN/$OUTPUT2", replace
-save "$MAIN/layoffs_province", replace
+*export delimited "$OUTPUT2", replace
+save "layoffs_province", replace
 clear
 
 *************************
 *CREATE CANADA-WIDE DATASET
 
 *Load data
-import excel "$MAIN/$JOBS", sheet("Confirmed") first clear
+import excel "$JOBS", sheet("Confirmed") first clear
 
 *Rename variables
 rename Geography country
@@ -436,8 +436,8 @@ gen layoffs = new_layoffs
 replace layoffs = layoffs + layoffs[_n-1] if _n != 1
 
 *Export national data
-*export delimited "$MAIN/$OUTPUT3", replace
-save "$MAIN/layoffs_canada", replace
+*export delimited "$OUTPUT3", replace
+save "layoffs_canada", replace
 clear
 
 ********************************************************************************
@@ -454,7 +454,7 @@ local canada_sheet "Canada"
 foreach v in province canada {
 
 *Load data
-import excel "$MAIN/$UNEM", sheet("``v'_sheet'") first clear
+import excel "$UNEM", sheet("``v'_sheet'") first clear
 
 *Generate date string variable for R
 rename date Date
@@ -471,7 +471,7 @@ replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(
 drop Date dd mm yy
 
 *Export national data
-save "$MAIN/unem_`v'", replace
+save "unem_`v'", replace
 clear
 }
 
@@ -480,7 +480,7 @@ clear
 ********************************************************************************
 *Create provincial data set
 *Load data
-import delimited "$MAIN/$POP", bindq(strict) encoding("UTF-8") varn(1) clear
+import delimited "$POP", bindq(strict) encoding("UTF-8") varn(1) clear
 
 *Keep relevant variables
 keep province pop
@@ -493,19 +493,19 @@ replace province = "Prince Edward Island" if province == "PEI"
 collapse(sum) pop, by(province) fast
 
 *Save for merge
-save "$MAIN/pop_province", replace
+save "pop_province", replace
 
 *Generate health region
 gen healthregion = "Not Reported, " + province
 drop province
 
 *Save for append
-save "$MAIN/pop_province_nr", replace
+save "pop_province_nr", replace
 
 *************************
 *Create regional data set
 *Load data
-import delimited "$MAIN/$POP", bindq(strict) encoding("UTF-8") varn(1) clear
+import delimited "$POP", bindq(strict) encoding("UTF-8") varn(1) clear
 
 *Recode province names
 rename healthregion region
@@ -524,16 +524,16 @@ gen healthregion = region + ", " + province
 keep healthregion pop
 
 *Append
-append using "$MAIN/pop_province_nr"
-rm "$MAIN/pop_province_nr.dta"
+append using "pop_province_nr"
+rm "pop_province_nr.dta"
 
 *Save for merge
-save "$MAIN/pop_region", replace
+save "pop_region", replace
 
 *************************
 *Create national data set
 *Load data
-import delimited "$MAIN/$POP", bindq(strict) encoding("UTF-8") varn(1) clear
+import delimited "$POP", bindq(strict) encoding("UTF-8") varn(1) clear
 
 *Keep relevant variables
 gen country = "Canada"
@@ -542,7 +542,7 @@ gen country = "Canada"
 collapse(sum) pop, by(country) fast
 
 *Save for merge
-save "$MAIN/pop_canada", replace
+save "pop_canada", replace
 
 ********************************************************************************
 ******************** CLEAN RESTUARANT RESERVATIONS DATA ************************
@@ -561,7 +561,7 @@ local canada_region country
 foreach v in province canada {
 
 *Load data
-import delimited "$MAIN/$FOOD", bindq(strict) encoding("UTF-8") clear
+import delimited "$FOOD", bindq(strict) encoding("UTF-8") clear
 
 *Date variable
 gen Date = date(date, "DMY")
@@ -589,7 +589,7 @@ rename ``v'_percent' reservations
 collapse(mean) reservations, by(``v'_region' date)
 
 *Save for merging later
-save "$MAIN/reservations_`v'", replace
+save "reservations_`v'", replace
 }
 
 ********************************************************************************
@@ -609,7 +609,7 @@ local canada_region country
 foreach v in province canada {
 
 *Load data
-import delimited "$MAIN/$TRAN", bindq(strict) encoding("UTF-8") clear
+import delimited "$TRAN", bindq(strict) encoding("UTF-8") clear
 
 *Date variable
 gen ndash = 1 if (length(date) - length(subinstr(date, "-", "", .))) > 0
@@ -640,7 +640,7 @@ rename ``v'_percent' ridership
 collapse(mean) ridership, by(``v'_region' date)
 
 *Save for merging later
-save "$MAIN/ridership_`v'", replace
+save "ridership_`v'", replace
 }
 
 ********************************************************************************
@@ -661,7 +661,7 @@ local deaths date_death_report
 foreach v in cases deaths {
 
 *Load data
-import delimited "$MAIN/``v'_data'.csv", varn(1) bindq(strict) clear
+import delimited "``v'_data'.csv", varn(1) bindq(strict) clear
 
 *Delete unnecessary observations
 rename ``v'' Date
@@ -703,14 +703,14 @@ replace `v' = `v' + `v'[_n-1] if day_code != 1
 keep address date new_`v' `v'
 
 *Save for merging later
-save "$MAIN/`v'", replace
+save "`v'", replace
 }
 
 *************************
 *CLEAN REGIONAL RECOVERED DATA
 
 *Load data
-import delimited "$MAIN/recovered_cumulative.csv", varn(1) bindq(strict) clear
+import delimited "recovered_cumulative.csv", varn(1) bindq(strict) clear
 
 *Delete unnecessary observations
 rename date_recovered Date
@@ -750,7 +750,7 @@ replace new_recovered = recovered - recovered[_n-1] if day_code != 1
 keep address date new_recovered recovered
 
 *Save for merging later
-save "$MAIN/recovered", replace
+save "recovered", replace
 
 *************************
 *Merge all datasets 
@@ -792,7 +792,7 @@ replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) ==
 replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
 
 *Save temporary dataset
-save "$MAIN/location_temp", replace
+save "location_temp", replace
 
 *Fill in missing variables
 sort address date
@@ -814,7 +814,7 @@ gen deathspc = deaths/pop
 gen recoveredpc = recovered/pop
 
 *Export data
-export delimited "$MAIN/$OUTPUT1_1", replace
+export delimited "$OUTPUT1_1", replace
 clear
 
 *************************
@@ -831,7 +831,7 @@ foreach data in cases deaths recovered {
 *CREATE REGIONAL DATA SET
 
 *Load temp data set
-use "$MAIN/location_temp", clear
+use "location_temp", clear
 
 *Rename date variables
 drop dd mm yy
@@ -925,7 +925,7 @@ drop if date > last_update
 drop last_update
 
 *Export provincial data
-export delimited "$MAIN/$OUTPUT1_2", replace
+export delimited "$OUTPUT1_2", replace
 clear
 
 ********************************************************************************
@@ -945,7 +945,7 @@ local deaths date_death_report
 foreach v in cases deaths {
 
 *Load data
-import delimited "$MAIN/``v'_data'.csv", varn(1) bindq(strict) clear
+import delimited "``v'_data'.csv", varn(1) bindq(strict) clear
 
 *Delete unnecessary observations
 rename ``v'' Date
@@ -978,14 +978,14 @@ replace `v' = `v' + `v'[_n-1] if day_code != 1
 keep province date new_`v' `v'
 
 *Save for merging later
-save "$MAIN/`v'", replace
+save "`v'", replace
 }
 
 *************************
 *CLEAN PROVINCIAL RECOVERED DATA
 
 *Load data
-import delimited "$MAIN/recovered_cumulative.csv", varn(1) bindq(strict) clear
+import delimited "recovered_cumulative.csv", varn(1) bindq(strict) clear
 
 *Delete unnecessary observations
 rename date_recovered Date
@@ -1020,7 +1020,7 @@ replace new_recovered = recovered - recovered[_n-1] if day_code != 1
 keep province date new_recovered recovered
 
 *Save for merging later
-save "$MAIN/recovered", replace
+save "recovered", replace
 
 *************************
 *MERGE ALL CLEANED PROVINCIAL DATA
@@ -1065,7 +1065,7 @@ drop if _merge == 2
 drop _merge
 
 *Save intermediate dataset
-save "$MAIN/temp", replace
+save "temp", replace
 
 *Generate some interesting variables
 gen casespc = cases/pop
@@ -1146,15 +1146,15 @@ foreach v in cases deaths recovered {
 drop province_code day_code 
 
 *Export provincial data
-export delimited "$MAIN/$OUTPUT2", replace
-*save "$MAIN/covid_province", replace
+export delimited "$OUTPUT2", replace
+*save "covid_province", replace
 clear
 
 ********************************************************************************
 *CREATE CANADA-WIDE DATA SET
 
 *Load dataset
-use "$MAIN/temp", clear
+use "temp", clear
 
 *Create national dataset
 gen country = "Canada"
@@ -1242,8 +1242,8 @@ foreach v in cases deaths recovered {
 }
 
 *Export national data
-export delimited "$MAIN/$OUTPUT3", replace
-*save "$MAIN/covid_canada", replace
+export delimited "$OUTPUT3", replace
+*save "covid_canada", replace
 clear
 
 *************************
