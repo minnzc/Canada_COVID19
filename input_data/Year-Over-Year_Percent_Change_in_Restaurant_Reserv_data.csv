@@ -261,6 +261,9 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Calgary","Canada",-61.560001,03nov2020,-31.24
 "Calgary","Canada",-52.790001,04nov2020,-35.59
 "Calgary","Canada",-50.299999,05nov2020,-37.959999
+"Calgary","Canada",-41.599998,06nov2020,-30.040001
+"Calgary","Canada",-39.75,07nov2020,-27.99
+"Calgary","Canada",-49.389999,08nov2020,-57.560001
 "Edmonton","Canada",-5,18feb2020,8
 "Edmonton","Canada",0,19feb2020,17
 "Edmonton","Canada",-3,20feb2020,3
@@ -523,6 +526,9 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Edmonton","Canada",-61.560001,03nov2020,-47.5
 "Edmonton","Canada",-52.790001,04nov2020,-40.419998
 "Edmonton","Canada",-50.299999,05nov2020,-32.099998
+"Edmonton","Canada",-41.599998,06nov2020,-33.68
+"Edmonton","Canada",-39.75,07nov2020,-44.919998
+"Edmonton","Canada",-49.389999,08nov2020,-58.43
 "Montréal","Canada",-5,18feb2020,16
 "Montréal","Canada",0,19feb2020,14
 "Montréal","Canada",-3,20feb2020,-5
@@ -785,6 +791,9 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Montréal","Canada",-61.560001,03nov2020,-99.879997
 "Montréal","Canada",-52.790001,04nov2020,-99.860001
 "Montréal","Canada",-50.299999,05nov2020,-96.550003
+"Montréal","Canada",-41.599998,06nov2020,-99.440002
+"Montréal","Canada",-39.75,07nov2020,-99.169998
+"Montréal","Canada",-49.389999,08nov2020,-99.959999
 "Toronto","Canada",-5,18feb2020,-14
 "Toronto","Canada",0,19feb2020,-8
 "Toronto","Canada",-3,20feb2020,-9
@@ -1047,6 +1056,9 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Toronto","Canada",-61.560001,03nov2020,-90.080002
 "Toronto","Canada",-52.790001,04nov2020,-77.870003
 "Toronto","Canada",-50.299999,05nov2020,-76.019997
+"Toronto","Canada",-41.599998,06nov2020,-70.879997
+"Toronto","Canada",-39.75,07nov2020,-67.339996
+"Toronto","Canada",-49.389999,08nov2020,-64.309998
 "Vancouver","Canada",-5,18feb2020,9
 "Vancouver","Canada",0,19feb2020,1
 "Vancouver","Canada",-3,20feb2020,7
@@ -1309,3 +1321,6 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Vancouver","Canada",-61.560001,03nov2020,-65.379997
 "Vancouver","Canada",-52.790001,04nov2020,-60.509998
 "Vancouver","Canada",-50.299999,05nov2020,-50.950001
+"Vancouver","Canada",-41.599998,06nov2020,-43.75
+"Vancouver","Canada",-39.75,07nov2020,-38.98
+"Vancouver","Canada",-49.389999,08nov2020,-58.060001
