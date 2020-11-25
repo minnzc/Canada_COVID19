@@ -278,6 +278,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Calgary","Canada",-59.52,20nov2020,-49.759998
 "Calgary","Canada",-60.419998,21nov2020,-46.119999
 "Calgary","Canada",-67.080002,22nov2020,-45.610001
+"Calgary","Canada",-71.989998,23nov2020,-54.459999
 "Edmonton","Canada",-5,18feb2020,8
 "Edmonton","Canada",0,19feb2020,17
 "Edmonton","Canada",-3,20feb2020,3
@@ -557,6 +558,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Edmonton","Canada",-59.52,20nov2020,-47.009998
 "Edmonton","Canada",-60.419998,21nov2020,-47.18
 "Edmonton","Canada",-67.080002,22nov2020,-54.82
+"Edmonton","Canada",-71.989998,23nov2020,-57.650002
 "Montréal","Canada",-5,18feb2020,16
 "Montréal","Canada",0,19feb2020,14
 "Montréal","Canada",-3,20feb2020,-5
@@ -836,6 +838,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Montréal","Canada",-59.52,20nov2020,-98.940002
 "Montréal","Canada",-60.419998,21nov2020,-99.839996
 "Montréal","Canada",-67.080002,22nov2020,-99.919998
+"Montréal","Canada",-71.989998,23nov2020,-100
 "Toronto","Canada",-5,18feb2020,-14
 "Toronto","Canada",0,19feb2020,-8
 "Toronto","Canada",-3,20feb2020,-9
@@ -1115,6 +1118,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Toronto","Canada",-59.52,20nov2020,-78.199997
 "Toronto","Canada",-60.419998,21nov2020,-83.5
 "Toronto","Canada",-67.080002,22nov2020,-89.400002
+"Toronto","Canada",-71.989998,23nov2020,-99.870003
 "Vancouver","Canada",-5,18feb2020,9
 "Vancouver","Canada",0,19feb2020,1
 "Vancouver","Canada",-3,20feb2020,7
@@ -1394,3 +1398,4 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Vancouver","Canada",-59.52,20nov2020,-69.489998
 "Vancouver","Canada",-60.419998,21nov2020,-60.48
 "Vancouver","Canada",-67.080002,22nov2020,-65.470001
+"Vancouver","Canada",-71.989998,23nov2020,-73.389999
