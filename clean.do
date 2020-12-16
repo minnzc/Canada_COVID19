@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 30 October 2020
+*Last updated: 16 December 2020
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -707,13 +707,14 @@ save "`v'", replace
 }
 
 *************************
-*CLEAN REGIONAL RECOVERED DATA
+*CLEAN REGIONAL RECOVERED AND TESTING DATA
 
+foreach v in recovered {
 *Load data
-import delimited "recovered_cumulative.csv", varn(1) bindq(strict) clear
+import delimited "`v'_cumulative.csv", varn(1) bindq(strict) clear
 
 *Delete unnecessary observations
-rename date_recovered Date
+rename date_`v' Date
 gen date = date(Date, "DMY")
 format date %td
 drop if date == .
@@ -732,25 +733,26 @@ gen region = "Not Reported"
 gen address = region + ", " + province
 replace address = province + ", Canada" if region == "Not Reported"
 
-*Clean cumulative recoveries variable
-rename cumulative_recovered recovered
-replace recovered = "" if recovered == "NA"
-destring recovered, replace
-replace recovered = 0 if recovered == .
+*Clean cumulative variable
+rename cumulative_`v' `v'
+replace `v' = "" if `v' == "NA"
+destring `v', replace
+replace `v' = 0 if `v' == .
 
 *Generate cumulative cases variable
 encode address, gen(address_code)
 tsset address_code date
 bysort address_code: egen day_code = rank(date)
-gen new_recovered = .
-replace new_recovered = 0 if day_code == 1
-replace new_recovered = recovered - recovered[_n-1] if day_code != 1
+gen new_`v' = .
+replace new_`v' = 0 if day_code == 1
+replace new_`v' = `v' - `v'[_n-1] if day_code != 1
 
 *Keep only relevant variables 
-keep address date new_recovered recovered
+keep address date new_`v' `v'
 
 *Save for merging later
-save "recovered", replace
+save `v', replace
+}
 
 *************************
 *Merge all datasets 
@@ -848,8 +850,8 @@ foreach v in cases deaths recovered {
 }
 
 *Keep only relevant variables
-keep date* day_code province* *region* address* cases new_cases deaths new_deaths recovered new_recovered
-order date* day_code province* *region* address* cases new_cases deaths new_deaths recovered new_recovered
+keep date* day_code province* *region* address* cases new_cases deaths new_deaths recovered new_recovered 
+order date* day_code province* *region* address* cases new_cases deaths new_deaths recovered new_recovered 
 
 *Merge population data
 merge m:1 healthregion using pop_region
@@ -892,8 +894,6 @@ foreach v in new_cases cases new_deaths deaths new_recovered recovered active {
 *Create active cases lagged 14 & 18 days
 gen active14 = l14.new_cases
 gen active18 = l18.new_cases
-gen lactive14 = log(active14)
-gen lactive18 = log(active18)
 
 *Generate ratios
 gen deathactive14 = new_deaths/active14 * 1000
@@ -906,8 +906,6 @@ gen deathrecoveredactive18 = (new_deaths + new_recovered)/active18 * 1000
 *Create moving average active cases lagged 14 & 18 days
 gen active14mv7 = l14.new_casesmv7
 gen active18mv7 = l18.new_casesmv7
-gen lactive14mv7 = log(active14mv7)
-gen lactive18mv7 = log(active18mv7)
 
 *Generate moving ratios
 gen deathactive14mv7 = new_deathsmv7/active14mv7 * 1000
@@ -984,11 +982,13 @@ save "`v'", replace
 *************************
 *CLEAN PROVINCIAL RECOVERED DATA
 
+foreach v in recovered testing {
+
 *Load data
-import delimited "recovered_cumulative.csv", varn(1) bindq(strict) clear
+import delimited "`v'_cumulative.csv", varn(1) bindq(strict) clear
 
 *Delete unnecessary observations
-rename date_recovered Date
+rename date_`v' Date
 gen date = date(Date, "DMY")
 format date %td
 drop if date == . 
@@ -1003,31 +1003,93 @@ replace province = "Northwest Territories" if province == "NWT"
 replace province = "Prince Edward Island" if province == "PEI"
 
 *Clean cumulative recoveries variable
-rename cumulative_recovered recovered
-replace recovered = "" if recovered == "NA"
-destring recovered, replace
-replace recovered = 0 if recovered == .
+rename cumulative_`v' `v'
+replace `v' = "" if `v' == "NA"
+destring `v', replace
+replace `v' = 0 if `v' == .
 
-*Generate cumulative cases variable
+*Generate new recoveries variable
 encode province, gen(province_code)
 tsset province_code date
 bysort province_code: egen day_code = rank(date)
-gen new_recovered = .
-replace new_recovered = 0 if day_code == 1
-replace new_recovered = recovered - recovered[_n-1] if day_code != 1
+gen new_`v' = .
+replace new_`v' = 0 if day_code == 1
+replace new_`v' = `v' - `v'[_n-1] if day_code != 1
 
 *Keep only relevant variables 
-keep province date new_recovered recovered
+keep province date new_`v' `v'
 
 *Save for merging later
-save "recovered", replace
+save `v', replace
+}
+
+*************************
+*CLEAN PROVINCIAL VACCINE DATA
+
+local avaccine_file "vaccine_administration_cumulative.csv"
+local dvaccine_file "vaccine_distribution_cumulative.csv"
+local avaccine_date "date_vaccine_administered"
+local dvaccine_date "date_vaccine_distributed"
+
+foreach var in avaccine dvaccine {
+*Load data
+import delimited "``var'_file'", varn(1) bindq(strict) clear
+
+*Delete unnecessary observations
+rename ``var'_date' Date
+gen date = date(Date, "DMY")
+format date %td
+drop if date == . 
+
+*Drop repatriated cases
+drop if province == "Repatriated"
+
+*Recode province names
+replace province = "British Columbia" if province == "BC"
+replace province = "Newfoundland & Labrador" if province == "NL"
+replace province = "Northwest Territories" if province == "NWT"
+replace province = "Prince Edward Island" if province == "PEI"
+
+*Destring vaccine variable
+rename cumulative_`var' `var'
+replace `var' = "" if `var' == "NA"
+destring `var', replace
+
+*Drop unnecessary variables and save for merge
+drop Date
+save `var', replace
+}
+
+*****
+*Merge two vaccine data sets
+use avaccine, clear
+merge 1:1 date province using dvaccine, keep(3) nogen
+
+*Clean vaccines administered based on distributed
+replace avaccine = 0 if avaccine == . & dvaccine != . & dvaccine != 0
+drop if avaccine == . & dvaccine == .
+
+*Generate new vaccines administered and distributed variables
+encode province, gen(province_code)
+tsset province_code date
+bysort province_code: egen day_code = rank(date)
+foreach var in avaccine dvaccine {
+gen new_`var' = .
+replace new_`var' = `var' if day_code == 1 
+replace new_`var' = `var' - `var'[_n-1] if day_code != 1
+}
+
+*Save for merge 
+keep date province *vaccine
+order date province *vaccine
+save vaccine_province, replace
 
 *************************
 *MERGE ALL CLEANED PROVINCIAL DATA
 
 *Merge all data
 use cases, clear
-foreach data in deaths recovered {
+foreach data in deaths recovered testing vaccine_province {
 	merge 1:1 date province using `data', nogen
 }
 
@@ -1037,7 +1099,7 @@ encode province, gen(province_code)
 *Clean variables after merging, fill in missing variables
 sort province_code date
 bysort province_code: egen day_code = rank(date)
-foreach v in cases deaths recovered {
+foreach v in cases deaths recovered testing {
 	replace `v' = `v'[_n-1] if day_code != 1 & `v' == .
 	replace `v' = 0 if `v' == .
 	replace new_`v' = `v' - `v'[_n-1] if day_code != 1 & new_`v' == .
@@ -1056,8 +1118,8 @@ replace dateStr = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd)
 replace dateStr = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
 
 *Keep only relevant variables
-keep date* day_code province* cases new_cases deaths new_deaths recovered new_recovered
-order date* day_code province* cases new_cases deaths new_deaths recovered new_recovered
+keep date* day_code province* cases new_cases deaths new_deaths recovered new_recovered testing new_testing *vaccine
+order date* day_code province* cases new_cases deaths new_deaths recovered new_recovered testing new_testing *vaccine
 
 *Merge with population data
 merge m:1 province using pop_province
@@ -1078,7 +1140,17 @@ gen lcases = log(cases)
 gen ldeaths = log(deaths)
 gen lrecovered = log(recovered)
 gen deathrecovered = deaths + recovered
+gen testingpc = testing/pop
+gen new_testingpc = new_testing/pop
+gen ltesting = log(testing)
 *gen ldeathrecovered = log(deathrecovered)
+gen advaccine = avaccine/dvaccine
+gen new_advaccine = new_avaccine/new_dvaccine
+gen newa_dvaccine = new_avaccine/dvaccine
+gen avaccinepc = avaccine/pop
+gen dvaccinepc = dvaccine/pop
+gen new_avaccinepc = new_avaccine/pop
+gen new_dvaccinepc = new_dvaccine/pop
 
 *Generate active cases
 gen active = cases - recovered - deaths
@@ -1099,8 +1171,6 @@ foreach v in new_cases cases new_deaths deaths new_recovered recovered active {
 *Create active cases lagged 14 & 18 days
 gen active14 = l14.new_cases
 gen active18 = l18.new_cases
-gen lactive14 = log(active14)
-gen lactive18 = log(active18)
 
 *Generate ratios
 gen deathactive14 = new_deaths/active14 * 1000
@@ -1113,8 +1183,6 @@ gen deathrecoveredactive18 = (new_deaths + new_recovered)/active18 * 1000
 *Create moving average active cases lagged 14 & 18 days
 gen active14mv7 = l14.new_casesmv7
 gen active18mv7 = l18.new_casesmv7
-gen lactive14mv7 = log(active14mv7)
-gen lactive18mv7 = log(active18mv7)
 
 *Generate moving ratios
 gen deathactive14mv7 = new_deathsmv7/active14mv7 * 1000
@@ -1139,7 +1207,7 @@ encode province, gen(province_code)
 *Clean variables after merging, fill in missing variables
 sort province_code date
 bysort province_code: gen day_code = _n
-foreach v in cases deaths recovered {
+foreach v in cases deaths recovered testing {
 	replace `v' = `v'[_n-1] if day_code != 1 & `v' == .
 	replace new_`v' = `v' - `v'[_n-1] if day_code != 1 & new_`v' == .
 }
@@ -1160,8 +1228,12 @@ use "temp", clear
 gen country = "Canada"
 
 *Aggregate cases to national level
-ds cases deaths recovered new*
+ds cases deaths recovered testing avaccine dvaccine new*
 collapse(sum) `r(varlist)', by(date dateStr country)
+foreach var in avaccine dvaccine {
+replace `var' = . if date < 22263 // 14 December 2020
+replace new_`var' = . if date < 22263 
+}
 
 *Merge with population data
 merge m:1 country using pop_canada
@@ -1179,7 +1251,17 @@ gen lcases = log(cases)
 gen ldeaths = log(deaths)
 gen lrecovered = log(recovered)
 gen deathrecovered = deaths + recovered
+gen testingpc = testing/pop
+gen new_testingpc = new_testing/pop
+gen ltesting = log(testing)
 *gen ldeathrecovered = log(deathrecovered)
+gen advaccine = avaccine/dvaccine
+gen new_advaccine = new_avaccine/new_dvaccine
+gen newa_dvaccine = new_avaccine/dvaccine
+gen avaccinepc = avaccine/pop
+gen dvaccinepc = dvaccine/pop
+gen new_avaccinepc = new_avaccine/pop
+gen new_dvaccinepc = new_dvaccine/pop
 
 *Generate active cases
 gen active = cases - recovered - deaths
@@ -1201,8 +1283,6 @@ foreach v in new_cases cases new_deaths deaths new_recovered recovered active {
 *Create active cases lagged 14 & 18 days
 gen active14 = l14.new_cases
 gen active18 = l18.new_cases
-gen lactive14 = log(active14)
-gen lactive18 = log(active18)
 
 *Generate ratios
 gen deathactive14 = new_deaths/active14 * 1000
@@ -1215,8 +1295,6 @@ gen deathrecoveredactive18 = (new_deaths + new_recovered)/active18 * 1000
 *Create moving average active cases lagged 14 & 18 days
 gen active14mv7 = l14.new_casesmv7
 gen active18mv7 = l18.new_casesmv7
-gen lactive14mv7 = log(active14mv7)
-gen lactive18mv7 = log(active18mv7)
 
 *Generate moving ratios
 gen deathactive14mv7 = new_deathsmv7/active14mv7 * 1000
@@ -1250,7 +1328,7 @@ clear
 *CLEAN UP FILE DIRECTORY
 
 *Remove intermediate datasets from directory
-foreach data in temp location_temp cases deaths recovered layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada pop_region pop_province pop_canada {
+foreach data in temp testing vaccine_province avaccine dvaccine location_temp cases deaths recovered layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada pop_region pop_province pop_canada {
 	rm `data'.dta
 }
 

@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 26 October 2020
+## Last updated: 16 December 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -54,22 +54,24 @@ get_min <- function(x) ifelse( !all(is.na(x)), min(x, na.rm=T), NA)
 # function to plot new cases by region
 province_plot_new = function(cv_cases, plot_date, ylabel) {
     plot_df = subset(cv_cases, date<=plot_date)
+    df_min_date = as.Date(min(plot_df$date),"%Y-%m-%d")
     max_scale = get_max(cv_cases$new_outcome)
     g1 = ggplot(plot_df, aes(x = date, y = new_outcome, fill = region, group = 1,
                              text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", "New ", ylabel, ": ", new_outcome))) +
         ylim(0, max_scale) + xlab("Date") + geom_bar(position="stack", stat="identity") + 
-        ylab(paste("New", ylabel)) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(cv_min_date, current_date) +
+        ylab(paste("New", ylabel)) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(df_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
 
 province_plot_new_pc = function(cv_cases, plot_date, ylabel) {
     plot_df = subset(cv_cases, date<=plot_date)
+    df_min_date = as.Date(min(plot_df$date),"%Y-%m-%d")
     max_scale = get_max(cv_cases$new_outcome_pc)
     g1 = ggplot(plot_df, aes(x = date, y = new_outcome_pc, fill = region, group = 1,
-                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", "New ", ylabel, ": ", new_outcome_pc))) +
+                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", "New ", ylabel, " (per 1000 people): ", new_outcome_pc))) +
         ylim(0, max_scale) + xlab("Date") + geom_bar(position="stack", stat="identity") + 
-        ylab(paste("New", ylabel, "(per 1000 people)")) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(cv_min_date, current_date) +
+        ylab(paste("New", ylabel, "(per 1000 people)")) + theme_bw() + scale_fill_manual(values=province_cols) + xlim(df_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
@@ -78,40 +80,44 @@ province_plot_new_pc = function(cv_cases, plot_date, ylabel) {
 # function to plot cumulative cases by region
 province_plot_cumulative = function(cv_cases, plot_date, ylabel) {
     plot_df = subset(cv_cases, date<=plot_date)
+    df_min_date = as.Date(min(plot_df$date),"%Y-%m-%d")
     max_scale = get_max(cv_cases$outcome)
     g1 = ggplot(plot_df, aes(x = date, y = outcome, colour = region, group = 1,
-                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, ": ",outcome))) +
+                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, " (thousands): ",outcome))) +
         ylim(0, max_scale) + xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
         ylab(paste(ylabel, "(persons, thousands)")) + theme_bw() + 
-        scale_colour_manual(values=province_cols) + xlim(cv_min_date, current_date) +
+        scale_colour_manual(values=province_cols) + xlim(df_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
 
 province_plot_cumulative_pc = function(cv_cases, plot_date, ylabel) {
     plot_df = subset(cv_cases, date<=plot_date)
+    df_min_date = as.Date(min(plot_df$date),"%Y-%m-%d")
     max_scale = get_max(cv_cases$outcome_pc)
     g1 = ggplot(plot_df, aes(x = date, y = outcome_pc, colour = region, group = 1,
-                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, ": ",outcome_pc))) +
+                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, " (per 1000 people): ",outcome_pc))) +
         ylim(0, max_scale) + xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
         ylab(paste(ylabel, "(per 1000 people)")) + theme_bw() + 
-        scale_colour_manual(values=province_cols) + xlim(cv_min_date, current_date) +
+        scale_colour_manual(values=province_cols) + xlim(df_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
 
 province_plot_cumulative_log = function(cv_cases, plot_date, ylabel) {
     plot_df = subset(cv_cases, date<=plot_date)
+    df_min_date = as.Date(min(plot_df$date),"%Y-%m-%d")
     max_scale = get_max(cv_cases$outcome)
     g1 = ggplot(plot_df, aes(x = date, y = outcome, colour = region, group = 1,
-                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, ": ",outcome))) +
+                             text = paste0("Date: ", format(date, "%d %B %Y"), "\n", "Region: ", region, "\n", ylabel, " (thousands): ",outcome))) +
         xlab("Date") + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
-        ylab(paste("Log of", ylabel, "(persons, thousands)")) + theme_bw() + xlim(cv_min_date, current_date) +
+        ylab(paste("Log of", ylabel, "(persons, thousands)")) + theme_bw() + xlim(df_min_date, current_date) +
         scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
 
+# ------------------------------
 # function to plot scatter plots
 scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
     plot_df = subset(cv_cases, date<=plot_date)
@@ -123,7 +129,7 @@ scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) 
                                               "\n", "Region: ", region, 
                                               "\n", ylabel, " (day t): ", outcome, 
                                               "\n", "New cases (day t-18): ", active18))) +
-            ylim(0, max_scale) + xlim(0, max_scale)+ xlab("New cases (day t-18)")
+            ylim(0, max_scale) + xlim(0, max_scale)+ xlab("New cases (day t-18)") + ylab(paste(ylabel, " (day t)"))
     }
     
     if (lag=="14-day") {
@@ -133,11 +139,51 @@ scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) 
                                               "\n", "Region: ", region, 
                                               "\n", ylabel, " (day t): ", outcome, 
                                               "\n", "New cases (day t-14): ", active14))) +
-            ylim(0, max_scale) + xlim(0, max_scale) + xlab("New cases (day t-14)")
+            ylim(0, max_scale) + xlim(0, max_scale) + xlab("New cases (day t-14)") + ylab(paste(ylabel, " (day t)"))
+    }
+    
+    if (lag=="Vaccines distributed (Cumulative)") {
+        max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$dvaccine))
+        g = ggplot(plot_df, aes(x = dvaccine, y = outcome, colour = region, group = 1,
+                                text = paste0("Date: ", format(date, "%d %B %Y"), 
+                                              "\n", "Region: ", region, 
+                                              "\n", ylabel, ": ", outcome, 
+                                              "\n", "Vaccines distributed (Cumulative): ", dvaccine))) +
+            ylim(0, max_scale) + xlim(0, max_scale) + xlab("Vaccines distributed (Cumulative)") + ylab(paste(ylabel))
+    }
+    
+    if (lag=="Vaccines distributed (New)") {
+        max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$new_dvaccine))
+        g = ggplot(plot_df, aes(x = new_dvaccine, y = outcome, colour = region, group = 1,
+                                text = paste0("Date: ", format(date, "%d %B %Y"), 
+                                              "\n", "Region: ", region, 
+                                              "\n", ylabel, ": ", outcome, 
+                                              "\n", "Vaccines distributed (New): ", new_dvaccine))) +
+            ylim(0, max_scale) + xlim(0, max_scale) + xlab("Vaccines distributed (New)") + ylab(paste(ylabel))
+    }
+    
+    if (lag=="Testing (Cumulative)") {
+        max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$testing/1000))
+        g = ggplot(plot_df, aes(x = testing/1000, y = outcome, colour = region, group = 1,
+                                text = paste0("Date: ", format(date, "%d %B %Y"), 
+                                              "\n", "Region: ", region, 
+                                              "\n", ylabel, " (thousands): ", outcome, 
+                                              "\n", lag," (thousands): ", testing))) +
+            ylim(0, max_scale) + xlim(0, max_scale) + xlab(paste(lag, "(persons, thousands)")) + ylab(paste(ylabel, "(persons, thousands)"))
+    }
+    
+    if (lag=="Testing (New)") {
+        max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$new_testing/1000))
+        g = ggplot(plot_df, aes(x = new_testing/1000, y = outcome, colour = region, group = 1,
+                                text = paste0("Date: ", format(date, "%d %B %Y"), 
+                                              "\n", "Region: ", region, 
+                                              "\n", ylabel, " (thousands): ", outcome, 
+                                              "\n", lag," (thousands): ", new_testing))) +
+            ylim(0, max_scale) + xlim(0, max_scale) + xlab(paste(lag, "(persons, thousands)")) + ylab(paste(ylabel, "(persons, thousands)"))
     }
     
     g1 = g + geom_abline(intercept = 0, slope = 1) + geom_point(size = 1.5, alpha = 0.8) +
-        ylab(paste(ylabel, "(day t)")) + theme_bw() + 
+        theme_bw() + 
         scale_colour_manual(values=province_cols) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
@@ -150,6 +196,7 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
     
     if (lag=="18-day") {
         max_scale = max(get_max(cv_cases$outcome))
+        df_min_date = cv_min_date
         g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
@@ -159,14 +206,36 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
     
     if (lag=="14-day") {
         max_scale = max(get_max(cv_cases$outcome))
+        df_min_date = cv_min_date
         g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                 text = paste0("Date: ", format(date, "%d %B %Y"), 
                                               "\n", "Region: ", region, 
                                               "\n", ylabel, " (day t) per 1000 new cases (day t-14): ", outcome))) +
             ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 new cases (day t-14)")) 
     }
+    
+    if (lag=="Vaccines distributed (Cumulative)" | lag == "Vaccines distributed (New)") {
+        max_scale = max(get_max(cv_cases$outcome))
+        df_min_date = vaccines_start_date
+        g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
+                                                               text = paste0("Date: ", format(date, "%d %B %Y"), 
+                                                                             "\n", "Region: ", region, 
+                                                                             "\n", "Vaccines administered / distributed: ", outcome))) +
+            ylim(0, max_scale) + xlab("Date") + ylab(paste("Vaccines administered / distributed")) 
+    }
+    
+    if (lag=="Testing (Cumulative)" | lag == "Testing (New)") {
+        max_scale = 0.25
+        df_min_date = cv_min_date
+        g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
+                                                               text = paste0("Date: ", format(date, "%d %B %Y"), 
+                                                                             "\n", "Region: ", region, 
+                                                                             "\n", ylabel, "/", lag, ": ", outcome))) +
+            ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, " / ", lag)) 
+    }
+    
     g1 = g + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
-        theme_bw() + scale_colour_manual(values=province_cols) + xlim(cv_min_date, current_date) +
+        theme_bw() + scale_colour_manual(values=province_cols) + xlim(df_min_date, current_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=9,face="bold"))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
@@ -269,6 +338,7 @@ cv_cases_province$date = as.Date(cv_cases_province$date,"%Y-%m-%d")
 cv_cases_canada$date = as.Date(cv_cases_canada$date,"%Y-%m-%d")
 cv_min_date = as.Date(min(cv_cases_canada$date),"%Y-%m-%d")
 current_date = as.Date(max(cv_cases_canada$date),"%Y-%m-%d")
+vaccines_start_date = as.Date("2020-12-14","%Y-%m-%d")
 
 # extract time stamp for labeling
 update = Sys.Date()
@@ -364,8 +434,8 @@ ui <- bootstrapPage(
                                             selected = "Canada",
                                             multiple = TRUE),
                                 
-                                pickerInput("outcome_select", "Select y-axis variable:",   
-                                            choices = c("Cases", "Deaths", "Recovered"), 
+                                pickerInput("outcome_select", "Select COVID-19 variable:",   
+                                            choices = c("Cases", "Deaths", "Recovered", "Testing"), 
                                             selected = c("Cases"),
                                             multiple = FALSE),
                                 
@@ -385,14 +455,63 @@ ui <- bootstrapPage(
                             mainPanel(
                                 tabsetPanel(
                                     tabPanel("Cumulative", plotlyOutput("province_plot_cumulative")),
-                                    tabPanel("Cumulative (per 1000 people)", plotlyOutput("province_plot_cumulative_pc")),
+                                    tabPanel("Cumulative (per 1000 people)", "NOTE: Variable per 1000 people = Variable / Population * 1000", plotlyOutput("province_plot_cumulative_pc")),
                                     tabPanel("Cumulative (log10)", plotlyOutput("province_plot_cumulative_log")),
                                     tabPanel("New", plotlyOutput("province_plot_new")),
-                                    tabPanel("New (per 1000 people)", plotlyOutput("province_plot_new_pc"))
+                                    tabPanel("New (per 1000 people)", "NOTE: Variable per 1000 people = Variable / Population * 1000", plotlyOutput("province_plot_new_pc"))
                                 )
                             )
-                        )
-               ),
+                            ),
+                        
+                            tags$br(),
+                            titlePanel("COVID-19 variables / testing ratios"),
+                            tags$br(),
+                            
+                            sidebarLayout(
+                                sidebarPanel(
+                                    
+                                    pickerInput("level_select2", "Select region level:",   
+                                                choices = c("Country", "Province"), 
+                                                selected = c("Country"),
+                                                multiple = FALSE),
+                                    
+                                    pickerInput("region_select2", "Select country/province:",   
+                                                choices = c("Canada"), 
+                                                options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
+                                                selected = "Canada",
+                                                multiple = TRUE),
+                                    
+                                    pickerInput("outcome_select2", "Select COVID-19 variable:",   
+                                                choices = c("Cases (Cumulative)", "Cases (New)", "Deaths (Cumulative)", "Deaths (New)", "Recovered (Cumulative)", "Recovered (New)"), 
+                                                selected = c("Cases (Cumulative)"),
+                                                multiple = FALSE),
+                                    
+                                    pickerInput("stat2", "Select testing variable:",   
+                                                choices = c("Testing (Cumulative)", "Testing (New)"), 
+                                                options = list(`actions-box` = TRUE),
+                                                selected = c("Testing (Cumulative)"),
+                                                multiple = FALSE), 
+                                    
+                                    "Select mapping date:",
+                                    
+                                    sliderInput("plot_date2",
+                                                label = "",
+                                                min = cv_min_date,
+                                                max = as.Date(current_date,"%Y-%m-%d"),
+                                                value = as.Date(current_date),
+                                                width = "100%",
+                                                timeFormat = "%d %b", 
+                                                animate=animationOptions(interval = 500, loop = FALSE))
+                                ),
+                                
+                                mainPanel(
+                                    tabsetPanel(
+                                        tabPanel("Ratio", plotlyOutput("ratio_plot2")),
+                                        tabPanel("Scatter", plotlyOutput("scatter_plot2"))
+                                    )
+                                )
+                            )
+                        ),
                
                # ------------------------------
                # dynamics graphs panel
@@ -500,6 +619,105 @@ ui <- bootstrapPage(
                                 tabsetPanel(
                                     tabPanel("Ratio (moving average)", plotlyOutput("ratio_plot_mv")),
                                     tabPanel("Scatter (moving average)", plotlyOutput("scatter_plot_mv"))
+                                )
+                            )
+                        )
+               ),
+               
+               tabPanel("Vaccinations",
+                        
+                        titlePanel("General vaccinations graphs"),
+                        tags$br(),
+                        
+                        sidebarLayout(
+                            sidebarPanel(
+                                
+                                pickerInput("level_select_vaccine", "Select region level:",   
+                                            choices = c("Country", "Province"), 
+                                            selected = c("Country"),
+                                            multiple = FALSE),
+                                
+                                pickerInput("region_select_vaccine", "Select country/province:",   
+                                            choices = c("Canada"), 
+                                            options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
+                                            selected = "Canada",
+                                            multiple = TRUE),
+                                
+                                pickerInput("outcome_select_vaccine", "Select y-axis variable:",   
+                                            choices = c("Vaccines administered", "Vaccines distributed"), 
+                                            selected = c("Vaccines administered"),
+                                            multiple = FALSE),
+                                
+                                "Select mapping date:",
+                                
+                                sliderInput("plot_date_region_vaccine",
+                                            label = "",
+                                            min = vaccines_start_date,
+                                            max = as.Date(current_date,"%Y-%m-%d"),
+                                            value = as.Date(current_date),
+                                            width = "100%",
+                                            timeFormat = "%d %b", 
+                                            animate=animationOptions(interval = 500, loop = FALSE)),
+                                "Please note: vaccines have not be distributed to Northwest Territories, Nunavut, and Yukon."
+                                
+                            ),
+                            
+                            mainPanel(
+                                tabsetPanel(
+                                    tabPanel("Cumulative",plotlyOutput("province_plot_cumulative_vaccine")),
+                                    tabPanel("Cumulative (per 1000 people)", "NOTE: Variable per 1000 people = Variable / Population * 1000", plotlyOutput("province_plot_cumulative_pc_vaccine")),
+                                    tabPanel("Cumulative (log10)", plotlyOutput("province_plot_cumulative_log_vaccine")),
+                                    tabPanel("New", plotlyOutput("province_plot_new_vaccine")),
+                                    tabPanel("New (per 1000 people)", "NOTE: Variable per 1000 people = Variable / Population * 1000", plotlyOutput("province_plot_new_pc_vaccine"))
+                                ), tags$br(), tags$br()
+                            )
+                        ),
+                        
+                        tags$br(),
+                        titlePanel("Vaccinations administered / distributed ratios"),
+                        tags$br(),
+                        
+                        sidebarLayout(
+                            sidebarPanel(
+                                
+                                pickerInput("level_select_vaccine2", "Select region level:",   
+                                            choices = c("Country", "Province"), 
+                                            selected = c("Country"),
+                                            multiple = FALSE),
+                                
+                                pickerInput("region_select_vaccine2", "Select country/province:",   
+                                            choices = c("Canada"), 
+                                            options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
+                                            selected = "Canada",
+                                            multiple = TRUE),
+                                
+                                pickerInput("outcome_select_vaccine2", "Select vaccine administration variable:",   
+                                            choices = c("Vaccines administered (Cumulative)", "Vaccines administered (New)"), 
+                                            selected = c("Vaccines administered (Cumulative)"),
+                                            multiple = FALSE),
+                                
+                                pickerInput("stat_vaccine2", "Select vaccine distribution variable:",   
+                                            choices = c("Vaccines distributed (Cumulative)"), 
+                                            options = list(`actions-box` = TRUE),
+                                            selected = "Vaccines distributed (Cumulative)",
+                                            multiple = FALSE), 
+                                
+                                "Select mapping date:",
+                                
+                                sliderInput("plot_date_vaccine2",
+                                            label = "",
+                                            min = vaccines_start_date,
+                                            max = as.Date(current_date,"%Y-%m-%d"),
+                                            value = as.Date(current_date),
+                                            width = "100%",
+                                            timeFormat = "%d %b", 
+                                            animate=animationOptions(interval = 500, loop = FALSE))
+                            ),
+                            
+                            mainPanel(
+                                tabsetPanel(
+                                    tabPanel("Ratio", plotlyOutput("ratio_plot_vaccine")),
+                                    tabPanel("Scatter", plotlyOutput("scatter_plot_vaccine"))
                                 )
                             )
                         )
@@ -750,12 +968,12 @@ ui <- bootstrapPage(
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
                             tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"), tags$br(),tags$br(),
                             tags$h3("LATEST UPDATES"),
-                            tags$b("August 31:"), "Key metrics on \"Dynamics\", and \"Moving average dynamics\" tabs have changed from CUMULATIVE TOTAL deaths and/or recoveries over lagged ACTIVE cases to DAILY NEW deaths and/or recoveries over lagged DAILY NEW cases.", tags$br(), tags$br(),
-                            tags$b("June 11:"), "Front page and \"General graphs\" tab updated with \'per 1000 people metrics\' based on Canada's 2018 health region population estimates. \"Dynamics\", and \"Moving average dynamics\" tabs now feature \'per 1000 active cases\' rates instead of \'per 100 active cases\'.", tags$br(), tags$br(),
-                            tags$b("May 7:"), "\"General graphs\", \"Dynamics\", and \"Moving average dynamics\" tabs now feature disaggregation at the health region level.", tags$br(), tags$br(),
-                            tags$b("May 7:"), "Google Mobility metrics now available on the \"Economic impact\" tab, under \'Mobility\'.", tags$br(), tags$br(),
-                            tags$b("May 6:"), "Front page map is now graphed based on a time series data set rather than a one-day snapshot. As a result, animated features on the left-panel will also animate the geographic progression of the virus using the map.", tags$br(), tags$br(),
-                            tags$b("May 1:"), "Default government response stringency index no longer includes financial measures. Coding on cancellations of public events/limitations on public gatherings changed.", tags$br(), tags$br(),
+                            tags$b("16/12/2020:"), "Addition of the \"Vaccinations\" tab courtesy of administerd and distributed vaccines data from ", tags$a(href="https://github.com/ishaberry/Covid19Canada", "Berry et al. 2020."), "Provincial and national testing metrics added to \"General graphs\" tab.", tags$br(), tags$br(),
+                            tags$b("31/08/2020:"), "Key metrics on \"Dynamics\", and \"Moving average dynamics\" tabs have changed from CUMULATIVE TOTAL deaths and/or recoveries over lagged ACTIVE cases to DAILY NEW deaths and/or recoveries over lagged DAILY NEW cases.", tags$br(), tags$br(),
+                            tags$b("11/06/2020:"), "Front page and \"General graphs\" tab updated with \'per 1000 people metrics\' based on Canada's 2018 health region population estimates. \"Dynamics\", and \"Moving average dynamics\" tabs now feature \'per 1000 active cases\' rates instead of \'per 100 active cases\'.", tags$br(), tags$br(),
+                            tags$b("07/05/2020:"), "\"General graphs\", \"Dynamics\", and \"Moving average dynamics\" tabs now feature disaggregation at the health region level. Google Mobility metrics now available on the \"Economic impact\" tab, under \'Mobility\'.", tags$br(), tags$br(),
+                            tags$b("06/05/2020:"), "Front page map is now graphed based on a time series data set rather than a one-day snapshot. As a result, animated features on the left-panel will also animate the geographic progression of the virus using the map.", tags$br(), tags$br(),
+                            tags$b("01/05/2020:"), "Default government response stringency index no longer includes financial measures. Coding on cancellations of public events/limitations on public gatherings changed.", tags$br(), tags$br(),
                             tags$h3("DATA SOURCES"),
                             "Berry, I., Soucy, J.-P. R., Tuite, A., Fisman, D. 14 April 2020.", tags$b("Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada."), "CMAJ 192(15):E420. doi:", tags$a(href="https://doi.org/10.1503/cmaj.75262", "https://doi.org/10.1503/cmaj.75262"), tags$br(), tags$br(),
                             "Hemmadi, M., Syed, F., Schwartz, Z.", tags$b("The Logic's COVID-19 layoffs database."), tags$a(href="https://thelogic.co/news/why-axis/130000-and-counting-tracking-covid-19-layoffs-across-canada/", "Link"), tags$br(), tags$br(),
@@ -906,18 +1124,25 @@ server <- function(input, output, session) {
             updatePickerInput(session = session, inputId = "region_select", 
                               choices = c("Canada"), 
                               selected = "Canada")
+            updatePickerInput(session = session, inputId = "outcome_select", 
+                              choices = c("Cases", "Deaths", "Recovered", "Testing"))
         }
         
         if (input$level_select=="Province") {
             updatePickerInput(session = session, inputId = "region_select", 
                               choices = c("Alberta", "British Columbia", "Manitoba", "Newfoundland & Labrador", "New Brunswick", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"), 
                               selected = c( "Ontario", "Quebec", "British Columbia"))
+            updatePickerInput(session = session, inputId = "outcome_select", 
+                              choices = c("Cases", "Deaths", "Recovered", "Testing"))
         }
         
         if (input$level_select=="Health region") {
             updatePickerInput(session = session, inputId = "region_select", 
                               choices = unique(as.character(cv_cases_region[order(cv_cases_region$province),]$healthregion)), 
                               selected = c("Toronto, Ontario", "Montréal, Quebec", "Vancouver Coastal, British Columbia"))
+            updatePickerInput(session = session, inputId = "outcome_select", 
+                              choices = c("Cases", "Deaths", "Recovered"), 
+                              selected = c("Cases"))
         }
         
     }, ignoreInit = TRUE)
@@ -960,6 +1185,13 @@ server <- function(input, output, session) {
             db$outcome_pc = db$recoveredpc*1000
         }
         
+        if (input$outcome_select=="Testing") { 
+            db$outcome = db$testing/1000
+            db$new_outcome = db$new_testing
+            db$new_outcome_pc = db$new_testingpc*1000
+            db$outcome_pc = db$testingpc*1000
+        }
+        
         db %>% filter(region %in% input$region_select)
     })
     
@@ -981,6 +1213,115 @@ server <- function(input, output, session) {
     
     output$province_plot_cumulative_log <- renderPlotly({
         province_plot_cumulative_log(country_reactive_db(), input$plot_date_region, ylabel = input$outcome_select)
+    })
+    
+    #-----
+    # update region selections
+    observeEvent(input$level_select2, {
+        if (input$level_select2=="Country") {
+            updatePickerInput(session = session, inputId = "region_select2", 
+                              choices = c("Canada"), selected = "Canada")
+        }
+        
+        if (input$level_select2=="Province") {
+            updatePickerInput(session = session, inputId = "region_select2", 
+                              choices = c("Alberta", "British Columbia", "Manitoba", "Newfoundland & Labrador", "New Brunswick", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"), 
+                              selected = c("Ontario", "Quebec", "British Columbia"))
+        }
+    }, ignoreInit = TRUE)
+    
+    # create dataframe with selected countries
+    country_reactive_db2 = reactive({
+        if (input$level_select2=="Country") { 
+            db = cv_cases_canada
+            db$region = db$country
+        }
+        
+        if (input$level_select2=="Province") { 
+            db = cv_cases_province
+            db$region = db$province
+        }
+        
+        if (input$outcome_select2=="Cases (Cumulative)") { 
+            db$outcome1 = db$cases
+        }
+        
+        if (input$outcome_select2=="Cases (New)") { 
+            db$outcome1 = db$new_cases
+        }
+        
+        if (input$outcome_select2=="Deaths (Cumulative)") { 
+            db$outcome1 = db$deaths
+        }
+        
+        if (input$outcome_select2=="Deaths (New)") { 
+            db$outcome1 = db$new_deaths
+        }
+        
+        if (input$outcome_select2=="Recovered (Cumulative)") { 
+            db$outcome1 = db$recovered
+        }
+        
+        if (input$outcome_select2=="Recovered (New)") { 
+            db$outcome1 = db$new_recovered
+        }
+        
+        if (input$stat2=="Testing (Cumulative)") { 
+            db$outcome2 = db$testing
+        }
+        
+        if (input$stat2=="Testing (New)") { 
+            db$outcome2 = db$new_testing
+        }
+        
+        db$outcome = db$outcome1/db$outcome2
+        db %>% filter(region %in% input$region_select2)
+    })
+    
+    output$ratio_plot2 <- renderPlotly({
+        ratio_plot(country_reactive_db2(), input$plot_date2, ylabel = input$outcome_select2, lag=input$stat2)
+    })
+    
+    country_reactive_db_scatter2 = reactive({
+        if (input$level_select2=="Country") { 
+            db = cv_cases_canada 
+            db$region = db$country
+        }
+        
+        if (input$level_select2=="Province") { 
+            db = cv_cases_province
+            db$region = db$province
+        }
+        
+        if (input$outcome_select2=="Cases (Cumulative)") { 
+            db$outcome = db$cases/1000
+        }
+        
+        if (input$outcome_select2=="Cases (New)") { 
+            db$outcome = db$new_cases/1000
+        }
+        
+        if (input$outcome_select2=="Deaths (Cumulative)") { 
+            db$outcome = db$deaths/1000
+        }
+        
+        if (input$outcome_select2=="Deaths (New)") { 
+            db$outcome = db$new_deaths/1000
+        }
+        
+        if (input$outcome_select2=="Recovered (Cumulative)") { 
+            db$outcome = db$recovered/1000
+        }
+        
+        if (input$outcome_select2=="Recovered (New)") { 
+            db$outcome = db$new_recovered/1000
+        }
+        
+        db %>% filter(region %in% input$region_select2)
+    })
+    
+    output$scatter_plot2 <- renderPlotly({
+        scatter_plot(country_reactive_db_scatter2(), input$plot_date2, ylabel = input$outcome_select2, lag=input$stat2)
     })
     
     # ------------------------------
@@ -1191,6 +1532,160 @@ server <- function(input, output, session) {
     
     output$scatter_plot_mv <- renderPlotly({
         scatter_plot(country_reactive_db_mv_scatter(), input$plot_date_mv, ylabel = input$outcome_select_mv, lag=input$stat_mv)
+    })
+    
+    # ------------------------------
+    # Vaccinations general plots
+    
+    # update region selections
+    observeEvent(input$level_select_vaccine, {
+        if (input$level_select_vaccine=="Country") {
+            updatePickerInput(session = session, inputId = "region_select_vaccine", 
+                              choices = c("Canada"), 
+                              selected = "Canada")
+        }
+        
+        if (input$level_select_vaccine=="Province") {
+            updatePickerInput(session = session, inputId = "region_select_vaccine", 
+                              choices = c("Alberta", "British Columbia", "Manitoba", "Newfoundland & Labrador", "New Brunswick", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"), 
+                              selected = c( "Ontario", "Quebec", "British Columbia"))
+        }
+        
+    }, ignoreInit = TRUE)
+    
+    # create dataframe with selected countries
+    country_reactive_db_vaccine = reactive({
+        if (input$level_select_vaccine=="Country") { 
+            db = cv_cases_canada %>% filter(date >= vaccines_start_date)
+            db$region = db$country
+        }
+        
+        if (input$level_select_vaccine=="Province") { 
+            db = cv_cases_province %>% filter(date >= vaccines_start_date)
+            db$region = db$province
+        }
+        
+        if (input$outcome_select_vaccine=="Vaccines administered") { 
+            db$outcome = db$avaccine/1000
+            db$new_outcome = db$new_avaccine
+            db$new_outcome_pc = db$new_avaccinepc*1000
+            db$outcome_pc = db$avaccinepc*1000
+        }
+        
+        if (input$outcome_select_vaccine=="Vaccines distributed") { 
+            db$outcome = db$dvaccine/1000 
+            db$new_outcome = db$new_dvaccine
+            db$new_outcome_pc = db$new_dvaccinepc*1000
+            db$outcome_pc = db$dvaccinepc*1000
+        }
+        
+        db %>% filter(region %in% input$region_select_vaccine)
+    })
+    
+    output$province_plot_new_vaccine <- renderPlotly({
+        province_plot_new(country_reactive_db_vaccine(), input$plot_date_region_vaccine, ylabel = input$outcome_select_vaccine)
+    })
+    
+    output$province_plot_new_pc_vaccine <- renderPlotly({
+        province_plot_new_pc(country_reactive_db_vaccine(), input$plot_date_region_vaccine, ylabel = input$outcome_select_vaccine)
+    })
+    
+    output$province_plot_cumulative_vaccine <- renderPlotly({
+        province_plot_cumulative(country_reactive_db_vaccine(), input$plot_date_region_vaccine, ylabel = input$outcome_select_vaccine)
+    })
+    
+    output$province_plot_cumulative_pc_vaccine <- renderPlotly({
+        province_plot_cumulative_pc(country_reactive_db_vaccine(), input$plot_date_region_vaccine, ylabel = input$outcome_select_vaccine)
+    })
+    
+    output$province_plot_cumulative_log_vaccine <- renderPlotly({
+        province_plot_cumulative_log(country_reactive_db_vaccine(), input$plot_date_region_vaccine, ylabel = input$outcome_select_vaccine)
+    })
+    
+    #-----
+    # update region selections
+    observeEvent(input$level_select_vaccine2, {
+        if (input$level_select_vaccine2=="Country") {
+            updatePickerInput(session = session, inputId = "region_select_vaccine2", 
+                              choices = c("Canada"), selected = "Canada")
+        }
+        
+        if (input$level_select_vaccine2=="Province") {
+            updatePickerInput(session = session, inputId = "region_select_vaccine2", 
+                              choices = c("Alberta", "British Columbia", "Manitoba", "Newfoundland & Labrador", "New Brunswick", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"), 
+                              selected = c("Ontario", "Quebec", "British Columbia"))
+        }
+    }, ignoreInit = TRUE)
+    
+    observeEvent(input$outcome_select_vaccine2, {
+        if (input$outcome_select_vaccine2=="Vaccines administered (Cumulative)") {
+            updatePickerInput(session = session, inputId = "stat_vaccine2", 
+                              choices = c("Vaccines distributed (Cumulative)"), selected = "Vaccines distributed (Cumulative)")
+        }
+        
+        if (input$outcome_select_vaccine2=="Vaccines administered (New)") {
+            updatePickerInput(session = session, inputId = "stat_vaccine2", 
+                              choices = c("Vaccines distributed (Cumulative)", "Vaccines distributed (New)"), 
+                              selected = c("Vaccines distributed (Cumulative)"))
+        }
+    }, ignoreInit = TRUE)
+    
+    # create dataframe with selected countries
+    country_reactive_db_vaccine2 = reactive({
+        if (input$level_select_vaccine2=="Country") { 
+            db = cv_cases_canada %>% filter(date >= vaccines_start_date)
+            db$region = db$country
+        }
+        
+        if (input$level_select_vaccine2=="Province") { 
+            db = cv_cases_province %>% filter(date >= vaccines_start_date)
+            db$region = db$province
+        }
+        
+        if (input$outcome_select_vaccine2=="Vaccines administered (Cumulative)" & input$stat_vaccine2=="Vaccines distributed (Cumulative)") { 
+            db$outcome = db$advaccine
+        }
+        
+        if (input$outcome_select_vaccine2=="Vaccines administered (New)" & input$stat_vaccine2=="Vaccines distributed (Cumulative)") { 
+            db$outcome = db$newa_dvaccine
+        }
+        
+        if (input$outcome_select_vaccine2=="Vaccines administered (New)" & input$stat_vaccine2=="Vaccines distributed (New)") { 
+            db$outcome = db$new_advaccine
+        }
+        
+        
+        db %>% filter(region %in% input$region_select_vaccine2)
+    })
+    
+    output$ratio_plot_vaccine <- renderPlotly({
+        ratio_plot(country_reactive_db_vaccine2(), input$plot_date_vaccine2, ylabel = input$outcome_select_vaccine2, lag=input$stat_vaccine2)
+    })
+    
+    country_reactive_db_vaccine2_scatter = reactive({
+        if (input$level_select_vaccine2=="Country") { 
+            db = cv_cases_canada %>% filter(date >= vaccines_start_date)
+            db$region = db$country
+        }
+        
+        if (input$level_select_vaccine2=="Province") { 
+            db = cv_cases_province %>% filter(date >= vaccines_start_date)
+            db$region = db$province
+        }
+        
+        if (input$outcome_select_vaccine2=="Vaccines administered (Cumulative)") { 
+            db$outcome = db$avaccine
+        }
+        
+        if (input$outcome_select_vaccine2=="Vaccines administered (New)") { 
+            db$outcome = db$new_avaccine
+        }
+        
+        db %>% filter(region %in% input$region_select_vaccine2)
+    })
+    
+    output$scatter_plot_vaccine <- renderPlotly({
+        scatter_plot(country_reactive_db_vaccine2_scatter(), input$plot_date_vaccine2, ylabel = input$outcome_select_vaccine2, lag=input$stat_vaccine2)
     })
     
     # ------------------------------
