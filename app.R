@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 16 December 2020
+## Last updated: 22 December 2020
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -339,9 +339,6 @@ cv_cases_canada$date = as.Date(cv_cases_canada$date,"%Y-%m-%d")
 cv_min_date = as.Date(min(cv_cases_canada$date),"%Y-%m-%d")
 current_date = as.Date(max(cv_cases_canada$date),"%Y-%m-%d")
 vaccines_start_date = as.Date("2020-12-14","%Y-%m-%d")
-
-# extract time stamp for labeling
-update = Sys.Date()
 
 # map labeling
 cv_cases_canada$region = "Global"
@@ -961,7 +958,7 @@ ui <- bootstrapPage(
                tabPanel("About",
                         tags$div(
                             tags$h3("ABOUT THE DASHBOARD"), 
-                            h5(paste0("Last update: ",update)),
+                            h5(paste0("Last update: ", current_date)),
                             "This site is updated once daily. The aim of this site is to complement the resources below by providing several interactive features and metrics currently not available elsewhere for Canada.", tags$br(), tags$br(),
                             "The following resources offer the latest numbers of known cases globally:",tags$br(),
                             tags$a(href="https://experience.arcgis.com/experience/685d0ace521648f8a5beeeee1b9125cd", "WHO COVID-19 dashboard"),tags$br(),
@@ -975,16 +972,16 @@ ui <- bootstrapPage(
                             tags$b("06/05/2020:"), "Front page map is now graphed based on a time series data set rather than a one-day snapshot. As a result, animated features on the left-panel will also animate the geographic progression of the virus using the map.", tags$br(), tags$br(),
                             tags$b("01/05/2020:"), "Default government response stringency index no longer includes financial measures. Coding on cancellations of public events/limitations on public gatherings changed.", tags$br(), tags$br(),
                             tags$h3("DATA SOURCES"),
-                            "Berry, I., Soucy, J.-P. R., Tuite, A., Fisman, D. 14 April 2020.", tags$b("Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada."), "CMAJ 192(15):E420. doi:", tags$a(href="https://doi.org/10.1503/cmaj.75262", "https://doi.org/10.1503/cmaj.75262"), tags$br(), tags$br(),
-                            "Hemmadi, M., Syed, F., Schwartz, Z.", tags$b("The Logic's COVID-19 layoffs database."), tags$a(href="https://thelogic.co/news/why-axis/130000-and-counting-tracking-covid-19-layoffs-across-canada/", "Link"), tags$br(), tags$br(),
+                            "Berry, I., J.-P. R. Soucy, A. Tuite and D. Fisman. 2020.", tags$b("Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada."), "CMAJ 192(15): E420. doi:", tags$a(href="https://doi.org/10.1503/cmaj.75262", "https://doi.org/10.1503/cmaj.75262"), tags$br(), tags$br(),
+                            "Hemmadi, M., F. Syed and Z. Schwartz.", tags$b("The Logic's COVID-19 layoffs database."), tags$a(href="https://thelogic.co/news/why-axis/130000-and-counting-tracking-covid-19-layoffs-across-canada/", "Link"), tags$br(), tags$br(),
                             "Statistics Canada. ", tags$b("Labour force characteristics by province, monthly, seasonally adjusted."), tags$a(href="https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=1410028703", "Table: 14-10-0287-03"), tags$br(), tags$br(),
                             tags$b("OpenTable's state of the restaurant industry database."), tags$a(href="https://www.opentable.com/state-of-industry", "Link"), tags$br(), tags$br(),
                             tags$b("Transit app's frequency of app opens database."), tags$a(href="https://www.transitapp.com/coronavirus", "Link"), tags$br(), tags$br(),
                             tags$b("Bloomberg Nanos Consumer Confidence Index."), tags$a(href="https://www.nanos.co/dataportal/nanos-bloomberg-tracking-methodology/", "Link"), tags$br(),tags$br(),
                             tags$b("Google COVID-19 Community Mobility Reports."), tags$a(href="https://www.google.com/covid19/mobility/", "Link"), tags$br(),tags$br(),
                             tags$h3("REFERENCES"),
-                            "Hale, T., Petherick, A., Phillips, T., Webster, S. 2020.", tags$b("Variation in government responses to COVID-19."), tags$i("Blavatnik School of Government Working Paper Series 2020/031."), tags$a(href="https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker", "Link"), tags$br(), tags$br(),
-                            "Verity, R. et al. 2020.", tags$b("Estimates of the severity of coronavirus disease 2019: a model-based analysis."), tags$i("The Lancet: Infectious Diseases."), tags$a(href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30243-7/fulltext", "Link"),
+                            "Hale, T., N. Angrist, T. Boby, E. Cameron-Blake, L. Hallas, B. Kira, S. Majumdar, A. Petherick, T. Phillips, H. Tatlow and S. Webster. 2020.", tags$b("Variation in government responses to COVID-19."), "Blavatnik School of Government Working Paper Series 2020/032.", tags$a(href="https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker", "Link"), tags$br(), tags$br(),
+                            "Verity, R. et al. 2020.", tags$b("Estimates of the severity of coronavirus disease 2019: a model-based analysis."), tags$i("The Lancet: Infectious Diseases"), "20(6): 669-677.", tags$a(href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30243-7/fulltext", "Link"),
                             tags$br(),tags$br(),tags$h3("AUTHORS"),
                             "Minnie Cui",tags$br(),
                             tags$a(href="mailto:minniehcui@gmail.com", "Email"), tags$br(),tags$br()
