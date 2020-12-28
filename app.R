@@ -225,7 +225,7 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
     }
     
     if (lag=="Testing (Cumulative)" | lag == "Testing (New)") {
-        max_scale = 0.25
+        max_scale = 0.1
         df_min_date = cv_min_date
         g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
                                                                text = paste0("Date: ", format(date, "%d %B %Y"), 
@@ -235,7 +235,7 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
     }
     
     g1 = g + geom_line(alpha=0.8) + geom_point(size = 1.5, alpha = 0.8) +
-        theme_bw() + scale_colour_manual(values=province_cols) + xlim(df_min_date, current_date) +
+        theme_bw() + scale_colour_manual(values=province_cols) + xlim(df_min_date, plot_date) +
         theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=9,face="bold"))
     ggplotly(g1, tooltip = c("text"), width = 900) %>% layout(legend = list(font = list(size=11)))
 }
@@ -299,7 +299,7 @@ province_plot_cumulative_impact_log2 = function(cv_cases, plot_date, covid, eimp
                                            "\n", covid, ": ", outcome1, 
                                            "\n", eimpact, ": ", outcome2))) +
         geom_line(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), alpha=0.8) + 
-        geom_point(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), size = 2.25, alpha = 0.8, shape = 2) + xlim(cv_min_date, current_date) +
+        geom_point(data=plot_df[!is.na(plot_df$outcome2),], aes(colour = region, group = 1), size = 2.25, alpha = 0.8, shape = 2) + xlim(cv_min_date, plot_date) +
         xlab("Date") + ylab(paste("Log of", eimpact)) + theme_bw() + scale_colour_manual(values=province_cols) + scale_y_continuous(trans="log10", labels = scales::number_format(accuracy = 0.1)) +
         xlim(cv_min_date, plot_date) + theme(legend.title = element_blank(), legend.position = "", plot.title = element_text(size=10), axis.title=element_text(size=10,face="bold"))
     
