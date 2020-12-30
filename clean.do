@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 16 December 2020
+*Last updated: 29 December 2020
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -1052,7 +1052,9 @@ replace province = "Prince Edward Island" if province == "PEI"
 
 *Destring vaccine variable
 rename cumulative_`var' `var'
-replace `var' = "" if `var' == "NA"
+if "`:type `var''" != "long" {
+	replace `var' = "" if `var' == "NA"
+}
 destring `var', replace
 
 *Drop unnecessary variables and save for merge
