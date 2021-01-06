@@ -2,3 +2,4 @@
 get_geocodes_alt.R
 input_data/.Rhistory
 update_govt_indices.py
+pull_covid_data.py
