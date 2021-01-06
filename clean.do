@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 29 December 2020
+*Last updated: 5 January 2020
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -735,7 +735,9 @@ replace address = province + ", Canada" if region == "Not Reported"
 
 *Clean cumulative variable
 rename cumulative_`v' `v'
-replace `v' = "" if `v' == "NA"
+if "`:type `v''" != "long" {
+	replace `v' = "" if `v' == "NA"
+}
 destring `v', replace
 replace `v' = 0 if `v' == .
 
@@ -1004,7 +1006,9 @@ replace province = "Prince Edward Island" if province == "PEI"
 
 *Clean cumulative recoveries variable
 rename cumulative_`v' `v'
-replace `v' = "" if `v' == "NA"
+if "`:type `v''" != "long" {
+	replace `v' = "" if `v' == "NA"
+}
 destring `v', replace
 replace `v' = 0 if `v' == .
 
