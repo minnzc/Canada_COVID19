@@ -654,8 +654,7 @@ ui <- bootstrapPage(
                                             value = as.Date(current_date),
                                             width = "100%",
                                             timeFormat = "%d %b", 
-                                            animate=animationOptions(interval = 500, loop = FALSE)),
-                                "Please note: vaccines have not be distributed to Northwest Territories, Nunavut, and Yukon."
+                                            animate=animationOptions(interval = 500, loop = FALSE))
                                 
                             ),
                             
