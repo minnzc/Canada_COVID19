@@ -1,4 +1,5 @@
 date_vaccine_administered,province,cumulative_avaccine
+12-01-2021,Alberta,52318.0
 11-01-2021,Alberta,46791.0
 10-01-2021,Alberta,44994.0
 09-01-2021,Alberta,42333.0
@@ -28,6 +29,7 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,Alberta,20.0
 15-12-2020,Alberta,20.0
 14-12-2020,Alberta,
+12-01-2021,BC,62294.0
 11-01-2021,BC,59902.0
 10-01-2021,BC,46259.0
 09-01-2021,BC,46259.0
@@ -57,6 +59,7 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,BC,409.0
 15-12-2020,BC,409.0
 14-12-2020,BC,
+12-01-2021,Manitoba,10353.0
 11-01-2021,Manitoba,10353.0
 10-01-2021,Manitoba,9498.0
 09-01-2021,Manitoba,8674.0
@@ -86,6 +89,7 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,Manitoba,302.0
 15-12-2020,Manitoba,
 14-12-2020,Manitoba,
+12-01-2021,New Brunswick,7732.0
 11-01-2021,New Brunswick,7732.0
 10-01-2021,New Brunswick,5019.0
 09-01-2021,New Brunswick,5019.0
@@ -115,6 +119,7 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,New Brunswick,
 15-12-2020,New Brunswick,
 14-12-2020,New Brunswick,
+12-01-2021,NL,3760.0
 11-01-2021,NL,3760.0
 10-01-2021,NL,1785.0
 09-01-2021,NL,1785.0
@@ -144,9 +149,10 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,NL,2.0
 15-12-2020,NL,
 14-12-2020,NL,
-11-01-2021,Nova Scotia,2720.0
-10-01-2021,Nova Scotia,2720.0
-09-01-2021,Nova Scotia,2720.0
+12-01-2021,Nova Scotia,3831.0
+11-01-2021,Nova Scotia,3831.0
+10-01-2021,Nova Scotia,3831.0
+09-01-2021,Nova Scotia,3831.0
 08-01-2021,Nova Scotia,2720.0
 07-01-2021,Nova Scotia,2720.0
 06-01-2021,Nova Scotia,2720.0
@@ -173,6 +179,7 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,Nova Scotia,376.0
 15-12-2020,Nova Scotia,
 14-12-2020,Nova Scotia,
+12-01-2021,Ontario,133553.0
 11-01-2021,Ontario,122105.0
 10-01-2021,Ontario,113246.0
 09-01-2021,Ontario,103263.0
@@ -202,6 +209,7 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,Ontario,975.0
 15-12-2020,Ontario,431.0
 14-12-2020,Ontario,5.0
+12-01-2021,PEI,4226.0
 11-01-2021,PEI,3600.0
 10-01-2021,PEI,3600.0
 09-01-2021,PEI,3600.0
@@ -231,6 +239,7 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,PEI,140.0
 15-12-2020,PEI,
 14-12-2020,PEI,
+12-01-2021,Quebec,99510.0
 11-01-2021,Quebec,92452.0
 10-01-2021,Quebec,84387.0
 09-01-2021,Quebec,75123.0
@@ -260,6 +269,7 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,Quebec,1448.0
 15-12-2020,Quebec,292.0
 14-12-2020,Quebec,292.0
+12-01-2021,Saskatchewan,9880.0
 11-01-2021,Saskatchewan,8948.0
 10-01-2021,Saskatchewan,7929.0
 09-01-2021,Saskatchewan,6964.0
@@ -289,6 +299,7 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,Saskatchewan,11.0
 15-12-2020,Saskatchewan,11.0
 14-12-2020,Saskatchewan,
+12-01-2021,NWT,512.0
 11-01-2021,NWT,162.0
 10-01-2021,NWT,162.0
 09-01-2021,NWT,162.0
@@ -318,6 +329,7 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,NWT,
 15-12-2020,NWT,
 14-12-2020,NWT,
+12-01-2021,Nunavut,29.0
 11-01-2021,Nunavut,29.0
 10-01-2021,Nunavut,29.0
 09-01-2021,Nunavut,29.0
@@ -347,7 +359,8 @@ date_vaccine_administered,province,cumulative_avaccine
 16-12-2020,Nunavut,
 15-12-2020,Nunavut,
 14-12-2020,Nunavut,
-11-01-2021,Yukon,500.0
+12-01-2021,Yukon,495.0
+11-01-2021,Yukon,495.0
 10-01-2021,Yukon,310.0
 09-01-2021,Yukon,310.0
 08-01-2021,Yukon,310.0
