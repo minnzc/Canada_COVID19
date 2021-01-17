@@ -1,4 +1,5 @@
 date_recovered,province,cumulative_recovered
+16-01-2021,Alberta,101957.0
 15-01-2021,Alberta,101779.0
 14-01-2021,Alberta,100762.0
 13-01-2021,Alberta,99412.0
@@ -338,6 +339,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,Alberta,
 13-02-2020,Alberta,
 12-02-2020,Alberta,
+16-01-2021,BC,53115.0
 15-01-2021,BC,53115.0
 14-01-2021,BC,52605.0
 13-01-2021,BC,51893.0
@@ -677,6 +679,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,BC,0.0
 13-02-2020,BC,0.0
 12-02-2020,BC,0.0
+16-01-2021,Manitoba,23575.0
 15-01-2021,Manitoba,23478.0
 14-01-2021,Manitoba,23313.0
 13-01-2021,Manitoba,23014.0
@@ -1016,6 +1019,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,Manitoba,
 13-02-2020,Manitoba,
 12-02-2020,Manitoba,
+16-01-2021,New Brunswick,631.0
 15-01-2021,New Brunswick,615.0
 14-01-2021,New Brunswick,600.0
 13-01-2021,New Brunswick,593.0
@@ -1355,6 +1359,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,New Brunswick,
 13-02-2020,New Brunswick,
 12-02-2020,New Brunswick,
+16-01-2021,NL,383.0
 15-01-2021,NL,383.0
 14-01-2021,NL,383.0
 13-01-2021,NL,383.0
@@ -1694,6 +1699,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,NL,
 13-02-2020,NL,
 12-02-2020,NL,
+16-01-2021,Nova Scotia,1459.0
 15-01-2021,Nova Scotia,1453.0
 14-01-2021,Nova Scotia,1451.0
 13-01-2021,Nova Scotia,1447.0
@@ -2033,6 +2039,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,Nova Scotia,
 13-02-2020,Nova Scotia,
 12-02-2020,Nova Scotia,
+16-01-2021,Ontario,200406.0
 15-01-2021,Ontario,197194.0
 14-01-2021,Ontario,193814.0
 13-01-2021,Ontario,190221.0
@@ -2372,6 +2379,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,Ontario,1.0
 13-02-2020,Ontario,1.0
 12-02-2020,Ontario,1.0
+16-01-2021,PEI,96.0
 15-01-2021,PEI,96.0
 14-01-2021,PEI,96.0
 13-01-2021,PEI,95.0
@@ -2711,6 +2719,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,PEI,
 13-02-2020,PEI,
 12-02-2020,PEI,
+16-01-2021,Quebec,210364.0
 15-01-2021,Quebec,207934.0
 14-01-2021,Quebec,204741.0
 13-01-2021,Quebec,202166.0
@@ -3050,6 +3059,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,Quebec,
 13-02-2020,Quebec,
 12-02-2020,Quebec,
+16-01-2021,Saskatchewan,15730.0
 15-01-2021,Saskatchewan,15495.0
 14-01-2021,Saskatchewan,15264.0
 13-01-2021,Saskatchewan,15063.0
@@ -3389,6 +3399,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,Saskatchewan,
 13-02-2020,Saskatchewan,
 12-02-2020,Saskatchewan,
+16-01-2021,NWT,24.0
 15-01-2021,NWT,24.0
 14-01-2021,NWT,24.0
 13-01-2021,NWT,24.0
@@ -3728,6 +3739,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,NWT,
 13-02-2020,NWT,
 12-02-2020,NWT,
+16-01-2021,Nunavut,265.0
 15-01-2021,Nunavut,265.0
 14-01-2021,Nunavut,265.0
 13-01-2021,Nunavut,265.0
@@ -4067,6 +4079,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,Nunavut,
 13-02-2020,Nunavut,
 12-02-2020,Nunavut,
+16-01-2021,Yukon,67.0
 15-01-2021,Yukon,67.0
 14-01-2021,Yukon,67.0
 13-01-2021,Yukon,63.0
@@ -4406,6 +4419,7 @@ date_recovered,province,cumulative_recovered
 14-02-2020,Yukon,
 13-02-2020,Yukon,
 12-02-2020,Yukon,
+16-01-2021,Repatriated,13.0
 15-01-2021,Repatriated,13.0
 14-01-2021,Repatriated,13.0
 13-01-2021,Repatriated,13.0
