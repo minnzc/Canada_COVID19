@@ -673,12 +673,12 @@ Brampton Transit,Canada,-53,Toronto,Toronto,9/5/2020,-52
 York Region Transit,Canada,-71,Toronto,Toronto,1/10/2021,-68
 UP Express,Canada,-71,Toronto,Toronto,1/10/2021,-77
 TTC - Subway,Canada,-71,Toronto,Toronto,1/10/2021,-70
-TTC - Buses & Streetcars,Canada,-71,Toronto,Toronto,1/10/2021,-68
+TTC - Buses & Streetcars,Canada,-71,Toronto,Toronto,1/10/2021,-67
 Oakville Transit,Canada,-71,Toronto,Toronto,1/10/2021,-73
 MiWay,Canada,-71,Toronto,Toronto,1/10/2021,-72
 Hamilton Street Railway,Canada,-71,Toronto,Toronto,1/10/2021,-72
 GO Transit,Canada,-71,Toronto,Toronto,1/10/2021,-72
-Durham Region Transit,Canada,-71,Toronto,Toronto,1/10/2021,-76
+Durham Region Transit,Canada,-71,Toronto,Toronto,1/10/2021,-75
 Burlington Transit,Canada,-71,Toronto,Toronto,1/10/2021,-72
 Brampton Transit,Canada,-71,Toronto,Toronto,1/10/2021,-73
 York Region Transit,Canada,-49,Toronto,Toronto,9/6/2020,-47
@@ -912,17 +912,17 @@ GO Transit,Canada,-77,Toronto,Toronto,4/26/2020,-75
 Durham Region Transit,Canada,-77,Toronto,Toronto,4/26/2020,-73
 Burlington Transit,Canada,-77,Toronto,Toronto,4/26/2020,-76
 Brampton Transit,Canada,-77,Toronto,Toronto,4/26/2020,-76
-York Region Transit,Canada,-80,Toronto,Toronto,1/14/2021,-78
-UP Express,Canada,-80,Toronto,Toronto,1/14/2021,-83
-TTC - Subway,Canada,-80,Toronto,Toronto,1/14/2021,-80
-TTC - Buses & Streetcars,Canada,-80,Toronto,Toronto,1/14/2021,-77
-Oakville Transit,Canada,-80,Toronto,Toronto,1/14/2021,-84
-MiWay,Canada,-80,Toronto,Toronto,1/14/2021,-81
-Hamilton Street Railway,Canada,-80,Toronto,Toronto,1/14/2021,-82
-GO Transit,Canada,-80,Toronto,Toronto,1/14/2021,-82
-Durham Region Transit,Canada,-80,Toronto,Toronto,1/14/2021,-88
-Burlington Transit,Canada,-80,Toronto,Toronto,1/14/2021,-83
-Brampton Transit,Canada,-80,Toronto,Toronto,1/14/2021,-80
+York Region Transit,Canada,-79,Toronto,Toronto,1/14/2021,-78
+UP Express,Canada,-79,Toronto,Toronto,1/14/2021,-83
+TTC - Subway,Canada,-79,Toronto,Toronto,1/14/2021,-80
+TTC - Buses & Streetcars,Canada,-79,Toronto,Toronto,1/14/2021,-77
+Oakville Transit,Canada,-79,Toronto,Toronto,1/14/2021,-84
+MiWay,Canada,-79,Toronto,Toronto,1/14/2021,-81
+Hamilton Street Railway,Canada,-79,Toronto,Toronto,1/14/2021,-82
+GO Transit,Canada,-79,Toronto,Toronto,1/14/2021,-82
+Durham Region Transit,Canada,-79,Toronto,Toronto,1/14/2021,-88
+Burlington Transit,Canada,-79,Toronto,Toronto,1/14/2021,-83
+Brampton Transit,Canada,-79,Toronto,Toronto,1/14/2021,-79
 York Region Transit,Canada,-65,Toronto,Toronto,5/31/2020,-73
 UP Express,Canada,-65,Toronto,Toronto,5/31/2020,-78
 TTC - Subway,Canada,-65,Toronto,Toronto,5/31/2020,-71
@@ -1226,7 +1226,7 @@ TTC - Subway,Canada,-76,Toronto,Toronto,1/8/2021,-76
 TTC - Buses & Streetcars,Canada,-76,Toronto,Toronto,1/8/2021,-72
 Oakville Transit,Canada,-76,Toronto,Toronto,1/8/2021,-78
 MiWay,Canada,-76,Toronto,Toronto,1/8/2021,-78
-Hamilton Street Railway,Canada,-76,Toronto,Toronto,1/8/2021,-77
+Hamilton Street Railway,Canada,-76,Toronto,Toronto,1/8/2021,-76
 GO Transit,Canada,-76,Toronto,Toronto,1/8/2021,-78
 Durham Region Transit,Canada,-76,Toronto,Toronto,1/8/2021,-83
 Burlington Transit,Canada,-76,Toronto,Toronto,1/8/2021,-76
@@ -1240,7 +1240,7 @@ MiWay,Canada,-73,Toronto,Toronto,1/16/2021,-71
 Hamilton Street Railway,Canada,-73,Toronto,Toronto,1/16/2021,-72
 GO Transit,Canada,-73,Toronto,Toronto,1/16/2021,-73
 Durham Region Transit,Canada,-73,Toronto,Toronto,1/16/2021,-79
-Burlington Transit,Canada,-73,Toronto,Toronto,1/16/2021,-74
+Burlington Transit,Canada,-73,Toronto,Toronto,1/16/2021,-73
 Brampton Transit,Canada,-73,Toronto,Toronto,1/16/2021,-70
 York Region Transit,Canada,1,Toronto,Toronto,3/4/2020,6
 UP Express,Canada,1,Toronto,Toronto,3/4/2020,-6
@@ -1297,17 +1297,6 @@ GO Transit,Canada,-61,Toronto,Toronto,10/18/2020,-60
 Durham Region Transit,Canada,-61,Toronto,Toronto,10/18/2020,-65
 Burlington Transit,Canada,-61,Toronto,Toronto,10/18/2020,-61
 Brampton Transit,Canada,-61,Toronto,Toronto,10/18/2020,-59
-York Region Transit,Canada,-65,Toronto,Toronto,6/15/2020,-70
-UP Express,Canada,-65,Toronto,Toronto,6/15/2020,-81
-TTC - Subway,Canada,-65,Toronto,Toronto,6/15/2020,-73
-TTC - Buses & Streetcars,Canada,-65,Toronto,Toronto,6/15/2020,-68
-Oakville Transit,Canada,-65,Toronto,Toronto,6/15/2020,-67
-MiWay,Canada,-65,Toronto,Toronto,6/15/2020,-64
-Hamilton Street Railway,Canada,-65,Toronto,Toronto,6/15/2020,-63
-GO Transit,Canada,-65,Toronto,Toronto,6/15/2020,-65
-Durham Region Transit,Canada,-65,Toronto,Toronto,6/15/2020,-67
-Burlington Transit,Canada,-65,Toronto,Toronto,6/15/2020,-62
-Brampton Transit,Canada,-65,Toronto,Toronto,6/15/2020,-60
 York Region Transit,Canada,-57,Toronto,Toronto,8/21/2020,-56
 UP Express,Canada,-57,Toronto,Toronto,8/21/2020,-65
 TTC - Subway,Canada,-57,Toronto,Toronto,8/21/2020,-59
@@ -1319,6 +1308,17 @@ GO Transit,Canada,-57,Toronto,Toronto,8/21/2020,-56
 Durham Region Transit,Canada,-57,Toronto,Toronto,8/21/2020,-61
 Burlington Transit,Canada,-57,Toronto,Toronto,8/21/2020,-52
 Brampton Transit,Canada,-57,Toronto,Toronto,8/21/2020,-56
+York Region Transit,Canada,-65,Toronto,Toronto,6/15/2020,-70
+UP Express,Canada,-65,Toronto,Toronto,6/15/2020,-81
+TTC - Subway,Canada,-65,Toronto,Toronto,6/15/2020,-73
+TTC - Buses & Streetcars,Canada,-65,Toronto,Toronto,6/15/2020,-68
+Oakville Transit,Canada,-65,Toronto,Toronto,6/15/2020,-67
+MiWay,Canada,-65,Toronto,Toronto,6/15/2020,-64
+Hamilton Street Railway,Canada,-65,Toronto,Toronto,6/15/2020,-63
+GO Transit,Canada,-65,Toronto,Toronto,6/15/2020,-65
+Durham Region Transit,Canada,-65,Toronto,Toronto,6/15/2020,-67
+Burlington Transit,Canada,-65,Toronto,Toronto,6/15/2020,-62
+Brampton Transit,Canada,-65,Toronto,Toronto,6/15/2020,-60
 York Region Transit,Canada,-68,Toronto,Toronto,11/9/2020,-69
 UP Express,Canada,-68,Toronto,Toronto,11/9/2020,-73
 TTC - Subway,Canada,-68,Toronto,Toronto,11/9/2020,-70
@@ -1891,6 +1891,17 @@ GO Transit,Canada,-79,Toronto,Toronto,1/12/2021,-81
 Durham Region Transit,Canada,-79,Toronto,Toronto,1/12/2021,-86
 Burlington Transit,Canada,-79,Toronto,Toronto,1/12/2021,-80
 Brampton Transit,Canada,-79,Toronto,Toronto,1/12/2021,-80
+York Region Transit,Canada,-77,Toronto,Toronto,1/19/2021,-80
+UP Express,Canada,-77,Toronto,Toronto,1/19/2021,-85
+TTC - Subway,Canada,-77,Toronto,Toronto,1/19/2021,-81
+TTC - Buses & Streetcars,Canada,-77,Toronto,Toronto,1/19/2021,-77
+Oakville Transit,Canada,-77,Toronto,Toronto,1/19/2021,-83
+MiWay,Canada,-77,Toronto,Toronto,1/19/2021,-81
+Hamilton Street Railway,Canada,-77,Toronto,Toronto,1/19/2021,-80
+GO Transit,Canada,-77,Toronto,Toronto,1/19/2021,-82
+Durham Region Transit,Canada,-77,Toronto,Toronto,1/19/2021,-88
+Burlington Transit,Canada,-77,Toronto,Toronto,1/19/2021,-79
+Brampton Transit,Canada,-77,Toronto,Toronto,1/19/2021,-81
 York Region Transit,Canada,-55,Toronto,Toronto,7/30/2020,-61
 UP Express,Canada,-55,Toronto,Toronto,7/30/2020,-65
 TTC - Subway,Canada,-55,Toronto,Toronto,7/30/2020,-63
@@ -2155,17 +2166,17 @@ GO Transit,Canada,-56,Toronto,Toronto,8/12/2020,-56
 Durham Region Transit,Canada,-56,Toronto,Toronto,8/12/2020,-62
 Burlington Transit,Canada,-56,Toronto,Toronto,8/12/2020,-46
 Brampton Transit,Canada,-56,Toronto,Toronto,8/12/2020,-59
-York Region Transit,Canada,-74,Toronto,Toronto,1/6/2021,-72
-UP Express,Canada,-74,Toronto,Toronto,1/6/2021,-79
-TTC - Subway,Canada,-74,Toronto,Toronto,1/6/2021,-74
-TTC - Buses & Streetcars,Canada,-74,Toronto,Toronto,1/6/2021,-70
-Oakville Transit,Canada,-74,Toronto,Toronto,1/6/2021,-74
-MiWay,Canada,-74,Toronto,Toronto,1/6/2021,-75
-Hamilton Street Railway,Canada,-74,Toronto,Toronto,1/6/2021,-74
-GO Transit,Canada,-74,Toronto,Toronto,1/6/2021,-76
-Durham Region Transit,Canada,-74,Toronto,Toronto,1/6/2021,-83
-Burlington Transit,Canada,-74,Toronto,Toronto,1/6/2021,-74
-Brampton Transit,Canada,-74,Toronto,Toronto,1/6/2021,-75
+York Region Transit,Canada,-73,Toronto,Toronto,1/6/2021,-72
+UP Express,Canada,-73,Toronto,Toronto,1/6/2021,-79
+TTC - Subway,Canada,-73,Toronto,Toronto,1/6/2021,-74
+TTC - Buses & Streetcars,Canada,-73,Toronto,Toronto,1/6/2021,-70
+Oakville Transit,Canada,-73,Toronto,Toronto,1/6/2021,-74
+MiWay,Canada,-73,Toronto,Toronto,1/6/2021,-75
+Hamilton Street Railway,Canada,-73,Toronto,Toronto,1/6/2021,-74
+GO Transit,Canada,-73,Toronto,Toronto,1/6/2021,-76
+Durham Region Transit,Canada,-73,Toronto,Toronto,1/6/2021,-83
+Burlington Transit,Canada,-73,Toronto,Toronto,1/6/2021,-74
+Brampton Transit,Canada,-73,Toronto,Toronto,1/6/2021,-75
 York Region Transit,Canada,2,Toronto,Toronto,2/25/2020,2
 UP Express,Canada,2,Toronto,Toronto,2/25/2020,4
 TTC - Subway,Canada,2,Toronto,Toronto,2/25/2020,3
@@ -3464,17 +3475,17 @@ GO Transit,Canada,-72,Toronto,Toronto,11/17/2020,-73
 Durham Region Transit,Canada,-72,Toronto,Toronto,11/17/2020,-79
 Burlington Transit,Canada,-72,Toronto,Toronto,11/17/2020,-67
 Brampton Transit,Canada,-72,Toronto,Toronto,11/17/2020,-70
-York Region Transit,Canada,-77,Toronto,Toronto,1/18/2021,-78
-UP Express,Canada,-77,Toronto,Toronto,1/18/2021,-83
-TTC - Subway,Canada,-77,Toronto,Toronto,1/18/2021,-80
-TTC - Buses & Streetcars,Canada,-77,Toronto,Toronto,1/18/2021,-77
-Oakville Transit,Canada,-77,Toronto,Toronto,1/18/2021,-82
-MiWay,Canada,-77,Toronto,Toronto,1/18/2021,-80
-Hamilton Street Railway,Canada,-77,Toronto,Toronto,1/18/2021,-78
-GO Transit,Canada,-77,Toronto,Toronto,1/18/2021,-81
-Durham Region Transit,Canada,-77,Toronto,Toronto,1/18/2021,-86
-Burlington Transit,Canada,-77,Toronto,Toronto,1/18/2021,-82
-Brampton Transit,Canada,-77,Toronto,Toronto,1/18/2021,-79
+York Region Transit,Canada,-79,Toronto,Toronto,1/18/2021,-79
+UP Express,Canada,-79,Toronto,Toronto,1/18/2021,-84
+TTC - Subway,Canada,-79,Toronto,Toronto,1/18/2021,-80
+TTC - Buses & Streetcars,Canada,-79,Toronto,Toronto,1/18/2021,-77
+Oakville Transit,Canada,-79,Toronto,Toronto,1/18/2021,-83
+MiWay,Canada,-79,Toronto,Toronto,1/18/2021,-81
+Hamilton Street Railway,Canada,-79,Toronto,Toronto,1/18/2021,-81
+GO Transit,Canada,-79,Toronto,Toronto,1/18/2021,-82
+Durham Region Transit,Canada,-79,Toronto,Toronto,1/18/2021,-88
+Burlington Transit,Canada,-79,Toronto,Toronto,1/18/2021,-81
+Brampton Transit,Canada,-79,Toronto,Toronto,1/18/2021,-80
 York Region Transit,Canada,-64,Toronto,Toronto,12/16/2020,-62
 UP Express,Canada,-64,Toronto,Toronto,12/16/2020,-76
 TTC - Subway,Canada,-64,Toronto,Toronto,12/16/2020,-68
@@ -3497,17 +3508,17 @@ GO Transit,Canada,-55,Toronto,Toronto,8/14/2020,-54
 Durham Region Transit,Canada,-55,Toronto,Toronto,8/14/2020,-62
 Burlington Transit,Canada,-55,Toronto,Toronto,8/14/2020,-51
 Brampton Transit,Canada,-55,Toronto,Toronto,8/14/2020,-56
-York Region Transit,Canada,-73,Toronto,Toronto,1/17/2021,-71
-UP Express,Canada,-73,Toronto,Toronto,1/17/2021,-81
-TTC - Subway,Canada,-73,Toronto,Toronto,1/17/2021,-77
-TTC - Buses & Streetcars,Canada,-73,Toronto,Toronto,1/17/2021,-73
-Oakville Transit,Canada,-73,Toronto,Toronto,1/17/2021,-77
-MiWay,Canada,-73,Toronto,Toronto,1/17/2021,-74
-Hamilton Street Railway,Canada,-73,Toronto,Toronto,1/17/2021,-76
-GO Transit,Canada,-73,Toronto,Toronto,1/17/2021,-75
-Durham Region Transit,Canada,-73,Toronto,Toronto,1/17/2021,-79
-Burlington Transit,Canada,-73,Toronto,Toronto,1/17/2021,-77
-Brampton Transit,Canada,-73,Toronto,Toronto,1/17/2021,-73
+York Region Transit,Canada,-72,Toronto,Toronto,1/17/2021,-71
+UP Express,Canada,-72,Toronto,Toronto,1/17/2021,-80
+TTC - Subway,Canada,-72,Toronto,Toronto,1/17/2021,-76
+TTC - Buses & Streetcars,Canada,-72,Toronto,Toronto,1/17/2021,-73
+Oakville Transit,Canada,-72,Toronto,Toronto,1/17/2021,-77
+MiWay,Canada,-72,Toronto,Toronto,1/17/2021,-74
+Hamilton Street Railway,Canada,-72,Toronto,Toronto,1/17/2021,-75
+GO Transit,Canada,-72,Toronto,Toronto,1/17/2021,-74
+Durham Region Transit,Canada,-72,Toronto,Toronto,1/17/2021,-79
+Burlington Transit,Canada,-72,Toronto,Toronto,1/17/2021,-76
+Brampton Transit,Canada,-72,Toronto,Toronto,1/17/2021,-72
 York Region Transit,Canada,-72,Toronto,Toronto,11/19/2020,-71
 UP Express,Canada,-72,Toronto,Toronto,11/19/2020,-78
 TTC - Subway,Canada,-72,Toronto,Toronto,11/19/2020,-73
@@ -3894,8 +3905,8 @@ West Coast Express,Canada,-72,Vancouver,Vancouver,5/26/2020,-73
 TransLink,Canada,-72,Vancouver,Vancouver,5/26/2020,-63
 West Coast Express,Canada,-77,Vancouver,Vancouver,4/26/2020,-77
 TransLink,Canada,-77,Vancouver,Vancouver,4/26/2020,-71
-West Coast Express,Canada,-80,Vancouver,Vancouver,1/14/2021,-79
-TransLink,Canada,-80,Vancouver,Vancouver,1/14/2021,-71
+West Coast Express,Canada,-79,Vancouver,Vancouver,1/14/2021,-78
+TransLink,Canada,-79,Vancouver,Vancouver,1/14/2021,-70
 West Coast Express,Canada,-65,Vancouver,Vancouver,5/31/2020,-68
 TransLink,Canada,-65,Vancouver,Vancouver,5/31/2020,-60
 West Coast Express,Canada,-69,Vancouver,Vancouver,11/16/2020,-69
@@ -3952,8 +3963,8 @@ West Coast Express,Canada,5,Vancouver,Vancouver,2/16/2020,-29
 TransLink,Canada,5,Vancouver,Vancouver,2/16/2020,-5
 West Coast Express,Canada,-76,Vancouver,Vancouver,1/8/2021,-74
 TransLink,Canada,-76,Vancouver,Vancouver,1/8/2021,-66
-West Coast Express,Canada,-73,Vancouver,Vancouver,1/16/2021,-64
-TransLink,Canada,-73,Vancouver,Vancouver,1/16/2021,-66
+West Coast Express,Canada,-73,Vancouver,Vancouver,1/16/2021,-63
+TransLink,Canada,-73,Vancouver,Vancouver,1/16/2021,-65
 West Coast Express,Canada,1,Vancouver,Vancouver,3/4/2020,2
 TransLink,Canada,1,Vancouver,Vancouver,3/4/2020,6
 West Coast Express,Canada,-61,Vancouver,Vancouver,10/25/2020,-72
@@ -3964,10 +3975,10 @@ West Coast Express,Canada,-1,Vancouver,Vancouver,3/2/2020,1
 TransLink,Canada,-1,Vancouver,Vancouver,3/2/2020,-2
 West Coast Express,Canada,-61,Vancouver,Vancouver,10/18/2020,-70
 TransLink,Canada,-61,Vancouver,Vancouver,10/18/2020,-56
-West Coast Express,Canada,-65,Vancouver,Vancouver,6/15/2020,-76
-TransLink,Canada,-65,Vancouver,Vancouver,6/15/2020,-63
 West Coast Express,Canada,-57,Vancouver,Vancouver,8/21/2020,-63
 TransLink,Canada,-57,Vancouver,Vancouver,8/21/2020,-50
+West Coast Express,Canada,-65,Vancouver,Vancouver,6/15/2020,-76
+TransLink,Canada,-65,Vancouver,Vancouver,6/15/2020,-63
 West Coast Express,Canada,-68,Vancouver,Vancouver,11/9/2020,-65
 TransLink,Canada,-68,Vancouver,Vancouver,11/9/2020,-59
 West Coast Express,Canada,-71,Vancouver,Vancouver,12/11/2020,-73
@@ -4072,6 +4083,8 @@ West Coast Express,Canada,-56,Vancouver,Vancouver,7/29/2020,-54
 TransLink,Canada,-56,Vancouver,Vancouver,7/29/2020,-48
 West Coast Express,Canada,-79,Vancouver,Vancouver,1/12/2021,-78
 TransLink,Canada,-79,Vancouver,Vancouver,1/12/2021,-70
+West Coast Express,Canada,-77,Vancouver,Vancouver,1/19/2021,-76
+TransLink,Canada,-77,Vancouver,Vancouver,1/19/2021,-70
 West Coast Express,Canada,-55,Vancouver,Vancouver,7/30/2020,-57
 TransLink,Canada,-55,Vancouver,Vancouver,7/30/2020,-48
 West Coast Express,Canada,-79,Vancouver,Vancouver,5/13/2020,-80
@@ -4120,8 +4133,8 @@ West Coast Express,Canada,-70,Vancouver,Vancouver,6/11/2020,-76
 TransLink,Canada,-70,Vancouver,Vancouver,6/11/2020,-64
 West Coast Express,Canada,-56,Vancouver,Vancouver,8/12/2020,-54
 TransLink,Canada,-56,Vancouver,Vancouver,8/12/2020,-48
-West Coast Express,Canada,-74,Vancouver,Vancouver,1/6/2021,-75
-TransLink,Canada,-74,Vancouver,Vancouver,1/6/2021,-64
+West Coast Express,Canada,-73,Vancouver,Vancouver,1/6/2021,-75
+TransLink,Canada,-73,Vancouver,Vancouver,1/6/2021,-64
 West Coast Express,Canada,2,Vancouver,Vancouver,2/25/2020,17
 TransLink,Canada,2,Vancouver,Vancouver,2/25/2020,3
 West Coast Express,Canada,5,Vancouver,Vancouver,3/1/2020,-32
@@ -4358,14 +4371,14 @@ West Coast Express,Canada,-67,Vancouver,Vancouver,10/1/2020,-67
 TransLink,Canada,-67,Vancouver,Vancouver,10/1/2020,-55
 West Coast Express,Canada,-72,Vancouver,Vancouver,11/17/2020,-70
 TransLink,Canada,-72,Vancouver,Vancouver,11/17/2020,-64
-West Coast Express,Canada,-77,Vancouver,Vancouver,1/18/2021,-78
-TransLink,Canada,-77,Vancouver,Vancouver,1/18/2021,-70
+West Coast Express,Canada,-79,Vancouver,Vancouver,1/18/2021,-75
+TransLink,Canada,-79,Vancouver,Vancouver,1/18/2021,-72
 West Coast Express,Canada,-64,Vancouver,Vancouver,12/16/2020,-69
 TransLink,Canada,-64,Vancouver,Vancouver,12/16/2020,-55
 West Coast Express,Canada,-55,Vancouver,Vancouver,8/14/2020,-59
 TransLink,Canada,-55,Vancouver,Vancouver,8/14/2020,-44
-West Coast Express,Canada,-73,Vancouver,Vancouver,1/17/2021,-32
-TransLink,Canada,-73,Vancouver,Vancouver,1/17/2021,-67
+West Coast Express,Canada,-72,Vancouver,Vancouver,1/17/2021,-29
+TransLink,Canada,-72,Vancouver,Vancouver,1/17/2021,-66
 West Coast Express,Canada,-72,Vancouver,Vancouver,11/19/2020,-73
 TransLink,Canada,-72,Vancouver,Vancouver,11/19/2020,-60
 West Coast Express,Canada,-65,Vancouver,Vancouver,11/14/2020,-79
@@ -4489,7 +4502,7 @@ OC Transpo,Canada,-81,Ottawa,Ottawa,3/31/2020,-85
 OC Transpo,Canada,-4,Ottawa,Ottawa,2/27/2020,-9
 OC Transpo,Canada,-72,Ottawa,Ottawa,5/26/2020,-76
 OC Transpo,Canada,-77,Ottawa,Ottawa,4/26/2020,-77
-OC Transpo,Canada,-80,Ottawa,Ottawa,1/14/2021,-86
+OC Transpo,Canada,-79,Ottawa,Ottawa,1/14/2021,-86
 OC Transpo,Canada,-65,Ottawa,Ottawa,5/31/2020,-64
 OC Transpo,Canada,-69,Ottawa,Ottawa,11/16/2020,-75
 OC Transpo,Canada,-79,Ottawa,Ottawa,4/5/2020,-80
@@ -4524,8 +4537,8 @@ OC Transpo,Canada,-61,Ottawa,Ottawa,10/25/2020,-62
 OC Transpo,Canada,-61,Ottawa,Ottawa,6/14/2020,-61
 OC Transpo,Canada,-1,Ottawa,Ottawa,3/2/2020,3
 OC Transpo,Canada,-61,Ottawa,Ottawa,10/18/2020,-64
-OC Transpo,Canada,-65,Ottawa,Ottawa,6/15/2020,-73
 OC Transpo,Canada,-57,Ottawa,Ottawa,8/21/2020,-63
+OC Transpo,Canada,-65,Ottawa,Ottawa,6/15/2020,-73
 OC Transpo,Canada,-68,Ottawa,Ottawa,11/9/2020,-74
 OC Transpo,Canada,-71,Ottawa,Ottawa,12/11/2020,-71
 OC Transpo,Canada,-51,Ottawa,Ottawa,8/24/2020,-58
@@ -4578,6 +4591,7 @@ OC Transpo,Canada,-49,Ottawa,Ottawa,7/25/2020,-54
 OC Transpo,Canada,-79,Ottawa,Ottawa,1/15/2021,-85
 OC Transpo,Canada,-56,Ottawa,Ottawa,7/29/2020,-67
 OC Transpo,Canada,-79,Ottawa,Ottawa,1/12/2021,-85
+OC Transpo,Canada,-77,Ottawa,Ottawa,1/19/2021,-85
 OC Transpo,Canada,-55,Ottawa,Ottawa,7/30/2020,-66
 OC Transpo,Canada,-79,Ottawa,Ottawa,5/13/2020,-82
 OC Transpo,Canada,-66,Ottawa,Ottawa,9/30/2020,-75
@@ -4602,7 +4616,7 @@ OC Transpo,Canada,-67,Ottawa,Ottawa,10/23/2020,-72
 OC Transpo,Canada,-65,Ottawa,Ottawa,9/24/2020,-75
 OC Transpo,Canada,-70,Ottawa,Ottawa,6/11/2020,-75
 OC Transpo,Canada,-56,Ottawa,Ottawa,8/12/2020,-64
-OC Transpo,Canada,-74,Ottawa,Ottawa,1/6/2021,-78
+OC Transpo,Canada,-73,Ottawa,Ottawa,1/6/2021,-78
 OC Transpo,Canada,2,Ottawa,Ottawa,2/25/2020,3
 OC Transpo,Canada,5,Ottawa,Ottawa,3/1/2020,5
 OC Transpo,Canada,-4,Ottawa,Ottawa,2/21/2020,-13
@@ -4721,10 +4735,10 @@ OC Transpo,Canada,-77,Ottawa,Ottawa,5/9/2020,-76
 OC Transpo,Canada,-82,Ottawa,Ottawa,4/28/2020,-84
 OC Transpo,Canada,-67,Ottawa,Ottawa,10/1/2020,-75
 OC Transpo,Canada,-72,Ottawa,Ottawa,11/17/2020,-77
-OC Transpo,Canada,-77,Ottawa,Ottawa,1/18/2021,-84
+OC Transpo,Canada,-79,Ottawa,Ottawa,1/18/2021,-86
 OC Transpo,Canada,-64,Ottawa,Ottawa,12/16/2020,-67
 OC Transpo,Canada,-55,Ottawa,Ottawa,8/14/2020,-61
-OC Transpo,Canada,-73,Ottawa,Ottawa,1/17/2021,-74
+OC Transpo,Canada,-72,Ottawa,Ottawa,1/17/2021,-74
 OC Transpo,Canada,-72,Ottawa,Ottawa,11/19/2020,-77
 OC Transpo,Canada,-65,Ottawa,Ottawa,11/14/2020,-64
 OC Transpo,Canada,-71,Ottawa,Ottawa,11/3/2020,-77
@@ -5666,7 +5680,7 @@ exo Terrebonne-Mascouche,Canada,-78,Montréal,Montréal,1/11/2021,-71
 exo Sud-Ouest,Canada,-78,Montréal,Montréal,1/11/2021,-80
 exo Sorel-Varennes,Canada,-78,Montréal,Montréal,1/11/2021,-80
 exo Roussillon,Canada,-78,Montréal,Montréal,1/11/2021,-79
-exo Le Richelain,Canada,-78,Montréal,Montréal,1/11/2021,-84
+exo Le Richelain,Canada,-78,Montréal,Montréal,1/11/2021,-83
 exo Laurentides,Canada,-78,Montréal,Montréal,1/11/2021,-77
 exo La Presqu'Île,Canada,-78,Montréal,Montréal,1/11/2021,-78
 exo L'Assomption,Canada,-78,Montréal,Montréal,1/11/2021,-74
@@ -5688,7 +5702,7 @@ exo La Presqu'Île,Canada,-76,Montréal,Montréal,1/7/2021,-71
 exo L'Assomption,Canada,-76,Montréal,Montréal,1/7/2021,-71
 exo Haut-Saint-Laurent,Canada,-76,Montréal,Montréal,1/7/2021,-78
 exo - Trains,Canada,-76,Montréal,Montréal,1/7/2021,-81
-CRTL - Lanaudière,Canada,-76,Montréal,Montréal,1/7/2021,-69
+CRTL - Lanaudière,Canada,-76,Montréal,Montréal,1/7/2021,-68
 STM,Canada,-67,Montréal,Montréal,11/2/2020,-72
 STL,Canada,-67,Montréal,Montréal,11/2/2020,-68
 Saint-Jean-sur-Richelieu,Canada,-67,Montréal,Montréal,11/2/2020,-83
@@ -6073,22 +6087,22 @@ exo L'Assomption,Canada,-77,Montréal,Montréal,4/26/2020,-80
 exo Haut-Saint-Laurent,Canada,-77,Montréal,Montréal,4/26/2020,-84
 exo - Trains,Canada,-77,Montréal,Montréal,4/26/2020,-85
 CRTL - Lanaudière,Canada,-77,Montréal,Montréal,4/26/2020,-77
-STM,Canada,-80,Montréal,Montréal,1/14/2021,-82
-STL,Canada,-80,Montréal,Montréal,1/14/2021,-79
-Saint-Jean-sur-Richelieu,Canada,-80,Montréal,Montréal,1/14/2021,-91
-RTL,Canada,-80,Montréal,Montréal,1/14/2021,-82
-exo Vallée-du-Richelieu,Canada,-80,Montréal,Montréal,1/14/2021,-84
-exo Terrebonne-Mascouche,Canada,-80,Montréal,Montréal,1/14/2021,-76
-exo Sud-Ouest,Canada,-80,Montréal,Montréal,1/14/2021,-81
-exo Sorel-Varennes,Canada,-80,Montréal,Montréal,1/14/2021,-83
-exo Roussillon,Canada,-80,Montréal,Montréal,1/14/2021,-82
-exo Le Richelain,Canada,-80,Montréal,Montréal,1/14/2021,-85
-exo Laurentides,Canada,-80,Montréal,Montréal,1/14/2021,-75
-exo La Presqu'Île,Canada,-80,Montréal,Montréal,1/14/2021,-83
-exo L'Assomption,Canada,-80,Montréal,Montréal,1/14/2021,-77
-exo Haut-Saint-Laurent,Canada,-80,Montréal,Montréal,1/14/2021,-80
-exo - Trains,Canada,-80,Montréal,Montréal,1/14/2021,-86
-CRTL - Lanaudière,Canada,-80,Montréal,Montréal,1/14/2021,-77
+STM,Canada,-79,Montréal,Montréal,1/14/2021,-81
+STL,Canada,-79,Montréal,Montréal,1/14/2021,-78
+Saint-Jean-sur-Richelieu,Canada,-79,Montréal,Montréal,1/14/2021,-91
+RTL,Canada,-79,Montréal,Montréal,1/14/2021,-82
+exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,1/14/2021,-84
+exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/14/2021,-75
+exo Sud-Ouest,Canada,-79,Montréal,Montréal,1/14/2021,-81
+exo Sorel-Varennes,Canada,-79,Montréal,Montréal,1/14/2021,-82
+exo Roussillon,Canada,-79,Montréal,Montréal,1/14/2021,-82
+exo Le Richelain,Canada,-79,Montréal,Montréal,1/14/2021,-85
+exo Laurentides,Canada,-79,Montréal,Montréal,1/14/2021,-75
+exo La Presqu'Île,Canada,-79,Montréal,Montréal,1/14/2021,-83
+exo L'Assomption,Canada,-79,Montréal,Montréal,1/14/2021,-77
+exo Haut-Saint-Laurent,Canada,-79,Montréal,Montréal,1/14/2021,-80
+exo - Trains,Canada,-79,Montréal,Montréal,1/14/2021,-86
+CRTL - Lanaudière,Canada,-79,Montréal,Montréal,1/14/2021,-76
 STM,Canada,-65,Montréal,Montréal,5/31/2020,-66
 STL,Canada,-65,Montréal,Montréal,5/31/2020,-64
 Saint-Jean-sur-Richelieu,Canada,-65,Montréal,Montréal,5/31/2020,-79
@@ -6495,7 +6509,7 @@ Saint-Jean-sur-Richelieu,Canada,-73,Montréal,Montréal,1/2/2021,-84
 RTL,Canada,-73,Montréal,Montréal,1/2/2021,-75
 exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,1/2/2021,-79
 exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,1/2/2021,-71
-exo Sud-Ouest,Canada,-73,Montréal,Montréal,1/2/2021,-74
+exo Sud-Ouest,Canada,-73,Montréal,Montréal,1/2/2021,-73
 exo Sorel-Varennes,Canada,-73,Montréal,Montréal,1/2/2021,-71
 exo Roussillon,Canada,-73,Montréal,Montréal,1/2/2021,-82
 exo Le Richelain,Canada,-73,Montréal,Montréal,1/2/2021,-80
@@ -6533,23 +6547,23 @@ exo Roussillon,Canada,-76,Montréal,Montréal,1/8/2021,-75
 exo Le Richelain,Canada,-76,Montréal,Montréal,1/8/2021,-79
 exo Laurentides,Canada,-76,Montréal,Montréal,1/8/2021,-69
 exo La Presqu'Île,Canada,-76,Montréal,Montréal,1/8/2021,-74
-exo L'Assomption,Canada,-76,Montréal,Montréal,1/8/2021,-72
+exo L'Assomption,Canada,-76,Montréal,Montréal,1/8/2021,-71
 exo Haut-Saint-Laurent,Canada,-76,Montréal,Montréal,1/8/2021,-77
 exo - Trains,Canada,-76,Montréal,Montréal,1/8/2021,-81
 CRTL - Lanaudière,Canada,-76,Montréal,Montréal,1/8/2021,-69
-STM,Canada,-73,Montréal,Montréal,1/16/2021,-78
+STM,Canada,-73,Montréal,Montréal,1/16/2021,-77
 STL,Canada,-73,Montréal,Montréal,1/16/2021,-75
 Saint-Jean-sur-Richelieu,Canada,-73,Montréal,Montréal,1/16/2021,-90
 RTL,Canada,-73,Montréal,Montréal,1/16/2021,-78
 exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,1/16/2021,-83
-exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,1/16/2021,-73
+exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,1/16/2021,-72
 exo Sud-Ouest,Canada,-73,Montréal,Montréal,1/16/2021,-76
 exo Sorel-Varennes,Canada,-73,Montréal,Montréal,1/16/2021,-76
-exo Roussillon,Canada,-73,Montréal,Montréal,1/16/2021,-82
-exo Le Richelain,Canada,-73,Montréal,Montréal,1/16/2021,-86
-exo Laurentides,Canada,-73,Montréal,Montréal,1/16/2021,-78
+exo Roussillon,Canada,-73,Montréal,Montréal,1/16/2021,-81
+exo Le Richelain,Canada,-73,Montréal,Montréal,1/16/2021,-85
+exo Laurentides,Canada,-73,Montréal,Montréal,1/16/2021,-77
 exo La Presqu'Île,Canada,-73,Montréal,Montréal,1/16/2021,-76
-exo L'Assomption,Canada,-73,Montréal,Montréal,1/16/2021,-73
+exo L'Assomption,Canada,-73,Montréal,Montréal,1/16/2021,-72
 exo Haut-Saint-Laurent,Canada,-73,Montréal,Montréal,1/16/2021,-73
 exo - Trains,Canada,-73,Montréal,Montréal,1/16/2021,-80
 CRTL - Lanaudière,Canada,-73,Montréal,Montréal,1/16/2021,-68
@@ -6633,22 +6647,6 @@ exo L'Assomption,Canada,-61,Montréal,Montréal,10/18/2020,-58
 exo Haut-Saint-Laurent,Canada,-61,Montréal,Montréal,10/18/2020,-55
 exo - Trains,Canada,-61,Montréal,Montréal,10/18/2020,-67
 CRTL - Lanaudière,Canada,-61,Montréal,Montréal,10/18/2020,-55
-STM,Canada,-65,Montréal,Montréal,6/15/2020,-60
-STL,Canada,-65,Montréal,Montréal,6/15/2020,-54
-Saint-Jean-sur-Richelieu,Canada,-65,Montréal,Montréal,6/15/2020,-67
-RTL,Canada,-65,Montréal,Montréal,6/15/2020,-60
-exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,6/15/2020,-58
-exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,6/15/2020,-51
-exo Sud-Ouest,Canada,-65,Montréal,Montréal,6/15/2020,-65
-exo Sorel-Varennes,Canada,-65,Montréal,Montréal,6/15/2020,-57
-exo Roussillon,Canada,-65,Montréal,Montréal,6/15/2020,-78
-exo Le Richelain,Canada,-65,Montréal,Montréal,6/15/2020,-61
-exo Laurentides,Canada,-65,Montréal,Montréal,6/15/2020,-59
-exo La Presqu'Île,Canada,-65,Montréal,Montréal,6/15/2020,-63
-exo L'Assomption,Canada,-65,Montréal,Montréal,6/15/2020,-49
-exo Haut-Saint-Laurent,Canada,-65,Montréal,Montréal,6/15/2020,-62
-exo - Trains,Canada,-65,Montréal,Montréal,6/15/2020,-62
-CRTL - Lanaudière,Canada,-65,Montréal,Montréal,6/15/2020,-40
 STM,Canada,-57,Montréal,Montréal,8/21/2020,-58
 STL,Canada,-57,Montréal,Montréal,8/21/2020,-54
 Saint-Jean-sur-Richelieu,Canada,-57,Montréal,Montréal,8/21/2020,-71
@@ -6665,6 +6663,22 @@ exo L'Assomption,Canada,-57,Montréal,Montréal,8/21/2020,-48
 exo Haut-Saint-Laurent,Canada,-57,Montréal,Montréal,8/21/2020,-57
 exo - Trains,Canada,-57,Montréal,Montréal,8/21/2020,-66
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,8/21/2020,-51
+STM,Canada,-65,Montréal,Montréal,6/15/2020,-60
+STL,Canada,-65,Montréal,Montréal,6/15/2020,-54
+Saint-Jean-sur-Richelieu,Canada,-65,Montréal,Montréal,6/15/2020,-67
+RTL,Canada,-65,Montréal,Montréal,6/15/2020,-60
+exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,6/15/2020,-58
+exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,6/15/2020,-51
+exo Sud-Ouest,Canada,-65,Montréal,Montréal,6/15/2020,-65
+exo Sorel-Varennes,Canada,-65,Montréal,Montréal,6/15/2020,-57
+exo Roussillon,Canada,-65,Montréal,Montréal,6/15/2020,-78
+exo Le Richelain,Canada,-65,Montréal,Montréal,6/15/2020,-61
+exo Laurentides,Canada,-65,Montréal,Montréal,6/15/2020,-59
+exo La Presqu'Île,Canada,-65,Montréal,Montréal,6/15/2020,-63
+exo L'Assomption,Canada,-65,Montréal,Montréal,6/15/2020,-49
+exo Haut-Saint-Laurent,Canada,-65,Montréal,Montréal,6/15/2020,-62
+exo - Trains,Canada,-65,Montréal,Montréal,6/15/2020,-62
+CRTL - Lanaudière,Canada,-65,Montréal,Montréal,6/15/2020,-40
 STM,Canada,-68,Montréal,Montréal,11/9/2020,-73
 STL,Canada,-68,Montréal,Montréal,11/9/2020,-68
 Saint-Jean-sur-Richelieu,Canada,-68,Montréal,Montréal,11/9/2020,-84
@@ -6870,7 +6884,7 @@ exo Le Richelain,Canada,-75,Montréal,Montréal,1/5/2021,-78
 exo Laurentides,Canada,-75,Montréal,Montréal,1/5/2021,-65
 exo La Presqu'Île,Canada,-75,Montréal,Montréal,1/5/2021,-72
 exo L'Assomption,Canada,-75,Montréal,Montréal,1/5/2021,-68
-exo Haut-Saint-Laurent,Canada,-75,Montréal,Montréal,1/5/2021,-77
+exo Haut-Saint-Laurent,Canada,-75,Montréal,Montréal,1/5/2021,-76
 exo - Trains,Canada,-75,Montréal,Montréal,1/5/2021,-80
 CRTL - Lanaudière,Canada,-75,Montréal,Montréal,1/5/2021,-64
 STM,Canada,-79,Montréal,Montréal,4/20/2020,-82
@@ -7457,7 +7471,7 @@ exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,1/15/2021,-86
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/15/2021,-76
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,1/15/2021,-81
 exo Sorel-Varennes,Canada,-79,Montréal,Montréal,1/15/2021,-84
-exo Roussillon,Canada,-79,Montréal,Montréal,1/15/2021,-82
+exo Roussillon,Canada,-79,Montréal,Montréal,1/15/2021,-81
 exo Le Richelain,Canada,-79,Montréal,Montréal,1/15/2021,-85
 exo Laurentides,Canada,-79,Montréal,Montréal,1/15/2021,-76
 exo La Presqu'Île,Canada,-79,Montréal,Montréal,1/15/2021,-83
@@ -7497,6 +7511,22 @@ exo L'Assomption,Canada,-79,Montréal,Montréal,1/12/2021,-75
 exo Haut-Saint-Laurent,Canada,-79,Montréal,Montréal,1/12/2021,-82
 exo - Trains,Canada,-79,Montréal,Montréal,1/12/2021,-85
 CRTL - Lanaudière,Canada,-79,Montréal,Montréal,1/12/2021,-73
+STM,Canada,-77,Montréal,Montréal,1/19/2021,-75
+STL,Canada,-77,Montréal,Montréal,1/19/2021,-75
+Saint-Jean-sur-Richelieu,Canada,-77,Montréal,Montréal,1/19/2021,-87
+RTL,Canada,-77,Montréal,Montréal,1/19/2021,-72
+exo Vallée-du-Richelieu,Canada,-77,Montréal,Montréal,1/19/2021,-71
+exo Terrebonne-Mascouche,Canada,-77,Montréal,Montréal,1/19/2021,-74
+exo Sud-Ouest,Canada,-77,Montréal,Montréal,1/19/2021,-72
+exo Sorel-Varennes,Canada,-77,Montréal,Montréal,1/19/2021,-75
+exo Roussillon,Canada,-77,Montréal,Montréal,1/19/2021,-74
+exo Le Richelain,Canada,-77,Montréal,Montréal,1/19/2021,-80
+exo Laurentides,Canada,-77,Montréal,Montréal,1/19/2021,-73
+exo La Presqu'Île,Canada,-77,Montréal,Montréal,1/19/2021,-79
+exo L'Assomption,Canada,-77,Montréal,Montréal,1/19/2021,-65
+exo Haut-Saint-Laurent,Canada,-77,Montréal,Montréal,1/19/2021,-71
+exo - Trains,Canada,-77,Montréal,Montréal,1/19/2021,-82
+CRTL - Lanaudière,Canada,-77,Montréal,Montréal,1/19/2021,-69
 STM,Canada,-55,Montréal,Montréal,7/30/2020,-51
 STL,Canada,-55,Montréal,Montréal,7/30/2020,-36
 Saint-Jean-sur-Richelieu,Canada,-55,Montréal,Montréal,7/30/2020,-56
@@ -7881,22 +7911,22 @@ exo L'Assomption,Canada,-56,Montréal,Montréal,8/12/2020,-43
 exo Haut-Saint-Laurent,Canada,-56,Montréal,Montréal,8/12/2020,-52
 exo - Trains,Canada,-56,Montréal,Montréal,8/12/2020,-60
 CRTL - Lanaudière,Canada,-56,Montréal,Montréal,8/12/2020,-45
-STM,Canada,-74,Montréal,Montréal,1/6/2021,-75
-STL,Canada,-74,Montréal,Montréal,1/6/2021,-71
-Saint-Jean-sur-Richelieu,Canada,-74,Montréal,Montréal,1/6/2021,-85
-RTL,Canada,-74,Montréal,Montréal,1/6/2021,-76
-exo Vallée-du-Richelieu,Canada,-74,Montréal,Montréal,1/6/2021,-74
-exo Terrebonne-Mascouche,Canada,-74,Montréal,Montréal,1/6/2021,-64
-exo Sud-Ouest,Canada,-74,Montréal,Montréal,1/6/2021,-76
-exo Sorel-Varennes,Canada,-74,Montréal,Montréal,1/6/2021,-70
-exo Roussillon,Canada,-74,Montréal,Montréal,1/6/2021,-69
-exo Le Richelain,Canada,-74,Montréal,Montréal,1/6/2021,-75
-exo Laurentides,Canada,-74,Montréal,Montréal,1/6/2021,-64
-exo La Presqu'Île,Canada,-74,Montréal,Montréal,1/6/2021,-68
-exo L'Assomption,Canada,-74,Montréal,Montréal,1/6/2021,-69
-exo Haut-Saint-Laurent,Canada,-74,Montréal,Montréal,1/6/2021,-75
-exo - Trains,Canada,-74,Montréal,Montréal,1/6/2021,-81
-CRTL - Lanaudière,Canada,-74,Montréal,Montréal,1/6/2021,-64
+STM,Canada,-73,Montréal,Montréal,1/6/2021,-75
+STL,Canada,-73,Montréal,Montréal,1/6/2021,-71
+Saint-Jean-sur-Richelieu,Canada,-73,Montréal,Montréal,1/6/2021,-85
+RTL,Canada,-73,Montréal,Montréal,1/6/2021,-76
+exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,1/6/2021,-74
+exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,1/6/2021,-64
+exo Sud-Ouest,Canada,-73,Montréal,Montréal,1/6/2021,-76
+exo Sorel-Varennes,Canada,-73,Montréal,Montréal,1/6/2021,-70
+exo Roussillon,Canada,-73,Montréal,Montréal,1/6/2021,-69
+exo Le Richelain,Canada,-73,Montréal,Montréal,1/6/2021,-75
+exo Laurentides,Canada,-73,Montréal,Montréal,1/6/2021,-64
+exo La Presqu'Île,Canada,-73,Montréal,Montréal,1/6/2021,-68
+exo L'Assomption,Canada,-73,Montréal,Montréal,1/6/2021,-69
+exo Haut-Saint-Laurent,Canada,-73,Montréal,Montréal,1/6/2021,-75
+exo - Trains,Canada,-73,Montréal,Montréal,1/6/2021,-80
+CRTL - Lanaudière,Canada,-73,Montréal,Montréal,1/6/2021,-64
 STM,Canada,2,Montréal,Montréal,2/25/2020,0
 STL,Canada,2,Montréal,Montréal,2/25/2020,1
 Saint-Jean-sur-Richelieu,Canada,2,Montréal,Montréal,2/25/2020,5
@@ -8382,14 +8412,14 @@ STL,Canada,-79,Montréal,Montréal,1/13/2021,-79
 Saint-Jean-sur-Richelieu,Canada,-79,Montréal,Montréal,1/13/2021,-91
 RTL,Canada,-79,Montréal,Montréal,1/13/2021,-83
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,1/13/2021,-85
-exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/13/2021,-75
+exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/13/2021,-74
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,1/13/2021,-81
 exo Sorel-Varennes,Canada,-79,Montréal,Montréal,1/13/2021,-80
 exo Roussillon,Canada,-79,Montréal,Montréal,1/13/2021,-82
 exo Le Richelain,Canada,-79,Montréal,Montréal,1/13/2021,-84
-exo Laurentides,Canada,-79,Montréal,Montréal,1/13/2021,-77
+exo Laurentides,Canada,-79,Montréal,Montréal,1/13/2021,-76
 exo La Presqu'Île,Canada,-79,Montréal,Montréal,1/13/2021,-83
-exo L'Assomption,Canada,-79,Montréal,Montréal,1/13/2021,-76
+exo L'Assomption,Canada,-79,Montréal,Montréal,1/13/2021,-75
 exo Haut-Saint-Laurent,Canada,-79,Montréal,Montréal,1/13/2021,-81
 exo - Trains,Canada,-79,Montréal,Montréal,1/13/2021,-86
 CRTL - Lanaudière,Canada,-79,Montréal,Montréal,1/13/2021,-73
@@ -8485,10 +8515,10 @@ exo Roussillon,Canada,-74,Montréal,Montréal,1/4/2021,-70
 exo Le Richelain,Canada,-74,Montréal,Montréal,1/4/2021,-76
 exo Laurentides,Canada,-74,Montréal,Montréal,1/4/2021,-68
 exo La Presqu'Île,Canada,-74,Montréal,Montréal,1/4/2021,-73
-exo L'Assomption,Canada,-74,Montréal,Montréal,1/4/2021,-68
+exo L'Assomption,Canada,-74,Montréal,Montréal,1/4/2021,-67
 exo Haut-Saint-Laurent,Canada,-74,Montréal,Montréal,1/4/2021,-78
 exo - Trains,Canada,-74,Montréal,Montréal,1/4/2021,-79
-CRTL - Lanaudière,Canada,-74,Montréal,Montréal,1/4/2021,-59
+CRTL - Lanaudière,Canada,-74,Montréal,Montréal,1/4/2021,-58
 STM,Canada,-49,Montréal,Montréal,8/16/2020,-48
 STL,Canada,-49,Montréal,Montréal,8/16/2020,-41
 Saint-Jean-sur-Richelieu,Canada,-49,Montréal,Montréal,8/16/2020,-60
@@ -9193,7 +9223,7 @@ exo L'Assomption,Canada,-78,Montréal,Montréal,4/25/2020,-77
 exo Haut-Saint-Laurent,Canada,-78,Montréal,Montréal,4/25/2020,-84
 exo - Trains,Canada,-78,Montréal,Montréal,4/25/2020,-84
 CRTL - Lanaudière,Canada,-78,Montréal,Montréal,4/25/2020,-74
-STM,Canada,-70,Montréal,Montréal,1/9/2021,-77
+STM,Canada,-70,Montréal,Montréal,1/9/2021,-76
 STL,Canada,-70,Montréal,Montréal,1/9/2021,-72
 Saint-Jean-sur-Richelieu,Canada,-70,Montréal,Montréal,1/9/2021,-88
 RTL,Canada,-70,Montréal,Montréal,1/9/2021,-76
@@ -9785,22 +9815,22 @@ exo L'Assomption,Canada,-72,Montréal,Montréal,11/17/2020,-67
 exo Haut-Saint-Laurent,Canada,-72,Montréal,Montréal,11/17/2020,-77
 exo - Trains,Canada,-72,Montréal,Montréal,11/17/2020,-80
 CRTL - Lanaudière,Canada,-72,Montréal,Montréal,11/17/2020,-73
-STM,Canada,-77,Montréal,Montréal,1/18/2021,-74
-STL,Canada,-77,Montréal,Montréal,1/18/2021,-72
-Saint-Jean-sur-Richelieu,Canada,-77,Montréal,Montréal,1/18/2021,-86
-RTL,Canada,-77,Montréal,Montréal,1/18/2021,-72
-exo Vallée-du-Richelieu,Canada,-77,Montréal,Montréal,1/18/2021,-74
-exo Terrebonne-Mascouche,Canada,-77,Montréal,Montréal,1/18/2021,-68
-exo Sud-Ouest,Canada,-77,Montréal,Montréal,1/18/2021,-72
-exo Sorel-Varennes,Canada,-77,Montréal,Montréal,1/18/2021,-76
-exo Roussillon,Canada,-77,Montréal,Montréal,1/18/2021,-67
-exo Le Richelain,Canada,-77,Montréal,Montréal,1/18/2021,-79
-exo Laurentides,Canada,-77,Montréal,Montréal,1/18/2021,-69
-exo La Presqu'Île,Canada,-77,Montréal,Montréal,1/18/2021,-70
-exo L'Assomption,Canada,-77,Montréal,Montréal,1/18/2021,-63
-exo Haut-Saint-Laurent,Canada,-77,Montréal,Montréal,1/18/2021,-73
-exo - Trains,Canada,-77,Montréal,Montréal,1/18/2021,-81
-CRTL - Lanaudière,Canada,-77,Montréal,Montréal,1/18/2021,-62
+STM,Canada,-79,Montréal,Montréal,1/18/2021,-79
+STL,Canada,-79,Montréal,Montréal,1/18/2021,-76
+Saint-Jean-sur-Richelieu,Canada,-79,Montréal,Montréal,1/18/2021,-90
+RTL,Canada,-79,Montréal,Montréal,1/18/2021,-79
+exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,1/18/2021,-80
+exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/18/2021,-71
+exo Sud-Ouest,Canada,-79,Montréal,Montréal,1/18/2021,-79
+exo Sorel-Varennes,Canada,-79,Montréal,Montréal,1/18/2021,-80
+exo Roussillon,Canada,-79,Montréal,Montréal,1/18/2021,-80
+exo Le Richelain,Canada,-79,Montréal,Montréal,1/18/2021,-84
+exo Laurentides,Canada,-79,Montréal,Montréal,1/18/2021,-77
+exo La Presqu'Île,Canada,-79,Montréal,Montréal,1/18/2021,-80
+exo L'Assomption,Canada,-79,Montréal,Montréal,1/18/2021,-74
+exo Haut-Saint-Laurent,Canada,-79,Montréal,Montréal,1/18/2021,-79
+exo - Trains,Canada,-79,Montréal,Montréal,1/18/2021,-83
+CRTL - Lanaudière,Canada,-79,Montréal,Montréal,1/18/2021,-70
 STM,Canada,-64,Montréal,Montréal,12/16/2020,-63
 STL,Canada,-64,Montréal,Montréal,12/16/2020,-61
 Saint-Jean-sur-Richelieu,Canada,-64,Montréal,Montréal,12/16/2020,-80
@@ -9833,22 +9863,22 @@ exo L'Assomption,Canada,-55,Montréal,Montréal,8/14/2020,-43
 exo Haut-Saint-Laurent,Canada,-55,Montréal,Montréal,8/14/2020,-52
 exo - Trains,Canada,-55,Montréal,Montréal,8/14/2020,-61
 CRTL - Lanaudière,Canada,-55,Montréal,Montréal,8/14/2020,-50
-STM,Canada,-73,Montréal,Montréal,1/17/2021,-75
-STL,Canada,-73,Montréal,Montréal,1/17/2021,-73
-Saint-Jean-sur-Richelieu,Canada,-73,Montréal,Montréal,1/17/2021,-88
-RTL,Canada,-73,Montréal,Montréal,1/17/2021,-75
-exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,1/17/2021,-76
-exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,1/17/2021,-69
-exo Sud-Ouest,Canada,-73,Montréal,Montréal,1/17/2021,-76
-exo Sorel-Varennes,Canada,-73,Montréal,Montréal,1/17/2021,-74
-exo Roussillon,Canada,-73,Montréal,Montréal,1/17/2021,-80
-exo Le Richelain,Canada,-73,Montréal,Montréal,1/17/2021,-77
-exo Laurentides,Canada,-73,Montréal,Montréal,1/17/2021,-79
-exo La Presqu'Île,Canada,-73,Montréal,Montréal,1/17/2021,-71
-exo L'Assomption,Canada,-73,Montréal,Montréal,1/17/2021,-71
-exo Haut-Saint-Laurent,Canada,-73,Montréal,Montréal,1/17/2021,-71
-exo - Trains,Canada,-73,Montréal,Montréal,1/17/2021,-77
-CRTL - Lanaudière,Canada,-73,Montréal,Montréal,1/17/2021,-64
+STM,Canada,-72,Montréal,Montréal,1/17/2021,-75
+STL,Canada,-72,Montréal,Montréal,1/17/2021,-72
+Saint-Jean-sur-Richelieu,Canada,-72,Montréal,Montréal,1/17/2021,-88
+RTL,Canada,-72,Montréal,Montréal,1/17/2021,-74
+exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,1/17/2021,-75
+exo Terrebonne-Mascouche,Canada,-72,Montréal,Montréal,1/17/2021,-67
+exo Sud-Ouest,Canada,-72,Montréal,Montréal,1/17/2021,-76
+exo Sorel-Varennes,Canada,-72,Montréal,Montréal,1/17/2021,-73
+exo Roussillon,Canada,-72,Montréal,Montréal,1/17/2021,-79
+exo Le Richelain,Canada,-72,Montréal,Montréal,1/17/2021,-77
+exo Laurentides,Canada,-72,Montréal,Montréal,1/17/2021,-79
+exo La Presqu'Île,Canada,-72,Montréal,Montréal,1/17/2021,-71
+exo L'Assomption,Canada,-72,Montréal,Montréal,1/17/2021,-70
+exo Haut-Saint-Laurent,Canada,-72,Montréal,Montréal,1/17/2021,-70
+exo - Trains,Canada,-72,Montréal,Montréal,1/17/2021,-76
+CRTL - Lanaudière,Canada,-72,Montréal,Montréal,1/17/2021,-63
 STM,Canada,-72,Montréal,Montréal,11/19/2020,-75
 STL,Canada,-72,Montréal,Montréal,11/19/2020,-72
 Saint-Jean-sur-Richelieu,Canada,-72,Montréal,Montréal,11/19/2020,-83
@@ -10335,8 +10365,8 @@ Calgary Transit,Canada,-72,Calgary,Calgary,5/26/2020,-76
 Airdrie Transit,Canada,-72,Calgary,Calgary,5/26/2020,-88
 Calgary Transit,Canada,-77,Calgary,Calgary,4/26/2020,-74
 Airdrie Transit,Canada,-77,Calgary,Calgary,4/26/2020,-86
-Calgary Transit,Canada,-80,Calgary,Calgary,1/14/2021,-72
-Airdrie Transit,Canada,-80,Calgary,Calgary,1/14/2021,-86
+Calgary Transit,Canada,-79,Calgary,Calgary,1/14/2021,-71
+Airdrie Transit,Canada,-79,Calgary,Calgary,1/14/2021,-86
 Calgary Transit,Canada,-65,Calgary,Calgary,5/31/2020,-67
 Airdrie Transit,Canada,-65,Calgary,Calgary,5/31/2020,-83
 Calgary Transit,Canada,-69,Calgary,Calgary,11/16/2020,-62
@@ -10393,7 +10423,7 @@ Calgary Transit,Canada,5,Calgary,Calgary,2/16/2020,15
 Airdrie Transit,Canada,5,Calgary,Calgary,2/16/2020,3
 Calgary Transit,Canada,-76,Calgary,Calgary,1/8/2021,-77
 Airdrie Transit,Canada,-76,Calgary,Calgary,1/8/2021,-88
-Calgary Transit,Canada,-73,Calgary,Calgary,1/16/2021,-69
+Calgary Transit,Canada,-73,Calgary,Calgary,1/16/2021,-68
 Airdrie Transit,Canada,-73,Calgary,Calgary,1/16/2021,-84
 Calgary Transit,Canada,1,Calgary,Calgary,3/4/2020,-2
 Airdrie Transit,Canada,1,Calgary,Calgary,3/4/2020,-15
@@ -10405,10 +10435,10 @@ Calgary Transit,Canada,-1,Calgary,Calgary,3/2/2020,-6
 Airdrie Transit,Canada,-1,Calgary,Calgary,3/2/2020,-8
 Calgary Transit,Canada,-61,Calgary,Calgary,10/18/2020,-56
 Airdrie Transit,Canada,-61,Calgary,Calgary,10/18/2020,-78
-Calgary Transit,Canada,-65,Calgary,Calgary,6/15/2020,-69
-Airdrie Transit,Canada,-65,Calgary,Calgary,6/15/2020,-86
 Calgary Transit,Canada,-57,Calgary,Calgary,8/21/2020,-53
 Airdrie Transit,Canada,-57,Calgary,Calgary,8/21/2020,-80
+Calgary Transit,Canada,-65,Calgary,Calgary,6/15/2020,-69
+Airdrie Transit,Canada,-65,Calgary,Calgary,6/15/2020,-86
 Calgary Transit,Canada,-68,Calgary,Calgary,11/9/2020,-59
 Airdrie Transit,Canada,-68,Calgary,Calgary,11/9/2020,-82
 Calgary Transit,Canada,-71,Calgary,Calgary,12/11/2020,-75
@@ -10513,6 +10543,8 @@ Calgary Transit,Canada,-56,Calgary,Calgary,7/29/2020,-56
 Airdrie Transit,Canada,-56,Calgary,Calgary,7/29/2020,-81
 Calgary Transit,Canada,-79,Calgary,Calgary,1/12/2021,-71
 Airdrie Transit,Canada,-79,Calgary,Calgary,1/12/2021,-85
+Calgary Transit,Canada,-77,Calgary,Calgary,1/19/2021,-74
+Airdrie Transit,Canada,-77,Calgary,Calgary,1/19/2021,-84
 Calgary Transit,Canada,-55,Calgary,Calgary,7/30/2020,-57
 Airdrie Transit,Canada,-55,Calgary,Calgary,7/30/2020,-82
 Calgary Transit,Canada,-79,Calgary,Calgary,5/13/2020,-81
@@ -10561,8 +10593,8 @@ Calgary Transit,Canada,-70,Calgary,Calgary,6/11/2020,-72
 Airdrie Transit,Canada,-70,Calgary,Calgary,6/11/2020,-89
 Calgary Transit,Canada,-56,Calgary,Calgary,8/12/2020,-55
 Airdrie Transit,Canada,-56,Calgary,Calgary,8/12/2020,-81
-Calgary Transit,Canada,-74,Calgary,Calgary,1/6/2021,-76
-Airdrie Transit,Canada,-74,Calgary,Calgary,1/6/2021,-87
+Calgary Transit,Canada,-73,Calgary,Calgary,1/6/2021,-76
+Airdrie Transit,Canada,-73,Calgary,Calgary,1/6/2021,-87
 Calgary Transit,Canada,2,Calgary,Calgary,2/25/2020,-1
 Airdrie Transit,Canada,2,Calgary,Calgary,2/25/2020,1
 Calgary Transit,Canada,5,Calgary,Calgary,3/1/2020,9
@@ -10799,14 +10831,14 @@ Calgary Transit,Canada,-67,Calgary,Calgary,10/1/2020,-61
 Airdrie Transit,Canada,-67,Calgary,Calgary,10/1/2020,-81
 Calgary Transit,Canada,-72,Calgary,Calgary,11/17/2020,-68
 Airdrie Transit,Canada,-72,Calgary,Calgary,11/17/2020,-83
-Calgary Transit,Canada,-77,Calgary,Calgary,1/18/2021,-76
-Airdrie Transit,Canada,-77,Calgary,Calgary,1/18/2021,-86
+Calgary Transit,Canada,-79,Calgary,Calgary,1/18/2021,-73
+Airdrie Transit,Canada,-79,Calgary,Calgary,1/18/2021,-87
 Calgary Transit,Canada,-64,Calgary,Calgary,12/16/2020,-71
 Airdrie Transit,Canada,-64,Calgary,Calgary,12/16/2020,-84
 Calgary Transit,Canada,-55,Calgary,Calgary,8/14/2020,-54
 Airdrie Transit,Canada,-55,Calgary,Calgary,8/14/2020,-80
-Calgary Transit,Canada,-73,Calgary,Calgary,1/17/2021,-68
-Airdrie Transit,Canada,-73,Calgary,Calgary,1/17/2021,-85
+Calgary Transit,Canada,-72,Calgary,Calgary,1/17/2021,-67
+Airdrie Transit,Canada,-72,Calgary,Calgary,1/17/2021,-84
 Calgary Transit,Canada,-72,Calgary,Calgary,11/19/2020,-67
 Airdrie Transit,Canada,-72,Calgary,Calgary,11/19/2020,-85
 Calgary Transit,Canada,-65,Calgary,Calgary,11/14/2020,-62
