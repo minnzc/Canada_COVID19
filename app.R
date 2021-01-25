@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 27 December 2020
+## Last updated: 24 January 2021
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -162,6 +162,26 @@ scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) 
             ylim(0, max_scale) + xlim(0, max_scale) + xlab("Vaccines distributed (New)") + ylab(paste(ylabel))
     }
     
+    if (lag=="Vaccines completed (Cumulative)") {
+        max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$cvaccine))
+        g = ggplot(plot_df, aes(x = cvaccine, y = outcome, colour = region, group = 1,
+                                text = paste0("Date: ", format(date, "%d %B %Y"), 
+                                              "\n", "Region: ", region, 
+                                              "\n", ylabel, ": ", outcome, 
+                                              "\n", "Vaccines completed (Cumulative): ", cvaccine))) +
+            ylim(0, max_scale) + xlim(0, max_scale) + xlab("Vaccines completed (Cumulative)") + ylab(paste(ylabel))
+    }
+    
+    if (lag=="Vaccines completed (New)") {
+        max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$new_cvaccine))
+        g = ggplot(plot_df, aes(x = new_cvaccine, y = outcome, colour = region, group = 1,
+                                text = paste0("Date: ", format(date, "%d %B %Y"), 
+                                              "\n", "Region: ", region, 
+                                              "\n", ylabel, ": ", outcome, 
+                                              "\n", "Vaccines completed (New): ", new_cvaccine))) +
+            ylim(0, max_scale) + xlim(0, max_scale) + xlab("Vaccines completed (New)") + ylab(paste(ylabel))
+    }
+    
     if (lag=="Testing (Cumulative)") {
         max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$testing/1000))
         g = ggplot(plot_df, aes(x = testing/1000, y = outcome, colour = region, group = 1,
@@ -191,7 +211,7 @@ scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) 
 
 # ------------------------------
 # function to plot ratio plots
-ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
+ratio_plot = function(cv_cases, plot_date, ylabel, lag) {
     plot_df = subset(cv_cases, date<=plot_date)
     
     if (lag=="18-day") {
@@ -214,7 +234,7 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
             ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 new cases (day t-14)")) 
     }
     
-    if (lag=="Vaccines distributed (Cumulative)" | lag == "Vaccines distributed (New)") {
+    if (ylabel=="Vaccines administered (Cumulative)" | ylabel == "Vaccines administered (New)") {
         max_scale = max(get_max(cv_cases$outcome))
         df_min_date = vaccines_start_date
         g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
@@ -222,6 +242,16 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) {
                                                                              "\n", "Region: ", region, 
                                                                              "\n", "Vaccines administered / distributed: ", outcome))) +
             ylim(0, max_scale) + xlab("Date") + ylab(paste("Vaccines administered / distributed")) 
+    }
+    
+    if (ylabel=="Vaccines completed (Cumulative)" | ylabel == "Vaccines completed (New)") {
+        max_scale = max(get_max(cv_cases$outcome))
+        df_min_date = vaccines_start_date
+        g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
+                                                               text = paste0("Date: ", format(date, "%d %B %Y"), 
+                                                                             "\n", "Region: ", region, 
+                                                                             "\n", "Vaccines completed / distributed: ", outcome))) +
+            ylim(0, max_scale) + xlab("Date") + ylab(paste("Vaccines completed / distributed")) 
     }
     
     if (lag=="Testing (Cumulative)" | lag == "Testing (New)") {
@@ -641,7 +671,7 @@ ui <- bootstrapPage(
                                             multiple = TRUE),
                                 
                                 pickerInput("outcome_select_vaccine", "Select y-axis variable:",   
-                                            choices = c("Vaccines administered", "Vaccines distributed"), 
+                                            choices = c("Vaccines administered", "Vaccines completed", "Vaccines distributed"), 
                                             selected = c("Vaccines administered"),
                                             multiple = FALSE),
                                 
@@ -688,7 +718,7 @@ ui <- bootstrapPage(
                                             multiple = TRUE),
                                 
                                 pickerInput("outcome_select_vaccine2", "Select vaccine administration variable:",   
-                                            choices = c("Vaccines administered (Cumulative)", "Vaccines administered (New)"), 
+                                            choices = c("Vaccines administered (Cumulative)", "Vaccines administered (New)", "Vaccines completed (Cumulative)", "Vaccines completed (New)"), 
                                             selected = c("Vaccines administered (Cumulative)"),
                                             multiple = FALSE),
                                 
@@ -964,6 +994,7 @@ ui <- bootstrapPage(
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
                             tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"), tags$br(),tags$br(),
                             tags$h3("LATEST UPDATES"),
+                            tags$b("24/01/2021:"), "Addition of the \'Vaccines completed\' series to the \"Vaccinations\" tab. \'Vaccines completed\' refers to people who have received both doses of a vaccine. \'Vaccines administered\' refers to people who have received one or more doses.", tags$br(), tags$br(),
                             tags$b("16/12/2020:"), "Addition of the \"Vaccinations\" tab courtesy of administerd and distributed vaccines data from ", tags$a(href="https://github.com/ishaberry/Covid19Canada", "Berry et al. 2020."), "Provincial and national testing metrics added to \"General graphs\" tab.", tags$br(), tags$br(),
                             tags$b("31/08/2020:"), "Key metrics on \"Dynamics\", and \"Moving average dynamics\" tabs have changed from CUMULATIVE TOTAL deaths and/or recoveries over lagged ACTIVE cases to DAILY NEW deaths and/or recoveries over lagged DAILY NEW cases.", tags$br(), tags$br(),
                             tags$b("11/06/2020:"), "Front page and \"General graphs\" tab updated with \'per 1000 people metrics\' based on Canada's 2018 health region population estimates. \"Dynamics\", and \"Moving average dynamics\" tabs now feature \'per 1000 active cases\' rates instead of \'per 100 active cases\'.", tags$br(), tags$br(),
@@ -1575,6 +1606,13 @@ server <- function(input, output, session) {
             db$outcome_pc = db$dvaccinepc*1000
         }
         
+        if (input$outcome_select_vaccine=="Vaccines completed") { 
+            db$outcome = db$cvaccine/1000 
+            db$new_outcome = db$new_cvaccine
+            db$new_outcome_pc = db$new_cvaccinepc*1000
+            db$outcome_pc = db$cvaccinepc*1000
+        }
+        
         db %>% filter(region %in% input$region_select_vaccine)
     })
     
@@ -1624,6 +1662,17 @@ server <- function(input, output, session) {
                               choices = c("Vaccines distributed (Cumulative)", "Vaccines distributed (New)"), 
                               selected = c("Vaccines distributed (Cumulative)"))
         }
+        
+        if (input$outcome_select_vaccine2=="Vaccines completed (Cumulative)") {
+            updatePickerInput(session = session, inputId = "stat_vaccine2", 
+                              choices = c("Vaccines distributed (Cumulative)"), selected = "Vaccines distributed (Cumulative)")
+        }
+        
+        if (input$outcome_select_vaccine2=="Vaccines completed (New)") {
+            updatePickerInput(session = session, inputId = "stat_vaccine2", 
+                              choices = c("Vaccines distributed (Cumulative)", "Vaccines distributed (New)"), 
+                              selected = c("Vaccines distributed (Cumulative)"))
+        }
     }, ignoreInit = TRUE)
     
     # create dataframe with selected countries
@@ -1648,6 +1697,18 @@ server <- function(input, output, session) {
         
         if (input$outcome_select_vaccine2=="Vaccines administered (New)" & input$stat_vaccine2=="Vaccines distributed (New)") { 
             db$outcome = db$new_advaccine
+        }
+        
+        if (input$outcome_select_vaccine2=="Vaccines completed (Cumulative)" & input$stat_vaccine2=="Vaccines distributed (Cumulative)") { 
+            db$outcome = db$cdvaccine
+        }
+        
+        if (input$outcome_select_vaccine2=="Vaccines completed (New)" & input$stat_vaccine2=="Vaccines distributed (Cumulative)") { 
+            db$outcome = db$newc_dvaccine
+        }
+        
+        if (input$outcome_select_vaccine2=="Vaccines completed (New)" & input$stat_vaccine2=="Vaccines distributed (New)") { 
+            db$outcome = db$new_cdvaccine
         }
         
         

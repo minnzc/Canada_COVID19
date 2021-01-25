@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 5 January 2020
+*Last updated: 24 January 2021
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -1032,10 +1032,12 @@ save `v', replace
 
 local avaccine_file "vaccine_administration_cumulative.csv"
 local dvaccine_file "vaccine_distribution_cumulative.csv"
+local cvaccine_file "vaccine_completion_cumulative.csv"
 local avaccine_date "date_vaccine_administered"
 local dvaccine_date "date_vaccine_distributed"
+local cvaccine_date "date_vaccine_completed"
 
-foreach var in avaccine dvaccine {
+foreach var in avaccine dvaccine cvaccine {
 *Load data
 import delimited "``var'_file'", varn(1) bindq(strict) clear
 
@@ -1067,19 +1069,22 @@ save `var', replace
 }
 
 *****
-*Merge two vaccine data sets
-use avaccine, clear
-merge 1:1 date province using dvaccine, keep(3) nogen
+*Merge three vaccine data sets
+use dvaccine, clear
+merge 1:1 date province using avaccine, nogen
+merge 1:1 date province using cvaccine, nogen
 
-*Clean vaccines administered based on distributed
-replace avaccine = 0 if avaccine == . & dvaccine != . & dvaccine != 0
-drop if avaccine == . & dvaccine == .
+*Clean vaccines administered and vaccines completed based on distributed
+foreach v in avaccine cvaccine {
+replace `v' = 0 if `v' == . & dvaccine != . & dvaccine != 0
+drop if `v' == . & dvaccine == .
+}
 
-*Generate new vaccines administered and distributed variables
+*Generate new vaccines administered, distributed, completed variables
 encode province, gen(province_code)
 tsset province_code date
 bysort province_code: egen day_code = rank(date)
-foreach var in avaccine dvaccine {
+foreach var in avaccine dvaccine cvaccine {
 gen new_`var' = .
 replace new_`var' = `var' if day_code == 1 
 replace new_`var' = `var' - `var'[_n-1] if day_code != 1
@@ -1151,11 +1156,16 @@ gen new_testingpc = new_testing/pop
 gen ltesting = log(testing)
 *gen ldeathrecovered = log(deathrecovered)
 gen advaccine = avaccine/dvaccine
+gen cdvaccine = cvaccine/dvaccine
 gen new_advaccine = new_avaccine/new_dvaccine
 gen newa_dvaccine = new_avaccine/dvaccine
+gen new_cdvaccine = new_cvaccine/new_dvaccine
+gen newc_dvaccine = new_cvaccine/dvaccine
 gen avaccinepc = avaccine/pop
+gen cvaccinepc = avaccine/pop
 gen dvaccinepc = dvaccine/pop
 gen new_avaccinepc = new_avaccine/pop
+gen new_cvaccinepc = new_cvaccine/pop
 gen new_dvaccinepc = new_dvaccine/pop
 
 *Generate active cases
@@ -1234,9 +1244,9 @@ use "temp", clear
 gen country = "Canada"
 
 *Aggregate cases to national level
-ds cases deaths recovered testing avaccine dvaccine new*
+ds cases deaths recovered testing avaccine dvaccine cvaccine new*
 collapse(sum) `r(varlist)', by(date dateStr country)
-foreach var in avaccine dvaccine {
+foreach var in avaccine dvaccine cvaccine {
 replace `var' = . if date < 22263 // 14 December 2020
 replace new_`var' = . if date < 22263 
 }
@@ -1262,11 +1272,16 @@ gen new_testingpc = new_testing/pop
 gen ltesting = log(testing)
 *gen ldeathrecovered = log(deathrecovered)
 gen advaccine = avaccine/dvaccine
+gen cdvaccine = cvaccine/dvaccine
 gen new_advaccine = new_avaccine/new_dvaccine
 gen newa_dvaccine = new_avaccine/dvaccine
+gen new_cdvaccine = new_cvaccine/new_dvaccine
+gen newc_dvaccine = new_cvaccine/dvaccine
 gen avaccinepc = avaccine/pop
+gen cvaccinepc = avaccine/pop
 gen dvaccinepc = dvaccine/pop
 gen new_avaccinepc = new_avaccine/pop
+gen new_cvaccinepc = new_cvaccine/pop
 gen new_dvaccinepc = new_dvaccine/pop
 
 *Generate active cases
@@ -1334,7 +1349,7 @@ clear
 *CLEAN UP FILE DIRECTORY
 
 *Remove intermediate datasets from directory
-foreach data in temp testing vaccine_province avaccine dvaccine location_temp cases deaths recovered layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada pop_region pop_province pop_canada {
+foreach data in temp testing vaccine_province avaccine dvaccine cvaccine location_temp cases deaths recovered layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada pop_region pop_province pop_canada {
 	rm `data'.dta
 }
 
