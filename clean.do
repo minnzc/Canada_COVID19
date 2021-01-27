@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 24 January 2021
+*Last updated: 26 January 2021
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -51,24 +51,24 @@ local canada_condition "missing(province)"
 *Use loop to clean both data sets
 foreach c in province canada {
 
-*Load data
-import delimited "$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clear
+	*Load data
+	import delimited "$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clear
 
-*Keep only necessary variables and observations
-rename country_region country
-rename sub_region_1 province
-keep if sub_region_2 == ""
-ds country province date *percent*, not
-drop `r(varlist)'
-keep if country=="Canada"
-replace province = "Newfoundland & Labrador" if province == "Newfoundland and Labrador"
+	*Keep only necessary variables and observations
+	rename country_region country
+	rename sub_region_1 province
+	keep if sub_region_2 == ""
+	ds country province date *percent*, not
+	drop `r(varlist)'
+	keep if country=="Canada"
+	replace province = "Newfoundland & Labrador" if province == "Newfoundland and Labrador"
 
-*Keep different observations for provincial and national datasets
-keep if ``c'_condition'
-drop ``c'_region'
+	*Keep different observations for provincial and national datasets
+	keep if ``c'_condition'
+	drop ``c'_region'
 
-*Save for merging later
-save "goog_`c'", replace
+	*Save for merging later
+	save "goog_`c'", replace
 }
 
 *KEEP ONLY CANADIAN DATA IN STORAGE
@@ -92,39 +92,39 @@ local canada_region country
 *Use loop to clean both datasets
 foreach c in province canada {
 
-*Load data
-import excel "$GRNO", sheet(``c'_sheet') first clear
+	*Load data
+	import excel "$GRNO", sheet(``c'_sheet') first clear
 
-*Generate date string variable for R
-rename date Date
-gen dd = day(Date)
-gen mm = month(Date)
-gen yy = year(Date)
-tostring dd mm yy, replace
-gen date = ""
-replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
-replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
-replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
-replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
+	*Generate date string variable for R
+	rename date Date
+	gen dd = day(Date)
+	gen mm = month(Date)
+	gen yy = year(Date)
+	tostring dd mm yy, replace
+	gen date = ""
+	replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
+	replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
+	replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
+	replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
 
-*Select volume variables
-ds socialdistance*, not(type string) 
-egen socialdistance_total = rowtotal(`r(varlist)')
+	*Select volume variables
+	ds socialdistance*, not(type string) 
+	egen socialdistance_total = rowtotal(`r(varlist)')
 
-*Generate indicies using total numbers
-foreach v in limittravel selfisolate limitsocialdomest econrelief total {
-gen index_`v' = .
-sum socialdistance_`v'
-local max = `r(max)'
-replace index_`v' = socialdistance_`v'/`max'*100
-}
+	*Generate indicies using total numbers
+	foreach v in limittravel selfisolate limitsocialdomest econrelief total {
+		gen index_`v' = .
+		sum socialdistance_`v'
+		local max = `r(max)'
+		replace index_`v' = socialdistance_`v'/`max'*100
+	}
 
-*Keep relevant variables
-keep date ``c'_region' index*
-order date ``c'_region' index*
+	*Keep relevant variables
+	keep date ``c'_region' index*
+	order date ``c'_region' index*
 
-*Save for merging later
-save "grindex_`c'", replace
+	*Save for merging later
+	save "grindex_`c'", replace
 }
 
 ********************************************************************************
@@ -138,7 +138,7 @@ import excel "$GRST", sheet("Province") first clear
 
 *Change units of spending variables to billions
 foreach v in s10 s12 s13 {
-replace `v' = `v'/1000
+	replace `v' = `v'/1000
 }
 
 *Localize variable max levels for index
@@ -169,7 +169,7 @@ ds s*, not(type string)
 local VLIST `r(varlist)'
 
 foreach v in `VLIST' {
-replace `v' = `v'/``v''*100
+	replace `v' = `v'/``v''*100
 }
 
 egen index_stringency = rowmean(`VLIST')
@@ -208,7 +208,7 @@ import excel "$GRST", sheet("Canada") first clear
 
 *Change units of spending variables to billions
 foreach v in s10 s12 s13 {
-replace `v' = `v'/1000
+	replace `v' = `v'/1000
 }
 
 *Localize variable max levels for index
@@ -239,7 +239,7 @@ ds s2 s3 s4 s5 s6 s7 s8 s9 s10 s11 s12 s13 s15
 local VLIST `r(varlist)'
 
 foreach v in `VLIST' {
-replace `v' = `v'/``v''*100
+	replace `v' = `v'/``v''*100
 }
 
 egen index_stringency = rowmean(`VLIST')
@@ -277,72 +277,72 @@ save "grstindex_canada", replace
 *Use loop to clean all three data sets using a loop
 foreach data in CONF CONP CONE {
 
-*Create provincial data set
+	*Create provincial data set
 
-*Load data
-import delimited "$`data'", bindq(strict) encoding("UTF-8") clear
+	*Load data
+	import delimited "$`data'", bindq(strict) encoding("UTF-8") clear
 
-*Keep only recent data
-gen Date = date(date, "MDY")
-format Date %td
-gen yy = year(Date)
-gen mm = month(Date)
-gen dd = day(Date)
-sum Date if yy == 2020 & mm == 1 & dd == 24
-keep if Date > `r(mean)'
+	*Keep only recent data
+	gen Date = date(date, "MDY")
+	format Date %td
+	gen yy = year(Date)
+	gen mm = month(Date)
+	gen dd = day(Date)
+	sum Date if yy == 2020 & mm == 1 & dd == 24
+	keep if Date > `r(mean)'
 
-*Keep only provincial data
-drop if category == "Canada"
+	*Keep only provincial data
+	drop if category == "Canada"
 
-*Clean dates
-tostring yy mm dd, replace
-replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
-replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
-replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
-replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
+	*Clean dates
+	tostring yy mm dd, replace
+	replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
+	replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
+	replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
+	replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
 
-*Rename variables
-rename category province
-ds bncc*
-local var `r(varlist)'
-keep date province `var'
+	*Rename variables
+	rename category province
+	ds bncc*
+	local var `r(varlist)'
+	keep date province `var'
 
-*Save for merging later
-save "`var'_province", replace
+	*Save for merging later
+	save "`var'_province", replace
 
-***************
-*Create national data set
+	***************
+	*Create national data set
 
-*Load data
-import delimited "$`data'", bindq(strict) encoding("UTF-8") clear
+	*Load data
+	import delimited "$`data'", bindq(strict) encoding("UTF-8") clear
 
-*Keep only recent data
-gen Date = date(date, "MDY")
-format Date %td
-gen yy = year(Date)
-gen mm = month(Date)
-gen dd = day(Date)
-sum Date if yy == 2020 & mm == 1 & dd == 24
-keep if Date > `r(mean)'
+	*Keep only recent data
+	gen Date = date(date, "MDY")
+	format Date %td
+	gen yy = year(Date)
+	gen mm = month(Date)
+	gen dd = day(Date)
+	sum Date if yy == 2020 & mm == 1 & dd == 24
+	keep if Date > `r(mean)'
 
-*Keep only national data
-keep if category == "Canada"
+	*Keep only national data
+	keep if category == "Canada"
 
-*Clean dates
-tostring yy mm dd, replace
-replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
-replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
-replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
-replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
+	*Clean dates
+	tostring yy mm dd, replace
+	replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
+	replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
+	replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
+	replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
 
-*Rename variables
-rename category country
-ds bncc*
-local var `r(varlist)'
-keep date country `var'
+	*Rename variables
+	rename category country
+	ds bncc*
+	local var `r(varlist)'
+	keep date country `var'
 
-*Save for merging later
-save "`var'_canada", replace
+	*Save for merging later
+	save "`var'_canada", replace
 }
 
 ********************************************************************************
@@ -453,26 +453,25 @@ local canada_sheet "Canada"
 *Use loop to create provincial and national data
 foreach v in province canada {
 
-*Load data
-import excel "$UNEM", sheet("``v'_sheet'") first clear
+	*Load data
+	import excel "$UNEM", sheet("``v'_sheet'") first clear
 
-*Generate date string variable for R
-rename date Date
-gen dd = day(Date)
-gen mm = month(Date)
-gen yy = year(Date)
+	*Generate date string variable for R
+	rename date Date
+	gen dd = day(Date)
+	gen mm = month(Date)
+	gen yy = year(Date)
 
-tostring dd mm yy, replace
-gen date = ""
-replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
-replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
-replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
-replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
-drop Date dd mm yy
+	tostring dd mm yy, replace
+	gen date = ""
+	replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
+	replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
+	replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
+	replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
+	drop Date dd mm yy
 
-*Export national data
-save "unem_`v'", replace
-clear
+	*Export national data
+	save "unem_`v'", replace
 }
 
 ********************************************************************************
@@ -560,36 +559,36 @@ local canada_region country
 *Use loop to clean both data sets
 foreach v in province canada {
 
-*Load data
-import delimited "$FOOD", bindq(strict) encoding("UTF-8") clear
+	*Load data
+	import delimited "$FOOD", bindq(strict) encoding("UTF-8") clear
 
-*Date variable
-gen Date = date(date, "DMY")
-*gen Date = date(date, "MDY")
-gen dd = day(Date)
-gen mm = month(Date)
-gen yy = year(Date)
+	*Date variable
+	gen Date = date(date, "DMY")
+	*gen Date = date(date, "MDY")
+	gen dd = day(Date)
+	gen mm = month(Date)
+	gen yy = year(Date)
 
-tostring dd mm yy, replace
-replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
-replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
-replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
-replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
+	tostring dd mm yy, replace
+	replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
+	replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
+	replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
+	replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
 
-*Code provinces
-gen province = ""
-replace province = "Ontario" if city == "Toronto"
-replace province = "Alberta" if city == "Calgary"
-replace province = "Alberta" if city == "Edmonton"
-replace province = "Quebec" if city == "Montréal"
-replace province = "British Columbia" if city == "Vancouver"
+	*Code provinces
+	gen province = ""
+	replace province = "Ontario" if city == "Toronto"
+	replace province = "Alberta" if city == "Calgary"
+	replace province = "Alberta" if city == "Edmonton"
+	replace province = "Quebec" if city == "Montréal"
+	replace province = "British Columbia" if city == "Vancouver"
 
-*Collapse to province level data
-rename ``v'_percent' reservations
-collapse(mean) reservations, by(``v'_region' date)
+	*Collapse to province level data
+	rename ``v'_percent' reservations
+	collapse(mean) reservations, by(``v'_region' date)
 
-*Save for merging later
-save "reservations_`v'", replace
+	*Save for merging later
+	save "reservations_`v'", replace
 }
 
 ********************************************************************************
@@ -608,39 +607,39 @@ local canada_region country
 *Use loop to clean both data sets
 foreach v in province canada {
 
-*Load data
-import delimited "$TRAN", bindq(strict) encoding("UTF-8") clear
+	*Load data
+	import delimited "$TRAN", bindq(strict) encoding("UTF-8") clear
 
-*Date variable
-gen ndash = 1 if (length(date) - length(subinstr(date, "-", "", .))) > 0
-gen Date = .
-replace Date = date(date, "YDM") if ndash == 1
-replace Date = date(date, "MDY") if Date == .
-format Date %td
-gen dd = day(Date)
-gen mm = month(Date)
-gen yy = year(Date)
+	*Date variable
+	gen ndash = 1 if (length(date) - length(subinstr(date, "-", "", .))) > 0
+	gen Date = .
+	replace Date = date(date, "YDM") if ndash == 1
+	replace Date = date(date, "MDY") if Date == .
+	format Date %td
+	gen dd = day(Date)
+	gen mm = month(Date)
+	gen yy = year(Date)
 
-tostring dd mm yy, replace
-replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
-replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
-replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
-replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
+	tostring dd mm yy, replace
+	replace date = yy + "-" + mm + "-" + dd if strlen(mm) == 2 & strlen(dd) == 2
+	replace date = yy + "-" + "0" + mm + "-" + dd if strlen(mm) == 1 & strlen(dd) == 2
+	replace date = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd) == 1
+	replace date = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
 
-*Code provinces
-gen province = ""
-replace province = "Ontario" if city == "Toronto"
-replace province = "Ontario" if city == "Ottawa"
-replace province = "Alberta" if city == "Calgary"
-replace province = "Quebec" if city == "Montréal"
-replace province = "British Columbia" if city == "Vancouver"
+	*Code provinces
+	gen province = ""
+	replace province = "Ontario" if city == "Toronto"
+	replace province = "Ontario" if city == "Ottawa"
+	replace province = "Alberta" if city == "Calgary"
+	replace province = "Quebec" if city == "Montréal"
+	replace province = "British Columbia" if city == "Vancouver"
 
-*Collapse to province level data
-rename ``v'_percent' ridership
-collapse(mean) ridership, by(``v'_region' date)
+	*Collapse to province level data
+	rename ``v'_percent' ridership
+	collapse(mean) ridership, by(``v'_region' date)
 
-*Save for merging later
-save "ridership_`v'", replace
+	*Save for merging later
+	save "ridership_`v'", replace
 }
 
 ********************************************************************************
@@ -659,108 +658,108 @@ local deaths date_death_report
 
 *Use loop to clean cases and deaths data
 foreach v in cases deaths {
+	/*
+	*Load data
+	clear
+	gen blank = .
+	save "`v'", replace
+	foreach year in 2020 2021 {
+		import delimited "``v'_data'_`year'.csv", varn(1) bindq(strict) encoding(utf-8) clear
+		append using "`v'"
+		save "`v'", replace
+	}
 
-*Load data
-import delimited "``v'_data'.csv", varn(1) bindq(strict) clear
+	*Drop blank variable
+	drop blank
+	*/
 
-*Delete unnecessary observations
-rename ``v'' Date
-gen date = date(Date, "DMY")
-format date %td
-drop if date == . 
+	import delimited "``v'_data'.csv", varn(1) bindq(strict) clear encoding(utf-8)
 
-*Drop repatriated cases
-drop if province == "Repatriated"
+	*Delete unnecessary observations
+	rename ``v'' Date
+	gen date = date(Date, "DMY")
+	format date %td
+	drop if date == . 
 
-*Recode province names
-replace province = "British Columbia" if province == "BC"
-replace province = "Newfoundland & Labrador" if province == "NL"
-replace province = "Northwest Territories" if province == "NWT"
-replace province = "Prince Edward Island" if province == "PEI"
-rename health_region region
-replace region = "Not Reported" if region == "NWT" & province == "Northwest Territories"
-replace region = "Not Reported" if region == "Yukon" & province == "Yukon"
-replace region = "Not Reported" if region == "Nunavut" & province == "Nunavut"
+	*Drop repatriated cases
+	drop if province == "Repatriated"
 
-*Generate address variable for geocoding in R
-gen address = region + ", " + province
-replace address = province + ", Canada" if region == "Not Reported"
-replace address = province + ", Canada" if region == "Interior" & province == "British Columbia" //For some reason Google can't find BC Interior geocodes
+	*Recode province names
+	replace province = "British Columbia" if province == "BC"
+	replace province = "Newfoundland & Labrador" if province == "NL"
+	replace province = "Northwest Territories" if province == "NWT"
+	replace province = "Prince Edward Island" if province == "PEI"
+	rename health_region region
+	replace region = "Not Reported" if region == "NWT" & province == "Northwest Territories"
+	replace region = "Not Reported" if region == "Yukon" & province == "Yukon"
+	replace region = "Not Reported" if region == "Nunavut" & province == "Nunavut"
 
-*Consolidate new cases by province
-gen new_`v' = 1
-ds address date
-collapse(sum) new_`v', by(`r(varlist)')
+	*Generate address variable for geocoding in R
+	gen address = region + ", " + province
+	replace address = province + ", Canada" if region == "Not Reported"
+	replace address = province + ", Canada" if region == "Interior" & province == "British Columbia" //For some reason Google can't find BC Interior geocodes
 
-*Generate cumulative cases variable
-encode address, gen(address_code)
-tsset address_code date
-bysort address_code: egen day_code = rank(date)
-gen `v' = new_`v'
-replace `v' = `v' + `v'[_n-1] if day_code != 1
+	*Consolidate new cases by province
+	gen new_`v' = 1
+	ds address date
+	collapse(sum) new_`v', by(`r(varlist)')
 
-*Keep only relevant variables 
-keep address date new_`v' `v'
+	*Generate cumulative cases variable
+	encode address, gen(address_code)
+	tsset address_code date
+	bysort address_code: egen day_code = rank(date)
+	gen `v' = new_`v'
+	replace `v' = `v' + `v'[_n-1] if day_code != 1
 
-*Save for merging later
-save "`v'", replace
+	*Keep only relevant variables 
+	keep address date new_`v' `v'
+
+	*Save for merging later
+	save "`v'", replace
 }
 
 *************************
-*CLEAN REGIONAL RECOVERED AND TESTING DATA
+*CLEAN REGIONAL RECOVERED DATA
 
 foreach v in recovered {
-*Load data
-import delimited "`v'_cumulative.csv", varn(1) bindq(strict) clear
 
-*Delete unnecessary observations
-rename date_`v' Date
-gen date = date(Date, "DMY")
-format date %td
-drop if date == .
+	*Load data
+	import delimited "`v'_timeseries_prov.csv", varn(1) bindq(strict) clear
 
-*Drop repatriated cases
-drop if province == "Repatriated"
+	*Delete unnecessary observations
+	rename date_`v' Date
+	gen date = date(Date, "DMY")
+	format date %td
+	drop if date == .
 
-*Recode province names
-replace province = "British Columbia" if province == "BC"
-replace province = "Newfoundland & Labrador" if province == "NL"
-replace province = "Northwest Territories" if province == "NWT"
-replace province = "Prince Edward Island" if province == "PEI"
-gen region = "Not Reported"
+	*Recode province names
+	drop if province == "Repatriated"
+	replace province = "British Columbia" if province == "BC"
+	replace province = "Newfoundland & Labrador" if province == "NL"
+	replace province = "Northwest Territories" if province == "NWT"
+	replace province = "Prince Edward Island" if province == "PEI"
+	gen region = "Not Reported"
 
-*Generate address variable for geocoding in R
-gen address = region + ", " + province
-replace address = province + ", Canada" if region == "Not Reported"
+	*Generate address variable for geocoding in R
+	gen address = region + ", " + province
+	replace address = province + ", Canada" if region == "Not Reported"
 
-*Clean cumulative variable
-rename cumulative_`v' `v'
-if "`:type `v''" != "long" {
-	replace `v' = "" if `v' == "NA"
-}
-destring `v', replace
-replace `v' = 0 if `v' == .
+	*Clean cumulative variable
+	rename `v' new_`v'
+	rename cumulative_`v' `v'
 
-*Generate cumulative cases variable
-encode address, gen(address_code)
-tsset address_code date
-bysort address_code: egen day_code = rank(date)
-gen new_`v' = .
-replace new_`v' = 0 if day_code == 1
-replace new_`v' = `v' - `v'[_n-1] if day_code != 1
+	*Keep only relevant variables 
+	keep address date new_`v' `v'
 
-*Keep only relevant variables 
-keep address date new_`v' `v'
-
-*Save for merging later
-save `v', replace
+	*Save for merging later
+	save `v', replace
 }
 
 *************************
 *Merge all datasets 
 use cases, clear
 foreach data in deaths recovered {
-merge 1:1 address date using `data', nogen
+	merge 1:1 address date using `data', nogen
 }
 
 *Fill in missing dates
@@ -934,186 +933,53 @@ clear
 *CLEAN PROVINCIAL CASES AND DEATHS DATA
 
 *Save Excel sheet names
-local cases_data "cases"
-local deaths_data "mortality"
+local cases "cases"
+local deaths "mortality"
+local recovered "recovered"
+local testing "testing"
+local avaccine "vaccine_administration"
+local dvaccine "vaccine_distribution"
+local cvaccine "vaccine_completion"
 
-*Save date variable names 
-local cases date_report
-local deaths date_death_report
+*Create an empty data set to merge files to
+gen province = ""
+gen date = .
+save "temp", replace
 
 *Use loop to clean both cases and deaths data
-foreach v in cases deaths {
+foreach v in cases deaths recovered testing avaccine dvaccine cvaccine {
 
-*Load data
-import delimited "``v'_data'.csv", varn(1) bindq(strict) clear
+	*Load data
+	import delimited "``v''_timeseries_prov.csv", varn(1) bindq(strict) clear
 
-*Delete unnecessary observations
-rename ``v'' Date
-gen date = date(Date, "DMY")
-format date %td
-drop if date == . 
+	*Delete unnecessary observations
+	ds date*
+	rename `r(varlist)' Date
+	gen date = date(Date, "DMY")
+	format date %td
+	drop if date == . 
 
-*Drop repatriated cases
-drop if province == "Repatriated"
+	*Recode province names
+	replace province = "British Columbia" if province == "BC"
+	replace province = "Newfoundland & Labrador" if province == "NL"
+	replace province = "Northwest Territories" if province == "NWT"
+	replace province = "Prince Edward Island" if province == "PEI"
 
-*Recode province names
-replace province = "British Columbia" if province == "BC"
-replace province = "Newfoundland & Labrador" if province == "NL"
-replace province = "Northwest Territories" if province == "NWT"
-replace province = "Prince Edward Island" if province == "PEI"
+	*Consolidate new cases by province
+	rename `v' new_`v'
+	rename cumulative_`v' `v'
 
-*Consolidate new cases by province
-gen new_`v' = 1
-ds province date
-collapse(sum) new_`v', by(`r(varlist)')
+	*Keep only relevant variables 
+	keep province date new_`v' `v'
 
-*Generate cumulative cases variable
-encode province, gen(province_code)
-tsset province_code date
-bysort province_code: egen day_code = rank(date)
-gen `v' = new_`v'
-replace `v' = `v' + `v'[_n-1] if day_code != 1
-
-*Keep only relevant variables 
-keep province date new_`v' `v'
-
-*Save for merging later
-save "`v'", replace
+	*Save for merging later
+	merge 1:1 province date using "temp", nogen keep(1 2 3)
+	save "temp", replace
 }
-
-*************************
-*CLEAN PROVINCIAL RECOVERED DATA
-
-foreach v in recovered testing {
-
-*Load data
-import delimited "`v'_cumulative.csv", varn(1) bindq(strict) clear
-
-*Delete unnecessary observations
-rename date_`v' Date
-gen date = date(Date, "DMY")
-format date %td
-drop if date == . 
-
-*Drop repatriated cases
-drop if province == "Repatriated"
-
-*Recode province names
-replace province = "British Columbia" if province == "BC"
-replace province = "Newfoundland & Labrador" if province == "NL"
-replace province = "Northwest Territories" if province == "NWT"
-replace province = "Prince Edward Island" if province == "PEI"
-
-*Clean cumulative recoveries variable
-rename cumulative_`v' `v'
-if "`:type `v''" != "long" {
-	replace `v' = "" if `v' == "NA"
-}
-destring `v', replace
-replace `v' = 0 if `v' == .
-
-*Generate new recoveries variable
-encode province, gen(province_code)
-tsset province_code date
-bysort province_code: egen day_code = rank(date)
-gen new_`v' = .
-replace new_`v' = 0 if day_code == 1
-replace new_`v' = `v' - `v'[_n-1] if day_code != 1
-
-*Keep only relevant variables 
-keep province date new_`v' `v'
-
-*Save for merging later
-save `v', replace
-}
-
-*************************
-*CLEAN PROVINCIAL VACCINE DATA
-
-local avaccine_file "vaccine_administration_cumulative.csv"
-local dvaccine_file "vaccine_distribution_cumulative.csv"
-local cvaccine_file "vaccine_completion_cumulative.csv"
-local avaccine_date "date_vaccine_administered"
-local dvaccine_date "date_vaccine_distributed"
-local cvaccine_date "date_vaccine_completed"
-
-foreach var in avaccine dvaccine cvaccine {
-*Load data
-import delimited "``var'_file'", varn(1) bindq(strict) clear
-
-*Delete unnecessary observations
-rename ``var'_date' Date
-gen date = date(Date, "DMY")
-format date %td
-drop if date == . 
-
-*Drop repatriated cases
-drop if province == "Repatriated"
-
-*Recode province names
-replace province = "British Columbia" if province == "BC"
-replace province = "Newfoundland & Labrador" if province == "NL"
-replace province = "Northwest Territories" if province == "NWT"
-replace province = "Prince Edward Island" if province == "PEI"
-
-*Destring vaccine variable
-rename cumulative_`var' `var'
-if "`:type `var''" != "long" {
-	replace `var' = "" if `var' == "NA"
-}
-destring `var', replace
-
-*Drop unnecessary variables and save for merge
-drop Date
-save `var', replace
-}
-
-*****
-*Merge three vaccine data sets
-use dvaccine, clear
-merge 1:1 date province using avaccine, nogen
-merge 1:1 date province using cvaccine, nogen
 
 *Clean vaccines administered and vaccines completed based on distributed
 foreach v in avaccine cvaccine {
-replace `v' = 0 if `v' == . & dvaccine != . & dvaccine != 0
-drop if `v' == . & dvaccine == .
-}
-
-*Generate new vaccines administered, distributed, completed variables
-encode province, gen(province_code)
-tsset province_code date
-bysort province_code: egen day_code = rank(date)
-foreach var in avaccine dvaccine cvaccine {
-gen new_`var' = .
-replace new_`var' = `var' if day_code == 1 
-replace new_`var' = `var' - `var'[_n-1] if day_code != 1
-}
-
-*Save for merge 
-keep date province *vaccine
-order date province *vaccine
-save vaccine_province, replace
-
-*************************
-*MERGE ALL CLEANED PROVINCIAL DATA
-
-*Merge all data
-use cases, clear
-foreach data in deaths recovered testing vaccine_province {
-	merge 1:1 date province using `data', nogen
-}
-
-*Regenerate province_code
-encode province, gen(province_code)
-
-*Clean variables after merging, fill in missing variables
-sort province_code date
-bysort province_code: egen day_code = rank(date)
-foreach v in cases deaths recovered testing {
-	replace `v' = `v'[_n-1] if day_code != 1 & `v' == .
-	replace `v' = 0 if `v' == .
-	replace new_`v' = `v' - `v'[_n-1] if day_code != 1 & new_`v' == .
+	replace `v' = 0 if `v' == . & dvaccine != . & dvaccine != 0
 }
 
 *Generate date string variable for R
@@ -1129,8 +995,8 @@ replace dateStr = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd)
 replace dateStr = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
 
 *Keep only relevant variables
-keep date* day_code province* cases new_cases deaths new_deaths recovered new_recovered testing new_testing *vaccine
-order date* day_code province* cases new_cases deaths new_deaths recovered new_recovered testing new_testing *vaccine
+keep date* province* cases new_cases deaths new_deaths recovered new_recovered testing new_testing *vaccine
+order date* province* cases new_cases deaths new_deaths recovered new_recovered testing new_testing *vaccine
 
 *Merge with population data
 merge m:1 province using pop_province
@@ -1139,6 +1005,7 @@ drop _merge
 
 *Save intermediate dataset
 save "temp", replace
+drop if province == "Repatriated"
 
 *Generate some interesting variables
 gen casespc = cases/pop
@@ -1172,11 +1039,13 @@ gen new_dvaccinepc = new_dvaccine/pop
 gen active = cases - recovered - deaths
 
 *Set time panel
+encode province, gen(province_code)
 tsset province_code date
 
 *************************
 *GENERATE MOVING AVERAGES SERIES
 sort province_code date
+bysort province_code: gen day_code = _n
 foreach v in new_cases cases new_deaths deaths new_recovered recovered active {
 	gen `v'mv7 = (1/7) * (`v' + `v'[_n-1] + `v'[_n-2] + `v'[_n-3] + `v'[_n-4] + `v'[_n-5] + `v'[_n-6]) if day_code > 6
 }
@@ -1247,8 +1116,8 @@ gen country = "Canada"
 ds cases deaths recovered testing avaccine dvaccine cvaccine new*
 collapse(sum) `r(varlist)', by(date dateStr country)
 foreach var in avaccine dvaccine cvaccine {
-replace `var' = . if date < 22263 // 14 December 2020
-replace new_`var' = . if date < 22263 
+	replace `var' = . if date < 22263 // 14 December 2020
+	replace new_`var' = . if date < 22263 
 }
 
 *Merge with population data
@@ -1349,7 +1218,7 @@ clear
 *CLEAN UP FILE DIRECTORY
 
 *Remove intermediate datasets from directory
-foreach data in temp testing vaccine_province avaccine dvaccine cvaccine location_temp cases deaths recovered layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada pop_region pop_province pop_canada {
+foreach data in temp location_temp layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada pop_region pop_province pop_canada {
 	rm `data'.dta
 }
 
