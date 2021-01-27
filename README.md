@@ -9,6 +9,7 @@ This dashboard aims to complement existing COVID-19 dashboards with several addi
 Please see the *About* tab in the [Canada COVID-19 dashboard](https://mhcui.shinyapps.io/Canada_COVID/) for a full list of data sources and references.
 
 ## Major Updates (DD/MM/YYYY)
+- **27/01/2021**: COVID-19 data have been changed to accommodate Github's file size restrictions. cases.csv and mortality.csv will be split up by year to be cases_2020.csv, cases_2021.csv, mortality_2020.csv, mortality_2021.csv.
 - **24/01/2021**: 'Vaccines completed' series added. 'Vaccines completed' refers to people who have received both doses of a vaccine. 'Vaccines administered' refers to people who have received one or more doses.
 - **16/12/2020**: Vaccinations and testing data now included in the main dashboard. Data courtesey of [Berry et al. 2020](https://github.com/ishaberry/Covid19Canada), as with all other COVID-19 data. 
 - **11/06/2020**: Front page and "General graphs" tab updated with 'per 1000 people metrics' based on Canada's 2018 health region population estimates. "Dynamics", and "Moving average dynamics" tabs now feature 'per 1000 active cases' rates instead of 'per 100 active cases'.
