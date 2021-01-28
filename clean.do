@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 27 January 2021
+*Last updated: 28 January 2021
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -658,22 +658,13 @@ local deaths date_death_report
 
 *Use loop to clean cases and deaths data
 foreach v in cases deaths {
-
+	
 	*Load data
-	clear
-	gen blank = .
-	save "`v'", replace
-	foreach year in 2020 2021 {
-		import delimited "``v'_data'_`year'.csv", varn(1) bindq(strict) encoding(utf-8) clear
-		append using "`v'"
-		save "`v'", replace
-	}
-
-	*Drop blank variable
-	drop blank
-
+	import delimited "``v'_data'_timeseries_hr.csv", varn(1) bindq(strict) encoding(utf-8) clear
+	
 	*Delete unnecessary observations
-	rename ``v'' Date
+	ds date*
+	rename `r(varlist)' Date
 	gen date = date(Date, "DMY")
 	format date %td
 	drop if date == . 
@@ -695,21 +686,11 @@ foreach v in cases deaths {
 	gen address = region + ", " + province
 	replace address = province + ", Canada" if region == "Not Reported"
 	replace address = province + ", Canada" if region == "Interior" & province == "British Columbia" //For some reason Google can't find BC Interior geocodes
-
-	*Consolidate new cases by province
-	gen new_`v' = 1
-	ds address date
-	collapse(sum) new_`v', by(`r(varlist)')
-
-	*Generate cumulative cases variable
-	encode address, gen(address_code)
-	tsset address_code date
-	bysort address_code: egen day_code = rank(date)
-	gen `v' = new_`v'
-	replace `v' = `v' + `v'[_n-1] if day_code != 1
-
+	
 	*Keep only relevant variables 
-	keep address date new_`v' `v'
+	rename `v' new_`v'
+	rename cumulative_`v' `v'
+	collapse(sum) `v' new_`v', by(address date)
 
 	*Save for merging later
 	save "`v'", replace
