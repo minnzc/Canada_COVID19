@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 26 January 2021
+*Last updated: 27 January 2021
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -658,7 +658,7 @@ local deaths date_death_report
 
 *Use loop to clean cases and deaths data
 foreach v in cases deaths {
-	/*
+
 	*Load data
 	clear
 	gen blank = .
@@ -671,9 +671,6 @@ foreach v in cases deaths {
 
 	*Drop blank variable
 	drop blank
-	*/
-
-	import delimited "``v'_data'.csv", varn(1) bindq(strict) clear encoding(utf-8)
 
 	*Delete unnecessary observations
 	rename ``v'' Date
