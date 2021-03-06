@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 28 January 2021
+*Last updated: 5 March 2021
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -52,7 +52,7 @@ local canada_condition "missing(province)"
 foreach c in province canada {
 
 	*Load data
-	import delimited "$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clear
+	import delimited "$GOOG", bindq(strict) encoding("UTF-8") varn(1) clear
 
 	*Keep only necessary variables and observations
 	rename country_region country
@@ -72,7 +72,7 @@ foreach c in province canada {
 }
 
 *KEEP ONLY CANADIAN DATA IN STORAGE
-import delimited "$GOOG", bindq(strict) encoding("UTF-8") varnames(1) clear
+import delimited "$GOOG", bindq(strict) encoding("UTF-8") varn(1) clear
 keep if country_region=="Canada"
 export delimited "$GOOG", quote replace
 
@@ -280,7 +280,7 @@ foreach data in CONF CONP CONE {
 	*Create provincial data set
 
 	*Load data
-	import delimited "$`data'", bindq(strict) encoding("UTF-8") clear
+	import delimited "$`data'", varn(1) bindq(strict) encoding("UTF-8") clear
 
 	*Keep only recent data
 	gen Date = date(date, "MDY")
@@ -560,7 +560,7 @@ local canada_region country
 foreach v in province canada {
 
 	*Load data
-	import delimited "$FOOD", bindq(strict) encoding("UTF-8") clear
+	import delimited "$FOOD", varn(1) bindq(strict) encoding("UTF-8") clear
 
 	*Date variable
 	gen Date = date(date, "DMY")
@@ -608,7 +608,7 @@ local canada_region country
 foreach v in province canada {
 
 	*Load data
-	import delimited "$TRAN", bindq(strict) encoding("UTF-8") clear
+	import delimited "$TRAN", varn(1) bindq(strict) encoding("UTF-8") clear
 
 	*Date variable
 	gen ndash = 1 if (length(date) - length(subinstr(date, "-", "", .))) > 0
