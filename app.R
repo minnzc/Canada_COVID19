@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 24 January 2021
+## Last updated: 14 April 2021
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -878,7 +878,7 @@ ui <- bootstrapPage(
                                             multiple = FALSE),
                                 
                                 pickerInput("stat_impact", "Select economic impact variable:",   
-                                            choices = c("Unemployment (persons, thousands)", "Unemployment (year-on-year % change)", "Layoffs (persons, thousands)"), 
+                                            choices = c("Unemployment (persons, thousands)", "Unemployment (% change from 2019 baseline)", "Layoffs (persons, thousands)"), 
                                             options = list(`actions-box` = TRUE),
                                             selected = c("Unemployment (persons, thousands)"),
                                             multiple = FALSE), 
@@ -994,6 +994,7 @@ ui <- bootstrapPage(
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
                             tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"), tags$br(),tags$br(),
                             tags$h3("LATEST UPDATES"),
+                            tags$b("14/04/2021:"), "\'Unemployment (year-to-year % change)\' series in the \"Economic impact\" tab from January 2021 onward has been changed to \'Unemployment (% change from 2019 baseline)\' and will compare from 2021 to 2019, as opposed to year over year.", tags$br(), tags$br(),
                             tags$b("24/01/2021:"), "Addition of the \'Vaccines completed\' series to the \"Vaccinations\" tab. \'Vaccines completed\' refers to people who have received both doses of a vaccine. \'Vaccines administered\' refers to people who have received one or more doses.", tags$br(), tags$br(),
                             tags$b("16/12/2020:"), "Addition of the \"Vaccinations\" tab courtesy of administerd and distributed vaccines data from ", tags$a(href="https://github.com/ishaberry/Covid19Canada", "Berry et al. 2020."), "Provincial and national testing metrics added to \"General graphs\" tab.", tags$br(), tags$br(),
                             tags$b("31/08/2020:"), "Key metrics on \"Dynamics\", and \"Moving average dynamics\" tabs have changed from CUMULATIVE TOTAL deaths and/or recoveries over lagged ACTIVE cases to DAILY NEW deaths and/or recoveries over lagged DAILY NEW cases.", tags$br(), tags$br(),
@@ -1831,12 +1832,12 @@ server <- function(input, output, session) {
     }, ignoreInit = TRUE)
     
     observeEvent(input$stat_impact, {
-        if (input$level_select_impact=="Country" & (input$stat_impact=="Unemployment (persons)" | input$stat_impact=="Unemployment (year-on-year % change)")) {
+        if (input$level_select_impact=="Country" & (input$stat_impact=="Unemployment (persons)" | input$stat_impact=="Unemployment (% change from 2019 baseline)")) {
             updatePickerInput(session = session, inputId = "region_select_impact", 
                               choices = c("Canada"), selected = "Canada")
         }
         
-        if (input$level_select_impact=="Province" & (input$stat_impact=="Unemployment (persons)" | input$stat_impact=="Unemployment (year-on-year % change)")) {
+        if (input$level_select_impact=="Province" & (input$stat_impact=="Unemployment (persons)" | input$stat_impact=="Unemployment (% change from 2019 baseline)")) {
             updatePickerInput(session = session, inputId = "region_select_impact", 
                               choices = c("Alberta", "British Columbia", "Manitoba", "Newfoundland & Labrador", "New Brunswick", "Nova Scotia", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan"), 
                               selected = c("Ontario", "Quebec", "British Columbia"))
@@ -1875,7 +1876,7 @@ server <- function(input, output, session) {
             db$outcome2 = db$unemployment
         }
         
-        if (input$stat_impact=="Unemployment (year-on-year % change)") { 
+        if (input$stat_impact=="Unemployment (% change from 2019 baseline)") { 
             db$outcome2 = db$unemployment_yoy
         }
         
