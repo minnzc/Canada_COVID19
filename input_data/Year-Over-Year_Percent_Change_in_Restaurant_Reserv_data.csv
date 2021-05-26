@@ -457,6 +457,10 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Calgary","Canada",-88.42,18may2021,-99.98
 "Calgary","Canada",-88.08,19may2021,-100
 "Calgary","Canada",-87.06999999999999,20may2021,-99.97
+"Calgary","Canada",-87.26000000000001,21may2021,-99.98
+"Calgary","Canada",-87.28,22may2021,-99.89
+"Calgary","Canada",-85.31999999999999,23may2021,-99.98
+"Calgary","Canada",-87.13,24may2021,-100
 "Montréal","Canada",-5,18feb2020,16
 "Montréal","Canada",0,19feb2020,14
 "Montréal","Canada",-3,20feb2020,-5
@@ -915,6 +919,10 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Montréal","Canada",-88.42,18may2021,-99.45999999999999
 "Montréal","Canada",-88.08,19may2021,-100
 "Montréal","Canada",-87.06999999999999,20may2021,-100
+"Montréal","Canada",-87.26000000000001,21may2021,-99.98
+"Montréal","Canada",-87.28,22may2021,-99.93000000000001
+"Montréal","Canada",-85.31999999999999,23may2021,-100
+"Montréal","Canada",-87.13,24may2021,-100
 "Toronto","Canada",-5,18feb2020,-14
 "Toronto","Canada",0,19feb2020,-8
 "Toronto","Canada",-3,20feb2020,-9
@@ -1373,6 +1381,10 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Toronto","Canada",-88.42,18may2021,-99.95
 "Toronto","Canada",-88.08,19may2021,-99.95
 "Toronto","Canada",-87.06999999999999,20may2021,-99.91
+"Toronto","Canada",-87.26000000000001,21may2021,-99.53
+"Toronto","Canada",-87.28,22may2021,-99.81999999999999
+"Toronto","Canada",-85.31999999999999,23may2021,-100
+"Toronto","Canada",-87.13,24may2021,-100
 "Vancouver","Canada",-5,18feb2020,9
 "Vancouver","Canada",0,19feb2020,1
 "Vancouver","Canada",-3,20feb2020,7
@@ -1831,3 +1843,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Vancouver","Canada",-88.42,18may2021,-72.41
 "Vancouver","Canada",-88.08,19may2021,-70.58
 "Vancouver","Canada",-87.06999999999999,20may2021,-68.06999999999999
+"Vancouver","Canada",-87.26000000000001,21may2021,-64.84999999999999
+"Vancouver","Canada",-87.28,22may2021,-64.17
+"Vancouver","Canada",-85.31999999999999,23may2021,-65.16
+"Vancouver","Canada",-87.13,24may2021,-78.22
