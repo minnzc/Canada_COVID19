@@ -491,6 +491,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Calgary","Canada",-39.33,21jun2021,-21.27
 "Calgary","Canada",-39.42,22jun2021,-20.31
 "Calgary","Canada",-33.9,23jun2021,-26.32
+"Calgary","Canada",-35.08,24jun2021,-22.34
 "Montréal","Canada",-5,18feb2020,16
 "Montréal","Canada",0,19feb2020,14
 "Montréal","Canada",-3,20feb2020,-5
@@ -983,6 +984,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Montréal","Canada",-39.33,21jun2021,-69.73999999999999
 "Montréal","Canada",-39.42,22jun2021,-62.15
 "Montréal","Canada",-33.9,23jun2021,-45.68
+"Montréal","Canada",-35.08,24jun2021,-51.95
 "Toronto","Canada",-5,18feb2020,-14
 "Toronto","Canada",0,19feb2020,-8
 "Toronto","Canada",-3,20feb2020,-9
@@ -1475,6 +1477,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Toronto","Canada",-39.33,21jun2021,-65.92
 "Toronto","Canada",-39.42,22jun2021,-65.13
 "Toronto","Canada",-33.9,23jun2021,-61.72
+"Toronto","Canada",-35.08,24jun2021,-57.56
 "Vancouver","Canada",-5,18feb2020,9
 "Vancouver","Canada",0,19feb2020,1
 "Vancouver","Canada",-3,20feb2020,7
@@ -1967,3 +1970,4 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Vancouver","Canada",-39.33,21jun2021,-60.53
 "Vancouver","Canada",-39.42,22jun2021,-55.46
 "Vancouver","Canada",-33.9,23jun2021,-52.73
+"Vancouver","Canada",-35.08,24jun2021,-45.78
