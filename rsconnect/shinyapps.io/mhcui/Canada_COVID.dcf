@@ -5,8 +5,8 @@ account: mhcui
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2118367
-bundleId: 4828128
+bundleId: 4830220
 url: https://mhcui.shinyapps.io/Canada_COVID/
-when: 1626490342.05566
+when: 1626573105.42209
 asMultiple: FALSE
 asStatic: FALSE
