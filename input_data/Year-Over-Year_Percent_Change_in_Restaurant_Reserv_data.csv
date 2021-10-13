@@ -596,6 +596,11 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Calgary","Canada",-13.51,04oct2021,-43.46
 "Calgary","Canada",-24.52,05oct2021,-38.41
 "Calgary","Canada",-20.52,06oct2021,-36.43
+"Calgary","Canada",-18.09,07oct2021,-38.27
+"Calgary","Canada",-10.83,08oct2021,-27.32
+"Calgary","Canada",-10.58,09oct2021,-22.11
+"Calgary","Canada",-12.3,10oct2021,-23.48
+"Calgary","Canada",-11.15,11oct2021,-16.66
 "Montréal","Canada",-5,18feb2020,16
 "Montréal","Canada",0,19feb2020,14
 "Montréal","Canada",-3,20feb2020,-5
@@ -1193,6 +1198,11 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Montréal","Canada",-13.51,04oct2021,-52.84
 "Montréal","Canada",-24.52,05oct2021,-50.95
 "Montréal","Canada",-20.52,06oct2021,-38.45
+"Montréal","Canada",-18.09,07oct2021,-42.79
+"Montréal","Canada",-10.83,08oct2021,-25.1
+"Montréal","Canada",-10.58,09oct2021,-25.63
+"Montréal","Canada",-12.3,10oct2021,-31.59
+"Montréal","Canada",-11.15,11oct2021,-38.16
 "Toronto","Canada",-5,18feb2020,-14
 "Toronto","Canada",0,19feb2020,-8
 "Toronto","Canada",-3,20feb2020,-9
@@ -1790,6 +1800,11 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Toronto","Canada",-13.51,04oct2021,-37.2
 "Toronto","Canada",-24.52,05oct2021,-35.05
 "Toronto","Canada",-20.52,06oct2021,-30.93
+"Toronto","Canada",-18.09,07oct2021,-23.95
+"Toronto","Canada",-10.83,08oct2021,-18.61
+"Toronto","Canada",-10.58,09oct2021,-11.75
+"Toronto","Canada",-12.3,10oct2021,-10.06
+"Toronto","Canada",-11.15,11oct2021,-23.12
 "Vancouver","Canada",-5,18feb2020,9
 "Vancouver","Canada",0,19feb2020,1
 "Vancouver","Canada",-3,20feb2020,7
@@ -2387,3 +2402,8 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Vancouver","Canada",-13.51,04oct2021,-30.3
 "Vancouver","Canada",-24.52,05oct2021,-35.96
 "Vancouver","Canada",-20.52,06oct2021,-40.81
+"Vancouver","Canada",-18.09,07oct2021,-33.21
+"Vancouver","Canada",-10.83,08oct2021,-31.27
+"Vancouver","Canada",-10.58,09oct2021,-28.8
+"Vancouver","Canada",-12.3,10oct2021,-21.36
+"Vancouver","Canada",-11.15,11oct2021,-17.86
