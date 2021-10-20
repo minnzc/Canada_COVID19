@@ -21,7 +21,7 @@ GO Transit,Canada,-63,Toronto,Toronto,6/13/2020,-65
 Durham Region Transit,Canada,-63,Toronto,Toronto,6/13/2020,-62
 Burlington Transit,Canada,-63,Toronto,Toronto,6/13/2020,-69
 Brampton Transit,Canada,-63,Toronto,Toronto,6/13/2020,-63
-York Region Transit,Canada,-39,Toronto,Toronto,10/14/2021,-44
+York Region Transit,Canada,-39,Toronto,Toronto,10/14/2021,-43
 UP Express,Canada,-39,Toronto,Toronto,10/14/2021,-28
 TTC - Subway,Canada,-39,Toronto,Toronto,10/14/2021,-31
 TTC - Buses & Streetcars,Canada,-39,Toronto,Toronto,10/14/2021,-44
@@ -883,13 +883,13 @@ York Region Transit,Canada,-38,Toronto,Toronto,10/16/2021,-39
 UP Express,Canada,-38,Toronto,Toronto,10/16/2021,-22
 TTC - Subway,Canada,-38,Toronto,Toronto,10/16/2021,-25
 TTC - Buses & Streetcars,Canada,-38,Toronto,Toronto,10/16/2021,-37
-Oakville Transit,Canada,-38,Toronto,Toronto,10/16/2021,-29
+Oakville Transit,Canada,-38,Toronto,Toronto,10/16/2021,-28
 MiWay,Canada,-38,Toronto,Toronto,10/16/2021,-34
 Hamilton Street Railway,Canada,-38,Toronto,Toronto,10/16/2021,-49
 GO Transit,Canada,-38,Toronto,Toronto,10/16/2021,-31
 Durham Region Transit,Canada,-38,Toronto,Toronto,10/16/2021,-36
 Burlington Transit,Canada,-38,Toronto,Toronto,10/16/2021,-40
-Brampton Transit,Canada,-38,Toronto,Toronto,10/16/2021,-35
+Brampton Transit,Canada,-38,Toronto,Toronto,10/16/2021,-34
 York Region Transit,Canada,-64,Toronto,Toronto,9/18/2020,-63
 UP Express,Canada,-64,Toronto,Toronto,9/18/2020,-74
 TTC - Subway,Canada,-64,Toronto,Toronto,9/18/2020,-67
@@ -1095,9 +1095,9 @@ TTC - Buses & Streetcars,Canada,-38,Toronto,Toronto,10/13/2021,-44
 Oakville Transit,Canada,-38,Toronto,Toronto,10/13/2021,-37
 MiWay,Canada,-38,Toronto,Toronto,10/13/2021,-45
 Hamilton Street Railway,Canada,-38,Toronto,Toronto,10/13/2021,-52
-GO Transit,Canada,-38,Toronto,Toronto,10/13/2021,-37
+GO Transit,Canada,-38,Toronto,Toronto,10/13/2021,-36
 Durham Region Transit,Canada,-38,Toronto,Toronto,10/13/2021,-41
-Burlington Transit,Canada,-38,Toronto,Toronto,10/13/2021,-43
+Burlington Transit,Canada,-38,Toronto,Toronto,10/13/2021,-42
 Brampton Transit,Canada,-38,Toronto,Toronto,10/13/2021,-44
 York Region Transit,Canada,2,Toronto,Toronto,2/18/2020,16
 UP Express,Canada,2,Toronto,Toronto,2/18/2020,8
@@ -1252,7 +1252,7 @@ Hamilton Street Railway,Canada,-44,Toronto,Toronto,9/30/2021,-54
 GO Transit,Canada,-44,Toronto,Toronto,9/30/2021,-42
 Durham Region Transit,Canada,-44,Toronto,Toronto,9/30/2021,-51
 Burlington Transit,Canada,-44,Toronto,Toronto,9/30/2021,-46
-Brampton Transit,Canada,-44,Toronto,Toronto,9/30/2021,-51
+Brampton Transit,Canada,-44,Toronto,Toronto,9/30/2021,-50
 York Region Transit,Canada,-1,Toronto,Toronto,3/2/2020,4
 UP Express,Canada,-1,Toronto,Toronto,3/2/2020,-7
 TTC - Subway,Canada,-1,Toronto,Toronto,3/2/2020,0
@@ -2804,17 +2804,17 @@ GO Transit,Canada,-61,Toronto,Toronto,10/25/2020,-60
 Durham Region Transit,Canada,-61,Toronto,Toronto,10/25/2020,-67
 Burlington Transit,Canada,-61,Toronto,Toronto,10/25/2020,-55
 Brampton Transit,Canada,-61,Toronto,Toronto,10/25/2020,-58
-York Region Transit,Canada,-14,Toronto,Toronto,10/18/2021,-17
-UP Express,Canada,-14,Toronto,Toronto,10/18/2021,-12
-TTC - Subway,Canada,-14,Toronto,Toronto,10/18/2021,-10
-TTC - Buses & Streetcars,Canada,-14,Toronto,Toronto,10/18/2021,-19
-Oakville Transit,Canada,-14,Toronto,Toronto,10/18/2021,9
-MiWay,Canada,-14,Toronto,Toronto,10/18/2021,-9
-Hamilton Street Railway,Canada,-14,Toronto,Toronto,10/18/2021,-9
-GO Transit,Canada,-14,Toronto,Toronto,10/18/2021,-10
-Durham Region Transit,Canada,-14,Toronto,Toronto,10/18/2021,-22
-Burlington Transit,Canada,-14,Toronto,Toronto,10/18/2021,-12
-Brampton Transit,Canada,-14,Toronto,Toronto,10/18/2021,-10
+York Region Transit,Canada,-28,Toronto,Toronto,10/18/2021,-32
+UP Express,Canada,-28,Toronto,Toronto,10/18/2021,-22
+TTC - Subway,Canada,-28,Toronto,Toronto,10/18/2021,-21
+TTC - Buses & Streetcars,Canada,-28,Toronto,Toronto,10/18/2021,-35
+Oakville Transit,Canada,-28,Toronto,Toronto,10/18/2021,-27
+MiWay,Canada,-28,Toronto,Toronto,10/18/2021,-35
+Hamilton Street Railway,Canada,-28,Toronto,Toronto,10/18/2021,-40
+GO Transit,Canada,-28,Toronto,Toronto,10/18/2021,-25
+Durham Region Transit,Canada,-28,Toronto,Toronto,10/18/2021,-33
+Burlington Transit,Canada,-28,Toronto,Toronto,10/18/2021,-35
+Brampton Transit,Canada,-28,Toronto,Toronto,10/18/2021,-33
 York Region Transit,Canada,-62,Toronto,Toronto,11/7/2020,-56
 UP Express,Canada,-62,Toronto,Toronto,11/7/2020,-63
 TTC - Subway,Canada,-62,Toronto,Toronto,11/7/2020,-60
@@ -2908,7 +2908,7 @@ UP Express,Canada,-37,Toronto,Toronto,10/8/2021,-35
 TTC - Subway,Canada,-37,Toronto,Toronto,10/8/2021,-32
 TTC - Buses & Streetcars,Canada,-37,Toronto,Toronto,10/8/2021,-43
 Oakville Transit,Canada,-37,Toronto,Toronto,10/8/2021,-41
-MiWay,Canada,-37,Toronto,Toronto,10/8/2021,-45
+MiWay,Canada,-37,Toronto,Toronto,10/8/2021,-44
 Hamilton Street Railway,Canada,-37,Toronto,Toronto,10/8/2021,-52
 GO Transit,Canada,-37,Toronto,Toronto,10/8/2021,-38
 Durham Region Transit,Canada,-37,Toronto,Toronto,10/8/2021,-47
@@ -3068,17 +3068,17 @@ GO Transit,Canada,-61,Toronto,Toronto,10/18/2020,-60
 Durham Region Transit,Canada,-61,Toronto,Toronto,10/18/2020,-65
 Burlington Transit,Canada,-61,Toronto,Toronto,10/18/2020,-61
 Brampton Transit,Canada,-61,Toronto,Toronto,10/18/2020,-59
-York Region Transit,Canada,-38,Toronto,Toronto,10/9/2021,-43
-UP Express,Canada,-38,Toronto,Toronto,10/9/2021,-27
-TTC - Subway,Canada,-38,Toronto,Toronto,10/9/2021,-30
-TTC - Buses & Streetcars,Canada,-38,Toronto,Toronto,10/9/2021,-41
-Oakville Transit,Canada,-38,Toronto,Toronto,10/9/2021,-35
-MiWay,Canada,-38,Toronto,Toronto,10/9/2021,-38
-Hamilton Street Railway,Canada,-38,Toronto,Toronto,10/9/2021,-49
-GO Transit,Canada,-38,Toronto,Toronto,10/9/2021,-35
-Durham Region Transit,Canada,-38,Toronto,Toronto,10/9/2021,-37
-Burlington Transit,Canada,-38,Toronto,Toronto,10/9/2021,-38
-Brampton Transit,Canada,-38,Toronto,Toronto,10/9/2021,-39
+York Region Transit,Canada,-37,Toronto,Toronto,10/9/2021,-43
+UP Express,Canada,-37,Toronto,Toronto,10/9/2021,-27
+TTC - Subway,Canada,-37,Toronto,Toronto,10/9/2021,-30
+TTC - Buses & Streetcars,Canada,-37,Toronto,Toronto,10/9/2021,-41
+Oakville Transit,Canada,-37,Toronto,Toronto,10/9/2021,-35
+MiWay,Canada,-37,Toronto,Toronto,10/9/2021,-38
+Hamilton Street Railway,Canada,-37,Toronto,Toronto,10/9/2021,-49
+GO Transit,Canada,-37,Toronto,Toronto,10/9/2021,-35
+Durham Region Transit,Canada,-37,Toronto,Toronto,10/9/2021,-37
+Burlington Transit,Canada,-37,Toronto,Toronto,10/9/2021,-38
+Brampton Transit,Canada,-37,Toronto,Toronto,10/9/2021,-39
 York Region Transit,Canada,3,Toronto,Toronto,2/22/2020,6
 UP Express,Canada,3,Toronto,Toronto,2/22/2020,20
 TTC - Subway,Canada,3,Toronto,Toronto,2/22/2020,14
@@ -3915,6 +3915,17 @@ GO Transit,Canada,-74,Toronto,Toronto,1/24/2021,-75
 Durham Region Transit,Canada,-74,Toronto,Toronto,1/24/2021,-77
 Burlington Transit,Canada,-74,Toronto,Toronto,1/24/2021,-76
 Brampton Transit,Canada,-74,Toronto,Toronto,1/24/2021,-72
+York Region Transit,Canada,-34,Toronto,Toronto,10/19/2021,-39
+UP Express,Canada,-34,Toronto,Toronto,10/19/2021,-28
+TTC - Subway,Canada,-34,Toronto,Toronto,10/19/2021,-25
+TTC - Buses & Streetcars,Canada,-34,Toronto,Toronto,10/19/2021,-43
+Oakville Transit,Canada,-34,Toronto,Toronto,10/19/2021,-33
+MiWay,Canada,-34,Toronto,Toronto,10/19/2021,-41
+Hamilton Street Railway,Canada,-34,Toronto,Toronto,10/19/2021,-53
+GO Transit,Canada,-34,Toronto,Toronto,10/19/2021,-30
+Durham Region Transit,Canada,-34,Toronto,Toronto,10/19/2021,-43
+Burlington Transit,Canada,-34,Toronto,Toronto,10/19/2021,-45
+Brampton Transit,Canada,-34,Toronto,Toronto,10/19/2021,-41
 York Region Transit,Canada,-67,Toronto,Toronto,3/2/2021,-66
 UP Express,Canada,-67,Toronto,Toronto,3/2/2021,-80
 TTC - Subway,Canada,-67,Toronto,Toronto,3/2/2021,-72
@@ -5048,17 +5059,17 @@ GO Transit,Canada,-60,Toronto,Toronto,7/2/2020,-64
 Durham Region Transit,Canada,-60,Toronto,Toronto,7/2/2020,-65
 Burlington Transit,Canada,-60,Toronto,Toronto,7/2/2020,-61
 Brampton Transit,Canada,-60,Toronto,Toronto,7/2/2020,-62
-York Region Transit,Canada,-35,Toronto,Toronto,10/17/2021,-39
-UP Express,Canada,-35,Toronto,Toronto,10/17/2021,-25
-TTC - Subway,Canada,-35,Toronto,Toronto,10/17/2021,-26
-TTC - Buses & Streetcars,Canada,-35,Toronto,Toronto,10/17/2021,-37
-Oakville Transit,Canada,-35,Toronto,Toronto,10/17/2021,-30
-MiWay,Canada,-35,Toronto,Toronto,10/17/2021,-32
-Hamilton Street Railway,Canada,-35,Toronto,Toronto,10/17/2021,-46
-GO Transit,Canada,-35,Toronto,Toronto,10/17/2021,-28
-Durham Region Transit,Canada,-35,Toronto,Toronto,10/17/2021,-30
-Burlington Transit,Canada,-35,Toronto,Toronto,10/17/2021,-40
-Brampton Transit,Canada,-35,Toronto,Toronto,10/17/2021,-33
+York Region Transit,Canada,-34,Toronto,Toronto,10/17/2021,-38
+UP Express,Canada,-34,Toronto,Toronto,10/17/2021,-24
+TTC - Subway,Canada,-34,Toronto,Toronto,10/17/2021,-26
+TTC - Buses & Streetcars,Canada,-34,Toronto,Toronto,10/17/2021,-37
+Oakville Transit,Canada,-34,Toronto,Toronto,10/17/2021,-30
+MiWay,Canada,-34,Toronto,Toronto,10/17/2021,-31
+Hamilton Street Railway,Canada,-34,Toronto,Toronto,10/17/2021,-45
+GO Transit,Canada,-34,Toronto,Toronto,10/17/2021,-27
+Durham Region Transit,Canada,-34,Toronto,Toronto,10/17/2021,-29
+Burlington Transit,Canada,-34,Toronto,Toronto,10/17/2021,-39
+Brampton Transit,Canada,-34,Toronto,Toronto,10/17/2021,-32
 York Region Transit,Canada,-63,Toronto,Toronto,6/19/2020,-69
 UP Express,Canada,-63,Toronto,Toronto,6/19/2020,-74
 TTC - Subway,Canada,-63,Toronto,Toronto,6/19/2020,-71
@@ -5607,7 +5618,7 @@ MiWay,Canada,-40,Toronto,Toronto,10/12/2021,-45
 Hamilton Street Railway,Canada,-40,Toronto,Toronto,10/12/2021,-51
 GO Transit,Canada,-40,Toronto,Toronto,10/12/2021,-39
 Durham Region Transit,Canada,-40,Toronto,Toronto,10/12/2021,-44
-Burlington Transit,Canada,-40,Toronto,Toronto,10/12/2021,-41
+Burlington Transit,Canada,-40,Toronto,Toronto,10/12/2021,-40
 Brampton Transit,Canada,-40,Toronto,Toronto,10/12/2021,-44
 York Region Transit,Canada,2,Toronto,Toronto,2/19/2020,3
 UP Express,Canada,2,Toronto,Toronto,2/19/2020,-1
@@ -5928,17 +5939,17 @@ GO Transit,Canada,-61,Toronto,Toronto,5/21/2021,-63
 Durham Region Transit,Canada,-61,Toronto,Toronto,5/21/2021,-72
 Burlington Transit,Canada,-61,Toronto,Toronto,5/21/2021,-67
 Brampton Transit,Canada,-61,Toronto,Toronto,5/21/2021,-60
-York Region Transit,Canada,-40,Toronto,Toronto,10/15/2021,-47
-UP Express,Canada,-40,Toronto,Toronto,10/15/2021,-30
-TTC - Subway,Canada,-40,Toronto,Toronto,10/15/2021,-31
-TTC - Buses & Streetcars,Canada,-40,Toronto,Toronto,10/15/2021,-43
-Oakville Transit,Canada,-40,Toronto,Toronto,10/15/2021,-40
-MiWay,Canada,-40,Toronto,Toronto,10/15/2021,-45
-Hamilton Street Railway,Canada,-40,Toronto,Toronto,10/15/2021,-59
-GO Transit,Canada,-40,Toronto,Toronto,10/15/2021,-40
-Durham Region Transit,Canada,-40,Toronto,Toronto,10/15/2021,-45
-Burlington Transit,Canada,-40,Toronto,Toronto,10/15/2021,-52
-Brampton Transit,Canada,-40,Toronto,Toronto,10/15/2021,-43
+York Region Transit,Canada,-39,Toronto,Toronto,10/15/2021,-47
+UP Express,Canada,-39,Toronto,Toronto,10/15/2021,-31
+TTC - Subway,Canada,-39,Toronto,Toronto,10/15/2021,-31
+TTC - Buses & Streetcars,Canada,-39,Toronto,Toronto,10/15/2021,-43
+Oakville Transit,Canada,-39,Toronto,Toronto,10/15/2021,-40
+MiWay,Canada,-39,Toronto,Toronto,10/15/2021,-45
+Hamilton Street Railway,Canada,-39,Toronto,Toronto,10/15/2021,-59
+GO Transit,Canada,-39,Toronto,Toronto,10/15/2021,-40
+Durham Region Transit,Canada,-39,Toronto,Toronto,10/15/2021,-45
+Burlington Transit,Canada,-39,Toronto,Toronto,10/15/2021,-52
+Brampton Transit,Canada,-39,Toronto,Toronto,10/15/2021,-43
 York Region Transit,Canada,5,Toronto,Toronto,2/16/2020,1
 UP Express,Canada,5,Toronto,Toronto,2/16/2020,13
 TTC - Subway,Canada,5,Toronto,Toronto,2/16/2020,11
@@ -6063,7 +6074,7 @@ Brampton Transit,Canada,-63,Toronto,Toronto,11/22/2020,-58
 York Region Transit,Canada,-35,Toronto,Toronto,10/2/2021,-34
 UP Express,Canada,-35,Toronto,Toronto,10/2/2021,-23
 TTC - Subway,Canada,-35,Toronto,Toronto,10/2/2021,-21
-TTC - Buses & Streetcars,Canada,-35,Toronto,Toronto,10/2/2021,-33
+TTC - Buses & Streetcars,Canada,-35,Toronto,Toronto,10/2/2021,-32
 Oakville Transit,Canada,-35,Toronto,Toronto,10/2/2021,-24
 MiWay,Canada,-35,Toronto,Toronto,10/2/2021,-31
 Hamilton Street Railway,Canada,-35,Toronto,Toronto,10/2/2021,-43
@@ -6735,8 +6746,8 @@ West Coast Express,Canada,-73,Vancouver,Vancouver,2/7/2021,-75
 TransLink,Canada,-73,Vancouver,Vancouver,2/7/2021,-65
 West Coast Express,Canada,-63,Vancouver,Vancouver,6/13/2020,-71
 TransLink,Canada,-63,Vancouver,Vancouver,6/13/2020,-60
-West Coast Express,Canada,-39,Vancouver,Vancouver,10/14/2021,25
-TransLink,Canada,-39,Vancouver,Vancouver,10/14/2021,-28
+West Coast Express,Canada,-39,Vancouver,Vancouver,10/14/2021,26
+TransLink,Canada,-39,Vancouver,Vancouver,10/14/2021,-27
 West Coast Express,Canada,-23,Vancouver,Vancouver,2/17/2020,-69
 TransLink,Canada,-23,Vancouver,Vancouver,2/17/2020,-18
 West Coast Express,Canada,-58,Vancouver,Vancouver,7/22/2020,-56
@@ -6891,7 +6902,7 @@ West Coast Express,Canada,-52,Vancouver,Vancouver,6/23/2021,-9
 TransLink,Canada,-52,Vancouver,Vancouver,6/23/2021,-45
 West Coast Express,Canada,1,Vancouver,Vancouver,2/15/2020,3
 TransLink,Canada,1,Vancouver,Vancouver,2/15/2020,-1
-West Coast Express,Canada,-38,Vancouver,Vancouver,10/16/2021,-7
+West Coast Express,Canada,-38,Vancouver,Vancouver,10/16/2021,-6
 TransLink,Canada,-38,Vancouver,Vancouver,10/16/2021,-36
 West Coast Express,Canada,-64,Vancouver,Vancouver,9/18/2020,-65
 TransLink,Canada,-64,Vancouver,Vancouver,9/18/2020,-56
@@ -6929,8 +6940,8 @@ West Coast Express,Canada,-50,Vancouver,Vancouver,8/10/2020,-25
 TransLink,Canada,-50,Vancouver,Vancouver,8/10/2020,-42
 West Coast Express,Canada,-69,Vancouver,Vancouver,11/27/2020,-71
 TransLink,Canada,-69,Vancouver,Vancouver,11/27/2020,-62
-West Coast Express,Canada,-38,Vancouver,Vancouver,10/13/2021,26
-TransLink,Canada,-38,Vancouver,Vancouver,10/13/2021,-29
+West Coast Express,Canada,-38,Vancouver,Vancouver,10/13/2021,27
+TransLink,Canada,-38,Vancouver,Vancouver,10/13/2021,-28
 West Coast Express,Canada,2,Vancouver,Vancouver,2/18/2020,-30
 TransLink,Canada,2,Vancouver,Vancouver,2/18/2020,2
 West Coast Express,Canada,-61,Vancouver,Vancouver,10/19/2020,-46
@@ -7241,8 +7252,8 @@ West Coast Express,Canada,-54,Vancouver,Vancouver,9/12/2020,-70
 TransLink,Canada,-54,Vancouver,Vancouver,9/12/2020,-54
 West Coast Express,Canada,-61,Vancouver,Vancouver,10/25/2020,-72
 TransLink,Canada,-61,Vancouver,Vancouver,10/25/2020,-56
-West Coast Express,Canada,-14,Vancouver,Vancouver,10/18/2021,-68
-TransLink,Canada,-14,Vancouver,Vancouver,10/18/2021,-43
+West Coast Express,Canada,-28,Vancouver,Vancouver,10/18/2021,95
+TransLink,Canada,-28,Vancouver,Vancouver,10/18/2021,-22
 West Coast Express,Canada,-62,Vancouver,Vancouver,11/7/2020,-75
 TransLink,Canada,-62,Vancouver,Vancouver,11/7/2020,-56
 West Coast Express,Canada,-80,Vancouver,Vancouver,4/24/2020,-80
@@ -7260,7 +7271,7 @@ TransLink,Canada,-43,Vancouver,Vancouver,7/28/2021,-36
 West Coast Express,Canada,-80,Vancouver,Vancouver,5/5/2020,-78
 TransLink,Canada,-80,Vancouver,Vancouver,5/5/2020,-70
 West Coast Express,Canada,-37,Vancouver,Vancouver,10/8/2021,35
-TransLink,Canada,-37,Vancouver,Vancouver,10/8/2021,-26
+TransLink,Canada,-37,Vancouver,Vancouver,10/8/2021,-25
 West Coast Express,Canada,3,Vancouver,Vancouver,2/23/2020,-40
 TransLink,Canada,3,Vancouver,Vancouver,2/23/2020,-8
 West Coast Express,Canada,-72,Vancouver,Vancouver,2/13/2021,-75
@@ -7289,8 +7300,8 @@ West Coast Express,Canada,-60,Vancouver,Vancouver,10/3/2020,-68
 TransLink,Canada,-60,Vancouver,Vancouver,10/3/2020,-53
 West Coast Express,Canada,-61,Vancouver,Vancouver,10/18/2020,-70
 TransLink,Canada,-61,Vancouver,Vancouver,10/18/2020,-56
-West Coast Express,Canada,-38,Vancouver,Vancouver,10/9/2021,6
-TransLink,Canada,-38,Vancouver,Vancouver,10/9/2021,-36
+West Coast Express,Canada,-37,Vancouver,Vancouver,10/9/2021,6
+TransLink,Canada,-37,Vancouver,Vancouver,10/9/2021,-36
 West Coast Express,Canada,3,Vancouver,Vancouver,2/22/2020,-13
 TransLink,Canada,3,Vancouver,Vancouver,2/22/2020,-4
 West Coast Express,Canada,-79,Vancouver,Vancouver,1/13/2021,-76
@@ -7443,6 +7454,8 @@ West Coast Express,Canada,-78,Vancouver,Vancouver,4/25/2020,-74
 TransLink,Canada,-78,Vancouver,Vancouver,4/25/2020,-73
 West Coast Express,Canada,-74,Vancouver,Vancouver,1/24/2021,-20
 TransLink,Canada,-74,Vancouver,Vancouver,1/24/2021,-70
+West Coast Express,Canada,-34,Vancouver,Vancouver,10/19/2021,102
+TransLink,Canada,-34,Vancouver,Vancouver,10/19/2021,-32
 West Coast Express,Canada,-67,Vancouver,Vancouver,3/2/2021,-64
 TransLink,Canada,-67,Vancouver,Vancouver,3/2/2021,-57
 West Coast Express,Canada,-62,Vancouver,Vancouver,9/11/2020,-63
@@ -7649,8 +7662,8 @@ West Coast Express,Canada,-80,Vancouver,Vancouver,1/27/2021,-76
 TransLink,Canada,-80,Vancouver,Vancouver,1/27/2021,-71
 West Coast Express,Canada,-60,Vancouver,Vancouver,7/2/2020,-82
 TransLink,Canada,-60,Vancouver,Vancouver,7/2/2020,-57
-West Coast Express,Canada,-35,Vancouver,Vancouver,10/17/2021,-15
-TransLink,Canada,-35,Vancouver,Vancouver,10/17/2021,-36
+West Coast Express,Canada,-34,Vancouver,Vancouver,10/17/2021,-14
+TransLink,Canada,-34,Vancouver,Vancouver,10/17/2021,-34
 West Coast Express,Canada,-63,Vancouver,Vancouver,6/19/2020,-67
 TransLink,Canada,-63,Vancouver,Vancouver,6/19/2020,-58
 West Coast Express,Canada,-78,Vancouver,Vancouver,1/18/2021,-74
@@ -7809,8 +7822,8 @@ West Coast Express,Canada,-69,Vancouver,Vancouver,12/17/2020,-60
 TransLink,Canada,-69,Vancouver,Vancouver,12/17/2020,-58
 West Coast Express,Canada,-61,Vancouver,Vancouver,5/21/2021,-19
 TransLink,Canada,-61,Vancouver,Vancouver,5/21/2021,-52
-West Coast Express,Canada,-40,Vancouver,Vancouver,10/15/2021,3
-TransLink,Canada,-40,Vancouver,Vancouver,10/15/2021,-33
+West Coast Express,Canada,-39,Vancouver,Vancouver,10/15/2021,4
+TransLink,Canada,-39,Vancouver,Vancouver,10/15/2021,-33
 West Coast Express,Canada,5,Vancouver,Vancouver,2/16/2020,-29
 TransLink,Canada,5,Vancouver,Vancouver,2/16/2020,-5
 West Coast Express,Canada,-59,Vancouver,Vancouver,10/5/2020,-49
@@ -7957,7 +7970,7 @@ West Coast Express,Canada,-61,Vancouver,Vancouver,6/14/2020,-80
 TransLink,Canada,-61,Vancouver,Vancouver,6/14/2020,-59
 OC Transpo,Canada,-73,Ottawa,Ottawa,2/7/2021,-74
 OC Transpo,Canada,-63,Ottawa,Ottawa,6/13/2020,-64
-OC Transpo,Canada,-39,Ottawa,Ottawa,10/14/2021,-56
+OC Transpo,Canada,-39,Ottawa,Ottawa,10/14/2021,-55
 OC Transpo,Canada,-23,Ottawa,Ottawa,2/17/2020,-34
 OC Transpo,Canada,-58,Ottawa,Ottawa,7/22/2020,-69
 OC Transpo,Canada,-64,Ottawa,Ottawa,12/16/2020,-67
@@ -8035,7 +8048,7 @@ OC Transpo,Canada,-55,Ottawa,Ottawa,5/15/2021,-62
 OC Transpo,Canada,-72,Ottawa,Ottawa,1/17/2021,-74
 OC Transpo,Canada,-52,Ottawa,Ottawa,6/23/2021,-62
 OC Transpo,Canada,1,Ottawa,Ottawa,2/15/2020,-4
-OC Transpo,Canada,-38,Ottawa,Ottawa,10/16/2021,-48
+OC Transpo,Canada,-38,Ottawa,Ottawa,10/16/2021,-47
 OC Transpo,Canada,-64,Ottawa,Ottawa,9/18/2020,-72
 OC Transpo,Canada,-80,Ottawa,Ottawa,1/28/2021,-86
 OC Transpo,Canada,-39,Ottawa,Ottawa,9/23/2021,-60
@@ -8210,7 +8223,7 @@ OC Transpo,Canada,-65,Ottawa,Ottawa,3/26/2021,-71
 OC Transpo,Canada,-70,Ottawa,Ottawa,4/2/2021,-77
 OC Transpo,Canada,-54,Ottawa,Ottawa,9/12/2020,-58
 OC Transpo,Canada,-61,Ottawa,Ottawa,10/25/2020,-62
-OC Transpo,Canada,-14,Ottawa,Ottawa,10/18/2021,-26
+OC Transpo,Canada,-28,Ottawa,Ottawa,10/18/2021,-46
 OC Transpo,Canada,-62,Ottawa,Ottawa,11/7/2020,-63
 OC Transpo,Canada,-80,Ottawa,Ottawa,4/24/2020,-82
 OC Transpo,Canada,-33,Ottawa,Ottawa,8/8/2021,-40
@@ -8234,7 +8247,7 @@ OC Transpo,Canada,-51,Ottawa,Ottawa,6/6/2021,-56
 OC Transpo,Canada,-61,Ottawa,Ottawa,6/7/2020,-62
 OC Transpo,Canada,-60,Ottawa,Ottawa,10/3/2020,-63
 OC Transpo,Canada,-61,Ottawa,Ottawa,10/18/2020,-64
-OC Transpo,Canada,-38,Ottawa,Ottawa,10/9/2021,-45
+OC Transpo,Canada,-37,Ottawa,Ottawa,10/9/2021,-45
 OC Transpo,Canada,3,Ottawa,Ottawa,2/22/2020,-3
 OC Transpo,Canada,-79,Ottawa,Ottawa,1/13/2021,-85
 OC Transpo,Canada,-56,Ottawa,Ottawa,8/13/2020,-63
@@ -8311,6 +8324,7 @@ OC Transpo,Canada,-58,Ottawa,Ottawa,3/28/2021,-59
 OC Transpo,Canada,-34,Ottawa,Ottawa,8/7/2021,-40
 OC Transpo,Canada,-78,Ottawa,Ottawa,4/25/2020,-79
 OC Transpo,Canada,-74,Ottawa,Ottawa,1/24/2021,-76
+OC Transpo,Canada,-34,Ottawa,Ottawa,10/19/2021,-56
 OC Transpo,Canada,-67,Ottawa,Ottawa,3/2/2021,-70
 OC Transpo,Canada,-62,Ottawa,Ottawa,9/11/2020,-71
 OC Transpo,Canada,-61,Ottawa,Ottawa,5/14/2021,-72
@@ -8414,7 +8428,7 @@ OC Transpo,Canada,-30,Ottawa,Ottawa,8/14/2021,-38
 OC Transpo,Canada,-57,Ottawa,Ottawa,7/15/2020,-68
 OC Transpo,Canada,-80,Ottawa,Ottawa,1/27/2021,-86
 OC Transpo,Canada,-60,Ottawa,Ottawa,7/2/2020,-71
-OC Transpo,Canada,-35,Ottawa,Ottawa,10/17/2021,-43
+OC Transpo,Canada,-34,Ottawa,Ottawa,10/17/2021,-42
 OC Transpo,Canada,-63,Ottawa,Ottawa,6/19/2020,-71
 OC Transpo,Canada,-78,Ottawa,Ottawa,1/18/2021,-86
 OC Transpo,Canada,-62,Ottawa,Ottawa,3/30/2021,-67
@@ -8494,7 +8508,7 @@ OC Transpo,Canada,-39,Ottawa,Ottawa,9/3/2021,-60
 OC Transpo,Canada,-58,Ottawa,Ottawa,5/2/2021,-65
 OC Transpo,Canada,-69,Ottawa,Ottawa,12/17/2020,-68
 OC Transpo,Canada,-61,Ottawa,Ottawa,5/21/2021,-71
-OC Transpo,Canada,-40,Ottawa,Ottawa,10/15/2021,-53
+OC Transpo,Canada,-39,Ottawa,Ottawa,10/15/2021,-53
 OC Transpo,Canada,5,Ottawa,Ottawa,2/16/2020,5
 OC Transpo,Canada,-59,Ottawa,Ottawa,10/5/2020,-70
 OC Transpo,Canada,-74,Ottawa,Ottawa,2/6/2021,-75
@@ -8567,7 +8581,6 @@ OC Transpo,Canada,-57,Ottawa,Ottawa,7/21/2020,-67
 OC Transpo,Canada,-76,Ottawa,Ottawa,5/21/2020,-80
 OC Transpo,Canada,-46,Ottawa,Ottawa,7/12/2021,-59
 OC Transpo,Canada,-61,Ottawa,Ottawa,6/14/2020,-61
-exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,2/7/2021,-73
 exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,2/7/2021,-66
 exo Sud-Ouest,Canada,-73,Montréal,Montréal,2/7/2021,-77
 exo Sorel-Varennes,Canada,-73,Montréal,Montréal,2/7/2021,-72
@@ -8583,6 +8596,7 @@ STM,Canada,-73,Montréal,Montréal,2/7/2021,-76
 STL,Canada,-73,Montréal,Montréal,2/7/2021,-72
 RTL,Canada,-73,Montréal,Montréal,2/7/2021,-76
 CRTL - Lanaudière,Canada,-73,Montréal,Montréal,2/7/2021,-65
+exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,2/7/2021,-73
 exo Terrebonne-Mascouche,Canada,-63,Montréal,Montréal,6/13/2020,-60
 exo Sud-Ouest,Canada,-63,Montréal,Montréal,6/13/2020,-69
 exo Sorel-Varennes,Canada,-63,Montréal,Montréal,6/13/2020,-62
@@ -8599,21 +8613,21 @@ STL,Canada,-63,Montréal,Montréal,6/13/2020,-61
 RTL,Canada,-63,Montréal,Montréal,6/13/2020,-66
 CRTL - Lanaudière,Canada,-63,Montréal,Montréal,6/13/2020,-54
 exo Vallée-du-Richelieu,Canada,-63,Montréal,Montréal,6/13/2020,-63
-exo Terrebonne-Mascouche,Canada,-39,Montréal,Montréal,10/14/2021,-20
-exo Sud-Ouest,Canada,-39,Montréal,Montréal,10/14/2021,-25
-exo Sorel-Varennes,Canada,-39,Montréal,Montréal,10/14/2021,-27
-exo Roussillon,Canada,-39,Montréal,Montréal,10/14/2021,-35
-exo Le Richelain,Canada,-39,Montréal,Montréal,10/14/2021,-36
+exo Terrebonne-Mascouche,Canada,-39,Montréal,Montréal,10/14/2021,-19
+exo Sud-Ouest,Canada,-39,Montréal,Montréal,10/14/2021,-24
+exo Sorel-Varennes,Canada,-39,Montréal,Montréal,10/14/2021,-26
+exo Roussillon,Canada,-39,Montréal,Montréal,10/14/2021,-34
+exo Le Richelain,Canada,-39,Montréal,Montréal,10/14/2021,-35
 exo Laurentides,Canada,-39,Montréal,Montréal,10/14/2021,3
-exo La Presqu'Île,Canada,-39,Montréal,Montréal,10/14/2021,-31
-exo L'Assomption,Canada,-39,Montréal,Montréal,10/14/2021,-17
-exo Haut-Saint-Laurent,Canada,-39,Montréal,Montréal,10/14/2021,-12
-exo - Trains,Canada,-39,Montréal,Montréal,10/14/2021,-10
+exo La Presqu'Île,Canada,-39,Montréal,Montréal,10/14/2021,-30
+exo L'Assomption,Canada,-39,Montréal,Montréal,10/14/2021,-16
+exo Haut-Saint-Laurent,Canada,-39,Montréal,Montréal,10/14/2021,-11
+exo - Trains,Canada,-39,Montréal,Montréal,10/14/2021,-9
 Saint-Jean-sur-Richelieu,Canada,-39,Montréal,Montréal,10/14/2021,-56
-STM,Canada,-39,Montréal,Montréal,10/14/2021,-34
-STL,Canada,-39,Montréal,Montréal,10/14/2021,-27
+STM,Canada,-39,Montréal,Montréal,10/14/2021,-33
+STL,Canada,-39,Montréal,Montréal,10/14/2021,-26
 RTL,Canada,-39,Montréal,Montréal,10/14/2021,-34
-CRTL - Lanaudière,Canada,-39,Montréal,Montréal,10/14/2021,-27
+CRTL - Lanaudière,Canada,-39,Montréal,Montréal,10/14/2021,-26
 exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,10/14/2021,-48
 exo Terrebonne-Mascouche,Canada,-23,Montréal,Montréal,2/17/2020,-4
 exo Sud-Ouest,Canada,-23,Montréal,Montréal,2/17/2020,-4
@@ -8629,8 +8643,8 @@ Saint-Jean-sur-Richelieu,Canada,-23,Montréal,Montréal,2/17/2020,4
 STM,Canada,-23,Montréal,Montréal,2/17/2020,2
 STL,Canada,-23,Montréal,Montréal,2/17/2020,1
 RTL,Canada,-23,Montréal,Montréal,2/17/2020,7
-exo Vallée-du-Richelieu,Canada,-23,Montréal,Montréal,2/17/2020,14
 CRTL - Lanaudière,Canada,-23,Montréal,Montréal,2/17/2020,-1
+exo Vallée-du-Richelieu,Canada,-23,Montréal,Montréal,2/17/2020,14
 exo Terrebonne-Mascouche,Canada,-58,Montréal,Montréal,7/22/2020,-27
 exo Sud-Ouest,Canada,-58,Montréal,Montréal,7/22/2020,-50
 exo Sorel-Varennes,Canada,-58,Montréal,Montréal,7/22/2020,-36
@@ -8645,8 +8659,8 @@ Saint-Jean-sur-Richelieu,Canada,-58,Montréal,Montréal,7/22/2020,-54
 STM,Canada,-58,Montréal,Montréal,7/22/2020,-50
 STL,Canada,-58,Montréal,Montréal,7/22/2020,-38
 RTL,Canada,-58,Montréal,Montréal,7/22/2020,-46
-exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,7/22/2020,-40
 CRTL - Lanaudière,Canada,-58,Montréal,Montréal,7/22/2020,-30
+exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,7/22/2020,-40
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,12/16/2020,-54
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,12/16/2020,-66
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,12/16/2020,-61
@@ -8661,9 +8675,8 @@ Saint-Jean-sur-Richelieu,Canada,-64,Montréal,Montréal,12/16/2020,-80
 STM,Canada,-64,Montréal,Montréal,12/16/2020,-63
 STL,Canada,-64,Montréal,Montréal,12/16/2020,-61
 RTL,Canada,-64,Montréal,Montréal,12/16/2020,-63
-exo Vallée-du-Richelieu,Canada,-64,Montréal,Montréal,12/16/2020,-66
 CRTL - Lanaudière,Canada,-64,Montréal,Montréal,12/16/2020,-59
-exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,4/14/2021,-71
+exo Vallée-du-Richelieu,Canada,-64,Montréal,Montréal,12/16/2020,-66
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,4/14/2021,-55
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,4/14/2021,-63
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,4/14/2021,-62
@@ -8679,6 +8692,7 @@ STM,Canada,-65,Montréal,Montréal,4/14/2021,-65
 STL,Canada,-65,Montréal,Montréal,4/14/2021,-61
 RTL,Canada,-65,Montréal,Montréal,4/14/2021,-66
 CRTL - Lanaudière,Canada,-65,Montréal,Montréal,4/14/2021,-57
+exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,4/14/2021,-71
 exo Vallée-du-Richelieu,Canada,-80,Montréal,Montréal,3/30/2020,-85
 exo Terrebonne-Mascouche,Canada,-80,Montréal,Montréal,3/30/2020,-79
 exo Sud-Ouest,Canada,-80,Montréal,Montréal,3/30/2020,-82
@@ -8709,8 +8723,8 @@ Saint-Jean-sur-Richelieu,Canada,-40,Montréal,Montréal,9/2/2021,-45
 STM,Canada,-40,Montréal,Montréal,9/2/2021,-28
 STL,Canada,-40,Montréal,Montréal,9/2/2021,-17
 RTL,Canada,-40,Montréal,Montréal,9/2/2021,-21
-exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,9/2/2021,-4
 CRTL - Lanaudière,Canada,-40,Montréal,Montréal,9/2/2021,-16
+exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,9/2/2021,-4
 exo Vallée-du-Richelieu,Canada,-77,Montréal,Montréal,1/8/2021,-81
 exo Terrebonne-Mascouche,Canada,-77,Montréal,Montréal,1/8/2021,-70
 exo Sud-Ouest,Canada,-77,Montréal,Montréal,1/8/2021,-79
@@ -8821,8 +8835,8 @@ Saint-Jean-sur-Richelieu,Canada,-40,Montréal,Montréal,8/3/2021,-58
 STM,Canada,-40,Montréal,Montréal,8/3/2021,-39
 STL,Canada,-40,Montréal,Montréal,8/3/2021,-30
 RTL,Canada,-40,Montréal,Montréal,8/3/2021,-38
-exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,8/3/2021,-33
 CRTL - Lanaudière,Canada,-40,Montréal,Montréal,8/3/2021,-24
+exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,8/3/2021,-33
 exo Vallée-du-Richelieu,Canada,-81,Montréal,Montréal,4/29/2020,-87
 exo Terrebonne-Mascouche,Canada,-81,Montréal,Montréal,4/29/2020,-86
 exo Sud-Ouest,Canada,-81,Montréal,Montréal,4/29/2020,-86
@@ -8869,8 +8883,8 @@ Saint-Jean-sur-Richelieu,Canada,-42,Montréal,Montréal,8/16/2021,-66
 STM,Canada,-42,Montréal,Montréal,8/16/2021,-43
 STL,Canada,-42,Montréal,Montréal,8/16/2021,-38
 RTL,Canada,-42,Montréal,Montréal,8/16/2021,-47
-exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,8/16/2021,-46
 CRTL - Lanaudière,Canada,-42,Montréal,Montréal,8/16/2021,-38
+exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,8/16/2021,-46
 exo Vallée-du-Richelieu,Canada,-84,Montréal,Montréal,4/16/2020,-92
 exo Terrebonne-Mascouche,Canada,-84,Montréal,Montréal,4/16/2020,-88
 exo Sud-Ouest,Canada,-84,Montréal,Montréal,4/16/2020,-87
@@ -8933,9 +8947,8 @@ Saint-Jean-sur-Richelieu,Canada,-64,Montréal,Montréal,9/15/2020,-70
 STM,Canada,-64,Montréal,Montréal,9/15/2020,-60
 STL,Canada,-64,Montréal,Montréal,9/15/2020,-56
 RTL,Canada,-64,Montréal,Montréal,9/15/2020,-59
-exo Vallée-du-Richelieu,Canada,-64,Montréal,Montréal,9/15/2020,-62
 CRTL - Lanaudière,Canada,-64,Montréal,Montréal,9/15/2020,-56
-exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,3/5/2021,-73
+exo Vallée-du-Richelieu,Canada,-64,Montréal,Montréal,9/15/2020,-62
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,3/5/2021,-61
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,3/5/2021,-67
 exo Sorel-Varennes,Canada,-66,Montréal,Montréal,3/5/2021,-66
@@ -8951,7 +8964,7 @@ STM,Canada,-66,Montréal,Montréal,3/5/2021,-68
 STL,Canada,-66,Montréal,Montréal,3/5/2021,-63
 RTL,Canada,-66,Montréal,Montréal,3/5/2021,-69
 CRTL - Lanaudière,Canada,-66,Montréal,Montréal,3/5/2021,-64
-exo Vallée-du-Richelieu,Canada,-70,Montréal,Montréal,6/4/2020,-71
+exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,3/5/2021,-73
 exo Terrebonne-Mascouche,Canada,-70,Montréal,Montréal,6/4/2020,-65
 exo Sud-Ouest,Canada,-70,Montréal,Montréal,6/4/2020,-72
 exo Sorel-Varennes,Canada,-70,Montréal,Montréal,6/4/2020,-67
@@ -8967,6 +8980,7 @@ STM,Canada,-70,Montréal,Montréal,6/4/2020,-69
 STL,Canada,-70,Montréal,Montréal,6/4/2020,-64
 RTL,Canada,-70,Montréal,Montréal,6/4/2020,-72
 CRTL - Lanaudière,Canada,-70,Montréal,Montréal,6/4/2020,-54
+exo Vallée-du-Richelieu,Canada,-70,Montréal,Montréal,6/4/2020,-71
 exo Terrebonne-Mascouche,Canada,-42,Montréal,Montréal,6/28/2021,-11
 exo Sud-Ouest,Canada,-42,Montréal,Montréal,6/28/2021,-41
 exo Sorel-Varennes,Canada,-42,Montréal,Montréal,6/28/2021,-19
@@ -8981,8 +8995,8 @@ Saint-Jean-sur-Richelieu,Canada,-42,Montréal,Montréal,6/28/2021,-55
 STM,Canada,-42,Montréal,Montréal,6/28/2021,-29
 STL,Canada,-42,Montréal,Montréal,6/28/2021,-23
 RTL,Canada,-42,Montréal,Montréal,6/28/2021,-29
-exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,6/28/2021,-28
 CRTL - Lanaudière,Canada,-42,Montréal,Montréal,6/28/2021,-10
+exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,6/28/2021,-28
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,1/20/2021,-82
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/20/2021,-72
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,1/20/2021,-79
@@ -9013,8 +9027,8 @@ Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,8/6/2021,-60
 STM,Canada,-38,Montréal,Montréal,8/6/2021,-37
 STL,Canada,-38,Montréal,Montréal,8/6/2021,-28
 RTL,Canada,-38,Montréal,Montréal,8/6/2021,-38
-exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,8/6/2021,-32
 CRTL - Lanaudière,Canada,-38,Montréal,Montréal,8/6/2021,-19
+exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,8/6/2021,-32
 exo Vallée-du-Richelieu,Canada,-77,Montréal,Montréal,4/26/2020,-84
 exo Terrebonne-Mascouche,Canada,-77,Montréal,Montréal,4/26/2020,-79
 exo Sud-Ouest,Canada,-77,Montréal,Montréal,4/26/2020,-84
@@ -9031,7 +9045,6 @@ STM,Canada,-77,Montréal,Montréal,4/26/2020,-84
 STL,Canada,-77,Montréal,Montréal,4/26/2020,-83
 RTL,Canada,-77,Montréal,Montréal,4/26/2020,-86
 CRTL - Lanaudière,Canada,-77,Montréal,Montréal,4/26/2020,-77
-exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,12/10/2020,-71
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,12/10/2020,-63
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,12/10/2020,-73
 exo Sorel-Varennes,Canada,-71,Montréal,Montréal,12/10/2020,-71
@@ -9047,6 +9060,7 @@ STM,Canada,-71,Montréal,Montréal,12/10/2020,-71
 STL,Canada,-71,Montréal,Montréal,12/10/2020,-68
 RTL,Canada,-71,Montréal,Montréal,12/10/2020,-71
 CRTL - Lanaudière,Canada,-71,Montréal,Montréal,12/10/2020,-63
+exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,12/10/2020,-71
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,5/4/2021,-50
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,5/4/2021,-61
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,5/4/2021,-64
@@ -9077,8 +9091,8 @@ Saint-Jean-sur-Richelieu,Canada,-48,Montréal,Montréal,8/9/2020,-62
 STM,Canada,-48,Montréal,Montréal,8/9/2020,-50
 STL,Canada,-48,Montréal,Montréal,8/9/2020,-43
 RTL,Canada,-48,Montréal,Montréal,8/9/2020,-49
-exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,8/9/2020,-36
 CRTL - Lanaudière,Canada,-48,Montréal,Montréal,8/9/2020,-31
+exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,8/9/2020,-36
 exo Terrebonne-Mascouche,Canada,-60,Montréal,Montréal,4/3/2021,-52
 exo Sud-Ouest,Canada,-60,Montréal,Montréal,4/3/2021,-56
 exo Sorel-Varennes,Canada,-60,Montréal,Montréal,4/3/2021,-49
@@ -9127,7 +9141,6 @@ STM,Canada,-78,Montréal,Montréal,2/11/2021,-77
 STL,Canada,-78,Montréal,Montréal,2/11/2021,-74
 RTL,Canada,-78,Montréal,Montréal,2/11/2021,-76
 CRTL - Lanaudière,Canada,-78,Montréal,Montréal,2/11/2021,-73
-exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,2/24/2021,-73
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,2/24/2021,-59
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,2/24/2021,-62
 exo Sorel-Varennes,Canada,-66,Montréal,Montréal,2/24/2021,-69
@@ -9143,6 +9156,7 @@ STM,Canada,-66,Montréal,Montréal,2/24/2021,-66
 STL,Canada,-66,Montréal,Montréal,2/24/2021,-63
 RTL,Canada,-66,Montréal,Montréal,2/24/2021,-68
 CRTL - Lanaudière,Canada,-66,Montréal,Montréal,2/24/2021,-68
+exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,2/24/2021,-73
 exo Vallée-du-Richelieu,Canada,-74,Montréal,Montréal,1/31/2021,-79
 exo Terrebonne-Mascouche,Canada,-74,Montréal,Montréal,1/31/2021,-70
 exo Sud-Ouest,Canada,-74,Montréal,Montréal,1/31/2021,-80
@@ -9173,8 +9187,8 @@ Saint-Jean-sur-Richelieu,Canada,-56,Montréal,Montréal,7/11/2020,-58
 STM,Canada,-56,Montréal,Montréal,7/11/2020,-50
 STL,Canada,-56,Montréal,Montréal,7/11/2020,-44
 RTL,Canada,-56,Montréal,Montréal,7/11/2020,-48
-exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,7/11/2020,-38
 CRTL - Lanaudière,Canada,-56,Montréal,Montréal,7/11/2020,-40
+exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,7/11/2020,-38
 exo Terrebonne-Mascouche,Canada,-34,Montréal,Montréal,8/29/2021,-23
 exo Sud-Ouest,Canada,-34,Montréal,Montréal,8/29/2021,-31
 exo Sorel-Varennes,Canada,-34,Montréal,Montréal,8/29/2021,-17
@@ -9189,8 +9203,8 @@ Saint-Jean-sur-Richelieu,Canada,-34,Montréal,Montréal,8/29/2021,-56
 STM,Canada,-34,Montréal,Montréal,8/29/2021,-34
 STL,Canada,-34,Montréal,Montréal,8/29/2021,-27
 RTL,Canada,-34,Montréal,Montréal,8/29/2021,-33
-exo Vallée-du-Richelieu,Canada,-34,Montréal,Montréal,8/29/2021,-22
 CRTL - Lanaudière,Canada,-34,Montréal,Montréal,8/29/2021,-8
+exo Vallée-du-Richelieu,Canada,-34,Montréal,Montréal,8/29/2021,-22
 exo Vallée-du-Richelieu,Canada,-83,Montréal,Montréal,4/3/2020,-90
 exo Terrebonne-Mascouche,Canada,-83,Montréal,Montréal,4/3/2020,-87
 exo Sud-Ouest,Canada,-83,Montréal,Montréal,4/3/2020,-86
@@ -9221,8 +9235,8 @@ Saint-Jean-sur-Richelieu,Canada,-48,Montréal,Montréal,8/1/2020,-56
 STM,Canada,-48,Montréal,Montréal,8/1/2020,-42
 STL,Canada,-48,Montréal,Montréal,8/1/2020,-30
 RTL,Canada,-48,Montréal,Montréal,8/1/2020,-41
-exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,8/1/2020,-35
 CRTL - Lanaudière,Canada,-48,Montréal,Montréal,8/1/2020,-16
+exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,8/1/2020,-35
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,12/20/2020,-55
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,12/20/2020,-67
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,12/20/2020,-70
@@ -9253,8 +9267,8 @@ Saint-Jean-sur-Richelieu,Canada,-49,Montréal,Montréal,7/18/2020,-53
 STM,Canada,-49,Montréal,Montréal,7/18/2020,-40
 STL,Canada,-49,Montréal,Montréal,7/18/2020,-29
 RTL,Canada,-49,Montréal,Montréal,7/18/2020,-37
-exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,7/18/2020,-33
 CRTL - Lanaudière,Canada,-49,Montréal,Montréal,7/18/2020,-25
+exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,7/18/2020,-33
 exo Vallée-du-Richelieu,Canada,-80,Montréal,Montréal,5/6/2020,-86
 exo Terrebonne-Mascouche,Canada,-80,Montréal,Montréal,5/6/2020,-85
 exo Sud-Ouest,Canada,-80,Montréal,Montréal,5/6/2020,-83
@@ -9317,8 +9331,8 @@ Saint-Jean-sur-Richelieu,Canada,-55,Montréal,Montréal,6/11/2021,-70
 STM,Canada,-55,Montréal,Montréal,6/11/2021,-48
 STL,Canada,-55,Montréal,Montréal,6/11/2021,-42
 RTL,Canada,-55,Montréal,Montréal,6/11/2021,-48
-exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,6/11/2021,-48
 CRTL - Lanaudière,Canada,-55,Montréal,Montréal,6/11/2021,-45
+exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,6/11/2021,-48
 exo Terrebonne-Mascouche,Canada,-58,Montréal,Montréal,3/14/2021,-53
 exo Sud-Ouest,Canada,-58,Montréal,Montréal,3/14/2021,-56
 exo Sorel-Varennes,Canada,-58,Montréal,Montréal,3/14/2021,-52
@@ -9333,8 +9347,8 @@ Saint-Jean-sur-Richelieu,Canada,-58,Montréal,Montréal,3/14/2021,-81
 STM,Canada,-58,Montréal,Montréal,3/14/2021,-61
 STL,Canada,-58,Montréal,Montréal,3/14/2021,-56
 RTL,Canada,-58,Montréal,Montréal,3/14/2021,-61
-exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,3/14/2021,-55
 CRTL - Lanaudière,Canada,-58,Montréal,Montréal,3/14/2021,-49
+exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,3/14/2021,-55
 exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,5/17/2020,-79
 exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,5/17/2020,-69
 exo Sud-Ouest,Canada,-73,Montréal,Montréal,5/17/2020,-80
@@ -9413,8 +9427,8 @@ Saint-Jean-sur-Richelieu,Canada,-35,Montréal,Montréal,9/11/2021,-60
 STM,Canada,-35,Montréal,Montréal,9/11/2021,-33
 STL,Canada,-35,Montréal,Montréal,9/11/2021,-27
 RTL,Canada,-35,Montréal,Montréal,9/11/2021,-33
-exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/11/2021,-25
 CRTL - Lanaudière,Canada,-35,Montréal,Montréal,9/11/2021,-13
+exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/11/2021,-25
 exo Terrebonne-Mascouche,Canada,-59,Montréal,Montréal,4/9/2021,-42
 exo Sud-Ouest,Canada,-59,Montréal,Montréal,4/9/2021,-60
 exo Sorel-Varennes,Canada,-59,Montréal,Montréal,4/9/2021,-54
@@ -9429,8 +9443,8 @@ Saint-Jean-sur-Richelieu,Canada,-59,Montréal,Montréal,4/9/2021,-72
 STM,Canada,-59,Montréal,Montréal,4/9/2021,-57
 STL,Canada,-59,Montréal,Montréal,4/9/2021,-51
 RTL,Canada,-59,Montréal,Montréal,4/9/2021,-55
-exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,4/9/2021,-60
 CRTL - Lanaudière,Canada,-59,Montréal,Montréal,4/9/2021,-51
+exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,4/9/2021,-60
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,9/9/2020,-47
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,9/9/2020,-56
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,9/9/2020,-60
@@ -9461,8 +9475,8 @@ Saint-Jean-sur-Richelieu,Canada,-53,Montréal,Montréal,6/5/2021,-65
 STM,Canada,-53,Montréal,Montréal,6/5/2021,-50
 STL,Canada,-53,Montréal,Montréal,6/5/2021,-42
 RTL,Canada,-53,Montréal,Montréal,6/5/2021,-48
-exo Vallée-du-Richelieu,Canada,-53,Montréal,Montréal,6/5/2021,-43
 CRTL - Lanaudière,Canada,-53,Montréal,Montréal,6/5/2021,-40
+exo Vallée-du-Richelieu,Canada,-53,Montréal,Montréal,6/5/2021,-43
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,3/17/2021,-55
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,3/17/2021,-63
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,3/17/2021,-58
@@ -9509,8 +9523,8 @@ Saint-Jean-sur-Richelieu,Canada,-41,Montréal,Montréal,7/5/2021,-59
 STM,Canada,-41,Montréal,Montréal,7/5/2021,-34
 STL,Canada,-41,Montréal,Montréal,7/5/2021,-24
 RTL,Canada,-41,Montréal,Montréal,7/5/2021,-36
-exo Vallée-du-Richelieu,Canada,-41,Montréal,Montréal,7/5/2021,-31
 CRTL - Lanaudière,Canada,-41,Montréal,Montréal,7/5/2021,-15
+exo Vallée-du-Richelieu,Canada,-41,Montréal,Montréal,7/5/2021,-31
 exo Vallée-du-Richelieu,Canada,-68,Montréal,Montréal,10/15/2020,-79
 exo Terrebonne-Mascouche,Canada,-68,Montréal,Montréal,10/15/2020,-65
 exo Sud-Ouest,Canada,-68,Montréal,Montréal,10/15/2020,-68
@@ -9541,8 +9555,8 @@ Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,7/24/2021,-62
 STM,Canada,-38,Montréal,Montréal,7/24/2021,-36
 STL,Canada,-38,Montréal,Montréal,7/24/2021,-28
 RTL,Canada,-38,Montréal,Montréal,7/24/2021,-38
-exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,7/24/2021,-31
 CRTL - Lanaudière,Canada,-38,Montréal,Montréal,7/24/2021,-25
+exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,7/24/2021,-31
 exo Vallée-du-Richelieu,Canada,-77,Montréal,Montréal,5/9/2020,-84
 exo Terrebonne-Mascouche,Canada,-77,Montréal,Montréal,5/9/2020,-80
 exo Sud-Ouest,Canada,-77,Montréal,Montréal,5/9/2020,-81
@@ -9559,7 +9573,6 @@ STM,Canada,-77,Montréal,Montréal,5/9/2020,-79
 STL,Canada,-77,Montréal,Montréal,5/9/2020,-79
 RTL,Canada,-77,Montréal,Montréal,5/9/2020,-82
 CRTL - Lanaudière,Canada,-77,Montréal,Montréal,5/9/2020,-73
-exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,11/23/2020,-73
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,11/23/2020,-62
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,11/23/2020,-71
 exo Sorel-Varennes,Canada,-71,Montréal,Montréal,11/23/2020,-71
@@ -9575,6 +9588,7 @@ STM,Canada,-71,Montréal,Montréal,11/23/2020,-72
 STL,Canada,-71,Montréal,Montréal,11/23/2020,-68
 RTL,Canada,-71,Montréal,Montréal,11/23/2020,-72
 CRTL - Lanaudière,Canada,-71,Montréal,Montréal,11/23/2020,-63
+exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,11/23/2020,-73
 exo Terrebonne-Mascouche,Canada,-55,Montréal,Montréal,8/14/2020,-46
 exo Sud-Ouest,Canada,-55,Montréal,Montréal,8/14/2020,-53
 exo Sorel-Varennes,Canada,-55,Montréal,Montréal,8/14/2020,-58
@@ -9589,8 +9603,8 @@ Saint-Jean-sur-Richelieu,Canada,-55,Montréal,Montréal,8/14/2020,-65
 STM,Canada,-55,Montréal,Montréal,8/14/2020,-53
 STL,Canada,-55,Montréal,Montréal,8/14/2020,-48
 RTL,Canada,-55,Montréal,Montréal,8/14/2020,-56
-exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,8/14/2020,-60
 CRTL - Lanaudière,Canada,-55,Montréal,Montréal,8/14/2020,-50
+exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,8/14/2020,-60
 exo Terrebonne-Mascouche,Canada,-56,Montréal,Montréal,7/29/2020,-22
 exo Sud-Ouest,Canada,-56,Montréal,Montréal,7/29/2020,-43
 exo Sorel-Varennes,Canada,-56,Montréal,Montréal,7/29/2020,-30
@@ -9701,8 +9715,8 @@ Saint-Jean-sur-Richelieu,Canada,-63,Montréal,Montréal,6/23/2020,-62
 STM,Canada,-63,Montréal,Montréal,6/23/2020,-57
 STL,Canada,-63,Montréal,Montréal,6/23/2020,-49
 RTL,Canada,-63,Montréal,Montréal,6/23/2020,-54
-exo Vallée-du-Richelieu,Canada,-63,Montréal,Montréal,6/23/2020,-42
 CRTL - Lanaudière,Canada,-63,Montréal,Montréal,6/23/2020,-43
+exo Vallée-du-Richelieu,Canada,-63,Montréal,Montréal,6/23/2020,-42
 exo Terrebonne-Mascouche,Canada,-56,Montréal,Montréal,5/22/2021,-45
 exo Sud-Ouest,Canada,-56,Montréal,Montréal,5/22/2021,-55
 exo Sorel-Varennes,Canada,-56,Montréal,Montréal,5/22/2021,-48
@@ -9717,8 +9731,8 @@ Saint-Jean-sur-Richelieu,Canada,-56,Montréal,Montréal,5/22/2021,-73
 STM,Canada,-56,Montréal,Montréal,5/22/2021,-55
 STL,Canada,-56,Montréal,Montréal,5/22/2021,-48
 RTL,Canada,-56,Montréal,Montréal,5/22/2021,-54
-exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,5/22/2021,-54
 CRTL - Lanaudière,Canada,-56,Montréal,Montréal,5/22/2021,-45
+exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,5/22/2021,-54
 exo Terrebonne-Mascouche,Canada,-68,Montréal,Montréal,12/15/2020,-57
 exo Sud-Ouest,Canada,-68,Montréal,Montréal,12/15/2020,-69
 exo Sorel-Varennes,Canada,-68,Montréal,Montréal,12/15/2020,-66
@@ -9749,8 +9763,8 @@ Saint-Jean-sur-Richelieu,Canada,-59,Montréal,Montréal,5/1/2021,-76
 STM,Canada,-59,Montréal,Montréal,5/1/2021,-56
 STL,Canada,-59,Montréal,Montréal,5/1/2021,-51
 RTL,Canada,-59,Montréal,Montréal,5/1/2021,-55
-exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,5/1/2021,-57
 CRTL - Lanaudière,Canada,-59,Montréal,Montréal,5/1/2021,-48
+exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,5/1/2021,-57
 exo Terrebonne-Mascouche,Canada,-40,Montréal,Montréal,9/24/2021,-19
 exo Sud-Ouest,Canada,-40,Montréal,Montréal,9/24/2021,-33
 exo Sorel-Varennes,Canada,-40,Montréal,Montréal,9/24/2021,-1
@@ -9765,8 +9779,8 @@ Saint-Jean-sur-Richelieu,Canada,-40,Montréal,Montréal,9/24/2021,-59
 STM,Canada,-40,Montréal,Montréal,9/24/2021,-35
 STL,Canada,-40,Montréal,Montréal,9/24/2021,-27
 RTL,Canada,-40,Montréal,Montréal,9/24/2021,-34
-exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,9/24/2021,-33
 CRTL - Lanaudière,Canada,-40,Montréal,Montréal,9/24/2021,-17
+exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,9/24/2021,-33
 exo Terrebonne-Mascouche,Canada,-3,Montréal,Montréal,3/8/2020,7
 exo Sud-Ouest,Canada,-3,Montréal,Montréal,3/8/2020,2
 exo Sorel-Varennes,Canada,-3,Montréal,Montréal,3/8/2020,0
@@ -9781,8 +9795,8 @@ Saint-Jean-sur-Richelieu,Canada,-3,Montréal,Montréal,3/8/2020,-1
 STM,Canada,-3,Montréal,Montréal,3/8/2020,-3
 STL,Canada,-3,Montréal,Montréal,3/8/2020,4
 RTL,Canada,-3,Montréal,Montréal,3/8/2020,-4
-exo Vallée-du-Richelieu,Canada,-3,Montréal,Montréal,3/8/2020,-2
 CRTL - Lanaudière,Canada,-3,Montréal,Montréal,3/8/2020,25
+exo Vallée-du-Richelieu,Canada,-3,Montréal,Montréal,3/8/2020,-2
 exo Terrebonne-Mascouche,Canada,-55,Montréal,Montréal,5/15/2021,-37
 exo Sud-Ouest,Canada,-55,Montréal,Montréal,5/15/2021,-54
 exo Sorel-Varennes,Canada,-55,Montréal,Montréal,5/15/2021,-44
@@ -9829,8 +9843,8 @@ Saint-Jean-sur-Richelieu,Canada,-52,Montréal,Montréal,6/23/2021,-63
 STM,Canada,-52,Montréal,Montréal,6/23/2021,-45
 STL,Canada,-52,Montréal,Montréal,6/23/2021,-37
 RTL,Canada,-52,Montréal,Montréal,6/23/2021,-43
-exo Vallée-du-Richelieu,Canada,-52,Montréal,Montréal,6/23/2021,-38
 CRTL - Lanaudière,Canada,-52,Montréal,Montréal,6/23/2021,-31
+exo Vallée-du-Richelieu,Canada,-52,Montréal,Montréal,6/23/2021,-38
 exo Terrebonne-Mascouche,Canada,1,Montréal,Montréal,2/15/2020,8
 exo Sud-Ouest,Canada,1,Montréal,Montréal,2/15/2020,0
 exo Sorel-Varennes,Canada,1,Montréal,Montréal,2/15/2020,8
@@ -9845,23 +9859,23 @@ Saint-Jean-sur-Richelieu,Canada,1,Montréal,Montréal,2/15/2020,-1
 STM,Canada,1,Montréal,Montréal,2/15/2020,5
 STL,Canada,1,Montréal,Montréal,2/15/2020,7
 RTL,Canada,1,Montréal,Montréal,2/15/2020,6
-exo Vallée-du-Richelieu,Canada,1,Montréal,Montréal,2/15/2020,2
 CRTL - Lanaudière,Canada,1,Montréal,Montréal,2/15/2020,13
-exo Terrebonne-Mascouche,Canada,-38,Montréal,Montréal,10/16/2021,-34
-exo Sud-Ouest,Canada,-38,Montréal,Montréal,10/16/2021,-36
-exo Sorel-Varennes,Canada,-38,Montréal,Montréal,10/16/2021,-40
-exo Roussillon,Canada,-38,Montréal,Montréal,10/16/2021,-45
-exo Le Richelain,Canada,-38,Montréal,Montréal,10/16/2021,-48
-exo Laurentides,Canada,-38,Montréal,Montréal,10/16/2021,-16
+exo Vallée-du-Richelieu,Canada,1,Montréal,Montréal,2/15/2020,2
+exo Terrebonne-Mascouche,Canada,-38,Montréal,Montréal,10/16/2021,-33
+exo Sud-Ouest,Canada,-38,Montréal,Montréal,10/16/2021,-35
+exo Sorel-Varennes,Canada,-38,Montréal,Montréal,10/16/2021,-39
+exo Roussillon,Canada,-38,Montréal,Montréal,10/16/2021,-44
+exo Le Richelain,Canada,-38,Montréal,Montréal,10/16/2021,-47
+exo Laurentides,Canada,-38,Montréal,Montréal,10/16/2021,-15
 exo La Presqu'Île,Canada,-38,Montréal,Montréal,10/16/2021,-47
-exo L'Assomption,Canada,-38,Montréal,Montréal,10/16/2021,-32
+exo L'Assomption,Canada,-38,Montréal,Montréal,10/16/2021,-31
 exo Haut-Saint-Laurent,Canada,-38,Montréal,Montréal,10/16/2021,-31
-exo - Trains,Canada,-38,Montréal,Montréal,10/16/2021,-17
+exo - Trains,Canada,-38,Montréal,Montréal,10/16/2021,-16
 Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,10/16/2021,-66
-STM,Canada,-38,Montréal,Montréal,10/16/2021,-40
-STL,Canada,-38,Montréal,Montréal,10/16/2021,-36
-RTL,Canada,-38,Montréal,Montréal,10/16/2021,-45
-CRTL - Lanaudière,Canada,-38,Montréal,Montréal,10/16/2021,-36
+STM,Canada,-38,Montréal,Montréal,10/16/2021,-39
+STL,Canada,-38,Montréal,Montréal,10/16/2021,-35
+RTL,Canada,-38,Montréal,Montréal,10/16/2021,-44
+CRTL - Lanaudière,Canada,-38,Montréal,Montréal,10/16/2021,-35
 exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,10/16/2021,-56
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,9/18/2020,-48
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,9/18/2020,-59
@@ -9909,8 +9923,8 @@ Saint-Jean-sur-Richelieu,Canada,-39,Montréal,Montréal,9/23/2021,-52
 STM,Canada,-39,Montréal,Montréal,9/23/2021,-31
 STL,Canada,-39,Montréal,Montréal,9/23/2021,-19
 RTL,Canada,-39,Montréal,Montréal,9/23/2021,-25
-exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,9/23/2021,-24
 CRTL - Lanaudière,Canada,-39,Montréal,Montréal,9/23/2021,-7
+exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,9/23/2021,-24
 exo Terrebonne-Mascouche,Canada,-3,Montréal,Montréal,3/9/2020,1
 exo Sud-Ouest,Canada,-3,Montréal,Montréal,3/9/2020,-1
 exo Sorel-Varennes,Canada,-3,Montréal,Montréal,3/9/2020,6
@@ -9925,8 +9939,8 @@ Saint-Jean-sur-Richelieu,Canada,-3,Montréal,Montréal,3/9/2020,5
 STM,Canada,-3,Montréal,Montréal,3/9/2020,-1
 STL,Canada,-3,Montréal,Montréal,3/9/2020,0
 RTL,Canada,-3,Montréal,Montréal,3/9/2020,1
-exo Vallée-du-Richelieu,Canada,-3,Montréal,Montréal,3/9/2020,6
 CRTL - Lanaudière,Canada,-3,Montréal,Montréal,3/9/2020,3
+exo Vallée-du-Richelieu,Canada,-3,Montréal,Montréal,3/9/2020,6
 exo Vallée-du-Richelieu,Canada,-78,Montréal,Montréal,4/19/2020,-92
 exo Terrebonne-Mascouche,Canada,-78,Montréal,Montréal,4/19/2020,-82
 exo Sud-Ouest,Canada,-78,Montréal,Montréal,4/19/2020,-85
@@ -9973,8 +9987,8 @@ Saint-Jean-sur-Richelieu,Canada,-50,Montréal,Montréal,8/23/2020,-66
 STM,Canada,-50,Montréal,Montréal,8/23/2020,-51
 STL,Canada,-50,Montréal,Montréal,8/23/2020,-46
 RTL,Canada,-50,Montréal,Montréal,8/23/2020,-51
-exo Vallée-du-Richelieu,Canada,-50,Montréal,Montréal,8/23/2020,-47
 CRTL - Lanaudière,Canada,-50,Montréal,Montréal,8/23/2020,-39
+exo Vallée-du-Richelieu,Canada,-50,Montréal,Montréal,8/23/2020,-47
 exo Terrebonne-Mascouche,Canada,-56,Montréal,Montréal,5/23/2021,-36
 exo Sud-Ouest,Canada,-56,Montréal,Montréal,5/23/2021,-55
 exo Sorel-Varennes,Canada,-56,Montréal,Montréal,5/23/2021,-34
@@ -10005,8 +10019,8 @@ Saint-Jean-sur-Richelieu,Canada,-55,Montréal,Montréal,6/27/2020,-57
 STM,Canada,-55,Montréal,Montréal,6/27/2020,-50
 STL,Canada,-55,Montréal,Montréal,6/27/2020,-43
 RTL,Canada,-55,Montréal,Montréal,6/27/2020,-48
-exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,6/27/2020,-42
 CRTL - Lanaudière,Canada,-55,Montréal,Montréal,6/27/2020,-35
+exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,6/27/2020,-42
 exo Vallée-du-Richelieu,Canada,-75,Montréal,Montréal,5/11/2020,-83
 exo Terrebonne-Mascouche,Canada,-75,Montréal,Montréal,5/11/2020,-76
 exo Sud-Ouest,Canada,-75,Montréal,Montréal,5/11/2020,-82
@@ -10085,8 +10099,8 @@ Saint-Jean-sur-Richelieu,Canada,-62,Montréal,Montréal,8/26/2020,-65
 STM,Canada,-62,Montréal,Montréal,8/26/2020,-60
 STL,Canada,-62,Montréal,Montréal,8/26/2020,-54
 RTL,Canada,-62,Montréal,Montréal,8/26/2020,-61
-exo Vallée-du-Richelieu,Canada,-62,Montréal,Montréal,8/26/2020,-59
 CRTL - Lanaudière,Canada,-62,Montréal,Montréal,8/26/2020,-50
+exo Vallée-du-Richelieu,Canada,-62,Montréal,Montréal,8/26/2020,-59
 exo Terrebonne-Mascouche,Canada,-59,Montréal,Montréal,4/18/2021,-41
 exo Sud-Ouest,Canada,-59,Montréal,Montréal,4/18/2021,-55
 exo Sorel-Varennes,Canada,-59,Montréal,Montréal,4/18/2021,-48
@@ -10101,8 +10115,8 @@ Saint-Jean-sur-Richelieu,Canada,-59,Montréal,Montréal,4/18/2021,-78
 STM,Canada,-59,Montréal,Montréal,4/18/2021,-57
 STL,Canada,-59,Montréal,Montréal,4/18/2021,-52
 RTL,Canada,-59,Montréal,Montréal,4/18/2021,-54
-exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,4/18/2021,-49
 CRTL - Lanaudière,Canada,-59,Montréal,Montréal,4/18/2021,-44
+exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,4/18/2021,-49
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,4/11/2021,-38
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,4/11/2021,-54
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,4/11/2021,-40
@@ -10117,8 +10131,8 @@ Saint-Jean-sur-Richelieu,Canada,-57,Montréal,Montréal,4/11/2021,-74
 STM,Canada,-57,Montréal,Montréal,4/11/2021,-55
 STL,Canada,-57,Montréal,Montréal,4/11/2021,-48
 RTL,Canada,-57,Montréal,Montréal,4/11/2021,-52
-exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,4/11/2021,-47
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,4/11/2021,-41
+exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,4/11/2021,-47
 exo Terrebonne-Mascouche,Canada,-50,Montréal,Montréal,8/10/2020,-36
 exo Sud-Ouest,Canada,-50,Montréal,Montréal,8/10/2020,-49
 exo Sorel-Varennes,Canada,-50,Montréal,Montréal,8/10/2020,-51
@@ -10133,8 +10147,8 @@ Saint-Jean-sur-Richelieu,Canada,-50,Montréal,Montréal,8/10/2020,-63
 STM,Canada,-50,Montréal,Montréal,8/10/2020,-51
 STL,Canada,-50,Montréal,Montréal,8/10/2020,-44
 RTL,Canada,-50,Montréal,Montréal,8/10/2020,-51
-exo Vallée-du-Richelieu,Canada,-50,Montréal,Montréal,8/10/2020,-43
 CRTL - Lanaudière,Canada,-50,Montréal,Montréal,8/10/2020,-38
+exo Vallée-du-Richelieu,Canada,-50,Montréal,Montréal,8/10/2020,-43
 exo Terrebonne-Mascouche,Canada,-69,Montréal,Montréal,11/27/2020,-59
 exo Sud-Ouest,Canada,-69,Montréal,Montréal,11/27/2020,-68
 exo Sorel-Varennes,Canada,-69,Montréal,Montréal,11/27/2020,-68
@@ -10153,19 +10167,19 @@ CRTL - Lanaudière,Canada,-69,Montréal,Montréal,11/27/2020,-58
 exo Vallée-du-Richelieu,Canada,-69,Montréal,Montréal,11/27/2020,-67
 exo Terrebonne-Mascouche,Canada,-38,Montréal,Montréal,10/13/2021,-19
 exo Sud-Ouest,Canada,-38,Montréal,Montréal,10/13/2021,-25
-exo Sorel-Varennes,Canada,-38,Montréal,Montréal,10/13/2021,-25
-exo Roussillon,Canada,-38,Montréal,Montréal,10/13/2021,-38
+exo Sorel-Varennes,Canada,-38,Montréal,Montréal,10/13/2021,-24
+exo Roussillon,Canada,-38,Montréal,Montréal,10/13/2021,-37
 exo Le Richelain,Canada,-38,Montréal,Montréal,10/13/2021,-37
-exo Laurentides,Canada,-38,Montréal,Montréal,10/13/2021,4
+exo Laurentides,Canada,-38,Montréal,Montréal,10/13/2021,5
 exo La Presqu'Île,Canada,-38,Montréal,Montréal,10/13/2021,-40
-exo L'Assomption,Canada,-38,Montréal,Montréal,10/13/2021,-18
+exo L'Assomption,Canada,-38,Montréal,Montréal,10/13/2021,-17
 exo Haut-Saint-Laurent,Canada,-38,Montréal,Montréal,10/13/2021,-13
 exo - Trains,Canada,-38,Montréal,Montréal,10/13/2021,-10
 Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,10/13/2021,-55
-STM,Canada,-38,Montréal,Montréal,10/13/2021,-34
+STM,Canada,-38,Montréal,Montréal,10/13/2021,-33
 STL,Canada,-38,Montréal,Montréal,10/13/2021,-25
-RTL,Canada,-38,Montréal,Montréal,10/13/2021,-34
-CRTL - Lanaudière,Canada,-38,Montréal,Montréal,10/13/2021,-17
+RTL,Canada,-38,Montréal,Montréal,10/13/2021,-33
+CRTL - Lanaudière,Canada,-38,Montréal,Montréal,10/13/2021,-16
 exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,10/13/2021,-50
 exo Terrebonne-Mascouche,Canada,2,Montréal,Montréal,2/18/2020,2
 exo Sud-Ouest,Canada,2,Montréal,Montréal,2/18/2020,4
@@ -10181,9 +10195,8 @@ Saint-Jean-sur-Richelieu,Canada,2,Montréal,Montréal,2/18/2020,2
 STM,Canada,2,Montréal,Montréal,2/18/2020,4
 STL,Canada,2,Montréal,Montréal,2/18/2020,2
 RTL,Canada,2,Montréal,Montréal,2/18/2020,3
-exo Vallée-du-Richelieu,Canada,2,Montréal,Montréal,2/18/2020,5
 CRTL - Lanaudière,Canada,2,Montréal,Montréal,2/18/2020,-4
-exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,10/19/2020,-71
+exo Vallée-du-Richelieu,Canada,2,Montréal,Montréal,2/18/2020,5
 exo Terrebonne-Mascouche,Canada,-61,Montréal,Montréal,10/19/2020,-56
 exo Sud-Ouest,Canada,-61,Montréal,Montréal,10/19/2020,-64
 exo Sorel-Varennes,Canada,-61,Montréal,Montréal,10/19/2020,-64
@@ -10199,7 +10212,7 @@ STM,Canada,-61,Montréal,Montréal,10/19/2020,-65
 STL,Canada,-61,Montréal,Montréal,10/19/2020,-63
 RTL,Canada,-61,Montréal,Montréal,10/19/2020,-65
 CRTL - Lanaudière,Canada,-61,Montréal,Montréal,10/19/2020,-57
-exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,5/27/2020,-72
+exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,10/19/2020,-71
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,5/27/2020,-69
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,5/27/2020,-71
 exo Sorel-Varennes,Canada,-71,Montréal,Montréal,5/27/2020,-72
@@ -10215,6 +10228,7 @@ STM,Canada,-71,Montréal,Montréal,5/27/2020,-72
 STL,Canada,-71,Montréal,Montréal,5/27/2020,-68
 RTL,Canada,-71,Montréal,Montréal,5/27/2020,-74
 CRTL - Lanaudière,Canada,-71,Montréal,Montréal,5/27/2020,-53
+exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,5/27/2020,-72
 exo Terrebonne-Mascouche,Canada,-48,Montréal,Montréal,7/6/2021,-18
 exo Sud-Ouest,Canada,-48,Montréal,Montréal,7/6/2021,-47
 exo Sorel-Varennes,Canada,-48,Montréal,Montréal,7/6/2021,-28
@@ -10231,7 +10245,6 @@ STL,Canada,-48,Montréal,Montréal,7/6/2021,-34
 RTL,Canada,-48,Montréal,Montréal,7/6/2021,-46
 CRTL - Lanaudière,Canada,-48,Montréal,Montréal,7/6/2021,-17
 exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,7/6/2021,-39
-exo Vallée-du-Richelieu,Canada,-70,Montréal,Montréal,6/11/2020,-73
 exo Terrebonne-Mascouche,Canada,-70,Montréal,Montréal,6/11/2020,-68
 exo Sud-Ouest,Canada,-70,Montréal,Montréal,6/11/2020,-73
 exo Sorel-Varennes,Canada,-70,Montréal,Montréal,6/11/2020,-67
@@ -10247,6 +10260,7 @@ STM,Canada,-70,Montréal,Montréal,6/11/2020,-69
 STL,Canada,-70,Montréal,Montréal,6/11/2020,-66
 RTL,Canada,-70,Montréal,Montréal,6/11/2020,-73
 CRTL - Lanaudière,Canada,-70,Montréal,Montréal,6/11/2020,-57
+exo Vallée-du-Richelieu,Canada,-70,Montréal,Montréal,6/11/2020,-73
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,6/9/2021,-38
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,6/9/2021,-52
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,6/9/2021,-40
@@ -10261,8 +10275,8 @@ Saint-Jean-sur-Richelieu,Canada,-57,Montréal,Montréal,6/9/2021,-71
 STM,Canada,-57,Montréal,Montréal,6/9/2021,-51
 STL,Canada,-57,Montréal,Montréal,6/9/2021,-44
 RTL,Canada,-57,Montréal,Montréal,6/9/2021,-50
-exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,6/9/2021,-54
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,6/9/2021,-44
+exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,6/9/2021,-54
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,9/8/2020,-49
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,9/8/2020,-50
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,9/8/2020,-58
@@ -10309,8 +10323,8 @@ Saint-Jean-sur-Richelieu,Canada,-33,Montréal,Montréal,8/28/2021,-53
 STM,Canada,-33,Montréal,Montréal,8/28/2021,-34
 STL,Canada,-33,Montréal,Montréal,8/28/2021,-27
 RTL,Canada,-33,Montréal,Montréal,8/28/2021,-34
-exo Vallée-du-Richelieu,Canada,-33,Montréal,Montréal,8/28/2021,-26
 CRTL - Lanaudière,Canada,-33,Montréal,Montréal,8/28/2021,-17
+exo Vallée-du-Richelieu,Canada,-33,Montréal,Montréal,8/28/2021,-26
 exo Vallée-du-Richelieu,Canada,-81,Montréal,Montréal,3/25/2020,-91
 exo Terrebonne-Mascouche,Canada,-81,Montréal,Montréal,3/25/2020,-81
 exo Sud-Ouest,Canada,-81,Montréal,Montréal,3/25/2020,-87
@@ -10341,8 +10355,8 @@ Saint-Jean-sur-Richelieu,Canada,-37,Montréal,Montréal,9/7/2021,-49
 STM,Canada,-37,Montréal,Montréal,9/7/2021,-26
 STL,Canada,-37,Montréal,Montréal,9/7/2021,-18
 RTL,Canada,-37,Montréal,Montréal,9/7/2021,-18
-exo Vallée-du-Richelieu,Canada,-37,Montréal,Montréal,9/7/2021,-18
 CRTL - Lanaudière,Canada,-37,Montréal,Montréal,9/7/2021,-9
+exo Vallée-du-Richelieu,Canada,-37,Montréal,Montréal,9/7/2021,-18
 exo Vallée-du-Richelieu,Canada,-78,Montréal,Montréal,1/11/2021,-84
 exo Terrebonne-Mascouche,Canada,-78,Montréal,Montréal,1/11/2021,-73
 exo Sud-Ouest,Canada,-78,Montréal,Montréal,1/11/2021,-80
@@ -10390,7 +10404,7 @@ STM,Canada,-44,Montréal,Montréal,9/30/2021,-31
 STL,Canada,-44,Montréal,Montréal,9/30/2021,-18
 RTL,Canada,-44,Montréal,Montréal,9/30/2021,-26
 CRTL - Lanaudière,Canada,-44,Montréal,Montréal,9/30/2021,-11
-exo Vallée-du-Richelieu,Canada,-44,Montréal,Montréal,9/30/2021,-39
+exo Vallée-du-Richelieu,Canada,-44,Montréal,Montréal,9/30/2021,-38
 exo Terrebonne-Mascouche,Canada,-1,Montréal,Montréal,3/2/2020,-4
 exo Sud-Ouest,Canada,-1,Montréal,Montréal,3/2/2020,-7
 exo Sorel-Varennes,Canada,-1,Montréal,Montréal,3/2/2020,13
@@ -10405,8 +10419,8 @@ Saint-Jean-sur-Richelieu,Canada,-1,Montréal,Montréal,3/2/2020,4
 STM,Canada,-1,Montréal,Montréal,3/2/2020,-7
 STL,Canada,-1,Montréal,Montréal,3/2/2020,-5
 RTL,Canada,-1,Montréal,Montréal,3/2/2020,-1
-exo Vallée-du-Richelieu,Canada,-1,Montréal,Montréal,3/2/2020,2
 CRTL - Lanaudière,Canada,-1,Montréal,Montréal,3/2/2020,10
+exo Vallée-du-Richelieu,Canada,-1,Montréal,Montréal,3/2/2020,2
 exo Terrebonne-Mascouche,Canada,-48,Montréal,Montréal,6/12/2021,-31
 exo Sud-Ouest,Canada,-48,Montréal,Montréal,6/12/2021,-44
 exo Sorel-Varennes,Canada,-48,Montréal,Montréal,6/12/2021,-30
@@ -10421,8 +10435,8 @@ Saint-Jean-sur-Richelieu,Canada,-48,Montréal,Montréal,6/12/2021,-63
 STM,Canada,-48,Montréal,Montréal,6/12/2021,-42
 STL,Canada,-48,Montréal,Montréal,6/12/2021,-36
 RTL,Canada,-48,Montréal,Montréal,6/12/2021,-41
-exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,6/12/2021,-38
 CRTL - Lanaudière,Canada,-48,Montréal,Montréal,6/12/2021,-31
+exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,6/12/2021,-38
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,2/2/2021,-82
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,2/2/2021,-74
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,2/2/2021,-81
@@ -10453,9 +10467,9 @@ Saint-Jean-sur-Richelieu,Canada,-57,Montréal,Montréal,6/1/2021,-73
 STM,Canada,-57,Montréal,Montréal,6/1/2021,-54
 STL,Canada,-57,Montréal,Montréal,6/1/2021,-44
 RTL,Canada,-57,Montréal,Montréal,6/1/2021,-51
-exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,6/1/2021,-51
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,6/1/2021,-44
-exo Terrebonne-Mascouche,Canada,-56,Montréal,Montréal,10/11/2021,-50
+exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,6/1/2021,-51
+exo Terrebonne-Mascouche,Canada,-56,Montréal,Montréal,10/11/2021,-49
 exo Sud-Ouest,Canada,-56,Montréal,Montréal,10/11/2021,-40
 exo Sorel-Varennes,Canada,-56,Montréal,Montréal,10/11/2021,-37
 exo Roussillon,Canada,-56,Montréal,Montréal,10/11/2021,-67
@@ -10465,7 +10479,7 @@ exo La Presqu'Île,Canada,-56,Montréal,Montréal,10/11/2021,-63
 exo L'Assomption,Canada,-56,Montréal,Montréal,10/11/2021,-33
 exo Haut-Saint-Laurent,Canada,-56,Montréal,Montréal,10/11/2021,-39
 exo - Trains,Canada,-56,Montréal,Montréal,10/11/2021,-56
-Saint-Jean-sur-Richelieu,Canada,-56,Montréal,Montréal,10/11/2021,-71
+Saint-Jean-sur-Richelieu,Canada,-56,Montréal,Montréal,10/11/2021,-70
 STM,Canada,-56,Montréal,Montréal,10/11/2021,-52
 STL,Canada,-56,Montréal,Montréal,10/11/2021,-47
 RTL,Canada,-56,Montréal,Montréal,10/11/2021,-52
@@ -10485,8 +10499,8 @@ Saint-Jean-sur-Richelieu,Canada,-8,Montréal,Montréal,2/20/2020,-2
 STM,Canada,-8,Montréal,Montréal,2/20/2020,-9
 STL,Canada,-8,Montréal,Montréal,2/20/2020,-9
 RTL,Canada,-8,Montréal,Montréal,2/20/2020,-8
-exo Vallée-du-Richelieu,Canada,-8,Montréal,Montréal,2/20/2020,-4
 CRTL - Lanaudière,Canada,-8,Montréal,Montréal,2/20/2020,-8
+exo Vallée-du-Richelieu,Canada,-8,Montréal,Montréal,2/20/2020,-4
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,5/17/2021,-40
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,5/17/2021,-53
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,5/17/2021,-47
@@ -10503,7 +10517,6 @@ STL,Canada,-57,Montréal,Montréal,5/17/2021,-50
 RTL,Canada,-57,Montréal,Montréal,5/17/2021,-55
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,5/17/2021,-43
 exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,5/17/2021,-56
-exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,11/30/2020,-72
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,11/30/2020,-63
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,11/30/2020,-69
 exo Sorel-Varennes,Canada,-71,Montréal,Montréal,11/30/2020,-69
@@ -10519,6 +10532,7 @@ STM,Canada,-71,Montréal,Montréal,11/30/2020,-70
 STL,Canada,-71,Montréal,Montréal,11/30/2020,-66
 RTL,Canada,-71,Montréal,Montréal,11/30/2020,-70
 CRTL - Lanaudière,Canada,-71,Montréal,Montréal,11/30/2020,-59
+exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,11/30/2020,-72
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,5/6/2021,-51
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,5/6/2021,-62
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,5/6/2021,-58
@@ -10549,8 +10563,8 @@ Saint-Jean-sur-Richelieu,Canada,-58,Montréal,Montréal,7/10/2020,-55
 STM,Canada,-58,Montréal,Montréal,7/10/2020,-48
 STL,Canada,-58,Montréal,Montréal,7/10/2020,-39
 RTL,Canada,-58,Montréal,Montréal,7/10/2020,-46
-exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,7/10/2020,-43
 CRTL - Lanaudière,Canada,-58,Montréal,Montréal,7/10/2020,-33
+exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,7/10/2020,-43
 exo Terrebonne-Mascouche,Canada,-55,Montréal,Montréal,9/20/2020,-42
 exo Sud-Ouest,Canada,-55,Montréal,Montréal,9/20/2020,-48
 exo Sorel-Varennes,Canada,-55,Montréal,Montréal,9/20/2020,-50
@@ -10581,8 +10595,8 @@ Saint-Jean-sur-Richelieu,Canada,-61,Montréal,Montréal,11/8/2020,-77
 STM,Canada,-61,Montréal,Montréal,11/8/2020,-65
 STL,Canada,-61,Montréal,Montréal,11/8/2020,-60
 RTL,Canada,-61,Montréal,Montréal,11/8/2020,-63
-exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,11/8/2020,-62
 CRTL - Lanaudière,Canada,-61,Montréal,Montréal,11/8/2020,-54
+exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,11/8/2020,-62
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,2/15/2021,-76
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,2/15/2021,-70
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,2/15/2021,-78
@@ -10613,8 +10627,8 @@ Saint-Jean-sur-Richelieu,Canada,-54,Montréal,Montréal,9/13/2020,-68
 STM,Canada,-54,Montréal,Montréal,9/13/2020,-56
 STL,Canada,-54,Montréal,Montréal,9/13/2020,-52
 RTL,Canada,-54,Montréal,Montréal,9/13/2020,-54
-exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,9/13/2020,-47
 CRTL - Lanaudière,Canada,-54,Montréal,Montréal,9/13/2020,-37
+exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,9/13/2020,-47
 exo Terrebonne-Mascouche,Canada,-62,Montréal,Montréal,4/6/2021,-48
 exo Sud-Ouest,Canada,-62,Montréal,Montréal,4/6/2021,-57
 exo Sorel-Varennes,Canada,-62,Montréal,Montréal,4/6/2021,-54
@@ -10645,8 +10659,8 @@ Saint-Jean-sur-Richelieu,Canada,-55,Montréal,Montréal,8/5/2020,-65
 STM,Canada,-55,Montréal,Montréal,8/5/2020,-51
 STL,Canada,-55,Montréal,Montréal,8/5/2020,-44
 RTL,Canada,-55,Montréal,Montréal,8/5/2020,-49
-exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,8/5/2020,-45
 CRTL - Lanaudière,Canada,-55,Montréal,Montréal,8/5/2020,-36
+exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,8/5/2020,-45
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,8/21/2020,-49
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,8/21/2020,-58
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,8/21/2020,-66
@@ -10663,7 +10677,6 @@ STL,Canada,-57,Montréal,Montréal,8/21/2020,-54
 RTL,Canada,-57,Montréal,Montréal,8/21/2020,-62
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,8/21/2020,-51
 exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,8/21/2020,-68
-exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,12/9/2020,-71
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,12/9/2020,-64
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,12/9/2020,-72
 exo Sorel-Varennes,Canada,-71,Montréal,Montréal,12/9/2020,-71
@@ -10679,6 +10692,7 @@ STM,Canada,-71,Montréal,Montréal,12/9/2020,-71
 STL,Canada,-71,Montréal,Montréal,12/9/2020,-69
 RTL,Canada,-71,Montréal,Montréal,12/9/2020,-71
 CRTL - Lanaudière,Canada,-71,Montréal,Montréal,12/9/2020,-64
+exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,12/9/2020,-71
 exo Vallée-du-Richelieu,Canada,-82,Montréal,Montréal,4/22/2020,-92
 exo Terrebonne-Mascouche,Canada,-82,Montréal,Montréal,4/22/2020,-87
 exo Sud-Ouest,Canada,-82,Montréal,Montréal,4/22/2020,-85
@@ -10741,8 +10755,8 @@ Saint-Jean-sur-Richelieu,Canada,-65,Montréal,Montréal,5/31/2020,-79
 STM,Canada,-65,Montréal,Montréal,5/31/2020,-66
 STL,Canada,-65,Montréal,Montréal,5/31/2020,-64
 RTL,Canada,-65,Montréal,Montréal,5/31/2020,-69
-exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,5/31/2020,-66
 CRTL - Lanaudière,Canada,-65,Montréal,Montréal,5/31/2020,-58
+exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,5/31/2020,-66
 exo Terrebonne-Mascouche,Canada,-52,Montréal,Montréal,7/2/2021,-31
 exo Sud-Ouest,Canada,-52,Montréal,Montréal,7/2/2021,-49
 exo Sorel-Varennes,Canada,-52,Montréal,Montréal,7/2/2021,-24
@@ -10789,8 +10803,8 @@ Saint-Jean-sur-Richelieu,Canada,-46,Montréal,Montréal,6/21/2021,-55
 STM,Canada,-46,Montréal,Montréal,6/21/2021,-33
 STL,Canada,-46,Montréal,Montréal,6/21/2021,-28
 RTL,Canada,-46,Montréal,Montréal,6/21/2021,-30
-exo Vallée-du-Richelieu,Canada,-46,Montréal,Montréal,6/21/2021,-25
 CRTL - Lanaudière,Canada,-46,Montréal,Montréal,6/21/2021,-17
+exo Vallée-du-Richelieu,Canada,-46,Montréal,Montréal,6/21/2021,-25
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,9/26/2020,-45
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,9/26/2020,-56
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,9/26/2020,-53
@@ -10837,8 +10851,8 @@ Saint-Jean-sur-Richelieu,Canada,-42,Montréal,Montréal,8/31/2021,-45
 STM,Canada,-42,Montréal,Montréal,8/31/2021,-27
 STL,Canada,-42,Montréal,Montréal,8/31/2021,-14
 RTL,Canada,-42,Montréal,Montréal,8/31/2021,-23
-exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,8/31/2021,-5
 CRTL - Lanaudière,Canada,-42,Montréal,Montréal,8/31/2021,-4
+exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,8/31/2021,-5
 exo Vallée-du-Richelieu,Canada,-81,Montréal,Montréal,4/1/2020,-87
 exo Terrebonne-Mascouche,Canada,-81,Montréal,Montréal,4/1/2020,-83
 exo Sud-Ouest,Canada,-81,Montréal,Montréal,4/1/2020,-83
@@ -10885,8 +10899,8 @@ Saint-Jean-sur-Richelieu,Canada,-42,Montréal,Montréal,8/2/2021,-63
 STM,Canada,-42,Montréal,Montréal,8/2/2021,-40
 STL,Canada,-42,Montréal,Montréal,8/2/2021,-32
 RTL,Canada,-42,Montréal,Montréal,8/2/2021,-40
-exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,8/2/2021,-39
 CRTL - Lanaudière,Canada,-42,Montréal,Montréal,8/2/2021,-25
+exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,8/2/2021,-39
 exo Vallée-du-Richelieu,Canada,-81,Montréal,Montréal,4/30/2020,-89
 exo Terrebonne-Mascouche,Canada,-81,Montréal,Montréal,4/30/2020,-88
 exo Sud-Ouest,Canada,-81,Montréal,Montréal,4/30/2020,-87
@@ -10965,8 +10979,8 @@ Saint-Jean-sur-Richelieu,Canada,-42,Montréal,Montréal,7/11/2021,-60
 STM,Canada,-42,Montréal,Montréal,7/11/2021,-37
 STL,Canada,-42,Montréal,Montréal,7/11/2021,-30
 RTL,Canada,-42,Montréal,Montréal,7/11/2021,-37
-exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,7/11/2021,-29
 CRTL - Lanaudière,Canada,-42,Montréal,Montréal,7/11/2021,-20
+exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,7/11/2021,-29
 exo Vallée-du-Richelieu,Canada,-75,Montréal,Montréal,5/22/2020,-81
 exo Terrebonne-Mascouche,Canada,-75,Montréal,Montréal,5/22/2020,-79
 exo Sud-Ouest,Canada,-75,Montréal,Montréal,5/22/2020,-78
@@ -11029,8 +11043,8 @@ Saint-Jean-sur-Richelieu,Canada,-59,Montréal,Montréal,7/16/2020,-55
 STM,Canada,-59,Montréal,Montréal,7/16/2020,-48
 STL,Canada,-59,Montréal,Montréal,7/16/2020,-38
 RTL,Canada,-59,Montréal,Montréal,7/16/2020,-46
-exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,7/16/2020,-42
 CRTL - Lanaudière,Canada,-59,Montréal,Montréal,7/16/2020,-37
+exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,7/16/2020,-42
 exo Terrebonne-Mascouche,Canada,-35,Montréal,Montréal,9/13/2021,-5
 exo Sud-Ouest,Canada,-35,Montréal,Montréal,9/13/2021,-20
 exo Sorel-Varennes,Canada,-35,Montréal,Montréal,9/13/2021,20
@@ -11045,8 +11059,8 @@ Saint-Jean-sur-Richelieu,Canada,-35,Montréal,Montréal,9/13/2021,-48
 STM,Canada,-35,Montréal,Montréal,9/13/2021,-27
 STL,Canada,-35,Montréal,Montréal,9/13/2021,-13
 RTL,Canada,-35,Montréal,Montréal,9/13/2021,-18
-exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/13/2021,-3
 CRTL - Lanaudière,Canada,-35,Montréal,Montréal,9/13/2021,-8
+exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/13/2021,-3
 exo Vallée-du-Richelieu,Canada,-70,Montréal,Montréal,3/19/2020,-78
 exo Terrebonne-Mascouche,Canada,-70,Montréal,Montréal,3/19/2020,-71
 exo Sud-Ouest,Canada,-70,Montréal,Montréal,3/19/2020,-76
@@ -11077,8 +11091,8 @@ Saint-Jean-sur-Richelieu,Canada,-53,Montréal,Montréal,7/27/2020,-62
 STM,Canada,-53,Montréal,Montréal,7/27/2020,-51
 STL,Canada,-53,Montréal,Montréal,7/27/2020,-42
 RTL,Canada,-53,Montréal,Montréal,7/27/2020,-48
-exo Vallée-du-Richelieu,Canada,-53,Montréal,Montréal,7/27/2020,-43
 CRTL - Lanaudière,Canada,-53,Montréal,Montréal,7/27/2020,-45
+exo Vallée-du-Richelieu,Canada,-53,Montréal,Montréal,7/27/2020,-43
 exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,1/16/2021,-83
 exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,1/16/2021,-73
 exo Sud-Ouest,Canada,-73,Montréal,Montréal,1/16/2021,-76
@@ -11125,8 +11139,8 @@ Saint-Jean-sur-Richelieu,Canada,1,Montréal,Montréal,2/26/2020,3
 STM,Canada,1,Montréal,Montréal,2/26/2020,3
 STL,Canada,1,Montréal,Montréal,2/26/2020,3
 RTL,Canada,1,Montréal,Montréal,2/26/2020,1
-exo Vallée-du-Richelieu,Canada,1,Montréal,Montréal,2/26/2020,3
 CRTL - Lanaudière,Canada,1,Montréal,Montréal,2/26/2020,5
+exo Vallée-du-Richelieu,Canada,1,Montréal,Montréal,2/26/2020,3
 exo Terrebonne-Mascouche,Canada,-37,Montréal,Montréal,10/5/2021,-2
 exo Sud-Ouest,Canada,-37,Montréal,Montréal,10/5/2021,-23
 exo Sorel-Varennes,Canada,-37,Montréal,Montréal,10/5/2021,4
@@ -11135,8 +11149,8 @@ exo Le Richelain,Canada,-37,Montréal,Montréal,10/5/2021,-19
 exo Laurentides,Canada,-37,Montréal,Montréal,10/5/2021,20
 exo La Presqu'Île,Canada,-37,Montréal,Montréal,10/5/2021,-15
 exo L'Assomption,Canada,-37,Montréal,Montréal,10/5/2021,-12
-exo Haut-Saint-Laurent,Canada,-37,Montréal,Montréal,10/5/2021,-10
-exo - Trains,Canada,-37,Montréal,Montréal,10/5/2021,6
+exo Haut-Saint-Laurent,Canada,-37,Montréal,Montréal,10/5/2021,-9
+exo - Trains,Canada,-37,Montréal,Montréal,10/5/2021,7
 Saint-Jean-sur-Richelieu,Canada,-37,Montréal,Montréal,10/5/2021,-56
 STM,Canada,-37,Montréal,Montréal,10/5/2021,-31
 STL,Canada,-37,Montréal,Montréal,10/5/2021,-19
@@ -11205,8 +11219,8 @@ Saint-Jean-sur-Richelieu,Canada,-56,Montréal,Montréal,7/24/2020,-57
 STM,Canada,-56,Montréal,Montréal,7/24/2020,-47
 STL,Canada,-56,Montréal,Montréal,7/24/2020,-36
 RTL,Canada,-56,Montréal,Montréal,7/24/2020,-41
-exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,7/24/2020,-36
 CRTL - Lanaudière,Canada,-56,Montréal,Montréal,7/24/2020,-33
+exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,7/24/2020,-36
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,4/27/2021,-54
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,4/27/2021,-62
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,4/27/2021,-59
@@ -11253,8 +11267,8 @@ Saint-Jean-sur-Richelieu,Canada,-32,Montréal,Montréal,8/22/2021,-55
 STM,Canada,-32,Montréal,Montréal,8/22/2021,-30
 STL,Canada,-32,Montréal,Montréal,8/22/2021,-22
 RTL,Canada,-32,Montréal,Montréal,8/22/2021,-27
-exo Vallée-du-Richelieu,Canada,-32,Montréal,Montréal,8/22/2021,-13
 CRTL - Lanaudière,Canada,-32,Montréal,Montréal,8/22/2021,-10
+exo Vallée-du-Richelieu,Canada,-32,Montréal,Montréal,8/22/2021,-13
 exo Vallée-du-Richelieu,Canada,-84,Montréal,Montréal,4/10/2020,-93
 exo Terrebonne-Mascouche,Canada,-84,Montréal,Montréal,4/10/2020,-85
 exo Sud-Ouest,Canada,-84,Montréal,Montréal,4/10/2020,-86
@@ -11413,8 +11427,8 @@ Saint-Jean-sur-Richelieu,Canada,-37,Montréal,Montréal,7/31/2021,-62
 STM,Canada,-37,Montréal,Montréal,7/31/2021,-36
 STL,Canada,-37,Montréal,Montréal,7/31/2021,-27
 RTL,Canada,-37,Montréal,Montréal,7/31/2021,-39
-exo Vallée-du-Richelieu,Canada,-37,Montréal,Montréal,7/31/2021,-35
 CRTL - Lanaudière,Canada,-37,Montréal,Montréal,7/31/2021,-21
+exo Vallée-du-Richelieu,Canada,-37,Montréal,Montréal,7/31/2021,-35
 exo Vallée-du-Richelieu,Canada,-69,Montréal,Montréal,12/18/2020,-74
 exo Terrebonne-Mascouche,Canada,-69,Montréal,Montréal,12/18/2020,-64
 exo Sud-Ouest,Canada,-69,Montréal,Montréal,12/18/2020,-75
@@ -11589,8 +11603,8 @@ Saint-Jean-sur-Richelieu,Canada,-31,Montréal,Montréal,3/14/2020,-40
 STM,Canada,-31,Montréal,Montréal,3/14/2020,-34
 STL,Canada,-31,Montréal,Montréal,3/14/2020,-34
 RTL,Canada,-31,Montréal,Montréal,3/14/2020,-36
-exo Vallée-du-Richelieu,Canada,-31,Montréal,Montréal,3/14/2020,-39
 CRTL - Lanaudière,Canada,-31,Montréal,Montréal,3/14/2020,-30
+exo Vallée-du-Richelieu,Canada,-31,Montréal,Montréal,3/14/2020,-39
 exo Terrebonne-Mascouche,Canada,-62,Montréal,Montréal,3/29/2021,-49
 exo Sud-Ouest,Canada,-62,Montréal,Montréal,3/29/2021,-61
 exo Sorel-Varennes,Canada,-62,Montréal,Montréal,3/29/2021,-57
@@ -11607,7 +11621,6 @@ STL,Canada,-62,Montréal,Montréal,3/29/2021,-57
 RTL,Canada,-62,Montréal,Montréal,3/29/2021,-59
 CRTL - Lanaudière,Canada,-62,Montréal,Montréal,3/29/2021,-54
 exo Vallée-du-Richelieu,Canada,-62,Montréal,Montréal,3/29/2021,-63
-exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,12/31/2020,-72
 exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,12/31/2020,-58
 exo Sud-Ouest,Canada,-73,Montréal,Montréal,12/31/2020,-76
 exo Sorel-Varennes,Canada,-73,Montréal,Montréal,12/31/2020,-67
@@ -11623,6 +11636,7 @@ STM,Canada,-73,Montréal,Montréal,12/31/2020,-73
 STL,Canada,-73,Montréal,Montréal,12/31/2020,-73
 RTL,Canada,-73,Montréal,Montréal,12/31/2020,-74
 CRTL - Lanaudière,Canada,-73,Montréal,Montréal,12/31/2020,-68
+exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,12/31/2020,-72
 exo Terrebonne-Mascouche,Canada,-54,Montréal,Montréal,8/7/2020,-31
 exo Sud-Ouest,Canada,-54,Montréal,Montréal,8/7/2020,-52
 exo Sorel-Varennes,Canada,-54,Montréal,Montréal,8/7/2020,-41
@@ -11637,8 +11651,8 @@ Saint-Jean-sur-Richelieu,Canada,-54,Montréal,Montréal,8/7/2020,-64
 STM,Canada,-54,Montréal,Montréal,8/7/2020,-49
 STL,Canada,-54,Montréal,Montréal,8/7/2020,-42
 RTL,Canada,-54,Montréal,Montréal,8/7/2020,-49
-exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,8/7/2020,-45
 CRTL - Lanaudière,Canada,-54,Montréal,Montréal,8/7/2020,-34
+exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,8/7/2020,-45
 exo Terrebonne-Mascouche,Canada,0,Montréal,Montréal,3/3/2020,-1
 exo Sud-Ouest,Canada,0,Montréal,Montréal,3/3/2020,2
 exo Sorel-Varennes,Canada,0,Montréal,Montréal,3/3/2020,14
@@ -11653,8 +11667,8 @@ Saint-Jean-sur-Richelieu,Canada,0,Montréal,Montréal,3/3/2020,12
 STM,Canada,0,Montréal,Montréal,3/3/2020,-4
 STL,Canada,0,Montréal,Montréal,3/3/2020,3
 RTL,Canada,0,Montréal,Montréal,3/3/2020,2
-exo Vallée-du-Richelieu,Canada,0,Montréal,Montréal,3/3/2020,2
 CRTL - Lanaudière,Canada,0,Montréal,Montréal,3/3/2020,1
+exo Vallée-du-Richelieu,Canada,0,Montréal,Montréal,3/3/2020,2
 exo Terrebonne-Mascouche,Canada,-38,Montréal,Montréal,9/29/2021,-8
 exo Sud-Ouest,Canada,-38,Montréal,Montréal,9/29/2021,-24
 exo Sorel-Varennes,Canada,-38,Montréal,Montréal,9/29/2021,3
@@ -11669,8 +11683,8 @@ Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,9/29/2021,-59
 STM,Canada,-38,Montréal,Montréal,9/29/2021,-30
 STL,Canada,-38,Montréal,Montréal,9/29/2021,-18
 RTL,Canada,-38,Montréal,Montréal,9/29/2021,-26
-exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,9/29/2021,-35
 CRTL - Lanaudière,Canada,-38,Montréal,Montréal,9/29/2021,-16
+exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,9/29/2021,-35
 exo Terrebonne-Mascouche,Canada,-53,Montréal,Montréal,6/29/2020,-15
 exo Sud-Ouest,Canada,-53,Montréal,Montréal,6/29/2020,-55
 exo Sorel-Varennes,Canada,-53,Montréal,Montréal,6/29/2020,-36
@@ -11685,8 +11699,8 @@ Saint-Jean-sur-Richelieu,Canada,-53,Montréal,Montréal,6/29/2020,-51
 STM,Canada,-53,Montréal,Montréal,6/29/2020,-42
 STL,Canada,-53,Montréal,Montréal,6/29/2020,-36
 RTL,Canada,-53,Montréal,Montréal,6/29/2020,-38
-exo Vallée-du-Richelieu,Canada,-53,Montréal,Montréal,6/29/2020,-31
 CRTL - Lanaudière,Canada,-53,Montréal,Montréal,6/29/2020,-31
+exo Vallée-du-Richelieu,Canada,-53,Montréal,Montréal,6/29/2020,-31
 exo Vallée-du-Richelieu,Canada,-78,Montréal,Montréal,1/22/2021,-82
 exo Terrebonne-Mascouche,Canada,-78,Montréal,Montréal,1/22/2021,-75
 exo Sud-Ouest,Canada,-78,Montréal,Montréal,1/22/2021,-80
@@ -11749,8 +11763,8 @@ Saint-Jean-sur-Richelieu,Canada,-48,Montréal,Montréal,6/26/2021,-70
 STM,Canada,-48,Montréal,Montréal,6/26/2021,-49
 STL,Canada,-48,Montréal,Montréal,6/26/2021,-44
 RTL,Canada,-48,Montréal,Montréal,6/26/2021,-49
-exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,6/26/2021,-43
 CRTL - Lanaudière,Canada,-48,Montréal,Montréal,6/26/2021,-40
+exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,6/26/2021,-43
 exo Terrebonne-Mascouche,Canada,-53,Montréal,Montréal,7/6/2020,-15
 exo Sud-Ouest,Canada,-53,Montréal,Montréal,7/6/2020,-45
 exo Sorel-Varennes,Canada,-53,Montréal,Montréal,7/6/2020,-30
@@ -11765,8 +11779,8 @@ Saint-Jean-sur-Richelieu,Canada,-53,Montréal,Montréal,7/6/2020,-45
 STM,Canada,-53,Montréal,Montréal,7/6/2020,-42
 STL,Canada,-53,Montréal,Montréal,7/6/2020,-33
 RTL,Canada,-53,Montréal,Montréal,7/6/2020,-38
-exo Vallée-du-Richelieu,Canada,-53,Montréal,Montréal,7/6/2020,-31
 CRTL - Lanaudière,Canada,-53,Montréal,Montréal,7/6/2020,-22
+exo Vallée-du-Richelieu,Canada,-53,Montréal,Montréal,7/6/2020,-31
 exo Terrebonne-Mascouche,Canada,-59,Montréal,Montréal,5/9/2021,-45
 exo Sud-Ouest,Canada,-59,Montréal,Montréal,5/9/2021,-58
 exo Sorel-Varennes,Canada,-59,Montréal,Montréal,5/9/2021,-42
@@ -11781,8 +11795,8 @@ Saint-Jean-sur-Richelieu,Canada,-59,Montréal,Montréal,5/9/2021,-78
 STM,Canada,-59,Montréal,Montréal,5/9/2021,-56
 STL,Canada,-59,Montréal,Montréal,5/9/2021,-51
 RTL,Canada,-59,Montréal,Montréal,5/9/2021,-56
-exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,5/9/2021,-53
 CRTL - Lanaudière,Canada,-59,Montréal,Montréal,5/9/2021,-46
+exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,5/9/2021,-53
 exo Terrebonne-Mascouche,Canada,-60,Montréal,Montréal,4/16/2021,-54
 exo Sud-Ouest,Canada,-60,Montréal,Montréal,4/16/2021,-65
 exo Sorel-Varennes,Canada,-60,Montréal,Montréal,4/16/2021,-66
@@ -11797,8 +11811,8 @@ Saint-Jean-sur-Richelieu,Canada,-60,Montréal,Montréal,4/16/2021,-79
 STM,Canada,-60,Montréal,Montréal,4/16/2021,-62
 STL,Canada,-60,Montréal,Montréal,4/16/2021,-59
 RTL,Canada,-60,Montréal,Montréal,4/16/2021,-65
-exo Vallée-du-Richelieu,Canada,-60,Montréal,Montréal,4/16/2021,-69
 CRTL - Lanaudière,Canada,-60,Montréal,Montréal,4/16/2021,-65
+exo Vallée-du-Richelieu,Canada,-60,Montréal,Montréal,4/16/2021,-69
 exo Vallée-du-Richelieu,Canada,-82,Montréal,Montréal,4/14/2020,-91
 exo Terrebonne-Mascouche,Canada,-82,Montréal,Montréal,4/14/2020,-85
 exo Sud-Ouest,Canada,-82,Montréal,Montréal,4/14/2020,-85
@@ -11861,8 +11875,8 @@ Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,9/16/2021,-46
 STM,Canada,-38,Montréal,Montréal,9/16/2021,-28
 STL,Canada,-38,Montréal,Montréal,9/16/2021,-15
 RTL,Canada,-38,Montréal,Montréal,9/16/2021,-20
-exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,9/16/2021,-9
 CRTL - Lanaudière,Canada,-38,Montréal,Montréal,9/16/2021,-3
+exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,9/16/2021,-9
 exo Terrebonne-Mascouche,Canada,-51,Montréal,Montréal,3/16/2020,-57
 exo Sud-Ouest,Canada,-51,Montréal,Montréal,3/16/2020,-56
 exo Sorel-Varennes,Canada,-51,Montréal,Montréal,3/16/2020,-58
@@ -11877,8 +11891,8 @@ Saint-Jean-sur-Richelieu,Canada,-51,Montréal,Montréal,3/16/2020,-57
 STM,Canada,-51,Montréal,Montréal,3/16/2020,-58
 STL,Canada,-51,Montréal,Montréal,3/16/2020,-55
 RTL,Canada,-51,Montréal,Montréal,3/16/2020,-59
-exo Vallée-du-Richelieu,Canada,-51,Montréal,Montréal,3/16/2020,-60
 CRTL - Lanaudière,Canada,-51,Montréal,Montréal,3/16/2020,-58
+exo Vallée-du-Richelieu,Canada,-51,Montréal,Montréal,3/16/2020,-60
 exo Terrebonne-Mascouche,Canada,-67,Montréal,Montréal,3/9/2021,-59
 exo Sud-Ouest,Canada,-67,Montréal,Montréal,3/9/2021,-66
 exo Sorel-Varennes,Canada,-67,Montréal,Montréal,3/9/2021,-65
@@ -11925,8 +11939,8 @@ Saint-Jean-sur-Richelieu,Canada,-54,Montréal,Montréal,6/14/2021,-70
 STM,Canada,-54,Montréal,Montréal,6/14/2021,-41
 STL,Canada,-54,Montréal,Montréal,6/14/2021,-37
 RTL,Canada,-54,Montréal,Montréal,6/14/2021,-48
-exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,6/14/2021,-47
 CRTL - Lanaudière,Canada,-54,Montréal,Montréal,6/14/2021,-38
+exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,6/14/2021,-47
 exo Terrebonne-Mascouche,Canada,-62,Montréal,Montréal,2/22/2021,-58
 exo Sud-Ouest,Canada,-62,Montréal,Montréal,2/22/2021,-64
 exo Sorel-Varennes,Canada,-62,Montréal,Montréal,2/22/2021,-66
@@ -11973,8 +11987,8 @@ Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,7/18/2021,-65
 STM,Canada,-38,Montréal,Montréal,7/18/2021,-38
 STL,Canada,-38,Montréal,Montréal,7/18/2021,-32
 RTL,Canada,-38,Montréal,Montréal,7/18/2021,-37
-exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,7/18/2021,-30
 CRTL - Lanaudière,Canada,-38,Montréal,Montréal,7/18/2021,-20
+exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,7/18/2021,-30
 exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,11/17/2020,-79
 exo Terrebonne-Mascouche,Canada,-72,Montréal,Montréal,11/17/2020,-70
 exo Sud-Ouest,Canada,-72,Montréal,Montréal,11/17/2020,-75
@@ -12005,8 +12019,8 @@ Saint-Jean-sur-Richelieu,Canada,-42,Montréal,Montréal,8/26/2021,-49
 STM,Canada,-42,Montréal,Montréal,8/26/2021,-30
 STL,Canada,-42,Montréal,Montréal,8/26/2021,-16
 RTL,Canada,-42,Montréal,Montréal,8/26/2021,-30
-exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,8/26/2021,-11
 CRTL - Lanaudière,Canada,-42,Montréal,Montréal,8/26/2021,-11
+exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,8/26/2021,-11
 exo Vallée-du-Richelieu,Canada,-81,Montréal,Montréal,4/6/2020,-90
 exo Terrebonne-Mascouche,Canada,-81,Montréal,Montréal,4/6/2020,-84
 exo Sud-Ouest,Canada,-81,Montréal,Montréal,4/6/2020,-87
@@ -12037,8 +12051,8 @@ Saint-Jean-sur-Richelieu,Canada,-66,Montréal,Montréal,12/6/2020,-81
 STM,Canada,-66,Montréal,Montréal,12/6/2020,-67
 STL,Canada,-66,Montréal,Montréal,12/6/2020,-62
 RTL,Canada,-66,Montréal,Montréal,12/6/2020,-66
-exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,12/6/2020,-62
 CRTL - Lanaudière,Canada,-66,Montréal,Montréal,12/6/2020,-60
+exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,12/6/2020,-62
 exo Terrebonne-Mascouche,Canada,-49,Montréal,Montréal,9/6/2020,-25
 exo Sud-Ouest,Canada,-49,Montréal,Montréal,9/6/2020,-42
 exo Sorel-Varennes,Canada,-49,Montréal,Montréal,9/6/2020,-34
@@ -12053,8 +12067,8 @@ Saint-Jean-sur-Richelieu,Canada,-49,Montréal,Montréal,9/6/2020,-59
 STM,Canada,-49,Montréal,Montréal,9/6/2020,-49
 STL,Canada,-49,Montréal,Montréal,9/6/2020,-37
 RTL,Canada,-49,Montréal,Montréal,9/6/2020,-45
-exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,9/6/2020,-37
 CRTL - Lanaudière,Canada,-49,Montréal,Montréal,9/6/2020,-27
+exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,9/6/2020,-37
 exo Terrebonne-Mascouche,Canada,-55,Montréal,Montréal,7/20/2020,-21
 exo Sud-Ouest,Canada,-55,Montréal,Montréal,7/20/2020,-48
 exo Sorel-Varennes,Canada,-55,Montréal,Montréal,7/20/2020,-34
@@ -12069,8 +12083,8 @@ Saint-Jean-sur-Richelieu,Canada,-55,Montréal,Montréal,7/20/2020,-54
 STM,Canada,-55,Montréal,Montréal,7/20/2020,-46
 STL,Canada,-55,Montréal,Montréal,7/20/2020,-36
 RTL,Canada,-55,Montréal,Montréal,7/20/2020,-41
-exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,7/20/2020,-34
 CRTL - Lanaudière,Canada,-55,Montréal,Montréal,7/20/2020,-26
+exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,7/20/2020,-34
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,3/20/2021,-46
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,3/20/2021,-57
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,3/20/2021,-50
@@ -12085,8 +12099,8 @@ Saint-Jean-sur-Richelieu,Canada,-57,Montréal,Montréal,3/20/2021,-70
 STM,Canada,-57,Montréal,Montréal,3/20/2021,-60
 STL,Canada,-57,Montréal,Montréal,3/20/2021,-52
 RTL,Canada,-57,Montréal,Montréal,3/20/2021,-56
-exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,3/20/2021,-54
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,3/20/2021,-44
+exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,3/20/2021,-54
 exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,9/29/2020,-75
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,9/29/2020,-59
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,9/29/2020,-62
@@ -12149,8 +12163,8 @@ Saint-Jean-sur-Richelieu,Canada,2,Montréal,Montréal,2/25/2020,5
 STM,Canada,2,Montréal,Montréal,2/25/2020,0
 STL,Canada,2,Montréal,Montréal,2/25/2020,1
 RTL,Canada,2,Montréal,Montréal,2/25/2020,2
-exo Vallée-du-Richelieu,Canada,2,Montréal,Montréal,2/25/2020,-2
 CRTL - Lanaudière,Canada,2,Montréal,Montréal,2/25/2020,2
+exo Vallée-du-Richelieu,Canada,2,Montréal,Montréal,2/25/2020,-2
 exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,11/25/2020,-74
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,11/25/2020,-62
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,11/25/2020,-69
@@ -12181,8 +12195,8 @@ Saint-Jean-sur-Richelieu,Canada,-62,Montréal,Montréal,9/3/2020,-66
 STM,Canada,-62,Montréal,Montréal,9/3/2020,-57
 STL,Canada,-62,Montréal,Montréal,9/3/2020,-52
 RTL,Canada,-62,Montréal,Montréal,9/3/2020,-56
-exo Vallée-du-Richelieu,Canada,-62,Montréal,Montréal,9/3/2020,-57
 CRTL - Lanaudière,Canada,-62,Montréal,Montréal,9/3/2020,-50
+exo Vallée-du-Richelieu,Canada,-62,Montréal,Montréal,9/3/2020,-57
 exo Terrebonne-Mascouche,Canada,-50,Montréal,Montréal,7/26/2020,-24
 exo Sud-Ouest,Canada,-50,Montréal,Montréal,7/26/2020,-47
 exo Sorel-Varennes,Canada,-50,Montréal,Montréal,7/26/2020,-42
@@ -12197,8 +12211,8 @@ Saint-Jean-sur-Richelieu,Canada,-50,Montréal,Montréal,7/26/2020,-51
 STM,Canada,-50,Montréal,Montréal,7/26/2020,-46
 STL,Canada,-50,Montréal,Montréal,7/26/2020,-35
 RTL,Canada,-50,Montréal,Montréal,7/26/2020,-37
-exo Vallée-du-Richelieu,Canada,-50,Montréal,Montréal,7/26/2020,-30
 CRTL - Lanaudière,Canada,-50,Montréal,Montréal,7/26/2020,-25
+exo Vallée-du-Richelieu,Canada,-50,Montréal,Montréal,7/26/2020,-30
 exo Terrebonne-Mascouche,Canada,-58,Montréal,Montréal,4/25/2021,-46
 exo Sud-Ouest,Canada,-58,Montréal,Montréal,4/25/2021,-57
 exo Sorel-Varennes,Canada,-58,Montréal,Montréal,4/25/2021,-51
@@ -12213,8 +12227,8 @@ Saint-Jean-sur-Richelieu,Canada,-58,Montréal,Montréal,4/25/2021,-78
 STM,Canada,-58,Montréal,Montréal,4/25/2021,-59
 STL,Canada,-58,Montréal,Montréal,4/25/2021,-55
 RTL,Canada,-58,Montréal,Montréal,4/25/2021,-57
-exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,4/25/2021,-53
 CRTL - Lanaudière,Canada,-58,Montréal,Montréal,4/25/2021,-44
+exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,4/25/2021,-53
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,11/14/2020,-61
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,11/14/2020,-67
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,11/14/2020,-70
@@ -12229,8 +12243,8 @@ Saint-Jean-sur-Richelieu,Canada,-65,Montréal,Montréal,11/14/2020,-81
 STM,Canada,-65,Montréal,Montréal,11/14/2020,-68
 STL,Canada,-65,Montréal,Montréal,11/14/2020,-63
 RTL,Canada,-65,Montréal,Montréal,11/14/2020,-66
-exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,11/14/2020,-66
 CRTL - Lanaudière,Canada,-65,Montréal,Montréal,11/14/2020,-62
+exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,11/14/2020,-66
 exo Terrebonne-Mascouche,Canada,-58,Montréal,Montréal,6/3/2021,-43
 exo Sud-Ouest,Canada,-58,Montréal,Montréal,6/3/2021,-59
 exo Sorel-Varennes,Canada,-58,Montréal,Montréal,6/3/2021,-44
@@ -12309,8 +12323,8 @@ Saint-Jean-sur-Richelieu,Canada,-36,Montréal,Montréal,9/15/2021,-48
 STM,Canada,-36,Montréal,Montréal,9/15/2021,-28
 STL,Canada,-36,Montréal,Montréal,9/15/2021,-13
 RTL,Canada,-36,Montréal,Montréal,9/15/2021,-21
-exo Vallée-du-Richelieu,Canada,-36,Montréal,Montréal,9/15/2021,-9
 CRTL - Lanaudière,Canada,-36,Montréal,Montréal,9/15/2021,-6
+exo Vallée-du-Richelieu,Canada,-36,Montréal,Montréal,9/15/2021,-9
 exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,3/17/2020,-73
 exo Terrebonne-Mascouche,Canada,-61,Montréal,Montréal,3/17/2020,-65
 exo Sud-Ouest,Canada,-61,Montréal,Montréal,3/17/2020,-67
@@ -12341,8 +12355,8 @@ Saint-Jean-sur-Richelieu,Canada,-49,Montréal,Montréal,8/16/2020,-60
 STM,Canada,-49,Montréal,Montréal,8/16/2020,-48
 STL,Canada,-49,Montréal,Montréal,8/16/2020,-41
 RTL,Canada,-49,Montréal,Montréal,8/16/2020,-47
-exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,8/16/2020,-41
 CRTL - Lanaudière,Canada,-49,Montréal,Montréal,8/16/2020,-35
+exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,8/16/2020,-41
 exo Vallée-du-Richelieu,Canada,-74,Montréal,Montréal,12/26/2020,-81
 exo Terrebonne-Mascouche,Canada,-74,Montréal,Montréal,12/26/2020,-71
 exo Sud-Ouest,Canada,-74,Montréal,Montréal,12/26/2020,-76
@@ -12389,8 +12403,8 @@ Saint-Jean-sur-Richelieu,Canada,-35,Montréal,Montréal,9/4/2021,-57
 STM,Canada,-35,Montréal,Montréal,9/4/2021,-34
 STL,Canada,-35,Montréal,Montréal,9/4/2021,-26
 RTL,Canada,-35,Montréal,Montréal,9/4/2021,-35
-exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/4/2021,-30
 CRTL - Lanaudière,Canada,-35,Montréal,Montréal,9/4/2021,-24
+exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/4/2021,-30
 exo Terrebonne-Mascouche,Canada,-42,Montréal,Montréal,8/12/2021,-37
 exo Sud-Ouest,Canada,-42,Montréal,Montréal,8/12/2021,-36
 exo Sorel-Varennes,Canada,-42,Montréal,Montréal,8/12/2021,-44
@@ -12549,8 +12563,8 @@ Saint-Jean-sur-Richelieu,Canada,-3,Montréal,Montréal,3/6/2020,2
 STM,Canada,-3,Montréal,Montréal,3/6/2020,-7
 STL,Canada,-3,Montréal,Montréal,3/6/2020,-7
 RTL,Canada,-3,Montréal,Montréal,3/6/2020,-2
-exo Vallée-du-Richelieu,Canada,-3,Montréal,Montréal,3/6/2020,4
 CRTL - Lanaudière,Canada,-3,Montréal,Montréal,3/6/2020,-3
+exo Vallée-du-Richelieu,Canada,-3,Montréal,Montréal,3/6/2020,4
 exo Terrebonne-Mascouche,Canada,-67,Montréal,Montréal,12/13/2020,-56
 exo Sud-Ouest,Canada,-67,Montréal,Montréal,12/13/2020,-69
 exo Sorel-Varennes,Canada,-67,Montréal,Montréal,12/13/2020,-62
@@ -12583,7 +12597,6 @@ STL,Canada,-61,Montréal,Montréal,8/25/2020,-55
 RTL,Canada,-61,Montréal,Montréal,8/25/2020,-62
 CRTL - Lanaudière,Canada,-61,Montréal,Montréal,8/25/2020,-49
 exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,8/25/2020,-62
-exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,3/26/2021,-71
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,3/26/2021,-58
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,3/26/2021,-64
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,3/26/2021,-65
@@ -12599,6 +12612,7 @@ STM,Canada,-65,Montréal,Montréal,3/26/2021,-66
 STL,Canada,-65,Montréal,Montréal,3/26/2021,-64
 RTL,Canada,-65,Montréal,Montréal,3/26/2021,-66
 CRTL - Lanaudière,Canada,-65,Montréal,Montréal,3/26/2021,-61
+exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,3/26/2021,-71
 exo Terrebonne-Mascouche,Canada,-70,Montréal,Montréal,4/2/2021,-59
 exo Sud-Ouest,Canada,-70,Montréal,Montréal,4/2/2021,-64
 exo Sorel-Varennes,Canada,-70,Montréal,Montréal,4/2/2021,-56
@@ -12629,8 +12643,8 @@ Saint-Jean-sur-Richelieu,Canada,-54,Montréal,Montréal,9/12/2020,-65
 STM,Canada,-54,Montréal,Montréal,9/12/2020,-51
 STL,Canada,-54,Montréal,Montréal,9/12/2020,-44
 RTL,Canada,-54,Montréal,Montréal,9/12/2020,-48
-exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,9/12/2020,-43
 CRTL - Lanaudière,Canada,-54,Montréal,Montréal,9/12/2020,-40
+exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,9/12/2020,-43
 exo Terrebonne-Mascouche,Canada,-61,Montréal,Montréal,10/25/2020,-54
 exo Sud-Ouest,Canada,-61,Montréal,Montréal,10/25/2020,-63
 exo Sorel-Varennes,Canada,-61,Montréal,Montréal,10/25/2020,-69
@@ -12647,22 +12661,22 @@ STL,Canada,-61,Montréal,Montréal,10/25/2020,-59
 RTL,Canada,-61,Montréal,Montréal,10/25/2020,-64
 CRTL - Lanaudière,Canada,-61,Montréal,Montréal,10/25/2020,-51
 exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,10/25/2020,-69
-exo Terrebonne-Mascouche,Canada,-14,Montréal,Montréal,10/18/2021,21
-exo Sud-Ouest,Canada,-14,Montréal,Montréal,10/18/2021,34
-exo Sorel-Varennes,Canada,-14,Montréal,Montréal,10/18/2021,36
-exo Roussillon,Canada,-14,Montréal,Montréal,10/18/2021,6
-exo Le Richelain,Canada,-14,Montréal,Montréal,10/18/2021,18
-exo Laurentides,Canada,-14,Montréal,Montréal,10/18/2021,76
-exo La Presqu'Île,Canada,-14,Montréal,Montréal,10/18/2021,-18
-exo L'Assomption,Canada,-14,Montréal,Montréal,10/18/2021,39
-exo Haut-Saint-Laurent,Canada,-14,Montréal,Montréal,10/18/2021,52
-exo - Trains,Canada,-14,Montréal,Montréal,10/18/2021,72
-Saint-Jean-sur-Richelieu,Canada,-14,Montréal,Montréal,10/18/2021,-44
-STM,Canada,-14,Montréal,Montréal,10/18/2021,10
-STL,Canada,-14,Montréal,Montréal,10/18/2021,27
-RTL,Canada,-14,Montréal,Montréal,10/18/2021,37
-exo Vallée-du-Richelieu,Canada,-14,Montréal,Montréal,10/18/2021,6
-CRTL - Lanaudière,Canada,-14,Montréal,Montréal,10/18/2021,40
+exo Terrebonne-Mascouche,Canada,-28,Montréal,Montréal,10/18/2021,-4
+exo Sud-Ouest,Canada,-28,Montréal,Montréal,10/18/2021,-17
+exo Sorel-Varennes,Canada,-28,Montréal,Montréal,10/18/2021,3
+exo Roussillon,Canada,-28,Montréal,Montréal,10/18/2021,-10
+exo Le Richelain,Canada,-28,Montréal,Montréal,10/18/2021,-15
+exo Laurentides,Canada,-28,Montréal,Montréal,10/18/2021,13
+exo La Presqu'Île,Canada,-28,Montréal,Montréal,10/18/2021,-6
+exo L'Assomption,Canada,-28,Montréal,Montréal,10/18/2021,-11
+exo Haut-Saint-Laurent,Canada,-28,Montréal,Montréal,10/18/2021,0
+exo - Trains,Canada,-28,Montréal,Montréal,10/18/2021,27
+Saint-Jean-sur-Richelieu,Canada,-28,Montréal,Montréal,10/18/2021,-56
+STM,Canada,-28,Montréal,Montréal,10/18/2021,-23
+STL,Canada,-28,Montréal,Montréal,10/18/2021,-15
+RTL,Canada,-28,Montréal,Montréal,10/18/2021,-16
+CRTL - Lanaudière,Canada,-28,Montréal,Montréal,10/18/2021,-10
+exo Vallée-du-Richelieu,Canada,-28,Montréal,Montréal,10/18/2021,-13
 exo Terrebonne-Mascouche,Canada,-62,Montréal,Montréal,11/7/2020,-58
 exo Sud-Ouest,Canada,-62,Montréal,Montréal,11/7/2020,-64
 exo Sorel-Varennes,Canada,-62,Montréal,Montréal,11/7/2020,-68
@@ -12709,8 +12723,8 @@ Saint-Jean-sur-Richelieu,Canada,-33,Montréal,Montréal,8/8/2021,-61
 STM,Canada,-33,Montréal,Montréal,8/8/2021,-34
 STL,Canada,-33,Montréal,Montréal,8/8/2021,-29
 RTL,Canada,-33,Montréal,Montréal,8/8/2021,-34
-exo Vallée-du-Richelieu,Canada,-33,Montréal,Montréal,8/8/2021,-25
 CRTL - Lanaudière,Canada,-33,Montréal,Montréal,8/8/2021,-18
+exo Vallée-du-Richelieu,Canada,-33,Montréal,Montréal,8/8/2021,-25
 exo Terrebonne-Mascouche,Canada,-58,Montréal,Montréal,7/14/2020,-25
 exo Sud-Ouest,Canada,-58,Montréal,Montréal,7/14/2020,-49
 exo Sorel-Varennes,Canada,-58,Montréal,Montréal,7/14/2020,-31
@@ -12757,8 +12771,8 @@ Saint-Jean-sur-Richelieu,Canada,-56,Montréal,Montréal,8/12/2020,-65
 STM,Canada,-56,Montréal,Montréal,8/12/2020,-52
 STL,Canada,-56,Montréal,Montréal,8/12/2020,-45
 RTL,Canada,-56,Montréal,Montréal,8/12/2020,-53
-exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,8/12/2020,-51
 CRTL - Lanaudière,Canada,-56,Montréal,Montréal,8/12/2020,-45
+exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,8/12/2020,-51
 exo Terrebonne-Mascouche,Canada,-43,Montréal,Montréal,7/28/2021,-27
 exo Sud-Ouest,Canada,-43,Montréal,Montréal,7/28/2021,-37
 exo Sorel-Varennes,Canada,-43,Montréal,Montréal,7/28/2021,-21
@@ -12796,7 +12810,7 @@ exo Sud-Ouest,Canada,-37,Montréal,Montréal,10/8/2021,-25
 exo Sorel-Varennes,Canada,-37,Montréal,Montréal,10/8/2021,14
 exo Roussillon,Canada,-37,Montréal,Montréal,10/8/2021,-24
 exo Le Richelain,Canada,-37,Montréal,Montréal,10/8/2021,-15
-exo Laurentides,Canada,-37,Montréal,Montréal,10/8/2021,11
+exo Laurentides,Canada,-37,Montréal,Montréal,10/8/2021,12
 exo La Presqu'Île,Canada,-37,Montréal,Montréal,10/8/2021,-26
 exo L'Assomption,Canada,-37,Montréal,Montréal,10/8/2021,-7
 exo Haut-Saint-Laurent,Canada,-37,Montréal,Montréal,10/8/2021,-21
@@ -12805,8 +12819,8 @@ Saint-Jean-sur-Richelieu,Canada,-37,Montréal,Montréal,10/8/2021,-55
 STM,Canada,-37,Montréal,Montréal,10/8/2021,-31
 STL,Canada,-37,Montréal,Montréal,10/8/2021,-22
 RTL,Canada,-37,Montréal,Montréal,10/8/2021,-25
+CRTL - Lanaudière,Canada,-37,Montréal,Montréal,10/8/2021,-11
 exo Vallée-du-Richelieu,Canada,-37,Montréal,Montréal,10/8/2021,-34
-CRTL - Lanaudière,Canada,-37,Montréal,Montréal,10/8/2021,-12
 exo Terrebonne-Mascouche,Canada,3,Montréal,Montréal,2/23/2020,7
 exo Sud-Ouest,Canada,3,Montréal,Montréal,2/23/2020,-4
 exo Sorel-Varennes,Canada,3,Montréal,Montréal,2/23/2020,-3
@@ -12821,8 +12835,8 @@ Saint-Jean-sur-Richelieu,Canada,3,Montréal,Montréal,2/23/2020,-8
 STM,Canada,3,Montréal,Montréal,2/23/2020,4
 STL,Canada,3,Montréal,Montréal,2/23/2020,6
 RTL,Canada,3,Montréal,Montréal,2/23/2020,0
-exo Vallée-du-Richelieu,Canada,3,Montréal,Montréal,2/23/2020,9
 CRTL - Lanaudière,Canada,3,Montréal,Montréal,2/23/2020,19
+exo Vallée-du-Richelieu,Canada,3,Montréal,Montréal,2/23/2020,9
 exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,2/13/2021,-74
 exo Terrebonne-Mascouche,Canada,-72,Montréal,Montréal,2/13/2021,-64
 exo Sud-Ouest,Canada,-72,Montréal,Montréal,2/13/2021,-76
@@ -12933,8 +12947,8 @@ Saint-Jean-sur-Richelieu,Canada,-35,Montréal,Montréal,9/8/2021,-41
 STM,Canada,-35,Montréal,Montréal,9/8/2021,-26
 STL,Canada,-35,Montréal,Montréal,9/8/2021,-14
 RTL,Canada,-35,Montréal,Montréal,9/8/2021,-18
-exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/8/2021,2
 CRTL - Lanaudière,Canada,-35,Montréal,Montréal,9/8/2021,-5
+exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/8/2021,2
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,4/30/2021,-57
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,4/30/2021,-65
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,4/30/2021,-61
@@ -12949,8 +12963,8 @@ Saint-Jean-sur-Richelieu,Canada,-64,Montréal,Montréal,4/30/2021,-81
 STM,Canada,-64,Montréal,Montréal,4/30/2021,-63
 STL,Canada,-64,Montréal,Montréal,4/30/2021,-60
 RTL,Canada,-64,Montréal,Montréal,4/30/2021,-64
-exo Vallée-du-Richelieu,Canada,-64,Montréal,Montréal,4/30/2021,-67
 CRTL - Lanaudière,Canada,-64,Montréal,Montréal,4/30/2021,-60
+exo Vallée-du-Richelieu,Canada,-64,Montréal,Montréal,4/30/2021,-67
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,11/29/2020,-55
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,11/29/2020,-65
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,11/29/2020,-66
@@ -12965,8 +12979,8 @@ Saint-Jean-sur-Richelieu,Canada,-64,Montréal,Montréal,11/29/2020,-76
 STM,Canada,-64,Montréal,Montréal,11/29/2020,-65
 STL,Canada,-64,Montréal,Montréal,11/29/2020,-60
 RTL,Canada,-64,Montréal,Montréal,11/29/2020,-63
-exo Vallée-du-Richelieu,Canada,-64,Montréal,Montréal,11/29/2020,-59
 CRTL - Lanaudière,Canada,-64,Montréal,Montréal,11/29/2020,-52
+exo Vallée-du-Richelieu,Canada,-64,Montréal,Montréal,11/29/2020,-59
 exo Terrebonne-Mascouche,Canada,-51,Montréal,Montréal,6/6/2021,-22
 exo Sud-Ouest,Canada,-51,Montréal,Montréal,6/6/2021,-47
 exo Sorel-Varennes,Canada,-51,Montréal,Montréal,6/6/2021,-18
@@ -12981,8 +12995,8 @@ Saint-Jean-sur-Richelieu,Canada,-51,Montréal,Montréal,6/6/2021,-64
 STM,Canada,-51,Montréal,Montréal,6/6/2021,-43
 STL,Canada,-51,Montréal,Montréal,6/6/2021,-35
 RTL,Canada,-51,Montréal,Montréal,6/6/2021,-40
-exo Vallée-du-Richelieu,Canada,-51,Montréal,Montréal,6/6/2021,-36
 CRTL - Lanaudière,Canada,-51,Montréal,Montréal,6/6/2021,-29
+exo Vallée-du-Richelieu,Canada,-51,Montréal,Montréal,6/6/2021,-36
 exo Terrebonne-Mascouche,Canada,-61,Montréal,Montréal,6/7/2020,-49
 exo Sud-Ouest,Canada,-61,Montréal,Montréal,6/7/2020,-62
 exo Sorel-Varennes,Canada,-61,Montréal,Montréal,6/7/2020,-48
@@ -13031,22 +13045,22 @@ STL,Canada,-61,Montréal,Montréal,10/18/2020,-60
 RTL,Canada,-61,Montréal,Montréal,10/18/2020,-64
 CRTL - Lanaudière,Canada,-61,Montréal,Montréal,10/18/2020,-55
 exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,10/18/2020,-69
-exo Terrebonne-Mascouche,Canada,-38,Montréal,Montréal,10/9/2021,-29
-exo Sud-Ouest,Canada,-38,Montréal,Montréal,10/9/2021,-31
-exo Sorel-Varennes,Canada,-38,Montréal,Montréal,10/9/2021,-11
-exo Roussillon,Canada,-38,Montréal,Montréal,10/9/2021,-31
-exo Le Richelain,Canada,-38,Montréal,Montréal,10/9/2021,-35
-exo Laurentides,Canada,-38,Montréal,Montréal,10/9/2021,-9
-exo La Presqu'Île,Canada,-38,Montréal,Montréal,10/9/2021,-37
-exo L'Assomption,Canada,-38,Montréal,Montréal,10/9/2021,-19
-exo Haut-Saint-Laurent,Canada,-38,Montréal,Montréal,10/9/2021,-22
-exo - Trains,Canada,-38,Montréal,Montréal,10/9/2021,-3
-Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,10/9/2021,-58
-STM,Canada,-38,Montréal,Montréal,10/9/2021,-33
-STL,Canada,-38,Montréal,Montréal,10/9/2021,-28
-RTL,Canada,-38,Montréal,Montréal,10/9/2021,-31
-CRTL - Lanaudière,Canada,-38,Montréal,Montréal,10/9/2021,-21
-exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,10/9/2021,-47
+exo Terrebonne-Mascouche,Canada,-37,Montréal,Montréal,10/9/2021,-29
+exo Sud-Ouest,Canada,-37,Montréal,Montréal,10/9/2021,-31
+exo Sorel-Varennes,Canada,-37,Montréal,Montréal,10/9/2021,-11
+exo Roussillon,Canada,-37,Montréal,Montréal,10/9/2021,-31
+exo Le Richelain,Canada,-37,Montréal,Montréal,10/9/2021,-35
+exo Laurentides,Canada,-37,Montréal,Montréal,10/9/2021,-9
+exo La Presqu'Île,Canada,-37,Montréal,Montréal,10/9/2021,-37
+exo L'Assomption,Canada,-37,Montréal,Montréal,10/9/2021,-19
+exo Haut-Saint-Laurent,Canada,-37,Montréal,Montréal,10/9/2021,-22
+exo - Trains,Canada,-37,Montréal,Montréal,10/9/2021,-3
+Saint-Jean-sur-Richelieu,Canada,-37,Montréal,Montréal,10/9/2021,-58
+STM,Canada,-37,Montréal,Montréal,10/9/2021,-33
+STL,Canada,-37,Montréal,Montréal,10/9/2021,-27
+RTL,Canada,-37,Montréal,Montréal,10/9/2021,-31
+CRTL - Lanaudière,Canada,-37,Montréal,Montréal,10/9/2021,-21
+exo Vallée-du-Richelieu,Canada,-37,Montréal,Montréal,10/9/2021,-47
 exo Terrebonne-Mascouche,Canada,3,Montréal,Montréal,2/22/2020,8
 exo Sud-Ouest,Canada,3,Montréal,Montréal,2/22/2020,1
 exo Sorel-Varennes,Canada,3,Montréal,Montréal,2/22/2020,4
@@ -13061,8 +13075,8 @@ Saint-Jean-sur-Richelieu,Canada,3,Montréal,Montréal,2/22/2020,-4
 STM,Canada,3,Montréal,Montréal,2/22/2020,3
 STL,Canada,3,Montréal,Montréal,2/22/2020,9
 RTL,Canada,3,Montréal,Montréal,2/22/2020,3
-exo Vallée-du-Richelieu,Canada,3,Montréal,Montréal,2/22/2020,5
 CRTL - Lanaudière,Canada,3,Montréal,Montréal,2/22/2020,8
+exo Vallée-du-Richelieu,Canada,3,Montréal,Montréal,2/22/2020,5
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,1/13/2021,-85
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/13/2021,-75
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,1/13/2021,-81
@@ -13109,8 +13123,8 @@ Saint-Jean-sur-Richelieu,Canada,-63,Montréal,Montréal,4/7/2021,-73
 STM,Canada,-63,Montréal,Montréal,4/7/2021,-61
 STL,Canada,-63,Montréal,Montréal,4/7/2021,-54
 RTL,Canada,-63,Montréal,Montréal,4/7/2021,-58
-exo Vallée-du-Richelieu,Canada,-63,Montréal,Montréal,4/7/2021,-63
 CRTL - Lanaudière,Canada,-63,Montréal,Montréal,4/7/2021,-55
+exo Vallée-du-Richelieu,Canada,-63,Montréal,Montréal,4/7/2021,-63
 exo Terrebonne-Mascouche,Canada,-56,Montréal,Montréal,7/13/2020,-21
 exo Sud-Ouest,Canada,-56,Montréal,Montréal,7/13/2020,-47
 exo Sorel-Varennes,Canada,-56,Montréal,Montréal,7/13/2020,-32
@@ -13125,8 +13139,8 @@ Saint-Jean-sur-Richelieu,Canada,-56,Montréal,Montréal,7/13/2020,-50
 STM,Canada,-56,Montréal,Montréal,7/13/2020,-46
 STL,Canada,-56,Montréal,Montréal,7/13/2020,-36
 RTL,Canada,-56,Montréal,Montréal,7/13/2020,-40
-exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,7/13/2020,-29
 CRTL - Lanaudière,Canada,-56,Montréal,Montréal,7/13/2020,-29
+exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,7/13/2020,-29
 exo Terrebonne-Mascouche,Canada,-50,Montréal,Montréal,8/30/2020,-37
 exo Sud-Ouest,Canada,-50,Montréal,Montréal,8/30/2020,-49
 exo Sorel-Varennes,Canada,-50,Montréal,Montréal,8/30/2020,-44
@@ -13173,8 +13187,8 @@ Saint-Jean-sur-Richelieu,Canada,-52,Montréal,Montréal,7/8/2021,-66
 STM,Canada,-52,Montréal,Montréal,7/8/2021,-45
 STL,Canada,-52,Montréal,Montréal,7/8/2021,-39
 RTL,Canada,-52,Montréal,Montréal,7/8/2021,-46
-exo Vallée-du-Richelieu,Canada,-52,Montréal,Montréal,7/8/2021,-41
 CRTL - Lanaudière,Canada,-52,Montréal,Montréal,7/8/2021,-28
+exo Vallée-du-Richelieu,Canada,-52,Montréal,Montréal,7/8/2021,-41
 exo Terrebonne-Mascouche,Canada,-68,Montréal,Montréal,5/25/2020,-65
 exo Sud-Ouest,Canada,-68,Montréal,Montréal,5/25/2020,-71
 exo Sorel-Varennes,Canada,-68,Montréal,Montréal,5/25/2020,-70
@@ -13189,8 +13203,8 @@ Saint-Jean-sur-Richelieu,Canada,-68,Montréal,Montréal,5/25/2020,-79
 STM,Canada,-68,Montréal,Montréal,5/25/2020,-71
 STL,Canada,-68,Montréal,Montréal,5/25/2020,-67
 RTL,Canada,-68,Montréal,Montréal,5/25/2020,-73
-exo Vallée-du-Richelieu,Canada,-68,Montréal,Montréal,5/25/2020,-66
 CRTL - Lanaudière,Canada,-68,Montréal,Montréal,5/25/2020,-61
+exo Vallée-du-Richelieu,Canada,-68,Montréal,Montréal,5/25/2020,-66
 exo Vallée-du-Richelieu,Canada,-68,Montréal,Montréal,10/26/2020,-74
 exo Terrebonne-Mascouche,Canada,-68,Montréal,Montréal,10/26/2020,-61
 exo Sud-Ouest,Canada,-68,Montréal,Montréal,10/26/2020,-67
@@ -13285,9 +13299,8 @@ Saint-Jean-sur-Richelieu,Canada,-51,Montréal,Montréal,8/24/2020,-63
 STM,Canada,-51,Montréal,Montréal,8/24/2020,-50
 STL,Canada,-51,Montréal,Montréal,8/24/2020,-47
 RTL,Canada,-51,Montréal,Montréal,8/24/2020,-52
-exo Vallée-du-Richelieu,Canada,-51,Montréal,Montréal,8/24/2020,-45
 CRTL - Lanaudière,Canada,-51,Montréal,Montréal,8/24/2020,-40
-exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,4/20/2021,-71
+exo Vallée-du-Richelieu,Canada,-51,Montréal,Montréal,8/24/2020,-45
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,4/20/2021,-52
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,4/20/2021,-64
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,4/20/2021,-62
@@ -13303,6 +13316,7 @@ STM,Canada,-65,Montréal,Montréal,4/20/2021,-63
 STL,Canada,-65,Montréal,Montréal,4/20/2021,-60
 RTL,Canada,-65,Montréal,Montréal,4/20/2021,-65
 CRTL - Lanaudière,Canada,-65,Montréal,Montréal,4/20/2021,-57
+exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,4/20/2021,-71
 exo Terrebonne-Mascouche,Canada,-38,Montréal,Montréal,9/27/2021,-12
 exo Sud-Ouest,Canada,-38,Montréal,Montréal,9/27/2021,-20
 exo Sorel-Varennes,Canada,-38,Montréal,Montréal,9/27/2021,-5
@@ -13317,8 +13331,8 @@ Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,9/27/2021,-57
 STM,Canada,-38,Montréal,Montréal,9/27/2021,-31
 STL,Canada,-38,Montréal,Montréal,9/27/2021,-20
 RTL,Canada,-38,Montréal,Montréal,9/27/2021,-26
-exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,9/27/2021,-29
 CRTL - Lanaudière,Canada,-38,Montréal,Montréal,9/27/2021,-15
+exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,9/27/2021,-29
 exo Terrebonne-Mascouche,Canada,-2,Montréal,Montréal,3/5/2020,-2
 exo Sud-Ouest,Canada,-2,Montréal,Montréal,3/5/2020,-7
 exo Sorel-Varennes,Canada,-2,Montréal,Montréal,3/5/2020,1
@@ -13333,8 +13347,8 @@ Saint-Jean-sur-Richelieu,Canada,-2,Montréal,Montréal,3/5/2020,7
 STM,Canada,-2,Montréal,Montréal,3/5/2020,-6
 STL,Canada,-2,Montréal,Montréal,3/5/2020,-2
 RTL,Canada,-2,Montréal,Montréal,3/5/2020,-4
-exo Vallée-du-Richelieu,Canada,-2,Montréal,Montréal,3/5/2020,-5
 CRTL - Lanaudière,Canada,-2,Montréal,Montréal,3/5/2020,3
+exo Vallée-du-Richelieu,Canada,-2,Montréal,Montréal,3/5/2020,-5
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,1/25/2021,-82
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/25/2021,-72
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,1/25/2021,-81
@@ -13351,7 +13365,6 @@ STM,Canada,-79,Montréal,Montréal,1/25/2021,-79
 STL,Canada,-79,Montréal,Montréal,1/25/2021,-78
 RTL,Canada,-79,Montréal,Montréal,1/25/2021,-79
 CRTL - Lanaudière,Canada,-79,Montréal,Montréal,1/25/2021,-71
-exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,6/2/2020,-71
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,6/2/2020,-68
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,6/2/2020,-68
 exo Sorel-Varennes,Canada,-71,Montréal,Montréal,6/2/2020,-66
@@ -13367,6 +13380,7 @@ STM,Canada,-71,Montréal,Montréal,6/2/2020,-72
 STL,Canada,-71,Montréal,Montréal,6/2/2020,-68
 RTL,Canada,-71,Montréal,Montréal,6/2/2020,-73
 CRTL - Lanaudière,Canada,-71,Montréal,Montréal,6/2/2020,-59
+exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,6/2/2020,-71
 exo Terrebonne-Mascouche,Canada,-49,Montréal,Montréal,6/30/2021,-25
 exo Sud-Ouest,Canada,-49,Montréal,Montréal,6/30/2021,-48
 exo Sorel-Varennes,Canada,-49,Montréal,Montréal,6/30/2021,-31
@@ -13383,7 +13397,6 @@ STL,Canada,-49,Montréal,Montréal,6/30/2021,-35
 RTL,Canada,-49,Montréal,Montréal,6/30/2021,-48
 CRTL - Lanaudière,Canada,-49,Montréal,Montréal,6/30/2021,-24
 exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,6/30/2021,-46
-exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,2/26/2021,-72
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,2/26/2021,-59
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,2/26/2021,-66
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,2/26/2021,-69
@@ -13399,6 +13412,7 @@ STM,Canada,-65,Montréal,Montréal,2/26/2021,-65
 STL,Canada,-65,Montréal,Montréal,2/26/2021,-61
 RTL,Canada,-65,Montréal,Montréal,2/26/2021,-66
 CRTL - Lanaudière,Canada,-65,Montréal,Montréal,2/26/2021,-62
+exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,2/26/2021,-72
 exo Terrebonne-Mascouche,Canada,-56,Montréal,Montréal,6/24/2021,-55
 exo Sud-Ouest,Canada,-56,Montréal,Montréal,6/24/2021,-58
 exo Sorel-Varennes,Canada,-56,Montréal,Montréal,6/24/2021,-38
@@ -13461,8 +13475,8 @@ Saint-Jean-sur-Richelieu,Canada,-41,Montréal,Montréal,8/11/2021,-64
 STM,Canada,-41,Montréal,Montréal,8/11/2021,-40
 STL,Canada,-41,Montréal,Montréal,8/11/2021,-35
 RTL,Canada,-41,Montréal,Montréal,8/11/2021,-45
-exo Vallée-du-Richelieu,Canada,-41,Montréal,Montréal,8/11/2021,-46
 CRTL - Lanaudière,Canada,-41,Montréal,Montréal,8/11/2021,-39
+exo Vallée-du-Richelieu,Canada,-41,Montréal,Montréal,8/11/2021,-46
 exo Terrebonne-Mascouche,Canada,-56,Montréal,Montréal,8/3/2020,-28
 exo Sud-Ouest,Canada,-56,Montréal,Montréal,8/3/2020,-50
 exo Sorel-Varennes,Canada,-56,Montréal,Montréal,8/3/2020,-40
@@ -13509,8 +13523,8 @@ Saint-Jean-sur-Richelieu,Canada,-52,Montréal,Montréal,8/2/2020,-60
 STM,Canada,-52,Montréal,Montréal,8/2/2020,-51
 STL,Canada,-52,Montréal,Montréal,8/2/2020,-46
 RTL,Canada,-52,Montréal,Montréal,8/2/2020,-50
-exo Vallée-du-Richelieu,Canada,-52,Montréal,Montréal,8/2/2020,-43
 CRTL - Lanaudière,Canada,-52,Montréal,Montréal,8/2/2020,-34
+exo Vallée-du-Richelieu,Canada,-52,Montréal,Montréal,8/2/2020,-43
 exo Terrebonne-Mascouche,Canada,-36,Montréal,Montréal,9/14/2021,-1
 exo Sud-Ouest,Canada,-36,Montréal,Montréal,9/14/2021,-18
 exo Sorel-Varennes,Canada,-36,Montréal,Montréal,9/14/2021,17
@@ -13525,8 +13539,8 @@ Saint-Jean-sur-Richelieu,Canada,-36,Montréal,Montréal,9/14/2021,-47
 STM,Canada,-36,Montréal,Montréal,9/14/2021,-27
 STL,Canada,-36,Montréal,Montréal,9/14/2021,-15
 RTL,Canada,-36,Montréal,Montréal,9/14/2021,-19
-exo Vallée-du-Richelieu,Canada,-36,Montréal,Montréal,9/14/2021,-5
 CRTL - Lanaudière,Canada,-36,Montréal,Montréal,9/14/2021,-7
+exo Vallée-du-Richelieu,Canada,-36,Montréal,Montréal,9/14/2021,-5
 exo Vallée-du-Richelieu,Canada,-67,Montréal,Montréal,3/18/2020,-75
 exo Terrebonne-Mascouche,Canada,-67,Montréal,Montréal,3/18/2020,-69
 exo Sud-Ouest,Canada,-67,Montréal,Montréal,3/18/2020,-72
@@ -13557,8 +13571,8 @@ Saint-Jean-sur-Richelieu,Canada,-60,Montréal,Montréal,6/26/2020,-61
 STM,Canada,-60,Montréal,Montréal,6/26/2020,-54
 STL,Canada,-60,Montréal,Montréal,6/26/2020,-46
 RTL,Canada,-60,Montréal,Montréal,6/26/2020,-52
-exo Vallée-du-Richelieu,Canada,-60,Montréal,Montréal,6/26/2020,-45
 CRTL - Lanaudière,Canada,-60,Montréal,Montréal,6/26/2020,-41
+exo Vallée-du-Richelieu,Canada,-60,Montréal,Montréal,6/26/2020,-45
 exo Vallée-du-Richelieu,Canada,-75,Montréal,Montréal,2/16/2021,-82
 exo Terrebonne-Mascouche,Canada,-75,Montréal,Montréal,2/16/2021,-73
 exo Sud-Ouest,Canada,-75,Montréal,Montréal,2/16/2021,-81
@@ -13621,8 +13635,8 @@ Saint-Jean-sur-Richelieu,Canada,-66,Montréal,Montréal,11/15/2020,-82
 STM,Canada,-66,Montréal,Montréal,11/15/2020,-69
 STL,Canada,-66,Montréal,Montréal,11/15/2020,-63
 RTL,Canada,-66,Montréal,Montréal,11/15/2020,-68
-exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,11/15/2020,-66
 CRTL - Lanaudière,Canada,-66,Montréal,Montréal,11/15/2020,-60
+exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,11/15/2020,-66
 exo Terrebonne-Mascouche,Canada,-63,Montréal,Montréal,4/19/2021,-50
 exo Sud-Ouest,Canada,-63,Montréal,Montréal,4/19/2021,-61
 exo Sorel-Varennes,Canada,-63,Montréal,Montréal,4/19/2021,-54
@@ -13653,8 +13667,8 @@ Saint-Jean-sur-Richelieu,Canada,-49,Montréal,Montréal,7/25/2020,-52
 STM,Canada,-49,Montréal,Montréal,7/25/2020,-42
 STL,Canada,-49,Montréal,Montréal,7/25/2020,-29
 RTL,Canada,-49,Montréal,Montréal,7/25/2020,-39
-exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,7/25/2020,-33
 CRTL - Lanaudière,Canada,-49,Montréal,Montréal,7/25/2020,-31
+exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,7/25/2020,-33
 exo Terrebonne-Mascouche,Canada,-62,Montréal,Montréal,5/20/2021,-44
 exo Sud-Ouest,Canada,-62,Montréal,Montréal,5/20/2021,-55
 exo Sorel-Varennes,Canada,-62,Montréal,Montréal,5/20/2021,-51
@@ -13765,8 +13779,8 @@ Saint-Jean-sur-Richelieu,Canada,-47,Montréal,Montréal,7/9/2021,-64
 STM,Canada,-47,Montréal,Montréal,7/9/2021,-42
 STL,Canada,-47,Montréal,Montréal,7/9/2021,-34
 RTL,Canada,-47,Montréal,Montréal,7/9/2021,-44
-exo Vallée-du-Richelieu,Canada,-47,Montréal,Montréal,7/9/2021,-40
 CRTL - Lanaudière,Canada,-47,Montréal,Montréal,7/9/2021,-30
+exo Vallée-du-Richelieu,Canada,-47,Montréal,Montréal,7/9/2021,-40
 exo Terrebonne-Mascouche,Canada,-55,Montréal,Montréal,3/21/2021,-44
 exo Sud-Ouest,Canada,-55,Montréal,Montréal,3/21/2021,-48
 exo Sorel-Varennes,Canada,-55,Montréal,Montréal,3/21/2021,-44
@@ -13781,8 +13795,8 @@ Saint-Jean-sur-Richelieu,Canada,-55,Montréal,Montréal,3/21/2021,-72
 STM,Canada,-55,Montréal,Montréal,3/21/2021,-57
 STL,Canada,-55,Montréal,Montréal,3/21/2021,-48
 RTL,Canada,-55,Montréal,Montréal,3/21/2021,-53
-exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,3/21/2021,-48
 CRTL - Lanaudière,Canada,-55,Montréal,Montréal,3/21/2021,-42
+exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,3/21/2021,-48
 exo Terrebonne-Mascouche,Canada,-54,Montréal,Montréal,8/31/2020,-29
 exo Sud-Ouest,Canada,-54,Montréal,Montréal,8/31/2020,-47
 exo Sorel-Varennes,Canada,-54,Montréal,Montréal,8/31/2020,-41
@@ -13797,8 +13811,8 @@ Saint-Jean-sur-Richelieu,Canada,-54,Montréal,Montréal,8/31/2020,-58
 STM,Canada,-54,Montréal,Montréal,8/31/2020,-48
 STL,Canada,-54,Montréal,Montréal,8/31/2020,-41
 RTL,Canada,-54,Montréal,Montréal,8/31/2020,-45
-exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,8/31/2020,-42
 CRTL - Lanaudière,Canada,-54,Montréal,Montréal,8/31/2020,-31
+exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,8/31/2020,-42
 exo Terrebonne-Mascouche,Canada,-53,Montréal,Montréal,9/5/2020,-32
 exo Sud-Ouest,Canada,-53,Montréal,Montréal,9/5/2020,-50
 exo Sorel-Varennes,Canada,-53,Montréal,Montréal,9/5/2020,-38
@@ -13861,8 +13875,8 @@ Saint-Jean-sur-Richelieu,Canada,-42,Montréal,Montréal,8/25/2021,-47
 STM,Canada,-42,Montréal,Montréal,8/25/2021,-31
 STL,Canada,-42,Montréal,Montréal,8/25/2021,-13
 RTL,Canada,-42,Montréal,Montréal,8/25/2021,-29
-exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,8/25/2021,-6
 CRTL - Lanaudière,Canada,-42,Montréal,Montréal,8/25/2021,-12
+exo Vallée-du-Richelieu,Canada,-42,Montréal,Montréal,8/25/2021,-6
 exo Vallée-du-Richelieu,Canada,-80,Montréal,Montréal,1/14/2021,-84
 exo Terrebonne-Mascouche,Canada,-80,Montréal,Montréal,1/14/2021,-76
 exo Sud-Ouest,Canada,-80,Montréal,Montréal,1/14/2021,-81
@@ -13893,8 +13907,8 @@ Saint-Jean-sur-Richelieu,Canada,-45,Montréal,Montréal,7/19/2021,-61
 STM,Canada,-45,Montréal,Montréal,7/19/2021,-42
 STL,Canada,-45,Montréal,Montréal,7/19/2021,-33
 RTL,Canada,-45,Montréal,Montréal,7/19/2021,-43
-exo Vallée-du-Richelieu,Canada,-45,Montréal,Montréal,7/19/2021,-37
 CRTL - Lanaudière,Canada,-45,Montréal,Montréal,7/19/2021,-22
+exo Vallée-du-Richelieu,Canada,-45,Montréal,Montréal,7/19/2021,-37
 exo Vallée-du-Richelieu,Canada,-80,Montréal,Montréal,5/14/2020,-86
 exo Terrebonne-Mascouche,Canada,-80,Montréal,Montréal,5/14/2020,-82
 exo Sud-Ouest,Canada,-80,Montréal,Montréal,5/14/2020,-82
@@ -13973,8 +13987,8 @@ Saint-Jean-sur-Richelieu,Canada,-65,Montréal,Montréal,3/8/2021,-80
 STM,Canada,-65,Montréal,Montréal,3/8/2021,-66
 STL,Canada,-65,Montréal,Montréal,3/8/2021,-62
 RTL,Canada,-65,Montréal,Montréal,3/8/2021,-64
-exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,3/8/2021,-63
 CRTL - Lanaudière,Canada,-65,Montréal,Montréal,3/8/2021,-58
+exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,3/8/2021,-63
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,11/28/2020,-58
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,11/28/2020,-65
 exo Sorel-Varennes,Canada,-66,Montréal,Montréal,11/28/2020,-68
@@ -13989,8 +14003,8 @@ Saint-Jean-sur-Richelieu,Canada,-66,Montréal,Montréal,11/28/2020,-79
 STM,Canada,-66,Montréal,Montréal,11/28/2020,-68
 STL,Canada,-66,Montréal,Montréal,11/28/2020,-61
 RTL,Canada,-66,Montréal,Montréal,11/28/2020,-65
-exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,11/28/2020,-62
 CRTL - Lanaudière,Canada,-66,Montréal,Montréal,11/28/2020,-56
+exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,11/28/2020,-62
 exo Terrebonne-Mascouche,Canada,-51,Montréal,Montréal,12/23/2020,-34
 exo Sud-Ouest,Canada,-51,Montréal,Montréal,12/23/2020,-57
 exo Sorel-Varennes,Canada,-51,Montréal,Montréal,12/23/2020,-52
@@ -14021,8 +14035,8 @@ Saint-Jean-sur-Richelieu,Canada,-35,Montréal,Montréal,9/9/2021,-50
 STM,Canada,-35,Montréal,Montréal,9/9/2021,-26
 STL,Canada,-35,Montréal,Montréal,9/9/2021,-16
 RTL,Canada,-35,Montréal,Montréal,9/9/2021,-18
-exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/9/2021,-3
 CRTL - Lanaudière,Canada,-35,Montréal,Montréal,9/9/2021,-9
+exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/9/2021,-3
 exo Vallée-du-Richelieu,Canada,-76,Montréal,Montréal,3/23/2020,-84
 exo Terrebonne-Mascouche,Canada,-76,Montréal,Montréal,3/23/2020,-76
 exo Sud-Ouest,Canada,-76,Montréal,Montréal,3/23/2020,-82
@@ -14039,7 +14053,6 @@ STM,Canada,-76,Montréal,Montréal,3/23/2020,-79
 STL,Canada,-76,Montréal,Montréal,3/23/2020,-79
 RTL,Canada,-76,Montréal,Montréal,3/23/2020,-83
 CRTL - Lanaudière,Canada,-76,Montréal,Montréal,3/23/2020,-75
-exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,4/15/2021,-73
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,4/15/2021,-61
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,4/15/2021,-67
 exo Sorel-Varennes,Canada,-66,Montréal,Montréal,4/15/2021,-64
@@ -14055,6 +14068,7 @@ STM,Canada,-66,Montréal,Montréal,4/15/2021,-66
 STL,Canada,-66,Montréal,Montréal,4/15/2021,-64
 RTL,Canada,-66,Montréal,Montréal,4/15/2021,-67
 CRTL - Lanaudière,Canada,-66,Montréal,Montréal,4/15/2021,-65
+exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,4/15/2021,-73
 exo Vallée-du-Richelieu,Canada,-83,Montréal,Montréal,1/1/2021,-83
 exo Terrebonne-Mascouche,Canada,-83,Montréal,Montréal,1/1/2021,-76
 exo Sud-Ouest,Canada,-83,Montréal,Montréal,1/1/2021,-80
@@ -14085,8 +14099,8 @@ Saint-Jean-sur-Richelieu,Canada,-51,Montréal,Montréal,7/5/2020,-51
 STM,Canada,-51,Montréal,Montréal,7/5/2020,-42
 STL,Canada,-51,Montréal,Montréal,7/5/2020,-35
 RTL,Canada,-51,Montréal,Montréal,7/5/2020,-41
-exo Vallée-du-Richelieu,Canada,-51,Montréal,Montréal,7/5/2020,-30
 CRTL - Lanaudière,Canada,-51,Montréal,Montréal,7/5/2020,-19
+exo Vallée-du-Richelieu,Canada,-51,Montréal,Montréal,7/5/2020,-30
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,6/16/2020,-57
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,6/16/2020,-65
 exo Sorel-Varennes,Canada,-66,Montréal,Montréal,6/16/2020,-57
@@ -14133,8 +14147,8 @@ Saint-Jean-sur-Richelieu,Canada,-59,Montréal,Montréal,6/30/2020,-55
 STM,Canada,-59,Montréal,Montréal,6/30/2020,-50
 STL,Canada,-59,Montréal,Montréal,6/30/2020,-41
 RTL,Canada,-59,Montréal,Montréal,6/30/2020,-46
-exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,6/30/2020,-37
 CRTL - Lanaudière,Canada,-59,Montréal,Montréal,6/30/2020,-28
+exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,6/30/2020,-37
 exo Terrebonne-Mascouche,Canada,-46,Montréal,Montréal,7/29/2021,-31
 exo Sud-Ouest,Canada,-46,Montréal,Montréal,7/29/2021,-41
 exo Sorel-Varennes,Canada,-46,Montréal,Montréal,7/29/2021,-21
@@ -14149,8 +14163,8 @@ Saint-Jean-sur-Richelieu,Canada,-46,Montréal,Montréal,7/29/2021,-66
 STM,Canada,-46,Montréal,Montréal,7/29/2021,-44
 STL,Canada,-46,Montréal,Montréal,7/29/2021,-36
 RTL,Canada,-46,Montréal,Montréal,7/29/2021,-44
-exo Vallée-du-Richelieu,Canada,-46,Montréal,Montréal,7/29/2021,-40
 CRTL - Lanaudière,Canada,-46,Montréal,Montréal,7/29/2021,-25
+exo Vallée-du-Richelieu,Canada,-46,Montréal,Montréal,7/29/2021,-40
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,5/4/2020,-84
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,5/4/2020,-81
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,5/4/2020,-83
@@ -14229,8 +14243,8 @@ Saint-Jean-sur-Richelieu,Canada,-34,Montréal,Montréal,8/7/2021,-62
 STM,Canada,-34,Montréal,Montréal,8/7/2021,-33
 STL,Canada,-34,Montréal,Montréal,8/7/2021,-26
 RTL,Canada,-34,Montréal,Montréal,8/7/2021,-36
-exo Vallée-du-Richelieu,Canada,-34,Montréal,Montréal,8/7/2021,-33
 CRTL - Lanaudière,Canada,-34,Montréal,Montréal,8/7/2021,-13
+exo Vallée-du-Richelieu,Canada,-34,Montréal,Montréal,8/7/2021,-33
 exo Vallée-du-Richelieu,Canada,-78,Montréal,Montréal,4/25/2020,-86
 exo Terrebonne-Mascouche,Canada,-78,Montréal,Montréal,4/25/2020,-79
 exo Sud-Ouest,Canada,-78,Montréal,Montréal,4/25/2020,-86
@@ -14263,6 +14277,22 @@ STM,Canada,-74,Montréal,Montréal,1/24/2021,-77
 STL,Canada,-74,Montréal,Montréal,1/24/2021,-75
 RTL,Canada,-74,Montréal,Montréal,1/24/2021,-77
 CRTL - Lanaudière,Canada,-74,Montréal,Montréal,1/24/2021,-65
+exo Terrebonne-Mascouche,Canada,-34,Montréal,Montréal,10/19/2021,18
+exo Sud-Ouest,Canada,-34,Montréal,Montréal,10/19/2021,-16
+exo Sorel-Varennes,Canada,-34,Montréal,Montréal,10/19/2021,15
+exo Roussillon,Canada,-34,Montréal,Montréal,10/19/2021,5
+exo Le Richelain,Canada,-34,Montréal,Montréal,10/19/2021,-7
+exo Laurentides,Canada,-34,Montréal,Montréal,10/19/2021,36
+exo La Presqu'Île,Canada,-34,Montréal,Montréal,10/19/2021,3
+exo L'Assomption,Canada,-34,Montréal,Montréal,10/19/2021,-6
+exo Haut-Saint-Laurent,Canada,-34,Montréal,Montréal,10/19/2021,14
+exo - Trains,Canada,-34,Montréal,Montréal,10/19/2021,38
+Saint-Jean-sur-Richelieu,Canada,-34,Montréal,Montréal,10/19/2021,-46
+STM,Canada,-34,Montréal,Montréal,10/19/2021,-27
+STL,Canada,-34,Montréal,Montréal,10/19/2021,-13
+RTL,Canada,-34,Montréal,Montréal,10/19/2021,-23
+CRTL - Lanaudière,Canada,-34,Montréal,Montréal,10/19/2021,10
+exo Vallée-du-Richelieu,Canada,-34,Montréal,Montréal,10/19/2021,-21
 exo Terrebonne-Mascouche,Canada,-67,Montréal,Montréal,3/2/2021,-60
 exo Sud-Ouest,Canada,-67,Montréal,Montréal,3/2/2021,-65
 exo Sorel-Varennes,Canada,-67,Montréal,Montréal,3/2/2021,-65
@@ -14471,7 +14501,6 @@ STM,Canada,-67,Montréal,Montréal,2/19/2021,-69
 STL,Canada,-67,Montréal,Montréal,2/19/2021,-65
 RTL,Canada,-67,Montréal,Montréal,2/19/2021,-71
 CRTL - Lanaudière,Canada,-67,Montréal,Montréal,2/19/2021,-64
-exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,9/24/2020,-71
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,9/24/2020,-54
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,9/24/2020,-61
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,9/24/2020,-63
@@ -14487,7 +14516,7 @@ STM,Canada,-65,Montréal,Montréal,9/24/2020,-63
 STL,Canada,-65,Montréal,Montréal,9/24/2020,-59
 RTL,Canada,-65,Montréal,Montréal,9/24/2020,-62
 CRTL - Lanaudière,Canada,-65,Montréal,Montréal,9/24/2020,-55
-exo Vallée-du-Richelieu,Canada,-74,Montréal,Montréal,1/4/2021,-73
+exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,9/24/2020,-71
 exo Terrebonne-Mascouche,Canada,-74,Montréal,Montréal,1/4/2021,-62
 exo Sud-Ouest,Canada,-74,Montréal,Montréal,1/4/2021,-74
 exo Sorel-Varennes,Canada,-74,Montréal,Montréal,1/4/2021,-66
@@ -14503,6 +14532,7 @@ STM,Canada,-74,Montréal,Montréal,1/4/2021,-75
 STL,Canada,-74,Montréal,Montréal,1/4/2021,-72
 RTL,Canada,-74,Montréal,Montréal,1/4/2021,-75
 CRTL - Lanaudière,Canada,-74,Montréal,Montréal,1/4/2021,-58
+exo Vallée-du-Richelieu,Canada,-74,Montréal,Montréal,1/4/2021,-73
 exo Terrebonne-Mascouche,Canada,-32,Montréal,Montréal,9/5/2021,-31
 exo Sud-Ouest,Canada,-32,Montréal,Montréal,9/5/2021,-27
 exo Sorel-Varennes,Canada,-32,Montréal,Montréal,9/5/2021,-15
@@ -14517,8 +14547,8 @@ Saint-Jean-sur-Richelieu,Canada,-32,Montréal,Montréal,9/5/2021,-59
 STM,Canada,-32,Montréal,Montréal,9/5/2021,-38
 STL,Canada,-32,Montréal,Montréal,9/5/2021,-30
 RTL,Canada,-32,Montréal,Montréal,9/5/2021,-39
-exo Vallée-du-Richelieu,Canada,-32,Montréal,Montréal,9/5/2021,-26
 CRTL - Lanaudière,Canada,-32,Montréal,Montréal,9/5/2021,-23
+exo Vallée-du-Richelieu,Canada,-32,Montréal,Montréal,9/5/2021,-26
 exo Vallée-du-Richelieu,Canada,-83,Montréal,Montréal,3/27/2020,-93
 exo Terrebonne-Mascouche,Canada,-83,Montréal,Montréal,3/27/2020,-85
 exo Sud-Ouest,Canada,-83,Montréal,Montréal,3/27/2020,-87
@@ -14535,7 +14565,6 @@ STM,Canada,-83,Montréal,Montréal,3/27/2020,-86
 STL,Canada,-83,Montréal,Montréal,3/27/2020,-86
 RTL,Canada,-83,Montréal,Montréal,3/27/2020,-89
 CRTL - Lanaudière,Canada,-83,Montréal,Montréal,3/27/2020,-84
-exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,12/4/2020,-72
 exo Terrebonne-Mascouche,Canada,-72,Montréal,Montréal,12/4/2020,-64
 exo Sud-Ouest,Canada,-72,Montréal,Montréal,12/4/2020,-73
 exo Sorel-Varennes,Canada,-72,Montréal,Montréal,12/4/2020,-72
@@ -14551,6 +14580,7 @@ STM,Canada,-72,Montréal,Montréal,12/4/2020,-70
 STL,Canada,-72,Montréal,Montréal,12/4/2020,-69
 RTL,Canada,-72,Montréal,Montréal,12/4/2020,-71
 CRTL - Lanaudière,Canada,-72,Montréal,Montréal,12/4/2020,-65
+exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,12/4/2020,-72
 exo Terrebonne-Mascouche,Canada,-56,Montréal,Montréal,8/17/2020,-45
 exo Sud-Ouest,Canada,-56,Montréal,Montréal,8/17/2020,-57
 exo Sorel-Varennes,Canada,-56,Montréal,Montréal,8/17/2020,-61
@@ -14565,8 +14595,8 @@ Saint-Jean-sur-Richelieu,Canada,-56,Montréal,Montréal,8/17/2020,-69
 STM,Canada,-56,Montréal,Montréal,8/17/2020,-58
 STL,Canada,-56,Montréal,Montréal,8/17/2020,-52
 RTL,Canada,-56,Montréal,Montréal,8/17/2020,-59
-exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,8/17/2020,-58
 CRTL - Lanaudière,Canada,-56,Montréal,Montréal,8/17/2020,-48
+exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,8/17/2020,-58
 exo Terrebonne-Mascouche,Canada,-58,Montréal,Montréal,7/23/2020,-28
 exo Sud-Ouest,Canada,-58,Montréal,Montréal,7/23/2020,-49
 exo Sorel-Varennes,Canada,-58,Montréal,Montréal,7/23/2020,-39
@@ -14581,8 +14611,8 @@ Saint-Jean-sur-Richelieu,Canada,-58,Montréal,Montréal,7/23/2020,-59
 STM,Canada,-58,Montréal,Montréal,7/23/2020,-50
 STL,Canada,-58,Montréal,Montréal,7/23/2020,-40
 RTL,Canada,-58,Montréal,Montréal,7/23/2020,-46
-exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,7/23/2020,-42
 CRTL - Lanaudière,Canada,-58,Montréal,Montréal,7/23/2020,-38
+exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,7/23/2020,-42
 exo Terrebonne-Mascouche,Canada,-59,Montréal,Montréal,5/28/2021,-39
 exo Sud-Ouest,Canada,-59,Montréal,Montréal,5/28/2021,-52
 exo Sorel-Varennes,Canada,-59,Montréal,Montréal,5/28/2021,-37
@@ -14597,8 +14627,8 @@ Saint-Jean-sur-Richelieu,Canada,-59,Montréal,Montréal,5/28/2021,-73
 STM,Canada,-59,Montréal,Montréal,5/28/2021,-54
 STL,Canada,-59,Montréal,Montréal,5/28/2021,-47
 RTL,Canada,-59,Montréal,Montréal,5/28/2021,-50
-exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,5/28/2021,-54
 CRTL - Lanaudière,Canada,-59,Montréal,Montréal,5/28/2021,-46
+exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,5/28/2021,-54
 exo Vallée-du-Richelieu,Canada,-69,Montréal,Montréal,10/14/2020,-81
 exo Terrebonne-Mascouche,Canada,-69,Montréal,Montréal,10/14/2020,-69
 exo Sud-Ouest,Canada,-69,Montréal,Montréal,10/14/2020,-69
@@ -14638,7 +14668,7 @@ exo Roussillon,Canada,-26,Montréal,Montréal,10/4/2021,-8
 exo Le Richelain,Canada,-26,Montréal,Montréal,10/4/2021,-18
 exo Laurentides,Canada,-26,Montréal,Montréal,10/4/2021,19
 exo La Presqu'Île,Canada,-26,Montréal,Montréal,10/4/2021,6
-exo L'Assomption,Canada,-26,Montréal,Montréal,10/4/2021,-3
+exo L'Assomption,Canada,-26,Montréal,Montréal,10/4/2021,-2
 exo Haut-Saint-Laurent,Canada,-26,Montréal,Montréal,10/4/2021,0
 exo - Trains,Canada,-26,Montréal,Montréal,10/4/2021,38
 Saint-Jean-sur-Richelieu,Canada,-26,Montréal,Montréal,10/4/2021,-56
@@ -14661,8 +14691,8 @@ Saint-Jean-sur-Richelieu,Canada,-4,Montréal,Montréal,2/27/2020,-2
 STM,Canada,-4,Montréal,Montréal,2/27/2020,2
 STL,Canada,-4,Montréal,Montréal,2/27/2020,-4
 RTL,Canada,-4,Montréal,Montréal,2/27/2020,-4
-exo Vallée-du-Richelieu,Canada,-4,Montréal,Montréal,2/27/2020,-2
 CRTL - Lanaudière,Canada,-4,Montréal,Montréal,2/27/2020,-12
+exo Vallée-du-Richelieu,Canada,-4,Montréal,Montréal,2/27/2020,-2
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,6/2/2021,-37
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,6/2/2021,-53
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,6/2/2021,-35
@@ -14677,8 +14707,8 @@ Saint-Jean-sur-Richelieu,Canada,-57,Montréal,Montréal,6/2/2021,-71
 STM,Canada,-57,Montréal,Montréal,6/2/2021,-53
 STL,Canada,-57,Montréal,Montréal,6/2/2021,-45
 RTL,Canada,-57,Montréal,Montréal,6/2/2021,-52
-exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,6/2/2021,-50
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,6/2/2021,-41
+exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,6/2/2021,-50
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,1/15/2021,-86
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/15/2021,-76
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,1/15/2021,-81
@@ -14725,8 +14755,8 @@ Saint-Jean-sur-Richelieu,Canada,-33,Montréal,Montréal,9/12/2021,-54
 STM,Canada,-33,Montréal,Montréal,9/12/2021,-34
 STL,Canada,-33,Montréal,Montréal,9/12/2021,-28
 RTL,Canada,-33,Montréal,Montréal,9/12/2021,-34
-exo Vallée-du-Richelieu,Canada,-33,Montréal,Montréal,9/12/2021,-27
 CRTL - Lanaudière,Canada,-33,Montréal,Montréal,9/12/2021,-16
+exo Vallée-du-Richelieu,Canada,-33,Montréal,Montréal,9/12/2021,-27
 exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,3/20/2020,-84
 exo Terrebonne-Mascouche,Canada,-72,Montréal,Montréal,3/20/2020,-77
 exo Sud-Ouest,Canada,-72,Montréal,Montréal,3/20/2020,-78
@@ -14780,10 +14810,10 @@ exo Sud-Ouest,Canada,-37,Montréal,Montréal,10/7/2021,-24
 exo Sorel-Varennes,Canada,-37,Montréal,Montréal,10/7/2021,12
 exo Roussillon,Canada,-37,Montréal,Montréal,10/7/2021,-24
 exo Le Richelain,Canada,-37,Montréal,Montréal,10/7/2021,-16
-exo Laurentides,Canada,-37,Montréal,Montréal,10/7/2021,19
+exo Laurentides,Canada,-37,Montréal,Montréal,10/7/2021,20
 exo La Presqu'Île,Canada,-37,Montréal,Montréal,10/7/2021,-22
 exo L'Assomption,Canada,-37,Montréal,Montréal,10/7/2021,-10
-exo Haut-Saint-Laurent,Canada,-37,Montréal,Montréal,10/7/2021,-13
+exo Haut-Saint-Laurent,Canada,-37,Montréal,Montréal,10/7/2021,-12
 exo - Trains,Canada,-37,Montréal,Montréal,10/7/2021,-4
 Saint-Jean-sur-Richelieu,Canada,-37,Montréal,Montréal,10/7/2021,-56
 STM,Canada,-37,Montréal,Montréal,10/7/2021,-31
@@ -14805,8 +14835,8 @@ Saint-Jean-sur-Richelieu,Canada,11,Montréal,Montréal,2/24/2020,-5
 STM,Canada,11,Montréal,Montréal,2/24/2020,0
 STL,Canada,11,Montréal,Montréal,2/24/2020,0
 RTL,Canada,11,Montréal,Montréal,2/24/2020,2
-exo Vallée-du-Richelieu,Canada,11,Montréal,Montréal,2/24/2020,-2
 CRTL - Lanaudière,Canada,11,Montréal,Montréal,2/24/2020,9
+exo Vallée-du-Richelieu,Canada,11,Montréal,Montréal,2/24/2020,-2
 exo Vallée-du-Richelieu,Canada,-68,Montréal,Montréal,5/23/2020,-79
 exo Terrebonne-Mascouche,Canada,-68,Montréal,Montréal,5/23/2020,-66
 exo Sud-Ouest,Canada,-68,Montréal,Montréal,5/23/2020,-72
@@ -14837,8 +14867,8 @@ Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,7/10/2021,-60
 STM,Canada,-38,Montréal,Montréal,7/10/2021,-37
 STL,Canada,-38,Montréal,Montréal,7/10/2021,-29
 RTL,Canada,-38,Montréal,Montréal,7/10/2021,-38
-exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,7/10/2021,-30
 CRTL - Lanaudière,Canada,-38,Montréal,Montréal,7/10/2021,-27
+exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,7/10/2021,-30
 exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,9/30/2020,-76
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,9/30/2020,-58
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,9/30/2020,-62
@@ -14885,8 +14915,8 @@ Saint-Jean-sur-Richelieu,Canada,-51,Montréal,Montréal,7/19/2020,-48
 STM,Canada,-51,Montréal,Montréal,7/19/2020,-42
 STL,Canada,-51,Montréal,Montréal,7/19/2020,-34
 RTL,Canada,-51,Montréal,Montréal,7/19/2020,-36
-exo Vallée-du-Richelieu,Canada,-51,Montréal,Montréal,7/19/2020,-29
 CRTL - Lanaudière,Canada,-51,Montréal,Montréal,7/19/2020,-20
+exo Vallée-du-Richelieu,Canada,-51,Montréal,Montréal,7/19/2020,-29
 exo Terrebonne-Mascouche,Canada,-38,Montréal,Montréal,8/1/2021,-32
 exo Sud-Ouest,Canada,-38,Montréal,Montréal,8/1/2021,-41
 exo Sorel-Varennes,Canada,-38,Montréal,Montréal,8/1/2021,-25
@@ -14949,8 +14979,8 @@ Saint-Jean-sur-Richelieu,Canada,-40,Montréal,Montréal,9/1/2021,-42
 STM,Canada,-40,Montréal,Montréal,9/1/2021,-26
 STL,Canada,-40,Montréal,Montréal,9/1/2021,-11
 RTL,Canada,-40,Montréal,Montréal,9/1/2021,-18
-exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,9/1/2021,-5
 CRTL - Lanaudière,Canada,-40,Montréal,Montréal,9/1/2021,-4
+exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,9/1/2021,-5
 exo Vallée-du-Richelieu,Canada,-81,Montréal,Montréal,3/31/2020,-87
 exo Terrebonne-Mascouche,Canada,-81,Montréal,Montréal,3/31/2020,-85
 exo Sud-Ouest,Canada,-81,Montréal,Montréal,3/31/2020,-83
@@ -14999,7 +15029,6 @@ STL,Canada,-65,Montréal,Montréal,9/25/2020,-61
 RTL,Canada,-65,Montréal,Montréal,9/25/2020,-63
 CRTL - Lanaudière,Canada,-65,Montréal,Montréal,9/25/2020,-54
 exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,9/25/2020,-69
-exo Vallée-du-Richelieu,Canada,-68,Montréal,Montréal,2/23/2021,-73
 exo Terrebonne-Mascouche,Canada,-68,Montréal,Montréal,2/23/2021,-64
 exo Sud-Ouest,Canada,-68,Montréal,Montréal,2/23/2021,-66
 exo Sorel-Varennes,Canada,-68,Montréal,Montréal,2/23/2021,-69
@@ -15015,6 +15044,7 @@ STM,Canada,-68,Montréal,Montréal,2/23/2021,-68
 STL,Canada,-68,Montréal,Montréal,2/23/2021,-66
 RTL,Canada,-68,Montréal,Montréal,2/23/2021,-68
 CRTL - Lanaudière,Canada,-68,Montréal,Montréal,2/23/2021,-68
+exo Vallée-du-Richelieu,Canada,-68,Montréal,Montréal,2/23/2021,-73
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,2/28/2021,-44
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,2/28/2021,-56
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,2/28/2021,-47
@@ -15061,8 +15091,8 @@ Saint-Jean-sur-Richelieu,Canada,-60,Montréal,Montréal,11/1/2020,-75
 STM,Canada,-60,Montréal,Montréal,11/1/2020,-66
 STL,Canada,-60,Montréal,Montréal,11/1/2020,-60
 RTL,Canada,-60,Montréal,Montréal,11/1/2020,-62
-exo Vallée-du-Richelieu,Canada,-60,Montréal,Montréal,11/1/2020,-59
 CRTL - Lanaudière,Canada,-60,Montréal,Montréal,11/1/2020,-52
+exo Vallée-du-Richelieu,Canada,-60,Montréal,Montréal,11/1/2020,-59
 exo Terrebonne-Mascouche,Canada,-39,Montréal,Montréal,9/17/2021,-5
 exo Sud-Ouest,Canada,-39,Montréal,Montréal,9/17/2021,-26
 exo Sorel-Varennes,Canada,-39,Montréal,Montréal,9/17/2021,9
@@ -15077,8 +15107,8 @@ Saint-Jean-sur-Richelieu,Canada,-39,Montréal,Montréal,9/17/2021,-55
 STM,Canada,-39,Montréal,Montréal,9/17/2021,-30
 STL,Canada,-39,Montréal,Montréal,9/17/2021,-18
 RTL,Canada,-39,Montréal,Montréal,9/17/2021,-27
-exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,9/17/2021,-16
 CRTL - Lanaudière,Canada,-39,Montréal,Montréal,9/17/2021,-8
+exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,9/17/2021,-16
 exo Terrebonne-Mascouche,Canada,-31,Montréal,Montréal,3/15/2020,-31
 exo Sud-Ouest,Canada,-31,Montréal,Montréal,3/15/2020,-37
 exo Sorel-Varennes,Canada,-31,Montréal,Montréal,3/15/2020,-40
@@ -15093,8 +15123,8 @@ Saint-Jean-sur-Richelieu,Canada,-31,Montréal,Montréal,3/15/2020,-53
 STM,Canada,-31,Montréal,Montréal,3/15/2020,-38
 STL,Canada,-31,Montréal,Montréal,3/15/2020,-37
 RTL,Canada,-31,Montréal,Montréal,3/15/2020,-37
-exo Vallée-du-Richelieu,Canada,-31,Montréal,Montréal,3/15/2020,-35
 CRTL - Lanaudière,Canada,-31,Montréal,Montréal,3/15/2020,-28
+exo Vallée-du-Richelieu,Canada,-31,Montréal,Montréal,3/15/2020,-35
 exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,12/8/2020,-74
 exo Terrebonne-Mascouche,Canada,-72,Montréal,Montréal,12/8/2020,-64
 exo Sud-Ouest,Canada,-72,Montréal,Montréal,12/8/2020,-72
@@ -15269,8 +15299,8 @@ Saint-Jean-sur-Richelieu,Canada,1,Montréal,Montréal,3/4/2020,7
 STM,Canada,1,Montréal,Montréal,3/4/2020,-5
 STL,Canada,1,Montréal,Montréal,3/4/2020,1
 RTL,Canada,1,Montréal,Montréal,3/4/2020,-2
-exo Vallée-du-Richelieu,Canada,1,Montréal,Montréal,3/4/2020,-1
 CRTL - Lanaudière,Canada,1,Montréal,Montréal,3/4/2020,3
+exo Vallée-du-Richelieu,Canada,1,Montréal,Montréal,3/4/2020,-1
 exo Terrebonne-Mascouche,Canada,-38,Montréal,Montréal,9/28/2021,-12
 exo Sud-Ouest,Canada,-38,Montréal,Montréal,9/28/2021,-27
 exo Sorel-Varennes,Canada,-38,Montréal,Montréal,9/28/2021,1
@@ -15285,9 +15315,8 @@ Saint-Jean-sur-Richelieu,Canada,-38,Montréal,Montréal,9/28/2021,-51
 STM,Canada,-38,Montréal,Montréal,9/28/2021,-31
 STL,Canada,-38,Montréal,Montréal,9/28/2021,-18
 RTL,Canada,-38,Montréal,Montréal,9/28/2021,-25
-exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,9/28/2021,-36
 CRTL - Lanaudière,Canada,-38,Montréal,Montréal,9/28/2021,-18
-exo Vallée-du-Richelieu,Canada,-64,Montréal,Montréal,5/5/2021,-71
+exo Vallée-du-Richelieu,Canada,-38,Montréal,Montréal,9/28/2021,-36
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,5/5/2021,-54
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,5/5/2021,-63
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,5/5/2021,-64
@@ -15303,6 +15332,7 @@ STM,Canada,-64,Montréal,Montréal,5/5/2021,-63
 STL,Canada,-64,Montréal,Montréal,5/5/2021,-60
 RTL,Canada,-64,Montréal,Montréal,5/5/2021,-64
 CRTL - Lanaudière,Canada,-64,Montréal,Montréal,5/5/2021,-57
+exo Vallée-du-Richelieu,Canada,-64,Montréal,Montréal,5/5/2021,-71
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,12/30/2020,-52
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,12/30/2020,-67
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,12/30/2020,-65
@@ -15349,8 +15379,8 @@ Saint-Jean-sur-Richelieu,Canada,-24,Montréal,Montréal,3/13/2020,-38
 STM,Canada,-24,Montréal,Montréal,3/13/2020,-31
 STL,Canada,-24,Montréal,Montréal,3/13/2020,-35
 RTL,Canada,-24,Montréal,Montréal,3/13/2020,-33
-exo Vallée-du-Richelieu,Canada,-24,Montréal,Montréal,3/13/2020,-28
 CRTL - Lanaudière,Canada,-24,Montréal,Montréal,3/13/2020,-35
+exo Vallée-du-Richelieu,Canada,-24,Montréal,Montréal,3/13/2020,-28
 exo Terrebonne-Mascouche,Canada,-33,Montréal,Montréal,9/19/2021,-30
 exo Sud-Ouest,Canada,-33,Montréal,Montréal,9/19/2021,-27
 exo Sorel-Varennes,Canada,-33,Montréal,Montréal,9/19/2021,-20
@@ -15365,8 +15395,8 @@ Saint-Jean-sur-Richelieu,Canada,-33,Montréal,Montréal,9/19/2021,-60
 STM,Canada,-33,Montréal,Montréal,9/19/2021,-33
 STL,Canada,-33,Montréal,Montréal,9/19/2021,-25
 RTL,Canada,-33,Montréal,Montréal,9/19/2021,-36
-exo Vallée-du-Richelieu,Canada,-33,Montréal,Montréal,9/19/2021,-38
 CRTL - Lanaudière,Canada,-33,Montréal,Montréal,9/19/2021,-22
+exo Vallée-du-Richelieu,Canada,-33,Montréal,Montréal,9/19/2021,-38
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,5/31/2021,-36
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,5/31/2021,-52
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,5/31/2021,-44
@@ -15381,9 +15411,8 @@ Saint-Jean-sur-Richelieu,Canada,-57,Montréal,Montréal,5/31/2021,-75
 STM,Canada,-57,Montréal,Montréal,5/31/2021,-53
 STL,Canada,-57,Montréal,Montréal,5/31/2021,-44
 RTL,Canada,-57,Montréal,Montréal,5/31/2021,-53
-exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,5/31/2021,-55
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,5/31/2021,-47
-exo Vallée-du-Richelieu,Canada,-69,Montréal,Montréal,10/27/2020,-73
+exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,5/31/2021,-55
 exo Terrebonne-Mascouche,Canada,-69,Montréal,Montréal,10/27/2020,-64
 exo Sud-Ouest,Canada,-69,Montréal,Montréal,10/27/2020,-68
 exo Sorel-Varennes,Canada,-69,Montréal,Montréal,10/27/2020,-73
@@ -15399,6 +15428,7 @@ STM,Canada,-69,Montréal,Montréal,10/27/2020,-71
 STL,Canada,-69,Montréal,Montréal,10/27/2020,-67
 RTL,Canada,-69,Montréal,Montréal,10/27/2020,-68
 CRTL - Lanaudière,Canada,-69,Montréal,Montréal,10/27/2020,-66
+exo Vallée-du-Richelieu,Canada,-69,Montréal,Montréal,10/27/2020,-73
 exo Terrebonne-Mascouche,Canada,-49,Montréal,Montréal,6/13/2021,-31
 exo Sud-Ouest,Canada,-49,Montréal,Montréal,6/13/2021,-46
 exo Sorel-Varennes,Canada,-49,Montréal,Montréal,6/13/2021,-25
@@ -15413,8 +15443,8 @@ Saint-Jean-sur-Richelieu,Canada,-49,Montréal,Montréal,6/13/2021,-64
 STM,Canada,-49,Montréal,Montréal,6/13/2021,-45
 STL,Canada,-49,Montréal,Montréal,6/13/2021,-42
 RTL,Canada,-49,Montréal,Montréal,6/13/2021,-43
-exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,6/13/2021,-34
 CRTL - Lanaudière,Canada,-49,Montréal,Montréal,6/13/2021,-25
+exo Vallée-du-Richelieu,Canada,-49,Montréal,Montréal,6/13/2021,-34
 exo Terrebonne-Mascouche,Canada,-60,Montréal,Montréal,7/8/2020,-30
 exo Sud-Ouest,Canada,-60,Montréal,Montréal,7/8/2020,-55
 exo Sorel-Varennes,Canada,-60,Montréal,Montréal,7/8/2020,-39
@@ -15495,7 +15525,6 @@ STL,Canada,-58,Montréal,Montréal,9/6/2021,-52
 RTL,Canada,-58,Montréal,Montréal,9/6/2021,-62
 CRTL - Lanaudière,Canada,-58,Montréal,Montréal,9/6/2021,-42
 exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,9/6/2021,-61
-exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,12/19/2020,-71
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,12/19/2020,-56
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,12/19/2020,-69
 exo Sorel-Varennes,Canada,-66,Montréal,Montréal,12/19/2020,-67
@@ -15511,6 +15540,7 @@ STM,Canada,-66,Montréal,Montréal,12/19/2020,-66
 STL,Canada,-66,Montréal,Montréal,12/19/2020,-63
 RTL,Canada,-66,Montréal,Montréal,12/19/2020,-67
 CRTL - Lanaudière,Canada,-66,Montréal,Montréal,12/19/2020,-53
+exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,12/19/2020,-71
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,9/7/2020,-58
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,9/7/2020,-58
 exo Sorel-Varennes,Canada,-71,Montréal,Montréal,9/7/2020,-59
@@ -15541,9 +15571,8 @@ Saint-Jean-sur-Richelieu,Canada,-59,Montréal,Montréal,3/7/2021,-79
 STM,Canada,-59,Montréal,Montréal,3/7/2021,-61
 STL,Canada,-59,Montréal,Montréal,3/7/2021,-55
 RTL,Canada,-59,Montréal,Montréal,3/7/2021,-61
-exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,3/7/2021,-56
 CRTL - Lanaudière,Canada,-59,Montréal,Montréal,3/7/2021,-49
-exo Vallée-du-Richelieu,Canada,-69,Montréal,Montréal,6/12/2020,-72
+exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,3/7/2021,-56
 exo Terrebonne-Mascouche,Canada,-69,Montréal,Montréal,6/12/2020,-68
 exo Sud-Ouest,Canada,-69,Montréal,Montréal,6/12/2020,-72
 exo Sorel-Varennes,Canada,-69,Montréal,Montréal,6/12/2020,-64
@@ -15559,6 +15588,7 @@ STM,Canada,-69,Montréal,Montréal,6/12/2020,-67
 STL,Canada,-69,Montréal,Montréal,6/12/2020,-64
 RTL,Canada,-69,Montréal,Montréal,6/12/2020,-70
 CRTL - Lanaudière,Canada,-69,Montréal,Montréal,6/12/2020,-56
+exo Vallée-du-Richelieu,Canada,-69,Montréal,Montréal,6/12/2020,-72
 exo Vallée-du-Richelieu,Canada,-67,Montréal,Montréal,10/2/2020,-80
 exo Terrebonne-Mascouche,Canada,-67,Montréal,Montréal,10/2/2020,-64
 exo Sud-Ouest,Canada,-67,Montréal,Montréal,10/2/2020,-67
@@ -15623,7 +15653,6 @@ STL,Canada,-46,Montréal,Montréal,7/15/2021,-30
 RTL,Canada,-46,Montréal,Montréal,7/15/2021,-41
 CRTL - Lanaudière,Canada,-46,Montréal,Montréal,7/15/2021,-14
 exo Vallée-du-Richelieu,Canada,-46,Montréal,Montréal,7/15/2021,-38
-exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,11/26/2020,-72
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,11/26/2020,-65
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,11/26/2020,-72
 exo Sorel-Varennes,Canada,-71,Montréal,Montréal,11/26/2020,-69
@@ -15639,6 +15668,7 @@ STM,Canada,-71,Montréal,Montréal,11/26/2020,-71
 STL,Canada,-71,Montréal,Montréal,11/26/2020,-68
 RTL,Canada,-71,Montréal,Montréal,11/26/2020,-71
 CRTL - Lanaudière,Canada,-71,Montréal,Montréal,11/26/2020,-65
+exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,11/26/2020,-72
 exo Vallée-du-Richelieu,Canada,-80,Montréal,Montréal,4/11/2020,-90
 exo Terrebonne-Mascouche,Canada,-80,Montréal,Montréal,4/11/2020,-82
 exo Sud-Ouest,Canada,-80,Montréal,Montréal,4/11/2020,-84
@@ -15669,8 +15699,8 @@ Saint-Jean-sur-Richelieu,Canada,-30,Montréal,Montréal,8/21/2021,-54
 STM,Canada,-30,Montréal,Montréal,8/21/2021,-30
 STL,Canada,-30,Montréal,Montréal,8/21/2021,-22
 RTL,Canada,-30,Montréal,Montréal,8/21/2021,-30
-exo Vallée-du-Richelieu,Canada,-30,Montréal,Montréal,8/21/2021,-26
 CRTL - Lanaudière,Canada,-30,Montréal,Montréal,8/21/2021,-12
+exo Vallée-du-Richelieu,Canada,-30,Montréal,Montréal,8/21/2021,-26
 exo Terrebonne-Mascouche,Canada,-61,Montréal,Montréal,4/12/2021,-49
 exo Sud-Ouest,Canada,-61,Montréal,Montréal,4/12/2021,-59
 exo Sorel-Varennes,Canada,-61,Montréal,Montréal,4/12/2021,-48
@@ -15797,8 +15827,8 @@ Saint-Jean-sur-Richelieu,Canada,-58,Montréal,Montréal,3/13/2021,-79
 STM,Canada,-58,Montréal,Montréal,3/13/2021,-61
 STL,Canada,-58,Montréal,Montréal,3/13/2021,-55
 RTL,Canada,-58,Montréal,Montréal,3/13/2021,-60
-exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,3/13/2021,-61
 CRTL - Lanaudière,Canada,-58,Montréal,Montréal,3/13/2021,-53
+exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,3/13/2021,-61
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,5/24/2021,-44
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,5/24/2021,-46
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,5/24/2021,-39
@@ -15829,8 +15859,8 @@ Saint-Jean-sur-Richelieu,Canada,-55,Montréal,Montréal,7/28/2020,-52
 STM,Canada,-55,Montréal,Montréal,7/28/2020,-48
 STL,Canada,-55,Montréal,Montréal,7/28/2020,-35
 RTL,Canada,-55,Montréal,Montréal,7/28/2020,-40
-exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,7/28/2020,-36
 CRTL - Lanaudière,Canada,-55,Montréal,Montréal,7/28/2020,-32
+exo Vallée-du-Richelieu,Canada,-55,Montréal,Montréal,7/28/2020,-36
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,4/18/2020,-89
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,4/18/2020,-81
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,4/18/2020,-85
@@ -15861,8 +15891,8 @@ Saint-Jean-sur-Richelieu,Canada,-30,Montréal,Montréal,8/14/2021,-56
 STM,Canada,-30,Montréal,Montréal,8/14/2021,-32
 STL,Canada,-30,Montréal,Montréal,8/14/2021,-25
 RTL,Canada,-30,Montréal,Montréal,8/14/2021,-35
-exo Vallée-du-Richelieu,Canada,-30,Montréal,Montréal,8/14/2021,-31
 CRTL - Lanaudière,Canada,-30,Montréal,Montréal,8/14/2021,-10
+exo Vallée-du-Richelieu,Canada,-30,Montréal,Montréal,8/14/2021,-31
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,7/15/2020,-23
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,7/15/2020,-48
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,7/15/2020,-32
@@ -15909,24 +15939,24 @@ Saint-Jean-sur-Richelieu,Canada,-60,Montréal,Montréal,7/2/2020,-59
 STM,Canada,-60,Montréal,Montréal,7/2/2020,-51
 STL,Canada,-60,Montréal,Montréal,7/2/2020,-41
 RTL,Canada,-60,Montréal,Montréal,7/2/2020,-48
-exo Vallée-du-Richelieu,Canada,-60,Montréal,Montréal,7/2/2020,-41
 CRTL - Lanaudière,Canada,-60,Montréal,Montréal,7/2/2020,-30
-exo Terrebonne-Mascouche,Canada,-35,Montréal,Montréal,10/17/2021,-37
-exo Sud-Ouest,Canada,-35,Montréal,Montréal,10/17/2021,-31
-exo Sorel-Varennes,Canada,-35,Montréal,Montréal,10/17/2021,-37
-exo Roussillon,Canada,-35,Montréal,Montréal,10/17/2021,-40
-exo Le Richelain,Canada,-35,Montréal,Montréal,10/17/2021,-42
-exo Laurentides,Canada,-35,Montréal,Montréal,10/17/2021,-21
-exo La Presqu'Île,Canada,-35,Montréal,Montréal,10/17/2021,-39
-exo L'Assomption,Canada,-35,Montréal,Montréal,10/17/2021,-22
-exo Haut-Saint-Laurent,Canada,-35,Montréal,Montréal,10/17/2021,-18
-exo - Trains,Canada,-35,Montréal,Montréal,10/17/2021,1
-Saint-Jean-sur-Richelieu,Canada,-35,Montréal,Montréal,10/17/2021,-66
-STM,Canada,-35,Montréal,Montréal,10/17/2021,-33
-STL,Canada,-35,Montréal,Montréal,10/17/2021,-30
-RTL,Canada,-35,Montréal,Montréal,10/17/2021,-38
-CRTL - Lanaudière,Canada,-35,Montréal,Montréal,10/17/2021,-20
-exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,10/17/2021,-48
+exo Vallée-du-Richelieu,Canada,-60,Montréal,Montréal,7/2/2020,-41
+exo Terrebonne-Mascouche,Canada,-34,Montréal,Montréal,10/17/2021,-34
+exo Sud-Ouest,Canada,-34,Montréal,Montréal,10/17/2021,-29
+exo Sorel-Varennes,Canada,-34,Montréal,Montréal,10/17/2021,-34
+exo Roussillon,Canada,-34,Montréal,Montréal,10/17/2021,-38
+exo Le Richelain,Canada,-34,Montréal,Montréal,10/17/2021,-40
+exo Laurentides,Canada,-34,Montréal,Montréal,10/17/2021,-18
+exo La Presqu'Île,Canada,-34,Montréal,Montréal,10/17/2021,-38
+exo L'Assomption,Canada,-34,Montréal,Montréal,10/17/2021,-19
+exo Haut-Saint-Laurent,Canada,-34,Montréal,Montréal,10/17/2021,-15
+exo - Trains,Canada,-34,Montréal,Montréal,10/17/2021,3
+Saint-Jean-sur-Richelieu,Canada,-34,Montréal,Montréal,10/17/2021,-65
+STM,Canada,-34,Montréal,Montréal,10/17/2021,-32
+STL,Canada,-34,Montréal,Montréal,10/17/2021,-27
+RTL,Canada,-34,Montréal,Montréal,10/17/2021,-36
+CRTL - Lanaudière,Canada,-34,Montréal,Montréal,10/17/2021,-16
+exo Vallée-du-Richelieu,Canada,-34,Montréal,Montréal,10/17/2021,-46
 exo Terrebonne-Mascouche,Canada,-63,Montréal,Montréal,6/19/2020,-57
 exo Sud-Ouest,Canada,-63,Montréal,Montréal,6/19/2020,-64
 exo Sorel-Varennes,Canada,-63,Montréal,Montréal,6/19/2020,-57
@@ -15989,8 +16019,8 @@ Saint-Jean-sur-Richelieu,Canada,-1,Montréal,Montréal,3/7/2020,11
 STM,Canada,-1,Montréal,Montréal,3/7/2020,2
 STL,Canada,-1,Montréal,Montréal,3/7/2020,7
 RTL,Canada,-1,Montréal,Montréal,3/7/2020,3
-exo Vallée-du-Richelieu,Canada,-1,Montréal,Montréal,3/7/2020,5
 CRTL - Lanaudière,Canada,-1,Montréal,Montréal,3/7/2020,19
+exo Vallée-du-Richelieu,Canada,-1,Montréal,Montréal,3/7/2020,5
 exo Terrebonne-Mascouche,Canada,-36,Montréal,Montréal,9/25/2021,-24
 exo Sud-Ouest,Canada,-36,Montréal,Montréal,9/25/2021,-28
 exo Sorel-Varennes,Canada,-36,Montréal,Montréal,9/25/2021,-20
@@ -16085,8 +16115,8 @@ Saint-Jean-sur-Richelieu,Canada,-46,Montréal,Montréal,6/20/2021,-63
 STM,Canada,-46,Montréal,Montréal,6/20/2021,-40
 STL,Canada,-46,Montréal,Montréal,6/20/2021,-33
 RTL,Canada,-46,Montréal,Montréal,6/20/2021,-39
-exo Vallée-du-Richelieu,Canada,-46,Montréal,Montréal,6/20/2021,-32
 CRTL - Lanaudière,Canada,-46,Montréal,Montréal,6/20/2021,-14
+exo Vallée-du-Richelieu,Canada,-46,Montréal,Montréal,6/20/2021,-32
 exo Terrebonne-Mascouche,Canada,-62,Montréal,Montréal,10/24/2020,-55
 exo Sud-Ouest,Canada,-62,Montréal,Montréal,10/24/2020,-67
 exo Sorel-Varennes,Canada,-62,Montréal,Montréal,10/24/2020,-68
@@ -16133,8 +16163,8 @@ Saint-Jean-sur-Richelieu,Canada,-44,Montréal,Montréal,7/3/2021,-62
 STM,Canada,-44,Montréal,Montréal,7/3/2021,-44
 STL,Canada,-44,Montréal,Montréal,7/3/2021,-36
 RTL,Canada,-44,Montréal,Montréal,7/3/2021,-44
-exo Vallée-du-Richelieu,Canada,-44,Montréal,Montréal,7/3/2021,-39
 CRTL - Lanaudière,Canada,-44,Montréal,Montréal,7/3/2021,-29
+exo Vallée-du-Richelieu,Canada,-44,Montréal,Montréal,7/3/2021,-39
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,1/29/2021,-84
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/29/2021,-74
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,1/29/2021,-82
@@ -16165,8 +16195,8 @@ Saint-Jean-sur-Richelieu,Canada,-35,Montréal,Montréal,8/9/2021,-66
 STM,Canada,-35,Montréal,Montréal,8/9/2021,-39
 STL,Canada,-35,Montréal,Montréal,8/9/2021,-34
 RTL,Canada,-35,Montréal,Montréal,8/9/2021,-41
-exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,8/9/2021,-37
 CRTL - Lanaudière,Canada,-35,Montréal,Montréal,8/9/2021,-26
+exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,8/9/2021,-37
 exo Vallée-du-Richelieu,Canada,-83,Montréal,Montréal,4/23/2020,-92
 exo Terrebonne-Mascouche,Canada,-83,Montréal,Montréal,4/23/2020,-87
 exo Sud-Ouest,Canada,-83,Montréal,Montréal,4/23/2020,-86
@@ -16183,7 +16213,6 @@ STM,Canada,-83,Montréal,Montréal,4/23/2020,-85
 STL,Canada,-83,Montréal,Montréal,4/23/2020,-86
 RTL,Canada,-83,Montréal,Montréal,4/23/2020,-89
 CRTL - Lanaudière,Canada,-83,Montréal,Montréal,4/23/2020,-84
-exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,4/21/2021,-71
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,4/21/2021,-55
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,4/21/2021,-64
 exo Sorel-Varennes,Canada,-66,Montréal,Montréal,4/21/2021,-63
@@ -16199,6 +16228,7 @@ STM,Canada,-66,Montréal,Montréal,4/21/2021,-64
 STL,Canada,-66,Montréal,Montréal,4/21/2021,-63
 RTL,Canada,-66,Montréal,Montréal,4/21/2021,-66
 CRTL - Lanaudière,Canada,-66,Montréal,Montréal,4/21/2021,-61
+exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,4/21/2021,-71
 exo Terrebonne-Mascouche,Canada,-58,Montréal,Montréal,8/20/2020,-49
 exo Sud-Ouest,Canada,-58,Montréal,Montréal,8/20/2020,-60
 exo Sorel-Varennes,Canada,-58,Montréal,Montréal,8/20/2020,-65
@@ -16229,8 +16259,8 @@ Saint-Jean-sur-Richelieu,Canada,-48,Montréal,Montréal,8/15/2020,-59
 STM,Canada,-48,Montréal,Montréal,8/15/2020,-47
 STL,Canada,-48,Montréal,Montréal,8/15/2020,-40
 RTL,Canada,-48,Montréal,Montréal,8/15/2020,-47
-exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,8/15/2020,-42
 CRTL - Lanaudière,Canada,-48,Montréal,Montréal,8/15/2020,-33
+exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,8/15/2020,-42
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,4/5/2021,-42
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,4/5/2021,-55
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,4/5/2021,-50
@@ -16277,8 +16307,8 @@ Saint-Jean-sur-Richelieu,Canada,-37,Montréal,Montréal,7/25/2021,-62
 STM,Canada,-37,Montréal,Montréal,7/25/2021,-38
 STL,Canada,-37,Montréal,Montréal,7/25/2021,-31
 RTL,Canada,-37,Montréal,Montréal,7/25/2021,-36
-exo Vallée-du-Richelieu,Canada,-37,Montréal,Montréal,7/25/2021,-31
 CRTL - Lanaudière,Canada,-37,Montréal,Montréal,7/25/2021,-24
+exo Vallée-du-Richelieu,Canada,-37,Montréal,Montréal,7/25/2021,-31
 exo Terrebonne-Mascouche,Canada,-70,Montréal,Montréal,2/14/2021,-56
 exo Sud-Ouest,Canada,-70,Montréal,Montréal,2/14/2021,-74
 exo Sorel-Varennes,Canada,-70,Montréal,Montréal,2/14/2021,-67
@@ -16325,8 +16355,8 @@ Saint-Jean-sur-Richelieu,Canada,-43,Montréal,Montréal,7/4/2021,-64
 STM,Canada,-43,Montréal,Montréal,7/4/2021,-40
 STL,Canada,-43,Montréal,Montréal,7/4/2021,-33
 RTL,Canada,-43,Montréal,Montréal,7/4/2021,-41
-exo Vallée-du-Richelieu,Canada,-43,Montréal,Montréal,7/4/2021,-33
 CRTL - Lanaudière,Canada,-43,Montréal,Montréal,7/4/2021,-19
+exo Vallée-du-Richelieu,Canada,-43,Montréal,Montréal,7/4/2021,-33
 exo Vallée-du-Richelieu,Canada,-68,Montréal,Montréal,11/9/2020,-74
 exo Terrebonne-Mascouche,Canada,-68,Montréal,Montréal,11/9/2020,-62
 exo Sud-Ouest,Canada,-68,Montréal,Montréal,11/9/2020,-71
@@ -16357,8 +16387,8 @@ Saint-Jean-sur-Richelieu,Canada,-57,Montréal,Montréal,6/4/2021,-70
 STM,Canada,-57,Montréal,Montréal,6/4/2021,-51
 STL,Canada,-57,Montréal,Montréal,6/4/2021,-46
 RTL,Canada,-57,Montréal,Montréal,6/4/2021,-48
-exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,6/4/2021,-49
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,6/4/2021,-40
+exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,6/4/2021,-49
 exo Terrebonne-Mascouche,Canada,-59,Montréal,Montréal,7/9/2020,-28
 exo Sud-Ouest,Canada,-59,Montréal,Montréal,7/9/2020,-52
 exo Sorel-Varennes,Canada,-59,Montréal,Montréal,7/9/2020,-37
@@ -16389,8 +16419,8 @@ Saint-Jean-sur-Richelieu,Canada,-58,Montréal,Montréal,4/10/2021,-69
 STM,Canada,-58,Montréal,Montréal,4/10/2021,-55
 STL,Canada,-58,Montréal,Montréal,4/10/2021,-47
 RTL,Canada,-58,Montréal,Montréal,4/10/2021,-51
-exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,4/10/2021,-52
 CRTL - Lanaudière,Canada,-58,Montréal,Montréal,4/10/2021,-42
+exo Vallée-du-Richelieu,Canada,-58,Montréal,Montréal,4/10/2021,-52
 exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,12/1/2020,-76
 exo Terrebonne-Mascouche,Canada,-72,Montréal,Montréal,12/1/2020,-64
 exo Sud-Ouest,Canada,-72,Montréal,Montréal,12/1/2020,-71
@@ -16425,7 +16455,7 @@ RTL,Canada,-71,Montréal,Montréal,1/9/2021,-77
 CRTL - Lanaudière,Canada,-71,Montréal,Montréal,1/9/2021,-70
 exo Terrebonne-Mascouche,Canada,-36,Montréal,Montréal,10/10/2021,-32
 exo Sud-Ouest,Canada,-36,Montréal,Montréal,10/10/2021,-30
-exo Sorel-Varennes,Canada,-36,Montréal,Montréal,10/10/2021,-21
+exo Sorel-Varennes,Canada,-36,Montréal,Montréal,10/10/2021,-20
 exo Roussillon,Canada,-36,Montréal,Montréal,10/10/2021,-35
 exo Le Richelain,Canada,-36,Montréal,Montréal,10/10/2021,-37
 exo Laurentides,Canada,-36,Montréal,Montréal,10/10/2021,-18
@@ -16453,8 +16483,8 @@ Saint-Jean-sur-Richelieu,Canada,-4,Montréal,Montréal,2/21/2020,2
 STM,Canada,-4,Montréal,Montréal,2/21/2020,-2
 STL,Canada,-4,Montréal,Montréal,2/21/2020,-3
 RTL,Canada,-4,Montréal,Montréal,2/21/2020,-2
-exo Vallée-du-Richelieu,Canada,-4,Montréal,Montréal,2/21/2020,-1
 CRTL - Lanaudière,Canada,-4,Montréal,Montréal,2/21/2020,-9
+exo Vallée-du-Richelieu,Canada,-4,Montréal,Montréal,2/21/2020,-1
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,3/15/2021,-57
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,3/15/2021,-64
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,3/15/2021,-57
@@ -16510,7 +16540,7 @@ exo Roussillon,Canada,-39,Montréal,Montréal,10/1/2021,-26
 exo Le Richelain,Canada,-39,Montréal,Montréal,10/1/2021,-26
 exo Laurentides,Canada,-39,Montréal,Montréal,10/1/2021,4
 exo La Presqu'Île,Canada,-39,Montréal,Montréal,10/1/2021,-25
-exo L'Assomption,Canada,-39,Montréal,Montréal,10/1/2021,-20
+exo L'Assomption,Canada,-39,Montréal,Montréal,10/1/2021,-19
 exo Haut-Saint-Laurent,Canada,-39,Montréal,Montréal,10/1/2021,-24
 exo - Trains,Canada,-39,Montréal,Montréal,10/1/2021,-9
 Saint-Jean-sur-Richelieu,Canada,-39,Montréal,Montréal,10/1/2021,-61
@@ -16533,8 +16563,8 @@ Saint-Jean-sur-Richelieu,Canada,5,Montréal,Montréal,3/1/2020,5
 STM,Canada,5,Montréal,Montréal,3/1/2020,12
 STL,Canada,5,Montréal,Montréal,3/1/2020,18
 RTL,Canada,5,Montréal,Montréal,3/1/2020,8
-exo Vallée-du-Richelieu,Canada,5,Montréal,Montréal,3/1/2020,3
 CRTL - Lanaudière,Canada,5,Montréal,Montréal,3/1/2020,22
+exo Vallée-du-Richelieu,Canada,5,Montréal,Montréal,3/1/2020,3
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,7/17/2020,-27
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,7/17/2020,-50
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,7/17/2020,-37
@@ -16613,8 +16643,8 @@ Saint-Jean-sur-Richelieu,Canada,-39,Montréal,Montréal,8/27/2021,-52
 STM,Canada,-39,Montréal,Montréal,8/27/2021,-27
 STL,Canada,-39,Montréal,Montréal,8/27/2021,-15
 RTL,Canada,-39,Montréal,Montréal,8/27/2021,-28
-exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,8/27/2021,-15
 CRTL - Lanaudière,Canada,-39,Montréal,Montréal,8/27/2021,-8
+exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,8/27/2021,-15
 exo Terrebonne-Mascouche,Canada,-53,Montréal,Montréal,7/12/2020,-31
 exo Sud-Ouest,Canada,-53,Montréal,Montréal,7/12/2020,-49
 exo Sorel-Varennes,Canada,-53,Montréal,Montréal,7/12/2020,-48
@@ -16629,8 +16659,8 @@ Saint-Jean-sur-Richelieu,Canada,-53,Montréal,Montréal,7/12/2020,-55
 STM,Canada,-53,Montréal,Montréal,7/12/2020,-43
 STL,Canada,-53,Montréal,Montréal,7/12/2020,-39
 RTL,Canada,-53,Montréal,Montréal,7/12/2020,-43
-exo Vallée-du-Richelieu,Canada,-53,Montréal,Montréal,7/12/2020,-42
 CRTL - Lanaudière,Canada,-53,Montréal,Montréal,7/12/2020,-36
+exo Vallée-du-Richelieu,Canada,-53,Montréal,Montréal,7/12/2020,-42
 exo Terrebonne-Mascouche,Canada,-58,Montréal,Montréal,6/8/2021,-41
 exo Sud-Ouest,Canada,-58,Montréal,Montréal,6/8/2021,-51
 exo Sorel-Varennes,Canada,-58,Montréal,Montréal,6/8/2021,-46
@@ -16663,7 +16693,6 @@ STM,Canada,-67,Montréal,Montréal,2/25/2021,-67
 STL,Canada,-67,Montréal,Montréal,2/25/2021,-64
 RTL,Canada,-67,Montréal,Montréal,2/25/2021,-69
 CRTL - Lanaudière,Canada,-67,Montréal,Montréal,2/25/2021,-69
-exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,5/26/2020,-70
 exo Terrebonne-Mascouche,Canada,-72,Montréal,Montréal,5/26/2020,-68
 exo Sud-Ouest,Canada,-72,Montréal,Montréal,5/26/2020,-71
 exo Sorel-Varennes,Canada,-72,Montréal,Montréal,5/26/2020,-72
@@ -16679,6 +16708,7 @@ STM,Canada,-72,Montréal,Montréal,5/26/2020,-72
 STL,Canada,-72,Montréal,Montréal,5/26/2020,-67
 RTL,Canada,-72,Montréal,Montréal,5/26/2020,-74
 CRTL - Lanaudière,Canada,-72,Montréal,Montréal,5/26/2020,-63
+exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,5/26/2020,-70
 exo Terrebonne-Mascouche,Canada,-50,Montréal,Montréal,7/7/2021,-27
 exo Sud-Ouest,Canada,-50,Montréal,Montréal,7/7/2021,-45
 exo Sorel-Varennes,Canada,-50,Montréal,Montréal,7/7/2021,-32
@@ -16711,12 +16741,12 @@ STM,Canada,-78,Montréal,Montréal,2/10/2021,-77
 STL,Canada,-78,Montréal,Montréal,2/10/2021,-73
 RTL,Canada,-78,Montréal,Montréal,2/10/2021,-76
 CRTL - Lanaudière,Canada,-78,Montréal,Montréal,2/10/2021,-72
-exo Terrebonne-Mascouche,Canada,-40,Montréal,Montréal,10/12/2021,-35
-exo Sud-Ouest,Canada,-40,Montréal,Montréal,10/12/2021,-28
+exo Terrebonne-Mascouche,Canada,-40,Montréal,Montréal,10/12/2021,-34
+exo Sud-Ouest,Canada,-40,Montréal,Montréal,10/12/2021,-27
 exo Sorel-Varennes,Canada,-40,Montréal,Montréal,10/12/2021,-35
 exo Roussillon,Canada,-40,Montréal,Montréal,10/12/2021,-47
-exo Le Richelain,Canada,-40,Montréal,Montréal,10/12/2021,-44
-exo Laurentides,Canada,-40,Montréal,Montréal,10/12/2021,-13
+exo Le Richelain,Canada,-40,Montréal,Montréal,10/12/2021,-43
+exo Laurentides,Canada,-40,Montréal,Montréal,10/12/2021,-12
 exo La Presqu'Île,Canada,-40,Montréal,Montréal,10/12/2021,-62
 exo L'Assomption,Canada,-40,Montréal,Montréal,10/12/2021,-17
 exo Haut-Saint-Laurent,Canada,-40,Montréal,Montréal,10/12/2021,-23
@@ -16741,8 +16771,8 @@ Saint-Jean-sur-Richelieu,Canada,2,Montréal,Montréal,2/19/2020,20
 STM,Canada,2,Montréal,Montréal,2/19/2020,14
 STL,Canada,2,Montréal,Montréal,2/19/2020,15
 RTL,Canada,2,Montréal,Montréal,2/19/2020,14
-exo Vallée-du-Richelieu,Canada,2,Montréal,Montréal,2/19/2020,13
 CRTL - Lanaudière,Canada,2,Montréal,Montréal,2/19/2020,15
+exo Vallée-du-Richelieu,Canada,2,Montréal,Montréal,2/19/2020,13
 exo Terrebonne-Mascouche,Canada,-61,Montréal,Montréal,4/4/2021,-50
 exo Sud-Ouest,Canada,-61,Montréal,Montréal,4/4/2021,-59
 exo Sorel-Varennes,Canada,-61,Montréal,Montréal,4/4/2021,-48
@@ -16773,8 +16803,8 @@ Saint-Jean-sur-Richelieu,Canada,-56,Montréal,Montréal,8/11/2020,-66
 STM,Canada,-56,Montréal,Montréal,8/11/2020,-54
 STL,Canada,-56,Montréal,Montréal,8/11/2020,-47
 RTL,Canada,-56,Montréal,Montréal,8/11/2020,-53
-exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,8/11/2020,-53
 CRTL - Lanaudière,Canada,-56,Montréal,Montréal,8/11/2020,-50
+exo Vallée-du-Richelieu,Canada,-56,Montréal,Montréal,8/11/2020,-53
 exo Terrebonne-Mascouche,Canada,-63,Montréal,Montréal,5/3/2021,-48
 exo Sud-Ouest,Canada,-63,Montréal,Montréal,5/3/2021,-63
 exo Sorel-Varennes,Canada,-63,Montréal,Montréal,5/3/2021,-57
@@ -16805,8 +16835,8 @@ Saint-Jean-sur-Richelieu,Canada,-61,Montréal,Montréal,4/17/2021,-77
 STM,Canada,-61,Montréal,Montréal,4/17/2021,-60
 STL,Canada,-61,Montréal,Montréal,4/17/2021,-56
 RTL,Canada,-61,Montréal,Montréal,4/17/2021,-59
-exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,4/17/2021,-60
 CRTL - Lanaudière,Canada,-61,Montréal,Montréal,4/17/2021,-58
+exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,4/17/2021,-60
 exo Vallée-du-Richelieu,Canada,-80,Montréal,Montréal,4/27/2020,-87
 exo Terrebonne-Mascouche,Canada,-80,Montréal,Montréal,4/27/2020,-84
 exo Sud-Ouest,Canada,-80,Montréal,Montréal,4/27/2020,-84
@@ -16837,8 +16867,8 @@ Saint-Jean-sur-Richelieu,Canada,-40,Montréal,Montréal,8/5/2021,-63
 STM,Canada,-40,Montréal,Montréal,8/5/2021,-39
 STL,Canada,-40,Montréal,Montréal,8/5/2021,-29
 RTL,Canada,-40,Montréal,Montréal,8/5/2021,-41
-exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,8/5/2021,-35
 CRTL - Lanaudière,Canada,-40,Montréal,Montréal,8/5/2021,-21
+exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,8/5/2021,-35
 exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,11/11/2020,-78
 exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,11/11/2020,-68
 exo Sud-Ouest,Canada,-73,Montréal,Montréal,11/11/2020,-75
@@ -16933,8 +16963,8 @@ Saint-Jean-sur-Richelieu,Canada,-54,Montréal,Montréal,6/28/2020,-57
 STM,Canada,-54,Montréal,Montréal,6/28/2020,-52
 STL,Canada,-54,Montréal,Montréal,6/28/2020,-47
 RTL,Canada,-54,Montréal,Montréal,6/28/2020,-48
-exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,6/28/2020,-39
 CRTL - Lanaudière,Canada,-54,Montréal,Montréal,6/28/2020,-34
+exo Vallée-du-Richelieu,Canada,-54,Montréal,Montréal,6/28/2020,-39
 exo Terrebonne-Mascouche,Canada,-63,Montréal,Montréal,3/22/2021,-43
 exo Sud-Ouest,Canada,-63,Montréal,Montréal,3/22/2021,-54
 exo Sorel-Varennes,Canada,-63,Montréal,Montréal,3/22/2021,-58
@@ -16965,8 +16995,8 @@ Saint-Jean-sur-Richelieu,Canada,-48,Montréal,Montréal,8/22/2020,-61
 STM,Canada,-48,Montréal,Montréal,8/22/2020,-47
 STL,Canada,-48,Montréal,Montréal,8/22/2020,-40
 RTL,Canada,-48,Montréal,Montréal,8/22/2020,-47
-exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,8/22/2020,-43
 CRTL - Lanaudière,Canada,-48,Montréal,Montréal,8/22/2020,-35
+exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,8/22/2020,-43
 exo Vallée-du-Richelieu,Canada,-76,Montréal,Montréal,12/28/2020,-80
 exo Terrebonne-Mascouche,Canada,-76,Montréal,Montréal,12/28/2020,-65
 exo Sud-Ouest,Canada,-76,Montréal,Montréal,12/28/2020,-77
@@ -16997,8 +17027,8 @@ Saint-Jean-sur-Richelieu,Canada,-4,Montréal,Montréal,3/10/2020,0
 STM,Canada,-4,Montréal,Montréal,3/10/2020,1
 STL,Canada,-4,Montréal,Montréal,3/10/2020,-4
 RTL,Canada,-4,Montréal,Montréal,3/10/2020,2
-exo Vallée-du-Richelieu,Canada,-4,Montréal,Montréal,3/10/2020,12
 CRTL - Lanaudière,Canada,-4,Montréal,Montréal,3/10/2020,-7
+exo Vallée-du-Richelieu,Canada,-4,Montréal,Montréal,3/10/2020,12
 exo Terrebonne-Mascouche,Canada,-39,Montréal,Montréal,9/22/2021,-9
 exo Sud-Ouest,Canada,-39,Montréal,Montréal,9/22/2021,-25
 exo Sorel-Varennes,Canada,-39,Montréal,Montréal,9/22/2021,12
@@ -17013,8 +17043,8 @@ Saint-Jean-sur-Richelieu,Canada,-39,Montréal,Montréal,9/22/2021,-53
 STM,Canada,-39,Montréal,Montréal,9/22/2021,-30
 STL,Canada,-39,Montréal,Montréal,9/22/2021,-19
 RTL,Canada,-39,Montréal,Montréal,9/22/2021,-24
-exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,9/22/2021,-21
 CRTL - Lanaudière,Canada,-39,Montréal,Montréal,9/22/2021,-10
+exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,9/22/2021,-21
 exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,11/3/2020,-75
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,11/3/2020,-70
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,11/3/2020,-74
@@ -17061,8 +17091,8 @@ Saint-Jean-sur-Richelieu,Canada,-57,Montréal,Montréal,6/22/2020,-55
 STM,Canada,-57,Montréal,Montréal,6/22/2020,-45
 STL,Canada,-57,Montréal,Montréal,6/22/2020,-38
 RTL,Canada,-57,Montréal,Montréal,6/22/2020,-44
-exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,6/22/2020,-37
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,6/22/2020,-32
+exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,6/22/2020,-37
 exo Terrebonne-Mascouche,Canada,-52,Montréal,Montréal,6/22/2021,-21
 exo Sud-Ouest,Canada,-52,Montréal,Montréal,6/22/2021,-47
 exo Sorel-Varennes,Canada,-52,Montréal,Montréal,6/22/2021,-24
@@ -17077,8 +17107,8 @@ Saint-Jean-sur-Richelieu,Canada,-52,Montréal,Montréal,6/22/2021,-60
 STM,Canada,-52,Montréal,Montréal,6/22/2021,-46
 STL,Canada,-52,Montréal,Montréal,6/22/2021,-34
 RTL,Canada,-52,Montréal,Montréal,6/22/2021,-42
-exo Vallée-du-Richelieu,Canada,-52,Montréal,Montréal,6/22/2021,-35
 CRTL - Lanaudière,Canada,-52,Montréal,Montréal,6/22/2021,-34
+exo Vallée-du-Richelieu,Canada,-52,Montréal,Montréal,6/22/2021,-35
 exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,11/12/2020,-79
 exo Terrebonne-Mascouche,Canada,-71,Montréal,Montréal,11/12/2020,-69
 exo Sud-Ouest,Canada,-71,Montréal,Montréal,11/12/2020,-76
@@ -17141,8 +17171,8 @@ Saint-Jean-sur-Richelieu,Canada,-39,Montréal,Montréal,9/3/2021,-49
 STM,Canada,-39,Montréal,Montréal,9/3/2021,-30
 STL,Canada,-39,Montréal,Montréal,9/3/2021,-18
 RTL,Canada,-39,Montréal,Montréal,9/3/2021,-24
-exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,9/3/2021,-9
 CRTL - Lanaudière,Canada,-39,Montréal,Montréal,9/3/2021,-11
+exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,9/3/2021,-9
 exo Terrebonne-Mascouche,Canada,-58,Montréal,Montréal,5/2/2021,-39
 exo Sud-Ouest,Canada,-58,Montréal,Montréal,5/2/2021,-55
 exo Sorel-Varennes,Canada,-58,Montréal,Montréal,5/2/2021,-36
@@ -17189,24 +17219,24 @@ Saint-Jean-sur-Richelieu,Canada,-61,Montréal,Montréal,5/21/2021,-74
 STM,Canada,-61,Montréal,Montréal,5/21/2021,-58
 STL,Canada,-61,Montréal,Montréal,5/21/2021,-52
 RTL,Canada,-61,Montréal,Montréal,5/21/2021,-59
-exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,5/21/2021,-59
 CRTL - Lanaudière,Canada,-61,Montréal,Montréal,5/21/2021,-51
-exo Terrebonne-Mascouche,Canada,-40,Montréal,Montréal,10/15/2021,-24
-exo Sud-Ouest,Canada,-40,Montréal,Montréal,10/15/2021,-35
-exo Sorel-Varennes,Canada,-40,Montréal,Montréal,10/15/2021,-36
-exo Roussillon,Canada,-40,Montréal,Montréal,10/15/2021,-43
-exo Le Richelain,Canada,-40,Montréal,Montréal,10/15/2021,-43
-exo Laurentides,Canada,-40,Montréal,Montréal,10/15/2021,-7
-exo La Presqu'Île,Canada,-40,Montréal,Montréal,10/15/2021,-40
-exo L'Assomption,Canada,-40,Montréal,Montréal,10/15/2021,-22
-exo Haut-Saint-Laurent,Canada,-40,Montréal,Montréal,10/15/2021,-31
-exo - Trains,Canada,-40,Montréal,Montréal,10/15/2021,-16
-Saint-Jean-sur-Richelieu,Canada,-40,Montréal,Montréal,10/15/2021,-59
-STM,Canada,-40,Montréal,Montréal,10/15/2021,-36
-STL,Canada,-40,Montréal,Montréal,10/15/2021,-30
-RTL,Canada,-40,Montréal,Montréal,10/15/2021,-38
-CRTL - Lanaudière,Canada,-40,Montréal,Montréal,10/15/2021,-34
-exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,10/15/2021,-53
+exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,5/21/2021,-59
+exo Terrebonne-Mascouche,Canada,-39,Montréal,Montréal,10/15/2021,-23
+exo Sud-Ouest,Canada,-39,Montréal,Montréal,10/15/2021,-35
+exo Sorel-Varennes,Canada,-39,Montréal,Montréal,10/15/2021,-36
+exo Roussillon,Canada,-39,Montréal,Montréal,10/15/2021,-42
+exo Le Richelain,Canada,-39,Montréal,Montréal,10/15/2021,-43
+exo Laurentides,Canada,-39,Montréal,Montréal,10/15/2021,-6
+exo La Presqu'Île,Canada,-39,Montréal,Montréal,10/15/2021,-39
+exo L'Assomption,Canada,-39,Montréal,Montréal,10/15/2021,-21
+exo Haut-Saint-Laurent,Canada,-39,Montréal,Montréal,10/15/2021,-30
+exo - Trains,Canada,-39,Montréal,Montréal,10/15/2021,-16
+Saint-Jean-sur-Richelieu,Canada,-39,Montréal,Montréal,10/15/2021,-59
+STM,Canada,-39,Montréal,Montréal,10/15/2021,-35
+STL,Canada,-39,Montréal,Montréal,10/15/2021,-29
+RTL,Canada,-39,Montréal,Montréal,10/15/2021,-38
+CRTL - Lanaudière,Canada,-39,Montréal,Montréal,10/15/2021,-34
+exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,10/15/2021,-52
 exo Terrebonne-Mascouche,Canada,5,Montréal,Montréal,2/16/2020,8
 exo Sud-Ouest,Canada,5,Montréal,Montréal,2/16/2020,4
 exo Sorel-Varennes,Canada,5,Montréal,Montréal,2/16/2020,7
@@ -17221,8 +17251,8 @@ Saint-Jean-sur-Richelieu,Canada,5,Montréal,Montréal,2/16/2020,11
 STM,Canada,5,Montréal,Montréal,2/16/2020,9
 STL,Canada,5,Montréal,Montréal,2/16/2020,9
 RTL,Canada,5,Montréal,Montréal,2/16/2020,13
-exo Vallée-du-Richelieu,Canada,5,Montréal,Montréal,2/16/2020,17
 CRTL - Lanaudière,Canada,5,Montréal,Montréal,2/16/2020,19
+exo Vallée-du-Richelieu,Canada,5,Montréal,Montréal,2/16/2020,17
 exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,10/5/2020,-75
 exo Terrebonne-Mascouche,Canada,-59,Montréal,Montréal,10/5/2020,-51
 exo Sud-Ouest,Canada,-59,Montréal,Montréal,10/5/2020,-57
@@ -17317,8 +17347,8 @@ Saint-Jean-sur-Richelieu,Canada,-59,Montréal,Montréal,4/24/2021,-75
 STM,Canada,-59,Montréal,Montréal,4/24/2021,-56
 STL,Canada,-59,Montréal,Montréal,4/24/2021,-50
 RTL,Canada,-59,Montréal,Montréal,4/24/2021,-54
-exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,4/24/2021,-57
 CRTL - Lanaudière,Canada,-59,Montréal,Montréal,4/24/2021,-51
+exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,4/24/2021,-57
 exo Terrebonne-Mascouche,Canada,-55,Montréal,Montréal,7/30/2020,-24
 exo Sud-Ouest,Canada,-55,Montréal,Montréal,7/30/2020,-41
 exo Sorel-Varennes,Canada,-55,Montréal,Montréal,7/30/2020,-31
@@ -17349,8 +17379,8 @@ Saint-Jean-sur-Richelieu,Canada,-39,Montréal,Montréal,8/24/2021,-43
 STM,Canada,-39,Montréal,Montréal,8/24/2021,-30
 STL,Canada,-39,Montréal,Montréal,8/24/2021,-11
 RTL,Canada,-39,Montréal,Montréal,8/24/2021,-24
-exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,8/24/2021,3
 CRTL - Lanaudière,Canada,-39,Montréal,Montréal,8/24/2021,-3
+exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,8/24/2021,3
 exo Vallée-du-Richelieu,Canada,-83,Montréal,Montréal,4/8/2020,-91
 exo Terrebonne-Mascouche,Canada,-83,Montréal,Montréal,4/8/2020,-86
 exo Sud-Ouest,Canada,-83,Montréal,Montréal,4/8/2020,-89
@@ -17396,7 +17426,7 @@ exo - Trains,Canada,-35,Montréal,Montréal,10/2/2021,-11
 Saint-Jean-sur-Richelieu,Canada,-35,Montréal,Montréal,10/2/2021,-64
 STM,Canada,-35,Montréal,Montréal,10/2/2021,-38
 STL,Canada,-35,Montréal,Montréal,10/2/2021,-36
-RTL,Canada,-35,Montréal,Montréal,10/2/2021,-41
+RTL,Canada,-35,Montréal,Montréal,10/2/2021,-40
 CRTL - Lanaudière,Canada,-35,Montréal,Montréal,10/2/2021,-33
 exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,10/2/2021,-58
 exo Terrebonne-Mascouche,Canada,1,Montréal,Montréal,2/29/2020,9
@@ -17413,8 +17443,8 @@ Saint-Jean-sur-Richelieu,Canada,1,Montréal,Montréal,2/29/2020,4
 STM,Canada,1,Montréal,Montréal,2/29/2020,8
 STL,Canada,1,Montréal,Montréal,2/29/2020,11
 RTL,Canada,1,Montréal,Montréal,2/29/2020,5
-exo Vallée-du-Richelieu,Canada,1,Montréal,Montréal,2/29/2020,0
 CRTL - Lanaudière,Canada,1,Montréal,Montréal,2/29/2020,11
+exo Vallée-du-Richelieu,Canada,1,Montréal,Montréal,2/29/2020,0
 exo Vallée-du-Richelieu,Canada,-67,Montréal,Montréal,10/16/2020,-80
 exo Terrebonne-Mascouche,Canada,-67,Montréal,Montréal,10/16/2020,-68
 exo Sud-Ouest,Canada,-67,Montréal,Montréal,10/16/2020,-71
@@ -17463,7 +17493,6 @@ STL,Canada,-65,Montréal,Montréal,3/16/2021,-61
 RTL,Canada,-65,Montréal,Montréal,3/16/2021,-63
 CRTL - Lanaudière,Canada,-65,Montréal,Montréal,3/16/2021,-58
 exo Vallée-du-Richelieu,Canada,-65,Montréal,Montréal,3/16/2021,-70
-exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,3/11/2021,-71
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,3/11/2021,-55
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,3/11/2021,-64
 exo Sorel-Varennes,Canada,-66,Montréal,Montréal,3/11/2021,-65
@@ -17479,6 +17508,7 @@ STM,Canada,-66,Montréal,Montréal,3/11/2021,-66
 STL,Canada,-66,Montréal,Montréal,3/11/2021,-61
 RTL,Canada,-66,Montréal,Montréal,3/11/2021,-67
 CRTL - Lanaudière,Canada,-66,Montréal,Montréal,3/11/2021,-64
+exo Vallée-du-Richelieu,Canada,-66,Montréal,Montréal,3/11/2021,-71
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,9/10/2020,-50
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,9/10/2020,-57
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,9/10/2020,-59
@@ -17541,8 +17571,8 @@ Saint-Jean-sur-Richelieu,Canada,-35,Montréal,Montréal,9/10/2021,-52
 STM,Canada,-35,Montréal,Montréal,9/10/2021,-28
 STL,Canada,-35,Montréal,Montréal,9/10/2021,-18
 RTL,Canada,-35,Montréal,Montréal,9/10/2021,-23
-exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/10/2021,-9
 CRTL - Lanaudière,Canada,-35,Montréal,Montréal,9/10/2021,-15
+exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/10/2021,-9
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,11/21/2020,-60
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,11/21/2020,-67
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,11/21/2020,-70
@@ -17573,8 +17603,8 @@ Saint-Jean-sur-Richelieu,Canada,-41,Montréal,Montréal,7/17/2021,-65
 STM,Canada,-41,Montréal,Montréal,7/17/2021,-39
 STL,Canada,-41,Montréal,Montréal,7/17/2021,-31
 RTL,Canada,-41,Montréal,Montréal,7/17/2021,-41
-exo Vallée-du-Richelieu,Canada,-41,Montréal,Montréal,7/17/2021,-38
 CRTL - Lanaudière,Canada,-41,Montréal,Montréal,7/17/2021,-27
+exo Vallée-du-Richelieu,Canada,-41,Montréal,Montréal,7/17/2021,-38
 exo Vallée-du-Richelieu,Canada,-73,Montréal,Montréal,5/16/2020,-81
 exo Terrebonne-Mascouche,Canada,-73,Montréal,Montréal,5/16/2020,-74
 exo Sud-Ouest,Canada,-73,Montréal,Montréal,5/16/2020,-80
@@ -17605,8 +17635,8 @@ Saint-Jean-sur-Richelieu,Canada,-52,Montréal,Montréal,7/4/2020,-45
 STM,Canada,-52,Montréal,Montréal,7/4/2020,-42
 STL,Canada,-52,Montréal,Montréal,7/4/2020,-34
 RTL,Canada,-52,Montréal,Montréal,7/4/2020,-40
-exo Vallée-du-Richelieu,Canada,-52,Montréal,Montréal,7/4/2020,-31
 CRTL - Lanaudière,Canada,-52,Montréal,Montréal,7/4/2020,-26
+exo Vallée-du-Richelieu,Canada,-52,Montréal,Montréal,7/4/2020,-31
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,6/10/2021,-37
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,6/10/2021,-55
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,6/10/2021,-42
@@ -17653,8 +17683,8 @@ Saint-Jean-sur-Richelieu,Canada,-39,Montréal,Montréal,7/26/2021,-65
 STM,Canada,-39,Montréal,Montréal,7/26/2021,-42
 STL,Canada,-39,Montréal,Montréal,7/26/2021,-35
 RTL,Canada,-39,Montréal,Montréal,7/26/2021,-44
-exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,7/26/2021,-42
 CRTL - Lanaudière,Canada,-39,Montréal,Montréal,7/26/2021,-31
+exo Vallée-du-Richelieu,Canada,-39,Montréal,Montréal,7/26/2021,-42
 exo Vallée-du-Richelieu,Canada,-80,Montréal,Montréal,5/7/2020,-88
 exo Terrebonne-Mascouche,Canada,-80,Montréal,Montréal,5/7/2020,-83
 exo Sud-Ouest,Canada,-80,Montréal,Montréal,5/7/2020,-85
@@ -17685,8 +17715,8 @@ Saint-Jean-sur-Richelieu,Canada,-35,Montréal,Montréal,9/20/2021,-50
 STM,Canada,-35,Montréal,Montréal,9/20/2021,-29
 STL,Canada,-35,Montréal,Montréal,9/20/2021,-13
 RTL,Canada,-35,Montréal,Montréal,9/20/2021,-20
-exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/20/2021,-16
 CRTL - Lanaudière,Canada,-35,Montréal,Montréal,9/20/2021,-4
+exo Vallée-du-Richelieu,Canada,-35,Montréal,Montréal,9/20/2021,-16
 exo Terrebonne-Mascouche,Canada,-9,Montréal,Montréal,3/12/2020,-3
 exo Sud-Ouest,Canada,-9,Montréal,Montréal,3/12/2020,-7
 exo Sorel-Varennes,Canada,-9,Montréal,Montréal,3/12/2020,-7
@@ -17701,8 +17731,8 @@ Saint-Jean-sur-Richelieu,Canada,-9,Montréal,Montréal,3/12/2020,-11
 STM,Canada,-9,Montréal,Montréal,3/12/2020,-7
 STL,Canada,-9,Montréal,Montréal,3/12/2020,-5
 RTL,Canada,-9,Montréal,Montréal,3/12/2020,-8
-exo Vallée-du-Richelieu,Canada,-9,Montréal,Montréal,3/12/2020,-7
 CRTL - Lanaudière,Canada,-9,Montréal,Montréal,3/12/2020,-14
+exo Vallée-du-Richelieu,Canada,-9,Montréal,Montréal,3/12/2020,-7
 exo Terrebonne-Mascouche,Canada,-66,Montréal,Montréal,12/21/2020,-54
 exo Sud-Ouest,Canada,-66,Montréal,Montréal,12/21/2020,-72
 exo Sorel-Varennes,Canada,-66,Montréal,Montréal,12/21/2020,-66
@@ -17765,8 +17795,8 @@ Saint-Jean-sur-Richelieu,Canada,-31,Montréal,Montréal,8/30/2021,-37
 STM,Canada,-31,Montréal,Montréal,8/30/2021,-13
 STL,Canada,-31,Montréal,Montréal,8/30/2021,1
 RTL,Canada,-31,Montréal,Montréal,8/30/2021,-5
-exo Vallée-du-Richelieu,Canada,-31,Montréal,Montréal,8/30/2021,17
 CRTL - Lanaudière,Canada,-31,Montréal,Montréal,8/30/2021,4
+exo Vallée-du-Richelieu,Canada,-31,Montréal,Montréal,8/30/2021,17
 exo Terrebonne-Mascouche,Canada,-65,Montréal,Montréal,5/12/2021,-54
 exo Sud-Ouest,Canada,-65,Montréal,Montréal,5/12/2021,-61
 exo Sorel-Varennes,Canada,-65,Montréal,Montréal,5/12/2021,-59
@@ -17829,8 +17859,8 @@ Saint-Jean-sur-Richelieu,Canada,-45,Montréal,Montréal,6/19/2021,-62
 STM,Canada,-45,Montréal,Montréal,6/19/2021,-40
 STL,Canada,-45,Montréal,Montréal,6/19/2021,-31
 RTL,Canada,-45,Montréal,Montréal,6/19/2021,-37
-exo Vallée-du-Richelieu,Canada,-45,Montréal,Montréal,6/19/2021,-37
 CRTL - Lanaudière,Canada,-45,Montréal,Montréal,6/19/2021,-23
+exo Vallée-du-Richelieu,Canada,-45,Montréal,Montréal,6/19/2021,-37
 exo Vallée-du-Richelieu,Canada,-68,Montréal,Montréal,10/30/2020,-74
 exo Terrebonne-Mascouche,Canada,-68,Montréal,Montréal,10/30/2020,-64
 exo Sud-Ouest,Canada,-68,Montréal,Montréal,10/30/2020,-72
@@ -17877,8 +17907,8 @@ Saint-Jean-sur-Richelieu,Canada,-48,Montréal,Montréal,8/8/2020,-60
 STM,Canada,-48,Montréal,Montréal,8/8/2020,-44
 STL,Canada,-48,Montréal,Montréal,8/8/2020,-36
 RTL,Canada,-48,Montréal,Montréal,8/8/2020,-43
-exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,8/8/2020,-35
 CRTL - Lanaudière,Canada,-48,Montréal,Montréal,8/8/2020,-23
+exo Vallée-du-Richelieu,Canada,-48,Montréal,Montréal,8/8/2020,-35
 exo Terrebonne-Mascouche,Canada,-57,Montréal,Montréal,8/18/2020,-48
 exo Sud-Ouest,Canada,-57,Montréal,Montréal,8/18/2020,-59
 exo Sorel-Varennes,Canada,-57,Montréal,Montréal,8/18/2020,-61
@@ -17909,8 +17939,8 @@ Saint-Jean-sur-Richelieu,Canada,-71,Montréal,Montréal,12/11/2020,-81
 STM,Canada,-71,Montréal,Montréal,12/11/2020,-71
 STL,Canada,-71,Montréal,Montréal,12/11/2020,-69
 RTL,Canada,-71,Montréal,Montréal,12/11/2020,-70
-exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,12/11/2020,-69
 CRTL - Lanaudière,Canada,-71,Montréal,Montréal,12/11/2020,-66
+exo Vallée-du-Richelieu,Canada,-71,Montréal,Montréal,12/11/2020,-69
 exo Terrebonne-Mascouche,Canada,-37,Montréal,Montréal,9/21/2021,-5
 exo Sud-Ouest,Canada,-37,Montréal,Montréal,9/21/2021,-20
 exo Sorel-Varennes,Canada,-37,Montréal,Montréal,9/21/2021,11
@@ -17925,8 +17955,8 @@ Saint-Jean-sur-Richelieu,Canada,-37,Montréal,Montréal,9/21/2021,-53
 STM,Canada,-37,Montréal,Montréal,9/21/2021,-31
 STL,Canada,-37,Montréal,Montréal,9/21/2021,-17
 RTL,Canada,-37,Montréal,Montréal,9/21/2021,-23
-exo Vallée-du-Richelieu,Canada,-37,Montréal,Montréal,9/21/2021,-19
 CRTL - Lanaudière,Canada,-37,Montréal,Montréal,9/21/2021,-4
+exo Vallée-du-Richelieu,Canada,-37,Montréal,Montréal,9/21/2021,-19
 exo Terrebonne-Mascouche,Canada,-4,Montréal,Montréal,3/11/2020,4
 exo Sud-Ouest,Canada,-4,Montréal,Montréal,3/11/2020,-3
 exo Sorel-Varennes,Canada,-4,Montréal,Montréal,3/11/2020,10
@@ -17941,8 +17971,8 @@ Saint-Jean-sur-Richelieu,Canada,-4,Montréal,Montréal,3/11/2020,-3
 STM,Canada,-4,Montréal,Montréal,3/11/2020,0
 STL,Canada,-4,Montréal,Montréal,3/11/2020,-2
 RTL,Canada,-4,Montréal,Montréal,3/11/2020,-2
-exo Vallée-du-Richelieu,Canada,-4,Montréal,Montréal,3/11/2020,1
 CRTL - Lanaudière,Canada,-4,Montréal,Montréal,3/11/2020,0
+exo Vallée-du-Richelieu,Canada,-4,Montréal,Montréal,3/11/2020,1
 exo Vallée-du-Richelieu,Canada,-79,Montréal,Montréal,1/19/2021,-81
 exo Terrebonne-Mascouche,Canada,-79,Montréal,Montréal,1/19/2021,-74
 exo Sud-Ouest,Canada,-79,Montréal,Montréal,1/19/2021,-80
@@ -17975,7 +18005,6 @@ STM,Canada,-64,Montréal,Montréal,10/10/2020,-69
 STL,Canada,-64,Montréal,Montréal,10/10/2020,-65
 RTL,Canada,-64,Montréal,Montréal,10/10/2020,-71
 CRTL - Lanaudière,Canada,-64,Montréal,Montréal,10/10/2020,-65
-exo Vallée-du-Richelieu,Canada,-67,Montréal,Montréal,3/4/2021,-71
 exo Terrebonne-Mascouche,Canada,-67,Montréal,Montréal,3/4/2021,-57
 exo Sud-Ouest,Canada,-67,Montréal,Montréal,3/4/2021,-66
 exo Sorel-Varennes,Canada,-67,Montréal,Montréal,3/4/2021,-63
@@ -17991,6 +18020,7 @@ STM,Canada,-67,Montréal,Montréal,3/4/2021,-67
 STL,Canada,-67,Montréal,Montréal,3/4/2021,-62
 RTL,Canada,-67,Montréal,Montréal,3/4/2021,-68
 CRTL - Lanaudière,Canada,-67,Montréal,Montréal,3/4/2021,-61
+exo Vallée-du-Richelieu,Canada,-67,Montréal,Montréal,3/4/2021,-71
 exo Terrebonne-Mascouche,Canada,-59,Montréal,Montréal,7/3/2020,-33
 exo Sud-Ouest,Canada,-59,Montréal,Montréal,7/3/2020,-54
 exo Sorel-Varennes,Canada,-59,Montréal,Montréal,7/3/2020,-33
@@ -18005,8 +18035,8 @@ Saint-Jean-sur-Richelieu,Canada,-59,Montréal,Montréal,7/3/2020,-54
 STM,Canada,-59,Montréal,Montréal,7/3/2020,-49
 STL,Canada,-59,Montréal,Montréal,7/3/2020,-42
 RTL,Canada,-59,Montréal,Montréal,7/3/2020,-47
-exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,7/3/2020,-39
 CRTL - Lanaudière,Canada,-59,Montréal,Montréal,7/3/2020,-32
+exo Vallée-du-Richelieu,Canada,-59,Montréal,Montréal,7/3/2020,-39
 exo Terrebonne-Mascouche,Canada,-63,Montréal,Montréal,9/21/2020,-46
 exo Sud-Ouest,Canada,-63,Montréal,Montréal,9/21/2020,-54
 exo Sorel-Varennes,Canada,-63,Montréal,Montréal,9/21/2020,-56
@@ -18069,9 +18099,8 @@ Saint-Jean-sur-Richelieu,Canada,-33,Montréal,Montréal,8/15/2021,-57
 STM,Canada,-33,Montréal,Montréal,8/15/2021,-33
 STL,Canada,-33,Montréal,Montréal,8/15/2021,-27
 RTL,Canada,-33,Montréal,Montréal,8/15/2021,-35
-exo Vallée-du-Richelieu,Canada,-33,Montréal,Montréal,8/15/2021,-30
 CRTL - Lanaudière,Canada,-33,Montréal,Montréal,8/15/2021,-17
-exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,12/3/2020,-72
+exo Vallée-du-Richelieu,Canada,-33,Montréal,Montréal,8/15/2021,-30
 exo Terrebonne-Mascouche,Canada,-72,Montréal,Montréal,12/3/2020,-64
 exo Sud-Ouest,Canada,-72,Montréal,Montréal,12/3/2020,-73
 exo Sorel-Varennes,Canada,-72,Montréal,Montréal,12/3/2020,-72
@@ -18087,6 +18116,7 @@ STM,Canada,-72,Montréal,Montréal,12/3/2020,-72
 STL,Canada,-72,Montréal,Montréal,12/3/2020,-68
 RTL,Canada,-72,Montréal,Montréal,12/3/2020,-70
 CRTL - Lanaudière,Canada,-72,Montréal,Montréal,12/3/2020,-65
+exo Vallée-du-Richelieu,Canada,-72,Montréal,Montréal,12/3/2020,-72
 exo Terrebonne-Mascouche,Canada,-40,Montréal,Montréal,8/4/2021,-20
 exo Sud-Ouest,Canada,-40,Montréal,Montréal,8/4/2021,-39
 exo Sorel-Varennes,Canada,-40,Montréal,Montréal,8/4/2021,-10
@@ -18101,8 +18131,8 @@ Saint-Jean-sur-Richelieu,Canada,-40,Montréal,Montréal,8/4/2021,-64
 STM,Canada,-40,Montréal,Montréal,8/4/2021,-38
 STL,Canada,-40,Montréal,Montréal,8/4/2021,-29
 RTL,Canada,-40,Montréal,Montréal,8/4/2021,-39
-exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,8/4/2021,-35
 CRTL - Lanaudière,Canada,-40,Montréal,Montréal,8/4/2021,-17
+exo Vallée-du-Richelieu,Canada,-40,Montréal,Montréal,8/4/2021,-35
 exo Vallée-du-Richelieu,Canada,-82,Montréal,Montréal,4/28/2020,-88
 exo Terrebonne-Mascouche,Canada,-82,Montréal,Montréal,4/28/2020,-86
 exo Sud-Ouest,Canada,-82,Montréal,Montréal,4/28/2020,-84
@@ -18181,8 +18211,8 @@ Saint-Jean-sur-Richelieu,Canada,-61,Montréal,Montréal,2/21/2021,-84
 STM,Canada,-61,Montréal,Montréal,2/21/2021,-62
 STL,Canada,-61,Montréal,Montréal,2/21/2021,-56
 RTL,Canada,-61,Montréal,Montréal,2/21/2021,-63
-exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,2/21/2021,-58
 CRTL - Lanaudière,Canada,-61,Montréal,Montréal,2/21/2021,-48
+exo Vallée-du-Richelieu,Canada,-61,Montréal,Montréal,2/21/2021,-58
 exo Terrebonne-Mascouche,Canada,0,Montréal,Montréal,2/28/2020,3
 exo Sud-Ouest,Canada,0,Montréal,Montréal,2/28/2020,6
 exo Sorel-Varennes,Canada,0,Montréal,Montréal,2/28/2020,12
@@ -18197,8 +18227,8 @@ Saint-Jean-sur-Richelieu,Canada,0,Montréal,Montréal,2/28/2020,3
 STM,Canada,0,Montréal,Montréal,2/28/2020,7
 STL,Canada,0,Montréal,Montréal,2/28/2020,6
 RTL,Canada,0,Montréal,Montréal,2/28/2020,7
-exo Vallée-du-Richelieu,Canada,0,Montréal,Montréal,2/28/2020,14
 CRTL - Lanaudière,Canada,0,Montréal,Montréal,2/28/2020,-3
+exo Vallée-du-Richelieu,Canada,0,Montréal,Montréal,2/28/2020,14
 exo Terrebonne-Mascouche,Canada,-38,Montréal,Montréal,10/3/2021,-38
 exo Sud-Ouest,Canada,-38,Montréal,Montréal,10/3/2021,-34
 exo Sorel-Varennes,Canada,-38,Montréal,Montréal,10/3/2021,-31
@@ -18261,8 +18291,8 @@ Saint-Jean-sur-Richelieu,Canada,-26,Montréal,Montréal,8/23/2021,-34
 STM,Canada,-26,Montréal,Montréal,8/23/2021,-12
 STL,Canada,-26,Montréal,Montréal,8/23/2021,7
 RTL,Canada,-26,Montréal,Montréal,8/23/2021,-5
-exo Vallée-du-Richelieu,Canada,-26,Montréal,Montréal,8/23/2021,28
 CRTL - Lanaudière,Canada,-26,Montréal,Montréal,8/23/2021,10
+exo Vallée-du-Richelieu,Canada,-26,Montréal,Montréal,8/23/2021,28
 exo Terrebonne-Mascouche,Canada,-64,Montréal,Montréal,4/13/2021,-53
 exo Sud-Ouest,Canada,-64,Montréal,Montréal,4/13/2021,-62
 exo Sorel-Varennes,Canada,-64,Montréal,Montréal,4/13/2021,-58
@@ -18309,8 +18339,8 @@ Saint-Jean-sur-Richelieu,Canada,-57,Montréal,Montréal,7/21/2020,-50
 STM,Canada,-57,Montréal,Montréal,7/21/2020,-48
 STL,Canada,-57,Montréal,Montréal,7/21/2020,-37
 RTL,Canada,-57,Montréal,Montréal,7/21/2020,-40
-exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,7/21/2020,-36
 CRTL - Lanaudière,Canada,-57,Montréal,Montréal,7/21/2020,-34
+exo Vallée-du-Richelieu,Canada,-57,Montréal,Montréal,7/21/2020,-36
 exo Vallée-du-Richelieu,Canada,-76,Montréal,Montréal,5/21/2020,-82
 exo Terrebonne-Mascouche,Canada,-76,Montréal,Montréal,5/21/2020,-78
 exo Sud-Ouest,Canada,-76,Montréal,Montréal,5/21/2020,-77
@@ -18363,7 +18393,7 @@ Calgary Transit,Canada,-73,Calgary,Calgary,2/7/2021,-73
 Airdrie Transit,Canada,-73,Calgary,Calgary,2/7/2021,-86
 Calgary Transit,Canada,-63,Calgary,Calgary,6/13/2020,-61
 Airdrie Transit,Canada,-63,Calgary,Calgary,6/13/2020,-84
-Calgary Transit,Canada,-39,Calgary,Calgary,10/14/2021,-45
+Calgary Transit,Canada,-39,Calgary,Calgary,10/14/2021,-44
 Airdrie Transit,Canada,-39,Calgary,Calgary,10/14/2021,-83
 Calgary Transit,Canada,-23,Calgary,Calgary,2/17/2020,-41
 Airdrie Transit,Canada,-23,Calgary,Calgary,2/17/2020,-27
@@ -18519,8 +18549,8 @@ Calgary Transit,Canada,-52,Calgary,Calgary,6/23/2021,-54
 Airdrie Transit,Canada,-52,Calgary,Calgary,6/23/2021,-89
 Calgary Transit,Canada,1,Calgary,Calgary,2/15/2020,16
 Airdrie Transit,Canada,1,Calgary,Calgary,2/15/2020,11
-Calgary Transit,Canada,-38,Calgary,Calgary,10/16/2021,-41
-Airdrie Transit,Canada,-38,Calgary,Calgary,10/16/2021,-80
+Calgary Transit,Canada,-38,Calgary,Calgary,10/16/2021,-40
+Airdrie Transit,Canada,-38,Calgary,Calgary,10/16/2021,-79
 Calgary Transit,Canada,-64,Calgary,Calgary,9/18/2020,-60
 Airdrie Transit,Canada,-64,Calgary,Calgary,9/18/2020,-81
 Calgary Transit,Canada,-80,Calgary,Calgary,1/28/2021,-79
@@ -18869,8 +18899,8 @@ Calgary Transit,Canada,-54,Calgary,Calgary,9/12/2020,-52
 Airdrie Transit,Canada,-54,Calgary,Calgary,9/12/2020,-71
 Calgary Transit,Canada,-61,Calgary,Calgary,10/25/2020,-58
 Airdrie Transit,Canada,-61,Calgary,Calgary,10/25/2020,-81
-Calgary Transit,Canada,-14,Calgary,Calgary,10/18/2021,-44
-Airdrie Transit,Canada,-14,Calgary,Calgary,10/18/2021,-73
+Calgary Transit,Canada,-28,Calgary,Calgary,10/18/2021,-40
+Airdrie Transit,Canada,-28,Calgary,Calgary,10/18/2021,-81
 Calgary Transit,Canada,-62,Calgary,Calgary,11/7/2020,-62
 Airdrie Transit,Canada,-62,Calgary,Calgary,11/7/2020,-81
 Calgary Transit,Canada,-80,Calgary,Calgary,4/24/2020,-81
@@ -18917,8 +18947,8 @@ Calgary Transit,Canada,-60,Calgary,Calgary,10/3/2020,-54
 Airdrie Transit,Canada,-60,Calgary,Calgary,10/3/2020,-77
 Calgary Transit,Canada,-61,Calgary,Calgary,10/18/2020,-56
 Airdrie Transit,Canada,-61,Calgary,Calgary,10/18/2020,-78
-Calgary Transit,Canada,-38,Calgary,Calgary,10/9/2021,-43
-Airdrie Transit,Canada,-38,Calgary,Calgary,10/9/2021,-82
+Calgary Transit,Canada,-37,Calgary,Calgary,10/9/2021,-43
+Airdrie Transit,Canada,-37,Calgary,Calgary,10/9/2021,-82
 Calgary Transit,Canada,3,Calgary,Calgary,2/22/2020,17
 Airdrie Transit,Canada,3,Calgary,Calgary,2/22/2020,17
 Calgary Transit,Canada,-79,Calgary,Calgary,1/13/2021,-73
@@ -19071,6 +19101,8 @@ Calgary Transit,Canada,-78,Calgary,Calgary,4/25/2020,-76
 Airdrie Transit,Canada,-78,Calgary,Calgary,4/25/2020,-88
 Calgary Transit,Canada,-74,Calgary,Calgary,1/24/2021,-72
 Airdrie Transit,Canada,-74,Calgary,Calgary,1/24/2021,-85
+Calgary Transit,Canada,-34,Calgary,Calgary,10/19/2021,-40
+Airdrie Transit,Canada,-34,Calgary,Calgary,10/19/2021,-81
 Calgary Transit,Canada,-67,Calgary,Calgary,3/2/2021,-64
 Airdrie Transit,Canada,-67,Calgary,Calgary,3/2/2021,-62
 Calgary Transit,Canada,-62,Calgary,Calgary,9/11/2020,-53
@@ -19277,8 +19309,8 @@ Calgary Transit,Canada,-80,Calgary,Calgary,1/27/2021,-79
 Airdrie Transit,Canada,-80,Calgary,Calgary,1/27/2021,-90
 Calgary Transit,Canada,-60,Calgary,Calgary,7/2/2020,-62
 Airdrie Transit,Canada,-60,Calgary,Calgary,7/2/2020,-87
-Calgary Transit,Canada,-35,Calgary,Calgary,10/17/2021,-36
-Airdrie Transit,Canada,-35,Calgary,Calgary,10/17/2021,-78
+Calgary Transit,Canada,-34,Calgary,Calgary,10/17/2021,-34
+Airdrie Transit,Canada,-34,Calgary,Calgary,10/17/2021,-77
 Calgary Transit,Canada,-63,Calgary,Calgary,6/19/2020,-66
 Airdrie Transit,Canada,-63,Calgary,Calgary,6/19/2020,-86
 Calgary Transit,Canada,-78,Calgary,Calgary,1/18/2021,-72
@@ -19437,8 +19469,8 @@ Calgary Transit,Canada,-69,Calgary,Calgary,12/17/2020,-75
 Airdrie Transit,Canada,-69,Calgary,Calgary,12/17/2020,-85
 Calgary Transit,Canada,-61,Calgary,Calgary,5/21/2021,-67
 Airdrie Transit,Canada,-61,Calgary,Calgary,5/21/2021,-91
-Calgary Transit,Canada,-40,Calgary,Calgary,10/15/2021,-34
-Airdrie Transit,Canada,-40,Calgary,Calgary,10/15/2021,-82
+Calgary Transit,Canada,-39,Calgary,Calgary,10/15/2021,-34
+Airdrie Transit,Canada,-39,Calgary,Calgary,10/15/2021,-81
 Calgary Transit,Canada,5,Calgary,Calgary,2/16/2020,15
 Airdrie Transit,Canada,5,Calgary,Calgary,2/16/2020,3
 Calgary Transit,Canada,-59,Calgary,Calgary,10/5/2020,-56
