@@ -678,6 +678,8 @@ Alberta,Calgary,30-11-2021,97,123643
 Alberta,Calgary,01-12-2021,186,123829
 Alberta,Calgary,02-12-2021,140,123969
 Alberta,Calgary,03-12-2021,157,124126
+Alberta,Calgary,04-12-2021,0,124126
+Alberta,Calgary,05-12-2021,0,124126
 Alberta,Central,25-01-2020,0,0
 Alberta,Central,26-01-2020,0,0
 Alberta,Central,27-01-2020,0,0
@@ -1357,6 +1359,8 @@ Alberta,Central,30-11-2021,35,38073
 Alberta,Central,01-12-2021,45,38118
 Alberta,Central,02-12-2021,45,38163
 Alberta,Central,03-12-2021,33,38196
+Alberta,Central,04-12-2021,0,38196
+Alberta,Central,05-12-2021,0,38196
 Alberta,Edmonton,25-01-2020,0,0
 Alberta,Edmonton,26-01-2020,0,0
 Alberta,Edmonton,27-01-2020,0,0
@@ -2036,6 +2040,8 @@ Alberta,Edmonton,30-11-2021,65,103974
 Alberta,Edmonton,01-12-2021,108,104082
 Alberta,Edmonton,02-12-2021,121,104203
 Alberta,Edmonton,03-12-2021,99,104302
+Alberta,Edmonton,04-12-2021,0,104302
+Alberta,Edmonton,05-12-2021,0,104302
 Alberta,North,25-01-2020,0,0
 Alberta,North,26-01-2020,0,0
 Alberta,North,27-01-2020,0,0
@@ -2715,6 +2721,8 @@ Alberta,North,30-11-2021,30,46329
 Alberta,North,01-12-2021,57,46386
 Alberta,North,02-12-2021,44,46430
 Alberta,North,03-12-2021,33,46463
+Alberta,North,04-12-2021,0,46463
+Alberta,North,05-12-2021,0,46463
 Alberta,Not Reported,25-01-2020,0,0
 Alberta,Not Reported,26-01-2020,0,0
 Alberta,Not Reported,27-01-2020,0,0
@@ -3394,6 +3402,8 @@ Alberta,Not Reported,30-11-2021,-2,38
 Alberta,Not Reported,01-12-2021,4,42
 Alberta,Not Reported,02-12-2021,-1,41
 Alberta,Not Reported,03-12-2021,-1,40
+Alberta,Not Reported,04-12-2021,0,40
+Alberta,Not Reported,05-12-2021,0,40
 Alberta,South,25-01-2020,0,0
 Alberta,South,26-01-2020,0,0
 Alberta,South,27-01-2020,0,0
@@ -4073,6 +4083,8 @@ Alberta,South,30-11-2021,15,23190
 Alberta,South,01-12-2021,30,23220
 Alberta,South,02-12-2021,17,23237
 Alberta,South,03-12-2021,28,23265
+Alberta,South,04-12-2021,0,23265
+Alberta,South,05-12-2021,0,23265
 BC,Fraser,25-01-2020,0,0
 BC,Fraser,26-01-2020,0,0
 BC,Fraser,27-01-2020,0,0
@@ -4752,6 +4764,8 @@ BC,Fraser,30-11-2021,107,109339
 BC,Fraser,01-12-2021,98,109437
 BC,Fraser,02-12-2021,90,109527
 BC,Fraser,03-12-2021,110,109637
+BC,Fraser,04-12-2021,0,109637
+BC,Fraser,05-12-2021,0,109637
 BC,Interior,25-01-2020,0,0
 BC,Interior,26-01-2020,0,0
 BC,Interior,27-01-2020,0,0
@@ -5431,6 +5445,8 @@ BC,Interior,30-11-2021,85,33519
 BC,Interior,01-12-2021,78,33597
 BC,Interior,02-12-2021,101,33698
 BC,Interior,03-12-2021,97,33795
+BC,Interior,04-12-2021,0,33795
+BC,Interior,05-12-2021,0,33795
 BC,Island,25-01-2020,0,0
 BC,Island,26-01-2020,0,0
 BC,Island,27-01-2020,0,0
@@ -6110,6 +6126,8 @@ BC,Island,30-11-2021,57,12712
 BC,Island,01-12-2021,75,12787
 BC,Island,02-12-2021,88,12875
 BC,Island,03-12-2021,96,12971
+BC,Island,04-12-2021,0,12971
+BC,Island,05-12-2021,0,12971
 BC,Northern,25-01-2020,0,0
 BC,Northern,26-01-2020,0,0
 BC,Northern,27-01-2020,0,0
@@ -6789,6 +6807,8 @@ BC,Northern,30-11-2021,56,17580
 BC,Northern,01-12-2021,63,17643
 BC,Northern,02-12-2021,40,17683
 BC,Northern,03-12-2021,57,17740
+BC,Northern,04-12-2021,0,17740
+BC,Northern,05-12-2021,0,17740
 BC,Not Reported,25-01-2020,0,0
 BC,Not Reported,26-01-2020,0,0
 BC,Not Reported,27-01-2020,0,0
@@ -7468,6 +7488,8 @@ BC,Not Reported,30-11-2021,0,299
 BC,Not Reported,01-12-2021,0,299
 BC,Not Reported,02-12-2021,1,300
 BC,Not Reported,03-12-2021,-1,299
+BC,Not Reported,04-12-2021,0,299
+BC,Not Reported,05-12-2021,0,299
 BC,Vancouver Coastal,25-01-2020,0,0
 BC,Vancouver Coastal,26-01-2020,0,0
 BC,Vancouver Coastal,27-01-2020,0,0
@@ -8147,6 +8169,8 @@ BC,Vancouver Coastal,30-11-2021,53,44977
 BC,Vancouver Coastal,01-12-2021,72,45049
 BC,Vancouver Coastal,02-12-2021,48,45097
 BC,Vancouver Coastal,03-12-2021,45,45142
+BC,Vancouver Coastal,04-12-2021,0,45142
+BC,Vancouver Coastal,05-12-2021,0,45142
 Manitoba,Interlake-Eastern,25-01-2020,0,0
 Manitoba,Interlake-Eastern,26-01-2020,0,0
 Manitoba,Interlake-Eastern,27-01-2020,0,0
@@ -8826,6 +8850,8 @@ Manitoba,Interlake-Eastern,30-11-2021,7,4997
 Manitoba,Interlake-Eastern,01-12-2021,21,5018
 Manitoba,Interlake-Eastern,02-12-2021,17,5035
 Manitoba,Interlake-Eastern,03-12-2021,11,5046
+Manitoba,Interlake-Eastern,04-12-2021,0,5046
+Manitoba,Interlake-Eastern,05-12-2021,0,5046
 Manitoba,Northern,25-01-2020,0,0
 Manitoba,Northern,26-01-2020,0,0
 Manitoba,Northern,27-01-2020,0,0
@@ -9505,6 +9531,8 @@ Manitoba,Northern,30-11-2021,12,9444
 Manitoba,Northern,01-12-2021,2,9446
 Manitoba,Northern,02-12-2021,30,9476
 Manitoba,Northern,03-12-2021,9,9485
+Manitoba,Northern,04-12-2021,0,9485
+Manitoba,Northern,05-12-2021,0,9485
 Manitoba,Not Reported,25-01-2020,0,0
 Manitoba,Not Reported,26-01-2020,0,0
 Manitoba,Not Reported,27-01-2020,0,0
@@ -10184,6 +10212,8 @@ Manitoba,Not Reported,30-11-2021,0,0
 Manitoba,Not Reported,01-12-2021,0,0
 Manitoba,Not Reported,02-12-2021,0,0
 Manitoba,Not Reported,03-12-2021,0,0
+Manitoba,Not Reported,04-12-2021,0,0
+Manitoba,Not Reported,05-12-2021,0,0
 Manitoba,Prairie Mountain,25-01-2020,0,0
 Manitoba,Prairie Mountain,26-01-2020,0,0
 Manitoba,Prairie Mountain,27-01-2020,0,0
@@ -10863,6 +10893,8 @@ Manitoba,Prairie Mountain,30-11-2021,9,5294
 Manitoba,Prairie Mountain,01-12-2021,20,5314
 Manitoba,Prairie Mountain,02-12-2021,11,5325
 Manitoba,Prairie Mountain,03-12-2021,16,5341
+Manitoba,Prairie Mountain,04-12-2021,0,5341
+Manitoba,Prairie Mountain,05-12-2021,0,5341
 Manitoba,Southern Health,25-01-2020,0,0
 Manitoba,Southern Health,26-01-2020,0,0
 Manitoba,Southern Health,27-01-2020,0,0
@@ -11542,6 +11574,8 @@ Manitoba,Southern Health,30-11-2021,64,11586
 Manitoba,Southern Health,01-12-2021,48,11634
 Manitoba,Southern Health,02-12-2021,64,11698
 Manitoba,Southern Health,03-12-2021,67,11765
+Manitoba,Southern Health,04-12-2021,0,11765
+Manitoba,Southern Health,05-12-2021,0,11765
 Manitoba,Winnipeg,25-01-2020,0,0
 Manitoba,Winnipeg,26-01-2020,0,0
 Manitoba,Winnipeg,27-01-2020,0,0
@@ -12221,6 +12255,8 @@ Manitoba,Winnipeg,30-11-2021,32,36556
 Manitoba,Winnipeg,01-12-2021,31,36587
 Manitoba,Winnipeg,02-12-2021,45,36632
 Manitoba,Winnipeg,03-12-2021,39,36671
+Manitoba,Winnipeg,04-12-2021,0,36671
+Manitoba,Winnipeg,05-12-2021,0,36671
 New Brunswick,Not Reported,25-01-2020,0,0
 New Brunswick,Not Reported,26-01-2020,0,0
 New Brunswick,Not Reported,27-01-2020,0,0
@@ -12900,6 +12936,8 @@ New Brunswick,Not Reported,30-11-2021,0,0
 New Brunswick,Not Reported,01-12-2021,0,0
 New Brunswick,Not Reported,02-12-2021,0,0
 New Brunswick,Not Reported,03-12-2021,0,0
+New Brunswick,Not Reported,04-12-2021,0,0
+New Brunswick,Not Reported,05-12-2021,0,0
 New Brunswick,Zone 1 (Moncton area),25-01-2020,0,0
 New Brunswick,Zone 1 (Moncton area),26-01-2020,0,0
 New Brunswick,Zone 1 (Moncton area),27-01-2020,0,0
@@ -13579,6 +13617,8 @@ New Brunswick,Zone 1 (Moncton area),30-11-2021,16,2540
 New Brunswick,Zone 1 (Moncton area),01-12-2021,24,2564
 New Brunswick,Zone 1 (Moncton area),02-12-2021,27,2591
 New Brunswick,Zone 1 (Moncton area),03-12-2021,13,2604
+New Brunswick,Zone 1 (Moncton area),04-12-2021,12,2616
+New Brunswick,Zone 1 (Moncton area),05-12-2021,23,2639
 New Brunswick,Zone 2 (Saint John area),25-01-2020,0,0
 New Brunswick,Zone 2 (Saint John area),26-01-2020,0,0
 New Brunswick,Zone 2 (Saint John area),27-01-2020,0,0
@@ -14258,6 +14298,8 @@ New Brunswick,Zone 2 (Saint John area),30-11-2021,16,1115
 New Brunswick,Zone 2 (Saint John area),01-12-2021,26,1141
 New Brunswick,Zone 2 (Saint John area),02-12-2021,17,1158
 New Brunswick,Zone 2 (Saint John area),03-12-2021,27,1185
+New Brunswick,Zone 2 (Saint John area),04-12-2021,22,1207
+New Brunswick,Zone 2 (Saint John area),05-12-2021,18,1225
 New Brunswick,Zone 3 (Fredericton area),25-01-2020,0,0
 New Brunswick,Zone 3 (Fredericton area),26-01-2020,0,0
 New Brunswick,Zone 3 (Fredericton area),27-01-2020,0,0
@@ -14937,6 +14979,8 @@ New Brunswick,Zone 3 (Fredericton area),30-11-2021,16,1653
 New Brunswick,Zone 3 (Fredericton area),01-12-2021,28,1681
 New Brunswick,Zone 3 (Fredericton area),02-12-2021,30,1711
 New Brunswick,Zone 3 (Fredericton area),03-12-2021,34,1745
+New Brunswick,Zone 3 (Fredericton area),04-12-2021,22,1767
+New Brunswick,Zone 3 (Fredericton area),05-12-2021,53,1820
 New Brunswick,Zone 4 (Edmundston area),25-01-2020,0,0
 New Brunswick,Zone 4 (Edmundston area),26-01-2020,0,0
 New Brunswick,Zone 4 (Edmundston area),27-01-2020,0,0
@@ -15616,6 +15660,8 @@ New Brunswick,Zone 4 (Edmundston area),30-11-2021,0,1462
 New Brunswick,Zone 4 (Edmundston area),01-12-2021,0,1462
 New Brunswick,Zone 4 (Edmundston area),02-12-2021,0,1462
 New Brunswick,Zone 4 (Edmundston area),03-12-2021,0,1462
+New Brunswick,Zone 4 (Edmundston area),04-12-2021,1,1463
+New Brunswick,Zone 4 (Edmundston area),05-12-2021,4,1467
 New Brunswick,Zone 5 (Campbellton area),25-01-2020,0,0
 New Brunswick,Zone 5 (Campbellton area),26-01-2020,0,0
 New Brunswick,Zone 5 (Campbellton area),27-01-2020,0,0
@@ -16295,6 +16341,8 @@ New Brunswick,Zone 5 (Campbellton area),30-11-2021,1,695
 New Brunswick,Zone 5 (Campbellton area),01-12-2021,6,701
 New Brunswick,Zone 5 (Campbellton area),02-12-2021,1,702
 New Brunswick,Zone 5 (Campbellton area),03-12-2021,1,703
+New Brunswick,Zone 5 (Campbellton area),04-12-2021,5,708
+New Brunswick,Zone 5 (Campbellton area),05-12-2021,4,712
 New Brunswick,Zone 6 (Bathurst area),25-01-2020,0,0
 New Brunswick,Zone 6 (Bathurst area),26-01-2020,0,0
 New Brunswick,Zone 6 (Bathurst area),27-01-2020,0,0
@@ -16974,6 +17022,8 @@ New Brunswick,Zone 6 (Bathurst area),30-11-2021,0,322
 New Brunswick,Zone 6 (Bathurst area),01-12-2021,0,322
 New Brunswick,Zone 6 (Bathurst area),02-12-2021,0,322
 New Brunswick,Zone 6 (Bathurst area),03-12-2021,2,324
+New Brunswick,Zone 6 (Bathurst area),04-12-2021,1,325
+New Brunswick,Zone 6 (Bathurst area),05-12-2021,1,326
 New Brunswick,Zone 7 (Miramichi area),25-01-2020,0,0
 New Brunswick,Zone 7 (Miramichi area),26-01-2020,0,0
 New Brunswick,Zone 7 (Miramichi area),27-01-2020,0,0
@@ -17653,6 +17703,8 @@ New Brunswick,Zone 7 (Miramichi area),30-11-2021,6,531
 New Brunswick,Zone 7 (Miramichi area),01-12-2021,9,540
 New Brunswick,Zone 7 (Miramichi area),02-12-2021,20,560
 New Brunswick,Zone 7 (Miramichi area),03-12-2021,20,580
+New Brunswick,Zone 7 (Miramichi area),04-12-2021,14,594
+New Brunswick,Zone 7 (Miramichi area),05-12-2021,15,609
 NL,Central,25-01-2020,0,0
 NL,Central,26-01-2020,0,0
 NL,Central,27-01-2020,0,0
@@ -18332,6 +18384,8 @@ NL,Central,30-11-2021,0,483
 NL,Central,01-12-2021,0,483
 NL,Central,02-12-2021,0,483
 NL,Central,03-12-2021,0,483
+NL,Central,04-12-2021,0,483
+NL,Central,05-12-2021,0,483
 NL,Eastern,25-01-2020,0,0
 NL,Eastern,26-01-2020,0,0
 NL,Eastern,27-01-2020,0,0
@@ -19011,6 +19065,8 @@ NL,Eastern,30-11-2021,0,1326
 NL,Eastern,01-12-2021,0,1326
 NL,Eastern,02-12-2021,0,1326
 NL,Eastern,03-12-2021,1,1327
+NL,Eastern,04-12-2021,0,1327
+NL,Eastern,05-12-2021,0,1327
 NL,Labrador-Grenfell,25-01-2020,0,0
 NL,Labrador-Grenfell,26-01-2020,0,0
 NL,Labrador-Grenfell,27-01-2020,0,0
@@ -19690,6 +19746,8 @@ NL,Labrador-Grenfell,30-11-2021,0,41
 NL,Labrador-Grenfell,01-12-2021,0,41
 NL,Labrador-Grenfell,02-12-2021,0,41
 NL,Labrador-Grenfell,03-12-2021,0,41
+NL,Labrador-Grenfell,04-12-2021,0,41
+NL,Labrador-Grenfell,05-12-2021,0,41
 NL,Not Reported,25-01-2020,0,0
 NL,Not Reported,26-01-2020,0,0
 NL,Not Reported,27-01-2020,0,0
@@ -20369,6 +20427,8 @@ NL,Not Reported,30-11-2021,0,0
 NL,Not Reported,01-12-2021,0,0
 NL,Not Reported,02-12-2021,0,0
 NL,Not Reported,03-12-2021,0,0
+NL,Not Reported,04-12-2021,0,0
+NL,Not Reported,05-12-2021,0,0
 NL,Western,25-01-2020,0,0
 NL,Western,26-01-2020,0,0
 NL,Western,27-01-2020,0,0
@@ -21048,6 +21108,8 @@ NL,Western,30-11-2021,0,207
 NL,Western,01-12-2021,2,209
 NL,Western,02-12-2021,0,209
 NL,Western,03-12-2021,4,213
+NL,Western,04-12-2021,0,213
+NL,Western,05-12-2021,0,213
 Nova Scotia,Not Reported,25-01-2020,0,0
 Nova Scotia,Not Reported,26-01-2020,0,0
 Nova Scotia,Not Reported,27-01-2020,0,0
@@ -21727,6 +21789,8 @@ Nova Scotia,Not Reported,30-11-2021,0,0
 Nova Scotia,Not Reported,01-12-2021,0,0
 Nova Scotia,Not Reported,02-12-2021,0,0
 Nova Scotia,Not Reported,03-12-2021,0,0
+Nova Scotia,Not Reported,04-12-2021,0,0
+Nova Scotia,Not Reported,05-12-2021,0,0
 Nova Scotia,Zone 1 - Western,25-01-2020,0,0
 Nova Scotia,Zone 1 - Western,26-01-2020,0,0
 Nova Scotia,Zone 1 - Western,27-01-2020,0,0
@@ -22406,6 +22470,8 @@ Nova Scotia,Zone 1 - Western,30-11-2021,5,632
 Nova Scotia,Zone 1 - Western,01-12-2021,3,635
 Nova Scotia,Zone 1 - Western,02-12-2021,2,637
 Nova Scotia,Zone 1 - Western,03-12-2021,0,637
+Nova Scotia,Zone 1 - Western,04-12-2021,0,637
+Nova Scotia,Zone 1 - Western,05-12-2021,0,637
 Nova Scotia,Zone 2 - Northern,25-01-2020,0,0
 Nova Scotia,Zone 2 - Northern,26-01-2020,0,0
 Nova Scotia,Zone 2 - Northern,27-01-2020,0,0
@@ -23085,6 +23151,8 @@ Nova Scotia,Zone 2 - Northern,30-11-2021,35,861
 Nova Scotia,Zone 2 - Northern,01-12-2021,15,876
 Nova Scotia,Zone 2 - Northern,02-12-2021,21,897
 Nova Scotia,Zone 2 - Northern,03-12-2021,8,905
+Nova Scotia,Zone 2 - Northern,04-12-2021,0,905
+Nova Scotia,Zone 2 - Northern,05-12-2021,0,905
 Nova Scotia,Zone 3 - Eastern,25-01-2020,0,0
 Nova Scotia,Zone 3 - Eastern,26-01-2020,0,0
 Nova Scotia,Zone 3 - Eastern,27-01-2020,0,0
@@ -23764,6 +23832,8 @@ Nova Scotia,Zone 3 - Eastern,30-11-2021,0,724
 Nova Scotia,Zone 3 - Eastern,01-12-2021,0,724
 Nova Scotia,Zone 3 - Eastern,02-12-2021,0,724
 Nova Scotia,Zone 3 - Eastern,03-12-2021,0,724
+Nova Scotia,Zone 3 - Eastern,04-12-2021,0,724
+Nova Scotia,Zone 3 - Eastern,05-12-2021,0,724
 Nova Scotia,Zone 4 - Central,25-01-2020,0,0
 Nova Scotia,Zone 4 - Central,26-01-2020,0,0
 Nova Scotia,Zone 4 - Central,27-01-2020,0,0
@@ -24443,6 +24513,8 @@ Nova Scotia,Zone 4 - Central,30-11-2021,21,6071
 Nova Scotia,Zone 4 - Central,01-12-2021,16,6087
 Nova Scotia,Zone 4 - Central,02-12-2021,17,6104
 Nova Scotia,Zone 4 - Central,03-12-2021,11,6115
+Nova Scotia,Zone 4 - Central,04-12-2021,0,6115
+Nova Scotia,Zone 4 - Central,05-12-2021,0,6115
 Nunavut,Nunavut,25-01-2020,0,0
 Nunavut,Nunavut,26-01-2020,0,0
 Nunavut,Nunavut,27-01-2020,0,0
@@ -25122,6 +25194,8 @@ Nunavut,Nunavut,30-11-2021,0,674
 Nunavut,Nunavut,01-12-2021,0,674
 Nunavut,Nunavut,02-12-2021,0,674
 Nunavut,Nunavut,03-12-2021,0,674
+Nunavut,Nunavut,04-12-2021,0,674
+Nunavut,Nunavut,05-12-2021,1,675
 NWT,NWT,25-01-2020,0,0
 NWT,NWT,26-01-2020,0,0
 NWT,NWT,27-01-2020,0,0
@@ -25801,6 +25875,8 @@ NWT,NWT,30-11-2021,1,2060
 NWT,NWT,01-12-2021,0,2060
 NWT,NWT,02-12-2021,8,2068
 NWT,NWT,03-12-2021,1,2069
+NWT,NWT,04-12-2021,0,2069
+NWT,NWT,05-12-2021,0,2069
 Ontario,Algoma,25-01-2020,0,0
 Ontario,Algoma,26-01-2020,0,0
 Ontario,Algoma,27-01-2020,0,0
@@ -26480,6 +26556,8 @@ Ontario,Algoma,30-11-2021,29,1150
 Ontario,Algoma,01-12-2021,39,1189
 Ontario,Algoma,02-12-2021,19,1208
 Ontario,Algoma,03-12-2021,43,1251
+Ontario,Algoma,04-12-2021,30,1281
+Ontario,Algoma,05-12-2021,30,1311
 Ontario,Brant,25-01-2020,0,0
 Ontario,Brant,26-01-2020,0,0
 Ontario,Brant,27-01-2020,0,0
@@ -27159,6 +27237,8 @@ Ontario,Brant,30-11-2021,11,4255
 Ontario,Brant,01-12-2021,24,4279
 Ontario,Brant,02-12-2021,14,4293
 Ontario,Brant,03-12-2021,10,4303
+Ontario,Brant,04-12-2021,0,4303
+Ontario,Brant,05-12-2021,0,4303
 Ontario,Chatham-Kent,25-01-2020,0,0
 Ontario,Chatham-Kent,26-01-2020,0,0
 Ontario,Chatham-Kent,27-01-2020,0,0
@@ -27838,6 +27918,8 @@ Ontario,Chatham-Kent,30-11-2021,10,2977
 Ontario,Chatham-Kent,01-12-2021,18,2995
 Ontario,Chatham-Kent,02-12-2021,17,3012
 Ontario,Chatham-Kent,03-12-2021,15,3027
+Ontario,Chatham-Kent,04-12-2021,0,3027
+Ontario,Chatham-Kent,05-12-2021,0,3027
 Ontario,Durham,25-01-2020,0,0
 Ontario,Durham,26-01-2020,0,0
 Ontario,Durham,27-01-2020,0,0
@@ -28517,6 +28599,8 @@ Ontario,Durham,30-11-2021,21,28128
 Ontario,Durham,01-12-2021,41,28169
 Ontario,Durham,02-12-2021,37,28206
 Ontario,Durham,03-12-2021,35,28241
+Ontario,Durham,04-12-2021,0,28241
+Ontario,Durham,05-12-2021,0,28241
 Ontario,Eastern,25-01-2020,0,0
 Ontario,Eastern,26-01-2020,0,0
 Ontario,Eastern,27-01-2020,0,0
@@ -29196,6 +29280,8 @@ Ontario,Eastern,30-11-2021,0,6081
 Ontario,Eastern,01-12-2021,7,6088
 Ontario,Eastern,02-12-2021,10,6098
 Ontario,Eastern,03-12-2021,10,6108
+Ontario,Eastern,04-12-2021,0,6108
+Ontario,Eastern,05-12-2021,0,6108
 Ontario,Grey Bruce,25-01-2020,0,0
 Ontario,Grey Bruce,26-01-2020,0,0
 Ontario,Grey Bruce,27-01-2020,0,0
@@ -29875,6 +29961,8 @@ Ontario,Grey Bruce,30-11-2021,2,2538
 Ontario,Grey Bruce,01-12-2021,3,2541
 Ontario,Grey Bruce,02-12-2021,9,2550
 Ontario,Grey Bruce,03-12-2021,9,2559
+Ontario,Grey Bruce,04-12-2021,14,2573
+Ontario,Grey Bruce,05-12-2021,5,2578
 Ontario,Haldimand-Norfolk,25-01-2020,0,0
 Ontario,Haldimand-Norfolk,26-01-2020,0,0
 Ontario,Haldimand-Norfolk,27-01-2020,0,0
@@ -30554,6 +30642,8 @@ Ontario,Haldimand-Norfolk,30-11-2021,9,3466
 Ontario,Haldimand-Norfolk,01-12-2021,5,3471
 Ontario,Haldimand-Norfolk,02-12-2021,20,3491
 Ontario,Haldimand-Norfolk,03-12-2021,22,3513
+Ontario,Haldimand-Norfolk,04-12-2021,0,3513
+Ontario,Haldimand-Norfolk,05-12-2021,0,3513
 Ontario,Haliburton Kawartha Pineridge,25-01-2020,0,0
 Ontario,Haliburton Kawartha Pineridge,26-01-2020,0,0
 Ontario,Haliburton Kawartha Pineridge,27-01-2020,0,0
@@ -31233,6 +31323,8 @@ Ontario,Haliburton Kawartha Pineridge,30-11-2021,0,2574
 Ontario,Haliburton Kawartha Pineridge,01-12-2021,10,2584
 Ontario,Haliburton Kawartha Pineridge,02-12-2021,0,2584
 Ontario,Haliburton Kawartha Pineridge,03-12-2021,16,2600
+Ontario,Haliburton Kawartha Pineridge,04-12-2021,0,2600
+Ontario,Haliburton Kawartha Pineridge,05-12-2021,0,2600
 Ontario,Halton,25-01-2020,0,0
 Ontario,Halton,26-01-2020,0,0
 Ontario,Halton,27-01-2020,0,0
@@ -31912,6 +32004,8 @@ Ontario,Halton,30-11-2021,35,19759
 Ontario,Halton,01-12-2021,36,19795
 Ontario,Halton,02-12-2021,31,19826
 Ontario,Halton,03-12-2021,30,19856
+Ontario,Halton,04-12-2021,0,19856
+Ontario,Halton,05-12-2021,0,19856
 Ontario,Hamilton,25-01-2020,0,0
 Ontario,Hamilton,26-01-2020,0,0
 Ontario,Hamilton,27-01-2020,0,0
@@ -32591,6 +32685,8 @@ Ontario,Hamilton,30-11-2021,11,25777
 Ontario,Hamilton,01-12-2021,33,25810
 Ontario,Hamilton,02-12-2021,59,25869
 Ontario,Hamilton,03-12-2021,36,25905
+Ontario,Hamilton,04-12-2021,0,25905
+Ontario,Hamilton,05-12-2021,0,25905
 Ontario,Hastings Prince Edward,25-01-2020,0,0
 Ontario,Hastings Prince Edward,26-01-2020,0,0
 Ontario,Hastings Prince Edward,27-01-2020,0,0
@@ -33270,6 +33366,8 @@ Ontario,Hastings Prince Edward,30-11-2021,14,1719
 Ontario,Hastings Prince Edward,01-12-2021,29,1748
 Ontario,Hastings Prince Edward,02-12-2021,13,1761
 Ontario,Hastings Prince Edward,03-12-2021,25,1786
+Ontario,Hastings Prince Edward,04-12-2021,0,1786
+Ontario,Hastings Prince Edward,05-12-2021,0,1786
 Ontario,Huron Perth,25-01-2020,0,0
 Ontario,Huron Perth,26-01-2020,0,0
 Ontario,Huron Perth,27-01-2020,0,0
@@ -33949,6 +34047,8 @@ Ontario,Huron Perth,30-11-2021,6,2560
 Ontario,Huron Perth,01-12-2021,8,2568
 Ontario,Huron Perth,02-12-2021,12,2580
 Ontario,Huron Perth,03-12-2021,6,2586
+Ontario,Huron Perth,04-12-2021,0,2586
+Ontario,Huron Perth,05-12-2021,0,2586
 Ontario,Kingston Frontenac Lennox & Addington,25-01-2020,0,0
 Ontario,Kingston Frontenac Lennox & Addington,26-01-2020,0,0
 Ontario,Kingston Frontenac Lennox & Addington,27-01-2020,0,0
@@ -34628,6 +34728,8 @@ Ontario,Kingston Frontenac Lennox & Addington,30-11-2021,27,2636
 Ontario,Kingston Frontenac Lennox & Addington,01-12-2021,33,2669
 Ontario,Kingston Frontenac Lennox & Addington,02-12-2021,31,2700
 Ontario,Kingston Frontenac Lennox & Addington,03-12-2021,42,2742
+Ontario,Kingston Frontenac Lennox & Addington,04-12-2021,0,2742
+Ontario,Kingston Frontenac Lennox & Addington,05-12-2021,0,2742
 Ontario,Lambton,25-01-2020,0,0
 Ontario,Lambton,26-01-2020,0,0
 Ontario,Lambton,27-01-2020,0,0
@@ -35307,6 +35409,8 @@ Ontario,Lambton,30-11-2021,4,4372
 Ontario,Lambton,01-12-2021,12,4384
 Ontario,Lambton,02-12-2021,10,4394
 Ontario,Lambton,03-12-2021,12,4406
+Ontario,Lambton,04-12-2021,13,4419
+Ontario,Lambton,05-12-2021,12,4431
 Ontario,Leeds Grenville and Lanark,25-01-2020,0,0
 Ontario,Leeds Grenville and Lanark,26-01-2020,0,0
 Ontario,Leeds Grenville and Lanark,27-01-2020,0,0
@@ -35986,6 +36090,8 @@ Ontario,Leeds Grenville and Lanark,30-11-2021,7,2081
 Ontario,Leeds Grenville and Lanark,01-12-2021,3,2084
 Ontario,Leeds Grenville and Lanark,02-12-2021,6,2090
 Ontario,Leeds Grenville and Lanark,03-12-2021,6,2096
+Ontario,Leeds Grenville and Lanark,04-12-2021,0,2096
+Ontario,Leeds Grenville and Lanark,05-12-2021,0,2096
 Ontario,Middlesex-London,25-01-2020,0,0
 Ontario,Middlesex-London,26-01-2020,0,0
 Ontario,Middlesex-London,27-01-2020,0,0
@@ -36665,6 +36771,8 @@ Ontario,Middlesex-London,30-11-2021,8,14883
 Ontario,Middlesex-London,01-12-2021,22,14905
 Ontario,Middlesex-London,02-12-2021,29,14934
 Ontario,Middlesex-London,03-12-2021,41,14975
+Ontario,Middlesex-London,04-12-2021,0,14975
+Ontario,Middlesex-London,05-12-2021,0,14975
 Ontario,Niagara,25-01-2020,0,0
 Ontario,Niagara,26-01-2020,0,0
 Ontario,Niagara,27-01-2020,0,0
@@ -37344,6 +37452,8 @@ Ontario,Niagara,30-11-2021,17,18867
 Ontario,Niagara,01-12-2021,28,18895
 Ontario,Niagara,02-12-2021,22,18917
 Ontario,Niagara,03-12-2021,41,18958
+Ontario,Niagara,04-12-2021,42,19000
+Ontario,Niagara,05-12-2021,28,19028
 Ontario,North Bay Parry Sound,25-01-2020,0,0
 Ontario,North Bay Parry Sound,26-01-2020,0,0
 Ontario,North Bay Parry Sound,27-01-2020,0,0
@@ -38023,6 +38133,8 @@ Ontario,North Bay Parry Sound,30-11-2021,2,914
 Ontario,North Bay Parry Sound,01-12-2021,3,917
 Ontario,North Bay Parry Sound,02-12-2021,7,924
 Ontario,North Bay Parry Sound,03-12-2021,4,928
+Ontario,North Bay Parry Sound,04-12-2021,0,928
+Ontario,North Bay Parry Sound,05-12-2021,0,928
 Ontario,Northwestern,25-01-2020,0,0
 Ontario,Northwestern,26-01-2020,0,0
 Ontario,Northwestern,27-01-2020,0,0
@@ -38702,6 +38814,8 @@ Ontario,Northwestern,30-11-2021,5,1235
 Ontario,Northwestern,01-12-2021,1,1236
 Ontario,Northwestern,02-12-2021,2,1238
 Ontario,Northwestern,03-12-2021,4,1242
+Ontario,Northwestern,04-12-2021,0,1242
+Ontario,Northwestern,05-12-2021,0,1242
 Ontario,Not Reported,25-01-2020,0,0
 Ontario,Not Reported,26-01-2020,0,0
 Ontario,Not Reported,27-01-2020,0,0
@@ -39381,6 +39495,8 @@ Ontario,Not Reported,30-11-2021,0,0
 Ontario,Not Reported,01-12-2021,0,0
 Ontario,Not Reported,02-12-2021,0,0
 Ontario,Not Reported,03-12-2021,0,0
+Ontario,Not Reported,04-12-2021,0,0
+Ontario,Not Reported,05-12-2021,0,0
 Ontario,Ottawa,25-01-2020,0,0
 Ontario,Ottawa,26-01-2020,0,0
 Ontario,Ottawa,27-01-2020,0,0
@@ -40060,6 +40176,8 @@ Ontario,Ottawa,30-11-2021,19,31988
 Ontario,Ottawa,01-12-2021,50,32038
 Ontario,Ottawa,02-12-2021,62,32100
 Ontario,Ottawa,03-12-2021,60,32160
+Ontario,Ottawa,04-12-2021,63,32223
+Ontario,Ottawa,05-12-2021,55,32278
 Ontario,Peel,25-01-2020,0,0
 Ontario,Peel,26-01-2020,0,0
 Ontario,Peel,27-01-2020,0,0
@@ -40739,6 +40857,8 @@ Ontario,Peel,30-11-2021,34,119318
 Ontario,Peel,01-12-2021,75,119393
 Ontario,Peel,02-12-2021,61,119454
 Ontario,Peel,03-12-2021,62,119516
+Ontario,Peel,04-12-2021,84,119600
+Ontario,Peel,05-12-2021,73,119673
 Ontario,Peterborough,25-01-2020,0,0
 Ontario,Peterborough,26-01-2020,0,0
 Ontario,Peterborough,27-01-2020,0,0
@@ -41418,6 +41538,8 @@ Ontario,Peterborough,30-11-2021,6,2026
 Ontario,Peterborough,01-12-2021,6,2032
 Ontario,Peterborough,02-12-2021,4,2036
 Ontario,Peterborough,03-12-2021,3,2039
+Ontario,Peterborough,04-12-2021,0,2039
+Ontario,Peterborough,05-12-2021,0,2039
 Ontario,Porcupine,25-01-2020,0,0
 Ontario,Porcupine,26-01-2020,0,0
 Ontario,Porcupine,27-01-2020,0,0
@@ -42097,6 +42219,8 @@ Ontario,Porcupine,30-11-2021,0,2276
 Ontario,Porcupine,01-12-2021,0,2276
 Ontario,Porcupine,02-12-2021,1,2277
 Ontario,Porcupine,03-12-2021,2,2279
+Ontario,Porcupine,04-12-2021,0,2279
+Ontario,Porcupine,05-12-2021,0,2279
 Ontario,Renfrew,25-01-2020,0,0
 Ontario,Renfrew,26-01-2020,0,0
 Ontario,Renfrew,27-01-2020,0,0
@@ -42776,6 +42900,8 @@ Ontario,Renfrew,30-11-2021,1,896
 Ontario,Renfrew,01-12-2021,8,904
 Ontario,Renfrew,02-12-2021,1,905
 Ontario,Renfrew,03-12-2021,10,915
+Ontario,Renfrew,04-12-2021,0,915
+Ontario,Renfrew,05-12-2021,0,915
 Ontario,Simcoe Muskoka,25-01-2020,0,0
 Ontario,Simcoe Muskoka,26-01-2020,0,0
 Ontario,Simcoe Muskoka,27-01-2020,0,0
@@ -43455,6 +43581,8 @@ Ontario,Simcoe Muskoka,30-11-2021,59,15647
 Ontario,Simcoe Muskoka,01-12-2021,64,15711
 Ontario,Simcoe Muskoka,02-12-2021,95,15806
 Ontario,Simcoe Muskoka,03-12-2021,114,15920
+Ontario,Simcoe Muskoka,04-12-2021,0,15920
+Ontario,Simcoe Muskoka,05-12-2021,0,15920
 Ontario,Southwestern,25-01-2020,0,0
 Ontario,Southwestern,26-01-2020,0,0
 Ontario,Southwestern,27-01-2020,0,0
@@ -44134,6 +44262,8 @@ Ontario,Southwestern,30-11-2021,26,5370
 Ontario,Southwestern,01-12-2021,12,5382
 Ontario,Southwestern,02-12-2021,29,5411
 Ontario,Southwestern,03-12-2021,29,5440
+Ontario,Southwestern,04-12-2021,0,5440
+Ontario,Southwestern,05-12-2021,0,5440
 Ontario,Sudbury,25-01-2020,0,0
 Ontario,Sudbury,26-01-2020,0,0
 Ontario,Sudbury,27-01-2020,0,0
@@ -44813,6 +44943,8 @@ Ontario,Sudbury,30-11-2021,57,3858
 Ontario,Sudbury,01-12-2021,30,3888
 Ontario,Sudbury,02-12-2021,62,3950
 Ontario,Sudbury,03-12-2021,49,3999
+Ontario,Sudbury,04-12-2021,0,3999
+Ontario,Sudbury,05-12-2021,0,3999
 Ontario,Thunder Bay,25-01-2020,0,0
 Ontario,Thunder Bay,26-01-2020,0,0
 Ontario,Thunder Bay,27-01-2020,0,0
@@ -45492,6 +45624,8 @@ Ontario,Thunder Bay,30-11-2021,6,3583
 Ontario,Thunder Bay,01-12-2021,14,3597
 Ontario,Thunder Bay,02-12-2021,12,3609
 Ontario,Thunder Bay,03-12-2021,33,3642
+Ontario,Thunder Bay,04-12-2021,0,3642
+Ontario,Thunder Bay,05-12-2021,0,3642
 Ontario,Timiskaming,25-01-2020,0,0
 Ontario,Timiskaming,26-01-2020,0,0
 Ontario,Timiskaming,27-01-2020,0,0
@@ -46171,6 +46305,8 @@ Ontario,Timiskaming,30-11-2021,3,386
 Ontario,Timiskaming,01-12-2021,9,395
 Ontario,Timiskaming,02-12-2021,1,396
 Ontario,Timiskaming,03-12-2021,5,401
+Ontario,Timiskaming,04-12-2021,9,410
+Ontario,Timiskaming,05-12-2021,0,410
 Ontario,Toronto,25-01-2020,1,1
 Ontario,Toronto,26-01-2020,0,1
 Ontario,Toronto,27-01-2020,1,2
@@ -46850,6 +46986,8 @@ Ontario,Toronto,30-11-2021,108,183319
 Ontario,Toronto,01-12-2021,120,183439
 Ontario,Toronto,02-12-2021,127,183566
 Ontario,Toronto,03-12-2021,161,183727
+Ontario,Toronto,04-12-2021,0,183727
+Ontario,Toronto,05-12-2021,0,183727
 Ontario,Waterloo,25-01-2020,0,0
 Ontario,Waterloo,26-01-2020,0,0
 Ontario,Waterloo,27-01-2020,0,0
@@ -47529,6 +47667,8 @@ Ontario,Waterloo,30-11-2021,21,20914
 Ontario,Waterloo,01-12-2021,49,20963
 Ontario,Waterloo,02-12-2021,31,20994
 Ontario,Waterloo,03-12-2021,26,21020
+Ontario,Waterloo,04-12-2021,0,21020
+Ontario,Waterloo,05-12-2021,0,21020
 Ontario,Wellington Dufferin Guelph,25-01-2020,0,0
 Ontario,Wellington Dufferin Guelph,26-01-2020,0,0
 Ontario,Wellington Dufferin Guelph,27-01-2020,0,0
@@ -48208,6 +48348,8 @@ Ontario,Wellington Dufferin Guelph,30-11-2021,6,9638
 Ontario,Wellington Dufferin Guelph,01-12-2021,7,9645
 Ontario,Wellington Dufferin Guelph,02-12-2021,9,9654
 Ontario,Wellington Dufferin Guelph,03-12-2021,27,9681
+Ontario,Wellington Dufferin Guelph,04-12-2021,0,9681
+Ontario,Wellington Dufferin Guelph,05-12-2021,0,9681
 Ontario,Windsor-Essex,25-01-2020,0,0
 Ontario,Windsor-Essex,26-01-2020,0,0
 Ontario,Windsor-Essex,27-01-2020,0,0
@@ -48887,6 +49029,8 @@ Ontario,Windsor-Essex,30-11-2021,85,21827
 Ontario,Windsor-Essex,01-12-2021,89,21916
 Ontario,Windsor-Essex,02-12-2021,83,21999
 Ontario,Windsor-Essex,03-12-2021,63,22062
+Ontario,Windsor-Essex,04-12-2021,0,22062
+Ontario,Windsor-Essex,05-12-2021,0,22062
 Ontario,York,25-01-2020,0,0
 Ontario,York,26-01-2020,0,0
 Ontario,York,27-01-2020,0,0
@@ -49566,6 +49710,8 @@ Ontario,York,30-11-2021,42,58750
 Ontario,York,01-12-2021,48,58798
 Ontario,York,02-12-2021,62,58860
 Ontario,York,03-12-2021,51,58911
+Ontario,York,04-12-2021,0,58911
+Ontario,York,05-12-2021,0,58911
 PEI,Prince Edward Island,25-01-2020,0,0
 PEI,Prince Edward Island,26-01-2020,0,0
 PEI,Prince Edward Island,27-01-2020,0,0
@@ -50245,6 +50391,8 @@ PEI,Prince Edward Island,30-11-2021,0,372
 PEI,Prince Edward Island,01-12-2021,0,372
 PEI,Prince Edward Island,02-12-2021,0,372
 PEI,Prince Edward Island,03-12-2021,0,372
+PEI,Prince Edward Island,04-12-2021,0,372
+PEI,Prince Edward Island,05-12-2021,0,372
 Quebec,Abitibi-Témiscamingue,25-01-2020,0,0
 Quebec,Abitibi-Témiscamingue,26-01-2020,0,0
 Quebec,Abitibi-Témiscamingue,27-01-2020,0,0
@@ -50924,6 +51072,8 @@ Quebec,Abitibi-Témiscamingue,30-11-2021,4,1478
 Quebec,Abitibi-Témiscamingue,01-12-2021,14,1492
 Quebec,Abitibi-Témiscamingue,02-12-2021,10,1502
 Quebec,Abitibi-Témiscamingue,03-12-2021,16,1518
+Quebec,Abitibi-Témiscamingue,04-12-2021,11,1529
+Quebec,Abitibi-Témiscamingue,05-12-2021,8,1537
 Quebec,Bas-Saint-Laurent,25-01-2020,0,0
 Quebec,Bas-Saint-Laurent,26-01-2020,0,0
 Quebec,Bas-Saint-Laurent,27-01-2020,0,0
@@ -51603,6 +51753,8 @@ Quebec,Bas-Saint-Laurent,30-11-2021,4,4572
 Quebec,Bas-Saint-Laurent,01-12-2021,8,4580
 Quebec,Bas-Saint-Laurent,02-12-2021,11,4591
 Quebec,Bas-Saint-Laurent,03-12-2021,8,4599
+Quebec,Bas-Saint-Laurent,04-12-2021,19,4618
+Quebec,Bas-Saint-Laurent,05-12-2021,18,4636
 Quebec,Capitale-Nationale,25-01-2020,0,0
 Quebec,Capitale-Nationale,26-01-2020,0,0
 Quebec,Capitale-Nationale,27-01-2020,0,0
@@ -52282,6 +52434,8 @@ Quebec,Capitale-Nationale,30-11-2021,29,35737
 Quebec,Capitale-Nationale,01-12-2021,49,35786
 Quebec,Capitale-Nationale,02-12-2021,45,35831
 Quebec,Capitale-Nationale,03-12-2021,53,35884
+Quebec,Capitale-Nationale,04-12-2021,69,35953
+Quebec,Capitale-Nationale,05-12-2021,68,36021
 Quebec,Chaudière-Appalaches,25-01-2020,0,0
 Quebec,Chaudière-Appalaches,26-01-2020,0,0
 Quebec,Chaudière-Appalaches,27-01-2020,0,0
@@ -52961,6 +53115,8 @@ Quebec,Chaudière-Appalaches,30-11-2021,77,24236
 Quebec,Chaudière-Appalaches,01-12-2021,101,24337
 Quebec,Chaudière-Appalaches,02-12-2021,114,24451
 Quebec,Chaudière-Appalaches,03-12-2021,113,24564
+Quebec,Chaudière-Appalaches,04-12-2021,161,24725
+Quebec,Chaudière-Appalaches,05-12-2021,98,24823
 Quebec,Côte-Nord,25-01-2020,0,0
 Quebec,Côte-Nord,26-01-2020,0,0
 Quebec,Côte-Nord,27-01-2020,0,0
@@ -53640,6 +53796,8 @@ Quebec,Côte-Nord,30-11-2021,0,822
 Quebec,Côte-Nord,01-12-2021,1,823
 Quebec,Côte-Nord,02-12-2021,3,826
 Quebec,Côte-Nord,03-12-2021,3,829
+Quebec,Côte-Nord,04-12-2021,0,829
+Quebec,Côte-Nord,05-12-2021,4,833
 Quebec,Estrie,25-01-2020,0,0
 Quebec,Estrie,26-01-2020,0,0
 Quebec,Estrie,27-01-2020,0,0
@@ -54319,6 +54477,8 @@ Quebec,Estrie,30-11-2021,98,20140
 Quebec,Estrie,01-12-2021,175,20315
 Quebec,Estrie,02-12-2021,138,20453
 Quebec,Estrie,03-12-2021,173,20626
+Quebec,Estrie,04-12-2021,206,20832
+Quebec,Estrie,05-12-2021,129,20961
 Quebec,Gaspésie-Îles-de-la-Madeleine,25-01-2020,0,0
 Quebec,Gaspésie-Îles-de-la-Madeleine,26-01-2020,0,0
 Quebec,Gaspésie-Îles-de-la-Madeleine,27-01-2020,0,0
@@ -54998,6 +55158,8 @@ Quebec,Gaspésie-Îles-de-la-Madeleine,30-11-2021,3,2327
 Quebec,Gaspésie-Îles-de-la-Madeleine,01-12-2021,4,2331
 Quebec,Gaspésie-Îles-de-la-Madeleine,02-12-2021,0,2331
 Quebec,Gaspésie-Îles-de-la-Madeleine,03-12-2021,0,2331
+Quebec,Gaspésie-Îles-de-la-Madeleine,04-12-2021,1,2332
+Quebec,Gaspésie-Îles-de-la-Madeleine,05-12-2021,4,2336
 Quebec,Lanaudière,25-01-2020,0,0
 Quebec,Lanaudière,26-01-2020,0,0
 Quebec,Lanaudière,27-01-2020,0,0
@@ -55677,6 +55839,8 @@ Quebec,Lanaudière,30-11-2021,48,28718
 Quebec,Lanaudière,01-12-2021,61,28779
 Quebec,Lanaudière,02-12-2021,72,28851
 Quebec,Lanaudière,03-12-2021,77,28928
+Quebec,Lanaudière,04-12-2021,88,29016
+Quebec,Lanaudière,05-12-2021,55,29071
 Quebec,Laurentides,25-01-2020,0,0
 Quebec,Laurentides,26-01-2020,0,0
 Quebec,Laurentides,27-01-2020,0,0
@@ -56356,6 +56520,8 @@ Quebec,Laurentides,30-11-2021,86,27148
 Quebec,Laurentides,01-12-2021,99,27247
 Quebec,Laurentides,02-12-2021,74,27321
 Quebec,Laurentides,03-12-2021,92,27413
+Quebec,Laurentides,04-12-2021,109,27522
+Quebec,Laurentides,05-12-2021,112,27634
 Quebec,Laval,25-01-2020,0,0
 Quebec,Laval,26-01-2020,0,0
 Quebec,Laval,27-01-2020,0,0
@@ -57035,6 +57201,8 @@ Quebec,Laval,30-11-2021,42,38458
 Quebec,Laval,01-12-2021,72,38530
 Quebec,Laval,02-12-2021,45,38575
 Quebec,Laval,03-12-2021,102,38677
+Quebec,Laval,04-12-2021,138,38815
+Quebec,Laval,05-12-2021,96,38911
 Quebec,Mauricie,25-01-2020,0,0
 Quebec,Mauricie,26-01-2020,0,0
 Quebec,Mauricie,27-01-2020,0,0
@@ -57714,6 +57882,8 @@ Quebec,Mauricie,30-11-2021,48,18614
 Quebec,Mauricie,01-12-2021,64,18678
 Quebec,Mauricie,02-12-2021,78,18756
 Quebec,Mauricie,03-12-2021,76,18832
+Quebec,Mauricie,04-12-2021,107,18939
+Quebec,Mauricie,05-12-2021,74,19013
 Quebec,Montérégie,25-01-2020,0,0
 Quebec,Montérégie,26-01-2020,0,0
 Quebec,Montérégie,27-01-2020,0,0
@@ -58393,6 +58563,8 @@ Quebec,Montérégie,30-11-2021,98,60865
 Quebec,Montérégie,01-12-2021,153,61018
 Quebec,Montérégie,02-12-2021,159,61177
 Quebec,Montérégie,03-12-2021,182,61359
+Quebec,Montérégie,04-12-2021,184,61543
+Quebec,Montérégie,05-12-2021,176,61719
 Quebec,Montréal,25-01-2020,0,0
 Quebec,Montréal,26-01-2020,0,0
 Quebec,Montréal,27-01-2020,0,0
@@ -59072,6 +59244,8 @@ Quebec,Montréal,30-11-2021,233,156429
 Quebec,Montréal,01-12-2021,347,156776
 Quebec,Montréal,02-12-2021,335,157111
 Quebec,Montréal,03-12-2021,394,157505
+Quebec,Montréal,04-12-2021,378,157883
+Quebec,Montréal,05-12-2021,367,158250
 Quebec,Nord-du-Québec,25-01-2020,0,0
 Quebec,Nord-du-Québec,26-01-2020,0,0
 Quebec,Nord-du-Québec,27-01-2020,0,0
@@ -59751,6 +59925,8 @@ Quebec,Nord-du-Québec,30-11-2021,0,138
 Quebec,Nord-du-Québec,01-12-2021,-1,137
 Quebec,Nord-du-Québec,02-12-2021,0,137
 Quebec,Nord-du-Québec,03-12-2021,0,137
+Quebec,Nord-du-Québec,04-12-2021,1,138
+Quebec,Nord-du-Québec,05-12-2021,0,138
 Quebec,Not Reported,25-01-2020,0,0
 Quebec,Not Reported,26-01-2020,0,0
 Quebec,Not Reported,27-01-2020,0,0
@@ -60430,6 +60606,8 @@ Quebec,Not Reported,30-11-2021,3,1302
 Quebec,Not Reported,01-12-2021,2,1304
 Quebec,Not Reported,02-12-2021,4,1308
 Quebec,Not Reported,03-12-2021,3,1311
+Quebec,Not Reported,04-12-2021,0,1311
+Quebec,Not Reported,05-12-2021,4,1315
 Quebec,Nunavik,25-01-2020,0,0
 Quebec,Nunavik,26-01-2020,0,0
 Quebec,Nunavik,27-01-2020,0,0
@@ -61109,6 +61287,8 @@ Quebec,Nunavik,30-11-2021,5,979
 Quebec,Nunavik,01-12-2021,8,987
 Quebec,Nunavik,02-12-2021,14,1001
 Quebec,Nunavik,03-12-2021,11,1012
+Quebec,Nunavik,04-12-2021,4,1016
+Quebec,Nunavik,05-12-2021,5,1021
 Quebec,Outaouais,25-01-2020,0,0
 Quebec,Outaouais,26-01-2020,0,0
 Quebec,Outaouais,27-01-2020,0,0
@@ -61788,6 +61968,8 @@ Quebec,Outaouais,30-11-2021,2,14559
 Quebec,Outaouais,01-12-2021,31,14590
 Quebec,Outaouais,02-12-2021,29,14619
 Quebec,Outaouais,03-12-2021,31,14650
+Quebec,Outaouais,04-12-2021,20,14670
+Quebec,Outaouais,05-12-2021,16,14686
 Quebec,Saguenay,25-01-2020,0,0
 Quebec,Saguenay,26-01-2020,0,0
 Quebec,Saguenay,27-01-2020,0,0
@@ -62467,6 +62649,8 @@ Quebec,Saguenay,30-11-2021,4,11504
 Quebec,Saguenay,01-12-2021,8,11512
 Quebec,Saguenay,02-12-2021,15,11527
 Quebec,Saguenay,03-12-2021,21,11548
+Quebec,Saguenay,04-12-2021,16,11564
+Quebec,Saguenay,05-12-2021,22,11586
 Quebec,Terres-Cries-de-la-Baie-James,25-01-2020,0,0
 Quebec,Terres-Cries-de-la-Baie-James,26-01-2020,0,0
 Quebec,Terres-Cries-de-la-Baie-James,27-01-2020,0,0
@@ -63146,6 +63330,8 @@ Quebec,Terres-Cries-de-la-Baie-James,30-11-2021,0,145
 Quebec,Terres-Cries-de-la-Baie-James,01-12-2021,0,145
 Quebec,Terres-Cries-de-la-Baie-James,02-12-2021,0,145
 Quebec,Terres-Cries-de-la-Baie-James,03-12-2021,0,145
+Quebec,Terres-Cries-de-la-Baie-James,04-12-2021,0,145
+Quebec,Terres-Cries-de-la-Baie-James,05-12-2021,0,145
 Repatriated,Not Reported,25-01-2020,0,0
 Repatriated,Not Reported,26-01-2020,0,0
 Repatriated,Not Reported,27-01-2020,0,0
@@ -63825,6 +64011,8 @@ Repatriated,Not Reported,30-11-2021,0,13
 Repatriated,Not Reported,01-12-2021,0,13
 Repatriated,Not Reported,02-12-2021,0,13
 Repatriated,Not Reported,03-12-2021,0,13
+Repatriated,Not Reported,04-12-2021,0,13
+Repatriated,Not Reported,05-12-2021,0,13
 Saskatchewan,Central,25-01-2020,0,0
 Saskatchewan,Central,26-01-2020,0,0
 Saskatchewan,Central,27-01-2020,0,0
@@ -64504,6 +64692,8 @@ Saskatchewan,Central,30-11-2021,9,6018
 Saskatchewan,Central,01-12-2021,10,6028
 Saskatchewan,Central,02-12-2021,14,6042
 Saskatchewan,Central,03-12-2021,10,6052
+Saskatchewan,Central,04-12-2021,7,6059
+Saskatchewan,Central,05-12-2021,11,6070
 Saskatchewan,Far North,25-01-2020,0,0
 Saskatchewan,Far North,26-01-2020,0,0
 Saskatchewan,Far North,27-01-2020,0,0
@@ -65183,6 +65373,8 @@ Saskatchewan,Far North,30-11-2021,2,9341
 Saskatchewan,Far North,01-12-2021,4,9345
 Saskatchewan,Far North,02-12-2021,5,9350
 Saskatchewan,Far North,03-12-2021,1,9351
+Saskatchewan,Far North,04-12-2021,7,9358
+Saskatchewan,Far North,05-12-2021,0,9358
 Saskatchewan,North,25-01-2020,0,0
 Saskatchewan,North,26-01-2020,0,0
 Saskatchewan,North,27-01-2020,0,0
@@ -65862,6 +66054,8 @@ Saskatchewan,North,30-11-2021,4,19466
 Saskatchewan,North,01-12-2021,16,19482
 Saskatchewan,North,02-12-2021,19,19501
 Saskatchewan,North,03-12-2021,18,19519
+Saskatchewan,North,04-12-2021,15,19534
+Saskatchewan,North,05-12-2021,16,19550
 Saskatchewan,Not Reported,25-01-2020,0,0
 Saskatchewan,Not Reported,26-01-2020,0,0
 Saskatchewan,Not Reported,27-01-2020,0,0
@@ -66541,6 +66735,8 @@ Saskatchewan,Not Reported,30-11-2021,3,911
 Saskatchewan,Not Reported,01-12-2021,2,913
 Saskatchewan,Not Reported,02-12-2021,-1,912
 Saskatchewan,Not Reported,03-12-2021,1,913
+Saskatchewan,Not Reported,04-12-2021,2,915
+Saskatchewan,Not Reported,05-12-2021,0,915
 Saskatchewan,Regina,25-01-2020,0,0
 Saskatchewan,Regina,26-01-2020,0,0
 Saskatchewan,Regina,27-01-2020,0,0
@@ -67220,6 +67416,8 @@ Saskatchewan,Regina,30-11-2021,7,15784
 Saskatchewan,Regina,01-12-2021,8,15792
 Saskatchewan,Regina,02-12-2021,8,15800
 Saskatchewan,Regina,03-12-2021,16,15816
+Saskatchewan,Regina,04-12-2021,7,15823
+Saskatchewan,Regina,05-12-2021,8,15831
 Saskatchewan,Saskatoon,25-01-2020,0,0
 Saskatchewan,Saskatoon,26-01-2020,0,0
 Saskatchewan,Saskatoon,27-01-2020,0,0
@@ -67899,6 +68097,8 @@ Saskatchewan,Saskatoon,30-11-2021,9,19342
 Saskatchewan,Saskatoon,01-12-2021,6,19348
 Saskatchewan,Saskatoon,02-12-2021,13,19361
 Saskatchewan,Saskatoon,03-12-2021,18,19379
+Saskatchewan,Saskatoon,04-12-2021,15,19394
+Saskatchewan,Saskatoon,05-12-2021,15,19409
 Saskatchewan,South,25-01-2020,0,0
 Saskatchewan,South,26-01-2020,0,0
 Saskatchewan,South,27-01-2020,0,0
@@ -68578,6 +68778,8 @@ Saskatchewan,South,30-11-2021,8,10130
 Saskatchewan,South,01-12-2021,36,10166
 Saskatchewan,South,02-12-2021,13,10179
 Saskatchewan,South,03-12-2021,16,10195
+Saskatchewan,South,04-12-2021,15,10210
+Saskatchewan,South,05-12-2021,20,10230
 Yukon,Yukon,25-01-2020,0,0
 Yukon,Yukon,26-01-2020,0,0
 Yukon,Yukon,27-01-2020,0,0
@@ -69257,3 +69459,5 @@ Yukon,Yukon,30-11-2021,7,1514
 Yukon,Yukon,01-12-2021,5,1519
 Yukon,Yukon,02-12-2021,14,1533
 Yukon,Yukon,03-12-2021,4,1537
+Yukon,Yukon,04-12-2021,0,1537
+Yukon,Yukon,05-12-2021,0,1537
