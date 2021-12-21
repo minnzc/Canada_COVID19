@@ -666,6 +666,10 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Calgary","Canada",-28.69,13dec2021,-33.47
 "Calgary","Canada",-28.94,14dec2021,-34.85
 "Calgary","Canada",-24.43,15dec2021,-21.85
+"Calgary","Canada",-24.86,16dec2021,-30.4
+"Calgary","Canada",-20,17dec2021,-18.3
+"Calgary","Canada",-11.02,18dec2021,2.76
+"Calgary","Canada",-22.9,19dec2021,-18.35
 "Montréal","Canada",-5,18feb2020,16
 "Montréal","Canada",0,19feb2020,14
 "Montréal","Canada",-3,20feb2020,-5
@@ -1333,6 +1337,10 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Montréal","Canada",-28.69,13dec2021,-49.73
 "Montréal","Canada",-28.94,14dec2021,-40.63
 "Montréal","Canada",-24.43,15dec2021,-41.64
+"Montréal","Canada",-24.86,16dec2021,-45.45
+"Montréal","Canada",-20,17dec2021,-40.14
+"Montréal","Canada",-11.02,18dec2021,-23.02
+"Montréal","Canada",-22.9,19dec2021,-40.68
 "Toronto","Canada",-5,18feb2020,-14
 "Toronto","Canada",0,19feb2020,-8
 "Toronto","Canada",-3,20feb2020,-9
@@ -2000,6 +2008,10 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Toronto","Canada",-28.69,13dec2021,-44.74
 "Toronto","Canada",-28.94,14dec2021,-45.4
 "Toronto","Canada",-24.43,15dec2021,-42.11
+"Toronto","Canada",-24.86,16dec2021,-40.54
+"Toronto","Canada",-20,17dec2021,-37.41
+"Toronto","Canada",-11.02,18dec2021,-33.67
+"Toronto","Canada",-22.9,19dec2021,-44.44
 "Vancouver","Canada",-5,18feb2020,9
 "Vancouver","Canada",0,19feb2020,1
 "Vancouver","Canada",-3,20feb2020,7
@@ -2667,3 +2679,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Vancouver","Canada",-28.69,13dec2021,-24.96
 "Vancouver","Canada",-28.94,14dec2021,-30.3
 "Vancouver","Canada",-24.43,15dec2021,-26.29
+"Vancouver","Canada",-24.86,16dec2021,-24.39
+"Vancouver","Canada",-20,17dec2021,-23.8
+"Vancouver","Canada",-11.02,18dec2021,-13.39
+"Vancouver","Canada",-22.9,19dec2021,-22.36
