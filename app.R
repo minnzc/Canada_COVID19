@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 14 April 2021
+## Last updated: 4 January 2022
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -382,9 +382,9 @@ basemap = leaflet(options = leafletOptions(zoomControl = FALSE)) %>%
     addTiles() %>% 
     addLayersControl(
         position = "bottomright",
-        overlayGroups = c("2019-COVID (cumulative)", "2019-COVID (cumulative per 1000 people)", "2019-COVID (new cases)", "2019-COVID (new cases per 1000 people)", "2019-COVID (deaths)", "2019-COVID (deaths per 1000 people)", "2019-COVID (recovered)", "2019-COVID (recovered per 1000 people)"),
+        overlayGroups = c("New cases", "Cumulative cases", "Deaths", "Recovered", "New cases per 1000 people", "Cumulative cases per 1000 people", "Deaths per 1000 people", "Recovered per 1000 people"),
         options = layersControlOptions(collapsed = FALSE)) %>% 
-    hideGroup(c("2019-COVID (cumulative per 1000 people)", "2019-COVID (new cases)", "2019-COVID (new cases per 1000 people)", "2019-COVID (deaths)", "2019-COVID (deaths per 1000 people)", "2019-COVID (recovered)", "2019-COVID (recovered per 1000 people)"))  %>%
+    hideGroup(c("Cumulative cases", "Deaths", "Recovered", "New cases per 1000 people", "Cumulative cases per 1000 people", "Deaths per 1000 people", "Recovered per 1000 people"))  %>%
     addProviderTiles(providers$CartoDB.Positron) %>%
     fitBounds(-105,42,-90,65)
 
@@ -994,6 +994,7 @@ ui <- bootstrapPage(
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
                             tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"), tags$br(),tags$br(),
                             tags$h3("LATEST UPDATES"),
+                            tags$b("04/01/2022:"), "Front page map shows daily \'New cases\' series by default.", tags$br(), tags$br(),
                             tags$b("14/04/2021:"), "\'Unemployment (year-to-year % change)\' series in the \"Economic impact\" tab from January 2021 onward has been changed to \'Unemployment (% change from 2019 baseline)\' and will compare from 2021 to 2019, as opposed to year over year.", tags$br(), tags$br(),
                             tags$b("24/01/2021:"), "Addition of the \'Vaccines completed\' series to the \"Vaccinations\" tab. \'Vaccines completed\' refers to people who have received both doses of a vaccine. \'Vaccines administered\' refers to people who have received one or more doses.", tags$br(), tags$br(),
                             tags$b("16/12/2020:"), "Addition of the \"Vaccinations\" tab courtesy of administerd and distributed vaccines data from ", tags$a(href="https://github.com/ishaberry/Covid19Canada", "Berry et al. 2020."), "Provincial and national testing metrics added to \"General graphs\" tab.", tags$br(), tags$br(),
@@ -1074,56 +1075,56 @@ server <- function(input, output, session) {
             clearShapes() %>%
             
             addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~casespc*1000+10, 
-                             fillOpacity = 0.1, color = covid_col2, group = "2019-COVID (cumulative per 1000 people)",
+                             fillOpacity = 0.1, color = new_col2, group = "Cumulative cases per 1000 people",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
             addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~new_casespc*1000+10, 
-                             fillOpacity = 0.1, color = new_col2, group = "2019-COVID (new cases per 1000 people)",
+                             fillOpacity = 0.1, color = covid_col2, group = "New cases per 1000 people",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
             addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~deathspc*1000+10, 
-                             fillOpacity = 0.1, color = death_col2, group = "2019-COVID (deaths per 1000 people)",
+                             fillOpacity = 0.1, color = death_col2, group = "Deaths per 1000 people",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
             addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~recoveredpc*1000+10, 
-                             fillOpacity = 0.1, color = recovered_col2, group = "2019-COVID (recovered per 1000 people)",
+                             fillOpacity = 0.1, color = recovered_col2, group = "Recovered per 1000 people",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
-            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~sqrt(cases/5+10), 
-                             fillOpacity = 0.1, color = covid_col, group = "2019-COVID (cumulative)",
+            addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~cases/1000+10, 
+                             fillOpacity = 0.1, color = new_col, group = "Cumulative cases",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
             addCircleMarkers(data=reactive_db_last24h(), lat = ~ lat, lng = ~ lon, weight = 2, radius = ~sqrt(new_cases/5+10), 
-                             fillOpacity = 0.1, color = new_col, group = "2019-COVID (new cases)",
+                             fillOpacity = 0.1, color = covid_col, group = "New cases",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
             addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(deaths/5+10), 
-                             fillOpacity = 0.1, color = death_col, group = "2019-COVID (deaths)",
+                             fillOpacity = 0.1, color = death_col, group = "Deaths",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
                                  textsize = "15px", direction = "auto")) %>%
             
             addCircleMarkers(data=reactive_db(), lat = ~ lat, lng = ~ lon, weight = 3, radius = ~sqrt(recovered/5+10), 
-                             fillOpacity = 0.1, color = recovered_col, group = "2019-COVID (recovered)",
+                             fillOpacity = 0.1, color = recovered_col, group = "Recovered",
                              label = sprintf("<strong>%s</strong><br/>Confirmed cases: %g<br/>Confirmed cases per 1000 people: %g<br/>New cases: %g<br/>New cases per 1000 people: %g<br/>Deaths: %g<br/>Deaths per 1000 people: %g<br/>Recovered: %g<br/>Recovered per 1000 people: %g", reactive_db()$address, reactive_db()$cases, reactive_db()$casespc*1000, reactive_db()$new_cases, reactive_db()$new_casespc*1000, reactive_db()$deaths, reactive_db()$deathspc*1000, reactive_db()$recovered, reactive_db()$recoveredpc*1000) %>% lapply(htmltools::HTML),
                              labelOptions = labelOptions(
                                  style = list("font-weight" = "normal", padding = "3px 8px", "color" = "#000000"),
