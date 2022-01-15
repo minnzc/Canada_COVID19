@@ -5,9 +5,9 @@ account: mhcui
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2470400
-bundleId: 5466847
+bundleId: 5470684
 url: https://mhcui.shinyapps.io/nCoV_Canada_tracker/
-when: 1642132840.48468
-lastSyncTime: 1642132840.48468
+when: 1642218754.49047
+lastSyncTime: 1642218754.49047
 asMultiple: FALSE
 asStatic: FALSE
