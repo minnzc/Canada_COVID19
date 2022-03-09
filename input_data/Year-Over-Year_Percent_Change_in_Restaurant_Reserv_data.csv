@@ -745,6 +745,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Calgary","Canada",-3.75,04mar2022,6.91
 "Calgary","Canada",5.96,05mar2022,17.16
 "Calgary","Canada",7.14,06mar2022,.08
+"Calgary","Canada",-18.97,07mar2022,.83
 "Montréal","Canada",-5,18feb2020,16
 "Montréal","Canada",0,19feb2020,14
 "Montréal","Canada",-3,20feb2020,-5
@@ -1491,6 +1492,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Montréal","Canada",-3.75,04mar2022,-27.68
 "Montréal","Canada",5.96,05mar2022,-17.3
 "Montréal","Canada",7.14,06mar2022,-21.44
+"Montréal","Canada",-18.97,07mar2022,-58.6
 "Toronto","Canada",-5,18feb2020,-14
 "Toronto","Canada",0,19feb2020,-8
 "Toronto","Canada",-3,20feb2020,-9
@@ -2237,6 +2239,7 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Toronto","Canada",-3.75,04mar2022,-26.86
 "Toronto","Canada",5.96,05mar2022,-12.56
 "Toronto","Canada",7.14,06mar2022,-1.48
+"Toronto","Canada",-18.97,07mar2022,-50.75
 "Vancouver","Canada",-5,18feb2020,9
 "Vancouver","Canada",0,19feb2020,1
 "Vancouver","Canada",-3,20feb2020,7
@@ -2983,3 +2986,4 @@ City,Country,CountryPercentChangeYOY,Date,PercentChangeYOY
 "Vancouver","Canada",-3.75,04mar2022,-28.75
 "Vancouver","Canada",5.96,05mar2022,-19.01
 "Vancouver","Canada",7.14,06mar2022,-10.6
+"Vancouver","Canada",-18.97,07mar2022,-19.53
