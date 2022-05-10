@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 5 March 2021
+*Last updated: 9 May 2022
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -648,39 +648,44 @@ foreach v in province canada {
 
 *CLEAN REGIONAL CASES AND DEATHS DATA
 
-*Save Excel sheet names
-local cases_data "cases"
-local deaths_data "mortality"
-
-*Save date variable names 
-local cases date_report
-local deaths date_death_report
+*Save health region info
+import delimited "health_regions.csv", varn(1) bindq(strict) encoding(utf-8) clear
+save healthregion, replace
 
 *Use loop to clean cases and deaths data
 foreach v in cases deaths {
 	
 	*Load data
-	import delimited "``v'_data'_timeseries_hr.csv", varn(1) bindq(strict) encoding(utf-8) clear
+	import delimited "`v'_timeseries_hr.csv", varn(1) bindq(strict) encoding(utf-8) clear
 	
 	*Delete unnecessary observations
-	ds date*
-	rename `r(varlist)' Date
-	gen date = date(Date, "DMY")
+	rename date Date
+	gen date = date(Date, "YMD")
 	format date %td
 	drop if date == . 
 
 	*Drop repatriated cases
-	drop if province == "Repatriated"
+	drop if region == "Repatriated"
+	rename region province
+	rename sub_region_1 subregion
 
 	*Recode province names
+	replace province = "Alberta" if province == "AB"
 	replace province = "British Columbia" if province == "BC"
+	replace province = "Manitoba" if province == "MB"
+	replace province = "New Brunswick" if province == "NB"
 	replace province = "Newfoundland & Labrador" if province == "NL"
-	replace province = "Northwest Territories" if province == "NWT"
-	replace province = "Prince Edward Island" if province == "PEI"
-	rename health_region region
-	replace region = "Not Reported" if region == "NWT" & province == "Northwest Territories"
-	replace region = "Not Reported" if region == "Yukon" & province == "Yukon"
-	replace region = "Not Reported" if region == "Nunavut" & province == "Nunavut"
+	replace province = "Nova Scotia" if province == "NS"
+	replace province = "Northwest Territories" if province == "NT"
+	replace province = "Nunavut" if province == "NU"
+	replace province = "Ontario" if province == "ON"
+	replace province = "Prince Edward Island" if province == "PE"
+	replace province = "Quebec" if province == "QC"
+	replace province = "Saskatchewan" if province == "SK"
+	replace province = "Yukon" if province == "YT"
+	merge m:1 province subregion using "healthregion"
+	count if _merge != 3 & subregion == 9999
+	replace region = "Not Reported" if subregion == 9999
 
 	*Generate address variable for geocoding in R
 	gen address = region + ", " + province
@@ -688,8 +693,8 @@ foreach v in cases deaths {
 	replace address = province + ", Canada" if region == "Interior" & province == "British Columbia" //For some reason Google can't find BC Interior geocodes
 	
 	*Keep only relevant variables 
-	rename `v' new_`v'
-	rename cumulative_`v' `v'
+	rename value_daily new_`v'
+	rename value `v'
 	collapse(sum) `v' new_`v', by(address date)
 
 	*Save for merging later
@@ -912,9 +917,9 @@ clear
 
 *Save Excel sheet names
 local cases "cases"
-local deaths "mortality"
+local deaths "deaths"
 local recovered "recovered"
-local testing "testing"
+local testing "tests_completed"
 local avaccine "vaccine_administration"
 local dvaccine "vaccine_distribution"
 local cvaccine "vaccine_completion"
@@ -925,7 +930,47 @@ gen date = .
 save "temp", replace
 
 *Use loop to clean both cases and deaths data
-foreach v in cases deaths recovered testing avaccine dvaccine cvaccine {
+foreach v in cases deaths testing {
+
+	*Load data
+	import delimited "``v''_timeseries_prov.csv", varn(1) bindq(strict) clear
+
+	*Delete unnecessary observations
+	rename date Date
+	gen date = date(Date, "YMD")
+	format date %td
+	drop if date == . 
+
+	*Recode province names
+	rename region province
+	replace province = "Alberta" if province == "AB"
+	replace province = "British Columbia" if province == "BC"
+	replace province = "Manitoba" if province == "MB"
+	replace province = "New Brunswick" if province == "NB"
+	replace province = "Newfoundland & Labrador" if province == "NL"
+	replace province = "Nova Scotia" if province == "NS"
+	replace province = "Northwest Territories" if province == "NT"
+	replace province = "Nunavut" if province == "NU"
+	replace province = "Ontario" if province == "ON"
+	replace province = "Prince Edward Island" if province == "PE"
+	replace province = "Quebec" if province == "QC"
+	replace province = "Saskatchewan" if province == "SK"
+	replace province = "Yukon" if province == "YT"
+
+	*Consolidate new cases by province
+	rename value_daily new_`v'
+	rename value `v'
+
+	*Keep only relevant variables 
+	keep province date new_`v' `v'
+
+	*Save for merging later
+	merge 1:1 province date using "temp", nogen keep(1 2 3)
+	save "temp", replace
+}
+
+
+foreach v in recovered avaccine dvaccine cvaccine {
 
 	*Load data
 	import delimited "``v''_timeseries_prov.csv", varn(1) bindq(strict) clear
@@ -1086,13 +1131,33 @@ clear
 
 *Load dataset
 use "temp", clear
+drop cases new_cases deaths new_deaths testing new_testing
 
 *Create national dataset
 gen country = "Canada"
 
 *Aggregate cases to national level
-ds cases deaths recovered testing avaccine dvaccine cvaccine new*
+ds recovered avaccine dvaccine cvaccine new*
 collapse(sum) `r(varlist)', by(date dateStr country)
+save "temp", replace
+
+*Merge with cases, deaths, testing
+
+foreach v in cases deaths testing {
+	import delimited "``v''_timeseries_can.csv", varn(1) bindq(strict) clear
+	gen country = "Canada"
+	rename date dateStr 
+	rename value `v'
+	rename value_daily new_`v'
+	keep country dateStr `v' new_`v'
+	merge 1:1 country dateStr using "temp"
+	drop _merge
+	save "temp", replace
+}
+
+*Load
+use "temp", clear
+
 foreach var in avaccine dvaccine cvaccine {
 	replace `var' = . if date < 22263 // 14 December 2020
 	replace new_`var' = . if date < 22263 
@@ -1196,7 +1261,7 @@ clear
 *CLEAN UP FILE DIRECTORY
 
 *Remove intermediate datasets from directory
-foreach data in temp location_temp layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada pop_region pop_province pop_canada {
+foreach data in temp healthregion location_temp layoffs_canada layoffs_province reservations_canada reservations_province unem_province unem_canada ridership_province ridership_canada grindex_province grindex_canada grstindex_province grstindex_canada bnccindx_province bnccindx_canada bnccexp_province bnccexp_canada bnccpbk_province bnccpbk_canada goog_province goog_canada pop_region pop_province pop_canada {
 	rm `data'.dta
 }
 

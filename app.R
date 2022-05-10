@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 19 February 2022
+## Last updated: 9 May 2022
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -994,6 +994,7 @@ ui <- bootstrapPage(
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
                             tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"), tags$br(),tags$br(),
                             tags$h3("LATEST UPDATES"),
+                            tags$b("05/05/2022:"), "Main Canadian COVID data changed: ", tags$a(href="https://github.com/ccodwg/CovidTimelineCanada", "Timeline of COVID-19 in Canada"), tags$br(), tags$br(),
                             tags$b("04/01/2022:"), "Front page map shows daily \'New cases\' series by default.", tags$br(), tags$br(),
                             tags$b("14/04/2021:"), "\'Unemployment (year-to-year % change)\' series in the \"Economic impact\" tab from January 2021 onward has been changed to \'Unemployment (% change from 2019 baseline)\' and will compare from 2021 to 2019, as opposed to year over year.", tags$br(), tags$br(),
                             tags$b("24/01/2021:"), "Addition of the \'Vaccines completed\' series to the \"Vaccinations\" tab. \'Vaccines completed\' refers to people who have received both doses of a vaccine. \'Vaccines administered\' refers to people who have received one or more doses.", tags$br(), tags$br(),
