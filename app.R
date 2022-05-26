@@ -2,7 +2,7 @@
 ## Author:       Minnie Cui
 ## Affiliation:  Bank of Canada
 ## Code created: 14 April 2020
-## Last updated: 9 May 2022
+## Last updated: 25 May 2022
 
 ## includes code adapted from the following sources:
 # https://github.com/eparker12/nCoV_tracker
@@ -142,46 +142,6 @@ scatter_plot = function(cv_cases, plot_date, ylabel, lag=c("18-day", "14-day")) 
             ylim(0, max_scale) + xlim(0, max_scale) + xlab("New cases (day t-14)") + ylab(paste(ylabel, " (day t)"))
     }
     
-    if (lag=="Vaccines distributed (Cumulative)") {
-        max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$dvaccine))
-        g = ggplot(plot_df, aes(x = dvaccine, y = outcome, colour = region, group = 1,
-                                text = paste0("Date: ", format(date, "%d %B %Y"), 
-                                              "\n", "Region: ", region, 
-                                              "\n", ylabel, ": ", outcome, 
-                                              "\n", "Vaccines distributed (Cumulative): ", dvaccine))) +
-            ylim(0, max_scale) + xlim(0, max_scale) + xlab("Vaccines distributed (Cumulative)") + ylab(paste(ylabel))
-    }
-    
-    if (lag=="Vaccines distributed (New)") {
-        max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$new_dvaccine))
-        g = ggplot(plot_df, aes(x = new_dvaccine, y = outcome, colour = region, group = 1,
-                                text = paste0("Date: ", format(date, "%d %B %Y"), 
-                                              "\n", "Region: ", region, 
-                                              "\n", ylabel, ": ", outcome, 
-                                              "\n", "Vaccines distributed (New): ", new_dvaccine))) +
-            ylim(0, max_scale) + xlim(0, max_scale) + xlab("Vaccines distributed (New)") + ylab(paste(ylabel))
-    }
-    
-    if (lag=="Vaccines completed (Cumulative)") {
-        max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$cvaccine))
-        g = ggplot(plot_df, aes(x = cvaccine, y = outcome, colour = region, group = 1,
-                                text = paste0("Date: ", format(date, "%d %B %Y"), 
-                                              "\n", "Region: ", region, 
-                                              "\n", ylabel, ": ", outcome, 
-                                              "\n", "Vaccines completed (Cumulative): ", cvaccine))) +
-            ylim(0, max_scale) + xlim(0, max_scale) + xlab("Vaccines completed (Cumulative)") + ylab(paste(ylabel))
-    }
-    
-    if (lag=="Vaccines completed (New)") {
-        max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$new_cvaccine))
-        g = ggplot(plot_df, aes(x = new_cvaccine, y = outcome, colour = region, group = 1,
-                                text = paste0("Date: ", format(date, "%d %B %Y"), 
-                                              "\n", "Region: ", region, 
-                                              "\n", ylabel, ": ", outcome, 
-                                              "\n", "Vaccines completed (New): ", new_cvaccine))) +
-            ylim(0, max_scale) + xlim(0, max_scale) + xlab("Vaccines completed (New)") + ylab(paste(ylabel))
-    }
-    
     if (lag=="Testing (Cumulative)") {
         max_scale = max(get_max(cv_cases$outcome), get_max(cv_cases$testing/1000))
         g = ggplot(plot_df, aes(x = testing/1000, y = outcome, colour = region, group = 1,
@@ -232,26 +192,6 @@ ratio_plot = function(cv_cases, plot_date, ylabel, lag) {
                                               "\n", "Region: ", region, 
                                               "\n", ylabel, " (day t) per 1000 new cases (day t-14): ", outcome))) +
             ylim(0, max_scale) + xlab("Date") + ylab(paste(ylabel, "(day t) per 1000 new cases (day t-14)")) 
-    }
-    
-    if (ylabel=="Vaccines administered (Cumulative)" | ylabel == "Vaccines administered (New)") {
-        max_scale = max(get_max(cv_cases$outcome))
-        df_min_date = vaccines_start_date
-        g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
-                                                               text = paste0("Date: ", format(date, "%d %B %Y"), 
-                                                                             "\n", "Region: ", region, 
-                                                                             "\n", "Vaccines administered / distributed: ", outcome))) +
-            ylim(0, max_scale) + xlab("Date") + ylab(paste("Vaccines administered / distributed")) 
-    }
-    
-    if (ylabel=="Vaccines completed (Cumulative)" | ylabel == "Vaccines completed (New)") {
-        max_scale = max(get_max(cv_cases$outcome))
-        df_min_date = vaccines_start_date
-        g = ggplot(data=plot_df[!is.na(plot_df$outcome),], aes(x = date, y = outcome, colour = region, group = 1,
-                                                               text = paste0("Date: ", format(date, "%d %B %Y"), 
-                                                                             "\n", "Region: ", region, 
-                                                                             "\n", "Vaccines completed / distributed: ", outcome))) +
-            ylim(0, max_scale) + xlab("Date") + ylab(paste("Vaccines completed / distributed")) 
     }
     
     if (lag=="Testing (Cumulative)" | lag == "Testing (New)") {
@@ -671,8 +611,8 @@ ui <- bootstrapPage(
                                             multiple = TRUE),
                                 
                                 pickerInput("outcome_select_vaccine", "Select y-axis variable:",   
-                                            choices = c("Vaccines administered", "Vaccines completed", "Vaccines distributed"), 
-                                            selected = c("Vaccines administered"),
+                                            choices = c("Vaccines administered (dose 1)", "Vaccines administered (dose 2)", "Vaccines administered (dose 3)", "Vaccines administered (total)", "Vaccines coverage (dose 1)", "Vaccines coverage (dose 2)", "Vaccines coverage (dose 3)", "Vaccines coverage (dose 4)", "Vaccines distributed"), 
+                                            selected = c("Vaccines administered (dose 1)"),
                                             multiple = FALSE),
                                 
                                 "Select mapping date:",
@@ -691,60 +631,8 @@ ui <- bootstrapPage(
                             mainPanel(
                                 tabsetPanel(
                                     tabPanel("Cumulative",plotlyOutput("province_plot_cumulative_vaccine")),
-                                    tabPanel("Cumulative (per 1000 people)", "NOTE: Variable per 1000 people = Variable / Population * 1000", plotlyOutput("province_plot_cumulative_pc_vaccine")),
-                                    tabPanel("Cumulative (log10)", plotlyOutput("province_plot_cumulative_log_vaccine")),
-                                    tabPanel("New", plotlyOutput("province_plot_new_vaccine")),
-                                    tabPanel("New (per 1000 people)", "NOTE: Variable per 1000 people = Variable / Population * 1000", plotlyOutput("province_plot_new_pc_vaccine"))
+                                    tabPanel("New", plotlyOutput("province_plot_new_vaccine"))
                                 ), tags$br(), tags$br()
-                            )
-                        ),
-                        
-                        tags$br(),
-                        titlePanel("Vaccinations administered / distributed ratios"),
-                        tags$br(),
-                        
-                        sidebarLayout(
-                            sidebarPanel(
-                                
-                                pickerInput("level_select_vaccine2", "Select region level:",   
-                                            choices = c("Country", "Province"), 
-                                            selected = c("Country"),
-                                            multiple = FALSE),
-                                
-                                pickerInput("region_select_vaccine2", "Select country/province:",   
-                                            choices = c("Canada"), 
-                                            options = list(`actions-box` = TRUE, `none-selected-text` = "Please make a selection!"),
-                                            selected = "Canada",
-                                            multiple = TRUE),
-                                
-                                pickerInput("outcome_select_vaccine2", "Select vaccine administration variable:",   
-                                            choices = c("Vaccines administered (Cumulative)", "Vaccines administered (New)", "Vaccines completed (Cumulative)", "Vaccines completed (New)"), 
-                                            selected = c("Vaccines administered (Cumulative)"),
-                                            multiple = FALSE),
-                                
-                                pickerInput("stat_vaccine2", "Select vaccine distribution variable:",   
-                                            choices = c("Vaccines distributed (Cumulative)"), 
-                                            options = list(`actions-box` = TRUE),
-                                            selected = "Vaccines distributed (Cumulative)",
-                                            multiple = FALSE), 
-                                
-                                "Select mapping date:",
-                                
-                                sliderInput("plot_date_vaccine2",
-                                            label = "",
-                                            min = vaccines_start_date,
-                                            max = as.Date(current_date,"%Y-%m-%d"),
-                                            value = as.Date(current_date),
-                                            width = "100%",
-                                            timeFormat = "%d %b", 
-                                            animate=animationOptions(interval = 500, loop = FALSE))
-                            ),
-                            
-                            mainPanel(
-                                tabsetPanel(
-                                    tabPanel("Ratio", plotlyOutput("ratio_plot_vaccine")),
-                                    tabPanel("Scatter", plotlyOutput("scatter_plot_vaccine"))
-                                )
                             )
                         )
                ),
@@ -994,6 +882,7 @@ ui <- bootstrapPage(
                             tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins University COVID-19 dashboard"), tags$br(),
                             tags$a(href="https://vac-lshtm.shinyapps.io/ncov_tracker/", "LSHTM COVID-19 tracker by Edward Parker"), tags$br(),tags$br(),
                             tags$h3("LATEST UPDATES"),
+                            tags$b("25/05/2022:"), "\"Vaccinations\" tab updated with vaccines administered and vaccine coverage broken down by dose.", tags$br(), tags$br(),
                             tags$b("05/05/2022:"), "Main Canadian COVID data changed: ", tags$a(href="https://github.com/ccodwg/CovidTimelineCanada", "Timeline of COVID-19 in Canada"), tags$br(), tags$br(),
                             tags$b("04/01/2022:"), "Front page map shows daily \'New cases\' series by default.", tags$br(), tags$br(),
                             tags$b("14/04/2021:"), "\'Unemployment (year-to-year % change)\' series in the \"Economic impact\" tab from January 2021 onward has been changed to \'Unemployment (% change from 2019 baseline)\' and will compare from 2021 to 2019, as opposed to year over year.", tags$br(), tags$br(),
@@ -1595,26 +1484,51 @@ server <- function(input, output, session) {
             db$region = db$province
         }
         
-        if (input$outcome_select_vaccine=="Vaccines administered") { 
+        if (input$outcome_select_vaccine=="Vaccines administered (total)") { 
             db$outcome = db$avaccine/1000
             db$new_outcome = db$new_avaccine
-            db$new_outcome_pc = db$new_avaccinepc*1000
-            db$outcome_pc = db$avaccinepc*1000
+        }
+      
+        if (input$outcome_select_vaccine=="Vaccines administered (dose 1)") { 
+          db$outcome = db$avaccine1/1000
+          db$new_outcome = db$new_avaccine1
+        }
+      
+        if (input$outcome_select_vaccine=="Vaccines administered (dose 2)") { 
+          db$outcome = db$avaccine2/1000
+          db$new_outcome = db$new_avaccine2
+        }
+      
+        if (input$outcome_select_vaccine=="Vaccines administered (dose 3)") { 
+          db$outcome = db$avaccine3/1000
+          db$new_outcome = db$new_avaccine3
         }
         
         if (input$outcome_select_vaccine=="Vaccines distributed") { 
             db$outcome = db$dvaccine/1000 
             db$new_outcome = db$new_dvaccine
-            db$new_outcome_pc = db$new_dvaccinepc*1000
-            db$outcome_pc = db$dvaccinepc*1000
         }
         
-        if (input$outcome_select_vaccine=="Vaccines completed") { 
-            db$outcome = db$cvaccine/1000 
-            db$new_outcome = db$new_cvaccine
-            db$new_outcome_pc = db$new_cvaccinepc*1000
-            db$outcome_pc = db$cvaccinepc*1000
+        if (input$outcome_select_vaccine=="Vaccines coverage (dose 1)") { 
+            db$outcome = db$cvaccine1/1000
+            db$new_outcome = db$new_cvaccine1
         }
+      
+        if (input$outcome_select_vaccine=="Vaccines coverage (dose 2)") { 
+          db$outcome = db$cvaccine2/1000
+          db$new_outcome = db$new_cvaccine2
+        }
+      
+        if (input$outcome_select_vaccine=="Vaccines coverage (dose 3)") { 
+          db$outcome = db$cvaccine3/1000
+          db$new_outcome = db$new_cvaccine3
+        }
+        
+        if (input$outcome_select_vaccine=="Vaccines coverage (dose 4)") { 
+          db$outcome = db$cvaccine4/1000
+          db$new_outcome = db$new_cvaccine4
+        }
+      
         
         db %>% filter(region %in% input$region_select_vaccine)
     })
@@ -1623,129 +1537,12 @@ server <- function(input, output, session) {
         province_plot_new(country_reactive_db_vaccine(), input$plot_date_region_vaccine, ylabel = input$outcome_select_vaccine)
     })
     
-    output$province_plot_new_pc_vaccine <- renderPlotly({
-        province_plot_new_pc(country_reactive_db_vaccine(), input$plot_date_region_vaccine, ylabel = input$outcome_select_vaccine)
-    })
-    
     output$province_plot_cumulative_vaccine <- renderPlotly({
         province_plot_cumulative(country_reactive_db_vaccine(), input$plot_date_region_vaccine, ylabel = input$outcome_select_vaccine)
     })
     
-    output$province_plot_cumulative_pc_vaccine <- renderPlotly({
-        province_plot_cumulative_pc(country_reactive_db_vaccine(), input$plot_date_region_vaccine, ylabel = input$outcome_select_vaccine)
-    })
-    
     output$province_plot_cumulative_log_vaccine <- renderPlotly({
         province_plot_cumulative_log(country_reactive_db_vaccine(), input$plot_date_region_vaccine, ylabel = input$outcome_select_vaccine)
-    })
-    
-    #-----
-    # update region selections
-    observeEvent(input$level_select_vaccine2, {
-        if (input$level_select_vaccine2=="Country") {
-            updatePickerInput(session = session, inputId = "region_select_vaccine2", 
-                              choices = c("Canada"), selected = "Canada")
-        }
-        
-        if (input$level_select_vaccine2=="Province") {
-            updatePickerInput(session = session, inputId = "region_select_vaccine2", 
-                              choices = c("Alberta", "British Columbia", "Manitoba", "Newfoundland & Labrador", "New Brunswick", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon"), 
-                              selected = c("Ontario", "Quebec", "British Columbia"))
-        }
-    }, ignoreInit = TRUE)
-    
-    observeEvent(input$outcome_select_vaccine2, {
-        if (input$outcome_select_vaccine2=="Vaccines administered (Cumulative)") {
-            updatePickerInput(session = session, inputId = "stat_vaccine2", 
-                              choices = c("Vaccines distributed (Cumulative)"), selected = "Vaccines distributed (Cumulative)")
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines administered (New)") {
-            updatePickerInput(session = session, inputId = "stat_vaccine2", 
-                              choices = c("Vaccines distributed (Cumulative)", "Vaccines distributed (New)"), 
-                              selected = c("Vaccines distributed (Cumulative)"))
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines completed (Cumulative)") {
-            updatePickerInput(session = session, inputId = "stat_vaccine2", 
-                              choices = c("Vaccines distributed (Cumulative)"), selected = "Vaccines distributed (Cumulative)")
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines completed (New)") {
-            updatePickerInput(session = session, inputId = "stat_vaccine2", 
-                              choices = c("Vaccines distributed (Cumulative)", "Vaccines distributed (New)"), 
-                              selected = c("Vaccines distributed (Cumulative)"))
-        }
-    }, ignoreInit = TRUE)
-    
-    # create dataframe with selected countries
-    country_reactive_db_vaccine2 = reactive({
-        if (input$level_select_vaccine2=="Country") { 
-            db = cv_cases_canada %>% filter(date >= vaccines_start_date)
-            db$region = db$country
-        }
-        
-        if (input$level_select_vaccine2=="Province") { 
-            db = cv_cases_province %>% filter(date >= vaccines_start_date)
-            db$region = db$province
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines administered (Cumulative)" & input$stat_vaccine2=="Vaccines distributed (Cumulative)") { 
-            db$outcome = db$advaccine
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines administered (New)" & input$stat_vaccine2=="Vaccines distributed (Cumulative)") { 
-            db$outcome = db$newa_dvaccine
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines administered (New)" & input$stat_vaccine2=="Vaccines distributed (New)") { 
-            db$outcome = db$new_advaccine
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines completed (Cumulative)" & input$stat_vaccine2=="Vaccines distributed (Cumulative)") { 
-            db$outcome = db$cdvaccine
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines completed (New)" & input$stat_vaccine2=="Vaccines distributed (Cumulative)") { 
-            db$outcome = db$newc_dvaccine
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines completed (New)" & input$stat_vaccine2=="Vaccines distributed (New)") { 
-            db$outcome = db$new_cdvaccine
-        }
-        
-        
-        db %>% filter(region %in% input$region_select_vaccine2)
-    })
-    
-    output$ratio_plot_vaccine <- renderPlotly({
-        ratio_plot(country_reactive_db_vaccine2(), input$plot_date_vaccine2, ylabel = input$outcome_select_vaccine2, lag=input$stat_vaccine2)
-    })
-    
-    country_reactive_db_vaccine2_scatter = reactive({
-        if (input$level_select_vaccine2=="Country") { 
-            db = cv_cases_canada %>% filter(date >= vaccines_start_date)
-            db$region = db$country
-        }
-        
-        if (input$level_select_vaccine2=="Province") { 
-            db = cv_cases_province %>% filter(date >= vaccines_start_date)
-            db$region = db$province
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines administered (Cumulative)") { 
-            db$outcome = db$avaccine
-        }
-        
-        if (input$outcome_select_vaccine2=="Vaccines administered (New)") { 
-            db$outcome = db$new_avaccine
-        }
-        
-        db %>% filter(region %in% input$region_select_vaccine2)
-    })
-    
-    output$scatter_plot_vaccine <- renderPlotly({
-        scatter_plot(country_reactive_db_vaccine2_scatter(), input$plot_date_vaccine2, ylabel = input$outcome_select_vaccine2, lag=input$stat_vaccine2)
     })
     
     # ------------------------------

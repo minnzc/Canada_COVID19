@@ -2,7 +2,7 @@
 
 *Written by:   Minnie Cui
 *Created on:   14 April 2020
-*Last updated: 9 May 2022
+*Last updated: 25 May 2022
 
 ********************************************************************************
 ************** PLEASE UPDATE VARIABLES BELOW BEFORE RUNNING CODE ***************
@@ -920,9 +920,15 @@ local cases "cases"
 local deaths "deaths"
 local recovered "recovered"
 local testing "tests_completed"
-local avaccine "vaccine_administration"
+local avaccine1 "vaccine_administration_dose_1"
+local avaccine2 "vaccine_administration_dose_2"
+local avaccine3 "vaccine_administration_dose_3"
+local avaccine "vaccine_administration_total_doses"
 local dvaccine "vaccine_distribution"
-local cvaccine "vaccine_completion"
+local cvaccine1 "vaccine_coverage_dose_1"
+local cvaccine2 "vaccine_coverage_dose_2"
+local cvaccine3 "vaccine_coverage_dose_3"
+local cvaccine4 "vaccine_coverage_dose_4"
 
 *Create an empty data set to merge files to
 gen province = ""
@@ -930,7 +936,7 @@ gen date = .
 save "temp", replace
 
 *Use loop to clean both cases and deaths data
-foreach v in cases deaths testing {
+foreach v in cases deaths testing avaccine avaccine1 avaccine2 avaccine3 cvaccine1 cvaccine2 cvaccine3 cvaccine4 {
 
 	*Load data
 	import delimited "``v''_timeseries_prov.csv", varn(1) bindq(strict) clear
@@ -969,8 +975,7 @@ foreach v in cases deaths testing {
 	save "temp", replace
 }
 
-
-foreach v in recovered avaccine dvaccine cvaccine {
+foreach v in recovered dvaccine {
 
 	*Load data
 	import delimited "``v''_timeseries_prov.csv", varn(1) bindq(strict) clear
@@ -1000,11 +1005,6 @@ foreach v in recovered avaccine dvaccine cvaccine {
 	save "temp", replace
 }
 
-*Clean vaccines administered and vaccines completed based on distributed
-foreach v in avaccine cvaccine {
-	replace `v' = 0 if `v' == . & dvaccine != . & dvaccine != 0
-}
-
 *Generate date string variable for R
 gen dd = day(date)
 gen mm = month(date)
@@ -1018,8 +1018,8 @@ replace dateStr = yy + "-" + mm + "-" + "0" + dd if strlen(mm) == 2 & strlen(dd)
 replace dateStr = yy + "-" + "0" + mm + "-" + "0" + dd if strlen(mm) == 1 & strlen(dd) == 1
 
 *Keep only relevant variables
-keep date* province* cases new_cases deaths new_deaths recovered new_recovered testing new_testing *vaccine
-order date* province* cases new_cases deaths new_deaths recovered new_recovered testing new_testing *vaccine
+keep date* province* cases new_cases deaths new_deaths recovered new_recovered testing new_testing *vaccine*
+order date* province* cases new_cases deaths new_deaths recovered new_recovered testing new_testing *vaccine*
 
 *Merge with population data
 merge m:1 province using pop_province
@@ -1045,17 +1045,17 @@ gen testingpc = testing/pop
 gen new_testingpc = new_testing/pop
 gen ltesting = log(testing)
 *gen ldeathrecovered = log(deathrecovered)
-gen advaccine = avaccine/dvaccine
-gen cdvaccine = cvaccine/dvaccine
-gen new_advaccine = new_avaccine/new_dvaccine
-gen newa_dvaccine = new_avaccine/dvaccine
-gen new_cdvaccine = new_cvaccine/new_dvaccine
-gen newc_dvaccine = new_cvaccine/dvaccine
-gen avaccinepc = avaccine/pop
-gen cvaccinepc = avaccine/pop
+*gen advaccine = avaccine/dvaccine
+*gen cdvaccine = cvaccine/dvaccine
+*gen new_advaccine = new_avaccine/new_dvaccine
+*gen newa_dvaccine = new_avaccine/dvaccine
+*gen new_cdvaccine = new_cvaccine/new_dvaccine
+*gen newc_dvaccine = new_cvaccine/dvaccine
+*gen avaccinepc = avaccine/pop
+*gen cvaccinepc = avaccine/pop
 gen dvaccinepc = dvaccine/pop
-gen new_avaccinepc = new_avaccine/pop
-gen new_cvaccinepc = new_cvaccine/pop
+*gen new_avaccinepc = new_avaccine/pop
+*gen new_cvaccinepc = new_cvaccine/pop
 gen new_dvaccinepc = new_dvaccine/pop
 
 *Generate active cases
@@ -1131,19 +1131,19 @@ clear
 
 *Load dataset
 use "temp", clear
-drop cases new_cases deaths new_deaths testing new_testing
+drop cases new_cases deaths new_deaths testing new_testing avaccine* cvaccine*
 
 *Create national dataset
 gen country = "Canada"
 
 *Aggregate cases to national level
-ds recovered avaccine dvaccine cvaccine new*
+ds recovered dvaccine new*
 collapse(sum) `r(varlist)', by(date dateStr country)
 save "temp", replace
 
 *Merge with cases, deaths, testing
 
-foreach v in cases deaths testing {
+foreach v in cases deaths testing avaccine avaccine1 avaccine2 avaccine3 cvaccine1 cvaccine2 cvaccine3 cvaccine4 {
 	import delimited "``v''_timeseries_can.csv", varn(1) bindq(strict) clear
 	gen country = "Canada"
 	rename date dateStr 
@@ -1158,7 +1158,7 @@ foreach v in cases deaths testing {
 *Load
 use "temp", clear
 
-foreach var in avaccine dvaccine cvaccine {
+foreach var in dvaccine {
 	replace `var' = . if date < 22263 // 14 December 2020
 	replace new_`var' = . if date < 22263 
 }
@@ -1183,17 +1183,17 @@ gen testingpc = testing/pop
 gen new_testingpc = new_testing/pop
 gen ltesting = log(testing)
 *gen ldeathrecovered = log(deathrecovered)
-gen advaccine = avaccine/dvaccine
-gen cdvaccine = cvaccine/dvaccine
-gen new_advaccine = new_avaccine/new_dvaccine
-gen newa_dvaccine = new_avaccine/dvaccine
-gen new_cdvaccine = new_cvaccine/new_dvaccine
-gen newc_dvaccine = new_cvaccine/dvaccine
-gen avaccinepc = avaccine/pop
-gen cvaccinepc = avaccine/pop
+*gen advaccine = avaccine/dvaccine
+*gen cdvaccine = cvaccine/dvaccine
+*gen new_advaccine = new_avaccine/new_dvaccine
+*gen newa_dvaccine = new_avaccine/dvaccine
+*gen new_cdvaccine = new_cvaccine/new_dvaccine
+*gen newc_dvaccine = new_cvaccine/dvaccine
+*gen avaccinepc = avaccine/pop
+*gen cvaccinepc = avaccine/pop
 gen dvaccinepc = dvaccine/pop
-gen new_avaccinepc = new_avaccine/pop
-gen new_cvaccinepc = new_cvaccine/pop
+*gen new_avaccinepc = new_avaccine/pop
+*gen new_cvaccinepc = new_cvaccine/pop
 gen new_dvaccinepc = new_dvaccine/pop
 
 *Generate active cases
