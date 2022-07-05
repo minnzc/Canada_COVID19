@@ -1,14 +1,16 @@
 ## Canada COVID-19 interactive tracking tool
 
-This github page contains the code and input data for the [Canada COVID-19 dashboard](https://mhcui.shinyapps.io/Canada_COVID/).
+This github page contains the code and input data for the [Canada COVID-19 dashboard](https://mhcui.shinyapps.io/Canada_COVID/). This dashboard is updated weekly on Mondays.
 
-Input COVID-19 data are obtained from the [Berry et al. 2020](https://github.com/ishaberry/Covid19Canada).
+Input COVID-19 data are obtained from the [Timeline of COVID-19 in Canada](https://github.com/ccodwg/CovidTimelineCanada).
 
 This dashboard aims to complement existing COVID-19 dashboards with several additional interactive features, including analysis of healthcare efficiency, economic impact, and provincial government responses. 
 
 Please see the *About* tab in the [Canada COVID-19 dashboard](https://mhcui.shinyapps.io/Canada_COVID/) for a full list of data sources and references.
 
 ## Major Updates (DD/MM/YYYY)
+- **25/05/2022**: "Vaccinations" tab updated with vaccines administered and vaccine coverage broken down by dose.
+- **05/05/2022**: Main Canadian COVID data changed to [Timeline of COVID-19 in Canada](https://github.com/ccodwg/CovidTimelineCanada).
 - **27/01/2021**: COVID-19 data have been changed to accommodate Github's file size restrictions. cases.csv and mortality.csv will be split up by year to be cases_2020.csv, cases_2021.csv, mortality_2020.csv, mortality_2021.csv.
 - **24/01/2021**: 'Vaccines completed' series added. 'Vaccines completed' refers to people who have received both doses of a vaccine. 'Vaccines administered' refers to people who have received one or more doses.
 - **16/12/2020**: Vaccinations and testing data now included in the main dashboard. Data courtesey of [Berry et al. 2020](https://github.com/ishaberry/Covid19Canada), as with all other COVID-19 data. 
