@@ -362,7 +362,7 @@ ui <- bootstrapPage(
                                           span(h5(textOutput("reactive_active_count"), align = "right"), style="color:#cc4c02"),
                                           h5(textOutput("reactive_death_count"), align = "right"),
                                           h6(textOutput("clean_date_reactive"), align = "right"),
-                                          h6("Updated once daily. For global cases, refer to:", align = "right"),
+                                          h6("Updated once weekly. For global cases, refer to:", align = "right"),
                                           tags$h6(tags$a(href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6", "Johns Hopkins COVID-19 dashboard"), align = "right"),
                                           plotOutput("epi_curve", height="140px", width="100%"),
                                           plotOutput("cumulative_plot", height="140px", width="100%"),
